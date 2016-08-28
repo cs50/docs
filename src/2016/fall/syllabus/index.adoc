@@ -1,0 +1,43 @@
+---
+layout: 2016/fall
+---
+
+= Syllabus
+
+[source,c]
+----
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+}
+----
+
+== Description
+
+TODO
+
+== Expectations
+
+TODO
+
+== Website
+
+TODO
+
+== Grades
+
+TODO
+
+== Simultaneous Enrollment
+
+TODO
+
+== Books
+
+TODO
+
+== Lectures
+
+TODO

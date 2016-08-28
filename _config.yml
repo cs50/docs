@@ -1,0 +1,18 @@
+asciidoc:
+  ext: adoc
+asciidoctor:
+  attributes:
+    - data-uri
+    - idprefix=
+    - imagesdir=.
+    - pygments-css=class
+    - pygments-stylesheet=any
+    - sectlinks
+    - showtitle
+    - source-highlighter=pygments
+    - toc=left
+    - toclevels=4
+destination: docs
+gems:
+  - jekyll-asciidoc
+source: src
