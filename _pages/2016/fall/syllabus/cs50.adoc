@@ -1,0 +1,286 @@
+---
+layout: 2016/fall
+title: Syllabus
+---
+:skip-front-matter:
+
+= Syllabus
+
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience
+
+CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but students are only expected to attend in person the course's first lecture on Wednesday 8/31 and last lecture on Monday 11/21. Students with conflicts can watch those lectures online. Sections to be arranged. Students may simultaneously enroll in CS50 and another course that meets at the same time. To do so, students should enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to their crimson carts as well. Undergraduates, GSAS students, and cross-registered students may take CS50 either Satisfactory/Unsatisfactory (SAT/UNS) or for a letter grade. Under Gen Ed's Current Requirements, CS50 satisfies Empirical and Mathematical Reasoning. Under Gen Ed's Current Requirements with Flexibility, CS50 satisfies Quantitative Reasoning. Under Gen Ed's new requirements, CS50 will satisfy Natural Sciences & SEAS. See https://cs50.harvard.edu/[cs50.harvard.edu] for FAQs.
+
+== Expectations
+
+You are expected to
+
+* submit nine problem sets,
+* take one test and one quiz, and
+* submit a final project.
+
+== Website
+
+https://cs50.harvard.edu/
+
+== Grades
+
+Whether taking the course SAT/UNS or for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+
+Final grades are determined using the following weights:
+
+|===
+| Problem Sets | 50%
+| Test | 25%
+| Quiz | 15%
+| Final Project| 10%
+|===
+
+Problem sets and the final project are evaluated primarily along axes of scope, correctness, design, and style, with scores ordinarily determined by scope × (3 × correctness + 2 × design + 1 × style). Scores are normalized across teaching fellows at term's end, so mid-semester comparisons among students of scores are not reliable indicators of standing.
+
+Although you must submit all nine problem sets, your lowest score among those problem sets on which you received perfect scores for the axis of scope will be dropped when final grades are determined.
+
+Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between. However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in Week 11, end up relative to yourself in Week 0.
+
+The course is not graded on a curve. The course does not have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable. Each student's final grade is individually determined at term's end after input from the teaching fellows. Remarkable effort and upward trending are considered. 
+
+== Simultaneous Enrollment
+
+Ordinarily, you may not enroll in courses that meet at the same time or overlapping times. However, you may enroll in CS50 and another course whose meetings overlap fully or partially with CS50. To do so, enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to your crimson cart as well. You do not need anyone's permission or signature, and you do not need to petition the Administrative Board.
+
+== Books 
+
+No books are required for this course. However, you might find the books below of interest. The first is intended for those inexperienced in (or less comfortable with the idea of) programming. The second is intended for those experienced in (or more comfortable with the idea of) programming.  Realize that free, if not superior, resources can be found on the https://cs50.harvard.edu/resources[course's website].
+
+=== For Those Less Comfortable 
+
+_C Programming Absolute Beginner's Guide_, Third Edition +
+Greg Perry, Dean Miller +
+Pearson Education, 2014 +
+ISBN 0-789-75198-4
+
+=== For Those More Comfortable 
+
+_Programming in C_, Fourth Edition +
+Stephen G. Kochan +
+Pearson Education, 2015 +
+ISBN 0-321-77641-0
+
+The book below is recommended for those interested in understanding how their own computers work for personal edification.
+
+_How Computers Work_, Tenth Edition +
+Ron White +
+Que Publishing, 2014 +
+ISBN 0-7897-4984-X
+
+This last book below is recommended for aspiring hackers, those interested in programming techniques and low-level optimization of code for applications beyond the scope of this course.
+
+_Hacker's Delight_, Second Edition +
+Henry S. Warren Jr. +
+Pearson Education, 2013 +
+ISBN 0-321-84268-5
+ 
+== Lectures
+
+CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but you are only expected to attend in person the course's first lecture on Wednesday 8/31 and last lecture on Monday 11/21. If you've a conflict, though, you're welcome to watch those lectures online.
+
+Other lectures are filmed in Sanders a few days in advance, with videos thereof released on Fridays so that you have access to problem sets' material earlier than in past years; you are welcome but not expected to attend those filmings. On Wednesdays, CS50 holds "walkthroughs" in Sanders for students who would like additional guidance on problem sets; you are welcome but not expected to attend those walkthroughs.
+
+=== Schedule
+
+A schedule of lectures, subject to change, appears below. 
+
+|===
+2+| Lecture | Filmed | Released
+
+| Week 0 | Scratch | Wed 8/31, 1pm – 2:30pm | Wed 8/31, 1pm
+| Week 1 | C | Fri 8/26, 11am – 2pm | Fri 9/2, noon
+| Week 2 | Arrays | Tue 9/6, 12:30pm – 2:30pm  | Fri 9/9, noon
+| Week 3 | Algorithms | Mon 9/12, 12:30pm – 3:30pm | Fri 9/16, noon
+| Week 4 | Memory | Tue 9/13, 12:30pm – 3:30pm | Fri 9/23, noon
+| Week 5 | Data Structures | Mon 9/26, 12pm – 3pm | Fri 9/30, noon
+| Week 6 | ... | Mon 10/3, 11:30am – 2:30pm | Fri 10/7, noon
+| Week 7 | Python | Wed 10/5, 12pm – 3pm | Fri 10/14, noon
+| Week 8 | HTTP | Tue 10/18, 12:30pm – 3:30pm | Fri 10/21, noon
+| Week 9 | SQL | Mon 10/24, 12pm – 3pm | Fri 10/28, noon
+| Week 10 | JavaScript | Mon 10/31, 11:30am – 2:30pm | Fri 11/4, noon
+| Week 11 | The End | Mon 11/21, 1:30pm – 2:30pm | Mon 11/21, 1:30pm
+|===
+
+=== Topics
+
+=== Week 0
+
+Binary. ASCII. Algorithms. Pseudocode. Source code. Compiler. Object code. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Functions. Arrays. Threads. Events.
+
+=== Week 1
+
+Linux. C. Compiling. Libraries. Types. Standard output.
+
+=== Week 2
+
+Casting. Imprecision. Switches. Scope. Strings. Arrays. Cryptography.
+
+=== Week 3
+
+Command-line arguments. Searching. Sorting. Bubble sort. Selection sort. Insertion sort. _O_. Ω .Θ. Recursion. Merge Sort.
+
+=== Week 4
+
+Stack. Debugging. File I/O. Hexadecimal. Strings. Pointers. Dynamic memory allocation.
+
+=== Week 5
+
+Heap. Buffer overflow. Linked lists.
+Hash tables. Tries. 
+Trees. Stacks. Queues.
+
+=== Week 6
+
+TCP/IP. HTTP.
+
+=== Week 7
+
+HTML. CSS. PHP.
+
+=== Week 8
+
+MVC. SQL.
+
+=== Week 9
+
+JavaScript. Ajax.
+
+=== Week 10
+
+Security. Artificial intelligence.
+
+=== Week 11
+
+Artificial intelligence, continued. 
+
+=== Week 12
+
+Exciting conclusion.
+
+== Sections
+
+Lectures are supplemented by weekly, 90-minute sections led by the teaching fellows. Different sections are offered for those less comfortable, those more comfortable, and those somewhere in between. You will be asked for your sectioning preferences on Problem Set 0, and you will be assigned to a section (and teaching fellow) shortly thereafter.
+
+A schedule of sections, subject to change, appears below.
+
+|===
+| Section | Dates
+
+| C | Wed 9/7*
+| Arrays | Mon 9/12, Tue 9/13, Wed 9/14
+| Algorithms | Mon 9/19, Tue 9/20, Wed 9/21
+| File I/O | Mon 9/26, Tue 9/27, Wed 9/28
+| Data Structures | Mon 10/3, Tue 10/4, Wed 10/5
+| Review for Test | Mon 10/10, Tue 10/11, Wed 10/12
+| TF's Choice | Mon 10/17, Tue 10/18, Wed 10/19
+| Python | Mon 10/24, Tue 10/25, Wed 10/26
+| SQL | Mon 10/31, Tue 11/1, Wed 11/2
+| JavaScript | Mon 11/7, Tue 11/8, Wed 11/9
+| Review for Quiz | Mon 11/14*
+|===
+
+pass:[*] Course-wide and filmed.
+
+== Office Hours 
+
+Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants. 
+
+A schedule of office hours will appear on the course's website.
+
+== Walkthroughs
+
+Integrated into problem sets are "walkthroughs," videos that offer direction on where to begin and how to approach problems. At 1pm on most Wednesdays are walkthroughs also held live in Sanders Theatre; you are welcome but not expected to attend.
+
+== Postmortems
+
+Available after problem sets' deadlines are "postmortems," videos via which the course's staff explore actual solutions to problem sets. You are encouraged to watch postmortems for insights into how else you could have (or should have!) implemented your own solutions.
+
+== Tutoring
+
+For students who avail themselves of the course's other resources but still find themselves struggling, the course offers tutoring, to the extent possible, providing opportunities for students to work with the course's staff one-on-one or in particularly small groups. To arrange, contact the course's heads.
+
+== Problem Sets
+
+Nine problem sets are assigned during the semester. Each is due by noon on a Monday. Late work is not ordinarily accepted, except in cases of emergency. Although you must submit all nine problem sets, your lowest score among those problem sets on which you received a perfect score for the axis of scope will be dropped when final grades are determined.
+
+A schedule of problem sets, subject to change, appears below.
+
+|===
+| Problem Set | Language | Released | Due
+
+| Problem Set 0 | Scratch | Wed 8/31 | Mon 9/5, noon
+| Problem Set 1 | C | Fri 9/2 | Mon 9/12, noon
+| Problem Set 2 | C | Fri 9/9 | Mon 9/19, noon
+| Problem Set 3 | C | Fri 9/16 | Mon 9/26, noon
+| Problem Set 4 | C | Fri 9/23 | Mon 10/3, noon
+| Problem Set 5 | C | Fri 9/30 | Mon 10/10, noon
+| Problem Set 6 | Python | Fri 10/21 | Mon 10/31, noon
+| Problem Set 7 | Python, SQL | Fri 10/28 | Mon 11/7, noon
+| Problem Set 8 | JavaScript | Fri 11/4 | Mon 11/14, noon
+|===
+
+== Quizzes
+
+The course has two 75-minute quizzes. These quizzes are "closed-book," but you may utilize during each quiz one two-sided page (8.5" × 11") of handwritten or typed notes, blank scrap paper, and a pen or pencil, nothing else. 
+
+When final grades are computed, your scores on these two quizzes are weighted equally.
+
+Unless arranged with the course's heads in advance, quizzes cannot ordinarily be taken at alternative times even if missed by accident, except in cases of medical emergency.
+
+A schedule of quizzes, subject to change, appears below. These quizzes take place at 1pm in lieu of lectures on these dates. Simultaneously enrolled students are expected to sit for these quizzes at 5:30pm on these same dates unless otherwise arranged with the course's heads in advance.
+
+=== Quiz 0
+
+__Wed 10/14__
+
+Covers weeks 0 through 5.
+
+=== Quiz 1
+
+__Wed 11/18__
+
+Covers weeks 0 through 11 with emphasis on 6 onward.
+
+== Final Project
+
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
+
+Extensions on the final project are not ordinarily granted, except in cases of emergency. Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
+
+|===
+| Milestone | Date
+
+| Pre-Proposal | Fri 10/28, noon
+| Proposal | Fri 11/11, noon
+| Status Report | Mon 11/28, noon
+| CS50 Hackathon | Thu 12/1, 7pm – Fri 12/2, 7am
+| Implementation | Sun 12/4,* noon
+| CS50 Fair | Mon 12/5,* 11:30am – 4:30pm
+|===
+
+pass:[*] To be confirmed.
+
+== CS50 Hackathon
+
+From 7pm on Thu 12/1 until 7am on Fri 12/2 is the CS50 Hackathon, an epic all-nighter during which you can dive into your final project's implementation alongside classmates (from Harvard and Yale alike!) and staff. If you choose to partake, you'll be asked to propose three milestones for yourself that evening: a "good" one that you intend to achieve no matter what; a "better" one that you think you can achieve; and a "best" one that you hope to achieve.
+
+Dinner will be served around 9pm, second dinner will be served around 1am, and those still standing around 5am will be treated to breakfast at IHOP.
+
+== CS50 Fair
+
+From 11am until 4:30pm on Mon 12/5* is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
+
+Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
+
+pass:[*] To be confirmed.
+
+include::../honesty.adoc[]
+
+include::../acknowledgement.adoc[]
