@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="{{ "/css/asciidoc-pygments.css" | prepend: site.baseurl }}"/>
         <title>{{ page.title }}</title>
     </head>
-    <body>
-
-        {{ content }}
-
+    <body class="toc2 toc-left">
+        <div id="content">
+            {{ content }}
+        </div>
     </body>
 </html>
