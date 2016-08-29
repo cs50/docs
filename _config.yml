@@ -11,6 +11,8 @@ asciidoctor:
   - showtitle
   - source-highlighter=pygments
   - stylesdir=css
+  base_dir: :docdir
+  safe: 0
 collections:
   pages:
     output: true
