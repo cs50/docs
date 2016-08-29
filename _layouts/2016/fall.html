@@ -9,8 +9,10 @@
         <title>{{ page.title }}</title>
     </head>
     <body class="toc2 toc-left">
-        <div id="toc">
-            {{ page.document | tocify_asciidoc }}
+        <div id="header">
+            <div id="toc">
+                {{ page.document | tocify_asciidoc }}
+            </div>
         </div>
         <div id="content">
             {{ content }}
