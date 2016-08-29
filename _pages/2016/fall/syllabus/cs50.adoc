@@ -49,43 +49,33 @@ Ordinarily, you may not enroll in courses that meet at the same time or overlapp
 
 == Books 
 
-No books are required for this course. However, you might find the books below of interest. The first is intended for those inexperienced in (or less comfortable with the idea of) programming. The second is intended for those experienced in (or more comfortable with the idea of) programming.  Realize that free, if not superior, resources can be found on the https://cs50.harvard.edu/resources[course's website].
-
-=== For Those Less Comfortable 
+No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, https://cs50.harvard.edu/resources[resources] can be found on the course's website.
 
 _C Programming Absolute Beginner's Guide_, Third Edition +
 Greg Perry, Dean Miller +
 Pearson Education, 2014 +
 ISBN 0-789-75198-4
 
-=== For Those More Comfortable 
+_Hacker's Delight_, Second Edition +
+Henry S. Warren Jr. +
+Pearson Education, 2013 +
+ISBN 0-321-84268-5
+ 
+_How Computers Work_, Tenth Edition +
+Ron White +
+Que Publishing, 2014 +
+ISBN 0-7897-4984-X
 
 _Programming in C_, Fourth Edition +
 Stephen G. Kochan +
 Pearson Education, 2015 +
 ISBN 0-321-77641-0
 
-The book below is recommended for those interested in understanding how their own computers work for personal edification.
-
-_How Computers Work_, Tenth Edition +
-Ron White +
-Que Publishing, 2014 +
-ISBN 0-7897-4984-X
-
-This last book below is recommended for aspiring hackers, those interested in programming techniques and low-level optimization of code for applications beyond the scope of this course.
-
-_Hacker's Delight_, Second Edition +
-Henry S. Warren Jr. +
-Pearson Education, 2013 +
-ISBN 0-321-84268-5
- 
 == Lectures
 
-CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but you are only expected to attend in person the course's first lecture on Wednesday 8/31 and last lecture on Monday 11/21. If you've a conflict, though, you're welcome to watch those lectures online.
+CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but you are only expected to attend in person the course's first lecture on Wed 8/31 and last lecture on Mon 11/21. If you've a conflict, though, you're welcome to watch those lectures online.
 
 Other lectures are filmed in Sanders a few days in advance, with videos thereof released on Fridays so that you have access to problem sets' material earlier than in past years; you are welcome but not expected to attend those filmings. On Wednesdays, CS50 holds "walkthroughs" in Sanders for students who would like additional guidance on problem sets; you are welcome but not expected to attend those walkthroughs.
-
-=== Schedule
 
 A schedule of lectures, subject to change, appears below. 
 
@@ -105,62 +95,6 @@ A schedule of lectures, subject to change, appears below.
 | Week 10 | JavaScript | Mon 10/31, 11:30am – 2:30pm | Fri 11/4, noon
 | Week 11 | The End | Mon 11/21, 1:30pm – 2:30pm | Mon 11/21, 1:30pm
 |===
-
-=== Topics
-
-=== Week 0
-
-Binary. ASCII. Algorithms. Pseudocode. Source code. Compiler. Object code. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Functions. Arrays. Threads. Events.
-
-=== Week 1
-
-Linux. C. Compiling. Libraries. Types. Standard output.
-
-=== Week 2
-
-Casting. Imprecision. Switches. Scope. Strings. Arrays. Cryptography.
-
-=== Week 3
-
-Command-line arguments. Searching. Sorting. Bubble sort. Selection sort. Insertion sort. _O_. Ω .Θ. Recursion. Merge Sort.
-
-=== Week 4
-
-Stack. Debugging. File I/O. Hexadecimal. Strings. Pointers. Dynamic memory allocation.
-
-=== Week 5
-
-Heap. Buffer overflow. Linked lists.
-Hash tables. Tries. 
-Trees. Stacks. Queues.
-
-=== Week 6
-
-TCP/IP. HTTP.
-
-=== Week 7
-
-HTML. CSS. PHP.
-
-=== Week 8
-
-MVC. SQL.
-
-=== Week 9
-
-JavaScript. Ajax.
-
-=== Week 10
-
-Security. Artificial intelligence.
-
-=== Week 11
-
-Artificial intelligence, continued. 
-
-=== Week 12
-
-Exciting conclusion.
 
 == Sections
 
@@ -194,7 +128,7 @@ A schedule of office hours will appear on the course's website.
 
 == Walkthroughs
 
-Integrated into problem sets are "walkthroughs," videos that offer direction on where to begin and how to approach problems. At 1pm on most Wednesdays are walkthroughs also held live in Sanders Theatre; you are welcome but not expected to attend.
+Integrated into problem sets are "walkthroughs," videos that offer direction on where to begin and how to approach problems. At 1pm on most Wednesdays in Sanders Theatre, the course also offers walkthroughs for students who would like additional guidance on problem sets; you are welcome but not expected to attend.
 
 == Postmortems
 
@@ -224,27 +158,13 @@ A schedule of problem sets, subject to change, appears below.
 | Problem Set 8 | JavaScript | Fri 11/4 | Mon 11/14, noon
 |===
 
-== Quizzes
+== Test
 
-The course has two 75-minute quizzes. These quizzes are "closed-book," but you may utilize during each quiz one two-sided page (8.5" × 11") of handwritten or typed notes, blank scrap paper, and a pen or pencil, nothing else. 
+Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 6 (and Problem Sets 0 through 5). The test is open-book: you may use any and all resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
 
-When final grades are computed, your scores on these two quizzes are weighted equally.
+== Quiz
 
-Unless arranged with the course's heads in advance, quizzes cannot ordinarily be taken at alternative times even if missed by accident, except in cases of medical emergency.
-
-A schedule of quizzes, subject to change, appears below. These quizzes take place at 1pm in lieu of lectures on these dates. Simultaneously enrolled students are expected to sit for these quizzes at 5:30pm on these same dates unless otherwise arranged with the course's heads in advance.
-
-=== Quiz 0
-
-__Wed 10/14__
-
-Covers weeks 0 through 5.
-
-=== Quiz 1
-
-__Wed 11/18__
-
-Covers weeks 0 through 11 with emphasis on 6 onward.
+Due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 7 (and Problem Set 6) onward. The quiz is open-book: you may use any and all resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
 
 == Final Project
 
