@@ -11,8 +11,6 @@ asciidoctor:
   - showtitle
   - source-highlighter=pygments
   - stylesdir=css
-  - toc=left
-  - toclevel=4
 collections:
   pages:
     output: true
