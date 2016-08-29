@@ -13,6 +13,6 @@ RUN git clone https://github.com/asciidoctor/jekyll-asciidoc && \
     gem install bundler jekyll && \
     bundle --path=.bundle/gems && \
     bundle exec rake build && \
-    gem install pkg/jekyll-asciidoc-*.dev.gem
+    gem install pkg/jekyll-asciidoc-*.dev.gem pygments.rb
 
 RUN echo "This is CS50 CLI with Jekyll." > /etc/motd

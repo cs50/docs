@@ -1,35 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en"> <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Syllabus</title>
 
-<html>
-    <head>
-        <link rel="stylesheet" href="/css/asciidoctor-default.css"/>
-        <link rel="stylesheet" href="/css/asciidoc-pygments.css"/>
-        <title>Syllabus</title>
-    </head>
-    <body class="toc2 toc-left">
-        <div id="toc">
-            <ul class="sectlevel1">
-<li><a href="#description">Description</a></li>
-<li><a href="#expectations">Expectations</a></li>
-<li><a href="#website">Website</a></li>
-<li><a href="#grades">Grades</a></li>
-<li><a href="#simultaneous-enrollment">Simultaneous Enrollment</a></li>
-<li><a href="#books">Books</a></li>
-<li><a href="#lectures">Lectures</a></li>
-</ul>
-        </div>
-        <div id="content">
-            <h1>Syllabus</h1>
+
+    <meta name="description"
+          content="Update what your Blog is about in this section"/>
+
+    <meta name="author" content="Your name goes here"/>
+    <meta name="copyright" content="Maybe consider a Creative Commons license"/>
+
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/coderay.css"/>
+    <link rel="stylesheet" href="css/asciidoctor.css"/>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/toc.js"></script>
+</head>
+<body>
+
+
+<!-- Nav Bar -->
+
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+            <h1>
+                <a href="">
+                    Syllabus
+                </a>
+            </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+
+        <h1>Syllabus</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c">#include &lt;stdio.h&gt;
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
 
-int main(void)
-{
-    printf("hello, world\n");
-}</code></pre>
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;hello, world</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
@@ -90,6 +120,60 @@ int main(void)
 </div>
 </div>
 </div>
+
+    </div>
+
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+
+    <aside class="large-3 columns">
+
+        <h4>Posts</h4>
+        <ul id="posts" class="posts nav">
+            
+        </ul>
+
+        <div class="panel">
+            <h5>Featured</h5>
+
+            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon
+                nulla pork belly cupidatat meatloaf cow.</p>
         </div>
-    </body>
+
+    </aside>
+
+    <!-- End Sidebar -->
+</div>
+
+<!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+
+<footer class="row">
+    <div class="large-12 columns">
+        <hr/>
+        <div class="row">
+            <div class="large-12 columns">
+                <p>Footer</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script>
+    $(document).foundation();
+
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
+</body>
 </html>

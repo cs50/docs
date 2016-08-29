@@ -1,5 +1,5 @@
 ---
-layout: 2016/fall
+layout: default
 ---
 
 = Syllabus
