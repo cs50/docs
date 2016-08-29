@@ -2,17 +2,25 @@ asciidoc:
   ext: adoc
 asciidoctor:
   attributes:
-    - data-uri
-    - idprefix=
-    - imagesdir=.
-    - pygments-css=class
-    - pygments-stylesheet=any
-    - sectlinks
-    - showtitle
-    - source-highlighter=pygments
-    - toc=left
-    - toclevels=4
+  - data-uri
+  - idprefix=
+  - imagesdir=.
+  - linkcss
+  - pygments-css=class
+  - sectlinks
+  - showtitle
+  - source-highlighter=pygments
+  - stylesdir=css
+  - toc=left
+  - toclevels=4
+collections:
+  pages:
+    output: true
+    permalink: /:path
 destination: docs
+exclude:
+- Dockerfile 
+- Makefile
 gems:
-  - jekyll-asciidoc
-source: src
+- jekyll-asciidoc
+layouts_dir: _layouts
