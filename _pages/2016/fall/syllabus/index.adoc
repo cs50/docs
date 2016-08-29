@@ -3,7 +3,6 @@ layout: 2016/fall
 ---
 
 = Syllabus
-:toc: left
 
 version 4
 
