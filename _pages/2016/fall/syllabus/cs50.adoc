@@ -8,7 +8,7 @@ title: Syllabus
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience
 
-CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but students are only expected to attend in person the course's first lecture on Wednesday 8/31 and last lecture on Monday 11/21. Students with conflicts can watch those lectures online. Sections to be arranged. Students may simultaneously enroll in CS50 and another course that meets at the same time. To do so, students should enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to their crimson carts as well. Undergraduates, GSAS students, and cross-registered students may take CS50 either Satisfactory/Unsatisfactory (SAT/UNS) or for a letter grade. Under Gen Ed's Current Requirements, CS50 satisfies Empirical and Mathematical Reasoning. Under Gen Ed's Current Requirements with Flexibility, CS50 satisfies Quantitative Reasoning. Under Gen Ed's new requirements, CS50 will satisfy Natural Sciences & SEAS. See https://cs50.harvard.edu/[cs50.harvard.edu] for FAQs.
+CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but students are only expected to attend in person the course's first lecture on Wednesday 8/31 and last lecture on Monday 11/21. Students with conflicts can watch those lectures online. Sections to be arranged. Students may simultaneously enroll in CS50 and another course that meets at the same time. To do so, students should enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to their Crimson Carts as well. Undergraduates, GSAS students, and cross-registered students may take CS50 either Satisfactory/Unsatisfactory (SAT/UNS) or for a letter grade. Under Gen Ed's Current Requirements, CS50 satisfies Empirical and Mathematical Reasoning. Under Gen Ed's Current Requirements with Flexibility, CS50 satisfies Quantitative Reasoning. Under Gen Ed's new requirements, CS50 will satisfy Natural Sciences & SEAS. See https://cs50.harvard.edu/[cs50.harvard.edu] for FAQs.
 
 == Expectations
 
@@ -47,7 +47,7 @@ The course is not graded on a curve. The course does not have pre-determined cut
 
 == Simultaneous Enrollment
 
-Ordinarily, you may not enroll in courses that meet at the same time or overlapping times. However, you may enroll in CS50 and another course whose meetings overlap fully or partially with CS50. To do so, enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to your crimson cart as well. You do not need anyone's permission or signature, and you do not need to petition the Administrative Board.
+Ordinarily, you may not enroll in courses that meet at the same time or overlapping times. However, you may enroll in CS50 and another course whose meetings overlap fully or partially with CS50. To do so, enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to your Crimson Cart as well. You do not need anyone's permission or signature, and you do not need to petition the Administrative Board.
 
 == Books 
 
@@ -96,7 +96,7 @@ A schedule of lectures, subject to change, appears below.
 | Week 8 | HTTP | Tue 10/18, 12:30pm – 3:30pm | Fri 10/21, noon
 | Week 9 | SQL | Mon 10/24, 12pm – 3pm | Fri 10/28, noon
 | Week 10 | JavaScript | Mon 10/31, 11:30am – 2:30pm | Fri 11/4, noon
-| Week 11 | The End | Mon 11/21, 1:00pm – 2:30pm | Mon 11/21, 1:00pm
+| Week 11 | The End | Mon 11/21, 1pm – 2:30pm | Mon 11/21, 1pm
 |===
 
 == Sections
@@ -127,7 +127,7 @@ pass:[*] Course-wide and filmed.
 
 Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants. 
 
-A schedule of office hours will appear on the course's website.
+Office hours begin on Wed 9/7. A schedule of office hours will appear on the course's website.
 
 == Walkthroughs
 
@@ -163,11 +163,11 @@ A schedule of problem sets, subject to change, appears below.
 
 == Test
 
-Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 6 (and Problem Sets 0 through 5). The test is open-book: you may use any and all resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 6 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
 
 == Quiz
 
-Due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 7 (and Problem Set 6) onward. The quiz is open-book: you may use any and all resources during the quiz , but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+Due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 7 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
 
 == Final Project
 
@@ -185,7 +185,7 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 | Status Report | Mon 11/28, noon
 | CS50 Hackathon | Thu 12/1, 7pm – Fri 12/2, 7am
 | Implementation | Sun 12/4,* noon
-| CS50 Fair | Mon 12/5,* 11:30am – 4:30pm
+| CS50 Fair | Mon 12/5,* 11am – 4:30pm
 |===
 
 pass:[*] To be confirmed.
