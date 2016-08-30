@@ -6,7 +6,7 @@ title: CSCI E-50a Syllabus
 
 = CSCI E-50a Syllabus
 
-Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience
 
 *This course represents the first half of CSCI E-50. When taken in conjunction with CSCI E-50b, this course effectively allows students twice as much time to work through CSCI E-50's curriculum. When taken in coordination with a high school offering Advanced Placement courses, this course aligns to the AP Computer Science Principles curriculum framework, and students who earn satisfactory grades in the course may be able to earn AP credit.*
 
