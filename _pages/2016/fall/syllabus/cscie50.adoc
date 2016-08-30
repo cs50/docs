@@ -1,6 +1,6 @@
 ---
 layout: 2016/fall
-title: Syllabus
+title: CSCI E-50 Syllabus
 ---
 :skip-front-matter:
 
@@ -8,7 +8,7 @@ title: Syllabus
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience
 
-CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but students are only expected to attend in person the course's first lecture on Wednesday 8/31 and last lecture on Monday 11/21. Students with conflicts can watch those lectures online. Sections to be arranged. Students may simultaneously enroll in CS50 and another course that meets at the same time. To do so, students should enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to their Crimson Carts as well. Undergraduates, GSAS students, and cross-registered students may take CS50 either Satisfactory/Unsatisfactory (SAT/UNS) or for a letter grade. Under Gen Ed's Current Requirements, CS50 satisfies Empirical and Mathematical Reasoning. Under Gen Ed's Current Requirements with Flexibility, CS50 satisfies Quantitative Reasoning. Under Gen Ed's new requirements, CS50 will satisfy Natural Sciences & SEAS. See https://cs50.harvard.edu/[cs50.harvard.edu] for FAQs.
+CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre. Sections will be arranged at the beginning of the course. Undergraduates, GSAS students, and cross-registered students may take CS50 either Satisfactory/Unsatisfactory (SAT/UNS) or for a letter grade. Under Gen Ed's Current Requirements, CS50 satisfies Empirical and Mathematical Reasoning. Under Gen Ed's Current Requirements with Flexibility, CS50 satisfies Quantitative Reasoning. Under Gen Ed's new requirements, CS50 will satisfy Natural Sciences & SEAS. See https://cs50.harvard.edu/[cs50.harvard.edu] for FAQs.
 
 == Expectations
 
@@ -43,13 +43,9 @@ Although you must submit all nine problem sets, your lowest score among those pr
 
 Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between. However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in Week 11, end up relative to yourself in Week 0.
 
-The course is not graded on a curve. The course does not have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable. Each student's final grade is individually determined at term's end after input from the teaching fellows. Remarkable effort and upward trending are considered. 
+The course is not graded on a curve. The course does not have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable. Each student's final grade is individually determined at term's end after input from the teaching fellows. Remarkable effort and upward trending are considered.
 
-== Simultaneous Enrollment
-
-Ordinarily, you may not enroll in courses that meet at the same time or overlapping times. However, you may enroll in CS50 and another course whose meetings overlap fully or partially with CS50. To do so, enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to your Crimson Cart as well. You do not need anyone's permission or signature, and you do not need to petition the Administrative Board.
-
-== Books 
+== Books
 
 No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, https://cs50.harvard.edu/resources[resources] can be found on the course's website.
 
@@ -62,7 +58,7 @@ _Hacker's Delight_, Second Edition +
 Henry S. Warren Jr. +
 Pearson Education, 2013 +
 ISBN 0-321-84268-5
- 
+
 _How Computers Work_, Tenth Edition +
 Ron White +
 Que Publishing, 2014 +
@@ -75,11 +71,9 @@ ISBN 0-321-77641-0
 
 == Lectures
 
-CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but you are only expected to attend in person the course's first lecture on Wed 8/31 and last lecture on Mon 11/21. If you've a conflict, though, you're welcome to watch those lectures online.
+CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre. Most lectures, except those for Week 0 and Week 11, are filmed in Sanders a few days in advance, with videos thereof released on Fridays so that you have access to problem sets' material at the time the problem set is released; you are welcome but not expected to attend those filmings. On Wednesdays, CS50 holds "walkthroughs" in Sanders for students who would like additional guidance on problem sets; you are welcome but not expected to attend those walkthroughs.
 
-Other lectures are filmed in Sanders a few days in advance, with videos thereof released on Fridays so that you have access to problem sets' material earlier than in past years; you are welcome but not expected to attend those filmings. On Wednesdays, CS50 holds "walkthroughs" in Sanders for students who would like additional guidance on problem sets; you are welcome but not expected to attend those walkthroughs.
-
-A schedule of lectures, subject to change, appears below. 
+A schedule of lectures, subject to change, appears below.
 
 |===
 2+| Lecture | Filmed | Released
@@ -101,31 +95,31 @@ A schedule of lectures, subject to change, appears below.
 
 == Sections
 
-Lectures are supplemented by weekly, 90-minute sections led by the teaching fellows. Different sections are offered for those less comfortable, those more comfortable, and those somewhere in between. You will be asked for your sectioning preferences on Problem Set 0, and you will be assigned to a section (and teaching fellow) shortly thereafter.
+Lectures are supplemented by weekly, 90-minute sections led by the teaching fellows. Different sections are offered for those less comfortable, those more comfortable, and those somewhere in between, enrollment permitting. You will be asked for your sectioning preferences on Problem Set 0, and you will be assigned to a section (and teaching fellow) shortly thereafter.
 
-A schedule of sections, subject to change, appears below.
+A schedule of sections appears below. After sectioning is complete, this list will be updated with specific dates within the given weeks.
 
 |===
 | Section | Dates
 
 | C | Wed 9/7*
-| Arrays | Mon 9/12, Tue 9/13, Wed 9/14
-| Algorithms | Mon 9/19, Tue 9/20, Wed 9/21
-| File I/O | Mon 9/26, Tue 9/27, Wed 9/28
-| Data Structures | Mon 10/3, Tue 10/4, Wed 10/5
-| Review for Test | Mon 10/10, Tue 10/11, Wed 10/12
-| TF's Choice | Mon 10/17, Tue 10/18, Wed 10/19
-| Python | Mon 10/24, Tue 10/25, Wed 10/26
-| SQL | Mon 10/31, Tue 11/1, Wed 11/2
-| JavaScript | Mon 11/7, Tue 11/8, Wed 11/9
+| Arrays | week of Sun 9/11
+| Algorithms | week of Sun 9/18
+| File I/O | week of Sun 9/25
+| Data Structures | week of Sun 10/2
+| Review for Test | week of Sun 10/9
+| TF's Choice | week of Sun 10/16
+| Python | week of Sun 10/23
+| SQL | week of Sun 10/30
+| JavaScript | week of Sun 11/6
 | Review for Quiz | Mon 11/14*
 |===
 
 pass:[*] Course-wide and filmed.
 
-== Office Hours 
+== Office Hours
 
-Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants. 
+Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants.
 
 Office hours begin on Wed 9/7. A schedule of office hours will appear on the course's website.
 
@@ -196,7 +190,7 @@ Dinner will be served around 9pm, second dinner will be served around 1am, and t
 
 == CS50 Fair
 
-From 11am until 4:30pm on Fri 12/9 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
+From 11am until 4:30pm on Fri 12/9 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is strongly encouraged for all students.
 
 Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
 
