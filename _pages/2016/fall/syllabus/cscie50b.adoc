@@ -20,7 +20,7 @@ You are expected to
 
 == Website
 
-https://cs50.harvard.edu/cscie50b.
+https://cs50.harvard.edu/cscie50b
 
 == Grades
 
