@@ -3,6 +3,7 @@ asciidoc:
 asciidoctor:
   attributes:
   - data-uri
+  - icons=font
   - idprefix=
   - imagesdir=.
   - linkcss

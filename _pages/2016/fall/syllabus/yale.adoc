@@ -1,10 +1,10 @@
 ---
 layout: 2016/fall
-title: Syllabus
+title: CS50 Syllabus
 ---
 :skip-front-matter:
 
-= Syllabus
+= CS50 Syllabus
 
 Introduction to the intellectual enterprises of computer science and to the art of programming. Students learn how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript, plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. See
 CS50's website, https://cs50.yale.edu, for additional information.
@@ -12,6 +12,8 @@ CS50's website, https://cs50.yale.edu, for additional information.
 CS50 officially meets on Thursdays, from 4pm until 5:15pm in Sheffield-Sterling-Strathcona Hall (SSS) Room 114, but students are only expected to attend in person the course's first lecture on Thursday 9/1, mid-semester lecture on Thursday 10/13, and final lecture on Thursday 11/17. Sections to be arranged.
 
 Students may take CS50 either Credit/D/Fail or for a letter grade. CS50 satisfies the Quantitative Reasoning Skill requirement. Graduate and professional students are welcome to enroll in CS50.
+
+See http://cs50.ly/new[cs50.ly/new] for what's new and why.
 
 == Expectations
 
@@ -81,21 +83,21 @@ Other lectures are filmed a few days in advance, with videos thereof released on
 A schedule of lectures, subject to change, appears below. 
 
 |===
-2+| Lecture | Filmed | Released
+2+| Lecture | Date
 
-| Week 0 | Scratch | Thu 9/1, 4pm – 5:15pm | Thu 9/1, 4pm
-| Week 1 | C | in advance | Fri 9/2, noon
-| Week 2 | Arrays | in advance  | Fri 9/9, noon
-| Week 3 | Algorithms | in advance | Fri 9/16, noon
-| Week 4 | Memory | in advance | Fri 9/23, noon
-| Week 5 | Data Structures | in advance | Fri 9/30, noon
-.2+| Week 6 | ... | in advance | Fri 10/7, noon
-| Machine Learning | Thu 10/13, 4pm – 5:15pm | Thu 10/13, 4pm
-| Week 7 | Python | in advance | Fri 10/14, noon
-| Week 8 | HTTP | in advance | Fri 10/21, noon
-| Week 9 | SQL | in advance | Fri 10/28, noon
-| Week 10 | JavaScript | in advance | Fri 11/4, noon
-| Week 11 | The End | Thu 11/17, 4pm – 5:15pm | Thu 11/17, 4pm
+| Week 0 | Scratch | Thu 9/1, 4pm – 5:15pm
+| Week 1 | C | released Fri 9/2, noon
+| Week 2 | Arrays | released Fri 9/9, noon
+| Week 3 | Algorithms | released Fri 9/16, noon
+| Week 4 | Memory | released Fri 9/23, noon
+| Week 5 | Data Structures | released Fri 9/30, noon
+.2+| Week 6 | ... | released Fri 10/7, noon
+| Machine Learning | Thu 10/13, 4pm – 5:15pm
+| Week 7 | Python | released Fri 10/14, noon
+| Week 8 | HTTP | released Fri 10/21, noon
+| Week 9 | SQL | released Fri 10/28, noon
+| Week 10 | JavaScript | released Fri 11/4, noon
+| Week 11 | The End | Thu 11/17, 4pm – 5:15pm
 |===
 
 == Sections

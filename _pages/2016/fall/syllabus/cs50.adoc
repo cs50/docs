@@ -1,14 +1,16 @@
 ---
 layout: 2016/fall
-title: Syllabus
+title: CS50 Syllabus
 ---
 :skip-front-matter:
 
-= Syllabus
+= CS50 Syllabus
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
 CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sanders Theatre, but students are only expected to attend in person the course's first lecture on Wednesday 8/31 and last lecture on Monday 11/21. Students with conflicts can watch those lectures online. Sections to be arranged. Students may simultaneously enroll in CS50 and another course that meets at the same time. To do so, students should enroll in the other course via http://my.harvard.edu/[my.harvard.edu], and then email enrollment@fas.harvard.edu to have CS50 manually added to their Crimson Carts as well. Undergraduates, GSAS students, and cross-registered students may take CS50 either Satisfactory/Unsatisfactory (SAT/UNS) or for a letter grade. Under Gen Ed's Current Requirements, CS50 satisfies Empirical and Mathematical Reasoning. Under Gen Ed's Current Requirements with Flexibility, CS50 satisfies Quantitative Reasoning. Under Gen Ed's new requirements, CS50 will satisfy Natural Sciences & SEAS. See https://cs50.harvard.edu/[cs50.harvard.edu] for FAQs.
+
+See http://cs50.ly/new[cs50.ly/new] for what's new and why.
 
 == Expectations
 
