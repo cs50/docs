@@ -22,6 +22,8 @@ You are expected to
 
 https://cs50.harvard.edu/cscie50b
 
+In Fall 2016, the course is experimentally using a Google Classroom site to manage submissions, deadlines, and student work. Upon visiting the link, you can join the course's classroom with the join code **dh01zz**. If you encounter any difficulties, please contact the course's heads.
+
 == Grades
 
 All students must ordinarily submit all four problem sets, take the quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
