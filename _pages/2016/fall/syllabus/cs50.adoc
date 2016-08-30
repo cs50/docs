@@ -184,11 +184,9 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 | Proposal | Fri 11/11, noon
 | Status Report | Mon 11/28, noon
 | CS50 Hackathon | Thu 12/1, 7pm – Fri 12/2, 7am
-| Implementation | Sun 12/4,* noon
-| CS50 Fair | Mon 12/5,* 11am – 4:30pm
+| Implementation | Thu 12/8, noon
+| CS50 Fair | Fri 12/9, 11am – 4:30pm
 |===
-
-pass:[*] To be confirmed.
 
 == CS50 Hackathon
 
@@ -198,11 +196,9 @@ Dinner will be served around 9pm, second dinner will be served around 1am, and t
 
 == CS50 Fair
 
-From 11am until 4:30pm on Mon 12/5* is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
+From 11am until 4:30pm on Fri 12/9 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
 
 Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
-
-pass:[*] To be confirmed.
 
 include::../honesty.adoc[]
 
