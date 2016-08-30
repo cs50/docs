@@ -3,7 +3,7 @@ FROM cs50/cli
 # jekyll-asciidoc
 RUN apt-add-repository -y ppa:brightbox/ruby-ng && \
     apt-get update && \
-    DEBIAN_FRONTEND=noninteractive sudo -E apt-get install -y ruby2.3 ruby2.3-dev
+    DEBIAN_FRONTEND=noninteractive apt-get install -y ruby2.3 ruby2.3-dev
 #RUN gem install jekyll-asciidoc pygments.rb
 
 # https://github.com/asciidoctor/jekyll-asciidoc/issues/135#issuecomment-241948040
