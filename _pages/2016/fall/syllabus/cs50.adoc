@@ -88,7 +88,8 @@ A schedule of lectures, subject to change, appears below.
 | Week 3 | Algorithms | Mon 9/12, 12:30pm – 3:30pm | Fri 9/16, noon
 | Week 4 | Memory | Tue 9/13, 12:30pm – 3:30pm | Fri 9/23, noon
 | Week 5 | Data Structures | Mon 9/26, 12pm – 3pm | Fri 9/30, noon
-| Week 6 | ... | Mon 10/3, 11:30am – 2:30pm | Fri 10/7, noon
+.2+| Week 6 | ... | Mon 10/3, 11:30am – 2:30pm | Fri 10/7, noon
+| TBD | Thu 10/13, 4pm – 5:15pm | Thu 10/13, 4pm
 | Week 7 | Python | Wed 10/5, 12pm – 3pm | Fri 10/14, noon
 | Week 8 | HTTP | Tue 10/18, 12:30pm – 3:30pm | Fri 10/21, noon
 | Week 9 | SQL | Mon 10/24, 12pm – 3pm | Fri 10/28, noon
