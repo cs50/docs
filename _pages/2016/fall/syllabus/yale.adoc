@@ -6,7 +6,8 @@ title: Syllabus
 
 = Syllabus
 
-Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for majors and non-majors alike, with or without prior programming experience.
+Introduction to the intellectual enterprises of computer science and to the art of programming. Students learn how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript, plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. See
+CS50's website, https://cs50.yale.edu, for additional information.
 
 CS50 officially meets on Thursdays, from 4pm until 5:15pm in Sheffield-Sterling-Strathcona Hall (SSS) Room 114, but students are only expected to attend in person the course's first lecture on Thursday 9/1, mid-semester lecture on Thursday 10/13, and final lecture on Thursday 11/17. Sections to be arranged.
 
