@@ -118,7 +118,7 @@ A schedule of sections, subject to change, appears below. All teaching assistant
 | Python | Mon 10/24, Tue 10/25
 | SQL | Mon 10/31, Tue 11/1
 | JavaScript | Mon 11/7, Tue 11/8
-| Review for Quiz | Mon 11/14, Tue, 11/15
+| Review for Quiz | Mon 11/14, Tue 11/15
 |===
 
 pass:[*] Course-wide.
