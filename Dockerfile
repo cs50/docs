@@ -1,7 +1,8 @@
 FROM cs50/cli
 
 # jekyll-asciidoc
-RUN apt-add-repository -y ppa:brightbox/ruby-ng && \
+RUN apt-get update && \
+    apt-add-repository -y ppa:brightbox/ruby-ng && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y ruby2.3 ruby2.3-dev
 #RUN gem install jekyll-asciidoc pygments.rb
