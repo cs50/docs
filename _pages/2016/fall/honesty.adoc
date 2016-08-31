@@ -41,5 +41,5 @@ If you commit some act that is not reasonable but bring it to the attention of t
 * Submitting (after possibly modifying) the work of another individual beyond the few lines allowed herein.
 * Submitting the same or similar work to this course that you have submitted or will submit to another.
 * Submitting work to this course that you intend to use outside of the course (e.g., for a job) without prior approval from the course's heads.
-* Turning to humans (besides the course's headsa) for help or receiving help from humans (besides the course's heads) during the quiz or test.
+* Turning to humans (besides the course's heads) for help or receiving help from humans (besides the course's heads) during the quiz or test.
 * Viewing another's solution to a problem set's problem and basing your own solution on it.

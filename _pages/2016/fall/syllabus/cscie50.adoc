@@ -47,7 +47,7 @@ The course is not graded on a curve. The course does not have pre-determined cut
 
 == Books
 
-No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, https://cs50.harvard.edu/resources[resources] can be found on the course's website.
+No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, resources can be found on the course's website.
 
 _C Programming Absolute Beginner's Guide_, Third Edition +
 Greg Perry, Dean Miller +
