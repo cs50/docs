@@ -12,9 +12,7 @@ CS50 officially meets on Mondays and Wednesdays, from 1pm until 2:30pm in Sander
 
 See http://cs50.ly/new[cs50.ly/new] for what's new and why.
 
-== tl;dr
-
-See Week 0's link:cs50-tldr.html[cover page].
+include::cs50-tldr.adoc[]
 
 == Expectations
 
