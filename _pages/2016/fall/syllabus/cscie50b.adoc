@@ -22,7 +22,7 @@ You are expected to
 
 https://cs50.harvard.edu/cscie50b
 
-In Fall 2016, the course is experimentally using a Google Classroom site to manage submissions, deadlines, and student work. Upon visiting the link, you can join the course's classroom with the join code **dh01zz**. If you encounter any difficulties, please contact the course's heads.
+In Fall 2016, the course is experimentally using a Google Sites page to manage submissions, deadlines, and student work. 
 
 == Grades
 
