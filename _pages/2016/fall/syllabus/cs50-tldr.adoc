@@ -8,11 +8,11 @@ title: CS50 Syllabus
 
 == tl;dr
 
-See +++<u>cs50.ly/new</u>+++ for what's new and why. See +++<u>cs50.ly/faqs</u>+++ for FAQs. See +++<u>cs50.harvard.edu</u>+++ for CS50's website.
- 
+See +++<u>cs50.ly/new</u>+++ for what's new and why. See +++<u>cs50.ly/faqs</u>+++ for FAQs.
+
 .Lectures
-* This is CS50's first lecture, aka Week 0, 1pm – 2:30pm.
-** We'll take a short break around 2pm. No worries if you need to leave early to shop; watch the rest of this lecture on video at +++<u>cs50.harvard.edu</u>+++.
+* This is CS50's first lecture, aka Week 0, 1pm – 2:30pm. Short break around 2pm.
+** Aok if you need to leave early to shop; watch rest of lecture on video at +++<u>cs50.harvard.edu</u>+++.
 * Students are only expected to attend CS50's first lecture (today) and last lecture on Mon 11/21.
 ** Watch Week 1's lecture on video at +++<u>cs50.harvard.edu</u>+++ this weekend or early next week.
 * Students may simultaneously enroll in CS50 and another course that meets at the same time.
@@ -25,7 +25,11 @@ See +++<u>cs50.ly/new</u>+++ for what's new and why. See +++<u>cs50.ly/faqs</u>+
 .Problem Sets
 * Problem Set 0
 ** Posted at +++<u>cs50.harvard.edu</u>+++ already.
-** Due by Mon 9/5 at noon. If you decide to add CS50 late, not to worry; email +++<u>heads@cs50.harvard.edu</u>+++ to arrange an alternative deadline. All other problem sets have 10-day timeframes.
+** Due by Mon 9/5 at noon. If you add CS50 late, not to worry; email +++<u>heads@cs50.harvard.edu</u>+++ to arrange alternative deadline. All other problem sets have 10-day timeframes.
 * Problem Set 1
 ** To be posted at +++<u>cs50.harvard.edu</u>+++ this Fri 9/2.
 ** Due by Mon 9/12 at noon.
+
+.CS50 Puzzle Day
+* This Sat 9/3, 12pm – 3:30pm, at i-lab.
+* Register at +++<u>cs50.harvard.edu/register</u>+++.
