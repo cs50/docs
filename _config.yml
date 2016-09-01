@@ -16,7 +16,6 @@ asciidoctor:
   safe: 0
 destination: docs
 exclude:
-- CNAME
 - Dockerfile 
 - Makefile
 - README.md 
