@@ -5,12 +5,14 @@ Email heads@cs50.yale.edu with questions.
 
 .Lectures
 * Thu 9/1 is CS50's first lecture, aka Week 0, 4pm – 5:15pm.
-* Students are only expected to attend CS50's first lecture, mid-semester lecture, and last lecture on Thu 11/17.
+* Students are only expected to attend CS50's first lecture, mid-semester lecture on Thu 10/13, and final lecture on Thu 11/17.
 ** Watch Week 1's lecture at https://cs50.yale.edu/[cs50.yale.edu] this weekend or early next week.
 
 .Sections
 * When submitting Problem Set 0, you'll be asked to section.
 * Course-wide "supersections" will be offered next week that anyone can attend (or watch).
+** Tue 9/6, 2:30pm – 4pm, in Watson Center B60 for those less comfortable.
+** Tue 9/6, 4pm – 5:30pm, in Watson Center B60 for those more comfortable.
 * Assigned sections will begin the week after next.
 
 .Problem Sets
