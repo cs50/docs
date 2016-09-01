@@ -14,10 +14,6 @@ asciidoctor:
   - stylesdir=css
   base_dir: :docdir
   safe: 0
-collections:
-  pages:
-    output: true
-    permalink: /:path
 destination: docs
 exclude:
 - Dockerfile 

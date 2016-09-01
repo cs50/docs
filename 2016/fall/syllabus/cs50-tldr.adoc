@@ -1,3 +1,7 @@
+---
+published: false
+---
+
 == tl;dr
 
 See http://cs50.ly/new[cs50.ly] for what's new and why. See http://cs50.ly/faqs[cs50.ly/faqs] for FAQs. +
