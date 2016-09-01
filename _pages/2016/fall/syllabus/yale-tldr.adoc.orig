@@ -1,0 +1,34 @@
+---
+layout: 2016/fall
+title: CS50 Syllabus
+---
+:skip-front-matter:
+
+= CS50 Syllabus
+
+== tl;dr
+
+See +++<u>cs50.ly</u>+++ for what's new and why. See +++<u>cs50.yale.edu/faqs</u>+++ for FAQs. +
+Email +++<u>heads@cs50.yale.edu</u>+++ with questions.
+
+.Lectures
+* Thu 9/1 is CS50's first lecture, aka Week 0, 4pm – 5:15pm.
+* Students are only expected to attend CS50's first lecture and last lecture on Thu 11/17.
+** Watch Week 1's lecture at +++<u>cs50.yale.edu</u>+++ this weekend or early next week.
+
+.Sections
+* When submitting Problem Set 0, you'll be asked to section.
+* Course-wide "supersections" will be offered next week that anyone can attend (or watch).
+* Assigned sections will begin the week after next.
+
+.Problem Sets
+* Problem Set 0
+** Posted already at +++<u>cs50.yale.edu</u>+++.
+** Due by Mon 9/5 at noon. If you add CS50 late, not to worry; email +++<u>heads@cs50.yale.edu</u>+++ to arrange alternative deadline. All other problem sets have 10-day timeframes.
+* Problem Set 1
+** To be posted this Fri 9/2 at +++<u>cs50.yale.edu</u>+++.
+** Due by Mon 9/12 at noon.
+
+.CS50 Puzzle Day
+* This Sat 9/3, 12pm – 3:30pm, at 17 Hillhouse.
+* Register at +++<u>cs50.yale.edu/register</u>+++ (or upon arrival).

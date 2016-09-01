@@ -15,6 +15,10 @@ Students may take CS50 either Credit/D/Fail or for a letter grade. CS50 satisfie
 
 See http://cs50.ly/new[cs50.ly/new] for what's new and why.
 
+== tl;dr
+
+include::yale-tldr.adoc[]
+
 == Expectations
 
 You are expected to
