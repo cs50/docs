@@ -46,7 +46,7 @@ image::tally_marks.png[alt="Tally marks", width=300]
 
       *0*          *0*          *1*
 
-            1 x 1
+             1 x 1
 ----
 * And a 2 like so:
 +
@@ -115,7 +115,7 @@ image::tally_marks.png[alt="Tally marks", width=300]
 * And with lots of images, one after another, we get videos.
 * Now that we can represent inputs and outputs, we can start solving problems.
 
-[t=1m0s]
+[t=16m11s]
 == Algorithms
 
 * *Algorithms* are sets of instructions to solve particular problems.
@@ -157,13 +157,13 @@ image::tally_marks.png[alt="Tally marks", width=300]
 * We also have lines like `go back to step 2` that induce a loop, where there is a cycle that does something over and over again.
 * So we can also look at how efficient this algorithm is. The x-axis is the size of the problem, and the y-axis is the time to solve. With `n` as the size of the problem, the red line represents the first algorithm in which time to solve increases with the size of the problem:
 +
-image::efficiency.png[]
+image::efficiency.png[alt="Efficiency", width=800]
 ** The yellow line is the second algorithm, which, though twice as fast, still increases linearly with the size of the problem.
 ** The green line will have a *logarithmic slope* that doesn't increase in height as much as the other lines. With the phone book, even if the size of the phone book doubled, it would only take one more step to solve the problem.
 ** In fact, even if the phone book were 4 billion pages long, we would only need to divide it 32 times before we had just one page left.
 * A good algorithm will solve a problem correctly and efficiently.
 
-[t=2m0s]
+[t=30m57s]
 == About CS50
 
 * To read more in-depth about what changes we've introduced to CS50 this fall, visit http://cs50.ly/new[cs50.ly/new].
@@ -174,7 +174,7 @@ image::efficiency.png[]
 ** We'll start the semester with Scratch, then C, then Python, among others.
 * Here are some statistics from Fall 2015 regarding the average number of hours spent on problem sets:
 +
-image::problem_sets.png[]
+image::problem_sets.png[alt="Problem set hours", width=800]
 * There's definitely variance to the hours students spend on problem sets, but we do encourage students to take CS50 as a first year and with other courses, as we believe we have a support structure for students more and less comfortable alike.
 * Sections, too, have different tracks for students more comfortable, less comfortable, and in between, held Mondays, Tuesdays, and Wednesdays with our amazing teaching staff.
 * Office hours will be every day, with a schedule that will also be posted online.
@@ -186,3 +186,109 @@ image::problem_sets.png[]
 * The CS50 Hackathon is an overnight event at the end of the semester where everyone works to finish (or start) their final projects.
 * And a few days later is the CS50 Fair, an epic display of those final projects and how far students with no prior CS experience have come after just one semester.
 * We watch a video of staff talk about how excited they are for students to take CS50 and learn from the course!
+
+[t=49m33s]
+== Problem Set 0
+
+* Our first problem set will introduce some common building blocks with a graphical language called Scratch.
+* Next week we'll transition to a language called C, which looks like this:
++
+[source, c]
+----
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+}
+----
+** We might be able to guess that this prints `hello, world` to the screen, but there's a lot of weird symbols we don't really understand yet.
+* So we'll use Scratch, which allows us to drag-and-drop blocks that look like this:
++
+image::say.png[alt="Say in Scratch", width=200]
+* We'll be able to express lots of programming concepts with Scratch, and use it to build interactive games or art.
+* For example:
+** *functions*, or actions that do something
+** *loops*, which do something over and over again
+** *variables*, a placeholder for values
+** *Boolean expressions*, true or false questions
+** *conditions*, branches or forks in the road
+** *arrays*, *threads*, *events*, fancier constructs we'll look at as we go along
+* So functions like `say` in Scratch will be a purple puzzle piece:
++
+image::say_function.png[alt="Say function in Scratch", width=200]
+** Notice that there's a argument, or parameter, in this case the white text box that we type in `hello, world`, to customize what the function does.
+* A loop will look like this, and indicate something happening over and over again in a cycle:
++
+image::forever.png[alt="Forever in Scratch", width=200]
+* We could also repeat a specific number of times:
++
+image::repeat.png[alt="Repeat in Scratch", width=200]
+* We can create a variable, call it `i`, for an integer, and set its value to `0`:
++
+image::set.png[alt="Setting a variable in Scratch", width=200]
+* Here is what a Boolean expression looks like in Scratch:
++
+image::boolean.png[alt="Boolean in Scratch", width=200]
+* We can also compare any two variables:
++
+image::boolean_variables.png[alt="Boolean with variables in Scratch", width=200]
+* With conditions, we can build something like this:
++
+image::conditions.png[alt="Conditions in Scratch", width=200]
+** This will tell us if `x` is less than, greater than, or equal to `y`.
+** Notice how initially there are two forks, whether `x < y`, and if not, we have two more forks inside, to form a total of three possible forks.
+* An array is like a list, storing multiple pieces of information:
++
+image::array.png[alt="Array in Scratch", width=200]
+* These two blocks represent what we call multithreading, which means that a program can do multiple things at the same time because modern computers themselves are multithreaded.
++
+image::when_clicked.png[alt="Multithreading in Scratch", width=200]
+* There are also events in Scratch:
++
+image::events.png[alt="Events in Scratch", width=200]
+* And a way to make our own custom functions, too:
++
+image::function.png[alt="Function in Scratch", width=200]
+* Back in the day, David created his own game when he discovered Scratch, and now we have a modern recreation of it. Check that out, among other examples, https://scratch.mit.edu/studios/3003963/[here].
+* We notice that, even though there are many moving pieces to this game, we can build each component individually, perhaps just having each item of trash fall from the sky first.
+* Then we could add dragging, and then reacting to being near a trash can.
+* We take a look at the Scratch editor:
++
+image::scratch.png[alt="Editor of Scratch", width=800]
+** The box to the left is the stage, or the area of the program we're working on, and right now it has a default character, Scratch the cat.
+** To the center is a toolbox of blocks we can choose from, in various categories.
+** And to the right is the area where we might drag and drop blocks in to do things.
+* We can drag a few blocks to have Scratch https://scratch.mit.edu/projects/26329230/[say something]:
++
+image::hello2.png[alt="Hello, world of Scratch", width=600]
+* We can experiment with other blocks like `play sound` and `wait` to have Scratch meow.
+* And to have it repeat, instead of dragging the same blocks in over and over again, we can use the https://scratch.mit.edu/projects/119656319/[`repeat` block]:
++
+image::meow.png[alt="Meow", width=200]
+* With a little more experimentation, we can have Scratch go back and forth on the screen and even https://scratch.mit.edu/projects/119656285/[say "ouch"]:
++
+image::ouch.png[alt="Ouch", width=200]
+* Now we'll demonstrate how to use a https://scratch.mit.edu/projects/26329219/[variable]:
++
+image::sheep.png[alt="Sheep", width=200]
+** First, we give our variable a name like `counter`, and then set it to `0`. Then, each time after we say it, we `change counter by 1` to increase it.
+* We can do something a little more interactive, where Scratch will say "meow" when the cursor https://scratch.mit.edu/projects/26329249/[touches it].
++
+image::touching.png[alt="Touching", width=300]
+** And a variation where https://scratch.mit.edu/projects/26329222/[it doesn't] ...
+* A thread is just a series of things that a computer is doing in order, so multiple threads mean that multiple series of things being done at the same time. In https://scratch.mit.edu/projects/26329252/[threads], we have two characters, each of which have a series of blocks associated with them, that both start with a `when green flag clicked`. So when we click the green flag, both characters will start moving simultaneously.
+* And https://scratch.mit.edu/projects/26329236/[another example] has two threads for the same character, where the seal continues to bark until the `muted` variable is set to `1`, or true. Both threads are checking for either the space key being pressed or the value of the `muted` variable, over and over again.
+* And finally, someone went through a lot of effort to implement https://scratch.mit.edu/projects/116739847/[Pokemon Go] in Scratch, and there are lots of building blocks but none much fancier than what we've already played with.
+* If we look at https://scratch.mit.edu/projects/26329207/[another version] of the program we started with, we can see how we can make a custom `cough` puzzle piece:
++
+image::cough.png[alt="Cough", width=200]
+** We defined `cough` with the chunk of blocks below, so our main block up top can simply use `cough` without worrying about how it is implemented.
+* We can https://scratch.mit.edu/projects/26329214/[go even further] and have `cough` itself take in some argument for the number of times to cough, and now we can simply call that block and tell it how many times to cough:
++
+image::cough3.png[alt="Cough 3", width=200]
+* Finally, we can add yet another layer, the `say (word) (n) times` function, so we can generalize this action and create a `cough` and `sneeze` function on top of that, without repeating code (or blocks):
++
+image::cough4.png[alt="Cough 4", width=250]
+** And notice that at top, our program is quite simple in just calling `cough` and `sneeze`, rather than include all the `repeat` and `say` blocks over and over again.
+* Finally, we take a look at https://www.youtube.com/watch?v=bQtE1Fn8tTA[what awaits us] in CS50.
