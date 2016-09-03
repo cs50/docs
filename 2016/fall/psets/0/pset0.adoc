@@ -12,6 +12,14 @@ title: Problem Set 0
 . Program in Scratch.
 . Submit a form. 
 
+== Help
+  
+For help with Week 0 and Problem Set 0:
+    
+* Post questions and search answers in http://cs50.net/discuss[CS50 Discuss].
+* Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
+* Email the course's heads.
+
 == Itching to Program?
 
 Head to https://scratch.mit.edu/ and sign up for an account on MIT's website by clicking **Join Scratch** atop the page. Any username (that's available) is fine, but take care to remember it and your choice of password.
