@@ -2,15 +2,15 @@
 layout: 2016/fall
 title: Problem Set 0
 ---
-:skip-front-matter:
 
 = Problem Set 0
 
 == tl;dr
 
-* Attend or watch Week 0's lecture.
-* Program in Scratch.
-* Submit a form. 
+[start=0]
+. Attend or watch Week 0's lecture.
+. Program in Scratch.
+. Submit a form. 
 
 == Itching to Program?
 
