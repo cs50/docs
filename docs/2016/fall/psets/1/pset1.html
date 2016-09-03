@@ -708,7 +708,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="text">hello, world</code></pre>
+<pre class="pygments highlight"><code data-lang="text">Hello, world!</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -825,7 +825,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
   \ expected hello.c to exist
 <span class="yellow">:| hello.c compiles</span>
   \ can't check until a frown turns upside down
-<span class="yellow">:| prints "hello, world\n"</span>
+<span class="yellow">:| prints "Hello, world!\n"</span>
   \ can't check until a frown turns upside down</code></pre>
 </div>
 </div>
@@ -839,12 +839,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code><span class="green">:) hello.c exists</span>
 <span class="green">:) hello.c compiles</span>
-<span class="red">:( prints "hello, world\n"</span>
-  \ expected output, but not "hello, world"</code></pre>
+<span class="red">:( prints "Hello, world!\n"</span>
+  \ expected output, but not "Hello, world!"</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Odds are, in this case, you printed something other than <code>hello, world\n</code> verbatim, per the spec&#8217;s expectations. In particular, the above suggests you printed <code>hello, world</code>, without a trailing newline (<code>\n</code>).</p>
+<p>Odds are, in this case, you printed something other than <code>Hello, world!\n</code> verbatim, per the spec&#8217;s expectations. In particular, the above suggests you printed <code>Hello, world!</code>, without a trailing newline (<code>\n</code>).</p>
 </div>
 <div class="paragraph">
 <p>Know that <code>check50</code> won&#8217;t actually record your scores in CS50&#8217;s gradebook. Rather, it lets you check your work&#8217;s correctness <em>before</em> you submit your work. Once you actually submit your work (per the directions at this spec&#8217;s end), CS50&#8217;s staff will use <code>check50</code> to evaluate your work&#8217;s correctness officially.</p>

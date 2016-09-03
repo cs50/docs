@@ -190,7 +190,7 @@ at your prompt, followed by Enter, and you should see the below:
 
 [source,text]
 ----
-hello, world
+Hello, world!
 ----
 
 And if you type
@@ -287,7 +287,7 @@ If you instead see yellow or red smileys, it means your code isn't correct! For 
   \ expected hello.c to exist
 [yellow]#:| hello.c compiles#
   \ can't check until a frown turns upside down
-[yellow]#:| prints "hello, world\n"#
+[yellow]#:| prints "Hello, world!\n"#
   \ can't check until a frown turns upside down
 ----
 
@@ -299,11 +299,11 @@ Suppose instead you see the below.
 ----
 [green]#:) hello.c exists#
 [green]#:) hello.c compiles#
-[red]#:( prints "hello, world\n"#
-  \ expected output, but not "hello, world"
+[red]#:( prints "Hello, world!\n"#
+  \ expected output, but not "Hello, world!"
 ----
 
-Odds are, in this case, you printed something other than `hello, world\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `hello, world`, without a trailing newline (`\n`).
+Odds are, in this case, you printed something other than `Hello, world!\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `Hello, world!`, without a trailing newline (`\n`).
 
 Know that `check50` won't actually record your scores in CS50's gradebook. Rather, it lets you check your work's correctness _before_ you submit your work. Once you actually submit your work (per the directions at this spec's end), CS50's staff will use `check50` to evaluate your work's correctness officially. 
 
