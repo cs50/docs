@@ -21,4 +21,3 @@ exclude:
 - README.md 
 gems:
 - jekyll-asciidoc
-layouts_dir: _layouts
