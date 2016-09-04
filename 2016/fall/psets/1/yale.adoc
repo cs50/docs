@@ -17,7 +17,7 @@ If you haven't already, do review the course's policy on academic honesty in the
 . Implement a "greedy algorithm" in `greedy.c` or a "checksum" in `credit.c`.
 . Submit a form.
 
-include::help-harvard.adoc[]
+include::help-yale.adoc[]
 
 == Getting Started
 

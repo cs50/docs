@@ -1,0 +1,15 @@
+---
+published: false
+---
+
+== Help
+
+For help with Week 1 and Problem Set 1:
+ 
+* Attend David's walkthrough on Wed 9/7, 1pm – 2:30pm, in Sanders.
+* Watch Zamyla's walkthroughs herein.
+* Attend one of Week 1's course-wide sections (aka supersections):
+** Wed 9/7, 2:30pm – 4pm, in Emerson 210 for those less comfortable (and somewhere in between)
+** Wed 9/7, 4:30pm – 6pm, in Emerson 2010 for those more comfortable (and somewhere in between)
+* Post questions and search answers in https://cs50.harvard.edu/discuss[CS50 Discuss].
+* Attend https://cs50.harvard.edu/hours[office hours].
