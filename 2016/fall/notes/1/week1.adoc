@@ -466,6 +466,114 @@ n is 0
 ** We can change `n` to `long long` and print it out with `%lld`, but at the last step we still see it "wrap around" to a negative number.
 * In the real world, certain games might use an integer for values, but http://www.geek.com/games/why-gandhi-is-always-a-warmongering-jerk-in-civilization-1608515/[bugs might appear] as they wrap around!
 * More serious bugs could occur with https://www.engadget.com/2015/05/01/boeing-787-dreamliner-software-bug/[jets shutting off], too.
+* Another bug can arise when we have *floating-point imprecision*. Remember that floats have a finite number of bits. But there are an infinite number of real numbers, so a computer has to round and represent some numbers inaccurately.
+* Let's write a simple program to see this firsthand:
++
+[source, c]
+----
+#include <stdio.h>
+
+int main(void)
+{
+    printf("%.55f\n", 1.0 / 10.0);
+}
+----
+** The new part, `%.55f`, just tells `printf` to print 55 digits after the decimal point.
+** And we used `1.0` and `10.0` just to ensure that the types are floats (since we didn't specify them as variables). Alternatively, we could have used `(float) 10` to cast, or specify, `10` to be a floating-point 10 and not an integer 10.
+* Now when we run this, we get:
++
+[source]
+----
+0.100000000000000000555111512312578...
+----
+** Hm, it turns out the closest approximation a computer can make to `0.1` is that number.
+* We watch a https://video.cs50.net/2016/fall/lectures/1?t=78m53s[quick clip] on imprecision in the real world.
+* Just to recap, we now know that there are a few different data types that we can use, and also print with various symbols:
+** `%c`
+** `%f`
+** `%d`
+** `%i`
+** `%lld`
+** `%s`
+** `...`
+* And in addition to `\n` for a new line, we can use certain *escape sequences*, symbols we can type, for `printf` to print tabs or quotes or others:
+** `\a`
+** `\n`
+** `\r`
+** `\t`
+** `\'`
+** `\"`
+** `\\`
+** `\0`
+** `...`
+
+[t=1h29m26s]
+== More C
+
+* Let's write a program that uses more of the same ideas from Scratch, so we can build more complex programs in C:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int i = get_int();
+    if (i < 0)
+    {
+        printf("negative\n");
+    }
+    else if (i > 0)
+    {
+        printf("positive\n");
+    }
+    else
+    {
+        printf("equal\n");
+    }
+}
+----
+** Since we know that by the last `else` `i` is neither greater or less than `0`, we don't need to specify `else if (i == 0)`. And note that we use `==` to compare two variables or values, since a single `=` assigns one value to the other.
+* We can play with some more logic:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int c = get_char();
+    if (c == 'Y' || c == 'y')
+    {
+        printf("yes\n");
+    }
+    else if (c == 'N' || c == 'n')
+    {
+        printf("no\n");
+    }
+    else
+    {
+        printf("error\n");
+    }
+}
+----
+** We get a character `c`, and compare it to either `Y` or `y`, or `N` or `n`. We use `||` in C to represent a logical *or*, where only one of the expressions need to be true for that condition to be followed and `&&` for *and*, where both expressions must be true.
+** Note that we use single quotes around characters, to distinguish them between strings of a single character, which we use double quotes to indicate.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
