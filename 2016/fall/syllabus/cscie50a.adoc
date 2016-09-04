@@ -69,7 +69,7 @@ ISBN 0-321-77641-0
 
 Most lectures were recorded at Harvard in Sanders Theatre in Fall 2015. (A few lectures were recorded at Yale.)
 
-For students taking CSCI E-50b, the pace of the course differs from CSCI E-50, which runs each semester in parallel. Below are dates on which lecture content will be made available to view through the course's website.
+For students taking CSCI E-50a, the pace of the course differs from CSCI E-50, which runs each semester in parallel. Below are dates on which lecture content will be made available to view through the course's website.
 
 |===
 2+| Lecture | Released
@@ -120,7 +120,7 @@ A schedule of problem sets, subject to change, appears below.
 |===
 | Problem | Type | Released | Due
 
-| Everyday Algorithms | Written | Fri 9/2 | Wed 9/7
+| http://docs.cs50.net/2016/fall/cscie50a/problems/algorithms/algorithms.html[Everyday Algorithms] | Written | Fri 9/2 | Wed 9/7
 | Scratch | Programming | Tue 9/6 | Sat 9/10
 | Hello | Programming | Fri 9/9 | Wed 9/14
 | Fahrenheit | Programming | Tue 9/13 | Sat 9/17
