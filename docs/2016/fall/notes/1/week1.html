@@ -1411,6 +1411,360 @@ n is 0
 </ul>
 </div>
 </li>
+<li>
+<p>Let&#8217;s explore a different way to implement the same program:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-kt">int</span> <span class="tok-n">c</span> <span class="tok-o">=</span> <span class="tok-n">get_char</span><span class="tok-p">();</span>
+    <span class="tok-k">switch</span> <span class="tok-p">(</span><span class="tok-n">c</span><span class="tok-p">)</span>
+    <span class="tok-p">{</span>
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;Y&#39;</span><span class="tok-o">:</span>
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;y&#39;</span><span class="tok-o">:</span>
+            <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;yes</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+            <span class="tok-k">break</span><span class="tok-p">;</span>
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;N&#39;</span><span class="tok-o">:</span>
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;n&#39;</span><span class="tok-o">:</span>
+            <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;no</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+            <span class="tok-k">break</span><span class="tok-p">;</span>
+        <span class="tok-k">default</span><span class="tok-o">:</span>
+            <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;error</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+            <span class="tok-k">break</span><span class="tok-p">;</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Here we&#8217;re using something called a <strong>switch</strong>, which has various cases that, when it matches one of them, will execute the statements below it. It will continue until it reaches a <code>break;</code> statement to break out of the switch.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>With our compiler and editor to help us explore, we could try removing all the <code>break;</code> statements to see what happens:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-kt">int</span> <span class="tok-n">c</span> <span class="tok-o">=</span> <span class="tok-n">get_char</span><span class="tok-p">();</span>
+    <span class="tok-k">switch</span> <span class="tok-p">(</span><span class="tok-n">c</span><span class="tok-p">)</span>
+    <span class="tok-p">{</span>
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;Y&#39;</span><span class="tok-o">:</span>
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;y&#39;</span><span class="tok-o">:</span>
+            <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;yes</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;N&#39;</span><span class="tok-o">:</span>
+        <span class="tok-k">case</span> <span class="tok-sc">&#39;n&#39;</span><span class="tok-o">:</span>
+            <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;no</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+
+        <span class="tok-k">default</span><span class="tok-o">:</span>
+            <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;error</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+
+    <span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>And in this case (heh), all the statements below the first case that matches will be executed.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Let&#8217;s dive deeper into how to design code, by making our own custom function:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">string</span> <span class="tok-n">s</span> <span class="tok-o">=</span> <span class="tok-n">get_string</span><span class="tok-p">();</span>
+    <span class="tok-n">print_name</span><span class="tok-p">(</span><span class="tok-n">s</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">print_name</span><span class="tok-p">(</span><span class="tok-n">string</span> <span class="tok-n">name</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;hello, %s</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">,</span> <span class="tok-n">name</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Notice that below our <code>main</code> function, we define a new function called <code>print_name</code> which takes in a <code>string</code> that it can refer to as <code>name</code>, and it returns no value, so we call the type of value it returns <code>void</code>. (<code>main</code>, on the other hand, returns a value of type <code>int</code>. More on that another day.)</p>
+</li>
+<li>
+<p>But now if we try to <code>print_name(s)</code> in our <code>main</code> function, we still get an error. And that&#8217;s because the compiler reads from top to bottom, in order, so at the time <code>main</code> calls <code>print_name</code>, it doesn&#8217;t exist yet. So we need to declare it with something called a <strong>prototype</strong> first:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">print_name</span><span class="tok-p">(</span><span class="tok-n">string</span> <span class="tok-n">name</span><span class="tok-p">);</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">string</span> <span class="tok-n">s</span> <span class="tok-o">=</span> <span class="tok-n">get_string</span><span class="tok-p">();</span>
+    <span class="tok-n">print_name</span><span class="tok-p">(</span><span class="tok-n">s</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">print_name</span><span class="tok-p">(</span><span class="tok-n">string</span> <span class="tok-n">name</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;hello, %s</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">,</span> <span class="tok-n">name</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>That just defines the function, what it will take, and what it will return, and later our compiler will look for it and be able to link it correctly.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>And within our libraries <code>cs50.h</code> and <code>stdio.h</code> are similar prototypes, one line statements that define functions like <code>get_string</code> and <code>printf</code>, with their implementations in other files.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>And to demonstrate return values, we can write a program like this:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">square</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">);</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;x is &quot;</span><span class="tok-p">);</span>
+    <span class="tok-kt">int</span> <span class="tok-n">x</span> <span class="tok-o">=</span> <span class="tok-n">get_int</span><span class="tok-p">();</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;x^2 is %i</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">,</span> <span class="tok-n">square</span><span class="tok-p">(</span><span class="tok-n">x</span><span class="tok-p">));</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">square</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-k">return</span> <span class="tok-n">n</span> <span class="tok-o">*</span> <span class="tok-n">n</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>square</code> is a function that takes an <code>int</code> <code>n</code>, and returns something of type <code>int</code>. Within the function, it will just <code>return n * n</code>.</p>
+</li>
+<li>
+<p>Now we can use <code>square(x)</code> in our function, and <code>printf</code> the result like any other <code>int</code> since we know that&#8217;s what the function will return.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If we go back to our original <code>get_string</code> function, we can realize that <code>get_string</code> probably has a prototype that looks something like <code>string get_string(void)</code>, since it takes no arguments but returns a string for us to use:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">string</span> <span class="tok-n">s</span> <span class="tok-o">=</span> <span class="tok-n">get_string</span><span class="tok-p">();</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;hello, %s</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">,</span> <span class="tok-n">s</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Let&#8217;s improve our <code>cough</code> example from Scratch last time, step by step:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;cough</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;cough</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;cough</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Here we want to print out <code>cough</code> three times, so we&#8217;ve copied and pasted the code.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>So we can replace that with a loop, since each line is exactly the same:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">i</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">i</span> <span class="tok-o">&lt;</span> <span class="tok-mi">3</span><span class="tok-p">;</span> <span class="tok-n">i</span><span class="tok-o">++</span><span class="tok-p">)</span>
+    <span class="tok-p">{</span>
+        <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;cough</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>But we can write our own function now, so we can reuse it wherever we&#8217;d like:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">cough</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">);</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">i</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">i</span> <span class="tok-o">&lt;</span> <span class="tok-mi">3</span><span class="tok-p">;</span> <span class="tok-n">i</span><span class="tok-o">++</span><span class="tok-p">)</span>
+    <span class="tok-p">{</span>
+        <span class="tok-n">cough</span><span class="tok-p">();</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">cough</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;cough</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>It may seem like we&#8217;ve worked too hard for this particular example, but as programs get more and more complex we will need to create these blocks and custom functions.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For example, if we wanted to <code>cough</code> a number of times, and also <code>sneeze</code> a certain number of times, we should be able to do that quite simply:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">cough</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">);</span>
+<span class="tok-kt">void</span> <span class="tok-nf">say</span><span class="tok-p">(</span><span class="tok-n">string</span> <span class="tok-n">word</span><span class="tok-p">,</span> <span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">);</span>
+<span class="tok-kt">void</span> <span class="tok-nf">sneeze</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">);</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">cough</span><span class="tok-p">(</span><span class="tok-mi">3</span><span class="tok-p">);</span>
+    <span class="tok-n">sneeze</span><span class="tok-p">(</span><span class="tok-mi">3</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">cough</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">say</span><span class="tok-p">(</span><span class="tok-s">&quot;cough&quot;</span><span class="tok-p">,</span> <span class="tok-n">n</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">say</span><span class="tok-p">(</span><span class="tok-n">string</span> <span class="tok-n">word</span><span class="tok-p">,</span> <span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">i</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">i</span> <span class="tok-o">&lt;</span> <span class="tok-n">n</span><span class="tok-p">;</span> <span class="tok-n">i</span><span class="tok-o">++</span><span class="tok-p">)</span>
+    <span class="tok-p">{</span>
+        <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;%s</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">,</span> <span class="tok-n">word</span><span class="tok-p">);</span>
+    <span class="tok-p">}</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kt">void</span> <span class="tok-nf">sneeze</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">say</span><span class="tok-p">(</span><span class="tok-s">&quot;achoo&quot;</span><span class="tok-p">,</span> <span class="tok-n">n</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Notice that <code>main</code> can simply call <code>cough</code> and <code>sneeze</code> with the number of times it would like that action, and those functions call <code>say</code>, which has the actual shared implementation of a <code>for</code> loop and <code>printf</code>.</p>
+</li>
+<li>
+<p>Notice that <code>say</code>, too, is now taking two arguments, one of which is a <code>string</code> and one an <code>int</code>, and so each time it is called, both arguments need to be passed in.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>We call this concept <strong>abstraction</strong>, where we build layers that different people can work on, but will work together in the end since each piece will do what it is supposed to (if it&#8217;s implemented correctly, of course!).</p>
+</li>
+<li>
+<p>And in fact, we&#8217;ve been using abstraction this whole time as we called <code>get_string</code> or <code>printf</code>, since we don&#8217;t know how those functions are actually implemented in the other files that we are including, but we can use them since we know what they will do.</p>
+</li>
+<li>
+<p>So let&#8217;s go back to what <code>make</code> is actually doing. Compiling, in fact, includes several steps such as:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>preprocessing</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Lines that start with <code>#</code>, like <code>#include</code>, are preprocessed. <code>#include</code> in particular makes our compiler look for the file somewhere on our computer and literally include them inside our files (like copying and pasting them in).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>compiling</p>
+<div class="ulist">
+<ul>
+<li>
+<p>We can run <code>clang -S hello.c</code> to see our C program compiled into another language called assembly language (which you&#8217;ll see more of if you take <a href="http://ummcheng.com/">Cheng</a>'s favorite class during his time at Harvard, CS61!) that has the very simple instructions that CPUs can understand (like adding numbers, moving values in memory, etc), but in text format so humans can attempt to decipher it too.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>assembling</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The intermediate assembly code is then translated into machine code, 0s and 1s, that the CPU can actually understand.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>linking</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This final step takes the machine code of our program, and the machine code of all the libraries we included earlier and are using, and combines them so that the final program has all the pieces we need. (The preprocessed files we <code>#include</code> are just header files, which only have prototypes of the functions we want to use. The actual implementation and thus machine code is separate and lives in other files.)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>So there was a lot there going on, but hopefully we can start getting more and more comfortable with, and understand, how something "simple" actually works!</p>
+</li>
+<li>
+<p>Eventually, you&#8217;ll be able to recognize patterns, and pick up on design and abstraction to write good programs.</p>
+</li>
+<li>
+<p>We&#8217;ll focus on cryptography, or scrambling information, next week. We&#8217;ll take steps each week so we can write more and more interesting programs as we go along. Until next time!</p>
+</li>
 </ul>
 </div>
 </div>

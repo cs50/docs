@@ -561,24 +561,235 @@ int main(void)
 ----
 ** We get a character `c`, and compare it to either `Y` or `y`, or `N` or `n`. We use `||` in C to represent a logical *or*, where only one of the expressions need to be true for that condition to be followed and `&&` for *and*, where both expressions must be true.
 ** Note that we use single quotes around characters, to distinguish them between strings of a single character, which we use double quotes to indicate.
+* Let's explore a different way to implement the same program:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+int main(void)
+{
+    int c = get_char();
+    switch (c)
+    {
+        case 'Y':
+        case 'y':
+            printf("yes\n");
+            break;
+        case 'N':
+        case 'n':
+            printf("no\n");
+            break;
+        default:
+            printf("error\n");
+            break;
+    }
+}
+----
+** Here we're using something called a *switch*, which has various cases that, when it matches one of them, will execute the statements below it. It will continue until it reaches a `break;` statement to break out of the switch.
+* With our compiler and editor to help us explore, we could try removing all the `break;` statements to see what happens:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+int main(void)
+{
+    int c = get_char();
+    switch (c)
+    {
+        case 'Y':
+        case 'y':
+            printf("yes\n");
 
+        case 'N':
+        case 'n':
+            printf("no\n");
 
+        default:
+            printf("error\n");
 
+    }
+}
+----
+** And in this case (heh), all the statements below the first case that matches will be executed.
+* Let's dive deeper into how to design code, by making our own custom function:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+int main(void)
+{
+    string s = get_string();
+    print_name(s);
+}
 
+void print_name(string name)
+{
+    printf("hello, %s\n", name);
+}
+----
+** Notice that below our `main` function, we define a new function called `print_name` which takes in a `string` that it can refer to as `name`, and it returns no value, so we call the type of value it returns `void`. (`main`, on the other hand, returns a value of type `int`. More on that another day.)
+** But now if we try to `print_name(s)` in our `main` function, we still get an error. And that's because the compiler reads from top to bottom, in order, so at the time `main` calls `print_name`, it doesn't exist yet. So we need to declare it with something called a *prototype* first:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+void print_name(string name);
 
+int main(void)
+{
+    string s = get_string();
+    print_name(s);
+}
 
+void print_name(string name)
+{
+    printf("hello, %s\n", name);
+}
+----
+*** That just defines the function, what it will take, and what it will return, and later our compiler will look for it and be able to link it correctly.
+** And within our libraries `cs50.h` and `stdio.h` are similar prototypes, one line statements that define functions like `get_string` and `printf`, with their implementations in other files.
+* And to demonstrate return values, we can write a program like this:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+int square(int n);
 
+int main(void)
+{
+    printf("x is ");
+    int x = get_int();
+    printf("x^2 is %i\n", square(x));
+}
 
+int square(int n)
+{
+    return n * n;
+}
+----
+** `square` is a function that takes an `int` `n`, and returns something of type `int`. Within the function, it will just `return n * n`.
+** Now we can use `square(x)` in our function, and `printf` the result like any other `int` since we know that's what the function will return.
+* If we go back to our original `get_string` function, we can realize that `get_string` probably has a prototype that looks something like `string get_string(void)`, since it takes no arguments but returns a string for us to use:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+int main(void)
+{
+    string s = get_string();
+    printf("hello, %s\n", s);
+}
+----
+* Let's improve our `cough` example from Scratch last time, step by step:
++
+[source, c]
+----
+#include <stdio.h>
 
+int main(void)
+{
+    printf("cough\n");
+    printf("cough\n");
+    printf("cough\n");
+}
+----
+** Here we want to print out `cough` three times, so we've copied and pasted the code.
+* So we can replace that with a loop, since each line is exactly the same:
++
+[source, c]
+----
+#include <stdio.h>
 
+int main(void)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        printf("cough\n");
+    }
+}
+----
+* But we can write our own function now, so we can reuse it wherever we'd like:
++
+[source, c]
+----
+#include <stdio.h>
 
+void cough(void);
 
+int main(void)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        cough();
+    }
+}
 
+void cough(void)
+{
+    printf("cough\n");
+}
+----
+** It may seem like we've worked too hard for this particular example, but as programs get more and more complex we will need to create these blocks and custom functions.
+* For example, if we wanted to `cough` a number of times, and also `sneeze` a certain number of times, we should be able to do that quite simply:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+void cough(int n);
+void say(string word, int n);
+void sneeze(int n);
 
+int main(void)
+{
+    cough(3);
+    sneeze(3);
+}
+
+void cough(int n)
+{
+    say("cough", n);
+}
+
+void say(string word, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("%s\n", word);
+    }
+}
+
+void sneeze(int n)
+{
+    say("achoo", n);
+}
+----
+** Notice that `main` can simply call `cough` and `sneeze` with the number of times it would like that action, and those functions call `say`, which has the actual shared implementation of a `for` loop and `printf`.
+** Notice that `say`, too, is now taking two arguments, one of which is a `string` and one an `int`, and so each time it is called, both arguments need to be passed in.
+* We call this concept *abstraction*, where we build layers that different people can work on, but will work together in the end since each piece will do what it is supposed to (if it's implemented correctly, of course!).
+* And in fact, we've been using abstraction this whole time as we called `get_string` or `printf`, since we don't know how those functions are actually implemented in the other files that we are including, but we can use them since we know what they will do.
+* So let's go back to what `make` is actually doing. Compiling, in fact, includes several steps such as:
+** preprocessing
+*** Lines that start with `#`, like `#include`, are preprocessed. `#include` in particular makes our compiler look for the file somewhere on our computer and literally include them inside our files (like copying and pasting them in).
+** compiling
+*** We can run `clang -S hello.c` to see our C program compiled into another language called assembly language (which you'll see more of if you take http://ummcheng.com/[Cheng]'s favorite class during his time at Harvard, CS61!) that has the very simple instructions that CPUs can understand (like adding numbers, moving values in memory, etc), but in text format so humans can attempt to decipher it too.
+** assembling
+*** The intermediate assembly code is then translated into machine code, 0s and 1s, that the CPU can actually understand.
+** linking
+*** This final step takes the machine code of our program, and the machine code of all the libraries we included earlier and are using, and combines them so that the final program has all the pieces we need. (The preprocessed files we `#include` are just header files, which only have prototypes of the functions we want to use. The actual implementation and thus machine code is separate and lives in other files.)
+* So there was a lot there going on, but hopefully we can start getting more and more comfortable with, and understand, how something "simple" actually works!
+* Eventually, you'll be able to recognize patterns, and pick up on design and abstraction to write good programs.
+* We'll focus on cryptography, or scrambling information, next week. We'll take steps each week so we can write more and more interesting programs as we go along. Until next time!
