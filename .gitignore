@@ -1,3 +1,4 @@
 .*
 !.gitignore
 css/asciidoc-pygments.css
+docs/
