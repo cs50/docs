@@ -10,4 +10,4 @@ docs: clean
 	jekyll build -V
 
 clean:
-	rm -rf docs
+	rm -rf css docs

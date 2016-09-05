@@ -16,8 +16,10 @@ asciidoctor:
   safe: 0
 destination: docs
 exclude:
-- Dockerfile 
+- Dockerfile
+- Gemfile
+- Gemfile.lock
 - Makefile
-- README.md 
+- README.md
 gems:
 - jekyll-asciidoc
