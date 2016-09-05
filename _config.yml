@@ -14,7 +14,7 @@ asciidoctor:
   - stylesdir=css
   base_dir: :docdir
   safe: 0
-destination: docs
+destination: /tmp/docs50
 exclude:
 - Dockerfile 
 - Makefile
