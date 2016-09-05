@@ -150,4 +150,6 @@ This process may actually be more challenging than it first appears, and that's 
 
 == How to Submit
 
-**Refresh this page after Sun 9/4 for submission instructions!**
+To submit your writing assignment, give it the name *Last,First-Algorithms*, substituting *Last* and *First* with your own last and first names, respectively. So, if your name were __John Harvard__, your file would be named *Harvard,John-Algorithms*. You can upload this writing assignment as either a Word document (`.doc`), PDF file (`.pdf`), or text file (`.rtf`, `.txt`).
+
+Then, visit https://www.dropbox.com/request/cRVhbeu7NIRz8Gxo0XlL[this link] and upload your file to our Dropbox folder. Remember that the deadline for this assignment is Wednesday, September 7 at noon Eastern time. If you wish to resubmit your assignment, know that you can do so as many times as you'd like. We will grade your latest submission that was received prior to the deadline.
