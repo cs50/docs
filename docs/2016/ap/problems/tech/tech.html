@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
     <head>
-
-        <meta content="4851b15326f6b290-09e175a0bcd24dcd-gab2f4fb87b61a9c2-c" name="google-translate-customization"/>
-        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        
-            
-        
-            
-        
-            
-        
-            
-        
-
-        <!-- asciidoctor -a coderay-css=class,linkcss,source-highlighter=coderay -b html5 -D . /dev/null -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <style>
+
             /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio, canvas, video { display: inline-block; }
@@ -370,192 +358,69 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 .conum:not([data-value]):empty { display: none; }
 .literalblock > .content > pre, .listingblock > .content > pre { -webkit-border-radius: 0; border-radius: 0; }
 
-        </style>
-        <style>
-            /* Foundation stylesheet for CodeRay (to match GitHub theme) | MIT License | http://foundation.zurb.com */
-table.CodeRay { border-collapse: collapse; padding: 2px; margin-bottom: 0; border: 0; background: transparent; }
-table.CodeRay td { padding: 0 .5em; vertical-align: top; }
-table.CodeRay td.line-numbers { text-align: right; color: #999; border-right: 1px solid #e5e5e5; padding-left: 0; }
-span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inline-block; margin-right: 0.5em; padding-right: 0.5em; }
-.CodeRay td.line-numbers strong, .CodeRay span.line-numbers strong { font-weight: normal; }
-.CodeRay .debug { color: white !important; background: blue !important; }
-.CodeRay .annotation { color: #007; }
-.CodeRay .attribute-name { color: #f08; }
-.CodeRay .attribute-value { color: #700; }
-.CodeRay .binary { color: #509; }
-.CodeRay .comment  { color: #999; font-style: italic; }
-.CodeRay .char { color: #04D; }
-.CodeRay .char .content { color: #04D; }
-.CodeRay .char .delimiter { color: #039; }
-.CodeRay .class { color: #458; }
-.CodeRay .complex { color: #A08; }
-.CodeRay .constant { color: teal; }
-.CodeRay .color { color: #0A0; }
-.CodeRay .class-variable { color: #369; }
-.CodeRay .decorator { color: #B0B; }
-.CodeRay .definition { color: #099; }
-.CodeRay .directive { color: #088; }
-.CodeRay .delimiter { color: black; }
-.CodeRay .doc { color: #970; }
-.CodeRay .doctype { color: #34b; }
-.CodeRay .doc-string { color: #D42; }
-.CodeRay .escape  { color: #666; }
-.CodeRay .entity { color: #800; }
-.CodeRay .error { color: #808; }
-.CodeRay .exception { color: #C00; }
-.CodeRay .filename { color: #099; }
-.CodeRay .function { color: #900; }
-.CodeRay .global-variable { color: teal; }
-.CodeRay .hex { color: #058; }
-.CodeRay .integer  { color: #099; }
-.CodeRay .include { color: #B44; }
-.CodeRay .inline { color: black; }
-.CodeRay .inline .inline { background: #ccc; }
-.CodeRay .inline .inline .inline { background: #bbb; }
-.CodeRay .inline .inline-delimiter { color: #D14; }
-.CodeRay .inline-delimiter { color: #D14; }
-.CodeRay .important { color: #f00; }
-.CodeRay .interpreted { color: #B2B; }
-.CodeRay .instance-variable { color: teal; }
-.CodeRay .label { color: #970; }
-.CodeRay .local-variable { color: #963; }
-.CodeRay .octal { color: #40E; }
-.CodeRay .predefined { color: #369; }
-.CodeRay .preprocessor { color: #579; }
-.CodeRay .pseudo-class { color: #00C; }
-.CodeRay .predefined-type { color: #074; }
-.CodeRay .reserved, .keyword  { color: #000; }
-.CodeRay .key { color: #808; }
-.CodeRay .key .delimiter { color: #606; }
-.CodeRay .key .char { color: #80f; }
-.CodeRay .value { color: #088; }
-.CodeRay .regexp { background-color: #fff0ff; }
-.CodeRay .regexp .content { color: #808; }
-.CodeRay .regexp .delimiter { color: #404; }
-.CodeRay .regexp .modifier { color: #C2C; }
-.CodeRay .regexp .function  { color: #404; font-weight: bold; }
-.CodeRay .string { color: #D20; }
-.CodeRay .string .string { }
-.CodeRay .string .string .string { background-color: #ffd0d0; }
-.CodeRay .string .content { color: #D14; }
-.CodeRay .string .char { color: #D14; }
-.CodeRay .string .delimiter { color: #D14; }
-.CodeRay .shell { color: #D14; }
-.CodeRay .shell .content { }
-.CodeRay .shell .delimiter { color: #D14; }
-.CodeRay .symbol { color: #990073; }
-.CodeRay .symbol .content { color: #A60; }
-.CodeRay .symbol .delimiter { color: #630; }
-.CodeRay .tag, .CodeRay .attribute-name { color: #070; }
-.CodeRay .tag-special { color: #D70; }
-.CodeRay .type { color: #339; }
-.CodeRay .variable  { color: #036; }
-.CodeRay .insert { background: #afa; }
-.CodeRay .delete { background: #faa; }
-.CodeRay .change { color: #aaf; background: #007; }
-.CodeRay .head { color: #f8f; background: #505; }
-.CodeRay .insert .insert { color: #080; }
-.CodeRay .delete .delete { color: #800; }
-.CodeRay .change .change { color: #66f; }
-.CodeRay .head .head { color: #f4f; }
 
         </style>
         <style>
 
-            
-            
-
-            #footer {
-                background-color: inherit;
-                text-align: right;
-            }
-
-            #google_translate_element {
-                padding-top: 32px;
-            }
-
-            
-            .green {
-                color: #006400;
-            }
-
-            
-            .listingblock > .content pre {
-                overflow: auto;
-                white-space: pre;
-                word-wrap: inherit;
-            }
-
-            pre {
-                margin-bottom: 0.625em;
-            }
-
-            .red {
-                color: #ff0000;
-            }
-
-            select {
-                width: inherit;
-            }
-
-            
-            .yellow {
-                color: #cc0;
-            }
+            .listingblock .pygments .hll { background-color: #ffffcc }
+.listingblock .pygments, .listingblock .pygments code { background: #ffffff; }
+.listingblock .pygments .tok-c { color: #008000 } /* Comment */
+.listingblock .pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+.listingblock .pygments .tok-k { color: #0000ff } /* Keyword */
+.listingblock .pygments .tok-cm { color: #008000 } /* Comment.Multiline */
+.listingblock .pygments .tok-cp { color: #0000ff } /* Comment.Preproc */
+.listingblock .pygments .tok-c1 { color: #008000 } /* Comment.Single */
+.listingblock .pygments .tok-cs { color: #008000 } /* Comment.Special */
+.listingblock .pygments .tok-ge { font-style: italic } /* Generic.Emph */
+.listingblock .pygments .tok-gh { font-weight: bold } /* Generic.Heading */
+.listingblock .pygments .tok-gp { font-weight: bold } /* Generic.Prompt */
+.listingblock .pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+.listingblock .pygments .tok-gu { font-weight: bold } /* Generic.Subheading */
+.listingblock .pygments .tok-kc { color: #0000ff } /* Keyword.Constant */
+.listingblock .pygments .tok-kd { color: #0000ff } /* Keyword.Declaration */
+.listingblock .pygments .tok-kn { color: #0000ff } /* Keyword.Namespace */
+.listingblock .pygments .tok-kp { color: #0000ff } /* Keyword.Pseudo */
+.listingblock .pygments .tok-kr { color: #0000ff } /* Keyword.Reserved */
+.listingblock .pygments .tok-kt { color: #2b91af } /* Keyword.Type */
+.listingblock .pygments .tok-s { color: #a31515 } /* Literal.String */
+.listingblock .pygments .tok-nc { color: #2b91af } /* Name.Class */
+.listingblock .pygments .tok-ow { color: #0000ff } /* Operator.Word */
+.listingblock .pygments .tok-sb { color: #a31515 } /* Literal.String.Backtick */
+.listingblock .pygments .tok-sc { color: #a31515 } /* Literal.String.Char */
+.listingblock .pygments .tok-sd { color: #a31515 } /* Literal.String.Doc */
+.listingblock .pygments .tok-s2 { color: #a31515 } /* Literal.String.Double */
+.listingblock .pygments .tok-se { color: #a31515 } /* Literal.String.Escape */
+.listingblock .pygments .tok-sh { color: #a31515 } /* Literal.String.Heredoc */
+.listingblock .pygments .tok-si { color: #a31515 } /* Literal.String.Interpol */
+.listingblock .pygments .tok-sx { color: #a31515 } /* Literal.String.Other */
+.listingblock .pygments .tok-sr { color: #a31515 } /* Literal.String.Regex */
+.listingblock .pygments .tok-s1 { color: #a31515 } /* Literal.String.Single */
+.listingblock .pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
         </style>
-
         <title>Writing Problem: Tech Spotlight</title>
-
     </head>
-
-    <body class="article toc2 toc-left">
-
-        
-
-            <div id="header">
-
-                
-                    
-                        <h1>Writing Problem: Tech Spotlight</h1>
-                    
-                    <span id="author" class="author">
-                        This is CS50 AP 1617. Harvard University.
-                    </span>
-                
-
-                <div id="google_translate_element"></div>
-                <script>
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-                    }
-                </script>
-                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                
-                    <div id="toc" class="toc2">
-                        <div id="toctitle">Table of Contents</div>
-                        <ul class="sectlevel1">
+    <body class="toc2 toc-left">
+        <div id="header">
+            <div class="toc2" id="toc">
+                <div id="toctitle">Table of Contents</div>
+                <ul class="sectlevel1">
 <li><a href="#objectives">Objectives</a></li>
-<li><a href="#academic_honesty">Academic Honesty</a>
+<li><a href="#academic-honesty">Academic Honesty</a>
 <ul class="sectlevel2">
 <li><a href="#reasonable">Reasonable</a></li>
-<li><a href="#not_reasonable">Not Reasonable</a></li>
+<li><a href="#not-reasonable">Not Reasonable</a></li>
 </ul>
 </li>
 <li><a href="#assessment">Assessment</a></li>
-<li><a href="#cats_and_viral_videos_and_viral_videos_starring_cats">Cats. And Viral Videos. And Viral Videos Starring Cats.</a></li>
-<li><a href="#okay_so_what_do_i_do">Okay, So What Do I Do?</a></li>
+<li><a href="#cats-and-viral-videos-and-viral-videos-starring-cats">Cats. And Viral Videos. And Viral Videos Starring Cats.</a></li>
+<li><a href="#okay-so-what-do-i-do">Okay, So What Do I Do?</a></li>
 </ul>
-                    </div>
-                
-
             </div>
-
-        
-
+        </div>
         <div id="content">
-            <div class="sect1">
+            <h1>Writing Problem: Tech Spotlight</h1>
+<div class="sect1">
 <h2 id="objectives"><a class="link" href="#objectives">Objectives</a></h2>
 <div class="sectionbody">
 <div class="ulist">
@@ -574,7 +439,7 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect1">
-<h2 id="academic_honesty"><a class="link" href="#academic_honesty">Academic Honesty</a></h2>
+<h2 id="academic-honesty"><a class="link" href="#academic-honesty">Academic Honesty</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This course&#8217;s philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course&#8217;s material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.</p>
@@ -623,7 +488,7 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect2">
-<h3 id="not_reasonable"><a class="link" href="#not_reasonable">Not Reasonable</a></h3>
+<h3 id="not-reasonable"><a class="link" href="#not-reasonable">Not Reasonable</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -704,7 +569,7 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect1">
-<h2 id="cats_and_viral_videos_and_viral_videos_starring_cats"><a class="link" href="#cats_and_viral_videos_and_viral_videos_starring_cats">Cats. And Viral Videos. And Viral Videos Starring Cats.</a></h2>
+<h2 id="cats-and-viral-videos-and-viral-videos-starring-cats"><a class="link" href="#cats-and-viral-videos-and-viral-videos-starring-cats">Cats. And Viral Videos. And Viral Videos Starring Cats.</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Odds are, at some point in your life, you&#8217;ve used the Internet. In fact, more likely than not you use it many times a day, every single day, and have done so for as far back as you can remember. Given that level of real-world Internet experience, it won&#8217;t surprise you to know that the Web contains a lot of very useful data&#8230;&#8203; and also some data that might not be quite so useful:</p>
@@ -729,7 +594,7 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect1">
-<h2 id="okay_so_what_do_i_do"><a class="link" href="#okay_so_what_do_i_do">Okay, So What Do I Do?</a></h2>
+<h2 id="okay-so-what-do-i-do"><a class="link" href="#okay-so-what-do-i-do">Okay, So What Do I Do?</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Pick some piece of technology with which you are familiar and that you might use everyday. It needn&#8217;t be a piece of hardware; software, websites, and the like are perfectly fine too. Explore it in depth. Find some articles about recent developments (i.e., within the last three months) in this technology that have been posted on sites like the ones described earlier. Specifically, you should read a minimum of three (3) articles about the technology you&#8217;ve chosen, and include your list of sources at the end of your paper.<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup></p>
@@ -776,44 +641,18 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 </div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. <a href="https://www.facebook.com/" class="bare">https://www.facebook.com/</a>
+</div>
+<div class="footnote" id="_footnote_2">
+<a href="#_footnoteref_2">2</a>. <a href="https://en.wikipedia.org/wiki/Betamax" class="bare">https://en.wikipedia.org/wiki/Betamax</a>
+</div>
+<div class="footnote" id="_footnote_3">
+<a href="#_footnoteref_3">3</a>. Your list of sources needn&#8217;t be prepared as a bibliography following any particular citation style, but do be sure to include for each the name of the article read, name of the website or publication where you found the article, date the article was written, author&#8217;s name, and URL, if found online.
+</div>
+</div>
         </div>
-        
-        
-            <div id="footnotes">
-                <hr/>
-                
-                    <div class="footnote" id="_footnote_1">
-                        <a href="#_footnoteref_1">1</a>. <a href="https://www.facebook.com/" class="bare">https://www.facebook.com/</a>
-                    </div>
-                
-                    <div class="footnote" id="_footnote_2">
-                        <a href="#_footnoteref_2">2</a>. <a href="https://en.wikipedia.org/wiki/Betamax" class="bare">https://en.wikipedia.org/wiki/Betamax</a>
-                    </div>
-                
-                    <div class="footnote" id="_footnote_3">
-                        <a href="#_footnoteref_3">3</a>. Your list of sources needn&#8217;t be prepared as a bibliography following any particular citation style, but do be sure to include for each the name of the article read, name of the website or publication where you found the article, date the article was written, author&#8217;s name, and URL, if found online.
-                    </div>
-                
-            </div>
-        
-
-        <div id="footer">
-            Copyright &#169; David J. Malan
-        </div>
-
-        <script>
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-8162502-43']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-
     </body>
 </html>

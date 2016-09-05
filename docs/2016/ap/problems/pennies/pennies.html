@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
     <head>
-
-        <meta content="4851b15326f6b290-09e175a0bcd24dcd-gab2f4fb87b61a9c2-c" name="google-translate-customization"/>
-        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        
-            
-        
-            
-        
-            
-        
-            
-        
-
-        <!-- asciidoctor -a coderay-css=class,linkcss,source-highlighter=coderay -b html5 -D . /dev/null -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <style>
+
             /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio, canvas, video { display: inline-block; }
@@ -370,209 +358,113 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 .conum:not([data-value]):empty { display: none; }
 .literalblock > .content > pre, .listingblock > .content > pre { -webkit-border-radius: 0; border-radius: 0; }
 
-        </style>
-        <style>
-            /* Foundation stylesheet for CodeRay (to match GitHub theme) | MIT License | http://foundation.zurb.com */
-table.CodeRay { border-collapse: collapse; padding: 2px; margin-bottom: 0; border: 0; background: transparent; }
-table.CodeRay td { padding: 0 .5em; vertical-align: top; }
-table.CodeRay td.line-numbers { text-align: right; color: #999; border-right: 1px solid #e5e5e5; padding-left: 0; }
-span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inline-block; margin-right: 0.5em; padding-right: 0.5em; }
-.CodeRay td.line-numbers strong, .CodeRay span.line-numbers strong { font-weight: normal; }
-.CodeRay .debug { color: white !important; background: blue !important; }
-.CodeRay .annotation { color: #007; }
-.CodeRay .attribute-name { color: #f08; }
-.CodeRay .attribute-value { color: #700; }
-.CodeRay .binary { color: #509; }
-.CodeRay .comment  { color: #999; font-style: italic; }
-.CodeRay .char { color: #04D; }
-.CodeRay .char .content { color: #04D; }
-.CodeRay .char .delimiter { color: #039; }
-.CodeRay .class { color: #458; }
-.CodeRay .complex { color: #A08; }
-.CodeRay .constant { color: teal; }
-.CodeRay .color { color: #0A0; }
-.CodeRay .class-variable { color: #369; }
-.CodeRay .decorator { color: #B0B; }
-.CodeRay .definition { color: #099; }
-.CodeRay .directive { color: #088; }
-.CodeRay .delimiter { color: black; }
-.CodeRay .doc { color: #970; }
-.CodeRay .doctype { color: #34b; }
-.CodeRay .doc-string { color: #D42; }
-.CodeRay .escape  { color: #666; }
-.CodeRay .entity { color: #800; }
-.CodeRay .error { color: #808; }
-.CodeRay .exception { color: #C00; }
-.CodeRay .filename { color: #099; }
-.CodeRay .function { color: #900; }
-.CodeRay .global-variable { color: teal; }
-.CodeRay .hex { color: #058; }
-.CodeRay .integer  { color: #099; }
-.CodeRay .include { color: #B44; }
-.CodeRay .inline { color: black; }
-.CodeRay .inline .inline { background: #ccc; }
-.CodeRay .inline .inline .inline { background: #bbb; }
-.CodeRay .inline .inline-delimiter { color: #D14; }
-.CodeRay .inline-delimiter { color: #D14; }
-.CodeRay .important { color: #f00; }
-.CodeRay .interpreted { color: #B2B; }
-.CodeRay .instance-variable { color: teal; }
-.CodeRay .label { color: #970; }
-.CodeRay .local-variable { color: #963; }
-.CodeRay .octal { color: #40E; }
-.CodeRay .predefined { color: #369; }
-.CodeRay .preprocessor { color: #579; }
-.CodeRay .pseudo-class { color: #00C; }
-.CodeRay .predefined-type { color: #074; }
-.CodeRay .reserved, .keyword  { color: #000; }
-.CodeRay .key { color: #808; }
-.CodeRay .key .delimiter { color: #606; }
-.CodeRay .key .char { color: #80f; }
-.CodeRay .value { color: #088; }
-.CodeRay .regexp { background-color: #fff0ff; }
-.CodeRay .regexp .content { color: #808; }
-.CodeRay .regexp .delimiter { color: #404; }
-.CodeRay .regexp .modifier { color: #C2C; }
-.CodeRay .regexp .function  { color: #404; font-weight: bold; }
-.CodeRay .string { color: #D20; }
-.CodeRay .string .string { }
-.CodeRay .string .string .string { background-color: #ffd0d0; }
-.CodeRay .string .content { color: #D14; }
-.CodeRay .string .char { color: #D14; }
-.CodeRay .string .delimiter { color: #D14; }
-.CodeRay .shell { color: #D14; }
-.CodeRay .shell .content { }
-.CodeRay .shell .delimiter { color: #D14; }
-.CodeRay .symbol { color: #990073; }
-.CodeRay .symbol .content { color: #A60; }
-.CodeRay .symbol .delimiter { color: #630; }
-.CodeRay .tag, .CodeRay .attribute-name { color: #070; }
-.CodeRay .tag-special { color: #D70; }
-.CodeRay .type { color: #339; }
-.CodeRay .variable  { color: #036; }
-.CodeRay .insert { background: #afa; }
-.CodeRay .delete { background: #faa; }
-.CodeRay .change { color: #aaf; background: #007; }
-.CodeRay .head { color: #f8f; background: #505; }
-.CodeRay .insert .insert { color: #080; }
-.CodeRay .delete .delete { color: #800; }
-.CodeRay .change .change { color: #66f; }
-.CodeRay .head .head { color: #f4f; }
 
         </style>
         <style>
 
-            
-            
-
-            #footer {
-                background-color: inherit;
-                text-align: right;
-            }
-
-            #google_translate_element {
-                padding-top: 32px;
-            }
-
-            
-            .green {
-                color: #006400;
-            }
-
-            
-            .listingblock > .content pre {
-                overflow: auto;
-                white-space: pre;
-                word-wrap: inherit;
-            }
-
-            pre {
-                margin-bottom: 0.625em;
-            }
-
-            .red {
-                color: #ff0000;
-            }
-
-            select {
-                width: inherit;
-            }
-
-            
-            .yellow {
-                color: #cc0;
-            }
+            .listingblock .pygments .hll { background-color: #ffffcc }
+.listingblock .pygments, .listingblock .pygments code { background: #ffffff; }
+.listingblock .pygments .tok-c { color: #008000 } /* Comment */
+.listingblock .pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+.listingblock .pygments .tok-k { color: #0000ff } /* Keyword */
+.listingblock .pygments .tok-cm { color: #008000 } /* Comment.Multiline */
+.listingblock .pygments .tok-cp { color: #0000ff } /* Comment.Preproc */
+.listingblock .pygments .tok-c1 { color: #008000 } /* Comment.Single */
+.listingblock .pygments .tok-cs { color: #008000 } /* Comment.Special */
+.listingblock .pygments .tok-ge { font-style: italic } /* Generic.Emph */
+.listingblock .pygments .tok-gh { font-weight: bold } /* Generic.Heading */
+.listingblock .pygments .tok-gp { font-weight: bold } /* Generic.Prompt */
+.listingblock .pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+.listingblock .pygments .tok-gu { font-weight: bold } /* Generic.Subheading */
+.listingblock .pygments .tok-kc { color: #0000ff } /* Keyword.Constant */
+.listingblock .pygments .tok-kd { color: #0000ff } /* Keyword.Declaration */
+.listingblock .pygments .tok-kn { color: #0000ff } /* Keyword.Namespace */
+.listingblock .pygments .tok-kp { color: #0000ff } /* Keyword.Pseudo */
+.listingblock .pygments .tok-kr { color: #0000ff } /* Keyword.Reserved */
+.listingblock .pygments .tok-kt { color: #2b91af } /* Keyword.Type */
+.listingblock .pygments .tok-s { color: #a31515 } /* Literal.String */
+.listingblock .pygments .tok-nc { color: #2b91af } /* Name.Class */
+.listingblock .pygments .tok-ow { color: #0000ff } /* Operator.Word */
+.listingblock .pygments .tok-sb { color: #a31515 } /* Literal.String.Backtick */
+.listingblock .pygments .tok-sc { color: #a31515 } /* Literal.String.Char */
+.listingblock .pygments .tok-sd { color: #a31515 } /* Literal.String.Doc */
+.listingblock .pygments .tok-s2 { color: #a31515 } /* Literal.String.Double */
+.listingblock .pygments .tok-se { color: #a31515 } /* Literal.String.Escape */
+.listingblock .pygments .tok-sh { color: #a31515 } /* Literal.String.Heredoc */
+.listingblock .pygments .tok-si { color: #a31515 } /* Literal.String.Interpol */
+.listingblock .pygments .tok-sx { color: #a31515 } /* Literal.String.Other */
+.listingblock .pygments .tok-sr { color: #a31515 } /* Literal.String.Regex */
+.listingblock .pygments .tok-s1 { color: #a31515 } /* Literal.String.Single */
+.listingblock .pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
         </style>
-
-        <title>Writing Problem: Around the House</title>
-
+        <title>Problem: Pennies</title>
     </head>
-
-    <body class="article toc2 toc-left">
-
-        
-
-            <div id="header">
-
-                
-                    
-                        <h1>Writing Problem: Around the House</h1>
-                    
-                    <span id="author" class="author">
-                        This is CS50 AP 1617. Harvard University.
-                    </span>
-                
-
-                <div id="google_translate_element"></div>
-                <script>
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-                    }
-                </script>
-                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                
-                    <div id="toc" class="toc2">
-                        <div id="toctitle">Table of Contents</div>
-                        <ul class="sectlevel1">
+    <body class="toc2 toc-left">
+        <div id="header">
+            <div class="toc2" id="toc">
+                <div id="toctitle">Table of Contents</div>
+                <ul class="sectlevel1">
 <li><a href="#objectives">Objectives</a></li>
-<li><a href="#academic_honesty">Academic Honesty</a>
+<li><a href="#recommended-reading">Recommended Reading</a></li>
+<li><a href="#academic-honesty">Academic Honesty</a>
 <ul class="sectlevel2">
 <li><a href="#reasonable">Reasonable</a></li>
-<li><a href="#not_reasonable">Not Reasonable</a></li>
+<li><a href="#not-reasonable">Not Reasonable</a></li>
 </ul>
 </li>
 <li><a href="#assessment">Assessment</a></li>
-<li><a href="#ok_computer">OK Computer</a></li>
-<li><a href="#writing_i_thought_i_was_here_to_code">Writing? I thought I was here to code!</a></li>
-<li><a href="#ok_computer_2">OK&#8230;&#8203; Computer?</a></li>
+<li><a href="#double-or-nothing">Double or Nothing</a></li>
 </ul>
-                    </div>
-                
-
             </div>
-
-        
-
+        </div>
         <div id="content">
-            <div class="sect1">
+            <h1>Problem: Pennies</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questions? Feel free to head to <a href="https://www.reddit.com/r/cs50">CS50 on Reddit</a>, <a href="http://cs50.stackexchange.com">CS50 on StackExchange</a>, or the <a href="https://www.facebook.com/groups/cs50">CS50 Facebook group</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="objectives"><a class="link" href="#objectives">Objectives</a></h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Think critically about computers and computing.</p>
+<p>Use algorithms to solve problems.</p>
 </li>
 <li>
-<p>Learn about how to write with an eye towards a technical audience.</p>
+<p>See firsthand the power of exponentiation.</p>
+</li>
+<li>
+<p>Explore some of the other header files available to you.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="academic_honesty"><a class="link" href="#academic_honesty">Academic Honesty</a></h2>
+<h2 id="recommended-reading"><a class="link" href="#recommended-reading">Recommended Reading</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pages 1 – 7, 9, and 10 of <a href="http://www.howstuffworks.com/c.htm" class="bare">http://www.howstuffworks.com/c.htm</a>.</p>
+</li>
+<li>
+<p>Chapters 1 – 5, 9, and 11 &#8211; 17 of <em>Absolute Beginner&#8217;s Guide to C</em>.</p>
+</li>
+<li>
+<p>Chapters 1 – 6 of <em>Programming in C</em>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="academic-honesty"><a class="link" href="#academic-honesty">Academic Honesty</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This course&#8217;s philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course&#8217;s material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.</p>
@@ -621,7 +513,7 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect2">
-<h3 id="not_reasonable"><a class="link" href="#not_reasonable">Not Reasonable</a></h3>
+<h3 id="not-reasonable"><a class="link" href="#not-reasonable">Not Reasonable</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -678,21 +570,25 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 <h2 id="assessment"><a class="link" href="#assessment">Assessment</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Your work on this writing problem will be evaluated along three axes primarily.</p>
+<p>Your work on this problem set will be evaluated along four axes primarily.</p>
 </div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Scope</dt>
 <dd>
-<p>To what extent does your submission align with the requirements of the specification?</p>
+<p>To what extent does your code implement the features required by our specification?</p>
 </dd>
 <dt class="hdlist1">Correctness</dt>
 <dd>
-<p>To what extent is your submission correct and free of factual errors?</p>
+<p>To what extent is your code consistent with our specifications and free of bugs?</p>
+</dd>
+<dt class="hdlist1">Design</dt>
+<dd>
+<p>To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?</p>
 </dd>
 <dt class="hdlist1">Style</dt>
 <dd>
-<p>To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?</p>
+<p>To what extent is your code readable (i.e., commented and indented with variables aptly named)?</p>
 </dd>
 </dl>
 </div>
@@ -702,159 +598,120 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect1">
-<h2 id="ok_computer"><a class="link" href="#ok_computer">OK Computer</a></h2>
+<h2 id="double-or-nothing"><a class="link" href="#double-or-nothing">Double or Nothing</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If not familiar with what computers are, take a quick look at a more modern spin on them here:</p>
+<p>If ever given the choice between $10,000,000 or a month&#8217;s worth of pennies, whereby you receive a penny the first day, two pennies the second, four pennies the third, and so forth&#8230;&#8203; take the pennies<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>.</p>
 </div>
-<div class="videoblock">
+<div class="paragraph">
+<p>Anyhow, why the pennies? Exponentiation. Those pennies add up Consider how many pennies you&#8217;d receive on the 31st day alone, not to mention on the days leading up to it:</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/WAxH0YHdTuA?rel=0" frameborder="0" allowfullscreen></iframe>
+<pre class="pygments highlight"><code data-lang="bash"><span class="tok-m">1</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � 2
+  � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � 2
+  � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-m">2</span> � <span class="tok-nv">2</span>
+
+  <span class="tok-o">=</span> 1073741824</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Although they&#8217;ve also been known to be a bit smaller than that:</p>
+<p>Put more succinctly, that&#8217;s 1 &times; 2<sup>30</sup>. Convert those pennies to dollars (by dividing by 100) and you get, what, over $10,000,000? On just that day? Crazy.</p>
 </div>
-<div class="videoblock">
+<div class="paragraph">
+<p>What if you were given more than one penny on that first day? Or the month were February, in which case you&#8217;d get shortchanged a few million? (Best to take the pennies in January, March, May, July, August, October, or December<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup>.) Let&#8217;s find out.</p>
+</div>
+<div class="paragraph">
+<p>Implement, in a file called <code>pennies.c</code>, a program that first asks the user how many days there are in the month and then asks the user how many pennies he or she will receive on the first day of that month. The program should then calculate the amount that the user will have received <strong>in total</strong> by the end of the month (not just on the last day) if that amount is doubled on every day but the first, expressed not as pennies but as dollars and cents. If the user does not type in 28, 29, 30, or 31 for the number of days in the month, the program should prompt the user to retry. If the user does not input a positive integer for the first day&#8217;s number of pennies, the program should prompt the user to retry.</p>
+</div>
+<div class="paragraph">
+<p>For instance, your program might behave as follows, whereby underlined text represents some user&#8217;s input.</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/LHdVkPrdRYg?rel=0" frameborder="0" allowfullscreen></iframe>
+<pre class="pygments highlight"><code>~/workspace/chapter1 $ <span class="underline">./pennies</span>
+Days in month: <span class="underline">32</span>
+Days in month: <span class="underline">31</span>
+Pennies on first day: <span class="underline">1</span>
+$21474836.47</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>But perhaps there are some that do not even use electricity?</p>
+<p>Notice how this output suggests that the program should indeed re-prompt the user if he or she fails to cooperate with these rules (as by inputting too many days).</p>
 </div>
-<div class="videoblock">
+<div class="paragraph">
+<p>How to begin? Well, as before, create a new file inside of your <code>~/workspace/chapter1</code> directory (remember how?) and name it <code>pennies.c</code>. Then, fill the file with some "boilerplate" code like the below:</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/GcDshWmhF4A?rel=0" frameborder="0" allowfullscreen></iframe>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
+<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Or perhaps may not even have moving parts?</p>
+<p>Save the file and, just to be safe, try compiling it with</p>
 </div>
-<div class="videoblock">
+<div class="listingblock">
 <div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/tI0GqYJha1Q?rel=0" frameborder="0" allowfullscreen></iframe>
+<pre class="pygments highlight"><code data-lang="bash">make pennies</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If you had some preconceived notions about what a computer is, odds are they were challenged somewhat by watching the videos above (particularly the last two!), and that&#8217;s okay! In fact, you may find that some folks quickly agree that everything shown above is a computer, and some won&#8217;t. Try speaking with family and friends about it and see if it doesn&#8217;t spark an interesting discussion.</p>
+<p>in your terminal window, just to make sure you didn&#8217;t make any syntactical mistakes, in which case you&#8217;ll see errors that will need to be fixed! Then dive back into your code.</p>
 </div>
 <div class="paragraph">
-<p>We&#8217;ll wait here while you do that.</p>
+<p>Odds are you&#8217;ll want a couple of loops, one with which to prompt (and potentially re-prompt) the user for a number of days, and another with which to prompt (and potentially re-prompt) the user
+for a number of first-day pennies. How to get both those numbers? Perhaps the CS50 Library offers some options? You may also find functions in the <code>math.h</code> header file that can help when working on this problem. Have a look at <a href="https://reference.cs50.net/">Reference50</a> to see which functions those might be. Be sure, if you use any of those functions, to place this line of code near the top of your <code>pennies.c</code> file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;math.h&gt;</span></code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><em>(whistles, twiddles thumbs)</em></p>
+<p>Of course, if you store the user&#8217;s amount due in an <code>int</code> (which is only 32 bits), the total will be bounded by (2<sup>31</sup> - 1) pennies. (Why 2<sup>31</sup> and not 2<sup>32</sup>? And why 1 less than 2<sup>31</sup>?) Best, then, to store your total in a <code>long long</code>, so that the user benefits from 64 bits. (Don&#8217;t worry if users' totals overflow 64 bits and even go negative; consider it punishment for greed!)</p>
 </div>
 <div class="paragraph">
-<p>O hai! You&#8217;re back.</p>
+<p>Do take care to format the user&#8217;s total as dollars and cents (to just 2 decimal places), prefixed with a dollar sign, just as we did in the output above. You do not need to insert commas after every 3 digits to the left of the decimal, as you might normally do.</p>
 </div>
 <div class="paragraph">
-<p>Pull up the definition of the word "computer" a few places online (or in a handy, printed dictionary if you happen to still have one!), and while it&#8217;s likely you&#8217;ll find some common threads, it&#8217;s also quite likely that no two definitions are the same.</p>
+<p>So that we can automate some tests of your code, we ask that your program&#8217;s last line of output be the amount owed to a user, followed by <code>\n</code>. The rest of your program&#8217;s personality we leave entirely to you!</p>
 </div>
 <div class="paragraph">
-<p>For purposes of this course, we define a computer as <em>a device that accepts input and processes it in some way to produce an output automatically</em>. Based on that definition, you might see how all four of the devices shown above may be considered computers. You also still may be scratching your head and thinking "Well, wait a minute&#8230;&#8203;". If so, good! You&#8217;re already beginning the critical-thinking process.</p>
+<p>To test the correctness of your program, you may execute the below at the terminal window.</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">check50 1617.chapter1.pennies pennies.c</code></pre>
 </div>
-</div>
-<div class="sect1">
-<h2 id="writing_i_thought_i_was_here_to_code"><a class="link" href="#writing_i_thought_i_was_here_to_code">Writing? I thought I was here to code!</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Rest assured, there&#8217;ll be plenty of time and plenty of opportunity to dive into programming this school year. In fact, the vast majority of the problems you&#8217;re assigned in this course will require you to program in one or more of the programming languages we&#8217;ll learn about, such as Scratch, C, PHP, or JavaScript. But occasionally, and a bit more frequently at the very beginning of the course, you&#8217;ll also be asked to complete some "writing problems" like this. Why? There are two important reasons.</p>
 </div>
 <div class="paragraph">
-<p>First and foremost, writing is an essential part of your assessment by the College Board for Advanced Placement credit in the course. The assessment consists of three parts:</p>
+<p>And if you&#8217;d like to play with the staff&#8217;s own implementation of <code>pennies</code> in CS50 IDE, you may execute the below.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>The end-of-year multiple-choice examination;</p>
-</li>
-<li>
-<p>A through-course assessment called "Create," in which you will independently and with a partner develop programs that solve real-world problems; and</p>
-</li>
-<li>
-<p>Another through-course assessment called "Explore," in which you will critically research and investigate an innovation in computing and the impact it has had on the global community.</p>
-</li>
-</ul>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">~cs50/chapter1/pennies</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>All the programming problems you&#8217;ll encounter in this course will adequately prepare you to tackle "Create," and the writing problems are similarly designed to prepare you for "Explore."</p>
-</div>
-<div class="paragraph">
-<p>Second however, and perhaps more importantly, is that this course aims to educate you more broadly as a <em>computer scientist</em>, and not just specifically as a <em>computer programmer</em>. Being able to write code is just one tool at your disposal. Among the many characteristics of a computer scientist is his or her ability to communicate effectively with others, both with and without technological backgrounds alike, about computers, emerging technologies, and more. By researching these topics and reading about technology on tech news sites like TechCrunch, Wired, Engadget, and others, you&#8217;ll not only become more conversant in the jargon that computer scientists use to describe technology, computers, and computing, but you&#8217;ll also improve in your ability to further relay what you&#8217;ve learned to others.</p>
-</div>
-<div class="paragraph">
-<p>In some contexts you&#8217;ll be relaying your newfound knowledge to those with absolutely no background in the subject matter, and to address those individuals you&#8217;ll need the ability to describe things clearly and, importantly, correctly. In others, you&#8217;ll be addressing your peers or more technically-oriented audiences, and instead of having to <em>explain</em> a new technology, you will have to <em>persuade</em> that audience about something. Being able to analyze a technology, compare it to others, and point out its relative flaws is an important rhetorical tool to do just that. Organizing your thoughts and communicating them on paper is one of the best ways (particularly if you otherwise might experience stage fright!) to practice this skill.</p>
+<p>This was Pennies.</p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="ok_computer_2"><a class="link" href="#ok_computer_2">OK&#8230;&#8203; Computer?</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Have a look around your home. See any computers? Even if you don&#8217;t have laptops or desktops where you live, odds are you have many more computers in your home than you think. Perhaps you have a smartphone? Maybe you have a flatscreen television or a video game system?</p>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. By contrast, if you receive an email from some stranger on the Internet offering you an opportunity to double your money, maybe think twice.
 </div>
-<div class="paragraph">
-<p>In this problem, we want you to think even more outside the box than that. Recall that we defined a computer as <em>a device that accepts input, and processes it in some way to produce a result automatically</em>. Surely there exists some device in your home that adheres to that definition but isn&#8217;t something that before now you would have readily called a computer. If you can&#8217;t think of any such device in your home, feel free to venture beyond those four walls and pick any device with which you may be familiar.</p>
-</div>
-<div class="paragraph">
-<p>In no more than 400 words<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>, describe this device in detail. You may wish to consider questions such as:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>What does the device look like?</p>
-</li>
-<li>
-<p>What kind of data does it accept?</p>
-</li>
-<li>
-<p>How does it process that data?</p>
-</li>
-<li>
-<p>What is the result of that processing?</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Conduct a little bit of research (formal or informal), and if you suspect others may be skeptical of your assertion that the device you chose is a computer, write persuasively so as to do your best to convince such individuals that you aren&#8217;t crazy and that you know what you&#8217;re talking about.</p>
-</div>
-<div class="paragraph">
-<p>This was Around the House, your first problem in CS50 AP!</p>
-</div>
+<div class="footnote" id="_footnote_2">
+<a href="#_footnoteref_2">2</a>. We&#8217;ll admit it. We had to look at a calendar.
 </div>
 </div>
         </div>
-        
-        
-            <div id="footnotes">
-                <hr/>
-                
-                    <div class="footnote" id="_footnote_1">
-                        <a href="#_footnoteref_1">1</a>. Seriously! In the real world, projects often have specifications just like this one, and it&#8217;s frequently quite important to adhere to those specifications exactly so that you are in compliance with project scope. So keep it to 400 words, tops!
-                    </div>
-                
-            </div>
-        
-
-        <div id="footer">
-            Copyright &#169; David J. Malan
-        </div>
-
-        <script>
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-8162502-43']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-
     </body>
 </html>

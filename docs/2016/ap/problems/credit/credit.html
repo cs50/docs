@@ -398,7 +398,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 .listingblock .pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
         </style>
-        <title>Writing Problem: Everyday Algorithms</title>
+        <title>Problem: Credit</title>
     </head>
     <body class="toc2 toc-left">
         <div id="header">
@@ -406,6 +406,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
                 <div id="toctitle">Table of Contents</div>
                 <ul class="sectlevel1">
 <li><a href="#objectives">Objectives</a></li>
+<li><a href="#recommended-reading">Recommended Reading</a></li>
 <li><a href="#academic-honesty">Academic Honesty</a>
 <ul class="sectlevel2">
 <li><a href="#reasonable">Reasonable</a></li>
@@ -413,31 +414,40 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </ul>
 </li>
 <li><a href="#assessment">Assessment</a></li>
-<li><a href="#step-1-watch-this">Step 1: Watch This.</a></li>
-<li><a href="#step-2-read-this">Step 2: Read This.</a></li>
-<li><a href="#step-3-write-this">Step 3: Write This.</a></li>
-<li><a href="#step-4-do-this">Step 4: Do This.</a></li>
+<li><a href="#bad-credit">Bad Credit</a></li>
 </ul>
             </div>
         </div>
         <div id="content">
-            <h1>Writing Problem: Everyday Algorithms</h1>
+            <h1>Problem: Credit</h1>
 <div class="sect1">
 <h2 id="objectives"><a class="link" href="#objectives">Objectives</a></h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Analyze the algorithmic processes of everyday activities.</p>
+<p>Use algorithms to solve a problem.</p>
 </li>
 <li>
-<p>Learn to express yourself clearly and succinctly.</p>
+<p>Analyze the pros and cons of different designs.</p>
 </li>
 <li>
-<p>Become familiar with "pseudocode."</p>
+<p>Learn about real-world encoding phenomena.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="recommended-reading"><a class="link" href="#recommended-reading">Recommended Reading</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pages 1 – 7, 9, and 10 of <a href="http://www.howstuffworks.com/c.htm" class="bare">http://www.howstuffworks.com/c.htm</a>.</p>
 </li>
 <li>
-<p>Have fun experimenting with your peers' algorithms.</p>
+<p>Chapters 1 – 6 of <strong>Programming in C</strong>.</p>
 </li>
 </ul>
 </div>
@@ -550,239 +560,202 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <h2 id="assessment"><a class="link" href="#assessment">Assessment</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Your work on this writing problem will be evaluated along three axes primarily.</p>
+<p>Your work on this problem set will be evaluated along four axes primarily.</p>
 </div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Scope</dt>
 <dd>
-<p>To what extent does your submission align with the requirements of the specification?</p>
+<p>To what extent does your code implement the features required by our specification?</p>
 </dd>
 <dt class="hdlist1">Correctness</dt>
 <dd>
-<p>To what extent is your submission correct and free of factual errors?</p>
+<p>To what extent is your code consistent with our specifications and free of bugs?</p>
+</dd>
+<dt class="hdlist1">Design</dt>
+<dd>
+<p>To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?</p>
 </dd>
 <dt class="hdlist1">Style</dt>
 <dd>
-<p>To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?</p>
+<p>To what extent is your code readable (i.e., commented and indented with variables aptly named)?</p>
 </dd>
 </dl>
 </div>
 <div class="paragraph">
-<p>To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.</p>
+<p>All students, whether or not taking the course for a letter grade, must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course&#8217;s heads.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="step-1-watch-this"><a class="link" href="#step-1-watch-this">Step 1: Watch This.</a></h2>
+<h2 id="bad-credit"><a class="link" href="#bad-credit">Bad Credit</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Let&#8217;s start off by watching David&#8217;s video (from Ted-ED) on Algorithms.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/6hfOvs8pY1k?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
+<p>Odds are someone you know has a credit card in their wallet.  That card has a number, both printed on its face and embedded (perhaps with some other data) in the magnetic stripe on back.  That number is also stored in a database somewhere, so that when the card is used to buy something, the creditor knows whom to bill.  There are a lot of people with credit cards in this world, so those numbers are pretty long: American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers.  And those are decimal numbers (0 through 9), not binary, which means, for instance, that American Express could print as many as 10^(15) = 1,000,000,000,000,000 unique cards!  (That&#8217;s, ahem, a quadrillion.)</p>
 </div>
 <div class="paragraph">
-<p>As we see from that video, algorithms are sets of instructions for completing a task step-by-step. Sometimes these algorithms can be quite simple. One way to express an algorithm for deciding how to dress based on the weather might be to say something like this.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>Look out the window. If it is raining outside, put on your rain boots and raincoat. Then go outside.</code></pre>
-</div>
+<p>Now that&#8217;s a bit of an exaggeration, because credit card numbers actually have some structure to them.  American Express numbers all start with 34 or 37; MasterCard numbers all start with 51, 52, 53, 54, or 55; and Visa numbers all start with 4.  But credit card numbers also have a "checksum" built into them, a mathematical relationship between at least one number and others.  That checksum enables computers (or humans who like math) to detect typos (e.g., transpositions), if not fraudulent numbers, without having to query a database, which can be slow.  (Consider the awkward silence you may have experienced at some point whilst paying by credit card at a store whose computer uses a dial-up modem to verify your card.)  Of course, a dishonest mathematician could certainly craft a fake number that nonetheless respects the mathematical constraint, so a database lookup is still necessary for more rigorous checks.</p>
 </div>
 <div class="paragraph">
-<p>Sometimes they can be a bit more complex. Dropbox, if unfamiliar, is a service that provides storage of files "in the cloud"&#8212;on physical machines that are not your own but rather are typically owned by a hosting company&#8212;and delivers those files to you via the Internet. It also can synchronize your files between all machines on which you&#8217;ve installed the Dropbox client and has a web interface for downloading your synchronized files, which is handier than e-mailing yourself a copy of the file you worked on at school so you can continue working on that same file at home.</p>
+<p>So what&#8217;s the secret formula?  Well, most cards use an algorithm invented by Hans Peter Luhn, a nice fellow from IBM.  According to Luhn&#8217;s algorithm, you can determine if a credit card number is (syntactically) valid as follows:</p>
 </div>
-<div class="paragraph">
-<p>As the company began to grow and have many users, Dropbox needed many more file servers and a way to organize their millions of users and their billions of files across those servers. As computer scientists might say, they had to develop algorithms for dealing with issues of <em>chunking</em> and <em>sharding</em>:</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/VECV6r9s5SE?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="paragraph">
-<p>And don&#8217;t worry if you don&#8217;t yet understand the processes that Thomas and Alex described in that video. You certainly don&#8217;t need to understand either of those things for this assignment, but rest assured that by the time you&#8217;ve completed the course, you&#8217;ll have a much better appreciation for how this might work!</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="step-2-read-this"><a class="link" href="#step-2-read-this">Step 2: Read This.</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The concept of an algorithm is fundamental in computer science. Recall from earlier in this unit that we defined a computer as <em>a device that accepts input, and processes it in some way to produce a result automatically</em>. The critical word in that sentence when we are talking about algorithms is the word "processes".</p>
-</div>
-<div class="paragraph">
-<p>Say you&#8217;re playing your favorite video game of all time. If you&#8217;re a fan of nostalgia, it might be this gem.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup></p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/zNBwkI0ytZo?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="paragraph">
-<p>Assume you&#8217;re racing Sonic around Green Hill Zone and you see a couple of rings up in the air, over Sonic&#8217;s head. Because they protect you in the event you are attacked by an enemy, you want to pick them up. In order to grab them, you have to press one of the buttons on the controller. When you press that button, Sonic jumps into the air to a consistent height. When and if he touches the ring, it disappears from the screen so it cannot be claimed multiple times, and the number of rings in his possession&#8212;&#8203;indicated by a ring counter&#8212;&#8203;increases by one.</p>
-</div>
-<div class="paragraph">
-<p>Every step of that process involved multiple algorithms. Described informally, those algorithms (greatly simplified) might read as something like this:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>If the jump button is pressed and if Sonic is standing on the ground, begin moving him upward
-until he reaches the top of his arc. After he reaches the top of his arc, begin moving him downward
-by simulating gravity's pull until he is standing on the ground again.</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>And for the rings:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>If Sonic is touching a ring, remove the ring from the screen and increase Sonic's ring counter by one.</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Let&#8217;s focus just on the jumping algorithm for now, because the "input" to that algorithm is a lot clearer. The device that is executing this algorithm is the Sega Genesis console (or, more likely nowadays, an emulator for the same) running the <em>Sonic the Hedgehog</em> software. What is the data or input? That would be you, holding your controller, pressing down on the button that makes Sonic jump. (In fact, as you may recall, it&#8217;s actually an electrical pulse that occurred when you pressed that button that likely "jump-started" this algorithm.<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup>)</p>
-</div>
-<div class="paragraph">
-<p>What is the result? On the television screen or monitor you see Sonic&#8217;s height off the ground begin to change; what he looks like might begin to change, too. Instead of keeping the same appearance as he did when standing on the ground, typically when Sonic jumps his <em>sprite</em> (a term we&#8217;ll be seeing again soon) changes to a ball that rotates, indicating that his jump is actually more of a flip or somersault through the air. As in reality, one doesn&#8217;t jump off the ground and then just fly off into the sky. What goes up must come down and so eventually after reaching the top of his jump Sonic lands on the ground again.</p>
-</div>
-<div class="paragraph">
-<p>All of this is a process. And, truly, the process is a lot more fine-grained than that. We&#8217;ve oversimplified for purposes of illustration. We&#8217;ve also glossed over the notion of multiple algorithms running simultaneously in separate <em>threads</em> (another term we&#8217;ll be seeing again soon). But hopefully this example suffices for now.</p>
-</div>
-<div class="paragraph">
-<p>Because this process of what happens when the jump button is pressed can be described as a clear, unambiguous, series of steps (aka, algorithmically)&#8212;at least in the game&#8217;s <em>source code</em>&#8212;it is consistent and, importantly, repeatable. If Sonic is standing at the same point and we press the jump button again and again&#8212;if he is standing on the ground and nothing else gets in his way like an enemy, whose algorithm might at some point fly them over Sonic&#8217;s head&#8212;the result is the same, again and again. Sonic always jumps to the same height, he spins in the same way while jumping, and he lands on the ground after the same amount of time. Because of the jumping algorithm, the computer always knows exactly what to do when that jump button is pressed, and always does exactly what it is told to do.</p>
-</div>
-<div class="paragraph">
-<p>Sometimes it is easiest to express an algorithm using common language. That&#8217;s what we have done so far. Look back to the very first algorithm mentioned above&#8212;about deciding what to wear in the event of rain. Maybe there&#8217;s a way to articulate the decision-making process of getting ready more clearly?</p>
-</div>
-<div class="paragraph">
-<p>Instead of this:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>Look out the window. If it is raining outside, put on your rain boots and raincoat. Then go outside.</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>you might see a computer scientist instead use what&#8217;s called <em>pseudocode</em>&#8212;short expressions in common language organized in a way that resembles what source code looks like&#8212;to write their algorithms. We&#8217;ll talk more about pseudocode soon, but getting in the habit of writing it before you dive into actual coding in Scratch, C, PHP, or JavaScript is a great idea, much like writing the first draft of an essay.</p>
-</div>
-<div class="paragraph">
-<p>Here&#8217;s one possible way to translate that algorithm into pseudocode:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>1   look out the window
-2   if it is raining outside
-3      put on your rain boots
-4      put on your raincoat
-5   go outside</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>We&#8217;ve numbered the lines for a reason you&#8217;ll see momentarily. But notice how regardless of whether it&#8217;s raining the algorithm instructs you to go outside. It just has a special extra set of things you do before stepping outside if it happens to be raining. We call something like "if it is raining outside" a <em>condition</em>. Some algorithms also have steps that get repeated many times over, like this one:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>Secretly pick your favorite number from 1 to 50. When your friend gives you a number, if they are too
-high tell them to guess lower and if they are too low tell them to guess higher. If they are right,
-have your friend stop guessing.</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>We call such a repetition a <em>loop</em>, because you&#8217;ll keep going around and around the same steps until some condition (your friend guessing the right number) lets you stop. Here&#8217;s one of many possible ways to express the guessing game in pseudocode:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code> 1   secretly pick your favorite number from 1 to 50
- 2   have your friend guess your favorite number
- 3   if your friend guesses a lower number
- 4      tell your friend to guess a higher number
- 5      go back to line 2
- 6   else if your friend guesses a higher number
- 7      tell your friend to guess a lower number
- 8      go back to line 2
- 9   else
-10      tell your friend to stop guessing</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Notice here that until your friend guesses the correct number, they will go back to line 2 of the algorithm, which prompts them to make another guess. Only when they guess correctly can they proceed to line 10 and <em>break</em> out of the loop.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="step-3-write-this"><a class="link" href="#step-3-write-this">Step 3: Write This.</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Okay, now you&#8217;ve learned a lot about algorithms and pseudocode. Perhaps we should try writing a few&#8212;&#8203;three, to be precise. First, write up algorithms (both in sentence form and in pseudocode) for how to:</p>
-</div>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>brush one&#8217;s teeth</p>
+<p>Multiply every other digit by 2, starting with the number&#8217;s second-to-last digit, and then add those products' digits together.</p>
 </li>
 <li>
-<p>eat an orange</p>
+<p>Add the sum to the sum of the digits that weren&#8217;t multiplied by 2.</p>
 </li>
-</ul>
+<li>
+<p>If the total&#8217;s last digit is 0 (or, put more formally, if the total modulo 10 is congruent to 0), the number is valid!</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>Next, think of something that you do every day or nearly every day. Write an algorithm in sentence form and in pseudocode for how to do the thing you&#8217;re thinking of.</p>
+<p>That&#8217;s kind of confusing, so let&#8217;s try an example with Daven&#8217;s AmEx: 378282246310005.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>For the sake of discussion, let&#8217;s first underline every other digit, starting with the number&#8217;s second-to-last digit:</p>
+<div class="paragraph">
+<p>3<span class="underline">7</span>8<span class="underline">2</span>8<span class="underline">2</span>2<span class="underline">4</span>6<span class="underline">3</span>1<span class="underline">0</span>0<span class="underline">0</span>5</p>
 </div>
 <div class="paragraph">
-<p>If you&#8217;re stuck, know that you aren&#8217;t just limited to purely text-based ways of writing out algorithms when trying to come up with them. It may help to just get started with a simple flowchart, such as the one Sheldon Cooper used in this clip from TV&#8217;s <em>The Big Bang Theory</em>:</p>
+<p>Okay, let&#8217;s multiply each of the underlined digits by 2:</p>
 </div>
-<div class="videoblock">
+<div class="paragraph">
+<p>7•2 + 2•2 + 2•2 + 4•2 + 3•2 + 0•2 + 0•2</p>
+</div>
+<div class="paragraph">
+<p>That gives us:</p>
+</div>
+<div class="paragraph">
+<p>14 + 4 + 4 + 8 + 6 + 0 + 0</p>
+</div>
+<div class="paragraph">
+<p>Now let&#8217;s add those products' digits (i.e., not the products themselves) together:</p>
+</div>
+<div class="paragraph">
+<p>1 + 4 + 4 + 4 + 8 + 6 + 0 + 0 = 27</p>
+</div>
+</li>
+<li>
+<p>Now let&#8217;s add that sum (27) to the sum of the digits that weren&#8217;t multiplied by 2:</p>
+<div class="paragraph">
+<p>27 + 3 + 8 + 8 + 2 + 6 + 1 + 0 + 5 = 60</p>
+</div>
+</li>
+<li>
+<p>Yup, the last digit in that sum (60) is a 0, so Daven&#8217;s card is legit!</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>So, validating credit card numbers isn&#8217;t hard, but it does get a bit tedious by hand.  Let&#8217;s write a program.</p>
+</div>
+<div class="paragraph">
+<p>In <code>credit.c</code>, write a program that prompts the user for a credit card number and then reports (via <code>printf</code>) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each&#8217;s format herein.  So that we can automate some tests of your code, we ask that your program&#8217;s last line of output be <code>AMEX\n</code> or <code>MASTERCARD\n</code> or <code>VISA\n</code> or <code>INVALID\n</code>, nothing more, nothing less, and that <code>main</code> always return <code>0</code>.  For simplicity, you may assume that the user&#8217;s input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).  But do not assume that the user&#8217;s input will fit in an <code>int</code>!</p>
+</div>
+<div class="paragraph">
+<p>One option (although not necessarily the only option!) is to use <code>GetLongLong</code> from CS50&#8217;s library to get users' input.  (Why?)</p>
+</div>
+<div class="paragraph">
+<p>Of course, to use <code>GetLongLong</code>, you&#8217;ll need to tell <code>clang</code> about CS50&#8217;s library.  Be sure to put</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/k0xgjUhEG3U?rel=0" frameborder="0" allowfullscreen></iframe>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Just do your best to avoid any infinite loops (a loop that&#8217;s impossible to ever break out of) in your algorithm, lest you be stuck in one forever!</p>
+<p>toward the top of <code>credit.c</code>.  And be sure to compile your code with a command like the below.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="step-4-do-this"><a class="link" href="#step-4-do-this">Step 4: Do This.</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Now for a little bit of fun. Before you actually turn in your algorithms, you probably should have someone test them out. Here&#8217;s what happened in a recent iteration of CS50 when we asked a few brave volunteers to make a peanut butter and jelly sandwich using an algorithm supplied by their classmates.</p>
-</div>
-<div class="videoblock">
+<div class="listingblock">
 <div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/KUB-aJXquUA?rel=0&amp;start=1034&amp;end=1608" frameborder="0" allowfullscreen></iframe>
+<pre class="pygments highlight"><code data-lang="bash">clang -o credit credit.c -lcs50</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>As you can see, describing algorithms precisely is crucial in order to have the desired effect! Have a few friends or family members test out your algorithms, instructing them to make absolutely no assumptions beyond exactly what you&#8217;ve written. Is your algorithm described clearly enough that your set of instructions can be repeated exactly without any ambiguity as to what to do? Did your friend or family member find a way to break your algorithm or, worse, find themselves in an infinite loop?</p>
+<p>Note that <code>-lcs50</code> must come at this command&#8217;s end because of how clang works.</p>
 </div>
 <div class="paragraph">
-<p>If so, help them escape, then take another crack at rewriting your algorithm&#8217;s instructions to see if you can&#8217;t make it a bit clearer.</p>
+<p>Incidentally, recall that <code>make</code> can invoke <code>clang</code> for you and provide that flag for you, as via the command below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">make credit</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Go back to the first paragraph of this section and run through those steps again.</p>
+<p>Assuming your program compiled without errors (or, ideally, warnings) via either command, you can run your program with the command below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">./credit</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>See what we did there?</p>
+<p>Consider the below representative of how your own program should behave when passed a valid credit card number (sans hyphens), wherein underlined text represents some user&#8217;s input.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>~/workspace/chapter1 $ <span class="underline">./credit</span>
+Number: <span class="underline">378282246310005</span>
+AMEX</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>This process may actually be more challenging than it first appears, and that&#8217;s okay. We promise though, once you start writing source code you&#8217;ll have access to a new (but limited!) toolkit of keywords and commands that will make precise algorithm-writing substantially easier!</p>
+<p>Of course, <code>GetLongLong</code> itself will reject hyphens (and more) anyway:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>~/workspace/chapter1 $ <span class="underline">./credit</span>
+Number: <span class="underline">3782-822-463-10005</span>
+Retry: <span class="underline">foo</span>
+Retry: <span class="underline">378282246310005</span>
+AMEX</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>This was Everyday Algorithms.</p>
+<p>But it&#8217;s up to you to catch inputs that are not credit card numbers, even if numeric:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>~/workspace/chapter1 $ <span class="underline">./credit</span>
+Number: <span class="underline">74605328941</span>
+INVALID</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>Test out your program with a whole bunch of inputs, both valid and invalid.  (We certainly will!)  Here are a few card numbers that PayPal recommends for testing:</p>
 </div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnote_1">
-<a href="#_footnoteref_1">1</a>. Don&#8217;t worry, we&#8217;ll give Mario his due soon enough, too!
+<div class="paragraph">
+<p><a href="https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm" class="bare">https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm</a></p>
 </div>
-<div class="footnote" id="_footnote_2">
-<a href="#_footnoteref_2">2</a>. Brace yourself for many more puns like that in the future.
+<div class="paragraph">
+<p>Google (or perhaps a parent&#8217;s wallet) should turn up more.  (If your parent asks what you&#8217;re doing, don&#8217;t mention us.)  If your program behaves incorrectly on some inputs (or doesn&#8217;t compile at all), time to debug!</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;d like to check the correctness of your program with <code>check50</code>, you may execute the below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">check50 1617.chapter1.credit credit.c</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And if you&#8217;d like to play with the staff&#8217;s own implementation of <code>credit</code> within CS50 IDE, you may execute the below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">~cs50/chapter1/credit</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This was Credit.</p>
+</div>
 </div>
 </div>
         </div>

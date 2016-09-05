@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
     <head>
-
-        <meta content="4851b15326f6b290-09e175a0bcd24dcd-gab2f4fb87b61a9c2-c" name="google-translate-customization"/>
-        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        
-            
-        
-            
-        
-            
-        
-            
-        
-
-        <!-- asciidoctor -a coderay-css=class,linkcss,source-highlighter=coderay -b html5 -D . /dev/null -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <style>
+
             /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio, canvas, video { display: inline-block; }
@@ -370,211 +358,124 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 .conum:not([data-value]):empty { display: none; }
 .literalblock > .content > pre, .listingblock > .content > pre { -webkit-border-radius: 0; border-radius: 0; }
 
-        </style>
-        <style>
-            /* Foundation stylesheet for CodeRay (to match GitHub theme) | MIT License | http://foundation.zurb.com */
-table.CodeRay { border-collapse: collapse; padding: 2px; margin-bottom: 0; border: 0; background: transparent; }
-table.CodeRay td { padding: 0 .5em; vertical-align: top; }
-table.CodeRay td.line-numbers { text-align: right; color: #999; border-right: 1px solid #e5e5e5; padding-left: 0; }
-span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inline-block; margin-right: 0.5em; padding-right: 0.5em; }
-.CodeRay td.line-numbers strong, .CodeRay span.line-numbers strong { font-weight: normal; }
-.CodeRay .debug { color: white !important; background: blue !important; }
-.CodeRay .annotation { color: #007; }
-.CodeRay .attribute-name { color: #f08; }
-.CodeRay .attribute-value { color: #700; }
-.CodeRay .binary { color: #509; }
-.CodeRay .comment  { color: #999; font-style: italic; }
-.CodeRay .char { color: #04D; }
-.CodeRay .char .content { color: #04D; }
-.CodeRay .char .delimiter { color: #039; }
-.CodeRay .class { color: #458; }
-.CodeRay .complex { color: #A08; }
-.CodeRay .constant { color: teal; }
-.CodeRay .color { color: #0A0; }
-.CodeRay .class-variable { color: #369; }
-.CodeRay .decorator { color: #B0B; }
-.CodeRay .definition { color: #099; }
-.CodeRay .directive { color: #088; }
-.CodeRay .delimiter { color: black; }
-.CodeRay .doc { color: #970; }
-.CodeRay .doctype { color: #34b; }
-.CodeRay .doc-string { color: #D42; }
-.CodeRay .escape  { color: #666; }
-.CodeRay .entity { color: #800; }
-.CodeRay .error { color: #808; }
-.CodeRay .exception { color: #C00; }
-.CodeRay .filename { color: #099; }
-.CodeRay .function { color: #900; }
-.CodeRay .global-variable { color: teal; }
-.CodeRay .hex { color: #058; }
-.CodeRay .integer  { color: #099; }
-.CodeRay .include { color: #B44; }
-.CodeRay .inline { color: black; }
-.CodeRay .inline .inline { background: #ccc; }
-.CodeRay .inline .inline .inline { background: #bbb; }
-.CodeRay .inline .inline-delimiter { color: #D14; }
-.CodeRay .inline-delimiter { color: #D14; }
-.CodeRay .important { color: #f00; }
-.CodeRay .interpreted { color: #B2B; }
-.CodeRay .instance-variable { color: teal; }
-.CodeRay .label { color: #970; }
-.CodeRay .local-variable { color: #963; }
-.CodeRay .octal { color: #40E; }
-.CodeRay .predefined { color: #369; }
-.CodeRay .preprocessor { color: #579; }
-.CodeRay .pseudo-class { color: #00C; }
-.CodeRay .predefined-type { color: #074; }
-.CodeRay .reserved, .keyword  { color: #000; }
-.CodeRay .key { color: #808; }
-.CodeRay .key .delimiter { color: #606; }
-.CodeRay .key .char { color: #80f; }
-.CodeRay .value { color: #088; }
-.CodeRay .regexp { background-color: #fff0ff; }
-.CodeRay .regexp .content { color: #808; }
-.CodeRay .regexp .delimiter { color: #404; }
-.CodeRay .regexp .modifier { color: #C2C; }
-.CodeRay .regexp .function  { color: #404; font-weight: bold; }
-.CodeRay .string { color: #D20; }
-.CodeRay .string .string { }
-.CodeRay .string .string .string { background-color: #ffd0d0; }
-.CodeRay .string .content { color: #D14; }
-.CodeRay .string .char { color: #D14; }
-.CodeRay .string .delimiter { color: #D14; }
-.CodeRay .shell { color: #D14; }
-.CodeRay .shell .content { }
-.CodeRay .shell .delimiter { color: #D14; }
-.CodeRay .symbol { color: #990073; }
-.CodeRay .symbol .content { color: #A60; }
-.CodeRay .symbol .delimiter { color: #630; }
-.CodeRay .tag, .CodeRay .attribute-name { color: #070; }
-.CodeRay .tag-special { color: #D70; }
-.CodeRay .type { color: #339; }
-.CodeRay .variable  { color: #036; }
-.CodeRay .insert { background: #afa; }
-.CodeRay .delete { background: #faa; }
-.CodeRay .change { color: #aaf; background: #007; }
-.CodeRay .head { color: #f8f; background: #505; }
-.CodeRay .insert .insert { color: #080; }
-.CodeRay .delete .delete { color: #800; }
-.CodeRay .change .change { color: #66f; }
-.CodeRay .head .head { color: #f4f; }
 
         </style>
         <style>
 
-            
-            
-
-            #footer {
-                background-color: inherit;
-                text-align: right;
-            }
-
-            #google_translate_element {
-                padding-top: 32px;
-            }
-
-            
-            .green {
-                color: #006400;
-            }
-
-            
-            .listingblock > .content pre {
-                overflow: auto;
-                white-space: pre;
-                word-wrap: inherit;
-            }
-
-            pre {
-                margin-bottom: 0.625em;
-            }
-
-            .red {
-                color: #ff0000;
-            }
-
-            select {
-                width: inherit;
-            }
-
-            
-            .yellow {
-                color: #cc0;
-            }
+            .listingblock .pygments .hll { background-color: #ffffcc }
+.listingblock .pygments, .listingblock .pygments code { background: #ffffff; }
+.listingblock .pygments .tok-c { color: #008000 } /* Comment */
+.listingblock .pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+.listingblock .pygments .tok-k { color: #0000ff } /* Keyword */
+.listingblock .pygments .tok-cm { color: #008000 } /* Comment.Multiline */
+.listingblock .pygments .tok-cp { color: #0000ff } /* Comment.Preproc */
+.listingblock .pygments .tok-c1 { color: #008000 } /* Comment.Single */
+.listingblock .pygments .tok-cs { color: #008000 } /* Comment.Special */
+.listingblock .pygments .tok-ge { font-style: italic } /* Generic.Emph */
+.listingblock .pygments .tok-gh { font-weight: bold } /* Generic.Heading */
+.listingblock .pygments .tok-gp { font-weight: bold } /* Generic.Prompt */
+.listingblock .pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+.listingblock .pygments .tok-gu { font-weight: bold } /* Generic.Subheading */
+.listingblock .pygments .tok-kc { color: #0000ff } /* Keyword.Constant */
+.listingblock .pygments .tok-kd { color: #0000ff } /* Keyword.Declaration */
+.listingblock .pygments .tok-kn { color: #0000ff } /* Keyword.Namespace */
+.listingblock .pygments .tok-kp { color: #0000ff } /* Keyword.Pseudo */
+.listingblock .pygments .tok-kr { color: #0000ff } /* Keyword.Reserved */
+.listingblock .pygments .tok-kt { color: #2b91af } /* Keyword.Type */
+.listingblock .pygments .tok-s { color: #a31515 } /* Literal.String */
+.listingblock .pygments .tok-nc { color: #2b91af } /* Name.Class */
+.listingblock .pygments .tok-ow { color: #0000ff } /* Operator.Word */
+.listingblock .pygments .tok-sb { color: #a31515 } /* Literal.String.Backtick */
+.listingblock .pygments .tok-sc { color: #a31515 } /* Literal.String.Char */
+.listingblock .pygments .tok-sd { color: #a31515 } /* Literal.String.Doc */
+.listingblock .pygments .tok-s2 { color: #a31515 } /* Literal.String.Double */
+.listingblock .pygments .tok-se { color: #a31515 } /* Literal.String.Escape */
+.listingblock .pygments .tok-sh { color: #a31515 } /* Literal.String.Heredoc */
+.listingblock .pygments .tok-si { color: #a31515 } /* Literal.String.Interpol */
+.listingblock .pygments .tok-sx { color: #a31515 } /* Literal.String.Other */
+.listingblock .pygments .tok-sr { color: #a31515 } /* Literal.String.Regex */
+.listingblock .pygments .tok-s1 { color: #a31515 } /* Literal.String.Single */
+.listingblock .pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
         </style>
-
-        <title>Writing Problem: Tech Spotlight</title>
-
+        <title>Problem: Hello</title>
     </head>
-
-    <body class="article toc2 toc-left">
-
-        
-
-            <div id="header">
-
-                
-                    
-                        <h1>Writing Problem: Tech Spotlight</h1>
-                    
-                    <span id="author" class="author">
-                        This is CS50 AP 1617. Harvard University.
-                    </span>
-                
-
-                <div id="google_translate_element"></div>
-                <script>
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-                    }
-                </script>
-                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                
-                    <div id="toc" class="toc2">
-                        <div id="toctitle">Table of Contents</div>
-                        <ul class="sectlevel1">
+    <body class="toc2 toc-left">
+        <div id="header">
+            <div class="toc2" id="toc">
+                <div id="toctitle">Table of Contents</div>
+                <ul class="sectlevel1">
 <li><a href="#objectives">Objectives</a></li>
-<li><a href="#academic_honesty">Academic Honesty</a>
+<li><a href="#recommended-reading">Recommended Reading</a></li>
+<li><a href="#academic-honesty">Academic Honesty</a>
 <ul class="sectlevel2">
 <li><a href="#reasonable">Reasonable</a></li>
-<li><a href="#not_reasonable">Not Reasonable</a></li>
+<li><a href="#not-reasonable">Not Reasonable</a></li>
 </ul>
 </li>
 <li><a href="#assessment">Assessment</a></li>
-<li><a href="#cats_and_viral_videos_and_viral_videos_starring_cats">Cats. And Viral Videos. And Viral Videos Starring Cats.</a></li>
-<li><a href="#okay_so_what_do_i_do">Okay, So What Do I Do?</a></li>
+<li><a href="#getting-started">Getting Started</a>
+<ul class="sectlevel2">
+<li><a href="#updating">Updating</a></li>
+<li><a href="#navigating-cs50-ide">Navigating CS50 IDE</a></li>
 </ul>
-                    </div>
-                
-
+</li>
+<li><a href="#hello-c">Hello, C</a></li>
+<li><a href="#cs50-check">CS50 Check</a></li>
+<li><a href="#cs50-style">CS50 Style</a></li>
+</ul>
             </div>
-
-        
-
+        </div>
         <div id="content">
-            <div class="sect1">
+            <h1>Problem: Hello</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questions?  Feel free to head to <a href="https://www.reddit.com/r/cs50">CS50 on Reddit</a>, <a href="http://cs50x.slack.com">the CS50x Slack page</a>, <a href="http://cs50.stackexchange.com">CS50 on StackExchange</a>, or the <a href="https://www.facebook.com/groups/cs50">CS50 Facebook group</a>.</p>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t be alarmed by the length of this problem&#8217;s specification. Most of it is just instructions for getting your programming environment set up and learning how to navigate within it. Once these steps are completed, you&#8217;ll be good to go for the rest of the year in CS50 AP!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="objectives"><a class="link" href="#objectives">Objectives</a></h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Become familiar with popular tech news sites.</p>
+<p>Set up your CS50 programming environment.</p>
 </li>
 <li>
-<p>Incorporate multiple sources into your writing.</p>
+<p>Get comfortable with Linux.</p>
 </li>
 <li>
-<p>Understand and reflect on some of the real-world implications of new technologies.</p>
+<p>Solve your first problem in C.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="academic_honesty"><a class="link" href="#academic_honesty">Academic Honesty</a></h2>
+<h2 id="recommended-reading"><a class="link" href="#recommended-reading">Recommended Reading</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pages 1 – 7, 9, and 10 of <a href="http://www.howstuffworks.com/c.htm" class="bare">http://www.howstuffworks.com/c.htm</a>.</p>
+</li>
+<li>
+<p>Chapters 1 – 5, 9, and 11 &#8211; 17 of <em>Absolute Beginner&#8217;s Guide to C</em>.</p>
+</li>
+<li>
+<p>Chapters 1 – 6 of <em>Programming in C</em>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="academic-honesty"><a class="link" href="#academic-honesty">Academic Honesty</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This course&#8217;s philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course&#8217;s material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.</p>
@@ -623,7 +524,7 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect2">
-<h3 id="not_reasonable"><a class="link" href="#not_reasonable">Not Reasonable</a></h3>
+<h3 id="not-reasonable"><a class="link" href="#not-reasonable">Not Reasonable</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -680,21 +581,25 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 <h2 id="assessment"><a class="link" href="#assessment">Assessment</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Your work on this Writing problem will be evaluated along three axes primarily.</p>
+<p>Your work on this problem set will be evaluated along four axes primarily.</p>
 </div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Scope</dt>
 <dd>
-<p>To what extent does your submission align with the requirements of the specification?</p>
+<p>To what extent does your code implement the features required by our specification?</p>
 </dd>
 <dt class="hdlist1">Correctness</dt>
 <dd>
-<p>To what extent is your submission correct and free of factual errors?</p>
+<p>To what extent is your code consistent with our specifications and free of bugs?</p>
+</dd>
+<dt class="hdlist1">Design</dt>
+<dd>
+<p>To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?</p>
 </dd>
 <dt class="hdlist1">Style</dt>
 <dd>
-<p>To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?</p>
+<p>To what extent is your code readable (i.e., commented and indented with variables aptly named)?</p>
 </dd>
 </dl>
 </div>
@@ -704,116 +609,423 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </div>
 </div>
 <div class="sect1">
-<h2 id="cats_and_viral_videos_and_viral_videos_starring_cats"><a class="link" href="#cats_and_viral_videos_and_viral_videos_starring_cats">Cats. And Viral Videos. And Viral Videos Starring Cats.</a></h2>
+<h2 id="getting-started"><a class="link" href="#getting-started">Getting Started</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Odds are, at some point in your life, you&#8217;ve used the Internet. In fact, more likely than not you use it many times a day, every single day, and have done so for as far back as you can remember. Given that level of real-world Internet experience, it won&#8217;t surprise you to know that the Web contains a lot of very useful data&#8230;&#8203; and also some data that might not be quite so useful:</p>
+<p>One of the hurdles that people getting started with programming frequently encounter is configuring their computer environment for programming. One approach would be to buy a new computer, install a programming-friendly operating system on it (such as Ubuntu Linux) on it, and use that! But that&#8217;s a pretty big ask.</p>
 </div>
-<div class="videoblock">
+<div class="paragraph">
+<p>Another approach is to do what we&#8217;ve done in the past. Several years back, our staff put together something called the CS50 Appliance, a "virtual machine" (running Ubuntu) that you can run inside of a window on your own computer, whether you run Windows, Mac OS, or even Linux itself. To do so, all you need is a "hypervisor" (otherwise known as a "virtual machine monitor"), software that tricks the Appliance into thinking that it&#8217;s running on "bare metal."</p>
+</div>
+<div class="paragraph">
+<p>But why not skip that altogether? After all, wouldn&#8217;t you like to get programming right away, without having to download, install, or configure much of anything at all?</p>
+</div>
+<iframe scrolling="no" allowtransparency="true" src="yes.gif" width="480" height="268" frameBorder="0" allowFullScreen></iframe>
+<div class="paragraph">
+<p>We thought you might! So in 2015, several members of our staff, prepared a successor to the CS50 Appliance that&#8217;s "cloud-based" (remember what that means?) largely using open-source software developed by a company called Cloud9.</p>
+</div>
+<div class="paragraph">
+<p>So let&#8217;s get you set up with your own instance of the so-called <strong>CS50 IDE</strong>, which we recommend you use for the majority of your programming work in the course. In order to do so, you&#8217;ll first need an edX account if you don&#8217;t already have one. Head to <a href="https://www.edx.org/" class="bare">https://www.edx.org/</a> and sign up for an account (if you are 13 or older) by clicking <strong>Register</strong> atop the page. Any public username that&#8217;s available is fine, but take care to remember it and your choice of password.</p>
+</div>
+<div class="paragraph">
+<p>After you confirm your account by clicking on the link in the email that edX will send, wait a few minutes and then head over to <a href="https://cs50.io">cs50.io</a> and log in using your edX credentials. You should have a CS50 IDE "workspace" automatically created for you (called <strong>ide50</strong>) on this first visit, and on every subsequent visit to <a href="https://cs50.io">cs50.io</a>, you should be brought right back to this workspace (if not, just click on the colored avatar in the top-right corner after logging in to be brought to your Cloud9 dashboard<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>, from which you&#8217;ll be able to then open your workspace).</p>
+</div>
+<div class="paragraph">
+<p>That wasn&#8217;t too bad, right?</p>
+</div>
+<div class="sect2">
+<h3 id="updating"><a class="link" href="#updating">Updating</a></h3>
+<div class="paragraph">
+<p>Once you&#8217;ve got your CS50 IDE instance open in a browser window, have a look over the README file we&#8217;ve included with it. It includes some basics about using your new workspace. Don&#8217;t worry too much about references to "problem sets" or other terminology or things you haven&#8217;t seen before&#8212;&#8203;CS50 IDE is neutrally configured for use with different versions of the CS50 course that won&#8217;t be applicable for your progress through CS50 AP.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s now make sure that you have the most up-to-date version of CS50 IDE. To do so, click in the <strong>terminal window</strong> (which probably has a tab that looks something like <strong>workspace/ - ""</strong>) at the bottom of the screen, where by default you should see a <strong>prompt</strong> which reads:</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<iframe width="960" height="540" src="https://www.youtube.com/embed/QH2-TGUlwu4?rel=0" frameborder="0" allowfullscreen></iframe>
+<pre class="pygments highlight"><code data-lang="bash">~/workspace <span class="tok-err">$</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Good luck getting that out of your head.</p>
+<p>You are now about to work with a command-line (i.e., text-based) interface via which you can navigate your workspace&#8217;s files and directories and run programs by typing their names. Updating the CS50 IDE is pretty easy. Just type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">update50</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>In this writing problem, we&#8217;re going to try to home in on some of the corners of the Internet to keep your eye on as we begin to explore computer science in more depth.</p>
+<p>at the prompt and then hit Enter on your keyboard. It may take a while to finish executing, but after a minute or two (depending on the speed of your computer and the quality of your Internet connection), you&#8217;ll see the terminal window eventually tells you</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>All done! &lt;3
+Update complete!</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>The great thing about living what is commonly (mostly in non-tech circles) called the Digital Age is that there is always some new device or technology emerging that promises to revolutionize the way we live our lives. Some of these technologies do.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup> Some&#8230;&#8203; not so much.<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup>. Also fortunately for us, despite the Internet being a pretty big place, there are plenty of sites that dedicate themselves to reporting the latest tech-oriented news, product reviews, and commentary on how technologies impact our lives.</p>
+<p>after which you are free to continue exploring CS50 IDE. As of the time we&#8217;re writing this specification, the current version of CS50 IDE is <strong>62</strong>. That&#8217;s the number you should see near the top-right corner of your screen. You can always check the version number of your IDE, also, by typing <code>version50</code> in the Terminal.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="navigating-cs50-ide"><a class="link" href="#navigating-cs50-ide">Navigating CS50 IDE</a></h3>
+<div class="paragraph">
+<p>Okay, let&#8217;s create a folder (otherwise known as a <strong>directory</strong>) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled <code>~/workspace</code>). Right-click in the blank space underneath that folder and select <strong>New Folder</strong> near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled <strong>New Folder</strong> which you can rename now to <code>chapter1</code>. If you accidentally leave it named <code>New Folder</code>, simply right click on the folder, choose <strong>Rename</strong> from the context menu, and rename it.</p>
 </div>
 <div class="paragraph">
-<p>Sites like <a href="http://www.techcrunch.com">TechCrunch</a>, <a href="http://www.wired.com">Wired</a>, <a href="http://www.gizmodo.com">Gizmodo</a>, <a href="http://www.mashable.com">Mashable</a>, and <a href="http://www.techradar.com">TechRadar</a> are just a few of these websites that we at CS50 keep bookmarked in our browsers so we can always stay on top of the latest developments. Frequently these articles inform our understanding of new products, make us rethink previously-held opinions, or cause us to think about some of the implications of the technology that might not have seemed apparent at first glance. It&#8217;s particularly the last item that we&#8217;re focusing on in this assignment.</p>
+<p>Front and center in the CS50 IDE workspace is a window wherein you&#8217;ll be able to write your code, using Ace, a web-based text editor. Right now, assuming you haven&#8217;t played around with the tabs, that window is blank.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s create a new file to play around with. Right-click on your newly-created <code>chapter1</code> folder and choose <strong>New File</strong> from the context menu. Then, double-click on this new file (which should hopefully be called <code>Untitled</code> and which should be nested beneath <code>chapter1</code> in the file tree), and a blank window should open up in Ace with the tab for <code>Untitled</code> as the active one.</p>
+</div>
+<div class="paragraph">
+<p>Go ahead and type <code>hello</code> (or the ever-popular <code>asdf</code>) on line 1 of the document, and then notice how the tab&#8217;s name in Ace now contains a red dot, indicating that you&#8217;ve made changes since the file was first opened. Select <strong>File &gt; Save</strong>, and that red dot should turn green and then disappear, indicating all of our changes are saved.</p>
+</div>
+<div class="paragraph">
+<p><code>Untitled</code> isn&#8217;t exactly a useful name for this file though, is it? Let&#8217;s fix that! In the file tree on the left, right-click on <code>Untitled</code> and select <strong>Rename</strong> from the context menu. Enter <code>hello.txt</code> when able, and then hit Enter on your keyboard. You should see the name of the file has changed both in the file tree on the left and in the name of the tab.</p>
+</div>
+<div class="paragraph">
+<p>Okay, with <code>hello.txt</code> still open in your workspace, notice that beneath your document is that terminal window. Notice that the window&#8217;s prompt is, assuming you haven&#8217;t otherwise manipulated it</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">~/workspace <span class="tok-err">$</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(where <code>~/workspace</code> &ndash; i.e., inside a folder called <code>workspace</code> which is itself inside your home directory, the shorthand for which is <code>~</code> &ndash; is the directory you are currently in.) If that&#8217;s the case, based on the file tree should be a <code>chapter1</code> directory somewhere inside, since we created it just a few moments ago. Let&#8217;s confirm as much.</p>
+</div>
+<div class="paragraph">
+<p>Click somewhere inside of that terminal window and type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">ls</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and then Enter. That&#8217;s a lowercase <code>L</code> and a lowercase <code>S</code>, which is shorthand notation for "list." Indeed, you should then see a list of the folders inside of your workspace directory, among which is <code>chapter1</code>! Let&#8217;s open that folder! Type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span class="tok-nb">cd </span>chapter1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or even</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span class="tok-nb">cd</span> ~/workspace/chapter1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>followed by Enter to <span class="underline">c</span>hange your <span class="underline">d</span>irectory to <code>~/workspace/chapter1</code> (ergo, <code>cd</code>). You should find that your prompt changes to</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">~/workspace/chapter1/ <span class="tok-err">$</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>confirming that you are indeed now inside of <code>~/workspace/chapter1</code> (i.e., a directory called <code>chapter1</code> inside of a directory called <code>workspace</code> inside of your home directory). Now type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">ls</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>followed by Enter. You should see <code>hello.txt</code>! Now, you can&#8217;t click or double-click on that file&#8217;s name there; it&#8217;s just text. But that listing does confirm that <code>hello.txt</code> is where we hoped it would be.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s poke around a bit more. Go ahead and type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span class="tok-nb">cd</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and then Enter. It turns out that if you don&#8217;t provide <code>cd</code> with a "command-line argument" (i.e., a directory&#8217;s name), it whisks you back to your home directory by default. But remember that everything lives inside of <code>~/workspace</code>&#8230;&#8203; so we need to get back there! Just:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span class="tok-nb">cd </span>workspace</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And indeed, your prompt should now be:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">~/workspace <span class="tok-err">$</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of <code>workspace</code>.</p>
+</div>
+<div class="paragraph">
+<p>Make sense? If not, no worries; it soon will! It&#8217;s in this terminal window that you&#8217;ll soon be compiling your first program! For now, though, close Ace by clicking the small "x" in the tab for <code>hello.txt</code> (if you&#8217;ve made additional changes, you&#8217;ll be asked if you want to save your file before the tab closes).</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="okay_so_what_do_i_do"><a class="link" href="#okay_so_what_do_i_do">Okay, So What Do I Do?</a></h2>
+<h2 id="hello-c"><a class="link" href="#hello-c">Hello, C</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Pick some piece of technology with which you are familiar and that you might use everyday. It needn&#8217;t be a piece of hardware; software, websites, and the like are perfectly fine too. Explore it in depth. Find some articles about recent developments (i.e., within the last three months) in this technology that have been posted on sites like the ones described earlier. Specifically, you should read a minimum of three (3) articles about the technology you&#8217;ve chosen, and include your list of sources at the end of your paper.<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup></p>
+<p>First, a hello from Zamyla if you&#8217;d like a tour of what&#8217;s to come, particularly if less comfortable. Note that in this video, she is using the CS50 Appliance, which is somewhat different from the CS50 IDE, but not a problem.</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe width="960" height="540" src="https://www.youtube.com/embed/HkQD6aw7oDc?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 </div>
 <div class="paragraph">
-<p>Then, in no more than <strong>600 words</strong>, expound on this technology. Assume for the purposes of this assignment that your audience is someone who has no prior knowledge about the technology you are describing, and so your objective is to provide them with a well-rounded, unbiased summary. In writing your response, you should consider this (non-exhaustive) list of questions a good starting point:</p>
+<p>Shall we have you write your first program? You could go ahead create a new file inside of your <code>chapter1</code> directory and save the file as <code>hello.c</code> (not <code>hello.txt</code>), just as before (remember how?), but we&#8217;ll also take this opportunity to show you another way. In the terminal window, type</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>What is this technology called?</p>
-</li>
-<li>
-<p>What does it do?</p>
-</li>
-<li>
-<p>How does someone use this technology?</p>
-</li>
-<li>
-<p>How is its quality of performance commonly measured? (e.g. in megabytes (MB), gigahertz (GHz), etc.)</p>
-</li>
-<li>
-<p>How does the recent news about the technology change the product or service?</p>
-</li>
-<li>
-<p>What older form of technology does it replace, if any?</p>
-</li>
-<li>
-<p>How has this technology impacted your life, for better or worse?</p>
-</li>
-<li>
-<p>How has this technology impacted society at large, for better or worse?</p>
-</li>
-</ul>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span class="tok-nb">cd</span> ~/workspace/chapter1</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>It&#8217;s worth mentioning here that other than reporting on some technical specifications, which you may not have previously known but which may be listed in the articles themselves, you shouldn&#8217;t be using text from your sources in your assignment directly. Rather, the articles you read will hopefully provide slightly different perspectives on the technology you&#8217;ve chosen, and you should synthesize those perspectives to comment on the technology more broadly.</p>
+<p>and then, after confirming that you are in the right spot by looking at your prompt, type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">touch hello.c</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>To be clear, you&#8217;re not standing in the role of a salesperson. Make sure to speak factually for the most part, and if you do cite or offer an opinion on the product (e.g., "I think this product is great because&#8230;&#8203;"), be sure that your paper is balanced by offering the opposing opinion too (e.g., "Some people might dislike this product because&#8230;&#8203;").</p>
+<p>after a few moments, you should see <code>hello.c</code> has been created inside of your <code>chapter1</code> directory. Neat! Double-click on that file in the file tree to edit it, as before, then go ahead and write your first program by typing these lines into the file (though you&#8217;re welcome to change the words between quotes to whatever you&#8217;d like):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-n">printf</span><span class="tok-p">(</span><span class="tok-s">&quot;hello, world</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>This was Tech Spotlight. And unfortunately, the Nyan Cat song is still stuck in our heads. :\</p>
+<p>Notice how Ace adds "syntax highlighting" (i.e., color) as you type. Those colors aren&#8217;t actually saved inside of the file itself; they&#8217;re just added by Ace to make certain syntax stand out. Had you not saved the file as <code>hello.c</code> from the start, Ace wouldn&#8217;t know (per the filename&#8217;s extension) that you&#8217;re writing C code, in which case those colors would be absent.</p>
 </div>
+<div class="paragraph">
+<p>Do be sure that you type in this program just right, else you&#8217;re about to experience your first bug! In particular, capitalization matters, so don&#8217;t accidentally capitalize words (unless they&#8217;re between those two quotes). And don&#8217;t overlook that one semicolon. C is quite nitpicky!</p>
+</div>
+<div class="paragraph">
+<p>When done typing, select <strong>File &gt; Save</strong> (or hit ctrl-s), but don&#8217;t close the tab. Recall that the leading asterisk in the tab&#8217;s name should then disappear. Click anywhere in the terminal window beneath your code. The prompt itself should now be</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">~/workspace/chapter1 <span class="tok-err">$</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If it&#8217;s not, navigate yourself there. (Remember how?) <code>hello.c</code> should exist in this folder, assuming everything&#8217;s gone according to plan. Let&#8217;s confirm that <code>hello.c</code> is there. Type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">ls</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>at the prompt followed by Enter, and you should see both <code>hello.c</code> and <code>hello.txt</code>? If not, no worries; you probably just missed a small step. Best to restart these past several steps or ask for help!</p>
+</div>
+<div class="paragraph">
+<p>Assuming you indeed see <code>hello.c</code>, let&#8217;s try to compile! Cross your fingers and then type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">make hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>at the prompt, followed by Enter. (Well, maybe don&#8217;t cross your fingers whilst typing.) To be clear, type only <code>hello</code> here, not <code>hello.c</code>. You&#8217;ll likely see a line that looks like the following<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup> immediately after hitting Enter</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">clang -ggdb3 -O0 -std<span class="tok-o">=</span>c99 -Wall -Werror   hello.c  -lcs50 -lm -o hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If after that all that you see is another, identical prompt, that means it worked! Your source code has been translated to object code (0s and 1s) that you can now execute. Cool! Type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">./hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>at your prompt, followed by Enter, and you should see whatever message you wrote between quotes in your code! Indeed, if you type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">ls</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>followed by Enter, you should see a new file, <code>hello</code>, alongside <code>hello.c</code> and <code>hello.txt</code>.</p>
+</div>
+<div class="paragraph">
+<p>If, though, upon running <code>make</code>, you instead see some error(s), it&#8217;s time to debug! (If the terminal window&#8217;s too small to see everything, click and drag its top border upward to increase its height.) If you see an error like expected declaration or something no less mysterious, odds are you made a syntax error (i.e., typo) by omitting some character or adding something in the wrong place. Scour your code for any differences vis-à-vis the template above. It&#8217;s easy to miss the slightest of things when learning to program, so do compare your code against ours character by character; odds are the mistake(s) will jump out! Anytime you make changes to your own code, just remember to re-save via <strong>File &gt; Save</strong> (or ctrl-s), then re-click inside of the terminal window, and then re-type</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">make hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>at your prompt, followed by Enter. (Just be sure that you are inside of <code>~/workspace/chapter1</code> within your terminal window, as your prompt will confirm or deny.) If you see no more errors, try running your program by typing</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">./hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>at your prompt, followed by Enter! Hopefully you now see precisely the below?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">hello, world</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If not, reach out for help!</p>
+</div>
+<div class="paragraph">
+<p>Woo hoo! You&#8217;ve begun to program!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cs50-check"><a class="link" href="#cs50-check">CS50 Check</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now let&#8217;s see if the program you just wrote is correct! Included in the CS50 IDE is <code>check50</code>, a command-line program with which you can check the correctness of (some of) your programs.</p>
+</div>
+<div class="paragraph">
+<p>If not already there, navigate your way to <code>~/workspace/chapter1</code> (Remember how?)</p>
+</div>
+<div class="paragraph">
+<p>If you then execute</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">ls</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>you should see, at least, <code>hello.c</code>. Be sure it&#8217;s indeed spelled <code>hello.c</code> and not <code>Hello.c</code>, <code>hello.C</code>, or the like, as filenames on CS50 IDE and indeed most Linux operating systems are case-sensitive. If it&#8217;s not, know that you can rename a file in the terminal (as opposed to right-clicking in the file tree) by executing</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">mv <span class="tok-nb">source </span>destination</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where <code>source</code> is the file&#8217;s current name, and <code>destination</code> is the file&#8217;s new name. For instance, if you accidentally named your program <code>Hello.c</code>, you could fix it as follows.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">mv Hello.c hello.c</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Okay, assuming your file&#8217;s name is definitely spelled <code>hello.c</code> now, go ahead and execute the below. Note that <code>1516.unit1.hello</code> is just a unique identifier for this problem&#8217;s checks. We&#8217;ll always specify exactly the unique identifier you should use to check your programs' correctness.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">check50 1617.chapter1.hello hello.c</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Assuming your program is correct, you should then see output like</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span class="green">:) hello.c exists</span>
+<span class="green">:) hello.c compiles</span>
+<span class="green">:) prints "hello, world\n"</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where each green smiley means your program passed a check (i.e., test). You may also see a URL at the bottom of <code>check50</code>'s output, but that&#8217;s something your teacher might use when checking your code (though you&#8217;re welcome to visit it nonetheless).</p>
+</div>
+<div class="paragraph">
+<p>If you instead see yellow or red smileys, it means your code isn&#8217;t correct! For instance, suppose you instead see the below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span class="red">:( hello.c exists</span>
+  \ expected hello.c to exist
+<span class="yellow">:| hello.c compiles</span>
+  \ can't check until a frown turns upside down
+<span class="yellow">:| prints "hello, world\n"</span>
+  \ can't check until a frown turns upside down</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Because <code>check50</code> doesn&#8217;t think <code>hello.c</code> exists, as per the red smiley, odds are you uploaded the wrong file or misnamed your file. The other smileys, meanwhile, are yellow because those checks are dependent on <code>hello.c</code> existing, and so they weren&#8217;t even run.</p>
+</div>
+<div class="paragraph">
+<p>Suppose instead you see the below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span class="green">:) hello.c exists</span>
+<span class="green">:) hello.c compiles</span>
+<span class="red">:( prints "hello, world\n"</span>
+  \ expected output, but not "hello, world"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Odds are, in this case, you printed something other than <code>hello, world\n</code> verbatim, per the spec&#8217;s expectations. In particular, the above suggests you printed <code>hello, world</code>, without a trailing newline (<code>\n</code>). See why?</p>
+</div>
+<div class="paragraph">
+<p><code>check50</code> lets you check your work&#8217;s correctness <em>before</em> you submit your work. Once you actually submit your work (per the directions at this spec&#8217;s end), your teacher will use <code>check50</code> to evaluate your work&#8217;s correctness officially.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cs50-style"><a class="link" href="#cs50-style">CS50 Style</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition to <code>check50</code>, the CS50 IDE comes with <code>style50</code>, a tool with which you can evaluate your code&#8217;s style vis-à-vis <a href="https://manual.cs50.net/style/">CS50&#8217;s style guide</a>. To run it on, say, <code>hello.c</code>, execute the below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">style50 hello.c</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should see zero or more lines of suggestions. Yellow smileys indicate warnings that you should consider addressing. Red smileys indicate errors that you should definitely address.</p>
+</div>
+<div class="paragraph">
+<p>Note that <code>style50</code> is still a work in progress (a "beta" version, so to speak), so best to consult <a href="https://manual.cs50.net/style/">CS50&#8217;s style guide</a> for official guidance.</p>
+</div>
+<div class="paragraph">
+<p>And how about that? You&#8217;ve written your first C program and configured your CS50 environment! Not too shabby.</p>
+</div>
+<div class="paragraph">
+<p>This was Hello.</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. Incidentally, the first time you visit your Cloud9 dashboard in this way, you may be prompted once again for your email address.
+</div>
+<div class="footnote" id="_footnote_2">
+<a href="#_footnoteref_2">2</a>. Later in the course, we&#8217;ll pick apart what all this stuff is, but for now try not to worry too much about it.
 </div>
 </div>
         </div>
-        
-        
-            <div id="footnotes">
-                <hr/>
-                
-                    <div class="footnote" id="_footnote_1">
-                        <a href="#_footnoteref_1">1</a>. <a href="https://www.facebook.com/" class="bare">https://www.facebook.com/</a>
-                    </div>
-                
-                    <div class="footnote" id="_footnote_2">
-                        <a href="#_footnoteref_2">2</a>. <a href="https://en.wikipedia.org/wiki/Betamax" class="bare">https://en.wikipedia.org/wiki/Betamax</a>
-                    </div>
-                
-                    <div class="footnote" id="_footnote_3">
-                        <a href="#_footnoteref_3">3</a>. Your list of sources needn&#8217;t be prepared as a bibliography following any particular citation style, but do be sure to include for each the name of the article read, name of the website or publication where you found the article, date the article was written, author&#8217;s name, and URL, if found online.
-                    </div>
-                
-            </div>
-        
-
-        <div id="footer">
-            Copyright &#169; David J. Malan
-        </div>
-
-        <script>
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-8162502-43']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-
     </body>
 </html>
