@@ -54,7 +54,7 @@ Okay, let's create a folder in which your code for this problem set will soon li
 
 Next, control-click or right-click that *pset1* folder that you just created and select *New File*. A new file called *Untitled* should appear; rename it *hello.txt* (all lowercase) and then hit Enter. (If you misname it or can't seem to edit its name, control-click or right-click the new file and select *Rename* to try again!) You should see that *hello.txt* is indented immediately beneath *pset1*, which indicates that the former is inside of the latter. If *hello.txt* doesn't appear to be inside of *pset1*, simply drag and drop the former into the latter.
 
-Double-click *hello.txt*, and a new tab should appear within CS50 IDE via which you can edit the file. Go ahead and type something simple (e.g., `hello` or the ever-popular `asdf`). Notice that red dot should then appear atop the tab, to the right of the tab's name. That red dot indicates that your file has changed but not yet been saved. Go ahead and save the file via *File > Save* or, more quickly, via command-S (on Macs) or control-S (on PCs). The asterisk should disappear.
+Double-click *hello.txt*, and a new tab should appear within CS50 IDE via which you can edit the file. Go ahead and type something simple (e.g., `hello` or the ever-popular `asdf`). Notice that red dot should then appear atop the tab, to the right of the tab's name. That red dot indicates that your file has changed but not yet been saved. Go ahead and save the file via *File > Save* or, more quickly, via command-S (on Macs) or control-S (on PCs). The red dot should disappear.
 
 Okay, now let's confirm via your terminal window that the file is indeed where it should be and start to familiarize you with that terminal window's command-line interface. As before, your terminal window's prompt should be the below.
 
@@ -147,7 +147,7 @@ Notice how CS50 IDE adds "syntax highlighting" (i.e., color) as you type, though
 
 Do be sure that you type this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the leading asterisk in the tab's name should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/pset1/`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/pset1/` and then Enter.) Your prompt should be:
+When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/pset1/`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/pset1/` and then Enter.) Your prompt should be:
 
 [source,text]
 ----
