@@ -34,7 +34,7 @@ Now let's add those products' digits (i.e., not the products themselves) togethe
 . Now let's add that sum (27) to the sum of the digits that weren't multiplied by 2:
 +
 27 + 3 + 8 + 8 + 2 + 6 + 1 + 0 + 5 = 60
-. Yup, the last digit in that sum (60) is a 0, so Daven's card is legit!
+. Yup, the last digit in that sum (60) is a 0, so my card is legit!
 
 So, validating credit card numbers isn't hard, but it does get a bit tedious by hand. Let's write a program.
 
