@@ -10,7 +10,6 @@ RUN apt-get update && \
 # https://github.com/asciidoctor/jekyll-asciidoc#development
 COPY Gemfile /root
 WORKDIR /root
-RUN gem install bundler
-RUN bundle install
+RUN gem install bundler && bundle install
 
 RUN echo "This is CS50 CLI with Jekyll." > /etc/motd
