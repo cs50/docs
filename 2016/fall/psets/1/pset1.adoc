@@ -537,4 +537,4 @@ include::credit.adoc[]
 
 == How to Submit
 
-_Coming Wed 9/7. Reload this page then!_
+_Coming Fri 9/9. (Readying the submission system!) Reload this page then! Future psets will be submittable earlier in week!_
