@@ -131,7 +131,7 @@ First, a hello from Zamyla if you'd like a tour of what's to come, particularly 
 
 video::vbkTzOytISY[youtube,height=540,width=960]
 
-Shall we have you write your first program? Inside of your *pset1* folder, create a new file called *hello.c*, and then open that file in a tab. (Remember how?) Be sure to capitalize the file's name just as we have; files' and folders' names in Linux are "case-sensitive." Proceed to write your first program by typing precisely these lines into the file:
+Shall we have you write your first program? Inside of your *pset1* folder, create a new file called *hello.c*, and then open that file in a tab. (Remember how?) Be sure to name the file just as we have, in all lowercase; files' and folders' names in Linux are "case-sensitive." Proceed to write your first program by typing precisely these lines into the file:
 
 [source,c]
 ----
