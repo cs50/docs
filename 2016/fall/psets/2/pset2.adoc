@@ -15,6 +15,12 @@ title: Problem Set 2
 
 include::help-harvard.adoc[]
 
+== Reminders
+
+* Use `help50` as needed.
+* Use `eprintf` as needed.
+* Use `debug50` as needed.
+
 == Getting Started
 
 Alright, here we go again!

@@ -1,7 +1,6 @@
 ---
 title: Caesar
 ---
-:stem:
 
 = Caesar
 
@@ -31,7 +30,46 @@ Unencrypted text is generally called _plaintext_. Encrypted text is generally ca
 | *= ciphertext* | I   | F   | M   | M   | P
 |===
 
-== What To Do
+Put another way, Caesar's algorithm (i.e., cipher) encrypts messages by "rotating" each letter by _k_ positions. More formally, if _p_ is some plaintext (i.e., an unencrypted message), _p~i~_ is the _i^th^_ character in _p_, and _k_ is a secret key (i.e., a non-negative integer), then each letter, _c~i~_, in the ciphertext, _c_, is computed as
+
+[latexmath]
+++++
+c_i = (p_i + k) \bmod 26
+++++
+
+wherein latexmath:[\bmod 26] here means "remainder when dividing by 26." This formula perhaps makes the cipher seem more complicated than it is, but it's really just a nice way of expressing the algorithm precisely and concisely.
+
+Prefer an example that shows the math? Okay, sure. For the sake of discussion, think of A as 0, B as 1, ..., and Z as 25. Suppose that Caesar wants to say HI to someone secretly using his usual key, _k_, of 3. And so his plaintext, _p_, is HI, in which case his plaintext's first character, _p~0~_, is H (aka 7), and his plaintext's second character, _p~1~_, is I (aka 8). His ciphertext's first character, _c~0~_, is thus K, since:
+
+[latexmath]
+++++
+\begin{align}
+c_0 & = (p_0 + k) \bmod 26 \\
+    & = (H + 3) \bmod 26 \\
+    & = (7 + 3) \bmod 26 \\
+    & = 10 \bmod 26 \\
+    & = 10 \\
+    & = K
+\end{align}
+++++
+
+And his ciphertext's second character, _c~1~_, is thus L, since:
+
+[latexmath]
+++++
+\begin{align}
+c_1 & = (p_1 + k) \bmod 26 \\
+    & = (I + 3) \bmod 26 \\
+    & = (8 + 3) \bmod 26 \\
+    & = 11 \bmod 26 \\
+    & = 10 \bmod \\
+    & = L
+\end{align}
+++++
+
+And so Caesar would send KL instead of HI.
+
+== Specification
 
 Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher.
 
@@ -47,7 +85,7 @@ Design and implement a program, `caesar`, that encrypts messages using Caesar's 
 
 == Walkthrough
 
-video::TODO[youtube,height=540,width=960]
+video::Vnto0lsCLuY[youtube,height=540,width=960]
 
 == Usage
 
@@ -150,7 +188,7 @@ In other words, just as `argv` is an array of ++string++s, so is a `string` an a
 
 Incidentally, you'll need to `#include` yet another header file in order to use https://reference.cs50.net/string/strlen[`strlen`]. 
 
-Besides `atoi`, you might find some handy functions documented at https://reference.cs50.net/[reference.cs50.net] under *ctype.h* and *stdlib.h*. For instance, `isdigit` sounds interesting. 
+Besides `atoi`, you might find some handy functions documented at https://reference.cs50.net/[reference.cs50.net] under *ctype.h* and *stdlib.h*. For instance, `isalpha` might prove helpful when iterating over plaintext's characters.
 
 And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out http://asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
 

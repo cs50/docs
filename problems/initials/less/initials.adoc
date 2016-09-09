@@ -15,7 +15,7 @@ Regulus Arcturus Black
 RAB
 ----
 
-== What To Do
+== Specification
 
 Design and implement a program, `initials`, that, given a person's name, prints a person's initials.
 
@@ -25,7 +25,7 @@ Design and implement a program, `initials`, that, given a person's name, prints 
 
 == Walkthrough
 
-video::TODO[youtube,height=540,width=960]
+video::pwt3L9XK1Us[youtube,height=540,width=960]
 
 == Usage
 
@@ -51,7 +51,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source]
 ----
-check50 2016.initials initials.c
+check50 2016.initials.less initials.c
 ----
 
 == Staff's Solution
