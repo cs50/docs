@@ -484,7 +484,7 @@ And so, before making change, you'll probably want to convert the user's input e
 
 Not sure where to begin? Not to worry, start with a walkthrough:
 
-video::2cArM62sC7E[youtube,height=540,width=960]
+video::6w7Tws0seJk[youtube,height=540,width=960]
 
 Incidentally, so that we can automate some tests of your code, we ask that your program's last line of output be only the minimum number of coins possible: an integer followed by `\n`. Consider the below representative of how your own program should behave, wherein underlined text is some user's input.
 

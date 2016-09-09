@@ -1,0 +1,13 @@
+---
+published: false
+---
+
+== Help
+
+For help with Week 2 and Problem Set 2:
+ 
+* Attend David's and Rob's walkthrough on Wed 9/14, 1pm – 2:30pm, in Sanders.
+* Watch Zamyla's walkthroughs herein.
+* Attend your TF's section (or another if you have a conflict).
+* Post questions and search answers in https://cs50.harvard.edu/discuss[CS50 Discuss].
+* Attend https://cs50.harvard.edu/hours[office hours].
