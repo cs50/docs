@@ -131,6 +131,6 @@ video::iLSBUKs4AYU[youtube,height=540,width=960]
 
 == How to Submit
 
-Refresh this page in the afternoon of Thu 9/8, and submission instructions will be posted!
+To submit this assignment, please fill out https://docs.google.com/forms/d/e/1FAIpQLScYc3WTtbHjYCy83rK1nyHoPv7hKdjVcNP7o8nxYdn95PGSAQ/viewform[this form], where you'll answer a few questions and provide a link to your Scratch project on the MIT website!
 
 This was Scratch, your first programming problem in CSCI E-50a!

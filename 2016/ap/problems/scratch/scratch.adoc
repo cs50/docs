@@ -125,7 +125,7 @@ Incidentally, if you don't have the best Internet access, you're welcome to down
 
 Once finished with your project, click *See project page* in Scratch's top-right corner. Ensure your project has a title (in Scratch's top-left corner), some instructions (in Scratch's top-right corner), and some notes and/or credits (in Scratch's bottom-right corner). Then click *Share* in Scratch's top-right corner so that others (e.g., your teacher!) can see your project. Finally, take note of the URL in your browser's address bar. That's your project's URL on MIT's website, and you'll need to know it later.
 
-Oh, and if you'd like to exhibit your project in CS50 AP 1617’s studio with students from around the country taking CS50 AP alongside you, head to tbd, then click *Add projects*, and paste in your own project's URL.
+Oh, and if you'd like to exhibit your project in CS50 AP 1617’s studio with students from around the country taking CS50 AP alongside you, head to https://scratch.mit.edu/studios/3017725/[this link], then click *Add projects*, and paste in your own project's URL.
 
 Incidentally, if curious to learn more about the design of Scratch itself, you might like this segment with our friends from MIT's Media Lab:
 

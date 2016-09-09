@@ -121,7 +121,7 @@ A schedule of problem sets, subject to change, appears below.
 | Problem | Type | Released | Due
 
 | http://docs.cs50.net/2016/fall/cscie50a/problems/algorithms/algorithms.html[Everyday Algorithms] | Written | Fri 9/2 | Wed 9/7
-| Scratch | Programming | Tue 9/6 | Sat 9/10
+| http://docs.cs50.net/2016/fall/cscie50a/problems/scratch/scratch.html[Scratch] | Programming | Tue 9/6 | Sat 9/10
 | Hello | Programming | Fri 9/9 | Wed 9/14
 | Fahrenheit | Programming | Tue 9/13 | Sat 9/17
 | Mario | Programming | Fri 9/16 | Wed 9/21
