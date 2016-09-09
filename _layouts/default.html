@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script crossorigin="anonymous" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    displayMath: [["\\[", "\\]"]],
+                    ignoreClass: "nostem|nostem|nolatexmath",
+                    inlineMath: [["\\(", "\\)"]]
+                },
+                asciimath2jax: {
+                    delimiters: [["\\$", "\\$"]],
+                    ignoreClass: "nostem|nostem|noasciimath"
+                }
+            });
+        </script>
+        <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script>
+
+            $(function() {
+
+                // look for unprocessed mathematics on the page and typeset it
+                MathJax.Hub.TypeSet();
+
+                // add start=0 to ordered lists
+                $('ol').each(function() {
+                    if (!$(this).attr('start')) {
+                        $(this).attr('start', '0');
+                    }
+                });
+
+            });
+
+        </script>
+        <style>
+
+            {% include asciidoctor.css %}
+
+        </style>
+        <style>
+
+            {% include asciidoc-pygments.css %}
+
+        </style>
+        <style>
+
+            div.stemblock div.content {
+                margin-bottom: 1.25em;
+            }
+
+        </style>
+        <title>{{ page.title }}</title>
+    </head>
+    <body class="toc2 toc-left">
+        <div id="header">
+            <div class="toc2" id="toc">
+                <div id="toctitle">Table of Contents</div>
+                {{ page.document | tocify_asciidoc }}
+            </div>
+        </div>
+        <div id="content">
+            {{ content }}
+        </div>
+    </body>
+</html>

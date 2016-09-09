@@ -11,6 +11,7 @@ asciidoctor:
   - sectlinks
   - showtitle
   - source-highlighter=pygments
+  - stem
   - stylesdir=css
   base_dir: :docdir
   safe: 0
