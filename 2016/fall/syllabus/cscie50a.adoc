@@ -73,8 +73,8 @@ For students taking CSCI E-50a, the pace of the course differs from CSCI E-50, w
 
 |===
 2+| Lecture | Released
-| Week 0 | Computers and computing. Hardware. Memory. Binary. ASCII. Algorithms. | Wed 8/31, Fri 9/2
-| Week 1 | Pseudocode. Scratch. Syntax. Statements. | Tue 9/6, Fri 9/9
+| Week 0 | https://ap.cs50.net/cscie50a/0/computers-computing/[Computers] and https://ap.cs50.net/cscie50a/0/how-computers-work/[computing]. https://ap.cs50.net/cscie50a/0/hardware/[Hardware]. https://ap.cs50.net/cscie50a/0/memory/[Memory]. https://ap.cs50.net/cscie50a/0/binary/[Binary]. https://ap.cs50.net/cscie50a/0/ascii/[ASCII]. https://ap.cs50.net/cscie50a/0/algorithms/[Algorithms]. | Wed 8/31, Fri 9/2
+| Week 1 | https://ap.cs50.net/cscie50a/1/pseudocode/[Pseudocode]. https://ap.cs50.net/cscie50a/1/scratch/[Scratch]. https://ap.cs50.net/cscie50a/1/syntax/[Syntax]. https://ap.cs50.net/cscie50a/1/operators/[Operators]. | Tue 9/6, Fri 9/9
 | Week 2 | Variables. Data types. Loops. | Tue 9/13, Fri 9/16
 | Week 3 | Conditionals. Compiling. Source code. Object code. | Tue 9/20, Fri 9/23
 | Week 4 | Functions. Arrays. Strings. | Tue 9/27, Fri 9/30
@@ -105,17 +105,17 @@ Office hours are online opportunities for assistance on problem sets with the co
 
 == Walkthroughs
 
-Integrated into course's problems are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs before asking questions about problem sets at office hours or via https://cs50.harvard.edu/discuss[CS50 Discuss].
+Integrated into a number of the course's problems are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs before asking questions about problem sets at office hours or via https://cs50.harvard.edu/discuss[CS50 Discuss].
 
 == Postmortems
 
-Available after problem sets' deadlines are "postmortems," videos via which the course's staff explore actual solutions to problem sets. You are expected to watch postmortems for insights into how else you could have (or should have!) implemented your own solutions.
+Available after many problems' deadlines are "postmortems," videos via which the course's staff explore actual solutions to problem sets. You are expected to watch postmortems for insights into how else you could have (or should have!) implemented your own solutions.
 
-== Problem Sets
+== Problems
 
 Twenty problems are assigned during the semester, each one a subset of what would be considered a "problem set" in CSCI E-50. Each is due by noon on either a Wednesday or a Saturday.  Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency.
 
-A schedule of problem sets, subject to change, appears below.
+A schedule of problems, subject to change, appears below.
 
 |===
 | Problem | Type | Released | Due
