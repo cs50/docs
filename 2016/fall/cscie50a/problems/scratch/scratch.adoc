@@ -4,7 +4,7 @@ title: Scratch
 ---
 :skip-front-matter:
 
-= Problem: Scratch
+= Scratch
 
 == Objectives
 

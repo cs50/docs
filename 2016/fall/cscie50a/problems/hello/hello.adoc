@@ -4,7 +4,7 @@ title: Hello
 ---
 :skip-front-matter:
 
-= Problem: Hello
+= Hello
 
 Questions?  Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50x.slack.com[the CS50x Slack page], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
