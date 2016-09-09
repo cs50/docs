@@ -7,72 +7,67 @@ title: Caesar
 
 == tl;dr
  
-Implement a program that encrypts messages using Caesar's cipher, per the below.
-
-[source,bash]
-----
-$ ./caesar 1
-plaintext:  HELLO
-ciphertext: IFMMP
-----
+. TODO
+. TODO
+. TODO
+. TODO
 
 == Background
 
 Supposedly, Caesar (yes, that Caesar) used to "encrypt" (i.e., conceal in a reversible way) confidential messages by shifting each letter therein by some number of places. For instance, he might write A as B, B as C, C as D, ..., and, wrapping around alphabetically, Z as A. Upon receiving such messages from Caesar, recipients would have to "decrypt" them by shifting letters in the opposite direction by the same number of places. For instance, to say HELLO to someone, Caesar might write IFMMP.
 
-The secrecy of this "cryptosystem" relied on only Caesar and the recipients knowing a secret, the number of places by which Caesar had shifted his letters (e.g., 1). Not particularly secure by modern standards, but, hey, if you're perhaps the first in the world to do it, pretty secure!
+The secrecy of this "cryptosystem" relied on only Caesar and the recipients knowing that every letter was shifted by some number of places (e.g., 1). Not particularly secure by modern standards, but, hey, if you're perhaps the first in the world to do it, pretty secure!
 
-Unencrypted text is generally called _plaintext_. Encrypted text is generally called _ciphertext_. And the secret used is called a _key_.
 
-.Encrypting HELLO with a key of 1 yields IFMMP.
-|===
-| *plaintext* | H   | E   | L   | L   | O
-| *+ key* | 1 | 1 | 1 | 1 | 1
-| *= ciphertext* | I   | F   | M   | M   | P
-|===
 
-== What To Do
 
-Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher.
 
-* Implement your program in a file called `caesar.c`.
+
+Put another way, Caesar's algorithm (i.e., cipher) encrypts messages by "rotating" each letter by _k_ positions. More formally, if _p_ is some plaintext (i.e., an unencrypted message), _p~i~_ is the _i^th^_ character in _p_, and _k_ is a secret key (i.e., a non-negative integer), then each letter, _c~i~_, in the ciphertext, _c_, is computed as
+
+[stem]
+++++
+c_i = (p_i + k) % 26
+++++
+
+wherein % 26 (pronounced "modulo 26") means "remainder when dividing by 26." This formula perhaps makes the cipher seem more complicated than it is, but it's really just a nice way of expressing the algorithm precisely and concisely. And computer scientists love precision and, er, concision. 
+
+Prefer an example? Okay, sure. For the sake of discussion, think of A as 0, B as 1, and Z as 25. Suppose that Caesar wants to say HI to someone secretly using his usual key, _k_, of 3. And so _p_ is HI, in which case _p~0~_ is H (aka 7) and _p~1~_ is I (aka 8). Meanwhile,
+
+[stem]
+++++
+c_0 = (p_0 + k) % 26 = (H + 3) % 26 = (7 + 3) % 26 = 10 % 26 = 10 = K
+++++
+
+since the remainder when dividing 10 by 26 is 10 (aka K) and
+
+[stem]
+++++
+c_1 = (p_1 + k) % 26 = (I + 3) % 26 = (8 + 3) % 26 = 11 % 26 = 10 = L
+++++
+
+since the remainder when dividing 11 by 26 is 11 (aka L).
+
+And so Caesar would send KL instead of HI. 
+
+
+
+Incidentally, a Caesar cipher with a key of 13 is generally called ROT13 (cf. http://en.wikipedia.org/wiki/ROT13). Don't use http://www.urbandictionary.com/define.php?term=ROT26[ROT26].
+
+Anyhow, your next goal is to write, in `caesar.c`, a program that encrypts messages using Caesar's cipher. 
+
 * Your program must accept a single command-line argument, a non-negative integer. Let's call it _k_ for the sake of discussion.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error message (of your choice) and return (from `main`) a value of `1` (which tends to signify an error) immediately.
-* You can assume that, if a user does provide a command-line argument, it will be entirely numeric (e.g., `1`). No need to check that it's indeed numeric.
-* Do not assume that _k_ will be less than or equal to 26. Your program should work for all non-negative integral values of _k_ less than 2^31^ - 26. In other words, you don't need to worry if your program eventually breaks if the user chooses a value for _k_ that's too big or almost too big to fit in an `int`. (Recall that an `int` can overflow.) But, even if _k_ is greater than 26, alphabetical characters in your program's input should remain alphabetical characters in your program's output. For instance, if _k_ is 27, `A` should not become `[` even though `[` is 27 positions away from `A` in ASCII, per http://www.asciichart.com/[asciichart.com]; `A` should become `B`, since `B` is 27 positions away from `A`, provided you wrap around from `Z` to `A`.
-* Your program must output `plaintext:  ` (without a newline) and then prompt the user for a `string` of plaintext (using `get_string`).
-* Your program must output `ciphertext: ` (without a newline) followed by the plaintext's corresponding ciphertext, with each alphabetical character in the plaintext "rotated" by _k_ positions; non-alphabetical characters should be outputted unchanged.
+* You can assume that the command-line argument that the user provides will be entirely numeric (e.g., `13` and not `foo`).
+* Otherwise, your program must proceed to prompt the user for a string of plaintext and then output that text with each alphabetical character "rotated" by _k_ positions; non-alphabetical characters should be outputted unchanged.
 * Your program must preserve case: capitalized letters, though rotated, must remain capitalized letters; lowercase letters, though rotated, must remain lowercase letters.
 * After outputting ciphertext, your program should exit by returning `0` from `main`.
 
-== Pseudocode
+Recall that, if you don't explicitly return an `int` from within `main`, `0` is actually returned for you automatically. (Indeed, per its "return type," `main` does need to return an `int`.) Now that you're returning `1` explicitly to signify errors, it's best to return `0` (by convention) explicitly to signify success. Whereas `0` generally represents success, any non-`0` `int` generally represents an error. That way, you can represent (gasp) upwards of four billion errors (since an `int` is generally 32 bits)!
 
-[source,text]
-----
-if user didn't run program with exactly one command-line argument
-    exit
-prompt user for plaintext
-for each character in plaintext
-    if character is alphabetical
-        rotate character by _k_ places
-        output rotated character
-    else
-        output character unchanged
-----
+Anyhow, even though there exist only 26 letters in the English alphabet, you may not assume that _k_ will be less than or equal to 26; your program should work for all non-negative integral values of _k_ less than 2^31^ - 26. In other words, you don't need to worry if your program eventually breaks if the user chooses a value for _k_ that's too big or almost too big to fit in an `int`. (Recall that an `int` can overflow.) But, even if _k_ is greater than 26, alphabetical characters in your program's input should remain alphabetical characters in your program's output. For instance, if _k_ is 27, `A` should not become `[` even though `[` is 27 positions away from `A` in ASCII, per http://www.asciichart.com/[asciichart.com]; `A` should become `B`, since "27 modulo 26" is 1, as a computer scientists might say. In other words, values like _k_ = 1 and _k_ = 27 are effectively equivalent. Put more simply, be sure to wrap around from `Z` to `A` (and from `z` to `a`).
 
-== Starter Code 
-
-#include <cs50.h>
-#include <stdio.h>
-
-int main(int argc, string argv[])
-{
-    // TODO
-}
-
-== How To Begin 
-
-This program needs to accept a command-line argument, _k_, so you'll want to declare `main` with:
+Where to begin?  Well, this program needs to accept a command-line argument, _k_, so this time you'll want to declare `main` with:
 
 [source,c]
 ----
@@ -142,13 +137,9 @@ And if you'd like to play with the staff's own implementation of `caesar`, you m
 ~cs50/pset2/caesar
 ----
 
-== Walkthrough
+Here's Zamyla if you'd like a walkthrough as well:
 
 video::TODO[youtube,height=540,width=960]
-
-== FAQs
-
-_None so far! Reload this page periodically to check if any arise!_
 
 == CHANGELOG
 
