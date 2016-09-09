@@ -343,11 +343,11 @@ where `source` is the file's current name, and `destination` is the file's new n
 mv Hello.c hello.c
 ----
 
-Okay, assuming your file's name is definitely spelled `hello.c` now, go ahead and execute the below. Note that `1516.unit1.hello` is just a unique identifier for this problem's checks. We'll always specify exactly the unique identifier you should use to check your programs' correctness.
+Okay, assuming your file's name is definitely spelled `hello.c` now, go ahead and execute the below. Note that `2016.hello` is just a unique identifier for this problem's checks. We'll always specify exactly the unique identifier you should use to check your programs' correctness.
 
 [source,bash]
 ----
-check50 1617.week1.hello hello.c
+check50 2016.hello hello.c
 ----
 
 Assuming your program is correct, you should then see output like
@@ -406,6 +406,6 @@ And how about that? You've written your first C program and configured your CS50
 
 == How to Submit
 
-Refresh this page on Thu 9/8 for instructions!
+Refresh this page on Mon 9/12 for instructions!
 
 This was Hello.
