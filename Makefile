@@ -3,7 +3,7 @@ default: run
 image:
 	docker build -t docs .
 
-container: image
+container:
 	docker run -i --name cli50 --rm -v "$(PWD)":/root -t docs
 
 docs: clean
