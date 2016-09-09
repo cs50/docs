@@ -585,3 +585,117 @@ int main(void)
 * Integers, and other data types, too, are stored in the same way in memory, even if they take up more bytes.
 * Once we understand that data is just bytes in memory, we can manipulate all of it and can do everything by writing a program.
 * And https://reference.cs50.net has lots of useful information too, about functions that come with C.
+
+[t=4m0s]
+== Command-Line Arguments
+
+* Let's use what we've learned to dig deeper into command-line arguments.
+* So far, we've used `int main(void)` to start our programs. The `void` keyword in particular is indicating that our program takes no arguments.
+* But what if we want to write programs that take input from the command line, or words after the program name when we run it in the terminal? For example, we might run `make hello` or `make cough0`, and the second word there is an argument to our program `hello`.
+* It turns out, we can start our program with this: `int main(int argc, string argv[])` and it will receive those command-line arguments.
+* Now our program will receive two arguments. The first is an integer named `argc`, as in argument count, that tells us how many arguments we got. The second is an array, or list, of strings, called `argv`, as in argument vector. This list of strings can be accessed with the same syntax as we do for characters in a string (since a string is just an array of characters), like `argv[0]`.
+* Let's see this in action:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int argc, string argv[])
+{
+    if (argc == 2)
+    {
+        printf("hello, %s\n", argv[1]);
+    }
+    else
+    {
+        printf("hello, world\n");
+    }
+}
+----
+** This program, when we run it, will return something like the following if we give it a command-line argument:
++
+[source]
+----
+~/workspace/ $ ./argv0 hello
+hello, hello
+----
+** We used `argv[1]` because `argv[0]` is always the name of the program itself.
+** When we run just `./argv0`, `argc` passed to our program will be `1`, so it will just say `hello, world`.
+* Let's do this, to see how we can iterate over an array:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int argc, string argv[])
+{
+    for (int i = 0; i < argc; i++)
+    {
+        printf("%s\n", argv[i]);
+    }
+}
+----
+** This program prints out each argument, or each string in `argv`, as it goes through the indexes from `0` to `argc`, which tells us how many strings are in `argv`.
+* We can be even cooler. Since we know `argv` is an array of strings and each string is an array of characters, we can directly access characters from `argv`:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, string argv[])
+{
+    // iterate over strings in argv
+    for (int i = 0; i < argc; i++)
+    {
+        // iterate over characters in current string
+        for (int j = 0, n = strlen(argv[i]); j < n; j++)
+        {
+            // print j'th character in i'th string
+            printf("%c\n", argv[i][j]);
+        }
+        printf("\n");
+    }
+}
+----
+** The outer `for` loop, with `i`, is iterating over each string in `argv`.
+** The inner `for` loop, with `j`, looks at `argv[i]`, and for each character in it, prints it on a new line.
+** Then the inner loop repeats for the next string.
+** With `argv[i][j]` we can get an individual character in `argv`.
+* So what about ``main``'s output? It turns out, `main` also returns some value by default. When a program exits successfully, it returns a number `0` to indicate as much. A non-zero number, on the other hand, is used to represent an error.
+* Of course, we want to see this firsthand:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int argc, string argv[])
+{
+    if (argc != 2)
+    {
+        printf("missing command-line argument\n");
+        return 1;
+    }
+    printf("hello, %s\n", argv[1]);
+    return 0;
+}
+----
+** Now, if the program doesn't get a command-line argument, the program will quit by returning, and with the value `1`.
+** Otherwise, we'll print the argument and explicitly return the value `0` as we exit.
+* We can see the exit code in terminal like this:
++
+[source]
+----
+~/workspace/ $ ./exit
+missing command-line argument
+~/workspace/ $ echo $?
+1
+----
+** `$?` is a magic symbol for the previous program's exit code, and `echo` is a command-line program that just prints out values.
+** We might not look for this often, but debuggers and other programs might look for it to determine if there were any errors.
+* Don't forget, an array is a chunk of continuous memory, with each of the elements inside contiguous, back-to-back-to-back. And those elements are generally the same data type, as we commonly have arrays of characters or integers. We'll need this construct to solve more complex problems, like sorting and searching.
+* Phew, what an exciting day! More fun to come next week!
