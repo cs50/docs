@@ -4,4 +4,17 @@ title: What's New?
 
 = What's New?
 
-_Coming Soon_
+== August 2016
+* debug50
+* help50
+* No more Debug/Run button
+* No more Preview button
+* Username is no longer in the terminal prompt
+* Red dot marks unsaved files
+
+== July 2016
+* View > Night Mode
+* No more hostname in menu bar
+* CS50 IDE > Web Server
+* No more ⓘ button
+* CS50 IDE > phpMyAdmin
