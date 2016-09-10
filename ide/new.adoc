@@ -5,16 +5,16 @@ title: What's New?
 = What's New?
 
 == August 2016
-* debug50
-* help50
-* No more Debug/Run button
+* `debug50` — simplified debugger
+* `help50` — helps you understand error messages
+* No more Debug/Run button; use `debug50` instead
 * No more Preview button
 * Username is no longer in the terminal prompt
 * Red dot marks unsaved files
 
 == July 2016
-* View > Night Mode
-* No more hostname in menu bar
-* CS50 IDE > Web Server
-* No more ⓘ button
-* CS50 IDE > phpMyAdmin
+* View > Night Mode — toggles dark theme
+* CS50 IDE > Web Server — opens your workspace hostname
+* CS50 IDE > phpMyAdmin — opens phpMyAdmin
+* No more hostname in menu bar; use CS50 IDE > Web Server instead
+* No more ⓘ button; use `username50` to get your username, and `password50` to get your MySQL password
