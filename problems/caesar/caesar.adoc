@@ -10,36 +10,37 @@ Implement a program that encrypts messages using Caesar's cipher, per the below.
 
 [source,subs=quotes]
 ----
-$ [underline]#./caesar 1#
+$ [underline]#./caesar 13#
 plaintext:  [underline]#HELLO#
-ciphertext: IFMMP
+ciphertext: URYYB
 ----
 
 == Background
 
-Supposedly, Caesar (yes, that Caesar) used to "encrypt" (i.e., conceal in a reversible way) confidential messages by shifting each letter therein by some number of places. For instance, he might write A as B, B as C, C as D, ..., and, wrapping around alphabetically, Z as A. Upon receiving such messages from Caesar, recipients would have to "decrypt" them by shifting letters in the opposite direction by the same number of places. For instance, to say HELLO to someone, Caesar might write IFMMP.
+Supposedly, Caesar (yes, that Caesar) used to "encrypt" (i.e., conceal in a reversible way) confidential messages by shifting each letter therein by some number of places. For instance, he might write A as B, B as C, C as D, ..., and, wrapping around alphabetically, Z as A.  And so, to say HELLO to someone, Caesar might write IFMMP. Upon receiving such messages from Caesar, recipients would have to "decrypt" them by shifting letters in the opposite direction by the same number of places. 
 
-The secrecy of this "cryptosystem" relied on only Caesar and the recipients knowing a secret, the number of places by which Caesar had shifted his letters (e.g., 1). Not particularly secure by modern standards, but, hey, if you're perhaps the first in the world to do it, pretty secure!
+The secrecy of this "cryptosystem" relied on only Caesar and the recipients knowing a secret, the number of places by which Caesar had shifted his letters (e.g., 1). Not particularly secure by modern standards, but, hey, if you're perhaps the first in the world to do it, pretty secure! 
 
 Unencrypted text is generally called _plaintext_. Encrypted text is generally called _ciphertext_. And the secret used is called a _key_.
 
 .Encrypting HELLO with a key of 1 yields IFMMP.
 |===
-| *plaintext* | H   | E   | L   | L   | O
-| *+ key* | 1 | 1 | 1 | 1 | 1
-| *= ciphertext* | I   | F   | M   | M   | P
+| *plaintext*    | H | E | L | L | O
+| *+ key*        | 1 | 1 | 1 | 1 | 1
+| *= ciphertext* | I | F | M | M | P
 |===
 
-Put another way, Caesar's algorithm (i.e., cipher) encrypts messages by "rotating" each letter by _k_ positions. More formally, if _p_ is some plaintext (i.e., an unencrypted message), _p~i~_ is the _i^th^_ character in _p_, and _k_ is a secret key (i.e., a non-negative integer), then each letter, _c~i~_, in the ciphertext, _c_, is computed as
+More generally, Caesar's algorithm (i.e., cipher) encrypts messages by "rotating" each letter by _k_ positions. More formally, if _p_ is some plaintext (i.e., an unencrypted message), _p~i~_ is the _i^th^_ character in _p_, and _k_ is a secret key (i.e., a non-negative integer), then each letter, _c~i~_, in the ciphertext, _c_, is computed as
 
 [latexmath]
 ++++
 c_i = (p_i + k) \bmod 26
 ++++
 
-wherein latexmath:[\bmod 26] here means "remainder when dividing by 26." This formula perhaps makes the cipher seem more complicated than it is, but it's really just a nice way of expressing the algorithm precisely and concisely.
+wherein latexmath:[\bmod 26] here means "remainder when dividing by 26." This formula perhaps makes the cipher seem more complicated than it is, but it's really just a concise way of expressing the algorithm precisely.
 
-Prefer an example that shows the math? Okay, sure. For the sake of discussion, think of A as 0, B as 1, ..., and Z as 25. Suppose that Caesar wants to say HI to someone secretly using his usual key, _k_, of 3. And so his plaintext, _p_, is HI, in which case his plaintext's first character, _p~0~_, is H (aka 7), and his plaintext's second character, _p~1~_, is I (aka 8). His ciphertext's first character, _c~0~_, is thus K, since:
+////
+Up for some math that can be translated to code more readily than intuition alone? For the sake of discussion, think of A as 0, B as 1, ..., H as 7, I as 8, ..., and Z as 25. Suppose that Caesar just wants to say HI to someone confidentially using, this time, a key, _k_, of 3. And so his plaintext, _p_, is HI, in which case his plaintext's first character, _p~0~_, is H (aka 7), and his plaintext's second character, _p~1~_, is I (aka 8). His ciphertext's first character, _c~0~_, is thus K, since:
 
 [latexmath]
 ++++
@@ -62,12 +63,13 @@ c_1 & = (p_1 + k) \bmod 26 \\
     & = (I + 3) \bmod 26 \\
     & = (8 + 3) \bmod 26 \\
     & = 11 \bmod 26 \\
-    & = 10 \bmod \\
+    & = 11 \\
     & = L
 \end{align}
 ++++
 
 And so Caesar would send KL instead of HI.
+////
 
 == Specification
 
@@ -96,6 +98,13 @@ Your program should behave per the examples below. Assumed that the underlined t
 $ [underline]#./caesar 1#
 plaintext:  [underline]#HELLO#
 ciphertext: IFMMP
+----
+
+[source,subs=quotes]
+----
+$ [underline]#./caesar 13#
+plaintext:  [underline]#hello, world#
+ciphertext: uryyb, jbeyq
 ----
 
 [source,subs=quotes]
