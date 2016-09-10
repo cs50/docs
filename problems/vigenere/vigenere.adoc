@@ -29,6 +29,7 @@ In other words, if Vigenère himself wanted to say HELLO to someone confidential
 
 Design and implement a program that encrypts messages using Vigenère's cipher.
 
+* Implement your program in a file called `vigenere.c` in a directory called `vigenere`.
 * Your program must accept a single command-line argument: a keyword, _k_, composed entirely of alphabetical characters.
 * If your program is executed without any command-line arguments, with more than one command-line argument, or with one command-line argument that contains any non-alphabetical character, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
 * Otherwise, your program must proceed to prompt the user for a string of plaintext, _p_, which it must then encrypt according to Vigenère's cipher with _k_, ultimately printing the result and exiting, with `main` returning `0`.

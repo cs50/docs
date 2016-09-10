@@ -75,7 +75,7 @@ And so Caesar would send KL instead of HI.
 
 Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher.
 
-* Implement your program in a file called `caesar.c`.
+* Implement your program in a file called `caesar.c` in a directory called `caesar`.
 * Your program must accept a single command-line argument, a non-negative integer. Let's call it _k_ for the sake of discussion.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error message of your choice (with `printf`) and return from `main` a value of `1` (which tends to signify an error) immediately.
 * You can assume that, if a user does provide a command-line argument, it will be a non-negative integer (e.g., `1`). No need to check that it's indeed numeric.

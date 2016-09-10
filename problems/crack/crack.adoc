@@ -28,7 +28,7 @@ zamyla:50i2t3sOSAZtk
 
 Design and implement a program, `crack`, that cracks passwords.
 
-* Implement your program in a file called `crack.c`.
+* Implement your program in a file called `crack.c` in a directory called `crack`.
 * Your program should accept a single command-line argument: a hashed password.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
 * Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`.

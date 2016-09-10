@@ -75,9 +75,7 @@ If not, retrace your steps and see if you can determine where you went wrong. Yo
 history
 ----
 
-at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. If still unsure how to fix, remember that https://cs50.net/discuss[CS50 Discuss] is your friend!
-
-All of the work that you do for this problem set must ultimately reside in your `pset2` directory for submission.
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. 
 
 == What to Do
 
