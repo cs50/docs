@@ -559,6 +559,6 @@ include::credit.adoc[]
 
 === Step 2 of 2
 
-Head to https://forms.cs50.net/2016/fall/psets/1 where a short form awaits. Once you have submitted that form (as well as your source code), you are done! If you end up resubmitting your files (per step 1 of 1), no need to resubmit the form.
+Head to https://forms.cs50.net/2016/fall/psets/1 where a short form awaits. Once you have submitted that form (as well as your source code), you are done! If you end up resubmitting your files (per step 1 of 2), no need to resubmit the form.
 
 This was Problem Set 1.
