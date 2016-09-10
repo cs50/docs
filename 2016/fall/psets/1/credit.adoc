@@ -75,14 +75,12 @@ https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers
 
 Google (or perhaps a roommate's wallet) should turn up more. (If your roommate asks what you're doing, don't mention us.) If your program behaves incorrectly on some inputs (or doesn't compile at all), time to debug!
 
-////
 If you'd like to check the correctness of your program with `check50`, you may execute the below.
 
 [source,bash]
 ----
 check50 2016.credit credit.c
 ----
-////
 
 And if you'd like to play with the staff's own implementation of `credit` within CS50 IDE, you may execute the below.
 
