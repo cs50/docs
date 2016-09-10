@@ -1,0 +1,101 @@
+---
+layout: 2016/fall
+title: Problem Set 2
+---
+:skip-front-matter:
+
+= Problem Set 2: Crypto
+
+== tl;dr
+ 
+[start=0]
+. Watch https://video.cs50.net/2016/fall/lectures/2[Week 2's lecture].
+. Infer a user's initials from their name with `initials.c`.
+. Choose two adventures:
++
+--
+* Implement Caesar's cipher.
+* Implement Vigenère's cipher.
+* Crack passwords.
+--
++
+. Submit your code.
+. Submit a form.
+
+include::help-yale.adoc[]
+
+== Reminders
+
+Per https://video.cs50.net/2016/fall/lectures/2[Week 2's lecture]:
+
+* Use `help50` as needed.
+* Use `eprintf` as needed.
+* Use `debug50` as needed.
+
+== Getting Started
+
+Alright, here we go again!
+
+Log into https://cs50.io/[cs50.io] and execute
+
+[source]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*.
+
+Next, execute
+
+[source]
+----
+mkdir ~/workspace/pset2
+----
+
+at your prompt in order to make a directory called `pset2` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset2` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset2` denotes a directory called `pset2` within `~/workspace`.
+
+Now execute
+
+[source]
+----
+cd ~/workspace/pset2
+----
+
+to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
+
+[source]
+----
+~/workspace/pset2/ $
+----
+
+If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
+
+[source,bash]
+----
+history
+----
+
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. If still unsure how to fix, remember that https://cs50.net/discuss[CS50 Discuss] is your friend!
+
+All of the work that you do for this problem set must ultimately reside in your `pset2` directory for submission.
+
+== What to Do
+
+. Implement either of:
++
+--
+* link:../../../../problems/initials/less/initials.html[Initials], less comfortable
+* link:../../../../problems/initials/more/initials.html[Initials], more comfortable
+--
++
+. Implement any two (2) of:
++
+--
+* link:../../../../problems/caesar/caesar.html[Caesar], less comfortable
+* link:../../../../problems/vigenere/vigenere.html[Vigenere], less comfortable
+* link:../../../../problems/crack/crack.html[Crack], more comfortable
+--
+
+== How to Submit
+
+_Coming Wed 9/14. Reload this page then!_

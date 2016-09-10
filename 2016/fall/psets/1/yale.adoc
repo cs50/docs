@@ -16,6 +16,7 @@ If you haven't already, do review the course's policy on academic honesty in the
 . Calculate your water usage with with `water.c`.
 . Build one of Mario's pyramids in `mario.c`.
 . Implement a "greedy algorithm" in `greedy.c` or a "checksum" in `credit.c`.
+. Submit your code.
 . Submit a form.
 
 include::help-yale.adoc[]
@@ -401,9 +402,9 @@ By contrast, if the user fails to provide a non-negative integer no greater than
 [source,subs=quotes,text]
 ----
 ~/workspace/pset1/ $ [underline]#./mario#
-Height: [underline]#-2#
-Height: [underline]#-1#
-Height: [underline]#foo#
+height: [underline]#-2#
+height: [underline]#-1#
+height: [underline]#foo#
 Retry: [underline]#bar#
 Retry: [underline]#1#
 ##
