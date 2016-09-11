@@ -39,7 +39,7 @@ Design and implement a program that encrypts messages using Vigenère's cipher.
 
 == Walkthrough
 
-video::iE6jiKRfrEQ[youtube,height=540,width=960]
+video::iE6jiKRfrEQ[youtube]
 
 == Usage
 

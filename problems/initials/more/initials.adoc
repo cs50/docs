@@ -27,7 +27,7 @@ Design and implement a program, `initials`, that, given a person's name, prints 
 
 == Walkthrough
 
-video::ThYAsCFB6aM[youtube,height=540,width=960]
+video::ThYAsCFB6aM[youtube]
 
 == Usage
 
