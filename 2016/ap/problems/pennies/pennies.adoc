@@ -83,14 +83,14 @@ Anyhow, why the pennies? Exponentiation. Those pennies add up Consider how many 
 
 [source,bash]
 ----
-1 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2
-  &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2
-  &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2
+1 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2
+  × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2
+  × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2
 
   = 1073741824
 ----
 
-Put more succinctly, that's 1 &times; 2^30^. Convert those pennies to dollars (by dividing by 100) and you get, what, over $10,000,000? On just that day? Crazy.
+Put more succinctly, that's 1 × 2^30^. Convert those pennies to dollars (by dividing by 100) and you get, what, over $10,000,000? On just that day? Crazy.
 
 What if you were given more than one penny on that first day? Or the month were February, in which case you'd get shortchanged a few million? (Best to take the pennies in January, March, May, July, August, October, or Decemberfootnote:[We'll admit it. We had to look at a calendar.].) Let's find out.
 
