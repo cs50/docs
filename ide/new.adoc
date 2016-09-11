@@ -18,3 +18,6 @@ title: What's New?
 * CS50 IDE > phpMyAdmin — opens phpMyAdmin
 * No more hostname in menu bar; use CS50 IDE > Web Server instead
 * No more ⓘ button; use `username50` to get your username, and `password50` to get your MySQL password
+* MP3, Ogg, and Wav support
+* Easily share code snippets by highlighting a few lines of code and clicking the image:github.png[alt="Octocat", width=16] icon on the left
+* Simultaneously change or reset the font sizes of code editor and terminal tabs from View > Font Size
