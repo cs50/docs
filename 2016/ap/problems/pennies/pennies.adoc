@@ -83,9 +83,9 @@ Anyhow, why the pennies? Exponentiation. Those pennies add up Consider how many 
 
 [source,bash]
 ----
-1 � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2
-  � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2
-  � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2 � 2
+1 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2
+  &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2
+  &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2
 
   = 1073741824
 ----
