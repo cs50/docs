@@ -237,7 +237,7 @@ after a few moments, you should see `hello.c` has been created inside of your `w
 
 int main(void)
 {
-    printf("hello, world\n");
+    printf("Hello, world!\n");
 }
 ----
 
@@ -356,7 +356,7 @@ Assuming your program is correct, you should then see output like
 ----
 [green]#:) hello.c exists#
 [green]#:) hello.c compiles#
-[green]#:) prints "hello, world\n"#
+[green]#:) prints "Hello, world!\n"#
 ----
 
 where each green smiley means your program passed a check (i.e., test). You may also see a URL at the bottom of ``check50``'s output, but that's something your teacher might use when checking your code (though you're welcome to visit it nonetheless).
@@ -369,7 +369,7 @@ If you instead see yellow or red smileys, it means your code isn't correct! For 
   \ expected hello.c to exist
 [yellow]#:| hello.c compiles#
   \ can't check until a frown turns upside down
-[yellow]#:| prints "hello, world\n"#
+[yellow]#:| prints "Hello, world!\n"#
   \ can't check until a frown turns upside down
 ----
 
@@ -381,11 +381,11 @@ Suppose instead you see the below.
 ----
 [green]#:) hello.c exists#
 [green]#:) hello.c compiles#
-[red]#:( prints "hello, world\n"#
+[red]#:( prints "Hello, world!\n"#
   \ expected output, but not "hello, world"
 ----
 
-Odds are, in this case, you printed something other than `hello, world\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `hello, world`, without a trailing newline (`\n`). See why?
+Odds are, in this case, you printed something other than `Hello, world!\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `hello, world`, without a trailing newline (`\n`). See why?
 
 `check50` lets you check your work's correctness _before_ you submit your work. Once you actually submit your work (per the directions at this spec's end), your teacher will use `check50` to evaluate your work's correctness officially.
 
