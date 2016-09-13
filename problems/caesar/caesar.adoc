@@ -122,12 +122,6 @@ Usage: ./caesar k
 
 [source,subs=quotes]
 ----
-$ [underline]#./caesar foo#
-Usage: ./caesar k
-----
-
-[source,subs=quotes]
-----
 $ [underline]#./caesar 1 2 3 4 5#
 Usage: ./caesar k
 ----
