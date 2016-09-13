@@ -1,0 +1,117 @@
+---
+layout: 2016/fall
+title: Week 2
+---
+:author: Cheng Gong
+
+= Week 3
+
+[t=0m0s]
+== Last Time
+
+* We looked at debugging, with tools like: `help50`, to help us understand error messages when we compile a program; `eprintf`, to print messages that might be helpful; `debug50`, which will let us go through our program line by line, and see variables as they are changed.
+* We also looked at cryptography and how we might implement simple ciphers.
+* We learned what strings actually were, arrays of characters.
+* We talked about command-line arguments, using `argc` and `argv` from the command line for our `main` function to use.
+
+[t=1m0s]
+== Sorting
+
+* Now that we know enough of the basics, we can start problem-solving with algorithms at a higher level.
+* An array is a data structure, a way to store data in memory.
+* Imagine having 7 doors, and having to find a certain number that is behind one of those doors.
+* Without any information, we might open doors at random until we find the number we want.
+* But if we knew the numbers behind the doors were sorted, we could look more efficiently.
+* Just like in Week 0 where we got to throw half the problem away at each step, we can  search in a sorted array with binary search, opening one door, looking at the value to see if it's greater than or less than the value we want, and moving to the half that might contain our number.
+* Another search algorithm is linear search, moving left to right in a line. We could write pseudocode (words that look like code but is easier to understand) that looks like this:
++
+[source]
+----
+for each element in array
+    if element you're looking for
+        return true
+return false
+----
+** Notice that we have `return false` outside of the `for` loop, so at the end of the loop, if we've looked at all the elements in the array but not yet found what we've been looking for, we can say we haven't found it.
+* Binary search, from week 0, can be written like this in pseudocode:
++
+[source]
+----
+look at middle of array
+if element you're looking for
+    return true
+else if element is to left
+    search left half of array
+else if element is to right
+    search right half of array
+else
+    return false
+----
+** Now we don't have line numbers to go to, but notice `search left half of array` and `search right half array` can just refer to this entire algorithm again. We use the same method to search, but the input has gotten smaller at each step, so we'll eventually arrive at an answer. A function that calls itself again and again is called a recursive function, and this principle is important in searching and sorting.
+* So how do we get to a sorted array? We have a volunteer, Allison, sort some shuffled blue books. Each time, she uses her left hand to take a book from the shuffled pile, and puts it into the correct spot in a sorted pile that she flips through with her right hand.
+* If we had a deck of cards, we might first start by putting the cards into buckets by numbers or suit. And once we have all the piles, we might need to go through and sort the piles themselves.
+* We can generalize this problem by representing some items with numbers:
++
+[source]
+----
+4 2 6 8 1 3 7 5
+----
+* One approach is to find the smallest element, `1`, and move it to the front of the list and shift the other ones down:
++
+[source, subs="macros"]
+----
++++<u>1</u>+++ +++<u>4 2 6 8</u>+++ 3 7 5
+----
+* We can continue:
++
+[source, subs="macros"]
+----
+1 +++<u>2</u>+++ +++<u>4 6 8</u>+++ 3 7 5
+1 2 +++<u>3</u>+++ +++<u>4 6 8</u>+++ 7 5
+1 2 3 4 +++<u>5</u>+++ +++<u>6 8 7</u>+++
+1 2 3 4 5 6 +++<u>7</u>+++ +++<u>8</u>+++
+----
+* But in our first step, it took a lot of work to shift the numbers to the left of `1` down. So we can just swap `1` with the first number:
++
+[source, subs="macros"]
+----
+4 2 6 8 1 3 7 5
++++<u>1</u>+++ 2 6 8 +++<u>4</u>+++ 3 7 5
+1 2 +++<u>3</u>+++ 8 4 +++<u>6</u>+++ 7 5
+...
+----
+** Now we're doing a little less work at each step.
+** But to select the smallest element at each round, we need to look at the unsorted part of the list and look for the smallest one, to know which one to swap.
+** This algorithm is called *selection sort*, where we select the smallest element each time.
+* Let's do a different version called *bubble sort*:
++
+[source, subs="macros"]
+----
+4 2 6 8 1 3 7 5
++++<u>2</u>+++ +++<u>4</u>+++ 6 8 1 3 7 5
+2 4 6 +++<u>1</u>+++ +++<u>8</u>+++ 3 7 5
+2 4 6 1 +++<u>3</u>+++ +++<u>8</u>+++ 7 5
+2 4 6 1 3 +++<u>7</u>+++ +++<u>8</u>+++ 5
+2 4 6 1 3 7 +++<u>5</u>+++ +++<u>8</u>+++
+----
+** We move down the list from left to right and compare each pair of numbers. If they are out of order, then we swap them. The list isn't sorted yet but the highest number is now on the right, and the other numbers are slightly closer to where they should be.
+* We can repeat this process over and over, until we have our sorted list. We'll know to stop if we make it through the entire list and not make any swaps.
+* We'll look at one final approach, *insertion sort*. We'll take our elements one at a time and build a sorted list as we go along:
++
+[source, subs="macros"]
+----
++++<u>4</u>+++ 2 6 8 1 3 7 5
++++<u>2 4</u>+++ 6 8 1 3 7 5
++++<u>1 2 4 6 8</u>+++ 3 7 5
++++<u>1 2 3 4 6 8</u>+++ 7 5
++++<u>1 2 3 4 5 6 8</u>+++ 7
++++<u>1 2 3 4 5 6 7 8</u>+++
+----
+** Each time, we look at the next element and place it into our sorted portion of the list, even if we have to shift elements.
+
+
+
+
+
+
+
