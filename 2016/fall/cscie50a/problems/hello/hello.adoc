@@ -406,6 +406,13 @@ And how about that? You've written your first C program and configured your CS50
 
 == How to Submit
 
-Refresh this page on Mon 9/12 for instructions!
+To submit your assignment, please do the following by *Wed 9/14 at 11:59pm*.
+
+. Open up CS50 IDE.
+. Navigate to your `~/workspace/week1` directory, ensuring that `hello.c` exists therein.
+. At the terminal, type `zip first_last.zip hello.c`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `week1` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/TdsyOmjZvMoMQFIlfMEn[this link] to upload your ZIP file containing `hello.c`!
 
 This was Hello.
