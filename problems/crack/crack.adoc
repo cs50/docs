@@ -98,5 +98,6 @@ _None so far! Reload this page periodically to check if any arise!_
 
 * 2016-09-14
 ** Fixed underlining of user input.
+** Added tl;dr.
 * 2016-09-09
 ** Initial release.
