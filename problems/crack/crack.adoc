@@ -4,6 +4,16 @@ title: Crack
 
 = Crack
 
+== tl;dr
+ 
+Implement a program that cracks passwords, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./crack 50fkUxYHbnXGw#
+rofl
+----
+
 == Background
 
 On most systems running Linux these days is a file called `/etc/shadow`, which contains usernames and passwords. Fortunately, the passwords therein aren't stored "in the clear" but are instead encrypted using a "one-way hash function." When a user logs into these systems by typing a username and password, the latter is encrypted with the very same hash function, and the result is compared against the username's entry in `/etc/shadow`. If the two hashes match, the user is allowed in. If you've ever forgotten some password, you might have been told that tech support can't look up your password but can change it for you. Odds are that's because tech support can only see, if anything at all, a hash of your password, not your password itself. But they can create a new hash for you.
