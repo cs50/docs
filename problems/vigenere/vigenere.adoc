@@ -5,7 +5,7 @@ title: Vigenère
 = Vigenère
 
 == tl;dr
- 
+
 Implement a program that encrypts messages using Vigenère's cipher, per the below.
 
 [source,subs=quotes]
@@ -43,9 +43,9 @@ Design and implement a program that encrypts messages using Vigenère's cipher.
 * Implement your program in a file called `vigenere.c` in a directory called `vigenere`.
 * Your program must accept a single command-line argument: a keyword, _k_, composed entirely of alphabetical characters.
 * If your program is executed without any command-line arguments, with more than one command-line argument, or with one command-line argument that contains any non-alphabetical character, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
-* Otherwise, your program must proceed to prompt the user for a string of plaintext, _p_, which it must then encrypt according to Vigenère's cipher with _k_, ultimately printing the result and exiting, with `main` returning `0`.
-* With respect to the characters in _k_, you must treat `A` and `a` as 0, `B` and `b` as 1, ... , and `Z` and `z` as 25. 
-* Your program must only apply Vigenère's cipher to a character in _p_ if that character is a letter. All other characters (numbers, symbols, spaces, punctuation marks, etc.) must be outputted unchanged. Moreover, if your code is about to apply the _j^th^_ character of _k_ to the _i^th^_ character of _p_, but the latter proves to be a non-alphabetical character, you must wait to apply that _j^th^_ character of _k_ to the next alphabetical character in _p_; you must not yet advance to the next character in _k_. 
+* Otherwise, your program must proceed to prompt the user for a string of plaintext, _p_, (as by a prompt for `plaintext:`) which it must then encrypt according to Vigenère's cipher with _k_, ultimately printing the result (prepended with `ciphertext:`) and exiting, with `main` returning `0`.
+* With respect to the characters in _k_, you must treat `A` and `a` as 0, `B` and `b` as 1, ... , and `Z` and `z` as 25.
+* Your program must only apply Vigenère's cipher to a character in _p_ if that character is a letter. All other characters (numbers, symbols, spaces, punctuation marks, etc.) must be outputted unchanged. Moreover, if your code is about to apply the _j^th^_ character of _k_ to the _i^th^_ character of _p_, but the latter proves to be a non-alphabetical character, you must wait to apply that _j^th^_ character of _k_ to the next alphabetical character in _p_; you must not yet advance to the next character in _k_.
 * Your program must preserve the case of each letter in _p_.
 
 == Walkthrough
@@ -77,8 +77,8 @@ Usage: ./vigenere k
 [source,subs=quotes]
 ----
 $ [underline]#./vigenere bacon#
-[underline]#Meet me at the park at eleven am#
-Negh zf av huf pcfx bt gzrwep oz
+plaintext: [underline]#Meet me at the park at eleven am#
+ciphertext: Negh zf av huf pcfx bt gzrwep oz
 ----
 
 == Testing
@@ -118,6 +118,8 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == CHANGELOG
 
+* 2016-09-15
+** Clarified usage of user prompts.
 * 2016-09-14
 ** Added tl;dr, FAQs, CHANGELOG.
 * 2016-09-09
