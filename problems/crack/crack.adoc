@@ -1,5 +1,4 @@
 ---
-title: Crack
 ---
 
 = Crack
@@ -77,7 +76,7 @@ man crypt
 
 Per that man page, you'll likely want to put
 
-[source,bash]
+[source,c]
 ----
 #define _XOPEN_SOURCE
 #include <unistd.h>
@@ -85,7 +84,7 @@ Per that man page, you'll likely want to put
 
 at the top of your file in order to use `crypt`. Moreover, you'll want to link with `-lcrypt`, as by compiling not with `make` but with:
 
-[source,bash]
+[source]
 ----
 clang -ggdb3 -O0 -std=c11 -Wall -Werror -Wshadow crack.c -lcrypt -lcs50 -lm -o crack
 ----

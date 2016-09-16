@@ -1,5 +1,4 @@
 ---
-title: Caesar
 ---
 
 = Caesar
@@ -128,18 +127,16 @@ Usage: ./caesar k
 
 == Testing
 
-If you'd like to check the correctness of your program with `check50`, you may execute the below.
+=== `check50`
 
-[source,bash]
+[source]
 ----
 check50 2016.caesar caesar.c
 ----
 
 == Staff's Solution
 
-If you'd like to play with the staff's own implementation of `caesar`, you may execute the below.
-
-[source,bash]
+[source]
 ----
 ~cs50/pset2/caesar
 ----

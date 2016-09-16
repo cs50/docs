@@ -1,0 +1,404 @@
+---
+published: false
+---
+
+= Find
+
+== tl;dr
+ 
+Implement a program that finds a number among numbers, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./generate 1000 | ./find 42#
+----
+
+== Distribution
+
+=== Downloading
+
+[source]
+----
+$ wget https://github.com/cs50/problems/archive/find.zip
+$ unzip find.zip
+$ rm find.zip
+$ cd find
+$ ls
+helpers.c  helpers.h  Makefile  find.c  generate.c
+----
+
+=== Understanding
+
+Implemented in `generate.c` is a program that uses a "pseudorandom-number generator" (via a function called `drand48`) to generate a whole bunch of random (well, pseudorandom, since computers can't actually generate truly random) numbers, one per line, each of which is in [0.0, 1.0), so to speak. That is, each is greater than or equal to 0 and less than 1.0.
+
+Go ahead and compile this program by executing the command below.
+
+[source]
+----
+make generate
+----
+
+Now run the program you just compiled by executing the command below.
+
+[source]
+----
+./generate
+----
+
+You should be informed of the program's proper usage, per the below.
+
+[source]
+----
+Usage: generate n [s]
+----
+
+As this output suggests, this program expects one or two command-line arguments. The first, `n`, is required; it indicates how many pseudorandom numbers you'd like to generate. The second, `s`, is optional, as square brackets imply; if supplied, it represents the value that the pseudorandom-number generator should use as its "seed." A seed is simply an input to a pseudorandom-number generator that influences its outputs. For instance, if you seed `drand48` by first calling `srand48` (another function whose purpose is to "seed" `drand48`) with an argument of, say, `0`, and then call `drand48` itself three times, `drand48` might return `0.170828`, then `0.749902`, then `0.096372`. But if you instead seed `drand48` by first calling `srand48` with an argument of, say, `1`, and then call `drand48` itself three times, `drand48` might instead return `0.041630`, then `0.454492`, then `0.834817`. But if you re-seed `drand48` by calling `srand48` again with an argument of `0`, the next three times you call `drand48`, you'll again get `0.170828`, then `0.749902`, then `0.096372`! See, not so random.
+
+Go ahead and run this program again, this time with a value of, say, `10` for `n`, as in the below; you should see a list of 10 pseudorandom numbers.
+
+[source]
+----
+./generate 10
+----
+
+Run the program a third time using that same value for `n`; you should see a different list of 10 numbers. Now try running the program with a value for `s` too (e.g., `0`), as in the below.
+
+[source]
+----
+./generate 10 0
+----
+
+Now run that same command again:
+
+[source]
+----
+./generate 10 0
+----
+
+Bet you saw the same "random" sequence of ten numbers again? Yup, that's what happens if you don't vary a pseudorandom number generator's initial seed.
+
+Now take a look at `generate.c` itself. (Remember how?) Comments atop that file explain the program's overall functionality. But it looks like we forgot to comment the code itself. Read over the code carefully until you understand each line and then comment our code for us, replacing each `TODO` with a phrase that describes the purpose or functionality of the corresponding line(s) of code. (Know that an `unsigned int` is just an `int` that cannot be negative.) And for more details on `rand` and `srand`, recall that you can execute:
+
+[source,bash]
+----
+man drand48
+----
+
+and:
+
+[source,bash]
+----
+man srand48
+----
+
+Once done commenting `generate.c`, re-compile the program to be sure you didn't break anything by re-executing the command below.
+
+[source,bash]
+----
+make generate
+---- 
+
+If `generate` no longer compiles properly, take a moment to fix what you broke!
+
+Now, recall that `make` automates compilation of your code so that you don't have to execute `clang` manually along with a whole bunch of switches. Notice, in fact, how `make` just executed a pretty long command for you, per the tool's output. However, as your programs grow in size, `make` won't be able to infer from context anymore how to compile your code; you'll need to start telling `make` how to compile your program, particularly when they involve multiple source (i.e., `.c`) files. And so we'll start relying on "Makefiles," configuration files that tell `make` exactly what to do.
+
+How did `make` know how to compile generate in this case? It actually used a configuration file that we wrote. Go ahead and look at the file called `Makefile` that's in the same directory as `generate.c`. This `Makefile` is essentially a list of rules that we wrote for you that tells make how to build generate from `generate.c` for you. The relevant lines appear below.
+
+[source,Makefile]
+----
+generate: generate.c
+    clang -ggdb3 -O0 -std=c11 -Wall -Werror -o generate generate.c
+----
+
+The first line tells `make` that the "target" called `generate` should be built by invoking the second line's command. Moreover, that first line tells `make` that `generate` is dependent on `generate.c`, the implication of which is that `make` will only re-build generate on subsequent runs if that file was modified since `make` last built `generate`. Neat time-saving trick, eh? In fact, go ahead and execute the command below again, assuming you haven't modified `generate.c`.
+
+[source]
+----
+make generate
+----
+
+You should be informed that generate is already up-to-date. Incidentally, know that the leading whitespace on that second line is not a sequence of spaces but, rather, a tab. Unfortunately, `make` requires that commands be preceded by tabs, so be careful not to change them to spaces, else you may encounter strange errors! The `-Werror` flag, recall, tells `clang` to treat warnings (bad) as though they're errors (worse) so that you're forced (in a good, instructive way!) to fix them.
+
+Now take a look at `find.c`. Notice that this program expects a single command-line argument: a "needle" to search for in a "haystack" of values. Once done looking over the code, go ahead and compile the program by executing the command below.
+
+[source]
+----
+make find
+----
+
+Notice, per that command's output, that `make` actually executed the below for you.
+
+[source]
+----
+clang -ggdb3 -O0 -std=c11 -Wall -Werror -o find find.c helpers.c -lcs50 -lm
+----
+
+Notice further that you just compiled a program comprising not one but two `.c` files: `helpers.c` and `find.c`. How did `make` know what to do? Well, again, open up `Makefile` to see the man behind the curtain. The relevant lines appear below.
+
+[source,Makefile]
+----
+find: find.c helpers.c helpers.h
+    clang -ggdb3 -O0 -std=c11 -Wall -Werror -o find find.c helpers.c -lcs50 -lm
+----
+
+Per the dependencies implied above (after the colon), any changes to `find.c`, `helpers.c`, or `helpers.h` will compel `make` to rebuild find the next time it's invoked for this target.
+
+Go ahead and run this program by executing, say, the below.
+
+[source]
+----
+./find 13
+----
+
+You'll be prompted to provide some hay (i.e., some integers), one "straw" at a time. As soon as you tire of providing integers, hit ctrl-d to send the program an `EOF` (end-of-file) character. That character will compel `get_int` from the CS50 Library to return `INT_MAX`, a constant that, per `find.c`, will compel `find` to stop prompting for hay. The program will then look for that needle in the hay you provided, ultimately reporting whether the former was found in the latter. In short, this program searches an array for some value. At least, it should, but it won't find anything yet! That's where you come in. More on your role in a bit.
+
+In turns out you can automate this process of providing hay, though, by "piping" the output of `generate` into `find` as input. For instance, the command below passes 1,000 pseudorandom numbers to `find`, which then searches those values for `42`.
+
+[source]
+----
+./generate 1000 | ./find 42
+----
+
+Note that, when piping output from `generate` into `find` in this manner, you won't actually see ``generate``'s numbers, but you will see ``find``'s prompts.
+
+Alternatively, you can "redirect" ``generate``'s output to a file with a command like the below.
+
+[source]
+----
+./generate 1000 > numbers.txt
+----
+
+You can then redirect that file's contents as input to `find` with the command below.
+
+[source]
+----
+./find 42 < numbers.txt
+----
+
+Let's finish looking at that `Makefile`. Notice the line below.
+
+[source]
+----
+all: find generate
+----
+
+This target implies that you can build both `generate` and `find` simply by executing the below.
+
+[source]
+----
+make all
+----
+
+Even better, the below is equivalent (because `make` builds a ``Makefile``'s first target by default).
+
+[source,bash]
+----
+make
+----
+
+If only you could whittle this whole problem set down to a single command! Finally, notice these last lines in `Makefile`:
+
+[source]
+----
+clean:
+    rm -f *.o a.out core find generate 
+----
+
+This target allows you to delete all files ending in `.o` or called `core` (more on that soon!), `find`, or `generate` simply by executing the command below.
+
+[source]
+----
+make clean
+----
+
+Be careful not to add, say, `*.c` to that last line in `Makefile`! (Why?)
+
+Finally, notice that `find.c` calls `search`, a function declared in `helpers.h`. Unfortunately, we forgot to implement that function fully in `helpers.c`! Indeed, take a peek at `helpers.c`, and you'll see that `search` always returns `false`, whether or not `value` is in `values`. To be sure, we could have put the contents of `helpers.h` and `helpers.c` in `find.c` itself. But it's sometimes better to organize programs into multiple files, especially when some functions are essentially "utility functions" that might later prove useful to other programs as well, much like those in the CS50 Library. 
+
+== Specification
+
+Complete the implementation of `find` by completing the implementation of `search` and `sort` in `helpers.c`.
+
+=== `search`
+
+* Your implementation must return `false` immediately if `n` is non-negative.
+* Your implementation must return `true` if `value` is in `values` and `false` if `value` is not in `values`. 
+* The running time of your implementation must be in _O_(log _n_).
+
+=== `sort`
+
+* Your implemenation must sort, from smallest to largest, the array of numbers that it's passed.
+* The running time of your implementation must be in _O_(_n_^2^), where _n_ is the array's size. 
+* You may not alter the function's declaration. Its prototype must remain:
++
+[source,c]
+----
+void sort(int values[], int n);
+----
+
+
+
+
+
+
+== Walkthroughs
+
+=== search
+
+video::qDH1kHKlOYI[youtube]
+
+=== sort
+
+video::eXeP__gBMrM[youtube]
+
+== Usage
+
+Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#./find TODO#
+----
+
+== Testing
+
+When ready to check the correctness of your program, try running the command below.
+
+[source]
+----
+./generate 1000 50 | ./find 127
+----
+
+Because one of the numbers outputted by `generate`, when seeded with `50`, is `127`, your code should find that "needle"! By contrast, try running the command below as well.
+
+[source,bash]
+----
+./generate 1000 50 | ./find 128
+----
+
+Because `128` is not among the numbers outputted by `generate`, when seeded with `50`, your code shouldn't find that needle. Best to try some other tests as well, as by running `generate` with some seed, taking a look at its output, then piping that same output to `find`, looking for a "needle" you know to be among the "hay".
+
+Incidentally, note that `main` in `find.c` is written in such a way that `find` returns `0` if the needle is found, else it returns `1`. You can check the so-called "exit code" with which `main` returns by executing 
+
+[source,bash]
+----
+echo $?
+----
+
+after running some other command. For instance, assuming your implementation of `search` is correct, if you run
+
+[source,bash]
+----
+./generate 1000 50 | ./find 127
+echo $?
+----
+
+you should see `0`, since `127` is, again, among the 1,000 numbers outputted by `generate` when seeded with `50`, and so `search` (written by you) should return `true`, in which case `main` (written by us) should return (i.e., exit with) `0`. By contrast, assuming your implementation of `search` is correct, if you run
+
+[source,bash]
+----
+./generate 1000 50 | ./find 128
+echo $?
+----
+
+you should see `1`, since `128` is, again, not among the 1,000 numbers outputted by `generate` when seeded with `50`, and so `search` (written by you) should return `false`, in which case `main` (written by us) should return (i.e., exit with) `1`. Make sense?
+
+=== `check50`
+
+[source,bash]
+----
+check50 2016.find.less helpers.c
+----
+
+== Staff's Solution
+
+[source,bash]
+----
+~cs50/pset3/find
+----
+
+== Hints
+
+TODO
+
+== FAQs
+
+_None so far! Reload this page periodically to check if any arise!_
+
+== CHANGELOG
+
+* 2016-09-16
+** Initial release.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now, recall the syntax for declaring an array.  Not only do you specify the array's type, you also specify its size between brackets, just as we do for `haystack` in `find.c`:
+
+[source,c]
+----
+int haystack[MAX];
+----
+
+But when passing an array, you only specify its name, just as we do when passing `haystack` to `sort` in `find.c`:
+
+[source,c]
+----
+sort(haystack, size);
+----
+
+(Why do you think we pass in the size of that array separately?)
+
+When declaring a function that takes a one-dimensional array as an argument, though, you don't need to specify the array's size, just as we don't when declaring `sort` in `helpers.h` (and `helpers.c`):
+
+[source,c]
+----
+void sort(int values[], int n);
+----
+
+
+
+
+As this return type of `void` implies, this function must not return a sorted array; it must instead "destructively" sort the actual array that it's passed by moving around the values therein.  As we'll discuss in Week 4, arrays are not passed "by value" but instead "by reference," which means that `sort` will not be passed a copy of an array but, rather, the original array itself.
+
+
+
+
+
+
+
+
+
+
+Odds are you'll want to implement bubble sort, selection sort, or insertion sort! 
+Just realize that there's no one "right" way to implement any of those algorithms; variations abound.  In fact, you're welcome to improve upon them as you see fit, so long as your implementation remains in _O_(_n_^2^).  
+
+Although you may not alter our declaration of `sort`, you're welcome to define your own function(s) in `helpers.c` that `sort` itself may then call.
+
+We leave it to you to determine how best to test your implementation of `sort`.  But don't forget that `printf` and GDB are your friends.  And don't forget that you can generate the same sequence of pseudorandom numbers again and again by explicitly specifying ``generate``'s seed.  Before you ultimately submit, though, be sure to remove any such calls to `printf`, as we like our programs' outputs just they way they are!
+
+Here's Zamyla with some tips:
+
+video::U8k-0StE1Ik[youtube,height=540,width=960]
+
+And if you'd like to play with the staff's own implementation of `find`, you may execute the below.
+
+[source,bash]
+----
+~cs50/pset3/find
+----
+
+=== search
+
+Now that `sort` (presumably) works, it's time to improve upon `search`, the other function that lives in `helpers.c`.  Recall that your first version implemented linear search.  Rip out the lines that you wrote earlier (sniff) and re-implement `search` as Binary Search, that divide-and-conquer strategy that we employed in Week 0. You are welcome to take an iterative approach (as with a loop) or a recursive approach (wherein a function calls itself). If you pursue the latter, though, know that you may not change our declaration of `search`, but you may write a new, recursive function (that perhaps takes different parameters) that `search` itself calls.  When it comes time to submit this problem set, it suffices to submit this new-and-improved version of `search`; you needn't submit your original version that used linear search.
