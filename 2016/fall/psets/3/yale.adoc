@@ -73,20 +73,20 @@ and your prompt should resemble the below.
 
 === Step 1 of 2
 
-.
+* Update your IDE:
 +
 [source]
 ----
 update50
 ----
-.
+* Submit `find`:
 +
 [source]
 ----
 cd ~/workspace/pset3/find/
 submit50 find
 ----
-.
+* Submit `fifteen`:
 +
 [source]
 ----
