@@ -14,7 +14,7 @@ layout: 2016/fall
 . Submit your code.
 . Submit a form.
 
-include::help-harvard.adoc[]
+include::help-yale.adoc[]
 
 == Reminders
 
