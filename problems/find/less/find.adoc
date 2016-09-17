@@ -237,7 +237,7 @@ Complete the implementation of `find` by completing the implementation of `searc
 
 === `search`
 
-* Your implementation must return `false` immediately if `n` is non-negative.
+* Your implementation must return `false` immediately if `n` is non-positive.
 * Your implementation must return `true` if `value` is in `values` and `false` if `value` is not in `values`. 
 * The running time of your implementation must be in _O_(log _n_).
 
@@ -344,5 +344,7 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == CHANGELOG
 
+* 2016-09-17
+** Corrected "non-negative" to "non-positive."
 * 2016-09-16
 ** Initial release.
