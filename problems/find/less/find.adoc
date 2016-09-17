@@ -241,6 +241,12 @@ Complete the implementation of `find` by completing the implementation of `searc
 * Your implementation must return `false` immediately if `n` is non-positive.
 * Your implementation must return `true` if `value` is in `values` and `false` if `value` is not in `values`. 
 * The running time of your implementation must be in _O_(log _n_).
+* You may not alter the function's declaration. Its prototype must remain:
++
+[source,c]
+----
+bool search(int value, int values[], int n);
+----
 
 === `sort`
 
@@ -347,5 +353,6 @@ _None so far! Reload this page periodically to check if any arise!_
 
 * 2016-09-17
 ** Corrected "non-negative" to "non-positive."
+** Clarified that the prototype of `search` cannot be alterered either.
 * 2016-09-16
 ** Initial release.
