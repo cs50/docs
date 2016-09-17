@@ -45,6 +45,7 @@ image:adapted.png[solvable configuration, width="25%"]
 $ wget https://github.com/cs50/problems/archive/fifteen.zip
 $ unzip fifteen.zip
 $ rm fifteen.zip
+$ mv problems-fifteen fifteen
 $ cd fifteen
 $ ls
 Makefile    fifteen.c   questions.txt
