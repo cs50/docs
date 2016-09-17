@@ -104,6 +104,7 @@ Execute
 
 [source]
 ----
+sudo apt-get install -y expect
 update50
 ----
 
