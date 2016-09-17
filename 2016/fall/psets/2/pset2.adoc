@@ -1,6 +1,5 @@
 ---
 layout: 2016/fall
-title: Problem Set 2
 ---
 :skip-front-matter:
 
@@ -49,7 +48,7 @@ Next, execute
 
 [source]
 ----
-mkdir ~/workspace/pset2
+mkdir ~/workspace/pset2/
 ----
 
 at your prompt in order to make a directory called `pset2` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset2` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset2` denotes a directory called `pset2` within `~/workspace`.
@@ -58,7 +57,7 @@ Now execute
 
 [source]
 ----
-cd ~/workspace/pset2
+cd ~/workspace/pset2/
 ----
 
 to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.

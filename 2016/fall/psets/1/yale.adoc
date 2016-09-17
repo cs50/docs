@@ -1,6 +1,5 @@
 ---
 layout: 2016/fall
-title: Problem Set 1
 ---
 :skip-front-matter:
 
