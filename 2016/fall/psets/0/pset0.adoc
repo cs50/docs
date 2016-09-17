@@ -1,6 +1,5 @@
 ---
 layout: 2016/fall
-title: Problem Set 0
 ---
 
 = Problem Set 0

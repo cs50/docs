@@ -1,6 +1,5 @@
 ---
 layout: 2016/fall
-title: Problem Set 2
 ---
 :skip-front-matter:
 
@@ -49,7 +48,7 @@ Next, execute
 
 [source]
 ----
-mkdir ~/workspace/pset2
+mkdir ~/workspace/pset2/
 ----
 
 at your prompt in order to make a directory called `pset2` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset2` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset2` denotes a directory called `pset2` within `~/workspace`.
@@ -58,7 +57,7 @@ Now execute
 
 [source]
 ----
-cd ~/workspace/pset2
+cd ~/workspace/pset2/
 ----
 
 to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
@@ -96,4 +95,77 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == How to Submit
 
-_Coming Wed 9/14. Reload this page then!_
+For this problem set, we'll be using a new submission system based on GitHub, a popular site for storing code. Recall that for Problem Set 0 you signed up (hopefully!) for an account on https://github.com/[github.com]. The new system's still in "beta" (a testing phase), so please forgive any bugs! We'll keep an eye on https://cs50.net/discuss[CS50 Discuss] and email over the weekend in case anything goes wrong so that we can fix right away!
+
+=== Step 1 of 4
+
+Execute
+
+[source]
+----
+update50
+----
+
+again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 4
+
+* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
+** Be sure that `initials.c` is in `~/workspace/pset2/initials`, as with:
++
+[source]
+----
+cd ~/workspace/pset2/initials/
+ls
+----
+* Recall that you were asked to implement any two (2) of `caesar`, `vigenere`, and `crack`.
+** If you implemeneted `caesar`, be sure that `caesar.c` is in `~/workspace/pset2/caesar/`.
+** If you implemeneted `vigenere`, be sure that `vigenere.c` is in `~/workspace/pset2/vigenere/`.
+** If you implemeneted `crack`, be sure that `crack.c` is in `~/workspace/pset2/crack/`.
+
+If not sure how to confirm or fix something, do just reach out to your TF or via https://cs50.net/discuss[CS50 Discuss]!
+
+=== Step 3 of 4
+
+* To submit `initials`, execute
++
+[source]
+----
+cd ~/workspace/pset2/initials/
+submit50 initials
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `caesar` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/caesar/
+submit50 caesar
+----
+* To submit `vigenere` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/vigenere/
+submit50 vigenere
+----
+* To submit `crack` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/crack/
+submit50 crack
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+Incidentally, the white and yellow output from `submit50` will soon be simplified; it's some short-term diagnostic output!
+
+=== Step 4 of 4
+  
+Submit https://forms.cs50.net/2016/fall/psets/2[]!
+ 
+This was Problem Set 2.

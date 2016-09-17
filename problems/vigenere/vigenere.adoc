@@ -4,6 +4,17 @@ title: Vigenère
 
 = Vigenère
 
+== tl;dr
+
+Implement a program that encrypts messages using Vigenère's cipher, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./vigenere ABC#
+plaintext:  [underline]#HELLO#
+ciphertext: HFNLP
+----
+
 == Background
 
 Vigenère's cipher improves upon link:../caesar/caesar.html[Caesar's cipher] by encrypting messages using a sequence of keys (or, put another way, a keyword). In other words, if _p_ is some plaintext and _k_ is a keyword (i.e., an alphbetical string, whereby A represents 0, B represents 1, C represents 2, ..., and Z represents 25), then each letter, _c~i~_, in the ciphertext, _c_, is computed as:
@@ -32,9 +43,9 @@ Design and implement a program that encrypts messages using Vigenère's cipher.
 * Implement your program in a file called `vigenere.c` in a directory called `vigenere`.
 * Your program must accept a single command-line argument: a keyword, _k_, composed entirely of alphabetical characters.
 * If your program is executed without any command-line arguments, with more than one command-line argument, or with one command-line argument that contains any non-alphabetical character, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
-* Otherwise, your program must proceed to prompt the user for a string of plaintext, _p_, which it must then encrypt according to Vigenère's cipher with _k_, ultimately printing the result and exiting, with `main` returning `0`.
-* With respect to the characters in _k_, you must treat `A` and `a` as 0, `B` and `b` as 1, ... , and `Z` and `z` as 25. 
-* Your program must only apply Vigenère's cipher to a character in _p_ if that character is a letter. All other characters (numbers, symbols, spaces, punctuation marks, etc.) must be outputted unchanged. Moreover, if your code is about to apply the _j^th^_ character of _k_ to the _i^th^_ character of _p_, but the latter proves to be a non-alphabetical character, you must wait to apply that _j^th^_ character of _k_ to the next alphabetical character in _p_; you must not yet advance to the next character in _k_. 
+* Otherwise, your program must proceed to prompt the user for a string of plaintext, _p_, (as by a prompt for `plaintext:`) which it must then encrypt according to Vigenère's cipher with _k_, ultimately printing the result (prepended with `ciphertext:`) and exiting, with `main` returning `0`.
+* With respect to the characters in _k_, you must treat `A` and `a` as 0, `B` and `b` as 1, ... , and `Z` and `z` as 25.
+* Your program must only apply Vigenère's cipher to a character in _p_ if that character is a letter. All other characters (numbers, symbols, spaces, punctuation marks, etc.) must be outputted unchanged. Moreover, if your code is about to apply the _j^th^_ character of _k_ to the _i^th^_ character of _p_, but the latter proves to be a non-alphabetical character, you must wait to apply that _j^th^_ character of _k_ to the next alphabetical character in _p_; you must not yet advance to the next character in _k_.
 * Your program must preserve the case of each letter in _p_.
 
 == Walkthrough
@@ -66,33 +77,31 @@ Usage: ./vigenere k
 [source,subs=quotes]
 ----
 $ [underline]#./vigenere bacon#
-[underline]#Meet me at the park at eleven am#
-Negh zf av huf pcfx bt gzrwep oz
+plaintext: [underline]#Meet me at the park at eleven am#
+ciphertext: Negh zf av huf pcfx bt gzrwep oz
 ----
 
 == Testing
 
 To help you test `vigenere`, we've written a program called `devigenere` for you that also takes one and only one command-line argument (a keyword) but whose job is to take ciphertext as input and produce plaintext as output. To use our program, execute
 
-[source,bash]
+[source]
 ----
 ~cs50/pset2/devigenere k
 ----
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
 
-If you'd like to check the correctness of your program with `check50`, you may execute the below.
+=== `check50`
 
-[source,bash]
+[source]
 ----
 check50 2016.vigenere vigenere.c
 ----
 
 == Staff's Solution
 
-If you'd like to play with the staff's own implementation of `vigenere`, you may execute the below.
-
-[source,bash]
+[source]
 ----
 ~cs50/pset2/vigenere
 ----
@@ -100,3 +109,16 @@ If you'd like to play with the staff's own implementation of `vigenere`, you may
 == Hints
 
 Not sure where to begin? As luck would have it, this program's pretty similar to link:../caesar/caesar.html[`caesar`]! Only this time, you need to decide which character in _k_ to use as you iterate from character to character in _p_.
+
+== FAQs
+
+_None so far! Reload this page periodically to check if any arise!_
+
+== CHANGELOG
+
+* 2016-09-15
+** Clarified usage of user prompts.
+* 2016-09-14
+** Added tl;dr, FAQs, CHANGELOG.
+* 2016-09-09
+** Initial release.
