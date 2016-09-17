@@ -1,12 +1,12 @@
 ---
 layout: 2016/fall
-title: Week 2
+title: Week 3
 ---
 :author: Cheng Gong
 
 = Week 3
 
-[t=0m0s]
+[t=0m16s]
 == Last Time
 
 * We looked at debugging, with tools like: `help50`, to help us understand error messages when we compile a program; `eprintf`, to print messages that might be helpful; `debug50`, which will let us go through our program line by line, and see variables as they are changed.
@@ -14,7 +14,7 @@ title: Week 2
 * We learned what strings actually were, arrays of characters.
 * We talked about command-line arguments, using `argc` and `argv` from the command line for our `main` function to use.
 
-[t=1m0s]
+[t=4m20s]
 == Sorting
 
 * Now that we know enough of the basics, we can start problem-solving with algorithms at a higher level.
@@ -33,6 +33,7 @@ for each element in array
 return false
 ----
 ** Notice that we have `return false` outside of the `for` loop, so at the end of the loop, if we've looked at all the elements in the array but not yet found what we've been looking for, we can say we haven't found it.
+*** We also indent our code to indicate the nesting of statements. `return false`, in particular, will execute after the entire `for` loop has completed, rather than after just looking at the first element, if it were indented.
 * Binary search, from week 0, can be written like this in pseudocode:
 +
 [source]
@@ -109,9 +110,302 @@ else
 ----
 ** Each time, we look at the next element and place it into our sorted portion of the list, even if we have to shift elements.
 
+[t=37m32s]
+== Running Time
 
+* For bubble sort, our algorithm might look like this:
++
+[source]
+----
+repeat until no swaps
+    for i from 0 to n-2
+        if i'th and i+1'th elements out of order
+            swap them
+----
+** Recall that the element at the end of the list is the ``n - 1``th since we start counting at `0`. So looking at pairs of elements, the last pair would stop at `n - 2`.
+* For selection sort:
++
+[source]
+----
+for i from 0 to n-1
+    find smallest element between i'th and n-1'th
+    swap smallest with i'th element
+----
+** Now we're building a sorted list by going through the unsorted part of the list, finding the smallest element, and placing it at the end of our sorted list.
+* Insertion sort:
++
+[source]
+----
+for i from 1 to n-1
+    call 0'th through i-1'th elements the "sorted side"
+    remove i'th element
+    insert it into the sorted side in order
+----
+** Here we are building a sorted list by taking each element in the list, and inserting it into the correct spot of the sorted list so far.
+* We can use the number of steps as a unit for measuring how efficient an algorithm is, but any unit is fine as long as we're consistent.
+* For bubble sort, if we have a list with _n_ elements, we would compare (_n_ - 1) pairs in our first pass.
+* And after our first pass, the largest element will have been swapped all the way to the right. So in our second pass, we'll only need (_n_ - 2) comparisons.
+* So we'll have made a total of (_n_ - 1) + (_n_ - 2) + ... + 1 comparisons. And this one actually adds up to _n_(_n_ - 1)/2. And that multiplies out to (_n_^2^ - _n_)/2.
+* When comparing running time, we generally just want the term with the biggest order of magnitude, since that's the only one that really matters when _n_ gets really big. And we can even get rid of the factor of 1/2.
+* We can look at an example (not a proof!) to help us understand this. Imagine we had 1,000,000 numbers to sort. Then bubble sort will take 1,000,000^2^/2 - 1,000,000/2 steps, and if we multiply that out, we get 500,000,000,000 - 500,000 = 499,999,500,000. Which is awfully close to the first number.
+* So when we have an expression like (_n_^2^ - _n_)/2, we can say it is on the order of, _O_(_n_^2^).
+* There is a more formal mathematical definition, but we'll consider it to be an upper bound on how long an algorithm might take.
+* Depending on the algorithm, we might see:
+** _O_(_n_^2^)
+** _O_(_n_ log _n_)
+** _O_(_n_)
+** _O_(log _n_)
+** _O_(1)
+*** This last one takes one step, or ten steps, or a constant number of steps regardless of the size of the problem.
+* It turns out, if we wrote out the steps, bubble sort, insertion sort, and selection sort all have running time of _O_(_n_^2^). Even though they're all slightly different, they all involved some variation of looking through up to _n_ elements, up to _n_ times. With insertion sort, we're looking at each element just once, but as we sort we might need to shift all the elements in the list we've already sorted, which requires work.
+* Finding an element in an unsorted list, with linear search, for example, would have running time of _O_(_n_), since we might look at up to all _n_ elements before we find the correct one.
+* Binary search would have a logarithmic running time, _O_(log _n_), since we are dividing the problem in half each time.
+* And constant time algorithms, with running time _O_(1), might include adding numbers or printing something, since in each case we can say it takes one step.
+* Another symbol we might see is big Omega, *Ω*, which we can think of as the opposite of big O. Big O is the running time of the worst-case scenario (in the case of sorting, for many algorithms the worst-case scenario is a list that is completely backwards), but big Omega is the lower bound, or the best case.
+* An algorithm with Ω(_n_^2^), for example, would be selection sort. Even if the list was already sorted, we wouldn't know because we look for the smallest element in the rest of the list, one at a time, so we end up looking at about _n_^2^ elements.
+* Bubble sort, on the other hand, Ω(_n_), since we stop if we made no swaps, and after looking at all _n_ elements, we can realize that a sorted list was indeed sorted, and stop.
+* But we realize that it is impossible to sort a list with _n_ elements in Ω(log _n_) or Ω(1), since at the least we need to look at all _n_ elements to make sure it is sorted.
+* Algorithms for search, like linear search or binary search, tend to have Ω(1) running time, since in the best case we get lucky and find our element on the first try.
+* And we have yet another notation, theta, Θ, if the running time of an algorithm is the same in the worst-case (Ω) and the best-case (O).
+* We take a look at https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html[this visualization] of how sorting differs between algorithms, and also http://cglab.ca/~morin/misc/sortalg/[this visualization].
 
+[t=1h2m10s]
+== Sorting
 
+* Recall that our pseudocode for finding Mike Smith in the phone book was this:
++
+[source]
+----
+ 0   pick up phone book
+ 1   open to middle of phone book
+ 2   look at names
+ 3   if Smith is among names
+ 4       call Mike
+ 5   else if Smith is earlier in book
+ 6       open to middle of left half of book
+ 7       go back to step 2
+ 8   else if "Smith" is later in book
+ 9       open to middle of right half of book
+10       go back to step 2
+11   else
+12       quit
+----
+* In that version, we used `go back` to create loops in our algorithm. But we could more simply do something like this:
++
+[source]
+----
+ 0   pick up phone book
+ 1   open to middle of phone book
+ 2   look at names
+ 3   if Smith is among names
+ 4       call Mike
+ 5   else if Smith is earlier in book
+ 6       search for Mike in left half of book
+ 7
+ 8   else if "Smith" is later in book
+ 9       search for Mike in right half of book
+10
+11   else
+12       quit
+----
+* Now our program is recursive, where it calls itself.
+* We can write pseudocode for merge sort too:
++
+[source]
+----
+on input of n elements
+    if n < 2
+        return
+    else
+        sort left half of elements
+        sort right half of elements
+        merge sorted halves
+----
+** If we have fewer than 2 elements, then our list has to be sorted so we should stop.
+** Now we rely on the same function to sort the halves for us, and once it sorts the halves we'll merge them together.
+* We can best see this with an example:
++
+[source]
+----
+4 8 6 2 1 7 5 3        // unsorted list
+----
++
+[source]
+----
+| 4 8 6 2 | 1 7 5 3    // sort the left half
+----
++
+[source]
+----
+| 4 8 | 6 2 1 7 5 3    // sort the left half of the left half
+----
++
+[source]
+----
+| 4 | 8 6 2 1 7 5 3    // sort the left half of the left half of the left half, which is just 4, so it's sorted
+----
++
+[source]
+----
+4 | 8 | 6 2 1 7 5 3    // sort the right half of the left half of the left half, which is just 8, so it's sorted
+----
++
+[source]
+----
+| _ _ | 6 2 1 7 5 3    // now we merge the left half of the left half
+| 4 8 |                // use extra memory to keep our sorted list of size 2
+----
++
+[source]
+----
+_ _ | 6 2 | 1 7 5 3    // now we go back and sort the right half of the left half
+4 8 | 2 6 |            // sorted right half of right half
+----
+* Now we can remember that our second statement earlier, "sort the left half", is wrapping up with merging its two sorted halves together:
++
+[source]
+----
+_ _ | 6 2 | 1 7 5 3
+4 8 | 2 6 |
+2 4   6 8 |            // merged left half
+----
+** To merge two sorted lists, we start at the beginning of both lists, and take whichever element is the smallest at each step.
+* Now we repeat with the right half:
++
+[source]
+----
+_ _ | _ _ | 1 7 5 3
+_ _ | _ _ |
+2 4   6 8 |
+----
++
+[source]
+----
+_ _ | _ _ | 1 7 5 3
+_ _ | _ _ | 1 7 |      // sorted left half of right half
+2 4   6 8 |
+----
++
+[source]
+----
+_ _ | _ _ | 1 7 5 3
+_ _ | _ _ | 1 7 | 3 5 |  // sorted right half of right half
+2 4   6 8 |
+----
++
+[source]
+----
+_ _ | _ _ | 1 7 5 3
+_ _ | _ _ | 1 7 | 3 5 |  // sorted right half of right half
+2 4   6 8 |
+----
++
+[source]
+----
+_ _ | _ _ | 1 7 5 3
+_ _ | _ _ | _ _ | _ _ |
+2 4   6 8 | 1 3   5 7    // merged right half
+----
+* Now we're back to the very first pass of our algorithm where we need to merge both halves, so:
++
+[source]
+----
+_ _ | _ _ | 1 7 5 3
+_ _ | _ _ | _ _ | _ _ |
+2 4   6 8 | 1 3   5 7
+1 2   3 4   5 6   7 8    // merged list
+----
+* It seems that there were a lot of steps, and on top of that we needed a lot of extra space to keep the new lists stored somewhere in memory.
+* But we could have used the space in the original list as we went along, so we could get by with memory for just two lists.
+* And with a list of 8 elements, we only needed to have 3 layers, splitting it three times.
+* So with dividing the problem in half each time, it seems that we've reduced our problem to something logarithmic. And at each layer, we looked at all _n_ elements to merge them. So intuitively, we can guess that this algorithm takes O(_n_ log _n_) time.
+* We can even look at the pseudocode to analyze running time:
++
+[source]
+----
+on input of n elements
+    if n < 2
+        return
+    else
+        sort left half of elements
+        sort right half of elements
+        merge sorted halves
+----
+* The first condition takes O(1) step to return, a constant number, so T(_n_) = O(1). The running time is O(1).
+* But the second condition takes T(_n_) = T(_n_/2) + T(_n_/2) + O(_n_) since sorting each half requires the running time of each half, plus the time it takes to merge the two halves.
+* Mathematically, this recurrence also comes out to O(_n_ log _n_). But this would only be obvious if you're familiar with this subject and had the help of a textbook; no worries if not!
+* Let's take a look at how this might be applied.
+* `sigma0.c`:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
 
+int sigma(int m);
 
+int main(void)
+{
+    int n;
+    do
+    {
+        printf("Positive integer please: ");
+        n = get_int();
+    }
+    while (n < 1);
 
+    int answer = sigma(n);
+
+    printf("%i\n", answer);
+}
+
+int sigma(int m)
+{
+    int sum = 0;
+    for (int i = 1; i <= m; i++)
+    {
+        sum += i;
+    }
+    return sum;
+}
+----
+** This program takes some integer `m` as input, and adds up all the numbers from `1` to `m`, inclusive, with a loop.
+* A recursive version, `sigma1.c`, would look like this:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+
+int sigma(int m);
+
+int main(void)
+{
+    int n;
+    do
+    {
+        printf("Positive integer please: ");
+        n = get_int();
+    }
+    while (n < 1);
+
+    int answer = sigma(n);
+
+    printf("%i\n", answer);
+}
+
+int sigma(int m)
+{
+    if (m <= 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return (m + sigma(m - 1));
+    }
+}
+----
+** The function `sigma` now calls itself, where it adds the current `m` to whatever the sum from `0` (because the function just returns `0` if `m` is `0` or less) to `m - 1`, and that gives us the sum from `0` to `m`.
+** But having recursion, while it looks elegant, might not be the best decision if we have a large `m` and need to call the function over and over again, using up more memory that we would otherwise.
+* Soon we'll take a look at fancier data structures, and how we might apply some of these concepts to working with them.
