@@ -220,7 +220,7 @@ If you see
 
 [source]
 ----
-fatal: unable to access https://username@github.com/submit50/username/': The request URL returned error: 403
+fatal: unable to access 'https://username@github.com/submit50/username/': The request URL returned error: 403
 ----
 
 when running `submit50`, where `username` is your own GitHub username, odds are you haven't confirmed your email address with GitHub. Visit https://github.com/settings/emails to confirm it, then re-run `submit50`!
