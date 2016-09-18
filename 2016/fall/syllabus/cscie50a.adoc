@@ -124,7 +124,7 @@ A schedule of problems, subject to change, appears below.
 | http://docs.cs50.net/2016/fall/cscie50a/problems/scratch/scratch.html[Scratch] | Programming | Tue 9/6 | Sat 9/10
 | http://docs.cs50.net/2016/fall/cscie50a/problems/hello/hello.html[Hello] | Programming | Fri 9/9 | Wed 9/14
 | http://docs.cs50.net/2016/fall/cscie50a/problems/fahrenheit/fahrenheit.html[Fahrenheit] | Programming | Tue 9/13 | Sat 9/17
-| http://docs.cs50.net/2016/fall/cscie50a/problems/fahrenheit/fahrenheit.html[Mario] | Programming | Fri 9/16 | Wed 9/21
+| http://docs.cs50.net/2016/fall/cscie50a/problems/mario/mario.html[Mario] | Programming | Fri 9/16 | Wed 9/21
 | Greedy | Programming | Tue 9/20 | Sat 9/24
 | Me, Myself, and UI | Written | Fri 9/23 | Wed 9/28
 | ISBN | Programming | Tue 9/27 | Sat 10/1
