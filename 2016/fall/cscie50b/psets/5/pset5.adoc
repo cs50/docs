@@ -472,4 +472,13 @@ Congrats!  At this point, your speller-checker is presumably complete (and fast!
 
 == How to Submit
 
-**Refresh this page after Fri 9/16 for submission instructions!**
+To submit your assignment, please do the following by *Fri 9/23 at noon*.
+
+. Open up CS50 IDE.
+. Navigate to your `~/workspace` directory, ensuring that `pset5` (and all of its contents) exists therein.
+. At the terminal, type `zip -r first_last.zip pset5`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `~/workspace` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/JfmbdXoxVRGCyoneIMK7[this link] to upload your ZIP file containing your `pset5` submission!
+
+This was Problem Set 5.
