@@ -119,9 +119,9 @@ cd ~/workspace/pset2/initials/
 ls
 ----
 * Recall that you were asked to implement any two (2) of `caesar`, `vigenere`, and `crack`.
-** If you implemeneted `caesar`, be sure that `caesar.c` is in `~/workspace/pset2/caesar/`.
-** If you implemeneted `vigenere`, be sure that `vigenere.c` is in `~/workspace/pset2/vigenere/`.
-** If you implemeneted `crack`, be sure that `crack.c` is in `~/workspace/pset2/crack/`.
+** If you implemented `caesar`, be sure that `caesar.c` is in `~/workspace/pset2/caesar/`.
+** If you implemented `vigenere`, be sure that `vigenere.c` is in `~/workspace/pset2/vigenere/`.
+** If you implemented `crack`, be sure that `crack.c` is in `~/workspace/pset2/crack/`.
 
 If not sure how to confirm or fix something, do just reach out to your TF or via https://cs50.net/discuss[CS50 Discuss]!
 
