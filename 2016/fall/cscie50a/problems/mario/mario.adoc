@@ -102,11 +102,11 @@ pass:[#########]
 
 Note that the rightmost two columns of blocks must be of the same height. No need to generate the pipe, clouds, numbers, text, or Mario himself.
 
-By contrast, if the user fails to provide a non-negative integer no greater than `23`, your program's output should instead resemble the below, wherein underlined text again represents some user's input. (Recall that `GetInt` will handle some, but not all, re-prompting for you.)
+By contrast, if the user fails to provide a non-negative integer no greater than `23`, your program's output should instead resemble the below, wherein underlined text again represents some user's input. (Recall that `get_int` will handle some, but not all, re-prompting for you.)
 
 [source,subs=quotes]
 ----
-~/workspace/chapter1 $ [underline]#./mario#
+~/workspace/week2 $ [underline]#./mario#
 Height: [underline]#-2#
 Height: [underline]#-1#
 Height: [underline]#foo#
@@ -140,7 +140,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 1617.chapter1.mario mario.c
+check50 2016.mario mario.c
 ----
 
 And if you'd like to play with the staff's own implementation of mario, you may execute the below.

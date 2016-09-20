@@ -76,7 +76,7 @@ For students taking CSCI E-50a, the pace of the course differs from CSCI E-50, w
 | Week 0 | https://ap.cs50.net/cscie50a/0/computers-computing/[Computers] and https://ap.cs50.net/cscie50a/0/how-computers-work/[computing]. https://ap.cs50.net/cscie50a/0/hardware/[Hardware]. https://ap.cs50.net/cscie50a/0/memory/[Memory]. https://ap.cs50.net/cscie50a/0/binary/[Binary]. https://ap.cs50.net/cscie50a/0/ascii/[ASCII]. https://ap.cs50.net/cscie50a/0/algorithms/[Algorithms]. | Wed 8/31, Fri 9/2
 | Week 1 | https://ap.cs50.net/cscie50a/1/pseudocode/[Pseudocode]. https://ap.cs50.net/cscie50a/1/scratch/[Scratch]. https://ap.cs50.net/cscie50a/1/syntax/[Syntax]. https://ap.cs50.net/cscie50a/1/operators/[Operators]. | Tue 9/6, Fri 9/9
 | Week 2 | https://ap.cs50.net/cscie50a/1/variables/[Variables]. https://ap.cs50.net/cscie50a/1/data-types/[Data types]. https://ap.cs50.net/cscie50a/1/loops/[Loops]. | Tue 9/13, Fri 9/16
-| Week 3 | Conditionals. Compiling. Source code. Object code. | Tue 9/20, Fri 9/23
+| Week 3 | https://ap.cs50.net/cscie50a/1/boolean-expressions/[Conditionals]. Compiling. Source code. Object code. | Tue 9/20, Fri 9/23
 | Week 4 | Functions. Arrays. Strings. | Tue 9/27, Fri 9/30
 | Week 5 | __no lecture__, Quiz 0 |
 | Week 6 | Command line. Exit codes. | Fri 10/14
@@ -125,7 +125,7 @@ A schedule of problems, subject to change, appears below.
 | http://docs.cs50.net/2016/fall/cscie50a/problems/hello/hello.html[Hello] | Programming | Fri 9/9 | Wed 9/14
 | http://docs.cs50.net/2016/fall/cscie50a/problems/fahrenheit/fahrenheit.html[Fahrenheit] | Programming | Tue 9/13 | Sat 9/17
 | http://docs.cs50.net/2016/fall/cscie50a/problems/mario/mario.html[Mario] | Programming | Fri 9/16 | Wed 9/21
-| Greedy | Programming | Tue 9/20 | Sat 9/24
+| http://docs.cs50.net/2016/fall/cscie50a/problems/greedy/greedy.html[Greedy] | Programming | Tue 9/20 | Sat 9/24
 | Me, Myself, and UI | Written | Fri 9/23 | Wed 9/28
 | ISBN | Programming | Tue 9/27 | Sat 10/1
 | Tech Spotlight | Written | Tue 10/11 | Sat 10/15
