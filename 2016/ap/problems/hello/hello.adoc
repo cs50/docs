@@ -100,9 +100,7 @@ That wasn't too bad, right?
 
 === Updating
 
-Once you've got your CS50 IDE instance open in a browser window, have a look over the README file we've included with it. It includes some basics about using your new workspace. Don't worry too much about references to "problem sets" or other terminology or things you haven't seen before--CS50 IDE is neutrally configured for use with different versions of the CS50 course that won't be applicable for your progress through CS50 AP.
-
-Let's now make sure that you have the most up-to-date version of CS50 IDE. To do so, click in the *terminal window* (which probably has a tab that looks something like *workspace/ - ""*) at the bottom of the screen, where by default you should see a *prompt* which reads:
+Let's now make sure that you have the most up-to-date version of CS50 IDE. To do so, click in the *terminal window* (which probably has a tab that looks something like *workspace/*) at the bottom of the screen, where by default you should see a *prompt* which reads:
 
 [source,bash]
 ----
@@ -120,11 +118,11 @@ at the prompt and then hit Enter on your keyboard. It may take a while to finish
 
 [source]
 ----
-All done! <3
 Update complete!
+BE SURE TO CLOSE AND RE-OPEN ANY TERMINAL WINDOWS <3
 ----
 
-after which you are free to continue exploring CS50 IDE. As of the time we're writing this specification, the current version of CS50 IDE is *62*. That's the number you should see near the top-right corner of your screen. You can always check the version number of your IDE, also, by typing `version50` in the Terminal.
+after which you are free to continue exploring CS50 IDE.
 
 === Navigating CS50 IDE
 
@@ -191,12 +189,7 @@ Let's poke around a bit more. Go ahead and type
 cd
 ----
 
-and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to your home directory by default. But remember that everything lives inside of `~/workspace`... so we need to get back there! Just:
-
-[source,bash]
-----
-cd workspace
-----
+and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to the `~/workspace` directory by default.
 
 And indeed, your prompt should now be:
 
@@ -205,7 +198,7 @@ And indeed, your prompt should now be:
 ~/workspace $
 ----
 
-Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `workspace`.
+Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/workspace`.
 
 Make sense? If not, no worries; it soon will! It's in this terminal window that you'll soon be compiling your first program! For now, though, close Ace by clicking the small "x" in the tab for `hello.txt` (if you've made additional changes, you'll be asked if you want to save your file before the tab closes).
 
@@ -245,7 +238,7 @@ Notice how Ace adds "syntax highlighting" (i.e., color) as you type. Those color
 
 Do be sure that you type in this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit ctrl-s), but don't close the tab. Recall that the leading asterisk in the tab's name should then disappear. Click anywhere in the terminal window beneath your code. The prompt itself should now be
+When done typing, select *File > Save* (or hit ctrl-s), but don't close the tab. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code. The prompt itself should now be
 
 [source,bash]
 ----
