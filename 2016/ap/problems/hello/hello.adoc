@@ -20,7 +20,7 @@ Don't be alarmed by the length of this problem's specification. Most of it is ju
 
 * Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
 // TODO
-* Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
+* Chapters 1 – 5, 9, and 11 – 17 of _Absolute Beginner's Guide to C_.
 * Chapters 1 – 6 of _Programming in C_.
 
 == Academic Honesty
@@ -143,7 +143,7 @@ Okay, with `hello.txt` still open in your workspace, notice that beneath your do
 ~/workspace/ $
 ----
 
-(where `~/workspace/` &ndash; i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~` &ndash; is the directory you are currently in.) If that's the case, based on the file tree should be a `chapter1` directory somewhere inside, since we created it just a few moments ago. Let's confirm as much.
+(where `~/workspace/`—i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be a `chapter1` directory somewhere inside, since we created it just a few moments ago. Let's confirm as much.
 
 Click somewhere inside of that terminal window and type
 
