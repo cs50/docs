@@ -4,7 +4,7 @@
 = Find
 
 == tl;dr
- 
+
 Implement a program that finds a number among numbers, per the below.
 
 [source,subs=quotes]
@@ -97,7 +97,7 @@ Once done commenting `generate.c`, re-compile the program to be sure you didn't 
 [source]
 ----
 make generate
----- 
+----
 
 If `generate` no longer compiles properly, take a moment to fix what you broke!
 
@@ -202,7 +202,7 @@ If only you could whittle this whole problem set down to a single command! Final
 [source]
 ----
 clean:
-    rm -f *.o a.out core find generate 
+    rm -f *.o a.out core find generate
 ----
 
 This target allows you to delete all files ending in `.o` or called `core` (more on that soon!), `find`, or `generate` simply by executing the command below.
@@ -214,7 +214,7 @@ make clean
 
 Be careful not to add, say, `*.c` to that last line in `Makefile`! (Why?)
 
-Notice now that, in `find.c`, `main` calls `search`, a function declared in `helpers.h`. Unfortunately, we forgot to implement that function fully in `helpers.c`! Indeed, take a peek at `helpers.c`, and you'll see that `search` always returns `false`, whether or not `value` is in `values`. To be sure, we could have put the contents of `helpers.h` and `helpers.c` in `find.c` itself. But it's sometimes better to organize programs into multiple files, especially when some functions are essentially "utility functions" that might later prove useful to other programs as well, much like those in the CS50 Library. 
+Notice now that, in `find.c`, `main` calls `search`, a function declared in `helpers.h`. Unfortunately, we forgot to implement that function fully in `helpers.c`! Indeed, take a peek at `helpers.c`, and you'll see that `search` always returns `false`, whether or not `value` is in `values`. To be sure, we could have put the contents of `helpers.h` and `helpers.c` in `find.c` itself. But it's sometimes better to organize programs into multiple files, especially when some functions are essentially "utility functions" that might later prove useful to other programs as well, much like those in the CS50 Library.
 
 Notice too, per `helpers.h`, that the prototype for `search` is:
 
@@ -239,7 +239,7 @@ Complete the implementation of `find` by completing the implementation of `searc
 === `search`
 
 * Your implementation must return `false` immediately if `n` is non-positive.
-* Your implementation must return `true` if `value` is in `values` and `false` if `value` is not in `values`. 
+* Your implementation must return `true` if `value` is in `values` and `false` if `value` is not in `values`.
 * The running time of your implementation must be in _O_(log _n_).
 * You may not alter the function's declaration. Its prototype must remain:
 +
@@ -251,7 +251,7 @@ bool search(int value, int values[], int n);
 === `sort`
 
 * Your implemenation must sort, from smallest to largest, the array of numbers that it's passed.
-* The running time of your implementation must be in _O_(_n_^2^), where _n_ is the array's size. 
+* The running time of your implementation must be in _O_(_n_^2^), where _n_ is the array's size.
 * You may not alter the function's declaration. Its prototype must remain:
 +
 [source,c]
@@ -263,7 +263,7 @@ void sort(int values[], int n);
 
 === search
 
-video::qDH1kHKlOYI[youtube]
+video::TezZrZ8oCfw[youtube]
 
 === sort
 
@@ -296,7 +296,7 @@ Because one of the numbers outputted by `generate`, when seeded with `50`, is `1
 
 Because `128` is not among the numbers outputted by `generate`, when seeded with `50`, your code shouldn't find that needle. Best to try some other tests as well, as by running `generate` with some seed, taking a look at its output, then piping that same output to `find`, looking for a "needle" you know to be among the "hay".
 
-Incidentally, note that `main` in `find.c` is written in such a way that `find` returns `0` if the needle is found, else it returns `1`. You can check the so-called "exit code" with which `main` returns by executing 
+Incidentally, note that `main` in `find.c` is written in such a way that `find` returns `0` if the needle is found, else it returns `1`. You can check the so-called "exit code" with which `main` returns by executing
 
 [source]
 ----
@@ -339,7 +339,7 @@ check50 2016.find.less helpers.c
 
 Before you implement `search` in _O_(log _n_) time, you might want to implement it temporarily in _O_(_n_) time, as with linear search, if only because it's a bit easier to get right. That way, you can move on to `sort`, knowing that `search` already works. And once `sort` works, you can go back and re-implement `search` in _O_(log _n_) time, as with binary search. Just remember to!
 
-Ultimately, you are welcome to implement `search` iteratively (with a loop) or recursively (wherein a function calls itself). If you pursue the latter, though, know that you may not change our declaration of `search`, but you may write a new, recursive function (that perhaps takes different parameters) that `search` itself calls.  
+Ultimately, you are welcome to implement `search` iteratively (with a loop) or recursively (wherein a function calls itself). If you pursue the latter, though, know that you may not change our declaration of `search`, but you may write a new, recursive function (that perhaps takes different parameters) that `search` itself calls.
 
 For `sort`, odds are you'll want to implement bubble sort, selection sort, or insertion sort! Just realize that there's no one "right" way to implement any of those algorithms; variations abound. In fact, you're welcome to improve upon them as you see fit, so long as your implementation remains in _O_(_n_^2^). Although you may not alter our declaration of `sort`, you're welcome to define your own function(s) in `helpers.c` that `sort` itself may then call.
 
