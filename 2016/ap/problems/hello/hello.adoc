@@ -20,7 +20,7 @@ Don't be alarmed by the length of this problem's specification. Most of it is ju
 
 * Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
 // TODO
-* Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
+* Chapters 1 – 5, 9, and 11 – 17 of _Absolute Beginner's Guide to C_.
 * Chapters 1 – 6 of _Programming in C_.
 
 == Academic Honesty
@@ -100,18 +100,16 @@ That wasn't too bad, right?
 
 === Updating
 
-Once you've got your CS50 IDE instance open in a browser window, have a look over the README file we've included with it. It includes some basics about using your new workspace. Don't worry too much about references to "problem sets" or other terminology or things you haven't seen before--CS50 IDE is neutrally configured for use with different versions of the CS50 course that won't be applicable for your progress through CS50 AP.
+Let's now make sure that you have the most up-to-date version of CS50 IDE. To do so, click in the *terminal window* (which probably has a tab that looks something like *workspace/*) at the bottom of the screen, where by default you should see a *prompt* which reads:
 
-Let's now make sure that you have the most up-to-date version of CS50 IDE. To do so, click in the *terminal window* (which probably has a tab that looks something like *workspace/ - ""*) at the bottom of the screen, where by default you should see a *prompt* which reads:
-
-[source,bash]
+[source]
 ----
-~/workspace $
+~/workspace/ $
 ----
 
 You are now about to work with a command-line (i.e., text-based) interface via which you can navigate your workspace's files and directories and run programs by typing their names. Updating the CS50 IDE is pretty easy. Just type
 
-[source,bash]
+[source]
 ----
 update50
 ----
@@ -120,15 +118,15 @@ at the prompt and then hit Enter on your keyboard. It may take a while to finish
 
 [source]
 ----
-All done! <3
 Update complete!
+BE SURE TO CLOSE AND RE-OPEN ANY TERMINAL WINDOWS <3
 ----
 
-after which you are free to continue exploring CS50 IDE. As of the time we're writing this specification, the current version of CS50 IDE is *62*. That's the number you should see near the top-right corner of your screen. You can always check the version number of your IDE, also, by typing `version50` in the Terminal.
+after which you are free to continue exploring CS50 IDE.
 
 === Navigating CS50 IDE
 
-Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/workspace`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `chapter1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it.
+Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/workspace/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `chapter1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it.
 
 Front and center in the CS50 IDE workspace is a window wherein you'll be able to write your code, using Ace, a web-based text editor. Right now, assuming you haven't played around with the tabs, that window is blank.
 
@@ -140,44 +138,44 @@ Go ahead and type `hello` (or the ever-popular `asdf`) on line 1 of the document
 
 Okay, with `hello.txt` still open in your workspace, notice that beneath your document is that terminal window. Notice that the window's prompt is, assuming you haven't otherwise manipulated it
 
-[source,bash]
+[source]
 ----
-~/workspace $
+~/workspace/ $
 ----
 
-(where `~/workspace` &ndash; i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~` &ndash; is the directory you are currently in.) If that's the case, based on the file tree should be a `chapter1` directory somewhere inside, since we created it just a few moments ago. Let's confirm as much.
+(where `~/workspace/`—i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be a `chapter1` directory somewhere inside, since we created it just a few moments ago. Let's confirm as much.
 
 Click somewhere inside of that terminal window and type
 
-[source,bash]
+[source]
 ----
 ls
 ----
 
 and then Enter. That's a lowercase `L` and a lowercase `S`, which is shorthand notation for "list." Indeed, you should then see a list of the folders inside of your workspace directory, among which is `chapter1`! Let's open that folder! Type
 
-[source,bash]
+[source]
 ----
 cd chapter1
 ----
 
 or even
 
-[source,bash]
+[source]
 ----
-cd ~/workspace/chapter1
+cd ~/workspace/chapter1/
 ----
 
-followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/workspace/chapter1` (ergo, `cd`). You should find that your prompt changes to
+followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/workspace/chapter1/` (ergo, `cd`). You should find that your prompt changes to
 
-[source,bash]
+[source]
 ----
 ~/workspace/chapter1/ $
 ----
 
-confirming that you are indeed now inside of `~/workspace/chapter1` (i.e., a directory called `chapter1` inside of a directory called `workspace` inside of your home directory). Now type
+confirming that you are indeed now inside of `~/workspace/chapter1/` (i.e., a directory called `chapter1` inside of a directory called `workspace` inside of your home directory). Now type
 
-[source,bash]
+[source]
 ----
 ls
 ----
@@ -186,26 +184,21 @@ followed by Enter. You should see `hello.txt`! Now, you can't click or double-cl
 
 Let's poke around a bit more. Go ahead and type
 
-[source,bash]
+[source]
 ----
 cd
 ----
 
-and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to your home directory by default. But remember that everything lives inside of `~/workspace`... so we need to get back there! Just:
-
-[source,bash]
-----
-cd workspace
-----
+and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to the `~/workspace/` directory by default.
 
 And indeed, your prompt should now be:
 
-[source,bash]
+[source]
 ----
-~/workspace $
+~/workspace/ $
 ----
 
-Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `workspace`.
+Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/workspace/`.
 
 Make sense? If not, no worries; it soon will! It's in this terminal window that you'll soon be compiling your first program! For now, though, close Ace by clicking the small "x" in the tab for `hello.txt` (if you've made additional changes, you'll be asked if you want to save your file before the tab closes).
 
@@ -217,14 +210,14 @@ video::HkQD6aw7oDc[youtube,height=540,width=960]
 
 Shall we have you write your first program? You could go ahead create a new file inside of your `chapter1` directory and save the file as `hello.c` (not `hello.txt`), just as before (remember how?), but we'll also take this opportunity to show you another way. In the terminal window, type
 
-[source,bash]
+[source]
 ----
-cd ~/workspace/chapter1
+cd ~/workspace/chapter1/
 ----
 
 and then, after confirming that you are in the right spot by looking at your prompt, type
 
-[source,bash]
+[source]
 ----
 touch hello.c
 ----
@@ -245,16 +238,16 @@ Notice how Ace adds "syntax highlighting" (i.e., color) as you type. Those color
 
 Do be sure that you type in this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit ctrl-s), but don't close the tab. Recall that the leading asterisk in the tab's name should then disappear. Click anywhere in the terminal window beneath your code. The prompt itself should now be
+When done typing, select *File > Save* (or hit ctrl-s), but don't close the tab. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code. The prompt itself should now be
 
-[source,bash]
+[source]
 ----
-~/workspace/chapter1 $
+~/workspace/chapter1/ $
 ----
 
 If it's not, navigate yourself there. (Remember how?) `hello.c` should exist in this folder, assuming everything's gone according to plan. Let's confirm that `hello.c` is there. Type
 
-[source,bash]
+[source]
 ----
 ls
 ----
@@ -263,28 +256,28 @@ at the prompt followed by Enter, and you should see both `hello.c` and `hello.tx
 
 Assuming you indeed see `hello.c`, let's try to compile! Cross your fingers and then type
 
-[source,bash]
+[source]
 ----
 make hello
 ----
 
 at the prompt, followed by Enter. (Well, maybe don't cross your fingers whilst typing.) To be clear, type only `hello` here, not `hello.c`. You'll likely see a line that looks like the followingfootnote:[Later in the course, we'll pick apart what all this stuff is, but for now try not to worry too much about it.] immediately after hitting Enter
 
-[source,bash]
+[source]
 ----
 clang -ggdb3 -O0 -std=c99 -Wall -Werror   hello.c  -lcs50 -lm -o hello
 ----
 
 If after that all that you see is another, identical prompt, that means it worked! Your source code has been translated to object code (0s and 1s) that you can now execute. Cool! Type
 
-[source,bash]
+[source]
 ----
 ./hello
 ----
 
 at your prompt, followed by Enter, and you should see whatever message you wrote between quotes in your code! Indeed, if you type
 
-[source,bash]
+[source]
 ----
 ls
 ----
@@ -293,21 +286,21 @@ followed by Enter, you should see a new file, `hello`, alongside `hello.c` and `
 
 If, though, upon running `make`, you instead see some error(s), it's time to debug! (If the terminal window's too small to see everything, click and drag its top border upward to increase its height.) If you see an error like expected declaration or something no less mysterious, odds are you made a syntax error (i.e., typo) by omitting some character or adding something in the wrong place. Scour your code for any differences vis-à-vis the template above. It's easy to miss the slightest of things when learning to program, so do compare your code against ours character by character; odds are the mistake(s) will jump out! Anytime you make changes to your own code, just remember to re-save via *File > Save* (or ctrl-s), then re-click inside of the terminal window, and then re-type
 
-[source,bash]
+[source]
 ----
 make hello
 ----
 
-at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/chapter1` within your terminal window, as your prompt will confirm or deny.) If you see no more errors, try running your program by typing
+at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/chapter1/` within your terminal window, as your prompt will confirm or deny.) If you see no more errors, try running your program by typing
 
-[source,bash]
+[source]
 ----
 ./hello
 ----
 
 at your prompt, followed by Enter! Hopefully you now see precisely the below?
 
-[source,bash]
+[source]
 ----
 hello, world
 ----
@@ -320,32 +313,32 @@ Woo hoo! You've begun to program!
 
 Now let's see if the program you just wrote is correct! Included in the CS50 IDE is `check50`, a command-line program with which you can check the correctness of (some of) your programs.
 
-If not already there, navigate your way to `~/workspace/chapter1` (Remember how?)
+If not already there, navigate your way to `~/workspace/chapter1/` (Remember how?)
 
 If you then execute
 
-[source,bash]
+[source]
 ----
 ls
 ----
 
 you should see, at least, `hello.c`. Be sure it's indeed spelled `hello.c` and not `Hello.c`, `hello.C`, or the like, as filenames on CS50 IDE and indeed most Linux operating systems are case-sensitive. If it's not, know that you can rename a file in the terminal (as opposed to right-clicking in the file tree) by executing
 
-[source,bash]
+[source]
 ----
 mv source destination
 ----
 
 where `source` is the file's current name, and `destination` is the file's new name. For instance, if you accidentally named your program `Hello.c`, you could fix it as follows.
 
-[source,bash]
+[source]
 ----
 mv Hello.c hello.c
 ----
 
 Okay, assuming your file's name is definitely spelled `hello.c` now, go ahead and execute the below. Note that `1516.unit1.hello` is just a unique identifier for this problem's checks. We'll always specify exactly the unique identifier you should use to check your programs' correctness.
 
-[source,bash]
+[source]
 ----
 check50 1617.chapter1.hello hello.c
 ----
@@ -393,7 +386,7 @@ Odds are, in this case, you printed something other than `hello, world\n` verbat
 
 In addition to `check50`, the CS50 IDE comes with `style50`, a tool with which you can evaluate your code's style vis-à-vis link:https://manual.cs50.net/style/[CS50's style guide]. To run it on, say, `hello.c`, execute the below:
 
-[source,bash]
+[source]
 ----
 style50 hello.c
 ----
