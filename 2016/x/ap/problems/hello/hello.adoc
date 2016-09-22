@@ -397,4 +397,8 @@ Note that `style50` is still a work in progress (a "beta" version, so to speak),
 
 And how about that? You've written your first C program and configured your CS50 environment! Not too shabby.
 
+== How to Submit
+
+<blurb about a new submission system forthcoming, use check50, blah blah>
+
 This was Hello.
