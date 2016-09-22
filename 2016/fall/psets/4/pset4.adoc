@@ -1,0 +1,103 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= Problem Set 4: Forensics
+
+== tl;dr
+ 
+. Watch https://video.cs50.net/2016/fall/lectures/4[Week 4's lecture].
+. Figure out whodunit.
+. Resize some images.
+. Recover some photos.
+. Submit your code.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+Alright, here we go again!
+
+Log into https://cs50.io/[cs50.io] and execute
+
+[source]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date. 
+
+Next, execute
+
+[source]
+----
+mkdir ~/workspace/pset4/
+----
+
+at your prompt in order to make a directory called `pset4` in your `workspace` directory.
+
+Now execute
+
+[source]
+----
+cd ~/workspace/pset4/
+----
+
+and your prompt should resemble the below.
+
+[source]
+----
+~/workspace/pset4/ $
+----
+
+== What to Do
+
+. Implement link:../../../../problems/whodunit/whodunit.html[Whodunit]
+. Implement either of:
++
+--
+* link:../../../../problems/resize/less/resize.html[Resize], less comfortable
+* link:../../../../problems/resize/more/resize.html[Resize], more comfortable
+--
++
+. Implement link:../../../../problems/recover/recover.html[Recover]
+
+== How to Submit
+
+=== Step 1 of 2
+
+* Update your IDE:
++
+[source]
+----
+update50
+----
+* Submit `find`:
++
+[source]
+----
+cd ~/workspace/pset4/whodunit/
+submit50 whodunit
+----
+* Submit `resize`:
++
+[source]
+----
+cd ~/workspace/pset4/resize/
+submit50 resize
+----
+* Submit `recover`:
++
+[source]
+----
+cd ~/workspace/pset4/recover/
+submit50 recover
+----
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.net/2016/fall/psets/4[]!
+ 
+This was Problem Set 4.
