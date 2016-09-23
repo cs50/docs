@@ -94,7 +94,7 @@ cd ~/workspace/pset3/fifteen/
 submit50 fifteen
 ----
 
-To confirm that your code was submitted properly, visit `https://github.com/submit50/<username>`, replacing `<username>` with your own GitHub username. If you do, and you click on **Branches** you should see a branch for `find` and a branch for `fifteen`, and if you click on those branches to reveal the files within you should see your uploaded code.
+To confirm that your code was submitted properly, visit `https://github.com/submit50`. If you do, you should be able to click on your GitHub repository and then if you click on **Branches** you should see a branch for `find` and a branch for `fifteen`. If you click on those branches to reveal the files within, you should see your uploaded code.
 
 === Step 2 of 2
 
