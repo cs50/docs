@@ -64,6 +64,12 @@ and your prompt should resemble the below.
 +
 . Implement link:../../../../problems/recover/recover.html[Recover]
 
+== Fabulous Prize
+
+And now the real fun begins. You are hereby challenged to find as many of the computer scientists featured in the photos that you recovered for link:../../../../problems/recover/recover.html[Recover] as possible. To prove that you found someone, take a photo of yourself posing (anywhere) with the computer scientist (in such a way that he or she is aware of the photo and not just in the background). If a photo contains multiple computer scientists, you're welcome to pose with each of them separately. Upload your photos (i.e., the photos you took, not the ones that you recovered) to a non-private album somewhere that supports bulk downloads (e.g., Dropbox, Imgur, etc.), then email your album's URL to selfies@cs50.net by *noon on Mon 10/3*! We'll add your photos to a public gallery (unless you request otherwise).
+
+Whoever finds and photographs the most computer scientists (and, in the event of a tie, submits first) shall be rewarded with a fabulous prize.
+
 == How to Submit
 
 === Step 1 of 2
