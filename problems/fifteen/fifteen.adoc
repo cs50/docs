@@ -78,6 +78,10 @@ Implement the Game of Fifteen, per the comments in `fifteen.c`.
 . Implement `move`.
 . Implement `won`.
 
+== Walkthrough
+
+video::Rx_FJb3vr9U[youtube]
+
 == Hints
 
 Remember to take "baby steps." Don't try to bite off the entire game at once. Instead, implement one function at a time and be sure that it works before forging ahead. Any design decisions not explicitly prescribed herein (e.g., how much space you should leave between numbers when printing the board) are intentionally left to you. Presumably the board, when printed, should look something like the below, but we leave it to you to implement your own vision.
@@ -107,10 +111,6 @@ Incidentally, recall that the positions of tiles numbered 1 and 2 should only st
 Feel free to tweak the appropriate argument to `usleep` to speed up animation. In fact, you're welcome to alter the aesthetics of the game. For (optional) fun with "ANSI escape sequences," including color, take a look at our implementation of `clear` and check out http://isthe.com/chongo/tech/comp/ansi_escapes.html for more tricks.
     
 You're welcome to write your own functions and even change the prototypes of functions we wrote. But you may not alter the flow of logic in `main` itself so that we can automate some tests of your program once submitted. In particular, `main` must only return `0` if and when the user has actually won the game; non-zero values should be returned in any cases of error, as implied by our distribution code. 
-
-== Walkthrough
-
-video::Rx_FJb3vr9U[youtube]
 
 == Testing
 

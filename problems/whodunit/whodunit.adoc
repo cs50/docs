@@ -220,6 +220,10 @@ Implement a program called `whodunit` that reveals Mr. Boddy's drawing in such a
 * If the input file is not a 24-bit uncompressed BMP 4.0, your program should inform the user as much, as with `fprintf`, and `main` should return `4`.
 * Upon success, `main` should `0`.
 
+== Walkthrough
+
+video::Qil7Y5-kTwE[youtube]
+
 == Usage
 
 Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
@@ -270,10 +274,6 @@ Because `whodunit` can be implemented in several ways, afraid you can't check yo
 == Staff's Solution
 
 No solution from the staff, lest it spoil your fun!
-
-== Walkthrough
-
-video::Qil7Y5-kTwE[youtube]
 
 == FAQs
 
