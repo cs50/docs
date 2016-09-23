@@ -66,7 +66,7 @@ check50 2016.initials.less initials.c
 Might the user's input start or end with spaces?::
 No, you may assume that the only spaces in the user's input will be single spaces between words. A previous version of this problem's walkthrough incorrectly stated that there might be spaces at the start or end of the user's input, but the video has since been fixed! Apologies for any confusion!
 
-== CHANGELOG
+== Changelog
 
 * 2016-09-14
 ** Corrected walkthrough, added FAQ about spaces at input's start and end.

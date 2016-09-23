@@ -5,7 +5,7 @@
 
 == tl;dr
 
-Implement a program that... TODO
+Implement a program that reveals a reveals a hidden message in a BMP, per the below.
 
 [source,subs=quotes]
 ----
@@ -29,27 +29,9 @@ bmp.h       clue.bmp    copy.c      large.bmp   small.bmp   smiley.bmp
 
 == Background
 
-////
-If you ever saw https://en.wikipedia.org/wiki/Bliss_(image)[Windows XP's default wallpaper], then you've seen a BMP. If you've ever looked at a webpage, you've probably seen a GIF. If you've ever looked at a digital photo, you've probably seen a JPEG. If you've ever taken a screenshot on a Mac, you've probably seen a PNG. Read up online on the BMP, GIF, JPEG, and PNG file formats. Then, open up `questions.txt` in `~/workspace/pset4` and tell us the below.
+Welcome to Tudor Mansion. Your host, Mr. John Boddy, has met an untimely end—he's the victim of foul play. To win this game, you must determine whodunit.
 
-[start=0]
-. How many different colors does each format support?
-. Which of the formats supports animation?
-. What's the difference between lossy and lossless compression?
-. Which of these formats is lossy-compressed?
-
-Next, curl up with the article from MIT at http://cdn.cs50.net/2015/fall/psets/4/garfinkel.pdf.
-
-Though somewhat technical, you should find the article's language quite accessible. Once you've read the article, answer each of the following questions in a sentence or more in `~/workspace/pset4/questions.txt`.
-
-[start=4]
-. What happens, technically speaking, when a file is deleted on a FAT file system?
-. What can someone like you do to ensure (with high probability) that files you delete cannot be recovered?
-////
-
-Welcome to Tudor Mansion. Your host, Mr. John Boddy, has met an untimely end—he's the victim of foul play. To win this game, you must determine `whodunit`.
-
-Unfortunately for you (though even more unfortunately for Mr. Boddy), the only evidence you have is a 24-bit BMP file called `clue.bmp`, pictured below, that Mr. Boddy whipped up on his computer in his final moments. Hidden among this file's red "noise" is a drawing of `whodunit`.
+Unfortunately for you (though even more unfortunately for Mr. Boddy), the only evidence you have is a 24-bit BMP file called `clue.bmp`, pictured below, that Mr. Boddy whipped up on his computer in his final moments. Hidden among this file's red "noise" is a drawing of whodunit.
 
 //// 
 TODO: new BMP
@@ -72,7 +54,7 @@ If the R, G, and B values of some pixel in a BMP are, say, 0xff, 0x00, and 0x00 
 
 Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 
-Now let's get more technical. Recall that a file is just a sequence of bits, arranged in some fashion. A 24-bit BMP file, then, is essentially just a sequence of bits, (almost) every 24 of which happen to represent some pixel's color. But a BMP file also contains some "metadata," information like an image's height and width. That metadata is stored at the beginning of the file in the form of two data structures generally referred to as "headers" (not to be confused with C's header files). (Incidentally, these headers have evolved over time. This problem only expects that you support the latest version of Microsoft's BMP format, 4.0, which debuted with Windows 95.) The first of these headers, called `BITMAPFILEHEADER`, is 14 bytes long. (Recall that 1 byte equals 8 bits.) The second of these headers, called `BITMAPINFOHEADER`, is 40 bytes long. Immediately following these headers is the actual bitmap: an array of bytes, triples of which represent a pixel's color. (In 1-, 4-, and 16-bit BMPs, but not 24- or 32-, there's an additional header right after `BITMAPINFOHEADER` called `RGBQUAD`, an array that defines "intensity values" for each of the colors in a device's palette.) However, BMP stores these triples backwards (i.e., as BGR), with 8 bits for blue, followed by 8 bits for green, followed by 8 bits for red. (Some BMPs also store the entire bitmap backwards, with an image's top row at the end of the BMP file. But we've stored this problem set's BMPs as described herein, with each bitmap's top row first and bottom row last.) In other words, were we to convert the 1-bit smiley above to a 24-bit smiley, substituting red for black, a 24-bit BMP would store this bitmap as follows, where `0000ff` signifies red and `ffffff` signifies white; we've highlighted in red all instances of `0000ff`.
+Now let's get more technical. Recall that a file is just a sequence of bits, arranged in some fashion. A 24-bit BMP file, then, is essentially just a sequence of bits, (almost) every 24 of which happen to represent some pixel's color. But a BMP file also contains some "metadata," information like an image's height and width. That metadata is stored at the beginning of the file in the form of two data structures generally referred to as "headers," not to be confused with C's header files. (Incidentally, these headers have evolved over time. This problem only expects that you support the latest version of Microsoft's BMP format, 4.0, which debuted with Windows 95.) The first of these headers, called `BITMAPFILEHEADER`, is 14 bytes long. (Recall that 1 byte equals 8 bits.) The second of these headers, called `BITMAPINFOHEADER`, is 40 bytes long. Immediately following these headers is the actual bitmap: an array of bytes, triples of which represent a pixel's color. (In 1-, 4-, and 16-bit BMPs, but not 24- or 32-, there's an additional header right after `BITMAPINFOHEADER` called `RGBQUAD`, an array that defines "intensity values" for each of the colors in a device's palette.) However, BMP stores these triples backwards (i.e., as BGR), with 8 bits for blue, followed by 8 bits for green, followed by 8 bits for red. (Some BMPs also store the entire bitmap backwards, with an image's top row at the end of the BMP file. But we've stored this problem set's BMPs as described herein, with each bitmap's top row first and bottom row last.) In other words, were we to convert the 1-bit smiley above to a 24-bit smiley, substituting red for black, a 24-bit BMP would store this bitmap as follows, where `0000ff` signifies red and `ffffff` signifies white; we've highlighted in red all instances of `0000ff`.
 
 [source,subs=quotes]
 ----
@@ -90,7 +72,7 @@ Because we've presented these bits from left to right, top to bottom, in 8 colum
 
 To be clear, recall that a hexadecimal digit represents 4 bits. Accordingly, `ffffff` in hexadecimal actually signifies `111111111111111111111111` in binary.
 
-Okay, stop! Don't proceed further until you're sure you understand why `0000ff` represents a red pixel in a 24-bit BMP file.
+CAUTION: Okay, stop! Don't proceed further until you're sure you understand why `0000ff` represents a red pixel in a 24-bit BMP file.
 
 Okay, let's transition from theory to practice. Within CS50 IDE's file browser, double-click *smiley.bmp*, and you should see a tiny smiley face that's only 8 pixels by 8 pixels. Via the drop-down menu in that file's newly opened tab, change *100%* to *800%* to zoom in a bit, and you should see a larger version, a la the below. (If it seems blurry, be sure that **Smooth** atop the window isn't checked.) At this zoom level, you can really see the image's pixels (as big squares).
 
@@ -126,7 +108,7 @@ xxd -c 24 -g 3 smiley.bmp
 
 If `smiley.bmp` actually contained ASCII characters, you'd see them in ``xxd``'s rightmost column instead of all of those dots.
 
-So, `smiley.bmp` is 8 pixels wide by 8 pixels tall, and it's a 24-bit BMP (each of whose pixels is represented with 24 ÷ 8 = 3 bytes). Each row (aka "scanline") thus takes up (8 pixels) × (3 bytes per pixel) = 24 bytes, which happens to be a multiple of 4. It turns out that BMPs are stored a bit differently if the number of bytes in a scanline is not, in fact, a multiple of 4. In `small.bmp`, for instance, is another 24-bit BMP, a green box that's 3 pixels wide by 3 pixels wide. If you view it with Image Viewer (as by double-clicking it), you'll see that it resembles the below, albeit much smaller. (Indeed, you might need to zoom in again to see it.)
+So, `smiley.bmp` is 8 pixels wide by 8 pixels tall, and it's a 24-bit BMP (each of whose pixels is represented with 24 ÷ 8 = 3 bytes). Each row (aka "scanline") thus takes up (8 pixels) × (3 bytes per pixel) = 24 bytes, which happens to be a multiple of 4. It turns out that BMPs are stored a bit differently if the number of bytes in a scanline is not, in fact, a multiple of 4. In `small.bmp`, for instance, is another 24-bit BMP, a green box that's 3 pixels wide by 3 pixels wide. If you view it (as by double-clicking it), you'll see that it resembles the below, albeit much smaller. (Indeed, you might need to zoom in again to see it.)
 
 image:small.png[small.png]
 
@@ -193,56 +175,48 @@ If you then execute ls (with the appropriate switch), you should see that `smile
 diff smiley.bmp copy.bmp
 ----
 
-If that command tells you nothing, the files are indeed identical. (Note that some programs, like Photoshop, include trailing zeroes at the ends of some BMPs. Our version of `copy` throws those away, so don't be too worried if you try to copy a BMP that you've downloaded or made only to find that the copy is actually a few bytes smaller than the original.) Feel free to open both files in Ristretto Image Viewer (as by double-clicking each) to confirm as much visually. But diff does a byte-by-byte comparison, so its eye is probably sharper than yours!
+If that command tells you nothing, the files are indeed identical. (Note that some programs, like Photoshop, include trailing zeroes at the ends of some BMPs. Our version of `copy` throws those away, so don't be too worried if you try to copy a BMP that you've downloaded or made only to find that the copy is actually a few bytes smaller than the original.) Feel free to open both files (as by double-clicking each) to confirm as much visually. But diff does a byte-by-byte comparison, so its eye is probably sharper than yours!
 
-So how now did that copy get made? It turns out that `copy.c` relies on `bmp.h`. Let's take a look. Open up `bmp.h`, and you'll see actual definitions of those headers we've mentioned, adapted from Microsoft's own implementations thereof. In addition, that file defines `BYTE`, `DWORD`, `LONG`, and `WORD`, data types normally found in the world of Win32 (i.e., Windows) programming. Notice how they're just aliases for primitives with which you are (hopefully) already familiar. It appears that `BITMAPFILEHEADER` and `BITMAPINFOHEADER` make use of these types. This file also defines a `struct` called `RGBTRIPLE` that, quite simply, "encapsulates" three bytes: one blue, one green, and one red (the order, recall, in which we expect to find RGB triples actually on disk).
+So how now did that copy get made? It turns out that `copy.c` relies on `bmp.h`. Let's take a look. Open up `bmp.h`, and you'll see actual definitions of those headers we've mentioned, adapted from Microsoft's own implementations thereof. In addition, that file defines `BYTE`, `DWORD`, `LONG`, and `WORD`, data types normally found in the world of Windows programming. Notice how they're just aliases for primitives with which you are (hopefully) already familiar. It appears that `BITMAPFILEHEADER` and `BITMAPINFOHEADER` make use of these types. This file also defines a `struct` called `RGBTRIPLE` that, quite simply, "encapsulates" three bytes: one blue, one green, and one red (the order, recall, in which we expect to find RGB triples actually on disk).
 
-Why are these `struct`pass:[s] useful? Well, recall that a file is just a sequence of bytes (or, ultimately, bits) on disk. But those bytes are generally ordered in such a way that the first few represent something, the next few represent something else, and so on. "File formats" exist because the world has standardized what bytes mean what. Now, we could just read a file from disk into RAM as one big array of bytes. And we could just remember that the byte at location `[i]` represents one thing, while the byte at location `[j]` represents another. But why not give some of those bytes names so that we can retrieve them from memory more easily? That's precisely what the ``struct``s in `bmp.h` allow us to do. Rather than think of some file as one long sequence of bytes, we can instead think of it as a sequence of `struct`s.
+Why are these ``struct``s useful? Well, recall that a file is just a sequence of bytes (or, ultimately, bits) on disk. But those bytes are generally ordered in such a way that the first few represent something, the next few represent something else, and so on. "File formats" exist because the world has standardized what bytes mean what. Now, we could just read a file from disk into RAM as one big array of bytes. And we could just remember that the byte at location `[i]` represents one thing, while the byte at location `[j]` represents another. But why not give some of those bytes names so that we can retrieve them from memory more easily? That's precisely what the ``struct``s in `bmp.h` allow us to do. Rather than think of some file as one long sequence of bytes, we can instead think of it as a sequence of `struct`s.
 
 Recall that `smiley.bmp` is 8 by 8 pixels, and so it should take up 14 + 40 + (8 × 8) × 3 = 246 bytes on disk. (Confirm as much if you'd like using `ls`.) Here's what it thus looks like on disk according to Microsoft:
 
 image:disk.png[smiley.bmp on disk]
 
-As this figure suggests, order does matter when it comes to ``struct``s' members. Byte 57 is `rgbtBlue` (and not, say, `rgbtRed`), because `rgbtBlue` is defined first in `RGBTRIPLE`. Our use, incidentally, of the `__attribute__` called `__packed__` ensures that `clang` does not try to "word-align" members (whereby the address of each member's first byte is a multiple of 4), lest we end up with "gaps" in our `struct`s that don't actually exist on disk. 
+As this figure suggests, order does matter when it comes to ``struct``s' members. Byte 57 is `rgbtBlue` (and not, say, `rgbtRed`), because `rgbtBlue` is defined first in `RGBTRIPLE`. Our use, incidentally, of the `__attribute__` called `__packed__` ensures that `clang` does not try to "word-align" members (whereby the address of each member's first byte is a multiple of 4), lest we end up with "gaps" in our ``struct``s that don't actually exist on disk. No need to worry about that particular implementation detail, though.
 
-Now go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`. You're about to start using MSDN (Microsoft Developer Network)!
+== Questions
 
-////
-TODO: CONTINUE HERE
-////
+Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.
 
-Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works. As always, `man` is your friend, and so, now, is MSDN. If not sure on first glance how to answer some question, do some quick research and figure it out! You might want to turn to *stdio.h* at https://reference.cs50.net/ as well.
+Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works. As always, `man` is your friend, and so, now, is Microsoft Developer Network (aka MSDN). If not sure on first glance how to answer some question, do some quick research and figure it out! You might want to turn to https://reference.cs50.net/stdio as well.
 
-Allow us to suggest that you also run `copy` within GDB while answering these questions as follows:
+In `questions.txt`, answer each of the following questions in a sentence or more.
 
-. Click *Debug* atop CS50 IDE, which should open a new terminal window (toward the bottom of CS50 IDE) for GDB.
-. To the right of *Command:* within that terminal, you should see `pset4/bmp/copy.c` in a text box. To run `copy` within GDB with command-line arguments, change the contents of that text box to be, e.g., `copy.c smiley.bmp copy.bmp`.
-. Set a breakpoint within `main` (as by clicking to the left of the line number for `main`).
-. Then click *Run* (or *Stop* and then *Run*) within GDB's terminal window and step through the program via GDB's righthand panel, keeping an eye on `bf` and `bi` in particular.
-
-In `~/workspace/pset4/questions.txt`, answer each of the following questions in a sentence or more.
-
-[start=6]
 . What's `stdint.h`?
 . What's the point of using `uint8_t`, `uint32_t`, `int32_t`, and `uint16_t` in a program?
 . How many bytes is a `BYTE`, a `DWORD`, a `LONG`, and a `WORD`, respectively?
-. What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? (Leading bytes used to identify file formats (with high probability) are generally called "magic numbers.)"
+. What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? Leading bytes used to identify file formats (with high probability) are generally called "magic numbers."
 . What's the difference between `bfSize` and `biSize`?
 . What does it mean if `biHeight` is negative?
 . What field in `BITMAPINFOHEADER` specifies the BMP's color depth (i.e., bits per pixel)?
-. Why might `fopen` return `NULL` in `copy.c:37`?
+. Why might `fopen` return `NULL` in lines 24 and 32 of `copy.c`?
 . Why is the third argument to `fread` always `1` in our code?
-. What value does `copy.c:70` assign `padding` if `bi.biWidth` is `3`?
+. What value does line 65 of `copy.c` assign to `padding` if `bi.biWidth` is `3`?
 . What does `fseek` do?
 . What is `SEEK_CUR`?
 
-Okay, back to Mr. Boddy.
+== Specification
 
-Write a program called `whodunit` in a file called `whodunit.c` that reveals Mr. Boddy's drawing.
+Implement a program called `whodunit` that reveals Mr. Boddy's drawing in such a way that you can recognize whodunit.
 
-Ummm, what?
+* Implement your program in a file called `whodunit.c` in a directory called `whodunit`.
 
-Well, think back to childhood when you held that piece of red plastic over similarly hidden messages. (If you remember no such piece of plastic, best to ask a classmate about his or her childhood.) Essentially, the plastic turned everything red but somehow revealed those messages. Implement that same idea in `whodunit`. Like `copy`, your program should accept exactly two command-line arguments. And if you execute a command like the below, stored in `verdict.bmp` should be a BMP in which Mr. Boddy's drawing is no longer covered with noise.
+== Hints
+
+Think back to childhood when you held that piece of red plastic over similarly hidden messages. (If you remember no such piece of plastic, best to ask a classmate about his or her childhood.) Essentially, the plastic turned everything red but somehow revealed those messages. Implement that same idea in `whodunit`. Like `copy`, your program should accept exactly two command-line arguments. And if you execute a command like the below, stored in `verdict.bmp` should be a BMP in which Mr. Boddy's drawing is no longer covered with noise.
 
 [source]
 ----
@@ -258,17 +232,29 @@ cp copy.c whodunit.c
 
 Wink wink. You may be amazed by how few lines of code you actually need to write in order to help Mr. Boddy.
 
-There's nothing hidden in `smiley.bmp`, but feel free to test your program out on its pixels nonetheless, if only because that BMP is small and you can thus compare it and your own program's output with `xxd` during development. (Or maybe there is a message hidden in `smiley.bmp` too. No, there's not.)
+There's nothing hidden in `smiley.bmp`, but feel free to test your program out on its pixels nonetheless, if only because that BMP is small and you can thus compare it and your own program's output with `xxd` during development.
 
 Rest assured that more than one solution is possible. So long as Mr. Boddy's drawing is identifiable (by you), no matter its legibility, Mr. Boddy will rest in peace.
 
-Because `whodunit` can be implemented in several ways, you won't be able to check your implementation's correctness with `check50`. And, lest it spoil your fun, the staff's solution to `whodunit` is not available.
+When submitting this problem, you'll be asked whodunit!
 
-But here is Zamyla!
+== Testing
 
-video::AkEpi5tQ9Qc[youtube,height=540,width=960]
+Because `whodunit` can be implemented in several ways, afraid you can't check your implementation's correctness with `check50`!
 
-In `~/workspace/pset4/questions.txt`, answer the question below.
+== Staff's Solution
 
-[start=18]
-. Whodunit?
+No solution from the staff, lest it spoil your fun!
+
+== Walkthrough
+
+video::Qil7Y5-kTwE[youtube]
+
+== FAQs
+
+_None so far! Reload this page periodically to check if any arise!_
+
+== Changelog
+
+* 2016-09-23
+** Initial release.

@@ -66,7 +66,7 @@ check50 2016.initials.more initials.c
 
 _None so far! Reload this page periodically to check if any arise!_
 
-== CHANGELOG
+== Changelog
 
 * 2016-09-09
 ** Initial release.

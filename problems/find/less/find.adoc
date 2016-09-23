@@ -349,7 +349,7 @@ We leave it to you to determine how best to test your implementation of `search`
 
 _None so far! Reload this page periodically to check if any arise!_
 
-== CHANGELOG
+== Changelog
 
 * 2016-09-21
 ** Update to `search` walkthrough

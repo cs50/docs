@@ -114,11 +114,11 @@ Not sure where to begin? As luck would have it, this program's pretty similar to
 
 _None so far! Reload this page periodically to check if any arise!_
 
-== CHANGELOG
+== Changelog
 
 * 2016-09-15
 ** Clarified usage of user prompts.
 * 2016-09-14
-** Added tl;dr, FAQs, CHANGELOG.
+** Added tl;dr, FAQs, Changelog.
 * 2016-09-09
 ** Initial release.
