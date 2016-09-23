@@ -3,24 +3,18 @@ layout: 2016/fall
 ---
 :skip-front-matter:
 
-= Problem Set 3: Game of Fifteen
+= Problem Set 4: Forensics
 
 == tl;dr
  
-[start=0]
-. Watch https://video.cs50.net/2016/fall/lectures/3[Week 3's lecture].
-. Search and sort some numbers.
-. Implement the Game of Fifteen.
+. Watch https://video.cs50.net/2016/fall/lectures/4[Week 4's lecture].
+. Figure out whodunit.
+. Resize some images.
+. Recover some photos.
 . Submit your code.
 . Submit a form.
 
 include::help-yale.adoc[]
-
-== Reminders
-
-* Use `help50` as needed.
-* Use `eprintf` as needed.
-* Use `debug50` as needed.
 
 == Getting Started
 
@@ -39,35 +33,36 @@ Next, execute
 
 [source]
 ----
-mkdir ~/workspace/pset3/
+mkdir ~/workspace/pset4/
 ----
 
-at your prompt in order to make a directory called `pset3` in your `workspace` directory.
+at your prompt in order to make a directory called `pset4` in your `workspace` directory.
 
 Now execute
 
 [source]
 ----
-cd ~/workspace/pset3/
+cd ~/workspace/pset4/
 ----
 
 and your prompt should resemble the below.
 
 [source]
 ----
-~/workspace/pset3/ $
+~/workspace/pset4/ $
 ----
 
 == What to Do
 
+. Implement link:../../../../problems/whodunit/whodunit.html[Whodunit]
 . Implement either of:
 +
 --
-* link:../../../../problems/find/less/find.html[Find], less comfortable
-* link:../../../../problems/find/more/find.html[Find], more comfortable
+* link:../../../../problems/resize/less/resize.html[Resize], less comfortable
+* link:../../../../problems/resize/more/resize.html[Resize], more comfortable
 --
 +
-. Implement link:../../../../problems/fifteen/fifteen.html[Game of Fifteen]
+. Implement Recover (coming Fri 9/24 eve).
 
 == How to Submit
 
@@ -83,19 +78,26 @@ update50
 +
 [source]
 ----
-cd ~/workspace/pset3/find/
-submit50 find
+cd ~/workspace/pset4/whodunit/
+submit50 whodunit
 ----
-* Submit `fifteen`:
+* Submit `resize`:
 +
 [source]
 ----
-cd ~/workspace/pset3/fifteen/
-submit50 fifteen
+cd ~/workspace/pset4/resize/
+submit50 resize
+----
+* Submit `recover`:
++
+[source]
+----
+cd ~/workspace/pset4/recover/
+submit50 recover
 ----
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2016/fall/psets/3[]!
+Submit https://forms.cs50.net/2016/fall/psets/4[]!
  
-This was Problem Set 3.
+This was Problem Set 4.
