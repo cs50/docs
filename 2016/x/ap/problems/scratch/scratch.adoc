@@ -131,4 +131,8 @@ Incidentally, if curious to learn more about the design of Scratch itself, you m
 
 video::iLSBUKs4AYU[youtube,height=540,width=960]
 
+== How to Submit
+
+To submit this assignment, please fill out this form(TODO), where you’ll answer a few questions and provide a link to your Scratch project on the MIT website!
+
 This was Scratch, your first programming problem in CS50 AP!

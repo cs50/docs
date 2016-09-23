@@ -196,4 +196,8 @@ If you'd like to play with our own implementation of `fahrenheit` in the IDE, yo
 ~cs50/chapter1/fahrenheit
 ----
 
+== How to Submit
+
+We are still in the process of building the submission platform for coding problems. In the meantime, use check50 to review your code and refresh this page on October 14, 2016 to submit your problem for a grade.
+
 This was Fahrenheit.

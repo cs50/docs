@@ -223,4 +223,9 @@ If you'd like to play with the our own implementation of `skittles` you may exec
 
 Unfortunately, testing this program falls to you, without the use of `check50`. Because your program should be generating pseudorandom numbers it is what computer scientists call **non-deterministic**, the behavior is not predictable from run-to-run. Be sure to play your game extensively to make sure all the corner cases are ironed out!
 
+== How to Submit
+
+We are still in the process of building the submission platform for coding problems. You can refresh this page on October 14, 2016 to submit your problem for a grade.
+
+
 This was Skittles.
