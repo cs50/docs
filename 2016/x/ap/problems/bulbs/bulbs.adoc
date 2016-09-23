@@ -134,4 +134,8 @@ Incidentally, once finished with your project you should *not* share it publicly
 
 Instead, what you should do once you've finished is download your completed project to your computer (as via *File... Download to your computer*), which should save your project as a `.sb2` file in your *Downloads* folder; rename the file to something identifying the project as your own; and then follow your teacher's instructions for collecting your downloaded Scratch projects.
 
+== How to Submit
+
+We are still working on the submission form for this problem, please refresh on September 26, 2016 for the submission instructions to turn in your assignment for a grade.
+
 This was Binary Bulbs.
