@@ -399,7 +399,7 @@ And how about that? You've written your first C program and configured your CS50
 
 == How to Submit
 
-We are still in the process of building the submission platform for coding problems. In the meantime, use check50 to review your code and refresh this page on October 14, 2016 to submit your problem for a grade.
+We are still in the process of building the submission platform for coding problems. In the meantime, use `check50` to review your code and refresh this page on October 14, 2016 to submit your problem for a grade.
 
 
 This was Hello.

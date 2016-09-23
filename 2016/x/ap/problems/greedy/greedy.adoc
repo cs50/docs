@@ -156,6 +156,6 @@ Incidentally, you should be aware that there are __many__ ways to solve this par
 
 == How to Submit
 
-We are still in the process of building the submission platform for coding problems. In the meantime, use check50 to review your code and refresh this page on October 14, 2016 to submit your problem for a grade.
+We are still in the process of building the submission platform for coding problems. In the meantime, use `check50` to review your code and refresh this page on October 14, 2016 to submit your problem for a grade.
 
 This was Greedy.
