@@ -72,7 +72,7 @@ Because we've presented these bits from left to right, top to bottom, in 8 colum
 
 To be clear, recall that a hexadecimal digit represents 4 bits. Accordingly, `ffffff` in hexadecimal actually signifies `111111111111111111111111` in binary.
 
-CAUTION: Okay, stop! Don't proceed further until you're sure you understand why `0000ff` represents a red pixel in a 24-bit BMP file.
+WARNING: Okay, stop! Don't proceed further until you're sure you understand why `0000ff` represents a red pixel in a 24-bit BMP file.
 
 Okay, let's transition from theory to practice. Within CS50 IDE's file browser, double-click *smiley.bmp*, and you should see a tiny smiley face that's only 8 pixels by 8 pixels. Via the drop-down menu in that file's newly opened tab, change *100%* to *800%* to zoom in a bit, and you should see a larger version, a la the below. (If it seems blurry, be sure that **Smooth** atop the window isn't checked.) At this zoom level, you can really see the image's pixels (as big squares).
 
