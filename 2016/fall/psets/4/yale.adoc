@@ -62,7 +62,7 @@ and your prompt should resemble the below.
 * link:../../../../problems/resize/more/resize.html[Resize], more comfortable
 --
 +
-. Implement Recover (coming Fri 9/24 eve).
+. Implement link:../../../../problems/recover/recover.html[Recover]
 
 == How to Submit
 

@@ -43,7 +43,7 @@ Now, I only have one memory card, but there are a lot of you! And so I've gone a
 ----
 $ mkdir recover
 $ cd recover
-$ wget http://cdn.cs50.net/2016/fall/psets/4/card.raw
+$ wget http://cdn.cs50.net/2016/fall/psets/4/pset4/card.raw
 $ ls
 card.raw
 ----
