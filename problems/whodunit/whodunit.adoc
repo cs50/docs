@@ -24,7 +24,7 @@ $ rm whodunit.zip
 $ mv problems-whodunit whodunit
 $ cd whodunit
 $ ls
-bmp.h       clue.bmp    copy.c      large.bmp   small.bmp   smiley.bmp
+bmp.h  clue.bmp  copy.c  large.bmp  small.bmp  smiley.bmp
 ----
 
 == Background
@@ -230,7 +230,7 @@ Allow us to suggest that you begin tackling this mystery by executing the comman
 cp copy.c whodunit.c
 ----
 
-Wink wink. You may be amazed by how few lines of code you actually need to write in order to help Mr. Boddy.
+Then add and/or change just a few lines of code.
 
 There's nothing hidden in `smiley.bmp`, but feel free to test your program out on its pixels nonetheless, if only because that BMP is small and you can thus compare it and your own program's output with `xxd` during development.
 
