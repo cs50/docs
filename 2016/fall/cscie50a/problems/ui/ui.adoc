@@ -4,8 +4,6 @@ title: Me, Myself, and UI
 ---
 :skip-front-matter:
 
-= Problem: Mario
-
 = Writing Problem: Me, Myself, and UI
 
 == Objectives
