@@ -222,7 +222,7 @@ Implement a program called `whodunit` that reveals Mr. Boddy's drawing in such a
 
 == Walkthrough
 
-video::Qil7Y5-kTwE[youtube]
+video::Igsa7V5ouzg[youtube]
 
 == Usage
 

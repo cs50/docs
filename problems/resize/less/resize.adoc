@@ -48,7 +48,7 @@ Implement a program called `resize` that resizes (i.e., enlarges) 24-bit uncompr
 
 == Walkthrough
 
-video::e7WtAQDk904[youtube]
+video::zOylgRdzv_U[youtube]
 
 == Usage
 

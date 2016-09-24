@@ -60,7 +60,7 @@ Implement a program called `recover` that recovers JPEGs from a forensic image.
 
 == Walkthrough
 
-video::6yDyPrZMJBQ[youtube]
+video::v3tqY__klos[youtube]
 
 == Usage
 
