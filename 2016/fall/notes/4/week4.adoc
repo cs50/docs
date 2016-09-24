@@ -386,16 +386,120 @@ int main(int argc, char *argv[])
 ----
 ** We see buffer overflow in a program like this. `main` calls the function `foo` and passes in whatever the command-line argument to it is. `foo` then copies it to a `char` array `c`, but `c` can only hold 12 characters. (`memcpy` copies from `bar` into `c`, for as many bytes as `strlen(bar)`. And our friendly `man` pages tells us this and more.) So if the command-line argument is too long, then the rest it will "overflow" and be written to the chunk of memory right after what's allocated to `c`.
 * And since `c` is a static variable, it will be on the stack, which means that whatever the user passed in as a command-line argument will be written to the stack, and possibly executed as machine code!
+* Let's take a look at this diagram:
++
+image::stack1.png[alt="Stack overflow 1", width=400]
+** The bottom, "Parent Routine's Stack," is like the code for `main`. On top of that is the "Return Address," or the location of the code the function should return to, once it's done (since it could be called somewhere different in `main` each time).
+** Now let's look in the stack of our function. We see `char *bar`, the argument to `foo`, first, because the stack grows upwards. Then we have the array `char c[12]`, with a grid representing the first character `c[0]` and a grid for the last, `c[11]`, and the rest in between. And if we start writing to `c`, we might start overwriting other values.
+* For example, with a short string, we have memory that looks like this:
++
+image::stack2.png[alt="Stack overflow 2", width=400]
+* But with a longer string, we might copy over other values:
++
+image::stack3.png[alt="Stack overflow 3", width=400]
+** The return address is actually overwritten with the address of the beginning of the string, so our program will actually go back to that and execute the string there as machine code.
+* An application of using pointers is in manipulating images.
+* When we zoom in on an image, we see something like this:
++
+image::zamyla.png[alt="Zamyla", width=400]
+** Each grid is a pixel, since an image has a finite size and thus finite information in it.
+* A black and white smiley face might be represented in binary like this:
+image::smiley.png[alt="Smiley", width=400]
+** With the bit `1` to represent black and `0` for white, we can create a "bitmap" image.
+* The bitmap format is like the JPEG format for images, except that JPEGs use compression, which makes images smaller by using fewer bits, and throwing away some of the information. And JPEG files all start with the same three bytes, `255`, `216`, `255` as a standard, to indicate its filetype.
+* We've learned binary and decimal, and there is also hexadecimal, which uses 16 symbols instead of 10, with the symbols `0-9` and `a`, `b`, `c`, `d`, `e`, `f`.
+* `255` in decimal is `1111 1111`, and `216` is `1101 1000`. Each of those four bits, since they can hold 16 values, map perfectly to hexadecimal. `1111` is `f`, `1101` is `d`, and `1000` is `8`. So `255` is the same as `ff`, and `216` is the same as `d8`. And it's convention to write hexadecimal as `0xff` and `0xd8`.
+* Knowing this, we can recover JPEGs (if files were deleted but not overwritten) from raw binary data, in a similar way to detecting strings (with a starting value and an ending value).
+* Bitmap files, with the extension BMP, are older and less efficient since they don't have compression. But they are easier to work with since each pixel has some number of bytes.
+* The file header, or what should go at the beginning of the file, of BMPs look like this:
++
+image::header.png[alt="Header", width=400]
+** Files are just a sequence of bits, and if we think of each byte as having some offset from the beginning, we can specify exactly what should be in a file for it to be valid.
+** We see a few fields we might be able to guess the values for, like `biWidth` and `biHeight`.
+** But the most interesting part is the repeating sequence at the end, an `RGBTRIPLE` comprised of three bytes that each represent the colors blue, green, and red. With those three colors in various amounts, we can display millions of different colors.
+* And we'll learn one new keyword to easily represent this, a `struct`. We can create a more complicated data type and name it:
++
+[source, c]
+----
+typedef struct
+{
+    string name;
+    string dorm;
+}
+student;
+----
+** To represent a student, we can include two pieces of information, `string name` and `string dorm`.
+* And we can use this container like so:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
 
+#include "structs.h"
 
+#define STUDENTS 3
 
+int main(void)
+{
+    student students[STUDENTS];
 
+    for (int i = 0; i < STUDENTS; i++)
+    {
+        printf("name: ");
+        students[i].name = get_string();
 
+        printf("dorm: ");
+        students[i].dorm = get_string();
+    }
 
+    for (int i = 0; i < STUDENTS; i++)
+    {
+        printf("%s is in %s.\n", students[i].name, students[i].dorm);
+    }
+}
+----
+** We can create an array of `student` structs called `students`, with `STUDENTS` number of elements.
+** We used `#define STUDENTS 3` to set a constant, `STUDENTS`, to the value `3`. This prevents having to make a variable that might otherwise be changed.
+** Then we can access properties in the structs with syntax like `students[i].name`, since `students` is an array and `students[i]` gets an individual `student` struct for us to use.
+* We can even open a file in C and use it with our structs:
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+#include "structs.h"
 
+#define STUDENTS 3
 
+int main(void)
+{
+    student students[STUDENTS];
 
+    for (int i = 0; i < STUDENTS; i++)
+    {
+        printf("name: ");
+        students[i].name = get_string();
 
+        printf("dorm: ");
+        students[i].dorm = get_string();
+    }
 
-
+    FILE *file = fopen("students.csv", "w");
+    if (file != NULL)
+    {
+        for (int i = 0; i < STUDENTS; i++)
+        {
+            fprintf(file, "%s,%s\n", students[i].name, students[i].dorm);
+        }
+        fclose(file);
+    }
+}
+----
+** Here we are using the `FILE` type, part of C, and a library function `fopen`, that allows us to open files. `"w"` allows us to write to the file.
+** After we use `fprintf`, another library function to write to the `file`, we close the file.
+* With all these tools, we can now do more and more interesting things!
