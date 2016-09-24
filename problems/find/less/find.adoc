@@ -30,7 +30,7 @@ Makefile    find.c      generate.c  helpers.c   helpers.h
 
 === Understanding
 
-Implemented in `generate.c` is a program that uses a "pseudorandom-number generator" (via a function called `drand48`) to generate a whole bunch of random (well, pseudorandom, since computers can't actually generate truly random) numbers, one per line, each of which is in [0.0, 1.0), so to speak. That is, each is greater than or equal to 0 and less than 1.0.
+Implemented in `generate.c` is a program that uses a "pseudorandom-number generator" (via a function called `drand48`) to generate a whole bunch of random (well, pseudorandom, since computers can't actually generate truly random) numbers, one per line, each of which is in [0, `LIMIT`), where `LIMIT` is a constant defined within the file, so to speak. That is, each is greater than or equal to 0 and less than `LIMIT`.
 
 Go ahead and compile this program by executing the command below.
 
