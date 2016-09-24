@@ -112,7 +112,7 @@ A schedule of problem sets, subject to change, appears below.
 | Problem Set | Language | Released | Due
 
 | http://docs.cs50.net/2016/fall/cscie50b/psets/5/pset5.html[Problem Set 5: Mispellings] | C | Fri 9/2 | Fri 9/23, noon
-| Problem Set 6: Server | PHP | Fri 9/23 | Fri 10/7, noon
+| http://docs.cs50.net/2016/fall/cscie50b/psets/6/pset6.html[Problem Set 6: Web Server] | PHP | Fri 9/23 | Fri 10/7, noon
 | Problem Set 7: C$50 Finance | PHP, SQL | Fri 10/7 | Fri 10/21, noon
 | Problem Set 8: Mashup | JavaScript | Fri 10/21 | Fri 11/4, noon
 |===
