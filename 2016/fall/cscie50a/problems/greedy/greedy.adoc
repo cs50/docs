@@ -106,7 +106,7 @@ float f = 0.01;
 printf("%.50f\n", f);
 ----
 
-Before doing any math, then, you'll probably want to convert the user's input entirely to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up! Of course, don't just cast the user's input from a `float` to an `int`! After all, how many cents does one dollar equal? And be careful to https://cs50.harvard.edu/resources/cppreference.com/stdmath/round.html[round] and not truncate your pennies!
+Before doing any math, then, you'll probably want to convert the user's input entirely to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up! Of course, don't just cast the user's input from a `float` to an `int`! After all, how many cents does one dollar equal? And be careful to https://reference.cs50.net/math/round[round] and not truncate your pennies!
 
 Not sure where to begin? Not to worry, start with a walkthrough:
 
