@@ -28,7 +28,7 @@ title: Week 4
 ** Ω, best-case running time
 ** Θ, if both of those are the same
 
-[t=1m0s]
+[t=3m24s]
 == Strings
 
 * Now we'll take a closer look at strings and how they are actually stored by the computer.
@@ -127,6 +127,10 @@ void swap(int a, int b)
 +
 image::noswap.png[alt="Debugging noswap.c", width=800]
 * Stepping into the `swap` function, we see that `a` and `b` are indeed the right values. But when we get back to `main`, `x` and `y` are still the same.
+
+[t=15m13s]
+== Memory
+
 * It turns out that programs are given memory by the operating system, and areas of memory are set aside in a fairly standard way:
 +
 image::memory.png[alt="Memory", width=300]
@@ -228,6 +232,10 @@ int main(void)
 ** Finally, at the end of our program, we should make the habit of calling `free` on our manually allocated memory, which marks it as usable again.
 +
 image::capitalize.png[alt="capitalize", width=500]
+
+[t=45m11s]
+== Pointers
+
 * We can also fix our `swap`:
 +
 [source, c]
@@ -309,6 +317,10 @@ int main(void)
 ** We allocate memory that can hold an `int`, and point `x` to it. Then we set that to `42` with `*x = 42`, since we got a chunk of memory to use.
 ** But the next line will not work and even crash our program, because `y` is pointing to ... somewhere in memory, and we're just changing that random value to `13`. When we declare a variable, we have some area of memory allocated to it, but the value inside is some random garbage value.
 * We'll watch a https://www.youtube.com/watch?v=6pmWojisM_E[quick animation] about pointers.
+
+[t=59m55s]
+== More Memory
+
 * Another problem is memory leaks. If we allocate a lot of memory and not call `free`, or mark it as usable again, then our computer has less and less memory.
 * `valgrind` is another command-line tool that we can use to check for these memory leaks.
 * Let's run:
@@ -398,6 +410,10 @@ image::stack2.png[alt="Stack overflow 2", width=400]
 +
 image::stack3.png[alt="Stack overflow 3", width=400]
 ** The return address is actually overwritten with the address of the beginning of the string, so our program will actually go back to that and execute the string there as machine code.
+
+[t=1h26m53s]
+== Images
+
 * An application of using pointers is in manipulating images.
 * When we zoom in on an image, we see something like this:
 +
