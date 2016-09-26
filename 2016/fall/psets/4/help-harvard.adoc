@@ -15,4 +15,4 @@ For help with Week 4 and Problem Set 4:
 * Attend course-wide https://cs50.harvard.edu/hours[office hours]:
 ** Wed 9/28, 9pm – 11pm, Widener
 ** Thu 9/29, 9pm – 11pm, Widener
-** Sun 10/2, 3pm – 5pm, SOCH
+** Sun 10/2, 3pm – 5pm, atrium of Northwest Science
