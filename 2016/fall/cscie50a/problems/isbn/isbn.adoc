@@ -175,7 +175,7 @@ Consider the below representative of how your own program should behave when pas
 
 [source,subs=quotes]
 ----
-~/workspace/chapter1 $ [underline]#./isbn#
+~/workspace/week4 $ [underline]#./isbn#
 ISBN: [underline]#0789751984#
 YES
 ----
@@ -184,7 +184,7 @@ Of course, `get_long_long` itself will reject an ISBN-10's hyphens (and more) an
 
 [source,subs=quotes]
 ----
-~/workspace/chapter1 $ [underline]#./isbn#
+~/workspace/week4 $ [underline]#./isbn#
 ISBN: [underline]#0-789-75198-4#
 Retry: [underline]#foo#
 Retry: [underline]#0789751984#
@@ -195,7 +195,7 @@ But it's up to you to catch inputs that are not ISBN-10s (e.g., Jenny'sfootnote:
 
 [source,subs=quotes]
 ----
-~/workspace/chapter1 $ [underline]#./isbn#
+~/workspace/week4 $ [underline]#./isbn#
 ISBN: [underline]#5558675309#
 NO
 ----
