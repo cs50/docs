@@ -187,6 +187,10 @@ image:disk.png[smiley.bmp on disk]
 
 As this figure suggests, order does matter when it comes to ``struct``s' members. Byte 57 is `rgbtBlue` (and not, say, `rgbtRed`), because `rgbtBlue` is defined first in `RGBTRIPLE`. Our use, incidentally, of the `__attribute__` called `__packed__` ensures that `clang` does not try to "word-align" members (whereby the address of each member's first byte is a multiple of 4), lest we end up with "gaps" in our ``struct``s that don't actually exist on disk. No need to worry about that particular implementation detail, though.
 
+Lastly, you may have noticed in `copy.c` that whenever we output an error message to the user, we use the function `fprintf` (with the extra parameter `stderr`) instead of the more-familiar `printf`. Why is that? Well, by default `stderr` "prints" to the same place as `stdout` (your terminal), but if we want to __redirect__ output from our programs (recall, incidentally, that we did this quite a few times in Problem Set 3), we may not want to redirect __everything__ the program might print out.
+
+Here's an example: In Problem Set 3, `generate` was used to create a list of _n_ random integers, and in one sample use in the specification we redirected that list of numbers to a text file. But what if something had gone wrong? What if, say, the user failed to supply the correct number of command line arguments? He or she probably wouldn't want that error message to be redirected to the text file, because otherwise they would not know something went wrong until they opened that file. If instead we had distinguished between `stdout` and `stderr`, we could send all "regular" output to the text file via `stdout` and `printf`, but still have important messages, such as warnings about errors, sent to `stderr` via `fprintf`, where they would still print to the screen even despite using the `>` to redirect our program's output.
+
 == Questions
 
 Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.
