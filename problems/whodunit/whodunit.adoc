@@ -33,7 +33,7 @@ Welcome to Tudor Mansion. Your host, Mr. John Boddy, has met an untimely end—h
 
 Unfortunately for you (though even more unfortunately for Mr. Boddy), the only evidence you have is a 24-bit BMP file called `clue.bmp`, pictured below, that Mr. Boddy whipped up on his computer in his final moments. Hidden among this file's red "noise" is a drawing of whodunit.
 
-//// 
+////
 TODO: new BMP
 ////
 image::clue.png[clue.bmp]
@@ -214,10 +214,10 @@ Implement a program called `whodunit` that reveals Mr. Boddy's drawing in such a
 
 * Implement your program in a file called `whodunit.c` in a directory called `whodunit`.
 * Your program should accept exactly two command-line arguments: the name of an input file to open for reading followed by the name of an output file to open for writing.
-* If your program is executed with fewer or more than two command-line arguments, it should remind the user of correct usage, as with `fprintf`, and `main` should return `1`.
-* If the input file cannot be opened for reading, your program should inform the user as much, as with `fprintf`, and `main` should return `2`.
-* If the output file cannot be opened for writing, your program should inform the user as much, as with `fprintf`, and `main` should return `3`.
-* If the input file is not a 24-bit uncompressed BMP 4.0, your program should inform the user as much, as with `fprintf`, and `main` should return `4`.
+* If your program is executed with fewer or more than two command-line arguments, it should remind the user of correct usage, as with `fprintf` (to `stderr`), and `main` should return `1`.
+* If the input file cannot be opened for reading, your program should inform the user as much, as with `fprintf` (to `stderr`), and `main` should return `2`.
+* If the output file cannot be opened for writing, your program should inform the user as much, as with `fprintf` (to `stderr`), and `main` should return `3`.
+* If the input file is not a 24-bit uncompressed BMP 4.0, your program should inform the user as much, as with `fprintf` (to `stderr`), and `main` should return `4`.
 * Upon success, `main` should `0`.
 
 == Walkthrough
@@ -232,14 +232,14 @@ Your program should behave per the examples below. Assumed that the underlined t
 ----
 $ [underline]#./whodunit#
 Usage: ./whodunit infile outfile
-$ echo $?
+$ [underline]#echo $?#
 1
 ----
 
 [source,subs=quotes]
 ----
 $ [underline]#./whodunit clue.bmp verdict.bmp#
-$ echo $?
+$ [underline]#echo $?#
 0
 ----
 
@@ -281,5 +281,7 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == Changelog
 
+* 2016-09-27
+** Added a clarification regarding which file pointer to use for `fprintf`.
 * 2016-09-23
 ** Initial release.

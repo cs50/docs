@@ -48,7 +48,7 @@ Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-
 ** the second must be the name of a BMP to be resized, and
 ** the third must be the name of the resized version to be written.
 --
-+ If your program is not executed with such, it should remind the user of correct usage, as with `fprintf`, and `main` should return `1`.
++ If your program is not executed with such, it should remind the user of correct usage, as with `fprintf` (to `stderr`), and `main` should return `1`.
 * Your program, if it uses `malloc`, must not leak any memory.
 
 == Walkthrough
@@ -63,27 +63,27 @@ Your program should behave per the examples below. Assumed that the underlined t
 ----
 $ [underline]#./resize#
 Usage: ./resize n infile outfile
-$ echo $?
+$ [underline]#echo $?#
 1
 ----
 
 [source,subs=quotes]
 ----
 $ [underline]#./resize .5 large.bmp smaller.bmp#
-$ echo $?
+$ [underline]#echo $?#
 0
 ----
 
 [source,subs=quotes]
 ----
 $ [underline]#./resize 2 small.bmp larger.bmp#
-$ echo $?
+$ [underline]#echo $?#
 0
 ----
 
 == Hints
 
-With a program like this, we could have created `large.bmp` out of `small.bmp` by resizing the latter by a factor of 4 (i.e., by multiplying both its width and its height by 4), per the below. 
+With a program like this, we could have created `large.bmp` out of `small.bmp` by resizing the latter by a factor of 4 (i.e., by multiplying both its width and its height by 4), per the below.
 
 [source]
 ----
@@ -132,5 +132,7 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == Changelog
 
+* 2016-09-27
+** Added a clarification regarding which file pointer to use for `fprintf`.
 * 2016-09-23
 ** Initial release.
