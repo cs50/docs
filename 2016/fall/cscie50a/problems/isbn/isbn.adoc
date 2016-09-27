@@ -119,9 +119,9 @@ Hopefully those exclamation points make the math more exciting.
 
 So, computing this check digit's not hard, but it does get a bit tedious by hand. Let's write a program.
 
-Create a file called `isbn.c` inside of your `~/workspace/chapter1` directory, in which you should write a program that prompts the user for an ISBN-10 and then reports (via `printf`) whether the number's legit. So that we can automate some tests of your code, we ask that your program's last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
+In `isbn.c`, write a program that prompts the user for an ISBN-10 and then reports (via `printf`) whether the number's legit. So that we can automate some tests of your code, we ask that your program's last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
 
-For simplicity, you may assume that the user's input will be exactly ten decimal digits (i.e., devoid of hyphens and `X`), the first of which might even be zero(es), as in the case of our recommended book. But do not assume that the user's input will fit in an `int`! Recall, after all, that the largest value that can fit in an `int` is 2^32^ - 1 = 4,294,967,295 (and, even then, only if declared as `unsigned`). True, that's a 10-digit value, but there might still be a problem. (What?) Best to be safe and use `GetLongLong` from CS50's library to get users' input. (Why?)
+For simplicity, you may assume that the user's input will be exactly ten decimal digits (i.e., devoid of hyphens and `X`), the first of which might even be zero(es), as in the case of our recommended book. But do not assume that the user's input will fit in an `int`! Recall, after all, that the largest value that can fit in an `int` is 2^32^ - 1 = 4,294,967,295 (and, even then, only if declared as `unsigned`). True, that's a 10-digit value, but there might still be a problem. (What?) Best to be safe and use `get_long_long` from CS50's library to get users' input. (Why?)
 
 Okay, so you've gotten some input. What should you do? Well, realize that this C program, not unlike Scratch projects, can be reduced to the most basic of building blocks. For the sake of discussion, suppose that some variable `x` contains a 10-digit `long long` (with no leading zeroes). How can you get at its tenth (i.e., rightmost) digit? Well how about this?
 
@@ -180,7 +180,7 @@ ISBN: [underline]#0789751984#
 YES
 ----
 
-Of course, `GetLongLong` itself will reject an ISBN-10's hyphens (and more) anyway:
+Of course, `get_long_long` itself will reject an ISBN-10's hyphens (and more) anyway:
 
 [source,subs=quotes]
 ----
