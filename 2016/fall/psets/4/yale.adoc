@@ -80,7 +80,7 @@ Whoever finds and photographs the most computer scientists (and, in the event of
 ----
 update50
 ----
-* Submit `find`:
+* Submit `whodunit`:
 +
 [source]
 ----
