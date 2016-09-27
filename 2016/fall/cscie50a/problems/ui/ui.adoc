@@ -117,6 +117,8 @@ You needn't write more than 200 words for this part of the problem; predicting t
 
 == How to Submit
 
-Refresh this page on **Mon 9/26** for submission instructions.
+To submit your writing assignment, give it the name *Last,First-UI*, substituting *Last* and *First* with your own last and first names, respectively. So, if your name were __John Harvard__, your file would be named *Harvard,John-UI*. You can upload this writing assignment as either a Word document (`.doc`), PDF file (`.pdf`), or text file (`.rtf`, `.txt`).
+
+Then, visit https://www.dropbox.com/request/1MUHhuJyKp3Yr32rglCF[this link] and upload your file to our Dropbox folder. Remember that the deadline for this assignment is Wednesday, September 28 at noon Eastern time. If you wish to resubmit your assignment, know that you can do so as many times as you'd like. We will grade your latest submission that was received prior to the deadline.
 
 This was Me, Myself, and UI.
