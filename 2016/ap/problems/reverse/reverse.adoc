@@ -102,7 +102,7 @@ video::yOyaJXpAYZQ[youtube,height=540,width=960]
 
 Along the same lines is http://cs.lmu.edu/~ray/notes/c2asmexamples/[this webpage] which also shows a little bit of translating between source code and machine code.
 
-The other thing you'll need to do is read up on what the various assembly instructions mean. The `gcc` compiler takes C code and translates it to machine code using the http://web.stanford.edu/class/cs107/IA32_Cheat_Sheet.pdf[IA-32 instruction set] (of which the linked document shows a majority of the useful instructions, but not the full set). As it turns out, there's actually very few things a computer can realistically do! They can perform some extremely basic math, jump to other points in memory, and flip bits around. That's... pretty much it. All the amazing things we can do in C (and we've only **just** scratched the surface of that!) eventually boil down to just those.
+The other thing you'll need to do is read up on what the various assembly instructions mean. The `gcc` compiler takes C code and translates it to machine code using the https://www.dropbox.com/s/pfoodsyz65f22vz/IA32_Cheat_Sheet.pdf?dl=0[IA-32 instruction set] (of which the linked document shows a majority of the useful instructions, but not the full set). As it turns out, there's actually very few things a computer can realistically do! They can perform some extremely basic math, jump to other points in memory, and flip bits around. That's... pretty much it. All the amazing things we can do in C (and we've only **just** scratched the surface of that!) eventually boil down to just those.
 
 == Link it Together
 

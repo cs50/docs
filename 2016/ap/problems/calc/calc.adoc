@@ -135,7 +135,7 @@ or, indeed like this (allowing the user to perform some basic floating-point ari
 
 such that the user can perform all five of the basic math operations that C permits -- addition, subtraction, multiplication, division, and modulo.
 
-Notice that unlike many other programs you've likely written up to this point, and just like http://cdn.cs50.net/ap/1617/problems/old_friends/old_friends.html[Old Friends], users are not entering any information **after** the program has started running. Rather, they are providing all of their input to the program at the command line, before the program has begun.
+Notice that unlike many other programs you've likely written up to this point, and just like http://docs.cs50.net/2016/ap/problems/friends/friends.html[Old Friends], users are not entering any information **after** the program has started running. Rather, they are providing all of their input to the program at the command line, before the program has begun.
 
 Recall from Christopher's short that if we collect information from the user at the command line, we can use two special parameters passed into `main` (conventionally called `argc` and `argv`) which represent the number of arguments the user provided and the actual data the user provided, respectively. Given the example use case above, how many command line arguments is the user expected to provide?
 
