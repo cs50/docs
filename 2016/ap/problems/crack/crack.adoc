@@ -1,10 +1,10 @@
 ---
 layout: 2016/fall
-title: Hack
+title: Crack
 ---
 :skip-front-matter:
 
-= Problem: Hack
+= Problem: Crack
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
@@ -94,17 +94,17 @@ skroob:50Bpa7n/23iug
 zamyla:HAYRs6vZAb4wo
 ----
 
-Crack these passwords, each of which has been encrypted with C's DES-based (not MD5-based) crypt function. Specifically, write, in `hack.c`, a program that accepts a single command-line argument: an encrypted password.  (In case you test your code with other ciphertexts, know that command-line arguments with certain characters (e.g., `?`) must be enclosed in single or double quotes; those quotation marks will not end up in `argv` itself.)  If your program is executed without any command-line arguments or with more than one command-line argument, your program should complain and exit immediately, with `main` returning any non-zero `int` (thereby signifying an error that our own tests can detect). Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing to standard output the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`. The underlying design of this program is entirely up to you, but you must explain each and every one of your design decisions, including any implications for performance and accuracy, with profuse comments throughout your source code. Your program must be designed in such a way that it could crack all of the passwords above, even if said cracking might take quite a while. That is to say, it's okay if your code might take several minutes or days or longer to run. What we demand of you is correctness, not necessarily optimal performance. Your program should certainly work on inputs other than these as well; hard-coding into your program the solutions to the above is not acceptable.
+Crack these passwords, each of which has been encrypted with C's DES-based (not MD5-based) crypt function. Specifically, write, in `crack.c`, a program that accepts a single command-line argument: an encrypted password.  (In case you test your code with other ciphertexts, know that command-line arguments with certain characters (e.g., `?`) must be enclosed in single or double quotes; those quotation marks will not end up in `argv` itself.)  If your program is executed without any command-line arguments or with more than one command-line argument, your program should complain and exit immediately, with `main` returning any non-zero `int` (thereby signifying an error that our own tests can detect). Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing to standard output the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`. The underlying design of this program is entirely up to you, but you must explain each and every one of your design decisions, including any implications for performance and accuracy, with profuse comments throughout your source code. Your program must be designed in such a way that it could crack all of the passwords above, even if said cracking might take quite a while. That is to say, it's okay if your code might take several minutes or days or longer to run. What we demand of you is correctness, not necessarily optimal performance. Your program should certainly work on inputs other than these as well; hard-coding into your program the solutions to the above is not acceptable.
 
 Your program must behave per the below; underlined is some sample input.
 
 [source,subs=quotes]
 ----
-:~/workspace/chapter2 $ [underline]#./hack 50Bpa7n/23iug#
+:~/workspace/chapter2 $ [underline]#./crack 50Bpa7n/23iug#
 12345
 ----
 
-Assume that users' passwords, as plaintext, are composed of http://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters[printable ASCII characters] and are no longer than eight characters long. As for their ciphertexts, you'd best pull up the "man page" (i.e., manual) for `crypt` by executing
+Assume that users' passwords, as plaintext, are composed of http://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters[printable ASCII characters] and are no longer than four characters long. As for their ciphertexts, you'd best pull up the "man page" (i.e., manual) for `crypt` by executing
 
 [source,bash]
 ----
@@ -123,7 +123,7 @@ at the top of your file. Moreover, you'll want to link with `-lcrypt`, as by com
 
 [source,bash]
 ----
-clang -o hack hack.c -lcrypt
+clang -o crack crack.c -lcrypt
 ----
 
 You might also want to read up on C's support for file I/O, as there's quite a number of English words in `/usr/share/dict/words` in CS50 IDE that might (or might not) save your program some time. If that file seems to be missing, you can install it with:
@@ -137,6 +137,6 @@ By design, `/etc/passwd` entrusts the security of passwords to an assumption: th
 
 We should note that this problem set is no invitation to seek out other passwords to crack.  Do not conflate these Hacker Editions with "black hat" editions. We hope, though, that by understanding better the design of today's systems, you might one day build better systems yourself. Besides acquainting you further with C, this problem set urges you to start questioning designs, as vulnerabilities (if not regrets) often result from poor ones.
 
-If you'd like to play with the staff's own implementation of `hack`, well, sorry! :-) Where'd be the fun in that?
+If you'd like to play with the staff's own implementation of `crack`, well, sorry! :-) Where'd be the fun in that?
 
-This was Hack.
+This was Crack.
