@@ -162,7 +162,7 @@ If you happen to see (and are confused by!) `char *` in this and other shorts, k
 
 == Hello, again!
 
-In http://cdn.cs50.net/ap/1617/problems/hello/hello.html[Hello] you were asked to write a program that very simply printed the message `hello, world\n` to the screen when run. It's not too much of a leap to extend this program to say hello to a specific person by asking for the user to type a name at the prompt instead, so the program behaves like this.
+In http://docs.cs50.net/2016/ap/problems/hello/hello.html[Hello] you were asked to write a program that very simply printed the message `hello, world\n` to the screen when run. It's not too much of a leap to extend this program to say hello to a specific person by asking for the user to type a name at the prompt instead, so the program behaves like this.
 
 [source,subs=quotes]
 ----
@@ -228,7 +228,7 @@ If you'd like to play with the staff's own implementation of `hello`, you may ex
 
 == Chill Out
 
-In http://cdn.cs50.net/ap/1617/problems/fahrenheit/fahrenheit.html[Fahrenheit] you were asked to write a program that asked the user for a temperature in Celsius (which they provided via `get_float`) and which then printed out the equivalent temperature on the Fahrenheit scale.
+In http://docs.cs50.net/2016/ap/problems/fahrenheit/fahrenheit.html[Fahrenheit] you were asked to write a program that asked the user for a temperature in Celsius (which they provided via `get_float`) and which then printed out the equivalent temperature on the Fahrenheit scale.
 
 [source,subs=quotes]
 ----
@@ -274,7 +274,7 @@ If you'd like to play with the staff's own implementation of `fahrenheit`, you m
 
 == Makin' Bank
 
-In http://cdn.cs50.net/ap/1617/problems/pennies/pennies.html[Pennies] you were asked to write a program that demonstrated the power of exponentiation by showing how much money you would have if a person gave you __x__ pennies on a particular day, and then doubled the amount they gave you every day for a period of __y__ days.
+In http://docs.cs50.net/2016/ap/problems/pennies/pennies.html[Pennies] you were asked to write a program that demonstrated the power of exponentiation by showing how much money you would have if a person gave you __x__ pennies on a particular day, and then doubled the amount they gave you every day for a period of __y__ days.
 
 [source,subs=quotes]
 ----
