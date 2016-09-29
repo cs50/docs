@@ -1,0 +1,90 @@
+= FAQs
+
+Below are frequently asked questions (FAQs) specific to CS50x 2016. For questions specific to edX, see https://support.edx.org/[support.edx.org].
+
+== Can I re-submit problem sets?
+
+Yes, you may re-submit problem sets that you completed in 2013, 2014, or 2015 for credit in 2016. To re-submit, simply follow the instructions under *How to Submit* in the specifications for each of CS50x 2016's problem sets. However, know that some of 2016's problem sets are different from past years'. Here's http://cdn.cs50.net/2016/x/references/new/new.html[what's new] in 2016.
+
+*CS50x 2016 uses the same gradebook as CS50x 2015. If you submitted some problem set in 2015 and received a score >= 0.6, you do not need to re-submit it in 2016, even if that problem set has changed. If you do re-submit in 2016 some problem set that you also submitted in 2015, your new submission must meet 2016's expectations, per the problem set's spec.*
+
+== Can I use CS50 IDE offline?
+
+Yes, if you have particularly slow, expensive, or infrequent Internet access, see https://cs50.readme.io/v2015/docs/offline for details on how you can run your own copy of CS50 IDE locally on your own computer! Stay tuned for even more detailed instructions!
+
+== Can I use the CS50 Appliance?
+
+As of 2016, the CS50 Appliance has been replaced with http://cs50.io/[CS50 IDE], a web-based integrated development environment. While using the CS50 Appliance is still possible (with some effort), best to use http://cs50.io/[CS50 IDE] now for Problem Sets 1 through 8, per their specs.
+
+== Does CS50x have deadlines?
+
+Only one, when the course itself ends! You are welcome to take CS50x at your own pace, so long as you submit nine problem sets and submit a final project no later than 31 December 2016, per the https://x.cs50.net/2016/schedule[schedule].
+
+== Does CS50x have office hours?
+
+No, afraid CS50x is too large! However, office hours are available to students taking CS50 through Harvard College or Harvard Extension School. See http://cdn.cs50.net/2016/x/references/compare/compare.html[cdn.cs50.net/2016/x/references/compare/compare.html].
+
+== Does CS50x have quizzes?
+
+No, only students taking CS50 at Harvard University and Yale University have quizzes!
+
+== Does CS50x offer CS50 Certificates?
+
+To be answered in a few days!
+
+== Does CS50x offer Honor Code Certificates?
+
+To be answered in a few days!
+
+== Does CS50x offer Verified Certificates of Achievement?
+
+Yes. CS50x offers https://www.edx.org/verified-certificate[Verified Certificates of Achievement] through edX (as well as http://www.extension.harvard.edu/courses/intensive-introduction-computer-science[course credit] from Harvard Extension School). 
+
+See http://cdn.cs50.net/2016/x/references/compare/compare.html[cdn.cs50.net/2015/x/references/compare/compare.html] to compare options.
+
+*If you paid for a Verified Certificate in 2015 (or 2016), you have until 31 December 2016 to complete CS50x. Email help@edx.org if your dashboard indicates that your verification has expired.*
+
+== How can I hide CS50's Facebook Group from my newsfeed?
+
+If you joined CS50's https://www.facebook.com/groups/cs50/[Facebook Group] but don't want to see new posts in your newsfeed, hover over image:menu.png[screenshot] in the top-right corner of any of the group's posts in your newsfeed, then select *Unfollow CS50* from that menu, per the below. You'll still be in the group, so you can still visit it at https://www.facebook.com/groups/cs50 anytime you'd like. *Note that old posts won't disappear from your newsfeed (unless you select *I
+don't want to see this* for each of them), but new posts will no longer appear. CS50 will thus gradually disappear from your newsfeed as other posts appear.*
+
+image::unfollow.png[screenshot]
+
+== How can I play videos faster or slower?
+
+If using Chrome, Firefox, or Safari (i.e., a browser that supports HTML5 and MP4), you _should_ see a *SPEED* control below each video, per the below. If not, your browser might not support different speeds, in which case you can download the video (as via the blue links beneath it) and use a client-side player like http://www.videolan.org/vlc/[VLC], whose *Playback* menu should allow you to alter playback speed. Beware, though, David talks fast at 1x, let alone 2x!
+
+image::speed.png[screenshot]
+
+== How can I turn off notifications from CS50's Facebook Group?
+
+If you joined CS50's https://www.facebook.com/groups/cs50/[Facebook Group] but don't want to receive notifications about it, simply visit https://www.facebook.com/groups/cs50/, click *Notifications* at top-right, and then select *Off*, per the below. You'll still be in the group, so you can still visit it at https://www.facebook.com/groups/cs50 anytime you'd like.
+
+image::notifications.png[screenshot]
+
+== If I did some of CS50x's problem sets in 2013, 2014, or 2015, can I re-submit in 2016?
+
+Yes, just realize that some of 2016's problem sets are new, and some are a bit different. See http://cdn.cs50.net/2016/x/references/new/new.html[cdn.cs50.net/2016/x/references/new/new.html] for an overview of what's new. But also be sure to read each problem set's spec to be sure your code is consistent with 2016's expectations. And be sure to (re-)submit each problem set's form in addition to your code, as per each of 2016's specs.
+
+== Is it too late to start CS50x?
+
+Nope, even if this is your first time here, you're not too late to begin! You are welcome to take CS50x at your own pace, per the https://x.cs50.net/2016/schedule[schedule], starting whenever you'd like, so long as you finish before 31 December 2016.
+
+== Is my n-year-old child too young to take CS50x?
+
+Hard to say! Odds are teenagers can do just fine. Younger students might need a hand from a parent, but we have had students as young as 10 years old taking CS50x. And even a bit younger!
+
+////
+video::FBMFsc6e0xw[youtube,height=360,width=480]
+////
+
+== What does edX's Verified Certificate of Achievement look like?
+
+Odds are 2016's will resemble https://www.edx.org/sites/default/files/theme/example-certificate-verified.png[this sample].
+
+== What if YouTube is blocked in my country?
+
+Even though edX's video player relies on YouTube, all of CS50x's videos are downloadable multiple resolutions (240p, 360p, 720p, 1080p, and sometimes 4K). Under any (blocked) video, look for blue links like the below, which will allow you to download videos from CS50x's servers.
+
+image::videos.png[screenshot]

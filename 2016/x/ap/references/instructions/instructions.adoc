@@ -1,0 +1,39 @@
+= Instructions
+:toc: left
+
+Per the http://cdn.cs50.net/2016/x/references/syllabus/syllabus.html[syllabus], CS50x comprises 12 weeks of material, Week 0 through Week 12.
+
+Within each week, you'll typically find:
+
+* One or two lectures. Taught by David in Sanders Theatre at Harvard Unviersity, lectures present the week's concepts through examples and demonstrations (sometimes followed by cake).
+* A few walkthroughs. Taught by David in CS50's studio, walkthroughs walk you through the week's source code (i.e., programming examples) in more detail than in lecture and at a slower pace.
+* A section (for all comfort levels). Taught by Doug Lloyd '09 in CS50's studio, sections provide you with opportunities to review the course's material at a slower pace.
+* A few shorts. Also filmed in CS50's studio, shorts are bite-sized videos that focus in detail on a particular topic. Presented by CS50's on-campus staff.
+* A problem set. Problem sets are programming assignments that challenge you to apply concepts to problems inspired by real-world domains. Embedded in each problem set are additional walkthroughs, taught by Zamyla Chan '14 or David in CS50's studio, via which you receive direction on where to begin and how to approach the week's challenges.
+
+== How to Take CS50x
+
+To take CS50x, then, simply start working your way through Week 0 through Week 12. For each week:
+
+. Watch the week's lecture(s).
+. Optionally watch the week's walkthroughs.
+. Optionally watch the week's section.
+. Optionally watch the week's shorts (unless required by the week's problem set).
+. If the week includes a problem set, read its "specification" and then dive into the problem set itself by following the specification's instructions. Note that the "standard editions" of some problem sets are accompanied by "Hacker Editions," which are entirely optional. *To receive a Verified Certificate from edX, you must submit the standard editions of problem sets.*
+. Submit the problem set per its directions.
+
+In addition to problem sets, the course also has a final project. See its http://cdn.cs50.net/2016/x/project/project.html[specification] for details.
+
+Of course, if you do not wish to receive a https://www.edx.org/student-faq#certificates[Verified Certificate] from https://www.edx.org/school/harvardx[HarvardX], you're welcome to take CS50x however you'd like! All of CS50's content will remain available at http://cs50.tv/[CS50.tv] as OpenCourseWare after 31 December 2016, so not to worry if you don't get through it in time!
+
+=== Schedule
+
+You are welcome to take CS50x at your own pace, so long as you submit nine problem sets and submit a final project no later than 31 December 2016.
+
+To help keep you on track, allow us to propose a http://cs50.edx.org/2016/schedule[schedule of deadlines] for you, if only for a bit of psychological pressure, but you're welcome to stray from those dates. In fact, those proposed deadlines will automatically adjust themselves as time passes.
+
+////
+=== Certificates
+
+Students who earn a satisfactory grade (60% or higher) on every one of nine problem sets and on a final project will be eligible to receive a certificate from HarvardX as a downloadable, printable PDF.
+////

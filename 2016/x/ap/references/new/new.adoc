@@ -1,0 +1,16 @@
+= What's new?
+
+Happen to take CS50x in 2013, 2014, or 2015 (even if you didn't finish)? Here's what's new in CS50x 2016:
+
+* New and improved lectures! Hopefully.
+** Most filmed at Harvard University but some filmed at Yale University!
+** More on-stage demos!
+* CS50 Appliance has been replaced with CS50 IDE, a web-based integrated development environment!
+* Updated problem sets!
+** Problem Set 3 is now Game of Fifteen.
+** Problem Set 6 is still Web Server but with more features!
+** Problem Set 7 is still C$50 Finance but comes with a PHP-based CS50 Library!
+** Problem Set 8 is still Mashup but also comes with a PHP-based CS50 Library!
+* A brand-new CS50 "Shirtificate" program! Details coming soon!
+* Opportunities to become certified to teach CS50 yourself! Details coming soon!
+* And more!
