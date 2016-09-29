@@ -109,7 +109,7 @@ Let's try all this out. The ISBN-10 for the _Absolute Beginner's Guide to C_, on
 
 1·**0** + 2·**7** + 3·**8** + 4·**9** + 5·**7** + 6·**5** + 7·**1** + 8·**9** + 9·**8** = 290
 
-If we now divide that sum by 11, we get 204 &divide; 11 = 26 4/11 (i.e., a remainder of 4)! Well that's kind of neat, the ISBN is legit! Actually, also thanks to modular arithmetic, we could just include that tenth digit in our sum and multiply it by 10:
+If we now divide that sum by 11, we get 290 &divide; 11 = 26 4/11 (i.e., a remainder of 4)! Well that's kind of neat, the ISBN is legit! Actually, also thanks to modular arithmetic, we could just include that tenth digit in our sum and multiply it by 10:
 
 1·**0** + 2·**7** + 3·**8** + 4·**9** + 5·**7** + 6·**5** + 7·**1** + 8·**9** + 9·**8** + 10·**4** = 330
 
