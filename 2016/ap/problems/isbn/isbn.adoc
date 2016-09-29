@@ -102,7 +102,7 @@ the syllabus right? Well, let's first take that sum using the ISBN-10's first ni
 
 1&middot;**0** + 2&middot;**7** + 3&middot;**8** + 4&middot;**9** + 5&middot;**7** + 6&middot;**5** + 7&middot;**1** + 8&middot;**9** + 9&middot;**8** = 290
 
-If we now divide that sum by 11, we get 204 &divide; 11 = 26 4/11 (i.e., a remainder of 4)! Well that's kind of neat, the ISBN is legit! Actually, also thanks to modular arithmetic, we could just include that tenth digit in our sum and multiply it by 10:
+If we now divide that sum by 11, we get 290 &divide; 11 = 26 4/11 (i.e., a remainder of 4)! Well that's kind of neat, the ISBN is legit! Actually, also thanks to modular arithmetic, we could just include that tenth digit in our sum and multiply it by 10:
 
 1&middot;**0** + 2&middot;**7** + 3&middot;**8** + 4&middot;**9** + 5&middot;**7** + 6&middot;**5** + 7&middot;**1** + 8&middot;**9** + 9&middot;**8** + 10&middot;**4** = 330
 
