@@ -1,3 +1,10 @@
+---
+layout: 2016/fall
+title: FAQs
+---
+:skip-front-matter:
+
+
 = FAQs
 
 Below are frequently asked questions (FAQs) specific to CS50 AP 2016. For questions specific to edX, see https://support.edx.org/[support.edx.org].

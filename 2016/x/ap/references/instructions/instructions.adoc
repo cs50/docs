@@ -1,5 +1,10 @@
+---
+layout: 2016/fall
+title: Instructions
+---
+:skip-front-matter:
+
 = Instructions
-:toc: left
 
 Per the syllabus, CS50 AP is made up of 7 chapters, Chapters 0-6. Additionally, if you are among those more comfortable, you can take on two additional chapters, Chapters A and B, that fall between Chapters 4 and 5
 
