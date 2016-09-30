@@ -47,6 +47,10 @@ and your prompt should resemble the below.
 ~/workspace/pset5/ $
 ----
 
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
+
 == Problems
 
 . Implement link:../../../../problems/speller/speller.html[Speller]
