@@ -1,12 +1,10 @@
 = FAQs
 
-Below are frequently asked questions (FAQs) specific to CS50x 2016. For questions specific to edX, see https://support.edx.org/[support.edx.org].
+Below are frequently asked questions (FAQs) specific to CS50 AP 2016. For questions specific to edX, see https://support.edx.org/[support.edx.org].
 
 == Can I re-submit problem sets?
 
-Yes, you may re-submit problem sets that you completed in 2013, 2014, or 2015 for credit in 2016. To re-submit, simply follow the instructions under *How to Submit* in the specifications for each of CS50x 2016's problem sets. However, know that some of 2016's problem sets are different from past years'. Here's http://cdn.cs50.net/2016/x/references/new/new.html[what's new] in 2016.
-
-*CS50x 2016 uses the same gradebook as CS50x 2015. If you submitted some problem set in 2015 and received a score >= 0.6, you do not need to re-submit it in 2016, even if that problem set has changed. If you do re-submit in 2016 some problem set that you also submitted in 2015, your new submission must meet 2016's expectations, per the problem set's spec.*
+Yes, you may re-submit problem sets and your most recent submission is what will be graded.
 
 == Can I use CS50 IDE offline?
 

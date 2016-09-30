@@ -5,7 +5,7 @@ Per the syllabus, CS50 AP is made up of 7 chapters, Chapters 0-6. Additionally, 
 
 Within each chapter, you'll typically find:
 
-* One or two lectures. Taught by David in Sanders Theatre at Harvard Unviersity, lectures present the week's concepts through examples and demonstrations (sometimes followed by cake).
+* One or two lectures. Taught by David in Sanders Theatre at Harvard University, lectures present the week's concepts through examples and demonstrations (sometimes followed by cake).
 * A few walkthroughs. Taught by David in CS50's studio, walkthroughs walk you through the week's source code (i.e., programming examples) in more detail than in lecture and at a slower pace.
 * A section (for all comfort levels). Taught by Doug Lloyd '09 in CS50's studio, sections provide you with opportunities to review the course's material at a slower pace.
 * A few shorts. Also filmed in CS50's studio, shorts are bite-sized videos that focus in detail on a particular topic. Presented by CS50's on-campus staff.

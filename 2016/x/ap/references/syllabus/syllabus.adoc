@@ -11,22 +11,26 @@ http://cs.harvard.edu/malan
 
 == Description
 
-Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
+CS50 is Harvard University’s introduction to the intellectual enterprises of computer science and the art of programming for students with a diversity of technological background and experience. CS50 for AP Computer Science Principles is an adaptation of CS50 specifically tailored to align with the AP Computer Science Principles curriculum framework. The course’s assignments, materials, and resources are all identical to the version of the course taught at the college-level, albeit adapted to suit a secondary school audience.Among this course’s objectives is to supply you with a comprehensive introduction to the fundamentals of the discipline of computer science. We will do so using programming in several different languages as a vehicle to introduce these fundamentals, including such topics as algorithms, abstraction, data, global impact, and internet technologies. Though the course is programming-heavy, it should be stressed that this is not a “programming course”; rather, this course should be considered one of problem-solving, creativity, and exploration. By year’s end, you will have a richer understanding of the key principles of the discipline of computer science. You will be able to speak intelligently about how computers work and how they enable us to become better problem-solvers, and will hopefully be able to communicate that knowledge to others. Whether you elect to take no other computer science courses in your lifetime or consider this class the first step in a longer course of study, it is our sincere hope that you feel more comfortable with—and indeed sometimes skeptical of—the technologies that surround us each day.
 
 == Expectations
 
-You are expected to submit nine problem sets and a final project.
+You are expected to submit all problems and coordinate with your high school to complete the http://apcentral.collegeboard.com/apc/public/exam/exam_information/231726.html#anchor2[create and explore tasks].
+
+== Prerequisites
+
+The only background required for CS50 for AP Computer Science Principles is completion of Algebra I or its equivalent.
 
 == Website
 
-This course lives at http://cs50.edx.org/.
+This course lives at http://ap.cs50.net/.
 
 Visit the course's website to watch videos, to get help, to download handouts and software, and to follow links to other resources.
 
 ////
 == Certificates
 
-Students who earn a satisfactory grade (60% or higher) on every one of nine problem sets and on a final project will be eligible to receive a certificate from HarvardX as a downloadable, printable PDF.
+Students who earn a satisfactory grade (60% or higher) on every one of the problems will be eligible to receive a certificate from HarvardX as a downloadable, printable PDF.
 ////
 
 == Books 
@@ -61,95 +65,49 @@ Henry S. Warren Jr. +
 Pearson Education, 2013 +
 ISBN 0-321-84268-5
  
-== Lectures
+== Overview
 
-A schedule of lectures, subject to change, appears below. 
+Consistent with the AP Computer Science Principles curriculum framework, the course’s material is organized around seven so-called “big ideas” as well as six computational thinking practices. The seven big ideas are:1.	Creativity2.	Abstraction3.	Data and Information4.	Algorithms5.	Programming6.	The Internet7.	Global ImpactAnd the six computational thinking practices are:P1.	Connecting ComputingP2.	Creating Computational ArtifactsP3.	AbstractingP4.	Analyzing Problems and ArtifactsP5.	Communicating (both orally and in writing)P6.	Collaborating 
 
-=== Week 0
+=== Chapter 0 - Computers and Computing
 
-Binary. ASCII. Algorithms. Pseudocode. Source code. Compiler. Object code. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Functions. Arrays. Threads. Events.
+Computers and Computing. How Computers Work. Bits and Bytes. Hardware. Memory. Binary. ASCII. Algorithms.
 
-=== Week 1
+=== Chapter 1 - Building Blocks of Programming
 
-Linux. C. Compiling. Libraries. Types. Standard output.
+Pseudocode. Scratch. Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops. 
 
-=== Week 2
+=== Chapter 2 - Putting the Blocks Together
 
-Casting. Imprecision. Switches. Scope. Strings. Arrays. Cryptography.
+Compiling. Functions and Returning. Arrays and Strings. Command-Line Interaction. Exit Codes. Libraries. Typecasting. Bugs and Debugging.
 
-=== Week 3
+=== Chapter 3 - Thinking Computationally
 
-Command-line arguments. Searching. Sorting. Bubble sort. Selection sort. Insertion sort. O. Ω .Θ. Recursion. Merge Sort.
+Linear Search. Bubble sort. Selection sort. Insertion sort. Binary Search. Time Complexity. Unsolvable Problems. Simulation.
 
-=== Week 4
+=== Chapter 4 - Design, Elegance, and Efficiency
 
-Stack. Debugging. File I/O. Hexadecimal. Strings. Pointers. Dynamic memory allocation.
+Principles of Good Design. Ncurses. Structures and Encapsulation. Recursion. Merge Sort. Hexadecimal. File I/O. Images. Version Control and Collaboration.
 
-=== Week 5
+=== Chapter 5 - Networking and the Internet
 
-Heap. Buffer overflow. Linked lists. Hash tables. Tries. Trees. Stacks. Queues.
+Internet Basics. IP Addresses. DNS and DHCP. Routers. TCP and IP. HTTP. Trust Models. Cybersecurity. HTML. CSS.
 
-=== Week 6
+=== Chapter 6 - Problem Solving in an Interconnected World
 
-TCP/IP. HTTP.
+PHP. PHP for Web Programming. SQL. MVC. JavaScript. Ajax. Artificial Intelligence. Virtual and Augmented Reality.
 
-=== Week 7
+=== Optional Chapters
 
-HTML. CSS. PHP.
-
-=== Week 8
-
-MVC. SQL.
-
-=== Week 9
-
-JavaScript. Ajax.
-
-=== Week 10
-
-Security. Artificial intelligence.
-
-=== Week 11
-
-Artificial intelligence, continued.
-
-=== Week 12
-
-Exciting conclusion.
-
-== Sections
-
-Lectures are supplemented by weekly, 90-minute sections led by the teaching fellows. Sections provide you with opportunities to explore the course's material in a more intimate environment.
-
-== Postmortems
-
-Available after problem sets' deadlines are "postmortems," videos via which the course's staff explore actual solutions to problem sets. You are expected to watch postmortems for insights into how else you could have (or should have!) implemented your own solutions.
+Chapter A and B are optional and cover some of the more complex topics. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect. We recommend completing these chapters between Chapter 4 and 5.
 
 == Problem Sets
 
-Nine problem sets are assigned during the semester. Each is due by 31 December 2016.
+//TODO
 
-In order to accommodate students with different backgrounds, some problem sets are released in two editions: a standard edition intended for most students and a "Hacker Edition" intended for some students. Both editions essentially cover the same material. But the Hacker Edition typically presents that material from a more technical angle and poses more sophisticated questions. *To receive a Verified Certificate from https://www.edx.org/school/harvardx[HarvardX], you must submit the standard editions of problem sets. You are welcome to do the Hacker Editions for your own edification, but it is not possible to submit Hacker Editions for credit (or extra credit).*
+== Explore and Create Task
 
-A schedule of problem sets appears below.
-
-* Problem Set 0: Scratch
-* Problem Set 1: C
-* Problem Set 2: Crypto
-* Problem Set 3: Game of Fifteen
-* Problem Set 4: Forensics
-* Problem Set 5: Mispellings
-* Problem Set 6: Web Server
-* Problem Set 7: C$50 Finance
-* Problem Set 8: Mashup
-
-== Final Project
-
-The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this course's lessons, the nature of your project is entirely up to you. You may implement your project in any language(s), and you are welcome to utilize infrastructure other than the CS50 Appliance. All that we ask is that you build something of interest to you, that you solve an actual problem, or that you change the world. Strive to create something that outlives this course.
-
-Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
-
-See http://cdn.cs50.net/2016/x/project/project.html for details.
+//TODO
 
 == Academic Honesty 
 
