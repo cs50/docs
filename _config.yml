@@ -13,6 +13,7 @@ asciidoctor:
   - source-highlighter=pygments
   - stem
   - stylesdir=css
+  - toclevels=3
   base_dir: :docdir
   safe: 0
 destination: docs
