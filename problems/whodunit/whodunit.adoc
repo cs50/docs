@@ -187,9 +187,28 @@ image:disk.png[smiley.bmp on disk]
 
 As this figure suggests, order does matter when it comes to ``struct``s' members. Byte 57 is `rgbtBlue` (and not, say, `rgbtRed`), because `rgbtBlue` is defined first in `RGBTRIPLE`. Our use, incidentally, of the `__attribute__` called `__packed__` ensures that `clang` does not try to "word-align" members (whereby the address of each member's first byte is a multiple of 4), lest we end up with "gaps" in our ``struct``s that don't actually exist on disk. No need to worry about that particular implementation detail, though.
 
-Lastly, you may have noticed in `copy.c` that whenever we output an error message to the user, we use the function `fprintf` (with the extra parameter `stderr`) instead of the more-familiar `printf`. Why is that? Well, by default `stderr` "prints" to the same place as `stdout` (your terminal), but if we want to __redirect__ output from our programs (recall, incidentally, that we did this quite a few times in Problem Set 3), we may not want to redirect __everything__ the program might print out.
+Lastly, you may have noticed in `copy.c` that, whenever we output an error message, we use `fprintf` (the first argument to which is `stderr`) instead of the more-familiar `printf`. It turns out that `printf` prints messages to "standard output" (aka `stdout`), the destination of which is typically a user's terminal window. But "standard error (aka `stderr`) also exists, the destination of which is also typically (and perhaps confusingly!) a user's terminal window. But via `stdout` and `stderr` can a programmer keep error messages separated from non-error messages so that, if the user wants, one or the other (or both) can be "redirected" (with `>`) or "piped" (with `|`) somewhere other than the user's terminal window.
 
-Here's an example: In Problem Set 3, `generate` was used to create a list of _n_ random integers, and in one sample use in the specification we redirected that list of numbers to a text file. But what if something had gone wrong? What if, say, the user failed to supply the correct number of command line arguments? He or she probably wouldn't want that error message to be redirected to the text file, because otherwise they would not know something went wrong until they opened that file. If instead we had distinguished between `stdout` and `stderr`, we could send all "regular" output to the text file via `stdout` and `printf`, but still have important messages, such as warnings about errors, sent to `stderr` via `fprintf`, where they would still print to the screen even despite using the `>` to redirect our program's output.
+In other words,
+
+[source,c]
+----
+printf("hello, world\n");
+----
+
+is equivalent to
+
+[source,c]
+----
+fprintf(stdout, "hello, world\n");
+----
+
+but the former is more succinct. In order to print an error message to `stderr`, though, do use `fprintf` per the below.
+
+[source,c]
+----
+fprintf(stderr, "Usage: ./whodunit infile outfile\n");
+----
 
 == Questions
 
