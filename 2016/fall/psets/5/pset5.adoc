@@ -1,0 +1,74 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= Problem Set 5: Mispellings
+
+== tl;dr
+ 
+. Watch https://video.cs50.net/2016/fall/lectures/5[Week 5's lecture].
+. Implement a spell-checker.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+Log into https://cs50.io/[cs50.io] and execute
+
+[source]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date. 
+
+Next, execute
+
+[source]
+----
+mkdir ~/workspace/pset5/
+----
+
+at your prompt in order to make a directory called `pset5` in your `workspace` directory.
+
+Now execute
+
+[source]
+----
+cd ~/workspace/pset5/
+----
+
+and your prompt should resemble the below.
+
+[source]
+----
+~/workspace/pset5/ $
+----
+
+== Problems
+
+. Implement link:../../../../problems/speller/speller.html[Speller]
+
+=== Step 1 of 2
+
+* Update your IDE:
++
+[source]
+----
+update50
+----
+* Submit `speller`:
++
+[source]
+----
+cd ~/workspace/pset5/speller/
+submit50 speller
+----
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.net/2016/fall/psets/5[]!
+ 
+This was Problem Set 5.
