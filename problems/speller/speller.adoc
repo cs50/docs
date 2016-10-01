@@ -298,11 +298,11 @@ video::u9-1U1Rgo1o,qTFnQ1nohM8,hsruECgJJVQ,O3tErLhuEmY[youtube]
 
 == Hints
 
-Be sure to `free` in `unload` any memory that you allocated in `load`! Recall that `valgrind` is your newest best friend. Know that `valgrind` watches for leaks while your program is actually running, so be sure to provide command-line arguments if you want `valgrind` to analyze `speller` while you use a particular `dictionary` and/or text, as in the below.
+Be sure to `free` in `unload` any memory that you allocated in `load`! Recall that `valgrind` is your newest best friend. Know that `valgrind` watches for leaks while your program is actually running, so be sure to provide command-line arguments if you want `valgrind` to analyze `speller` while you use a particular `dictionary` and/or text, as in the below. Best to use a small text, though, else `valgrind` could take quite a while to run.
 
 [source]
 ----
-valgrind --leak-check=full ./speller texts/austinpowers.txt
+valgrind --leak-check=full ./speller texts/ralph.txt
 ----
 
 If you run `valgrind` without specifying a `text` for `speller`, your implementations of `load` and `unload` won't actually get called (and thus analyzed).
@@ -311,7 +311,7 @@ If unsure how to interpret the output of `valgrind`, do just ask `help50` for he
 
 [source]
 ----
-help50 valgrind --leak-check=full ./speller texts/austinpowers.txt
+help50 valgrind --leak-check=full ./speller texts/ralph.txt
 ----
 
 == Testing
