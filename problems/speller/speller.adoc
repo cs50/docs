@@ -9,7 +9,7 @@ Implement a program that spell-checks a file, per the below.
 
 [source,subs=quotes]
 ----
-$ [underline]#./speller texts/ralph.txt#
+$ [underline]#./speller texts/austinpowers.txt#
 MISSPELLED WORDS
 
 [...]
