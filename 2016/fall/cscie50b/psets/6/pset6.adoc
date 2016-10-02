@@ -184,7 +184,7 @@ You should see output like the below.
 [yellow]#Listening on port 8080#
 ----
 
-Toward the top-right corner of CS50 IDE, meanwhile, you should see your workspace's "fully qualified domain name," an address of the form `ide50-username.cs50.io`, where `username` is your own username. Visit `pass:[https://ide50-username.cs50.io/]` (where `username` is your own username) in another tab. You should see a "directory listing" (i.e., an unordered list) of everything that's in `public`, yes? And if you click *cat.jpg*, you should see a happy cat?? If not, do just reach out to classmates or staff for a hand!
+If you click on the *Share* button toward the top-right corner of CS50 IDE, meanwhile, you should see your workspace's "fully qualified domain name," an address of the form `ide50-username.cs50.io`, where `username` is your own username, listed next to **Application** in the menu that pops up. Visit `pass:[https://ide50-username.cs50.io/]` (where `username` is your own username) in another tab. You should see a "directory listing" (i.e., an unordered list) of everything that's in `public`, yes? And if you click *cat.jpg*, you should see a happy cat?? If not, do just reach out to classmates or staff for a hand!
 
 Incidentally, even though `server` is running on port 8080, CS50 IDE is "port-forwarding" port 80 (which, recall, is browsers' default) to 8080 for you. That's why you don't need to specify *8080* in the URL you just visited.
 
@@ -502,8 +502,12 @@ Complete the implementation of `indexes` in such a way that the function, given 
 
 == How to Submit
 
-=== Step 1 of 2
-
-Refresh this page on or after Fri 9/30!
+. Open up CS50 IDE.
+. Navigate to your `~/workspace` directory, ensuring that `pset6` (and all of its contents) exists therein.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on `first_last.zip` if it already exists (from your Problem Set 5 submission), and delete it. We'll be creating a new file with the same name for Problem Set 6's submission in the next step.
+. At the terminal, type `zip -r first_last.zip pset6`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `~/workspace` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/5FoxEKeTKECrTGHyU6He[this link] to upload your ZIP file containing your `pset6` submission!
 
 This was Problem Set 6.
