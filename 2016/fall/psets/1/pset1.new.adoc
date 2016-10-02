@@ -1,0 +1,124 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= Problem Set 1: C
+
+== tl;dr
+
+[start=0]
+. Watch https://video.cs50.net/2016/fall/lectures/1[Week 1's lecture].
+. Get your CS50 IDE set up with `hello.c`.
+. Calculate your water consumption with `water.c`.
+. Recreate one of Mario's pyramids, in `mario.c`.
+. Provide a user with either cash or credit in `greedy.c` or `credit.c`.
+. Submit your code.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+Recall that CS50 IDE is a web-based "integrated development environment" that allows you to program "in the cloud," without installing any software locally. Underneath the hood is a popular operating system, Ubuntu Linux, that's been "containerized" with open-source software called Docker, that allows multiple users (like you!) to share the operating system's "kernel" (its nucleus, so to speak) and files, even while having files of their own. Indeed, CS50 IDE provides you with your very own "workspace" (i.e., storage space) in which you can save your own files and folders (aka directories).
+
+=== Logging In
+
+Head to https://cs50.io/[cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then click *Create workspace*.
+
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble mine from Week 1. If not, do just email the course's heads to inquire!
+
+=== Updating
+
+Toward the bottom of CS50 IDE's UI is a "terminal window" (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace's files and directories, compile code, run programs, and even install new software. You should find that its "prompt" resembles the below.
+
+[source,text]
+----
+~/workspace/ $
+----
+
+Click inside of that terminal window and then type
+
+[source,text]
+----
+update50
+----
+
+followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!)
+
+Next, execute
+
+[source]
+----
+mkdir ~/workspace/pset1/
+----
+
+at your prompt in order to make a directory called `pset1` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset1` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset1` denotes a directory called `pset1` within `~/workspace`.
+
+Now execute
+
+[source]
+----
+cd ~/workspace/pset1/
+----
+
+to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
+
+[source]
+----
+~/workspace/pset1/ $
+----
+
+If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
+
+[source,bash]
+----
+history
+----
+
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like.
+
+== What to Do
+
+. Implement link:../../../../problems/hello/hello.html[Hello]
+. Implement link:../../../../problems/water/water.html[Water]
+. Implement either of:
++
+--
+* link:../../../../problems/mario/less/mario.html[Mario], less comfortable
+* link:../../../../problems/mario/more/mario.html[Mario], more comfortable
+--
++
+. Implement either of:
++
+--
+* link:../../../../problems/greedy/greedy.html[Greedy], less comfortable
+* link:../../../../problems/credit/credit.html[Credit], more comfortable
+--
+
+== How to Submit
+
+=== Step 1 of 2
+
+. When ready to submit, log into https://cs50.io/[CS50 IDE].
+. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `hello.c` file (that's within your *pset1* directory) and then select *Download*. You should find that your browser has downloaded `hello.c`.
+. Repeat for `water.c`.
+. Repeat for `mario.c`.
+. Repeat for `greedy.c` or `credit.c`.
+. In a separate tab or window, log into http://cs50.net/submit[CS50 Submit], logging in if prompted.
+. Click *Submit* toward the window's top-left corner.
+. Under *Problem Set 1* on the screen that appears, click *Upload New Submission*.
+. On the screen that appears, click *Add files...*.  A window entitled *Open Files* should appear.
+. Navigate your way to `hello.c`. Odds are it's in your *Downloads* folder or wherever your browser downloads files by default.  Once you find `hello.c`, click it once to select it, then click *Open* (or the like).
+. Click *Add files...* again, and a window entitled *Open Files* should appear again.
+. Navigate your way to `water.c` as before.  Click it once to select it, then click *Open* (or the like).
+. Navigate your way to `mario.c` as before.  Click it once to select it, then click *Open* (or the like).
+. Navigate your way to `greedy.c` or `credit.c` as before.  Click it once to select it, then click *Open* (or the like).
+. Click *Start upload* to upload all of your files at once to CS50's servers.
+. On the screen that appears, you should see a window with *No File Selected*.  If you move your mouse toward the window's lefthand side, you should see a list of the files you uploaded.  Click each to confirm the contents of each.  (No need to click any other buttons or icons.)  If confident that you submitted the files you intended, consider your source code submitted!  If you'd like to re-submit different (or modified) files, simply return to https://cs50.harvard.edu/submit[CS50 Submit] and repeat these steps.  You may re-submit as many times as you'd like; we'll grade your most recent submission, so long as it's before the deadline.
+
+=== Step 2 of 2
+
+Head to https://forms.cs50.net/2016/fall/psets/1 where a short form awaits. Once you have submitted that form (as well as your source code), you are done! If you end up resubmitting your files (per step 1 of 2), no need to resubmit the form.
+
+This was Problem Set 1.
