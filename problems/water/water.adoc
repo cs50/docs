@@ -10,11 +10,11 @@ Implement a program that reports a user's water usage, converting minutes spent 
 [source,subs=quotes]
 ----
 $ [underline]#./water#
-#1#
+[underline]#1#
 12
 
 $ [underline]#./water#
-#10#
+[underline]#10#
 120
 ----
 
@@ -72,6 +72,7 @@ check50 2016.water water.c
 int minutes = get_int();
 ----
 +
+
 
 == FAQs
 
