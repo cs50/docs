@@ -80,7 +80,7 @@ First, say hello to Tommy, who's here to teach you a bit about some basic file i
 
 video::L1c4oSI6RAE[youtube,height=540,width=960]
 
-Next, read up on two functions you'll probably want to know a thing or two about for this problem: `https://reference.cs50.net/stdlib.h/srand48[srand48]` and `https://reference.cs50.net/stdlib.h/drand48[drand48]`. `srand48` and `drand48` are similar in spirit to `srand` and `rand`, which you may recall using in http://docs.cs50.net/2016/x/ap/2016/problems/skittles/skittles.html[Skittles], but perform their calculations using 48-bit arithmetic. Suffice it to say, given identical seeds, `rand` and `drand48` will generate different sets of pseudorandom numbers.
+Next, read up on two functions you'll probably want to know a thing or two about for this problem: `https://reference.cs50.net/stdlib.h/srand48[srand48]` and `https://reference.cs50.net/stdlib.h/drand48[drand48]`. `srand48` and `drand48` are similar in spirit to `srand` and `rand`, which you may recall using in http://docs.cs50.net/2016/ap/problems/skittles/skittles.html[Skittles], but perform their calculations using 48-bit arithmetic. Suffice it to say, given identical seeds, `rand` and `drand48` will generate different sets of pseudorandom numbers.
 
 Before moving on, be sure you're comfortable answering the following questions:
 
@@ -202,9 +202,5 @@ Anyhow, if you'd like to play with the staff's own implementation of `rng` (whic
 ----
 ~cs50/chapter3/rng
 ----
-
-== How to Submit
-
-//TODO
 
 This was RNG.

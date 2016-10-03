@@ -140,10 +140,8 @@ check50 2016.fifteen fifteen.c
 ~cs50/chapter3/fifteen
 ----
 
-== FAQs
-
-_None so far! Reload this page periodically to check if any arise!_
-
 == How to Submit 
 
 //TODO
+
+This was Game of Fifteen.
