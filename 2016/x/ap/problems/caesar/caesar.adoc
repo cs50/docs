@@ -1,0 +1,245 @@
+---
+layout: 2016/fall
+title: Caesar
+---
+:skip-front-matter:
+
+= Problem: Caesar
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+==  Objectives
+
+* Become better acquainted with functions and libraries.
+* Interact with command-line inputs from users.
+* Dabble in cryptography.
+
+== Recommended Reading
+
+* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
+* Chapters 6, 7, 10, 17, 19, 21, 22, 30, and 32 of _Absolute Beginner's Guide to C_.
+* Chapters 7, 8, and 10 of _Programming in C_.
+
+== Academic Honesty
+
+This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
+
+The essence of all work that you submit to this course must be your own. Collaboration on problems is not permitted (unless explicitly stated otherwise) except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your code or writing to others, but you may not view theirs, so long as you and they respect this policy's other constraints. Collaboration on quizzes and tests is not permitted at all. Collaboration on the final project is permitted to the extent prescribed by its specification.
+
+Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it until you solicit and receive approval in writing from your instructor. If a violation of this policy is suspected and confirmed, your instructor reserves the right to impose local sanctions on top of any disciplinary outcome that may include an unsatisfactory or failing grade for work submitted or for the course itself.
+
+=== Reasonable
+
+* Communicating with classmates about problems in English (or some other spoken language).
+* Discussing the course's material with others in order to understand it better.
+* Helping a classmate identify a bug in his or her code, such as by viewing, compiling, or running his or her code, even on your own computer.
+* Incorporating snippets of code that you find online or elsewhere into your own code, provided that those snippets are not themselves solutions to assigned problems and that you cite the snippets' origins.
+* Reviewing past years' quizzes, tests, and solutions thereto.
+* Sending or showing code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a bug.
+* Sharing snippets of your own solutions to problems online so that others might help you identify and fix a bug or other issue.
+* Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problems or your own final project.
+* Whiteboarding solutions to problems with others using diagrams or pseudocode but not actual code.
+* Working with (and even paying) a tutor to help you with the course, provided the tutor does not do your work for you.
+
+=== Not Reasonable
+
+* Accessing a solution to some problem prior to (re-)submitting your own.
+* Asking a classmate to see his or her solution to a problem before (re-)submitting your own.
+* Decompiling, deobfuscating, or disassembling the staff's solutions to problems.
+* Failing to cite (as with comments) the origins of code, writing, or techniques that you discover outside of the course's own lessons and integrate into your own work, even while respecting this policy's other constraints.
+* Giving or showing to a classmate a solution to a problem when it is he or she, and not you, who is struggling to solve it.
+* Looking at another individual's work during a quiz or test.
+* Paying or offering to pay an individual for work that you may submit as (part of) your own.
+* Providing or making available solutions to problems to individuals who might take this course in the future.
+* Searching for, soliciting, or viewing a quiz's questions or answers prior to taking the quiz.
+* Searching for or soliciting outright solutions to problems online or elsewhere.
+* Splitting a problem's workload with another individual and combining your work (unless explicitly authorized by the problem itself).
+* Submitting (after possibly modifying) the work of another individual beyond allowed snippets.
+* Submitting the same or similar work to this course that you have submitted or will submit to another.
+* Using resources during a quiz beyond those explicitly allowed in the quiz's instructions.
+* Viewing another's solution to a problem and basing your own solution on it.
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== The Early Shift
+
+First, have a look at a few shorts; in particular, these three on loops, command-line arguments, and the Caesar cipher. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
+
+video::HHmiHx7GGLE[youtube,height=540,width=960]
+
+video::X8PmYwnbLKM[youtube,height=540,width=960]
+
+video::36xNpbosfTY[youtube,height=540,width=960]
+
+Be sure you're reasonably comfortable answering the below questions before moving too far!
+
+* How does a while loop differ from a do-while loop?  When is the latter particularly useful?
+* Why is Caesar's cipher not very secure?
+* What's a function?
+* Why bother writing functions when you can just copy and paste code as needed?
+
+Log into your CS50 IDE workspace and execute
+
+[source,bash]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
+
+Now execute
+
+[source,bash]
+----
+cd ~/workspace/chapter2
+----
+
+to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
+
+[source,bash]
+----
+~/workspace/chapter2 $
+----
+
+If so, you're ready to go!
+
+== Hail, Caesar!
+
+Recall from David DiCiurcio's short that Caesar's cipher encrypts (i.e., scrambles in a reversible way) messages by "rotating" each letter by _k_ positions, wrapping around from `Z` to `A` as neededfootnote:[See http://en.wikipedia.org/wiki/Caesar_cipher]. In other words, if _p_ is some plaintext (i.e., an unencrypted message), _p~i~_ is the _i^th^_ character in _p_, and _k_ is a secret key (i.e., a non-negative integer), then each letter, _c~i~_, in the ciphertext, _c_, is computed as:
+
+_c~i~_ = (_p~i~_ + _k_) % 26
+
+This formula perhaps makes the cipher seem more complicated than it is, but it's really just a nice way of expressing the algorithm precisely and concisely. And computer scientists love precision and, er, concision.footnote:[And, er, parallelism.]
+
+For example, suppose that the secret key, _k_, is 13 and that the plaintext, _p_, is "Be sure to drink your Ovaltine!"  Let's encrypt that _p_ with that _k_ in order to get the ciphertext, _c_, by rotating each of the letters in _p_ by 13 places, whereby:
+
+[source,text]
+----
+Be sure to drink your Ovaltine!
+----
+
+becomes:
+
+[source,text]
+----
+Or fher gb qevax lbhe Binygvar!
+----
+
+We've deliberately printed the above in a monospaced font so that all of the letters line up nicely. Notice how `O` (the first letter in the ciphertext) is 13 letters away from `B` (the first letter in the plaintext). Similarly is `r` (the second letter in the ciphertext) 13 letters away from `e` (the second letter in the plaintext). Meanwhile, `f` (the third letter in the ciphertext) is 13 letters away from `s` (the third letter in the plaintext), though we had to wrap around from `z` to `a` to get there. And so on. Not the most secure cipher, to be sure, but fun to implement!
+
+Incidentally, a Caesar cipher with a key of 13 is generally called ROT13 (cf. http://en.wikipedia.org/wiki/ROT13). In the real world, though, it's probably best to use ROT26, http://www.urbandictionary.com/define.php?term=ROT26[which is believed to be twice as secure].
+
+Anyhow, your next goal is to write, in `caesar.c`, a program that encrypts messages using Caesar's cipher. Your program must accept a single command-line argument: a non-negative integer. Let's call it _k_ for the sake of discussion. If your program is executed without any command-line arguments or with more than one command-line argument, your program should yell at the user and return a value of `1` (which tends to signify an error) immediately as via the statement below:
+
+[source,c]
+----
+return 1;
+----
+
+Otherwise, your program must proceed to prompt the user for a string of plaintext and then output that text with each alphabetical character "rotated" by _k_ positions; non-alphabetical characters should be outputted unchanged. After outputting this ciphertext, your program should exit, with `main` returning `0`, as via the statement below:
+
+[source,c]
+----
+return 0;
+----
+
+If you don't explicitly return an `int` from within `main`, `0` is actually returned for you automatically. (Indeed, per its "return type," `main` does need to return an `int`. But more on that another time.) Now that you're returning `1` explicitly to signify errors, it's best to return `0` (by convention) explicitly to signify success. Whereas `0` generally represents success, any non-`0` `int` generally represents an error. That way, you can represent (gasp) upwards of four billion errors (since an `int` is generally 32 bits)!
+
+Anyhow, even though there exist only 26 letters in the English alphabet, you may not assume that _k_ will be less than or equal to 26; your program should work for all non-negative integral values of _k_ less than 2^31^ - 26. (In other words, you don't need to worry if your program eventually breaks if the user chooses a value for _k_ that's too big or almost too big to fit in an `int`. Now, even if _k_ is greater than 26, alphabetical characters in your program's input should remain alphabetical characters in your program's output. For instance, if _k_ is 27, `A` should not become `[` even though `[` is 27 positions away from `A` in ASCII; `A` should become `B`, since 27 modulo 26 is 1, as a computer scientists might say. In other words, values like _k_ = 1 and _k_ = 27 are effectively equivalent.
+
+Your program must preserve case: capitalized letters, though rotated, must remain capitalized letters; lowercase letters, though rotated, must remain lowercase letters.
+
+Where to begin?  Well, this program needs to accept a command-line argument, _k_, so this time you'll want to declare `main` with:
+
+[source,c]
+----
+int main(int argc, string argv[])
+----
+
+Recall that `argv` is an "array" of ++string++s. You can think of an array as row of gym lockers, inside each of which is some value (and maybe some socks). In this case, inside each such locker is a `string`. To open (i.e., "index into") the first locker, you use syntax like `argv[0]`, since arrays are "zero-indexed."  To open the next locker, you use syntax like `argv[1]`. And so on. Of course, if there are `n` lockers, you'd better stop opening lockers once you get to `argv[n - 1]`, since `argv[n]` doesn't exist!  (That or it belongs to someone else, in which case you still shouldn't open it.)
+
+And so you can access _k_ with code like
+
+[source,c]
+----
+string k = argv[1];
+----
+
+assuming it's actually there!  Recall that `argc` is an `int` that equals the number of strings that are in `argv`, so you'd best check the value of argc before opening a locker that might not exist!  Ideally, `argc` will be `2`. Why?  Well, recall that inside of `argv[0]`, by default, is a program's own name. So `argc` will always be at least `1`. But for this program you want the user to provide a command-line argument, `k`, in which case `argc` should be `2`. Of course, if the user provides more than one command-line argument at the prompt, `argc` could be greater than `2`, in which case it's time for some yelling.
+
+Now, just because the user types an integer at the prompt, that doesn't mean their input will be automatically stored in an `int`. Au contraire, it will be stored as a `string` that just so happens to look like an `int`!  And so you'll need to convert that `string` to an actual `int`. As luck would have it, a function, https://reference.cs50.net/stdlib.h/atoi[`atoi`], exists for exactly that purposes. Here's how you might use it:
+
+[source,c]
+----
+int k = atoi(argv[1]);
+----
+
+Notice, this time, we've declared `k` as an actual `int` so that you can actually do some arithmetic with it. Ah, much better. Incidentally, you can assume that the user will only type integers at the prompt. You don't have to worry about them typing, say, `foo`, just to be difficult (even though the staff's solution does catch such); `atoi` will just return `0` in such cases.
+
+Because `atoi` is declared in `stdlib.h`, you'll want to `#include` that header file atop your own code. (Technically, your code will compile without it there, since we already `#include` it in `cs50.h`. But best not to trust another library to `#include` header files you know you need.)
+
+Okay, so once you've got `k` stored as an `int`, you'll need to ask the user for some plaintext. Odds are CS50's own `get_string` can help you with that.
+
+Once you have both `k` and some plaintext, it's time to encrypt the latter with the former. Recall that you can iterate over the characters in a string, printing each one at a time, with code like the below:
+
+[source,c]
+----
+for (int i = 0, n = strlen(p); i < n; i++)
+{
+    printf("%c", p[i]);
+}
+----
+
+In other words, just as `argv` is an array of ++string++s, so is a `string` an array of ++char++s. And so you can use square brackets to access individual characters in ++string++s just as you can individual ++string++s in `argv`. Neat, eh?  Of course, printing each of the characters in a string one at a time isn't exactly cryptography. Well, maybe technically if _k_ is 0. But the above should help you help Caesar implement his cipher!  For Caesar!
+
+Incidentally, you'll need to `#include` yet another header file in order to use https://reference.cs50.net/string.h/strlen[`strlen`].
+
+And Zamyla has some tips for you as well:
+
+video::V6IDxl-3WAA[youtube,height=540,width=960]
+
+So that we can automate some tests of your code, your program must behave per the below. Assumed that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+~/workspace/chapter2 $ [underline]#./caesar 13#
+[underline]#Be sure to drink your Ovaltine!#
+Or fher gb qevax lbhe Binygvar!
+----
+
+Besides `atoi`, you might find some handy functions documented at https://reference.cs50.net/ under *ctype.h* and *stdlib.h*. For instance, `isdigit` sounds interesting. And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out http://asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
+
+If you'd like to check the correctness of your program with `check50`, you may execute the below.
+
+[source,bash]
+----
+check50 1617.chapter2.caesar caesar.c
+----
+
+And if you'd like to play with the staff's own implementation of `caesar`, you may execute the below.
+
+[source,bash]
+----
+~cs50/chapter2/caesar
+----
+
+BTW, `uggc://jjj.lbhghor.pbz/jngpu?i=bUt5FWLEUN0`.
+
+== How to Submit
+
+//TODO
+
+This was Caesar.

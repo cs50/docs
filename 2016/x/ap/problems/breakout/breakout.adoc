@@ -1,0 +1,411 @@
+= Problem: Breakout
+:hacker:
+
+_with thanks to Eric Roberts of Stanford_
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Accustom you to reading someone else's code.
+* Introduce you to an API.
+* Acquaint you with event handling.
+* Impress your friends.
+
+== Recommended Reading
+
+* Page 17 of http://www.howstuffworks.com/c.htm.
+* Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
+* Chapters 13, 15, and 18 of _Programming in C_.
+
+== Academic Honesty
+
+This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
+
+The essence of all work that you submit to this course must be your own. Collaboration on problems is not permitted (unless explicitly stated otherwise) except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your code or writing to others, but you may not view theirs, so long as you and they respect this policy's other constraints. Collaboration on quizzes and tests is not permitted at all. Collaboration on the final project is permitted to the extent prescribed by its specification.
+
+Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it until you solicit and receive approval in writing from your instructor. If a violation of this policy is suspected and confirmed, your instructor reserves the right to impose local sanctions on top of any disciplinary outcome that may include an unsatisfactory or failing grade for work submitted or for the course itself.
+
+=== Reasonable
+
+* Communicating with classmates about problems in English (or some other spoken language).
+* Discussing the course's material with others in order to understand it better.
+* Helping a classmate identify a bug in his or her code, such as by viewing, compiling, or running his or her code, even on your own computer.
+* Incorporating snippets of code that you find online or elsewhere into your own code, provided that those snippets are not themselves solutions to assigned problems and that you cite the snippets' origins.
+* Reviewing past years' quizzes, tests, and solutions thereto.
+* Sending or showing code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a bug.
+* Sharing snippets of your own solutions to problems online so that others might help you identify and fix a bug or other issue.
+* Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problems or your own final project.
+* Whiteboarding solutions to problems with others using diagrams or pseudocode but not actual code.
+* Working with (and even paying) a tutor to help you with the course, provided the tutor does not do your work for you.
+
+=== Not Reasonable
+
+* Accessing a solution to some problem prior to (re-)submitting your own.
+* Asking a classmate to see his or her solution to a problem before (re-)submitting your own.
+* Decompiling, deobfuscating, or disassembling the staff's solutions to problems.
+* Failing to cite (as with comments) the origins of code, writing, or techniques that you discover outside of the course's own lessons and integrate into your own work, even while respecting this policy's other constraints.
+* Giving or showing to a classmate a solution to a problem when it is he or she, and not you, who is struggling to solve it.
+* Looking at another individual's work during a quiz or test.
+* Paying or offering to pay an individual for work that you may submit as (part of) your own.
+* Providing or making available solutions to problems to individuals who might take this course in the future.
+* Searching for, soliciting, or viewing a quiz's questions or answers prior to taking the quiz.
+* Searching for or soliciting outright solutions to problems online or elsewhere.
+* Splitting a problem's workload with another individual and combining your work (unless explicitly authorized by the problem itself).
+* Submitting (after possibly modifying) the work of another individual beyond allowed snippets.
+* Submitting the same or similar work to this course that you have submitted or will submit to another.
+* Using resources during a quiz beyond those explicitly allowed in the quiz's instructions.
+* Viewing another's solution to a problem and basing your own solution on it.
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Started
+
+Up until this point in the course, you've been doing all of your assignments in CS50 IDE. This problem, however, cannot be completed in IDE and requires you instead to download a **virtual machine** (and the associated software for running virtual machines) called the CS50 Appliance, as it will employ graphics that the IDE cannot render. Instructions for doing this can be found https://manual.cs50.net/appliance/2014/#instructions[here], following the steps for VirtualBox.
+
+As usual, after getting CS50 Appliance set up (this will take some time and energy, hence one reason this is a Hacker edition problem), run:
+
+[source,bash]
+----
+update50
+----
+
+to make sure your Appliance is up-to-date. Then open up a Terminal window (in the bottom-left corner, a black box with what appears to be a prompt inside) and, assuming you followed the Dropbox set up instructions execute:
+
+[source,bash]
+----
+cd ~/Dropbox
+----
+
+followed by
+
+[source,bash]
+----
+wget http://cdn.cs50.net/ap/1617/problems/breakout/breakout.zip
+----
+
+to download a ZIP of this problem set's distro into your appliance (with a command-line program called `wget`). You should see a bunch of output followed by:
+
+[source,bash]
+----
+'breakout.zip' saved
+----
+
+If you instead see
+
+[source,bash]
+----
+unable to resolve host address
+----
+
+you may have typed something incorrectly or your Appliance may not have Internet access (even if your computer surely does), in which case the simplest fix is probably to restart your Appliance via *Menu > Log Off*, after which you can try `wget` again.
+
+Ultimately, confirm that you've indeed downloaded `breakout.zip` by executing:
+
+[source,bash]
+----
+ls
+----
+
+Then, run
+
+[source,bash]
+----
+unzip breakout.zip
+----
+
+to unzip the file.  If you then run `ls` again, you should see that you have a newly unzipped directory called `breakout` as well.  Proceed to execute
+
+[source,bash]
+----
+cd breakout
+----
+
+followed by 
+
+[source,bash]
+----
+ls
+----
+
+and you should see that the directory contains a number of files. How fun!
+
+== Backstory
+
+[quote,Walter Isaacson '74,Steve Jobs]
+____
+One day in the late summer of 1975, Nolan Bushnell [founder of Atari and, um, Chuck E. Cheese's], defying the prevailing wisdom that paddle games were over, decided to develop a single-player version of Pong; instead of competing against an opponent, the player would volley the ball into a wall that lost a brick whenever it was hit.  He called [Steve] Jobs into his office, sketched it out on his little blackboard, and asked him to design it.  There would be a bonus, Bushnell told him, for every chip fewer than fifty that he used.  Bushnell knew that Jobs was not a great engineer, but he assumed, correctly, that he would recruit [Steve] Wozniak, who was always hanging around.  "I looked at it as a two-for-one thing," Bushnell recalled.  "Woz was a better engineer."
+
+Wozniak was thrilled when Jobs asked him to help and proposed splitting the fee.  "This was the most wonderful offer in my life, to actually design a game that people would use," he recalled.  Jobs said it had to be done in four days and with the fewest chips possible.  What he hid from Wozniak was that the deadline was one that Jobs had imposed, because he needed to get to the All One Farm to help prepare for the apple harvest.  He also didn't mention that there was a bonus tied to keeping down the number of chips.
+
+"A game like this might take most engineers a few months," Wozniak recalled.  "I thought that there was no way I could do it, but Steve made me sure that I could."  So he stayed up four nights in a row and did it.  During the day at HP, Wozniak would sketch out his design on paper.  Then, after a fast-food meal, he would go right to Atari and stay all night.  As Wozniak churned out the design, Jobs sat on a bench to his left implementing it by wire-wrapping the chips onto a breadboard.  "While Steve was breadboarding, I spent time playing my favorite game ever, which was the auto racing game Gran Trak 10," Wozniak said.
+
+Astonishingly, they were able to get the job done in four days, and Wozniak used only forty-five chips.  Recollections differ, but by most accounts Jobs simply gave Wozniak half of the base fee and not the bonus Bushnell paid for saving five chips.  It would be another ten years before Wozniak discovered (by being shown the tale in a book on the history of Atari titled _Zap_) that Jobs had been paid this bonus....
+____
+
+== Breaking Out
+
+Your challenge for this problem is to implement the same game that Steve and Steve did, albeit in software rather than hardware. That game is Breakout.
+
+Whereas all of your C programs to date have only had "command-line interfaces" (CLIs), this one will have a graphical user interface (GUI), not unlike Scratch! You'll be building Breakout atop the Stanford Portable Library (SPL), which is similar in spirit to the CS50 Library but includes an "application programming interface" (API) for GUI programming and more.
+
+Let's take a look at what you can do with SPL by way of some of code examples. Go ahead and execute the below.
+
+[source,bash]
+----
+cd ~/Dropbox
+wget http://cdn.cs50.net/2014/fall/lectures/4/m/src4m.zip
+unzip src4m.zip
+rm -f src4m.zip
+cd src4m
+----
+
+If you then execute `ls`, among the files you see should be `bounce.c`, `button.c`, `checkbox.c`, `click.c`, `cursor.c`, `label.c`, `slider.c`, `text.c`, and `window.c`. Go ahead and compile the last of those files as follows:
+
+[source,bash]
+----
+make window
+----
+
+And then execute it as follows:
+
+[source,bash]
+----
+./window
+----
+
+A window quite like the below should appear and then disappear after 5 seconds.
+
+image:window.png[window.c]
+
+Neat, eh? Go ahead and open up `window.c` with `gedit`. Let's take a tour together:
+
+video::IMOujDlGebQ[youtube,height=540,width=960]
+
+How did we know how to call `newGWindow` like that?  Well, there aren't `man` pages for SPL, but you can peruse the relevant "header file" (i.e., `gwindow.h`) by executing:
+
+[source,bash]
+----
+gedit /usr/include/spl/gwindow.h
+----
+
+What's with `/usr/include/spl/gwindow.h`? That just means that `gwindow.h` lives deep in the appliance in a directory called `spl`, which lives in a directory called `include`, which lives in a directory called `usr`, which lives in the "root" (aka `/`) of the appliance's (virtual) hard drive. 
+
+Anyhow, if you poke around `gwindow.h` with `gedit`, odds are you'll be a bit overwhelmed. No biggie. Because SPL's author has commented the code in a standard way, it turns out that you can generate more user-friendly, web-based documentation as a result!  Indeed, take a look now at http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gwindow.html, and you'll see a much friendlier format.  (Well, relatively speaking.) Click `newGWindow` under *Functions*, and you'll see its prototype:
+
+[source,c]
+----
+GWindow newGWindow(double width, double height);
+----
+
+That's how we knew!  See http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/index.html for an index into SPL's documentation, though we'll point out more specific places to look.
+
+*In the interests of full disclosure, we should mention that SPL is still in beta, so there may be some bugs in its documentation.  When in doubt, best to consult those raw header files instead!*
+
+Incidentally, even though we included `gwindow.h` with
+
+[source,c]
+----
+#include "gwindow.h"
+----
+
+on video, we've since installed SPL deep inside the appliance (for convenience), so you should now include that header file (and other SPL header files) with code like:
+
+[source,c]
+----
+#include <spl/gwindow.h>
+----
+
+Anyhow, now open up `click.c` (in `~/Dropbox/src4m`) with `gedit`. This one's a bit more involved but it's representative of how to "listen" for "events", quite like those you could "broadcast" in Scratch.  Let's take a look.
+
+video::BStiekPFKWI[youtube,height=540,width=960]
+
+See http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gevents.html for SPL's documentation of `GEvent`.
+
+Now open up `cursor.c` (in `~/Dropbox/src4m`) with `gedit`.  This program, too, handles events, but it also responds to those events by moving a circle (well, a `GOval`) in lockstep.  Let's take a look.
+
+video::xsB0v8GtVMw[youtube,height=540,width=960]
+
+See http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gobjects.html for SPL's documentation of `GOval` and other types of objects.
+
+Next open `bounce.c` (in `~/Dropbox/src4m`) with `gedit`.  This one uses a bit of arithmetic to bounce a circle back and forth between a window's edges.  Let's take a look.
+
+video::8RMHJe1ZpKM[youtube,height=540,width=960]
+
+Finally, take a look at `button.c`, `checkbox.c`, `label.c`, `slider.c`, and `text.c` in any order with `gedit`. And feel free to join David on a tour:
+
+video::uFnsMLEgajQ[youtube,height=540,width=960,playlist="1o0xfkkPDFQ,ONSsCsNJcsE,mKiDejZId2g,2s_WGOz6SAs"]
+
+And, of course, feel free to compile (as with `make`) and run any of those programs.
+
+Phew, that was a lot. Not to worry! Even though all this might feel like a lot, all we've really done is introduce you to some Scratch-like puzzle pieces, albeit in C! Arcane puzzle pieces, to be sure, so do ask lots of questions of classmates and staff as needed.
+
+// http://www.pinterest.com/towardsthepage/simpsons/
+image::homer.jpg[width=960]
+
+=== breakout
+
+Okay, let's see what the distribution code for `breakout` itself does.  Go ahead and execute
+
+[source,bash]
+----
+cd ~/Dropbox/breakout
+----
+
+followed by 
+
+[source,bash]
+----
+make breakout
+----
+
+or, more simply,
+
+[source,bash]
+----
+make
+----
+
+to compile the distro.  Then execute
+
+[source,bash]
+----
+./breakout
+----
+
+to run the program as is.  A window like the below should appear.
+
+image:distro.png[distribution code's GUI]
+
+Hm, not much of a game.  Yet!
+
+Now try out the staff's solution by executing the below.
+
+[source,bash]
+----
+~cs50/pset3/breakout/breakout
+----
+
+A window like the below should appear.
+
+image:solution.png[staff's solution]
+
+Wow! Go ahead and click somewhere inside that window in order to play.  (You might need to enlarge your appliance's window in order to see the entirety of the game's window.) The goal, quite simply, is to bounce the ball off of the paddle so as to hit bricks with it.  If you break all the bricks, you win!  But if you miss the ball three times, you lose!  To quit the game, hit control-c back in the terminal window.
+
+Nice.  Let's make your implementation look more like that one.  But, first, a tour!
+
+Open up `breakout.c` with `gedit` and take a moment to scroll through it to get a sense of what lies ahead. Let's walk through it from top to bottom.
+
+* Atop the file you'll see some familiar header files.  We've also included some header files from SPL.  
+* Next up are some constants, values that you don't need to change, but because the code we've written (and that you'll write) needs to know these values in a few places, we've factored them out as constants so that we or you could, theoretically, change them in one convenient location.  By contrast, hard-coding the same number (pejoratively known as a "magic number") into your code in multiple places is considered bad practice, since you'd have to remember to change it, potentially, in all of those places.
+* Below those constants are a bunch of prototypes for functions that are defined below `main`.  More on each of those soon.
+* Next up is our old friend, `main`.  It looks like the first thing that `main` does is "seed" that so-called PRNG with the current time.  (See `man srand48` and `man 2 time` if curious.)  Again, to seed a PRNG simply means to initialize it in such a way that the numbers it will eventually spit out will appear to be random.  It's deliberate, then, that we're initializing the PRNG with the current time: time's always changing.  Were we instead to initialize the PRNG with some hard-coded value, it'd always spit out the same sequence of "random" numbers.
++
+After that call to `srand48`, it looks like `main` calls `newGWindow`, passing in a desired `WIDTH` and `HEIGHT`.  That function "instantiates" (i.e., creates) a new graphical window, returning some sort of reference thereto.  (It's technically a pointer, but that detail, and the accompanying `*`, is, again, hidden from us by SPL.)  That function's return value is apparently stored in a variable called `window` whose type is `GWindow`, which happens to be declared in a `gwindow.h` header file that you may have glimpsed earlier.
++
+Next, `main` calls `initBricks`, a function written partly by us (and, soon, mostly by you!) that instantiates a grid of bricks atop the game's window.
++
+Then `main` calls `initBall`, which instantiates the ball that will be used to play Breakout.  Passed into that function is `window` so that the function knows where to "place" (i.e., draw) the ball. The function returns a `GOval` (graphical oval) whose width and height will simply be equal (ergo a circular ball).
++
+Called by `main` next is `initPaddle`, which instantiates the game's paddle; it returns a `GRect` (graphical rectangle).
++
+Then `main` calls `initScoreboard`, which instantiates the game's scoreboard, which is simply a `GLabel` (graphical label).
++
+Below all those function calls are a few definitions of variables, namely `bricks`, `lives`, and `points`. Below those is a loop, which is meant to iterate again and again so long as the user has lives left to live and bricks left to break.  Of course, there's not much code in that loop now!
++
+Below the loop is a call to `waitForClick`, a function that does exactly that so that the window doesn't close until the user intends.
++
+Not too bad, right?  Let's next take a closer look at those functions.
+* In `initBricks`, you'll eventually write code that instantiates a grid of bricks in the window.  Those constants we saw earlier, `ROWS` and `COLS`, represent that grid's dimensions.  How to draw a grid of bricks on the screen?  Well, odds are you'll want to employ a pair of `for` loops, one nested inside of the other.  And within that innermost loop, you'll likely want to instantiate a `GRect` of some width and height (and color!) to represent a brick.
+* In `initBall`, you'll eventually write code that instantiates a ball (that is, a circle, or really a `GOval`) and somehow center it in the window.
+* In `initPaddle`, you'll eventually write code that instantiates a paddle (just a `GRect`) that's somehow centered in the bottom-middle of the game's window.
+* Finally, in `initScoreboard`, you'll eventually write code that instantiates a scoreboard as, quite simply, a `GLabel` whose value is a number (well, technically, a `char*`, which we once knew as a `string`).
+* Now, we've already implemented `updateScoreboard` for you.  All that function does, given a `GWindow`, a `GLabel`, and an `int`, is convert the `int` to a `string` (okay, `char*`) using a function called `sprintf`, after which it sets the label to that value and then re-centers the label (in case the `int` has more digits than some previous `int`).  Why did we allocate an array of size `12` for our representation of that `int` as a `string`?  No worries if the reason's non-obvious, but give some though as to how wide the most positive (or most negative!) `int` might be.  You're welcome to change this function, but you're not expected to.
+* Last up is `detectCollision`, another function that we've written for you.  (Phew!)  This one's a bit more involved, so do spend some time reading through it.  This function's purpose in life, given the ball as a `GOval`, is to determine whether that ball has collided with (i.e., is overlapping) some other object (well, `GObject`) in the game.  (A `GRect`, `GOval`, or `GLabel` can also be thought of and treated as a `GObject`, per http://cdn.cs50.net/2013/fall/lectures/5/m/src5m/spl/doc/gobjects.html[].)  To do so, it cuts some corners (figuratively but also kind of literally) by checking whether any of the ball's "corners," as defined by the ball's "bounding box", per the below (wherein _x_ and _y_ represent coordinates, and _r_ represents the ball's radius) are touching some other `GObject` (which might be a brick or a paddle or even something else).
++
+image:box.png[ball's bounding box]
+
+Alright, ready to break out Breakout?
+
+If you're like me, odds are you'll find it easiest to implement Breakout via some baby steps, each of which will get you closer and closer to a great outcome.  Rather than try to implement the whole game at once, allow us to suggest that you proceed as follows:
+
+. Try out the staff's solution again (via `~cs50/pset3/breakout/breakout`) to remind yourself how our implementation behaves.  Yours doesn't need to be identical.  In fact, all the better if you personalize yours.  But playing with our implementation should help guide you toward yours.
+. Implement `initPaddle`.  Per the function's return value, your paddle should be implemented as a `GRect`.  Odds are you'll first want to decide on a width and height for your paddle, perhaps declaring them both atop `breakout.c` with constants.  Then calculate coordinates (_x_ and _y_) for your paddle, keeping in mind that it should be initially aligned in the bottom-middle of your game's window.  We leave it to you to decide exactly where.  Odds are some arithmetic involving the window's width and height and the paddle's width and height will help you center it.  Keep in mind that _x_ and _y_ refer to a ``GRect``'s top-left corner, not its own middle.  Your paddle's size and location doesn't need to match the staff's precisely, but it should be perfectly centered, near the window's bottom.  You're welcome to choose a color for it too, for which `setColor` and `setFilled` might be of interest.  Finally, instantiate your paddle with `newGRect`.  (Take note of that function's prototype at http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gobjects.html[].)  Then return the `GRect` returned by `newGRect` (rather than `NULL`, which the distribution code returns only so that the program will compile without `initPaddle` fully implemented).
+. Now, ``initPaddle``'s purpose in life is only to instantiate and return a paddle (i.e., `GRect`).  It shouldn't handle any of the paddle's movement.  For that, turn your attention to the `TODO` up in `main`.  Proceed to replace that `TODO` with some lines of code that respond to a user's mouse movements in such a way that the paddle follows the movements, but only along its (horizontal) x-axis.  Look back at `cursor.c` for inspiration, but keep in mind that `cursor.c` allowed that circle to move along a (vertical) y-axis as well, which we don't want for Breakout, else the paddle could move anywhere (which might be cool but not exactly Breakout).
+. Now turn your attention to the `TODO` in `initBricks`.  Implement that function in such a way that it instantiates a grid of bricks (with `ROWS` rows and `COLS` columns), with each such brick implemented as a `GRect`.  Drawing a `GRect` (or even a bunch of them) isn't all that different from drawing a `GOval` (or circle).  Odds are, though, you'll want to instantiate them within a `for` loop that's within a `for` loop.  (Think back to `mario`, perhaps!)  Be sure to leave a bit of a gap between adjacent bricks, just like we did; exactly how many pixels is up to you.  And we leave it to you to select your bricks' colors.
+. Now implement `initBall`, whose purpose in life is to instantiate a ball in the window's center.  (Another opportunity for a bit of arithmetic!)  Per the function's prototype, be sure to return a `GOval`.
+. Then, back in `main`, where there used to be a `TODO`, proceed to write some additional code (within that same `while` loop) that compels that ball to move.  Here, too, take baby steps.  Look to `bounce.c` first for ideas on how to make the ball bounce back and forth between your window's edges.  (Not the ultimate goal, but it's a step toward it!)  Then figure out how to make the ball bounce up and down instead of left and right.  (Closer!)  Then figure out how to make the ball move at an angle.  Then, utilize `drand48` to make the ball's initial velocity random, at least along its (horizontal) x-axis.  Note that, per its `man` page, `drand48` returns "nonnegative double-precision floating-point values uniformly distributed between [0.0, 1.0)."  In other words, it returns a `double` between 0.0 (inclusive) and 1.0 (exclusive).  If you want your velocity to be faster than that, simply add some constant to it and/or multiply it by some constant!
++
+Ultimately, be sure that the ball still bounces off edges, including the window's bottom for now.
+. When ready, add some additional code to `main` (still somewhere inside of that `while` loop) that compels the ball to bounce off of the paddle if it collides with it on its way downward.  Odds are you'll want to call that function we wrote, `detectCollision`, inside that loop in order to detect whether the ball's collided with something so that, if so, you can somehow handle such an event.  Of course, the ball could collide with the paddle or with any one of those bricks.  Keep in mind, then, that `detectCollision` could return any such `GObject`; it's left to you to determine what has been struck.  Know, then, that if you store its return value, as with
++
+[source,c]
+----
+GObject object = detectCollision(window, ball);
+----
++
+you can determine whether that `object` is your game's paddle, as with the below.
++
+[source,c]
+----
+if (object == paddle)
+{
+    // TODO
+}
+----
++
+More generally, you can determine if that `object` is a `GRect` with:
++
+[source,c]
+----
+if (strcmp(getType(object), "GRect") == 0)
+{
+    // TODO
+}
+----
++
+Once it comes time to add a `GLabel` to your game (for its scoreboard), you can similarly determine if that `object` is `GLabel`, in which case it might be a collision you want to ignore. (Unless you want your scoreboard to be something the ball can bounce off of.  Ours isn't.)
++
+[source,c]
+----
+if (strcmp(getType(object), "GLabel") == 0)
+{
+    // TODO
+}
+----
+. Once you have the ball bouncing off the paddle (and window's edges), focus your attention again on that `while` loop in `main` and figure out how to detect if the ball's hit a brick and how to remove that brick from the grid if so.  Odds are you'll find `removeGWindow` of interest, per http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gwindow.html.  *SPL's documentation incorrectly refers to that function as `remove`, but it's indeed `removeGWindow` you want, whose prototype, to be clear, is the below.*
++
+[source,c]
+----
+void removeGWindow(GWindow gw, GObject gobj);
+----
+. Now decide how to determine whether the ball has zoomed past the paddle and struck the window's bottom edge, in which case the user should lose a life and gameplay should probably pause until the user clicks the mouse button, as in the staff's implementation.  Odds are detecting this situation isn't all that different from the code you already wrote for bouncing; you just don't want to bounce off that bottom edge anymore!
+. Lastly, implement `initScoreboard` in such a way that the function instantiates and positions a `GLabel` somewhere in your game's window.  Then, enhance `main` in such a way that the text of that `GLabel` is updated with the user's score anytime the user breaks a brick.  Indeed, be sure that your program keeps track of how many lives remain and how many bricks remain, the latter of which is inversely related to how many points you should give the user for each brick broken; our solution awards one point per brick, but you're welcome to offer different rewards.  A user's game should end (i.e., the ball should stop moving) after a user runs out of lives or after all bricks are broken.  We leave it to you to decide what to do in both cases, if anything more!
+
+Because this game expects a human to play, no `check50` for this one!  Best to invite some friends to find bugs!
+
+== How to Submit
+
+When ready to submit, open up a Terminal window and navigate your way to `~/Dropbox`.  Create a ZIP (i.e., compressed) file containing your entire `breakout` directory by executing the below.  Incidentally, `-r` means "recursive," which in this case means to ZIP up everything inside of `breakout`, including any subdirectories (or even subsubdirectories!).
+
+[source]
+----
+zip -r breakout.zip breakout
+----
+
+If you type `ls` thereafter, you should see that you have a new file called `breakout.zip` in `~/Dropbox`. Your instructor will provide further instructions for how to submit this ZIP file containing your solution to this problem!
+
+This was Breakout.
