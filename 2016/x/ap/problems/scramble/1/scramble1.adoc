@@ -1,3 +1,9 @@
+---
+layout: 2016/fall
+title: Scramble (Part 1)
+---
+:skip-front-matter:
+
 = Problem: Scramble (Part 1)
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
@@ -90,10 +96,10 @@ at your prompt to ensure that you're inside of `chapter3` (which is inside of `w
 
 [source,bash]
 ----
-wget http://cdn.cs50.net/ap/1617/problems/scramble/1/scramble.zip
+wget http://docs.cs50.net/2016/x/ap/problems/scramble/1/scramble.zip
 ----
 
-to download this problem's distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `unit3` directory. Navigate into your newly-created `scramble` directory (remember how?) and type:
+to download this problem's distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `chapter3` directory. Navigate into your newly-created `scramble` directory (remember how?) and type:
 
 [source,bash]
 ----
@@ -198,5 +204,9 @@ Suffice it to say we need your help finishing this implementation of `scramble`!
 type `FOO` or `foo` (or even `FoO` or any other capitalization thereof) in order to score.
 
 Now you can play (well, maybe after some debugging) your own version of `scramble`!
+
+== How to Submit
+
+//TODO
 
 This was Scramble (Part 1).

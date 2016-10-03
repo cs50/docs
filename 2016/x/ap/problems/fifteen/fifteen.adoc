@@ -1,5 +1,8 @@
 ---
+layout: 2016/fall
+title: Game of Fifteen
 ---
+:skip-front-matter:
 
 = Game of Fifteen
 
@@ -114,11 +117,11 @@ You're welcome to write your own functions and even change the prototypes of fun
 
 == Testing
 
-To test your implementation of `fifteen`, you can certainly try playing it. (Know that you can force your program to quit by hitting ctrl-c.) Be sure that you (and we) cannot crash your program, as by providing bogus tile numbers. And know that, much like you automated input into `find`, so can you automate execution of this game. In fact, in `~cs50/pset3` are `3x3.txt` and `4x4.txt`, winning sequences of moves for a 3 × 3 board and a 4 × 4 board, respectively. To test your program with, say, the first of those inputs, execute the below.
+To test your implementation of `fifteen`, you can certainly try playing it. (Know that you can force your program to quit by hitting ctrl-c.) Be sure that you (and we) cannot crash your program, as by providing bogus tile numbers. And know that, much like you automated input into `find`, so can you automate execution of this game. In fact, in `~cs50/chapter3` are `3x3.txt` and `4x4.txt`, winning sequences of moves for a 3 × 3 board and a 4 × 4 board, respectively. To test your program with, say, the first of those inputs, execute the below.
 
 [source]
 ----
-./fifteen 3 < ~cs50/pset3/3x3.txt
+./fifteen 3 < ~cs50/chapter3/3x3.txt
 ----
  
 === `check50`
@@ -134,14 +137,13 @@ check50 2016.fifteen fifteen.c
 
 [source]
 ----
-~cs50/pset3/fifteen
+~cs50/chapter3/fifteen
 ----
 
 == FAQs
 
 _None so far! Reload this page periodically to check if any arise!_
 
-== Changelog
+== How to Submit 
 
-* 2016-09-16
-** Initial release.
+//TODO

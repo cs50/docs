@@ -1,3 +1,9 @@
+---
+layout: 2016/fall
+title: Sort Race
+---
+:skip-front-matter:
+
 = Problem: Sort Race
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
@@ -105,7 +111,7 @@ at your prompt to ensure that you're inside of the `chapter3` directory within y
 
 [source,bash]
 ----
-wget http://cdn.cs50.net/ap/1617/problems/sort_race/race.zip
+wget http://docs.cs50.net/2016/x/ap/problems/race/race.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace. You should see a bunch of output followed by:
@@ -170,7 +176,7 @@ In this problem, you'll be racing the three __O(n^2^)__ sorting algorithms we've
 
 The good news is that you don't have to implement anything involving populating the arrays! You only have to do a tiny amount of command-line validation and implement the three sorting algorithms themselves. 
 
-But we're getting a bit ahead of ourselves. First we need to deal with the contents of the directory you just unzipped. If you completed http://cdn.cs50.net/ap/1617/problems/fifteen/2/fifteen2.html[Fifteen (Part 2)] using the partial staff solution, this will be old news to you, but if not, have a peek at the `Makefile` we've prepared for you. In particular, focus on this portion.
+But we're getting a bit ahead of ourselves. First we need to deal with the contents of the directory you just unzipped. Have a peek at the `Makefile` we've prepared for you. In particular, focus on this portion.
 
 [source]
 ----
@@ -333,5 +339,9 @@ To run the staff solution, simply execute:
 passing in appropriate command-line arguments.
 
 In no part of this problem are you expected to optimize your runtimes for any of these algorithms (beyond, of course, implementing them correctly). Rather, after you get them implemented you should test different arrays of different sizes and different configurations to see under which circumstances each algorithm "shines". So you can see actual differences between these algorithms, we recommend that your `size` argument be at least `1000`, as that way they'll tend to take at least a few thousandths of a second to sort.
+
+== How to Submit 
+
+//TODO
 
 This was Sort Race.

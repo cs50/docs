@@ -1,3 +1,9 @@
+---
+layout: 2016/fall
+title: Seek
+---
+:skip-front-matter:
+
 = Problem: Seek
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
@@ -88,7 +94,7 @@ video::D5SrAga1pno[youtube,height=540,width=960]
 
 == Getting Started
 
-Below are two options for getting started with this problem. The first option is for those who wish to start with a staff-provided pseudorandom number generator. The second option is for those who wish to use their own pseudorandom number generator from http://cdn.cs50.net/ap/1617/problems/rng/rng.html[RNG]
+Below are two options for getting started with this problem. The first option is for those who wish to start with a staff-provided pseudorandom number generator. The second option is for those who wish to use their own pseudorandom number generator from http://docs.cs50.net/2016/x/ap/problems/rng/rng.html[RNG]
 
 But first, log into https://cs50.io/[cs50.io] and execute
 
@@ -110,7 +116,7 @@ at your prompt to ensure that you're inside of `unit3` (which is inside of `work
 
 [source,bash]
 ----
-wget http://cdn.cs50.net/ap/1617/problems/seek/seek.zip
+wget http://docs.cs50.net/2016/x/ap/problems/seek/seek.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see a bunch of output followed by:
@@ -404,5 +410,9 @@ When it comes time to submit your work, it suffices to submit this new-and-impro
 Here's Zamyla again:
 
 video::7DSRJj7qfP8[youtube,height=540,width=960]
+
+== How to Submit
+
+//TODO
 
 This was Seek.

@@ -1,3 +1,9 @@
+---
+layout: 2016/fall
+title: RNG
+---
+:skip-front-matter:
+
 = Problem: RNG
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
@@ -196,5 +202,9 @@ Anyhow, if you'd like to play with the staff's own implementation of `rng` (whic
 ----
 ~cs50/chapter3/rng
 ----
+
+== How to Submit
+
+//TODO
 
 This was RNG.

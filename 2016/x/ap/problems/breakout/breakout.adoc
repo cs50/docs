@@ -1,5 +1,10 @@
+---
+layout: 2016/fall
+title: Breakout
+---
+:skip-front-matter:
+
 = Problem: Breakout
-:hacker:
 
 _with thanks to Eric Roberts of Stanford_
 
@@ -94,7 +99,7 @@ followed by
 
 [source,bash]
 ----
-wget http://cdn.cs50.net/ap/1617/problems/breakout/breakout.zip
+wget http://docs.cs50.net/2016/x/ap/problems/breakout/breakout.zip
 ----
 
 to download a ZIP of this problem set's distro into your appliance (with a command-line program called `wget`). You should see a bunch of output followed by:
@@ -342,7 +347,7 @@ Alright, ready to break out Breakout?
 
 If you're like me, odds are you'll find it easiest to implement Breakout via some baby steps, each of which will get you closer and closer to a great outcome.  Rather than try to implement the whole game at once, allow us to suggest that you proceed as follows:
 
-. Try out the staff's solution again (via `~cs50/pset3/breakout/breakout`) to remind yourself how our implementation behaves.  Yours doesn't need to be identical.  In fact, all the better if you personalize yours.  But playing with our implementation should help guide you toward yours.
+. Try out the staff's solution again (via `~cs50/chapter3/breakout/breakout`) to remind yourself how our implementation behaves.  Yours doesn't need to be identical.  In fact, all the better if you personalize yours.  But playing with our implementation should help guide you toward yours.
 . Implement `initPaddle`.  Per the function's return value, your paddle should be implemented as a `GRect`.  Odds are you'll first want to decide on a width and height for your paddle, perhaps declaring them both atop `breakout.c` with constants.  Then calculate coordinates (_x_ and _y_) for your paddle, keeping in mind that it should be initially aligned in the bottom-middle of your game's window.  We leave it to you to decide exactly where.  Odds are some arithmetic involving the window's width and height and the paddle's width and height will help you center it.  Keep in mind that _x_ and _y_ refer to a ``GRect``'s top-left corner, not its own middle.  Your paddle's size and location doesn't need to match the staff's precisely, but it should be perfectly centered, near the window's bottom.  You're welcome to choose a color for it too, for which `setColor` and `setFilled` might be of interest.  Finally, instantiate your paddle with `newGRect`.  (Take note of that function's prototype at http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gobjects.html[].)  Then return the `GRect` returned by `newGRect` (rather than `NULL`, which the distribution code returns only so that the program will compile without `initPaddle` fully implemented).
 . Now, ``initPaddle``'s purpose in life is only to instantiate and return a paddle (i.e., `GRect`).  It shouldn't handle any of the paddle's movement.  For that, turn your attention to the `TODO` up in `main`.  Proceed to replace that `TODO` with some lines of code that respond to a user's mouse movements in such a way that the paddle follows the movements, but only along its (horizontal) x-axis.  Look back at `cursor.c` for inspiration, but keep in mind that `cursor.c` allowed that circle to move along a (vertical) y-axis as well, which we don't want for Breakout, else the paddle could move anywhere (which might be cool but not exactly Breakout).
 . Now turn your attention to the `TODO` in `initBricks`.  Implement that function in such a way that it instantiates a grid of bricks (with `ROWS` rows and `COLS` columns), with each such brick implemented as a `GRect`.  Drawing a `GRect` (or even a bunch of them) isn't all that different from drawing a `GOval` (or circle).  Odds are, though, you'll want to instantiate them within a `for` loop that's within a `for` loop.  (Think back to `mario`, perhaps!)  Be sure to leave a bit of a gap between adjacent bricks, just like we did; exactly how many pixels is up to you.  And we leave it to you to select your bricks' colors.
@@ -406,6 +411,8 @@ When ready to submit, open up a Terminal window and navigate your way to `~/Drop
 zip -r breakout.zip breakout
 ----
 
-If you type `ls` thereafter, you should see that you have a new file called `breakout.zip` in `~/Dropbox`. Your instructor will provide further instructions for how to submit this ZIP file containing your solution to this problem!
+If you type `ls` thereafter, you should see that you have a new file called `breakout.zip` in `~/Dropbox`. 
+
+//TODO
 
 This was Breakout.
