@@ -28,7 +28,7 @@ The only background required for CS50 for AP Computer Science Principles is comp
 
 == Website
 
-This course lives at http://ap.cs50.net/.
+This course lives at http://harvard.cs50.edu/ap.
 
 Visit the course's website to watch videos, to get help, to download handouts and software, and to follow links to other resources.
 
@@ -84,12 +84,12 @@ Consistent with the AP Computer Science Principles curriculum framework, the cou
 
 And the six computational thinking practices are:
 
-P1.	Connecting Computing
-P2.	Creating Computational Artifacts
-P3.	Abstracting
-P4.	Analyzing Problems and Artifacts
-P5.	Communicating (both orally and in writing)
-P6.	Collaborating
+*P1.	Connecting Computing
+*P2.	Creating Computational Artifacts
+*P3.	Abstracting
+*P4.	Analyzing Problems and Artifacts
+*P5.	Communicating (both orally and in writing)
+*P6.	Collaborating
  
 
 === Chapter 0 - Computers and Computing
@@ -126,11 +126,11 @@ Chapter A and B are optional and cover some of the more complex topics. Chapter 
 
 == Problem Sets
 
-//TODO
+All problems are due on April 30, 2017. You will receive a certificate of completion if a satisfactory grade (60%) is earned on all problems. 
 
-== Explore and Create Task
+== AP Credit
 
-//TODO
+The completion of this course does not guarantee AP credit through the College Board. To receive credit, you must coordinate with a high school administrator to turn in the additional through assessments, namely the Explore and Create tasks and AP Exam.  
 
 == Academic Honesty 
 
