@@ -6,7 +6,7 @@ published: false
 
 For help with Week 5 and Problem Set 5:
 
-* Attend Rob's walkthrough on Wed 10/5, 1pm – 2:30pm, in Emerson 210.
+* Attend Rob's walkthrough on Wed 10/5, 1pm – 2:30pm, in Sanders Theatre.
 * Watch Zamyla's walkthroughs herein.
 * Attend your TF's section (or another if you have a conflict).
 * Take advantage of `help50`, `eprintf`, and `debug50`.
