@@ -57,6 +57,8 @@ Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/y
 
 * Implement link:../../../../problems/speller/speller.html[Speller]
 
+== How to Submit
+
 === Step 1 of 2
 
 * Update your IDE:
