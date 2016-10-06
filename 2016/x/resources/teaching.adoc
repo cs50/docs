@@ -1,0 +1,90 @@
+---
+layout: 2016/fall
+title: Teaching CS50 AP
+---
+:skip-front-matter:
+
+== Description
+
+CS50 is Harvard University’s introduction to the intellectual enterprises of computer science and the art of programming for students with a diversity of technological background and experience. CS50 for AP Computer Science Principles is an adaptation of CS50 specifically tailored to align with the AP Computer Science Principles curriculum framework. The course’s assignments, materials, and resources are all identical to the version of the course taught at the college-level, albeit adapted to suit a secondary school audience.
+
+Among this course’s objectives is to supply students with a comprehensive introduction to the fundamentals of the discipline of computer science. We will do so using programming in several different languages as a vehicle to introduce these fundamentals, including such topics as algorithms, abstraction, data, global impact, and internet technologies. Though the course is programming-heavy, it should be stressed that this is not a “programming course”; rather, this course should be considered one of problem-solving, creativity, and exploration. By year’s end, students will have a richer understanding of the key principles of the discipline of computer science. They will be able to speak intelligently about how computers work and how they enable us to become better problem-solvers, and will hopefully be able to communicate that knowledge to others. 
+
+Whether students elect to take no other computer science courses in their lifetime or consider this class the first step in a longer course of study, it is our sincere hope that they feel more comfortable with—and indeed sometimes skeptical of—the technologies that surround us each day.
+
+== Getting Started
+
+Interested in teaching CS50 AP at your high school? Great! Follow these steps and you’ll be on your way.
+
+1.	Take CS50! The best way to teach this class is to take it; indeed we require it of all our own teaching staff! You can find us on edX or you can take the class online via Harvard’s Extension School as either a one- or two-semester variant. In both cases the course content is functionally identical; the main difference between them is that taking the class through Harvard Extension provides you with more resources: In particular, you will be assigned to a teaching fellow, who will lead you through weekly sessions to dive deeper into the content, help you stay on track and on schedule, and you can attend live online office hours with course staff to help get you unstuck in your weekly problem sets.
+
+2.	Sign up for a workshop. Fill out this form to sign up for one of our upcoming workshops.
+
+3.	Familiarize yourself with our tools. At the CS50 AP workshop we will introduce you to many of the tools we have developed to make your life as a teacher easier. All our curriculum lives at cs50.harvard.edu/ap, which is publicly accessible once you create an account and it is activated. We also have a discussion forum where you can ask questions to our team as well as the CS50 AP teacher community; to access it, you only need to have an active edX account, which are freely obtainable on edx.org.
+
+4.	Submit our pre approved syllabus to the College Board with 1658725v1 as the syllabus number to get approved. You can view it here; you must use exactly this PDF if you use the syllabus number above. After submitting, confer with your school’s AP coordinator to check on the approval process.
+
+5.	Once approved, start teaching! 
+
+Feel free to contact ap@cs50.harvard.edu with any questions or concerns.
+
+== Website
+
+This course lives at http://harvard.cs50.edu/ap.
+
+Visit the course's website to watch videos, to get help, to download handouts and software, and to follow links to other resources.
+
+== Overview of Curriculum
+
+Consistent with the AP Computer Science Principles curriculum framework, the course’s material is organized around seven so-called “big ideas” as well as six computational thinking practices. The seven big ideas are:
+
+1.	Creativity
+2.	Abstraction
+3.	Data and Information
+4.	Algorithms
+5.	Programming
+6.	The Internet
+7.	Global Impact
+
+And the six computational thinking practices are:
+
+* P1. Connecting Computing
+* P2. Creating Computational Artifacts
+* P3. Abstracting
+* P4. Analyzing Problems and Artifacts
+* P5. Communicating (both orally and in writing)
+* P6. Collaborating
+ 
+
+=== Chapter 0 - Computers and Computing
+
+Computers and Computing. How Computers Work. Bits and Bytes. Hardware. Memory. Binary. ASCII. Algorithms.
+
+=== Chapter 1 - Building Blocks of Programming
+
+Pseudocode. Scratch. Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops. 
+
+=== Chapter 2 - Putting the Blocks Together
+
+Compiling. Functions and Returning. Arrays and Strings. Command-Line Interaction. Exit Codes. Libraries. Typecasting. Bugs and Debugging.
+
+=== Chapter 3 - Thinking Computationally
+
+Linear Search. Bubble sort. Selection sort. Insertion sort. Binary Search. Time Complexity. Unsolvable Problems. Simulation.
+
+=== Chapter 4 - Design, Elegance, and Efficiency
+
+Principles of Good Design. Ncurses. Structures and Encapsulation. Recursion. Merge Sort. Hexadecimal. File I/O. Images. Version Control and Collaboration.
+
+=== Chapter 5 - Networking and the Internet
+
+Internet Basics. IP Addresses. DNS and DHCP. Routers. TCP and IP. HTTP. Trust Models. Cybersecurity. HTML. CSS.
+
+=== Chapter 6 - Problem Solving in an Interconnected World
+
+PHP. PHP for Web Programming. SQL. MVC. JavaScript. Ajax. Artificial Intelligence. Virtual and Augmented Reality.
+
+=== Optional Chapters
+
+Chapter A and B are optional and cover some of the more complex topics. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect. We recommend completing these chapters between Chapter 4 and 5.
+
