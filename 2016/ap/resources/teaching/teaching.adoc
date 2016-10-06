@@ -4,7 +4,7 @@ title: Teaching CS50 AP
 ---
 :skip-front-matter:
 
-=Teaching CS50 AP
+= Teaching CS50 AP
 
 Below you will find information about bringing CS50 AP to your high school. For questions, email ap@cs50.harvard.edu
 
