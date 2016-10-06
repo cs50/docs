@@ -1,0 +1,133 @@
+---
+layout: 2016/fall
+title: Teaching CS50x
+---
+:skip-front-matter:
+
+= Teaching CS50x
+
+Below you will find information about bringing CS50x to your university, city, or community. For questions, email outreach@cs50.harvard.edu
+
+== Description
+
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
+
+== Getting Started
+
+Interested in teaching CS50x at your university, city or community? Great! Follow these steps and you’ll be on your way.
+
+1.	Take CS50! We strongly encourage teachers to take CS50 before teaching it in their university or community. While you may have a strong CS background, being familiar with our content, tools, teaching style, and course culture will have a positive impact in how you design and run your class. There are two ways to take CS50 online:
+
+a.	http://cs50.edx.org[CS50 via edX]: this is a free course you can take on your own time, with all the tools and resources you need to be successful in CS50. Your problem sets will be automatically graded, and if stuck, you can ask for help in our online https://cs50.harvard.edu/discuss[discussion forum] and https://facebook.com/cs50[Facebook group]. Given the scale of this online course, we don’t offer dedicated teaching staff for edX students.
+
+b.	https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science/14290[CS50 via Harvard's Extension School]: this is a paid course, where you earn a Harvard Extension School certificate and have a CS50 teaching fellow assigned to lead you through weekly sessions to dive deeper into the content, help you stay on track and on schedule, offer online office hours, and give you grading feedback. Unlike the edX version, this course is paced, and you may choose between taking the full course in one semester via https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science/14290[CSCI E-50], or take it between two semesters with https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-i/14880[CSCI E-50A] and https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-ii/15041[CSCI E-50B].
+
+2.	Familiarize yourself with our tools and resources. We’ve developed various tools that make your life as a teacher easier, such as our such as our https://cs50.readme.io/[CS50 IDE], the online https://cs50.harvard.edu/discuss[discussion forum], CS50 Submit, and CS50 Gradebook. You’ll need to use your edX login credentials to use most of our tools, so be sure to have those handy. After taking the course, you’d be familiar with many of these already. We filmed one of 2016’s CS50 https://www.youtube.com/playlist?list=PLhQjrBD2T383M087Hg318-gtadqgsTPzw[AP Workshops in Cambridge], which covers many of these teaching tools.
+
+3.	When naming your course, follow these conventions:
+
+a.	If you're teaching university level, name your group CS50x [University Name]. 
+
+b.	If teaching independent of a school or university, name it CS50x [City].
+
+4.	We encourage our teachers to either adopt the course as is, following the same structure, content, and pace we have at Harvard, or adapt it to your local needs based on your judgement as a teacher. For example, this means you are free to show your students the same video lectures from David, or re-create the lecture yourself in class. You are the best person to judge how to design your class, so we are supportive in what you decide.
+
+== Getting Involved
+
+Join our online CS50 community via our https://www.facebook.com/cs50[Facebook group].
+If you’d like to help us translate CS50 to your native language, go to our https://github.com/cs50/tracks[CS50 Tracks GitHub repository] to get started.
+
+== License
+
+This course's content is licensed by David J. Malan of Harvard University under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License, which means that you are not only welcome to "take" this course,
+
+you are free:
+
+* to Share — to copy, distribute, and transmit this content
+* to Remix — to adapt this content
+
+under the following conditions:
+
+* Attribution — You must attribute this content to David J. Malan of Harvard University but not in any way that suggests endorsement of you or your use of the work.
+* Noncommercial — You may not use this content for commercial purposes.
+* Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
+
+with the understanding that:
+
+* Waiver — Any of the above conditions can be waived if you get permission from David J. Malan of Harvard University
+* Other Rights — In no way are any of the following rights affected by the license:
+** Your fair dealing or fair use rights;
+** Apart from the remix rights granted under this license, the author's moral rights;
+** Rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.
+* Notice — For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by-nc-sa/3.0/.
+
+== Overview of Curriculum
+
+Week 0
+Binary. ASCII. Algorithms. Pseudocode. Source code. Compiler. Object code. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Functions. Arrays. Threads. Events.
+
+Week 1
+Linux. C. Compiling. Libraries. Types. Standard output.
+
+Week 2
+Casting. Imprecision. Switches. Scope. Strings. Arrays. Cryptography.
+
+Week 3
+Command-line arguments. Searching. Sorting. Bubble sort. Selection sort. Insertion sort. O. Ω .Θ. Recursion. Merge Sort.
+
+Week 4
+Stack. Debugging. File I/O. Hexadecimal. Strings. Pointers. Dynamic memory allocation.
+
+Week 5
+Heap. Buffer overflow. Linked lists. Hash tables. Tries. Trees. Stacks. Queues.
+
+Week 6
+TCP/IP. HTTP.
+
+Week 7
+HTML. CSS. PHP.
+
+Week 8
+MVC. SQL.
+
+Week 9
+JavaScript. Ajax.
+
+Week 10
+Security. Artificial intelligence.
+
+Week 11
+Artificial intelligence, continued.
+
+Week 12
+Exciting conclusion.
+
+=== Problem Sets
+
+We have developed nine problem sets for this course. In order to accommodate students with different backgrounds, some problem sets are released in two editions: a standard edition intended for most students and a "Hacker Edition" intended for some students. Both editions essentially cover the same material. But the Hacker Edition typically presents that material from a more technical angle and poses more sophisticated questions.
+
+Problem Set 0: Scratch
+
+Problem Set 1: C
+
+Problem Set 2: Crypto
+
+Problem Set 3: Game of Fifteen
+
+Problem Set 4: Forensics
+
+Problem Set 5: Mispellings
+
+Problem Set 6: Web Server
+
+Problem Set 7: C$50 Finance
+
+Problem Set 8: Mashup
+
+=== Final Project
+
+The climax of this course is its final project. The final project is students’ opportunity to take their newfound savvy with programming out for a spin and develop their very own piece of software. So long as their project draws upon this course’s lessons, the nature of your project is entirely up to them. They may implement their project in any language(s), and are welcome to utilize infrastructure other than the CS50 IDE. All that we ask is that they build something of interest to them, that you solve an actual problem, or that can change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, they are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group’s project. Moreover, it is expected that the scope of a two- or three-person group’s project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course’s problem sets. Although no more than three students may design and implement a given project, they are welcome to solicit advice from others, so long as they respect the course’s policy on academic honesty.
+
+See http://cdn.cs50.net/2016/x/project/project.html for details.
