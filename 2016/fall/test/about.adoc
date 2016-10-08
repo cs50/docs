@@ -1,0 +1,59 @@
+---
+layout: 2016/fall
+title: About Test
+---
+
+= About Test
+
+Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
+
+The test will be released via the course's website at noon on Fri 10/14. You should expect to spend several (but not 72!) hours on the test.
+
+Quiz 0 will take place in lieu of lecture on Wed 10/14.  It will cover weeks 0 through 5.
+
+[width="100%",cols="2"]
+[options="header"]
+|====
+| If your LAST name starts with... | go at 1:00pm on Wed 10/14 to...
+| A – B | http://imsroombook.fas.harvard.edu/room.php?rm=rm0073[Harvard Hall 201]
+| C – D | http://imsroombook.fas.harvard.edu/room.php?rm=rm0083[Jefferson Lab 250]
+| E – G | http://imsroombook.fas.harvard.edu/room.php?rm=rm0075[Harvard Hall 202]
+| H – L | http://imsroombook.fas.harvard.edu/room.php?rm=rm0024[Lowell Lecture Hall]
+| M – R | http://imsroombook.fas.harvard.edu/room.php?rm=rm0218[University Museum, Geological Lecture Hall]
+| S     | http://imsroombook.fas.harvard.edu/room.php?rm=rm0135[Sever Hall 113]
+| T – Z | http://imsroombook.fas.harvard.edu/room.php?rm=rm0827[Harvard Art Museums, Menschel Hall]
+|====
+
+[width="100%",cols="2"]
+[options="header"]
+|====
+| Unless you... | in which case...
+| have AEO accommodations | go to https://goo.gl/maps/GQEJr4hBSaD2[125 Mount Auburn Street #345] at 1:00pm on Wed 10/14
+| are simultaneously enrolled in CS50 and another class | go to http://imsroombook.fas.harvard.edu/room.php?rm=rm0641[Science Center Hall B] at 5:30pm on Wed 10/14
+| are an HBS student | go to http://myatlascms.com/map/?id=53&mrkId=1004#!m/49267[Aldrich 211] at 1:00pm on Wed 10/14 or go to http://imsroombook.fas.harvard.edu/room.php?rm=rm0641[Science Center Hall B] at 5:30pm on Wed 10/14
+| are an Extension student in CSCI E-50 | go to http://imsroombook.fas.harvard.edu/room.php?rm=rm0641[Science Center Hall B] at 5:30pm on Wed 10/14 or take the quiz online per David's email anytime between 1:00pm on Wed 10/14 and 1:00pm on Fri 10/16
+| are a high school student | go to http://imsroombook.fas.harvard.edu/room.php?rm=rm0641[Science Center Hall B] at 5:30pm on Wed 10/14
+|====
+
+This 75-minute quiz will start at 1:10pm (or 5:40pm, per the exceptions above). Arriving _n_ minutes late will cost you _n_ of those 75. The quiz will be "closed-book." However, you may utilize during the quiz one two-sided page (8.5" × 11") of handwritten or typed notes, blank scrap paper, and a pen or pencil, nothing else.
+
+The teaching fellows will hold a course-wide review session and Q&A for the quiz on Sun 10/11 from 2:30pm until 4pm in http://imsroombook.fas.harvard.edu/room.php?rm=rm0449[Northwest Building B-103]; it will be streamed live and available on demand immediately afterward at https://cs50.harvard.edu/[cs50.harvard.edu]. Sections on Sun 10/11, Mon 10/12, and Tue 10/13 will also involve review for the quiz. At office hours on Mon 10/12 and Tue 10/13, staff will be available to answer
+additional questions about the quiz.
+
+The quiz's questions may include, but may not be limited to, multiple choice, true or false, and short answers as well as limited debugging and coding.  We do realize it's hard enough to get your code to compile in CS50 IDE sometimes, let alone on a piece of paper, so any coding exercises will be limited in scope. The quiz will be more conceptual than it will be mechanical.  Among its aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems.
+
+## How to Study
+
+Ultimately, how best to study depends on how you learn best.  But allow us to recommend that you prioritize your studies per the ordering below.
+
+. Consult the latest version of the *syllabus* for a (non-exhaustive) list of topics covered in lectures in weeks 0 through 5.  (Keep in mind that topics that appeared in one week might have reappeared in subsequent weeks.)
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any, including David's *walkthroughs* thereof, if any.
+. Review each lecture's *slides*.
+. Review each lecture's *video*.
+. Take past *quizzes*.  Rather than simply review past quizzes' questions and answers, do try to "take" each, allowing yourself 75 minutes for each, so as to identify material you'd best review further.  Realize, though, that some topics covered in past terms might not have been covered in this term.  Rely on this year's syllabus, lectures, and problem sets as the official sources for this year's topics. *Note that this year's quiz may involve new types of questions, particularly
+scenario-based design questions that introduce domains beyond computer science.*
+. Review each section's *study guide*, if any.
+. Review each section's *slides* and *source code*, if any.
+. Review each section's *video*.
+. Review each problem set's *specification*, *postmortems*, and *distribution code*, if any.

@@ -10,7 +10,6 @@ layout: 2016/fall
 . Watch https://video.cs50.net/2016/fall/lectures/5[Week 5's lecture].
 . Answer some questions about a spell checker.
 . Implement a spell checker.
-. Answer some more questions about a spell checker.
 . Submit a form.
 
 include::help-yale.adoc[]
