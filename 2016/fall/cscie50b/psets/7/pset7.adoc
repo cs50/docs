@@ -739,5 +739,3 @@ If you type `ls` thereafter, you should see that you have a new file called `pse
 . Head to https://www.dropbox.com/request/IurSz0GTf1kWZus1hNDE[this link] to upload your ZIP file containing your `pset7` submission!
 
 This was Problem Set 7.
-
-https://www.dropbox.com/request/IurSz0GTf1kWZus1hNDE
