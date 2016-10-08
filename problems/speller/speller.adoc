@@ -294,7 +294,7 @@ Alright, ready to go?
 
 == Walkthrough
 
-video::u9-1U1Rgo1o,qTFnQ1nohM8,hsruECgJJVQ,O3tErLhuEmY[youtube]
+video::u9-1U1Rgo1o,0x9rSfV85g8,hsruECgJJVQ,O3tErLhuEmY[youtube]
 
 == Hints
 
@@ -405,5 +405,21 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == Changelog
 
+* 2016-10-07
+** Corrected walkthrough for `load`, wherein sample code had
++
+[source,c]
+----
+node1->word = "Hello";
+node2->word = "World";
+----
++
+instead of
++
+[source,c]
+----
+strcpy(node1->word, "Hello");
+strcpy(node2->word, "World");
+----
 * 2016-09-30
 ** Initial release.
