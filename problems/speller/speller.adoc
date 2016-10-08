@@ -294,7 +294,7 @@ Alright, ready to go?
 
 == Walkthrough
 
-video::u9-1U1Rgo1o,0x9rSfV85g8,hsruECgJJVQ,O3tErLhuEmY[youtube]
+video::u9-1U1Rgo1o,CJXaXcXzu4g,hsruECgJJVQ,O3tErLhuEmY[youtube]
 
 **In the walkthrough for `load`, at https://www.youtube.com/watch?time_continue=373&v=0x9rSfV85g8[00:06:13], note that:**
 
@@ -424,6 +424,20 @@ _None so far! Reload this page periodically to check if any arise!_
 == Changelog
 
 * 2016-10-08
-** Added boldfaced comment about error in walkthrough for `load`.
+** Corrected walkthrough for `load`, wherein sample code had
++
+[source,c]
+----
+node1->word = "Hello";
+node2->word = "World";
+----
++
+instead of
++
+[source,c]
+----
+strcpy(node1->word, "Hello");
+strcpy(node2->word, "World");
+----
 * 2016-09-30
 ** Initial release.
