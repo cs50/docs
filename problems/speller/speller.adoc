@@ -294,7 +294,7 @@ Alright, ready to go?
 
 == Walkthrough
 
-video::u9-1U1Rgo1o,CJXaXcXzu4g,hsruECgJJVQ,O3tErLhuEmY[youtube]
+video::u9-1U1Rgo1o,okH8f9xl0uY,hsruECgJJVQ,O3tErLhuEmY[youtube]
 
 **In the walkthrough for `load`, at https://www.youtube.com/watch?time_continue=373&v=0x9rSfV85g8[00:06:13], note that:**
 
