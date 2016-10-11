@@ -90,3 +90,50 @@ Optional Chapters
 
 Chapter A and B are optional and cover some of the more complex topics. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect. We recommend completing these chapters between Chapter 4 and 5.
 
+== License and Fair Use
+
+This course’s content is licensed by David J. Malan of Harvard University under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License, which means that you are not only welcome to "take" this course,
+
+you are free:
+
+* to Share — to copy, distribute, and transmit this content
+
+* to Remix — to adapt this content
+
+under the following conditions:
+
+* Attribution — You must attribute this content to David J. Malan of Harvard University but not in any way that suggests endorsement of you or your use of the work.
+
+* Noncommercial — You may not use this content for commercial purposes.
+
+* Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
+
+with the understanding that:
+
+* Waiver — Any of the above conditions can be waived if you get permission from David J. Malan of Harvard University
+
+* Other Rights — In no way are any of the following rights affected by the license:
+
+** Your fair dealing or fair use rights;
+
+** Apart from the remix rights granted under this license, the author’s moral rights;
+
+** Rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.
+
+* Notice — For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by-nc-sa/3.0/.
+
+== FAQs
+
+=== Can I teach CS50 AP internationally?
+
+Indeed you can! We are currently located in nearly 20 countries and would love to share our resources and tools with anyone willing to teach our curriculum!
+
+=== Can I teach CS50 AP if I am not affiliated with a high school?
+
+Typically, our workshops are geared towards high school teachers. If you intend to teach high school or are looking to adapt our course for middle school, feel free to follow the steps listed above. If you are in fact looking to teach to in a community, city, or university, refer to http://docs.cs50.net/2016/x/resources/teaching/teaching.html
+
+=== Are the workshops only for high school teachers?
+
+No, anyone who wants to use our curriculum to teach some variation of CS50 should feel free to sign up for a workshop, just keep in mind that they are geared more toward a high school teacher audience.
+
+
