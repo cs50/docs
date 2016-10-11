@@ -155,21 +155,7 @@ If you execute
 ls
 ----
 
-you should see that `public` contains four subdirectories and three files.  Ensure that the former are world-executable by executing the below.
-
-[source]
-----
-chmod a+x css fonts img js
-----
-
-And ensure that the files within those directories are world-readable by executing the below.
-
-[source]
-----
-chmod a+r css/* fonts/* img/* js/*
-----
-
-If unfamiliar, `\*` is a "wildcard character," so `css/*`, for instance, simply means "all files within the `css` directory."
+you should see that `public` contains four subdirectories and three files.  
 
 Okay, let's now configure CS50 IDE's web server (aka Apache) to use `~/workspace/pset7/public` as its root. First ensure that Problem Set 6's `server` isn't still running (e.g., in another tab) by executing the below.
 
