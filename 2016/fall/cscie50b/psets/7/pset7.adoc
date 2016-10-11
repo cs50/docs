@@ -135,10 +135,13 @@ Next, ensure that `~/workspace/pset7/public` is "world-executable" by executing
 
 [source]
 ----
-chmod a+x ~/workspace/pset7/public
+chmod a+x ~/workspace/pset7
+cd ~/workspace/pset7
+chmod -R a+x .
+chmod -R a+r .
 ----
 
-so that CS50 IDE's web server (Apache) and you (from a browser) will be able to access your work.  Then, navigate your way to `~/workspace/pset7/public` by executing the below.
+Don't omit those periods at the end of the third and fourth commands above, so that CS50 IDE's web server (Apache) and you (from a browser) will be able to access your work.  Then, navigate your way to `~/workspace/pset7/public` by executing the below.
 
 [source]
 ----
@@ -167,8 +170,6 @@ chmod a+r css/* fonts/* img/* js/*
 ----
 
 If unfamiliar, `\*` is a "wildcard character," so `css/*`, for instance, simply means "all files within the `css` directory."
-
-For security's sake, don't make `~/workspace/pset7/includes` or `~/workspace/pset7/views` world-executable (or their contents world-readable), as they shouldn't be (potentially) accessible to the whole world (only to your PHP code, as you'll soon see).
 
 Okay, let's now configure CS50 IDE's web server (aka Apache) to use `~/workspace/pset7/public` as its root. First ensure that Problem Set 6's `server` isn't still running (e.g., in another tab) by executing the below.
 
