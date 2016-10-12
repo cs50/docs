@@ -128,7 +128,7 @@ A schedule of problems, subject to change, appears below.
 | http://docs.cs50.net/2016/fall/cscie50a/problems/greedy/greedy.html[Greedy] | Programming | Tue 9/20 | Sat 9/24
 | http://docs.cs50.net/2016/fall/cscie50a/problems/ui/ui.html[Me, Myself, and UI] | Written | Fri 9/23 | Wed 9/28
 | http://docs.cs50.net/2016/fall/cscie50a/problems/isbn/isbn.html[ISBN] | Programming | Tue 9/27 | Sat 10/1
-| Tech Spotlight | Written | Tue 10/11 | Sat 10/15
+| http://docs.cs50.net/2016/fall/cscie50a/problems/tech/tech.html[Tech Spotlight] | Written | Tue 10/11 | Sat 10/15
 | Calc | Programming | Fri 10/14 | Wed 10/19
 | Initials | Programming | Tue 10/18 | Sat 10/22
 | Caesar | Programming | Fri 10/21 | Wed 10/26
