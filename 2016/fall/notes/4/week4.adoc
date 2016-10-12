@@ -419,8 +419,7 @@ image::stack3.png[alt="Stack overflow 3", width=400]
 +
 image::zamyla.png[alt="Zamyla", width=400]
 ** Each grid is a pixel, since an image has a finite size and thus finite information in it.
-* A black and white smiley face might be represented in binary like this:
-image::smiley.png[alt="Smiley", width=400]
+* A black and white smiley face might be represented in binary like this: image:smiley.png[alt="Smiley",width=400]
 ** With the bit `1` to represent black and `0` for white, we can create a "bitmap" image.
 * The bitmap format is like the JPEG format for images, except that JPEGs use compression, which makes images smaller by using fewer bits, and throwing away some of the information. And JPEG files all start with the same three bytes, `255`, `216`, `255` as a standard, to indicate its filetype.
 * We've learned binary and decimal, and there is also hexadecimal, which uses 16 symbols instead of 10, with the symbols `0-9` and `a`, `b`, `c`, `d`, `e`, `f`.
