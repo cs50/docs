@@ -1,0 +1,92 @@
+== Sales Force
+
+Spreadsheets are awesome! You may think we're crazy for saying it, but if that's the case then crazy we be. They provide an incredibly efficient way to store data:
+
+|===
+| 7 | 5 | 26 | 2
+| 8 | 2 | 13 | 1
+| 6 | 4 | 22 | 0
+| 5 | 7 | 19 | 0
+| 6 | 5 | 8 | 1
+| 8 | 4 | 24 | 3
+| 9 | 2 | 43 | 1
+|===
+
+Look how efficient that is! Twenty-eight pieces of information consolidated down to a single 7x4 grid. Technology! Spreadsheets are particularly helpful to sales managers when they are trying to organize a perhaps massive amount of information about what's going on in their store.
+
+For example, a common type of spreadsheet might be one where rows represent days of the week, and each column represents the quantity of one particular stock item sold in a store that day. Then we could add up an entire row (e.g., 7 + 5 + 26 + 2) to figure out how many items total the store sold on a particular day. Or we could add up an entire column (e.g., 7 + 8 + 6 + 5 + 6 + 8 + 9) to figure out how many of a given item the store sold over that seven-day period.
+
+The above 7x4 spreadsheet looks conceptually similar to the Game of Fifteen in its representation: a two-dimensional array, with an integer stored at each location. We could perhaps have stored this spreadsheet in a two-dimensional array in C, declaring it as:
+
+[source, c]
+----
+int sales[7][4];
+----
+
+Anyway, why all this talk about spreadsheets? Well it turns out that Patrick runs a store called the Four Store at Yale, where he sells exactly four items:
+
+[start=0]
+. Blue T-shirts (for $19.95 apiece)
+. Stuffed bulldogs (for $14.95 apiece)
+. Floppy disks (for $1.49 apiece)
+. Football trophiesfootnote:[Ohhh... that explains why that fourth column has such low numbers!] (for $65.59 apiece)
+
+Patrick wants to know how his sales are doing, and the above array actually represents his sales figures from this past week. That is, if you add together all of the `sales[0][j]`, where `0 <= j <= 3`, you get the total number of items Patrick sold on Sunday. If you add together all of the `sales[1][j]`, where `0 <= j <= 3`, you get the total number of items he sold on Monday, and so on.
+
+Furthermore, if you add together all of the `sales[i][0]`, where `0 <= i <= 6`, you get the total number of blue t-shirts he sold this week. If you add together all of the `sales[i][1]`, where `0 <= i <= 6`, you get the total number of stuffed bulldogs he sold this week, and so on.
+
+Complete the implementation of `sales.c` below, such that when compiled it results in a program that adheres to the following specifications:
+
+* When run, it first prints out the total dollar value of all goods sold that week.
+* Then it prints a blank line.
+* Then it prints seven lines, each one representing the total dollar value of all goods sold on a particular day, from Sunday through Saturday.
+* Then it prints a blank line.
+* Then it prints four lines, each one representing the total dollar value of each type of good sold that week, from blue t-shirts through football trophies.
+
+Patrick will likely want to change `sales` each week so he can use this program indefinitely, but we've pre-populated the current week's sales figures into `sales.c` to get you started. We've declared it, as well as the array of `prices` (which are also subject to change) globally in case you want to write any helper functions, so you don't have to pass the array as a parameter to any of them. You're welcome to declare any additional constants or functions you need, as well as to include any additional header files that may be of help to you.
+
+[source,c]
+----
+// constants
+#define ITEMS 4
+#define DAYS 7
+
+// includes
+#include <stdio.h>
+
+// global arrays
+int sales[DAYS][ITEMS] = {{7, 5, 26, 2},
+                          {8, 2, 13, 1},
+                          {6, 4, 22, 0},
+                          {5, 7, 19, 0},
+                          {6, 5,  8, 1},
+                          {8, 4, 24, 3},
+                          {9, 2, 43, 1}};
+
+float prices[ITEMS] = {19.95, 14.95, 1.49, 65.59};
+
+int main(void)
+{
+    // TODO
+}
+----
+
+As a sanity check as you work on this problem, the sample output for this program, based on the specification above and the current values of `sales` and `prices`, would be:
+
+[source]
+----
+2166.77
+
+384.32
+274.46
+212.28
+232.71
+271.96
+451.93
+339.11
+
+977.55
+433.55
+230.95
+524.72
+----

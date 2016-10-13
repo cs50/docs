@@ -11,7 +11,7 @@ The test will be released via the course's website at noon on Fri 10/14 and will
 
 The teaching fellows will hold a course-wide review session for the test on Wed 10/12 from 1:00pm until 2:30pm in Sanders Theatre; it will be streamed live at https://live.cs50.net/[live.cs50.net] and be available on demand immediately afterward at https://cs50.harvard.edu/[cs50.harvard.edu]. Sections on Mon 10/10, Tue 10/11, and Wed 10/12 will also be opportunities for review. Office hours on Wed 10/12 and Thu 10/13 will be additional opportunities for Q&A.
 
-Among the test's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. Unlike past years' quizzes, the test will not have multiple-choice or true-false questions. But it will have short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE). 
+Among the test's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. Unlike past years' quizzes, the test will not have multiple-choice or true-false questions. But it will have short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE).
 
 == How to Prepare
 
@@ -24,3 +24,10 @@ Ultimately, how best to prepare depends on how you learn best. But allow us to r
 . Review each lecture's *video*.
 . Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's syllabus, lectures, and problem sets as the official sources for this year's topics.
 . Review problem sets' *specifications*, *postmortems*, and *distribution code*, if any.
+
+== Practice Exercises
+
+The following two questions are representative of the type of question you may see on this year's Test, given the new format:
+
+* link:practice/help50/help50.adoc[Human `help50`]
+* link:practice/sales/sales.adoc[Sales Force]

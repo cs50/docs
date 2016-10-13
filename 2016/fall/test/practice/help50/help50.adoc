@@ -1,0 +1,93 @@
+=== Human `help50`
+
+If not yet familiar, `help50` is a command line tool included with CS50 IDE that makes an effort to translate some of the more arcane error messages that other tools, such as `clang` or `valgrind`, sometimes spit out. In this way, it serves as a "virtual TF" of sorts, hopefully helping nudge students in the right direction, so that they needn't wait for a staff member at office hours when a little bit of translation of the error message is really all that's needed to move on.
+
+If you aren't familiar with `help50` just yet, now is the time! Here's an example of a simple broken C file, `rocket.c`, which is supposed to count down from `10` and then print `blastoff!`:
+
+[source,c]
+----
+#include <stdio.h>
+
+int main(void)
+{
+    int i;
+    for(i = 10; i > 0; i--);
+    {
+        printf("%i... ", i);
+    }
+    printf("blastoff!\n");
+}
+----
+
+Copy this code *exactly* into your IDE (even if you've already spotted the problem) and try to compile this program with `make rocket`. You should receive the following output from `clang`:
+
+[source]
+----
+rocket.c:6:28: error: for loop has empty body [-Werror,-Wempty-body]
+    for(int i = 10; i > 0; i--);
+----
+
+Hmm... that `for` loop's body looks awfully populated to me; maybe `help50` can make some sense of it? Let's attempt to recompile `rocket`, but this time prepend the command with `help50`. Perhaps this error message sheds more light onto the problem:
+
+[source]
+----
+Helping with...
+
+rocket.c:6:28: error: for loop has empty body [-Werror,-Wempty-body]
+
+Try removing the semicolon directly after the closing parentheses of the for loop on line 6 of rocket.c.
+----
+
+Ahh, that helps! If you remove the semicolon and attempt to recompile, everything works as expected.
+
+`help50` works because the staff has written a series of "matchers" for different errors into its source code. Basically, we've written code that looks for certain types of error messages that `clang` or `valgrind` might output, and when one of those matchers, well, _matches_ what we're looking for, it outputs a more human-friendly translation of that message. Unfortunately, it seems the number of errors these programs can spit out is quite large, and `help50` doesn't yet have so-called "matchers" for all types of errors. In those cases, it'll just tell you that it doesn't know what to say.
+
+Put yourself in the shoes of a TF or CA at office hours. If you see errors like the five below (which you or your classmates have actually experienced this semester!), how would you advise `help50` to respond? A friendly one- or two-sentence note for each should suffice!
+
+* Problem Set 1:
++
+[source]
+----
+mario.c:19:27: error: invalid conversion specifier '
+' [-Werror,-Wformat-invalid-specifier]
+                printf("%#\n", i);
+                        ~~^
+----
+
+* Problem Set 2:
++
+[source]
+----
+initials.c:13:10: error: definition of variable with array type needs an explicit size or an initializer
+    char initials[];
+         ^
+----
+
+* Problem Set 3:
++
+[source]
+----
+find.c:53:16: error: non-object type 'bool (int, int *, int)' is not assignable
+    if (search = true)
+        ~~~~~~ ^
+----
+
+* Problem Set 4:
++
+[source]
+----
+recover.c:22:10: error: variable 'blockptr' is used uninitialized whenever 'if' condition is false [-Werror,-Wsometimes-uninitialized]
+     if (cardptr == NULL)
+         ^~~~~~~~~~~~~~~
+----
+
+* Problem Set 5:
++
+[source]
+----
+dictionary.c:146:36: error: passing 'const char *' to parameter of type
+      'char *' discards qualifiers
+      [-Werror,-Wincompatible-pointer-types-discards-qualifiers]
+    int hash_value = hash_function(word);
+                                    ^~~~
+----
