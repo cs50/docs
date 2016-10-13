@@ -31,9 +31,9 @@ Anyway, why all this talk about spreadsheets? Well it turns out that Patrick run
 . Floppy disks (for $1.49 apiece)
 . Football trophiesfootnote:[Ohhh... that explains why that fourth column has such low numbers!] (for $65.59 apiece)
 
-Patrick wants to know how his sales are doing, and the above array actually represents his sales figures from this past week. That is, if you add together all of the `sales[0][j]`, where `0 <= j <= 3`, you get the total number of items Patrick sold on Sunday. If you add together all of the `sales[1][j]`, where `0 <= j <= 3`, you get the total number of items he sold on Monday, and so on.
+Patrick wants to know how his sales are doing, and the above array actually represents his sales figures from this past week. That is, if you add together all of the `sales[0][j]`, where `0 pass:[<=] j pass:[<=] 3`, you get the total number of items Patrick sold on Sunday. If you add together all of the `sales[1][j]`, where `0 pass:[<=] j pass:[<=] 3`, you get the total number of items he sold on Monday, and so on.
 
-Furthermore, if you add together all of the `sales[i][0]`, where `0 <= i <= 6`, you get the total number of blue t-shirts he sold this week. If you add together all of the `sales[i][1]`, where `0 <= i <= 6`, you get the total number of stuffed bulldogs he sold this week, and so on.
+Furthermore, if you add together all of the `sales[i][0]`, where `0 pass:[<=] i pass:[<=] 6`, you get the total number of blue t-shirts he sold this week. If you add together all of the `sales[i][1]`, where `0 pass:[<=] i pass:[<=] 6`, you get the total number of stuffed bulldogs he sold this week, and so on.
 
 Complete the implementation of `sales.c` below, such that when compiled it results in a program that adheres to the following specifications:
 
