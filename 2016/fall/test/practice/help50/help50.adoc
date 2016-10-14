@@ -96,4 +96,4 @@ dictionary.c:146:36: error: passing 'const char *' to parameter of type
 
 === Sample Solution
 
-link:solution.html[Human `help50` - Sample Solution]
+link:solution.html[Human `help50` (sample solution)]

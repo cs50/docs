@@ -11,7 +11,7 @@ Helping with...
 mario.c:19:27: error: invalid conversion specifier '
 ----
 +
-It looks like you're trying to use '%#' as a format specifier in `printf`, but `printf` doesn't support that specifier like it does with `%s` or `%i`. If you want to print `#`, try just printing it directly!
+It looks like you're trying to use '%pass:[#]' as a format specifier in `printf`, but `printf` doesn't support that specifier like it does with `%s` or `%i`. If you want to print `pass:[#]`, try just printing it directly!
 
 * Problem Set 2
 +
