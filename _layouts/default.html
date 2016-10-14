@@ -26,8 +26,8 @@
 
             $(function() {
 
-                // add start=0 to ordered lists
-                $('ol').each(function() {
+                // add start=0 to top-level ordered lists
+                $('div.olist.arabic > ol').each(function() {
                     if (!$(this).attr('start')) {
                         $(this).attr('start', '0');
                     }
