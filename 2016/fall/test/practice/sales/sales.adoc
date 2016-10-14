@@ -1,5 +1,7 @@
 == Sales Force
 
+=== Problem
+
 Spreadsheets are awesome! You may think we're crazy for saying it, but if that's the case then crazy we be. They provide an incredibly efficient way to store data:
 
 |===
@@ -90,3 +92,7 @@ As a sanity check as you work on this problem, the sample output for this progra
 230.95
 524.72
 ----
+
+=== Sample Solution
+
+link:solution.html[Sales Force (sample solution)]

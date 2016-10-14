@@ -1,4 +1,6 @@
-=== Human `help50`
+== Human `help50`
+
+=== Problem
 
 If not yet familiar, `help50` is a command line tool included with CS50 IDE that makes an effort to translate some of the more arcane error messages that other tools, such as `clang` or `valgrind`, sometimes spit out. In this way, it serves as a "virtual TF" of sorts, hopefully helping nudge students in the right direction, so that they needn't wait for a staff member at office hours when a little bit of translation of the error message is really all that's needed to move on.
 
@@ -91,3 +93,7 @@ dictionary.c:146:36: error: passing 'const char *' to parameter of type
     int hash_value = hash_function(word);
                                     ^~~~
 ----
+
+=== Sample Solution
+
+link:solution.html[Human `help50` - Sample Solution]

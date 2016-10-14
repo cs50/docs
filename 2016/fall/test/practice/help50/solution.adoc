@@ -1,0 +1,60 @@
+=== Human `help50` (sample solution)
+
+Other answers are possible.
+
+* Problem Set 1
++
+[source]
+----
+Helping with...
+
+mario.c:19:27: error: invalid conversion specifier '
+
+It looks like you're trying to use '%#' as a format specifier in `printf`, but `printf` doesn't support that specifier like it does with `%s` or `%i`. If you want to print `#`, try just printing it directly!
+----
+
+* Problem Set 2
++
+[source]
+----
+Helping with...
+
+initials.c:13:10: error: definition of variable with array type needs an explicit size or an initializer
+
+It looks like you've declared an array on line 13 of initials.c without giving it a size. When you declare an array, you either need to provide its size explicitly, or initialize its contents at the same time as when you declare it.
+----
+
+* Problem Set 3
++
++
+[source]
+----
+Helping with...
+
+find.c:53:16: error: non-object type 'bool (int, int *, int)' is not assignable
+
+It looks like you're trying to assign a boolean value (`true` or `false`) to a variable that is not of type `bool`!
+----
+
+* Problem Set 4
++
+[source]
+----
+Helping with...
+
+recover.c:22:10: error: variable 'blockptr' is used uninitialized whenever 'if' condition is false [-Werror,-Wsometimes-uninitialized]
+
+It looks like in your program you seem to be declaring `blockptr`, and only assigning it a value if the condition on line 22 of recover.c is true. Make sure that a value is assigned to `blockptr` regardless, before it could possibly be used later on.
+----
+
+* Problem Set 5
++
+[source]
+----
+Helping with...
+
+dictionary.c:146:36: error: passing 'const char *' to parameter of type
+      'char *' discards qualifiers
+
+It looks like you're trying to pass a variable of type `const char *` as a parameter to a function that only accepts `char *`. That would allow a variable with the `const` qualifier to be modified, which isn't allowed!
+----
