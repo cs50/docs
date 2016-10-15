@@ -173,8 +173,4 @@ But this is a Hacker edition, and we expect you to hack. Sometimes that means be
 
 There's no `check50` or staff solution for this problem. After all, where would be the fun in that?!
 
-== How to Submit
-
-//TODO
-
 This was Reverse Engineer.

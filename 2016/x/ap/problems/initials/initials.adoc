@@ -163,6 +163,6 @@ And if you'd like to play with the staff's own implementation of `initials`, you
 
 == How to Submit
 
-//TODO
+We are still in the process of building the submission platform for coding problems. In the meantime, use `check50` to review your code and refresh this page on October 21, 2016 to submit your problem for a grade.
 
 This was Initials.
