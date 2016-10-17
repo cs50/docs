@@ -20,7 +20,7 @@
         <div id="header">
             <div class="toc2" id="toc">
                 <div id="toctitle">Table of Contents</div>
-                {{ page.document | tocify_asciidoc }}
+                {{ page.document | tocify_asciidoc: page.toclevels }}
             </div>
         </div>
         <div id="content">
