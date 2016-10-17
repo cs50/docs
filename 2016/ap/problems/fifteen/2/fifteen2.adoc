@@ -115,7 +115,7 @@ at your prompt to ensure that you're inside of `chapter3` (which is inside of `w
 
 [source,bash]
 ----
-wget http://docs.cs50.net/ap/1617/problems/fifteen/2/fifteen2.zip
+wget http://docs.cs50.net/2016/ap/problems/fifteen/2/fifteen2.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see a bunch of output followed by:
