@@ -640,14 +640,261 @@ image::mvc.png[alt="MVC", width=500]
 ** The View has the look of the site, with HTML templates and CSS styles.
 ** The Model has the data that the controller uses to fill in Views, which will then form what the user gets back.
 * Today we'll focus on the V and the C.
-* To be continued.
+* Python comes with built-in web server capabilities, that starts a program on your computer that listens to requests from the internet to your computer, and responds to them. We'll create our own `HTTPServer_RequestHandler` that inherits (takes the methods of) the `BaseHTTPRequestHandler` class that comes with Python:
++
+[source, python]
+----
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+# HTTPRequestHandler class
+class HTTPServer_RequestHandler(BaseHTTPRequestHandler):
+
+    # GET
+    def do_GET(self):
+        # send response status code
+        self.send_response(200)
+
+        # send headers
+        self.send_header('Content-type','text/html')
+        self.end_headers()
+
+        # determine message to send to client
+        if self.path == "/":
+            message = "Hello, world!"
+        else:
+            name = self.path[1:]
+            message = "Hello, {}!".format(name)
+
+        # write message
+        self.wfile.write(bytes(message, "utf8"))
+        return
+...
+----
+** We'll write our own `do_GET` function for the server that is called when a `GET` request is received. We'll always send back the response code `200`, send a header, and write a message back.
+** And all of these functions and features we'd learn about from reading Python documentation online.
+* Then we need to start our server:
++
+[source, python]
+----
+...
+def run():
+  print('starting server...')
+
+  # set up server
+  port = 8080
+  server_address = ('127.0.0.1', port)
+  httpd = HTTPServer(server_address, HTTPServer_RequestHandler)
+
+  # run server
+  print('running server on port {}...'.format(port))
+  httpd.serve_forever()
 
 
+run()
+----
+** We specify the port that we want to listen to messages from, the address of the server (`127.0.0.1` is always our own computer, create an `HTTPServer` that's built-into Python, but giving it our own `HTTPServer_RequestHandler`. And finally we run it with the `serve_forever` function.
+* We start the program, and nothing seems to happen. But if we open our browser and visit `http://127.0.0.1:8080` (on the CS50 IDE, the address will be different), we'll see:
++
+[source]
+----
+hello, world
+----
+* But this is just text, and to write out code that generates HTML from scratch would be a lot of work.
+* We can use a framework, a collection of code that contains even more functionality that we can use to build projects on top of.
+* One such framework is Flask, which has some basic functionality we can use. A basic application will look something like this:
++
+[source, python]
+----
+from flask import Flask, redirect, render_template, request, session, url_for
 
+app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return render_template("index.html")
 
+@app.route("/register", methods=["POST"])
+def register():
+    if request.form["name"] == "" or "captain" not in request.form or "comfort" not in request.form or request.form["dorm"] == "":
+        return render_template("failure.html")
+    return render_template("success.html")
+----
+** We first `import` lots of functionality `from flask`, and create an `app`.
+** Then we have a line `@app.route("/")` that says the next function should be called whenever that path on the web server is requested. In this case, the function will return `render_template("index.html")`, or whatever the file `index.html` looks like.
+** Then if we see `@app.route("/register", methods=["POST"])`, someone sending a `POST` request to `/register`, we'll call the `register` function underneath. That function, if we don't have certain elements in the `form`, will return the template `failure.html`. Otherwise, it'll return `success.html`.
+* So we'll run this app by going to the directory with our `application.py` file, and run `$ flask run --host=0.0.0.0 --port=8080`. With `--host=0.0.0.0`, we're specifying that it listens to requests for all addresses.
+* Now if we visit `http://127.0.0.1:8080` in our browser, we get back a form we've implemented in `index.html`:
++
+image::form.png[alt="form", width=200]
+* And if we fill out that form, we'll see an error or success message, depending on how much we've filled in:
++
+image::failure.png[alt="failure", width=200]
++
+image::success.png[alt="success", width=200]
+** Even if we fill in the form, we aren't really registered for anything since this application doesn't have a database, or a place to store the data that we just entered.
+* But in any case, let's look at `failure.html`:
++
+[source]
+----
+{% extends "layout.html" %}
 
+{% block title %}
+Registration Failed
+{% endblock %}
 
+{% block body %}
+You must provide your name, comfort, and dorm!
+{% endblock %}
+----
+** There's not much logic here but it looks like we're extending a file called `layout.html` that probably has a basic page structure, and then with `{% block title %}` and `{% block body %}` we're indicating what should go into the title and body.
+* `success.html` has something similar:
++
+[source]
+----
+{% extends "layout.html" %}
 
+{% block title %}
+Registration Successful
+{% endblock %}
 
+{% block body %}
+You are registered!  (Well, not really.)
+{% endblock %}
+----
+* And `index.html` is familiar:
++
+[source]
+----
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
+----
+** We see the same `{% block title %}` and `{% block body %}` magic words in this file, which works not because of HTML or Python but because of the Flask framework (the `render_template` function) that builds pages with these templates.
+* And the form in `index.html` is even more familiar:
++
+[source]
+----
+{% extends "layout.html" %}
+
+{% block title %}
+Frosh IMs
+{% endblock %}
+
+{% block body %}
+<div style="text-align:center">
+    <h1>Register for Frosh IMs</h1>
+    <form action="{{ url_for('register') }}" method="post">
+        Name: <input name="name" type="text"/>
+        <br/>
+        <input name="captain" type="checkbox"/> Captain?
+        <br/>
+        <input name="comfort" type="radio" value="less"/> Less Comfortable
+        <input name="comfort" type="radio" value="more"/> More Comfortable
+        <br/>
+        Dorm:
+        <select name="dorm">
+            <option value=""></option>
+            <option value="Apley Court">Apley Court</option>
+            <option value="Canaday">Canaday</option>
+            <option value="Grays">Grays</option>
+            <option value="Greenough">Greenough</option>
+            <option value="Hollis">Hollis</option>
+            <option value="Holworthy">Holworthy</option>
+            <option value="Hurlbut">Hurlbut</option>
+            <option value="Lionel">Lionel</option>
+            <option value="Matthews">Matthews</option>
+            <option value="Mower">Mower</option>
+            <option value="Pennypacker">Pennypacker</option>
+            <option value="Stoughton">Stoughton</option>
+            <option value="Straus">Straus</option>
+            <option value="Thayer">Thayer</option>
+            <option value="Weld">Weld</option>
+            <option value="Wigglesworth">Wigglesworth</option>
+        </select>
+        <br/>
+        <input type="submit" value="Register"/>
+    </form>
+</div>
+{% endblock %}
+----
+** The `{% block body %}` here has more HTML, a header and a form. The form also has `{{ url_for('register') }}` for its `action`, which calls a function that gets the `register` route in our app, rather than hardcodes it.
+* Going back to our app where that `register` route is,
++
+[source]
+----
+@app.route("/register", methods=["POST"])
+def register():
+    if request.form["name"] == "" or "captain" not in request.form or "comfort" not in request.form or request.form["dorm"] == "":
+        return render_template("failure.html")
+    return render_template("success.html")
+----
+** we see again the controller logic that checks whether the form is complete, and returns the correct view.
+* We can demonstrate another simple app that lets us select how many `foo`, `bar`, and `baz` we want:
++
+image::store.png[alt="store", width=200]
+* And dynamically generates a page that tells us how many we've added to our cart:
++
+image::cart.png[alt="cart", width=200]
+* And if we closed the window and opened it, it would remember how many of each item we've added.
+* The HTML for the form is simple, as well as the template for the cart:
++
+[source]
+----
+{% extends "layout.html" %}
+
+{% block title %}
+Cart
+{% endblock %}
+
+{% block body %}
+
+<h1>Cart</h1>
+
+{% for item in cart %}
+    {{ item["quantity"] }} : {{ item["name"] }}
+    <br/>
+{% endfor %}
+
+{% endblock %}
+----
+** Notice that we can list each `item` in the `cart` variable with a `for` loop, and access fields of each of the `item` object, two of which at least are `quantity` and `name`.
+* And we can look in `application.py` to find out what `cart` is:
++
+[source]
+----
+from flask import Flask, redirect, render_template, request, session, url_for
+
+app = Flask(__name__)
+app.secret_key = "shhh"
+
+@app.route("/", methods=["GET", "POST"])
+def store():
+    if request.method == "POST":
+        for item in ["foo", "bar", "baz"]:
+            if item not in session:
+                session[item] = int(request.form[item])
+            else:
+                session[item] += int(request.form[item])
+        return redirect(url_for("cart"))
+    return render_template("store.html")
+
+@app.route("/cart")
+def cart():
+    cart = []
+    for item in ["foo", "bar", "baz"]:
+        cart.append({"name":item.capitalize(), "quantity":session[item]})
+    return render_template("cart.html", cart=cart)
+----
+** `shhh` is just some secret value that we use to keep our session, or shopping cart, secure. (Though it should be longer!)
+** In the `store` method, if the request was a `POST`, meaning a user submitted the form, then we'll add the quantity indicated in the form for each item into `session`, or increment that quantity if it's in there already. And `session` is just an object, like a shopping cart, that we can save information about each user connected to our web server.
+** The `cart` method creates an empty list, and uses the session to append a dictionary for each item, that contains its name and quantity. Then we pass that into `render_template` so we can use it to build `cart.html` which we already saw.
+* Phew, that was a lot! Yet that was barely the surface of what we have access to with the language of Python and the many many frameworks out there.
