@@ -1,0 +1,60 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= Problem Set 6: Sentimental
+
+== tl;dr
+ 
+. Watch https://video.cs50.net/2016/fall/lectures/8[Week 8's lecture] (and https://video.cs50.net/2016/fall/lectures/6[Week 6's lecture] and https://video.cs50.net/2016/fall/lectures/7[Week 7's lecture], if you haven't already).
+. Port some programs from C to Python.
+. Analyze some sentiments.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset6/
+cd ~/workspace/pset6/
+----
+
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
+
+== Problems
+
+. Re-implement either of the below in Python:
++
+--
+* http://docs.cs50.net/problems/mario/less/mario.html[Mario], less comfortable, in a file called `mario.py`
+* http://docs.cs50.net/problems/mario/more/mario.html[Mario], more comfortable, in a file called `mario.py`
+--
+. Re-implement either of the below in Python:
++
+--
+* http://docs.cs50.net/problems/greedy/greedy.html[Greedy], less comfortable, in a file called `greedy.py`
+* http://docs.cs50.net/problems/credit/credit.html[Credit], less comfortable, in a file called `credit.py`
+--
+
+== How to Submit
+
+=== Step 1 of 2
+
+[source]
+----
+update50
+cd ~/workspace/pset6
+submit50 TODO
+----
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.net/2016/fall/psets/6[]!
+ 
+This was Problem Set 6.
