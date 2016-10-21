@@ -894,7 +894,7 @@ def cart():
         cart.append({"name":item.capitalize(), "quantity":session[item]})
     return render_template("cart.html", cart=cart)
 ----
-** `shhh` is just some secret value that we use to keep our session, or shopping cart, secure. (Though it should be longer!)
-** In the `store` method, if the request was a `POST`, meaning a user submitted the form, then we'll add the quantity indicated in the form for each item into `session`, or increment that quantity if it's in there already. And `session` is just an object, like a shopping cart, that we can save information about each user connected to our web server.
-** The `cart` method creates an empty list, and uses the session to append a dictionary for each item, that contains its name and quantity. Then we pass that into `render_template` so we can use it to build `cart.html` which we already saw.
+** `shhh` is just some secret value that we use to keep our session, or shopping cart, secure. (Though it should be longer, and harder for someone to guess!)
+** In the `store` method, we first check if the request was a `POST`. If so, meaning a user submitted the form, then we'll add the quantity indicated in the form for each `item` into `session`, if it's not in that object already, or increment its quantity if it is. And `session` is an object we get from the framework, that acts like a shopping cart, where we can save information for each user connected to our web server.
+** The `cart` method creates an empty list, and stores a dictionary for each item with its name and quantity, using the session to get that value. Then we pass that into `render_template` as an argument, so we can use it to build `cart.html`, which we saw above.
 * Phew, that was a lot! Yet that was barely the surface of what we have access to with the language of Python and the many many frameworks out there.
