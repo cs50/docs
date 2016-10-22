@@ -58,6 +58,7 @@ No `check50` for these!
 * Be sure to use Python 3, not Python 2.
 * If a program is in a file called, say, `foo.py`, you can run that program with `python foo.py`.
 * For Mario, Greedy, Credit, Caesar, Vigenère, and Crack, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python. It is *not reasonable* to look at others' implementations of Sentiments.
+* Consider this problem set an opportunity not only to port your own prior work from C to Python but to improve upon those earlier implementations using lessons learned since!
 * Insofar as a goal of this problem set is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
 ** Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
 ** Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.

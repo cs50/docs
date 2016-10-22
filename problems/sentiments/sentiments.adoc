@@ -27,7 +27,7 @@ $ [underline]#./tweets @cs50#
 -1 I hate you, @world
 ...
 ----
-. Implement a website that categorizes tweets with some keyword as positive or negative.
+. Implement a website that generates a pie chart categorizing a user's tweets.
 
 == Background
 
@@ -48,9 +48,10 @@ $ unzip sentiments.zip
 $ rm sentiments.zip
 $ mv problems-sentiments sentiments
 $ cd sentiments
+$ chmod a+x smile tweets
 $ ls
-analyzer.py         positive-words.txt  smile
-negative-words.txt  requirements.txt    tweets
+analyzer.py     helpers.py          positive-words.txt  smile*     tweets*
+application.py  negative-words.txt  requirements.txt    templates/
 ----
 
 === Understanding
@@ -72,7 +73,9 @@ This program defines only one function, `main`, which gets called per the file's
 
 Open up `anlyzer.py` in `sentiments/`. Not much going on in there (yet)! Notice, though, that it imports the http://www.nltk.org/[Natural Language Toolkit], among whose features is a http://www.nltk.org/api/nltk.tokenize.html[tokenizer] that you can use to split a tweet (which is maximally a 140-character `str` object) into a `list` of words (i.e., shorter `str` objects).
 
-In there is our definition of that `Analyzer` class, which has two methods: `++__init__++`, which is called whenever `Analyzer` is instantiated; and `analyze`, which can be called to analyze some `text`. That first method takes two arguments (in addition to `self`): `positives`, whose value is the path to a text file containing positive words; and `negatives`, whose value is the path to a text file containing negative words. Notice how both "named parameters" have default values so that a caller (e.g., `smile`) doesn't need to provide them. Meanwhile, `analyze` is (temporarily) hardcoded to return `0` no matter what.
+In there is our definition of that `Analyzer` class, which has two methods: `++__init__++`, which is called whenever `Analyzer` is instantiated; and `analyze`, which can be called to analyze some `text`. That first method takes two arguments in addition to `self`: `positives`, whose value is the path to a text file containing positive words; and `negatives`, whose value is the path to a text file containing negative words. Notice how both "named parameters" have default values so that a caller (e.g., `smile`) doesn't need to provide them. Meanwhile, `analyze` takes one argument in addition to `self`: a word to be analyzed for sentiment. Though that function is (temporarily) hardcoded to return `0` no matter what.
+
+Recall that methods are automatically passed that first reference to `self` so that they have a way of referring to objects' "instance variables."
 
 ==== `positive-words.txt`, `negative-words.txt`
 
@@ -80,11 +83,31 @@ Open up `positive-words.txt` and `negative-words.txt` (without changing them). N
 
 ==== `tweets`
 
-Open up `tweets`. Ah, another shebang plus even more imports. Notice that `main`, this time, is not implemented at all. But we have implemented one function for you, `get_user_timeline`, which returns a `list` of tweets (each a `str`) for a given screen name (e.g., https://twitter.com/cs50[@cs50]). That function uses https://twython.readthedocs.io/[Twython] (har har), a library for Python, to retrieve those tweets via https://dev.twitter.com/overview/api[Twitter's API] (application programming interface), a free service that can be queried programmatically for tweets. Notice how the function expects two "environment variables" to exist. Environment variables exist within your terminal window, key/value pairs that programs (like `tweets`) can access programmatically. We'll soon use two, `API_KEY` and `API_SECRET` to store credentials for Twitter.
+Open up `tweets`. Ah, another shebang. But nothing else besides a `TODO`! More on that soon.
+
+==== `helpers.py`
+
+Open up `helpers.py`. You should see two functions: `chart` and `get_user_timeline`. Given three values (`positive`, `negative`, and `neutral`, each an `int` or a `float`), `chart` generates HTML (as a `str`) for a pie chart depicting those values. Given a screen name, meanwhile, `get_user_timeline` returns a `list of tweets (each as a `str`). That function uses https://twython.readthedocs.io/[Twython] (har har), a library for Python, to retrieve those tweets via https://dev.twitter.com/overview/api[Twitter's API] (application programming interface), a free service that can be queried programmatically for tweets. Notice how the function expects two "environment variables" to exist. Environment variables exist within your terminal window, key/value pairs that programs (like `tweets`) can access programmatically. We'll soon use two, `API_KEY` and `API_SECRET` to store credentials for Twitter.
+
+=== `application.py`
+
+Open up `application.py`. In this file is a "controller" for a Flask-based web app with two endpoints: `/` and `/search`. The first displays the simplest of forms via which you can search for a user on Twitter by screen name. The second displays one of those pie charts categorizing that user's tweets. Notice, though, how 100% of those tweets are (temporarily) assumed to be neutral.
+
+=== `templates/index.html`
+
+Open up `templates/index.html`. In there is that simplest of forms. Notice how it figures out via `url_for`, a function that comes with Flask, to what URL the form should be submitted.
+
+=== `templates/search.html`
+
+Open up `templates/search.html`. Notice how this template renders a user's screen name as well as that pie chart.
+
+=== `templates/layout.html`
+
+Open up `templates/layout.html`. In here is a layout on which `index.html` and `search.html` depend. It leverages http://getbootstrap.com/[Bootstrap] to override browsers' default aesthetics.
 
 ==== `requirements.txt`
 
-Open up `requirements.txt` (without changing it, though you can later if you'd like). This file specifies the libraries, one per line, on which these programs depend.
+Open up `requirements.txt` (without changing it, though you can later if you'd like). This file specifies the libraries, one per line, on which all of this functionality depends.
 
 == Getting Started
 
@@ -111,6 +134,15 @@ to install these programs' dependencies.
 . Click *modify app permissions*.
 . Select *Read only*, then click *Update Settings*.
 . Click *Keys and Access Permissions* again.
+. In a terminal window, execute
++
+[source]
+----
+export FLASK_APP=application.py
+export FLASK_DEBUG=1
+----
++
+without any space before or after each `=`.
 . Highlight and copy the value to the right of *Consumer Key (API Key)*.
 . In a terminal window, execute
 +
@@ -126,7 +158,21 @@ export API_SECRET=value
 +
 where `value` is that (pasted) value, without any space before or after the `=`.
 
-If you close that terminal window and/or open another, you'll need to repeat those last four steps.
+If you close that terminal window and/or open another, you'll need to repeat those last five steps.
+
+Next, try running
+
+[source]
+./smile
+
+to see how it works. Keep in mind that all words will be classified (for now!) as neutral because of that hardcoded `0` in `analyze.py`.
+
+Next, try running
+
+[source]
+flask run --host=0.0.0.0 --port=8080
+
+and then select *CS50 IDE > Web Server* in CS50 IDE's top-left corner. Search for some user's screen name, and you should see a chart! Of course, it's all yellow for now because of that `100` in `application.py`. Quit Flask with control-c.
 
 == Specification
 
@@ -156,6 +202,14 @@ Complete the implementation of `main` in `tweets` in such a way that program
 * queries Twitter's API for a user's most recent 50 tweets,
 * analyzes the sentiment of each of those tweets, and
 * outputs each tweet's score and text, colored in green if positive, red if negative, and yellow otherwise.
+
+=== `application.py`
+
+Complete the implementation of `search` in `application.py` in such a way that the function
+
+* queries Twitter's API for a user's most recent 100 tweets,
+* classifies each tweet as positive, negative, or neutral,
+* generates a chart that accurately depicts those sentiments as percentages.
 
 == Walkthrough
 
@@ -233,6 +287,10 @@ inside of `++__init__++`, then `self.n` would also be accessible inside of `anal
 === `tweets`
 
 Look to `smile` for inspiration!
+
+=== `application.py`
+
+Look to `tweets` for inspiration!
 
 == FAQs
 
