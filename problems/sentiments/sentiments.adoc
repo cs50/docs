@@ -142,21 +142,21 @@ export FLASK_APP=application.py
 export FLASK_DEBUG=1
 ----
 +
-without any space before or after each `=`.
+without any space immediately before or after each `=`.
 . Highlight and copy the value to the right of *Consumer Key (API Key)*.
 . In a terminal window, execute
 +
 [source]
 export API_KEY=value
 +
-where `value` is that (pasted) value, without any space before or after the `=`.
+where `value` is that (pasted) value, without any space immediately before or after the `=`.
 . Highlight and copy the value to the right of *Consumer Secret (API Secret)*.
 . In a terminal window, execute
 +
 [source]
 export API_SECRET=value
 +
-where `value` is that (pasted) value, without any space before or after the `=`.
+where `value` is that (pasted) value, without any space immediately before or after the `=`.
 
 If you close that terminal window and/or open another, you'll need to repeat those last five steps.
 
