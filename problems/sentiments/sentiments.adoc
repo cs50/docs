@@ -1,0 +1,66 @@
+---
+---
+
+= Sentiments
+
+== tl;dr
+ 
+. Implement a program that categorizes a word as positive or negative.
++
+[source,subs=quotes]
+----
+$ [underline]#./smile love#
+:)
+$ [underline]#./smile hate#
+:(
+$ [underline]#./smile Stanford#
+:|
+----
+. Implement a program that categorizes a user's tweets as positive or negative.
++
+[source,subs=quotes]
+----
+$ [underline]#./tweets @cs50#
+----
+. Implement a website that categorizes tweets with some keyword as positive or negative.
+
+== Background
+
+== Specification
+
+== Walkthrough
+
+_Coming Mon 10/24 eve._
+
+== Usage
+
+Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#./smile love#
+:)
+$ [underline]#./smile hate#
+:(
+$ [underline]#./smile Stanford#
+:|
+----
+
+== Testing
+
+No `check50` for these!
+
+== Staff's Solution
+
+_Coming Mon 10/24 eve._
+
+== Hints
+
+== FAQs
+
+_None so far! Reload this page periodically to check if any arise!_
+
+== CHANGELOG
+
+* 2016-10-21
+** Initial release.
