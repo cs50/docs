@@ -22,9 +22,9 @@ $ [underline]#./smile Stanford#
 [source,subs=quotes]
 ----
 $ [underline]#./tweets @cs50#
- 0 hello, @world
- 1 I love you, @world
--1 I hate you, @world
+ [yellow]#0 hello, @world#
+ [green]#1 I love you, @world#
+[red]#-1 I hate you, @world#
 ...
 ----
 . Implement a website that generates a pie chart categorizing a user's tweets.
