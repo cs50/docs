@@ -26,13 +26,6 @@
 
             $(function() {
 
-                // add start=0 to top-level ordered lists
-                $('div.olist.arabic > ol').each(function() {
-                    if (!$(this).attr('start')) {
-                        $(this).attr('start', '0');
-                    }
-                });
-
                 // responsive embed
                 // http://getbootstrap.com/components/#responsive-embed
                 $('div.videoblock div.content').addClass('embed-responsive embed-responsive-16by9');
