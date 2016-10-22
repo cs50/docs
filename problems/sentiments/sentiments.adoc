@@ -1,5 +1,5 @@
 ---
-toclevels: 2
+toclevels: 1
 ---
 
 = Sentiments
