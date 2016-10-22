@@ -204,6 +204,8 @@ For instance, if `text` were "I love you" (and `Analyzer` were instantiated with
 * "love" is in `positive-words.txt`, and 
 * "you" is in neither `positive-words.txt` nor `negative-words.txt`.
 
+Suffice it to say, https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html[more sophisticated algorithms] exist, but we'll keep things simple!
+
 === `tweets`
 
 Complete the implementation of `main` in `tweets` in such a way that program
