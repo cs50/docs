@@ -311,11 +311,12 @@ inside of `++__init__++`, then `self.n` would also be accessible inside of `anal
 
 === `tweets`
 
-Look to `smile` for inspiration!
+* Look at `smile` for inspiration!
+* Because `tweets` doesn't end in `.py`, CS50 IDE won't know it's Python code, so syntax highlighting won't be enabled by default. With the file open in a tab, change *Text* to *Python* in the tab's bottom-right corner to enable.
 
 === `application.py`
 
-Look to `tweets` for inspiration!
+* Look (back) at `tweets` for inspiration!
 
 == FAQs
 
