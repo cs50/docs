@@ -33,7 +33,7 @@ $ [underline]#./tweets @cs50#
 
 "Sentiment analysis," otherwise known as "opinion mining," involves inference of sentiment (i.e., opinion) from text. For instance, movie reviews on https://www.rottentomatoes.com/[Rotten Tomatoes] are often positive or negative. So are product reviews on https://www.amazon.com/[Amazon]. Similarly do opinions underlie many tweets on Twitter[https://twitter.com/].
 
-Some words tend to have positive connotations (e.g., "love"), while some words tend to have negative connotations (e.g., "hate"). And so, if someone were to tweet, "I love you", you might infer positive sentiment. And if someone were to tweet, "I hate you", you might infer negative sentiment. Of course, individual words alone aren't always reliable, as "I do not love you" probably isn't a positive sentiment, but let's not worry about those cases. Some words, meanwhile, have neither positive nor negative connotations (e.g., "the").
+Some words tend to have positive connotations (e.g., "love"), while some words tend to have negative connotations (e.g., "hate"). And so, if someone were to tweet "I love you", you might infer positive sentiment. And if someone were to tweet "I hate you", you might infer negative sentiment. Of course, individual words alone aren't always reliable, as "I do not love you" probably isn't a positive sentiment, but let's not worry about those cases. Some words, meanwhile, have neither positive nor negative connotations (e.g., "the").
 
 A few years back, Dr. Minqing Hu and Prof. Bing Liu of the University of Illinois at Chicago kindly put together https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon[lists] of http://cdn.cs50.net/2016/fall/psets/6/pset6/positive-words.txt[2006 positive words] and http://cdn.cs50.net/2016/fall/psets/6/pset6/negative-words.txt[4783 negative words]. We'll use those to classify tweets! But first a tour.
 
@@ -103,7 +103,7 @@ to install these programs' dependencies.
 --
 * Any (available) *Name* suffices.
 * Any (sufficiently long) *Description* suffices.
-* For *Website*, input *https://cs50.harvard.edu/* (or any other URL).
+* For *Website*, input *++https://cs50.harvard.edu/++* (or any other URL).
 * Leave *Callback URL* blank.
 --
 . Click *Create your Twitter application*. You should see "Your application has been created."
@@ -172,11 +172,11 @@ Usage: ./smile word
 $ [underline]#./smile foo bar#
 Usage: ./smile word
 $ [underline]#./smile love#
-:)
+[green]#:)#
 $ [underline]#./smile hate#
-:(
+[red]#:(#
 $ [underline]#./smile Stanford#
-:|
+[yellow]#:|#
 ----
 
 [source,subs=quotes]
@@ -186,9 +186,9 @@ Usage: ./tweets @screen_name
 $ [underline]#./tweets @foo @bar#
 Usage: ./tweets @screen_name
 $ [underline]#./tweets @cs50#
- 0 hello, @world
- 1 I love you, @world
--1 I hate you, @world
+ [yellow]#0 hello, @world#
+ [green]#1 I love you, @world#
+[red]#-1 I hate you, @world#
 ...
 ----
 
@@ -198,15 +198,19 @@ No `check50` for these!
 
 == Staff's Solution
 
+=== `smile`
+
 [source]
 ~cs50/pset6/smile
+
+=== `tweets`
 
 [source]
 ~cs50/pset6/tweets
 
 == Hints
 
-=== `analyzer`
+=== `analyzer.py`
 
 * Odds are you'll find http://www.nltk.org/api/nltk.tokenize.html#module-nltk.tokenize.casual[`nltk.tokenize.casual.TweetTokenizer`] of interest, which can be used to tokenize a tweet (i.e., split it up into a `list` of words) with code like:
 +
