@@ -254,7 +254,7 @@ No `check50` for these! But here are some actual screen names on Twitter that mi
 * https://twitter.com/davidjmalan[davidjmalan]
 * https://twitter.com/DrJillStein[DrJillStein]
 * https://twitter.com/GovGaryJohnson[GovGaryJohnson]
-* https://twitter.com/hillaryclinton[hillaryclinton]
+* https://twitter.com/HillaryClinton[HillaryClinton]
 * https://twitter.com/realDonaldTrump[realDonaldTrump]
 
 == Staff's Solution
