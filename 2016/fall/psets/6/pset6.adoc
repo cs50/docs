@@ -23,10 +23,8 @@ Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/c
 [source]
 ----
 update50
-cd ~/workspace/
-wget http://cdn.cs50.net/2016/fall/psets/6/pset6.zip
-unzip pset6.zip
-rm pset6.zip
+mkdir ~/workspace/pset6/
+cd ~/workspace/pset6/
 ----
 
 == Problems
@@ -51,7 +49,7 @@ rm pset6.zip
 * http://docs.cs50.net/problems/vigenere/vigenere.html[Vigenère], less comfortable, in a file called `vigenere.py` in `pset6/`.
 * http://docs.cs50.net/problems/crack/crack.html[Crack], more comfortable, in a file called `crack.py` in `pset6/`.
 --
-. Implement http://docs.cs50.net/problems/sentiments/sentiments.html[Sentiments].
+. Implement http://docs.cs50.net/problems/sentiments/sentiments.html[Sentiments] in `pset6/sentiments/`.
 
 No `check50` for these!
 
