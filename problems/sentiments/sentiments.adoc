@@ -162,8 +162,8 @@ If you close that terminal window and/or open another, you'll need to repeat tho
 
 Next, try running
 
-[source]
-./smile
+[source,indent=0]
+ ./smile
 
 to see how it works. Keep in mind that all words will be classified (for now!) as neutral because of that hardcoded `0` in `analyze.py`.
 
