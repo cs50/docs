@@ -23,10 +23,8 @@ Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/c
 [source]
 ----
 update50
-cd ~/workspace/
-wget http://cdn.cs50.net/2016/fall/psets/6/pset6.zip
-unzip pset6.zip
-rm pset6.zip
+mkdir ~/workspace/pset6/
+cd ~/workspace/pset6/
 ----
 
 == Problems
@@ -51,7 +49,7 @@ rm pset6.zip
 * http://docs.cs50.net/problems/vigenere/vigenere.html[Vigenère], less comfortable, in a file called `vigenere.py` in `pset6/`.
 * http://docs.cs50.net/problems/crack/crack.html[Crack], more comfortable, in a file called `crack.py` in `pset6/`.
 --
-. Implement http://docs.cs50.net/problems/sentiments/sentiments.html[Sentiments].
+. Implement http://docs.cs50.net/problems/sentiments/sentiments.html[Sentiments] in `pset6/sentiments/`.
 
 No `check50` for these!
 
@@ -60,6 +58,8 @@ No `check50` for these!
 * Be sure to use Python 3, not Python 2.
 * If a program is in a file called, say, `foo.py`, you can run that program with `python foo.py`.
 * For Mario, Greedy, Credit, Caesar, Vigenère, and Crack, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python. It is *not reasonable* to look at others' implementations of Sentiments.
+* Consider this problem set an opportunity not only to port your own prior work from C to Python but to improve upon your earlier designs using lessons learned since!
+* When porting code from C to Python in CS50 IDE, you might want to select *View > Layout > Horizontal Split* so that you can see both side by side.
 * Insofar as a goal of this problem set is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
 ** Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
 ** Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.
