@@ -12,7 +12,7 @@ layout: 2016/fall
 . Analyze some sentiments.
 . Submit a form.
 
-include::help-harvard.adoc[]
+include::help-yale.adoc[]
 
 == Academic Honesty
 
