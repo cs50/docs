@@ -61,7 +61,9 @@ application.py  negative-words.txt  requirements.txt    templates/
 Open up `smile` in `sentiments/`. Suffice it to say that file's name doesn't end in `.py`, even though the file contains a program written in Python. But that's okay! Notice the "shebang" atop the file:
 
 [source]
+----
 #!/usr/bin/env python3
+----
 
 That line tells a computer to interpret (i.e., run) the program using `python3` (aka `python` on CS50 IDE), an interpreter that understands Python 3.
 
@@ -147,14 +149,18 @@ without any space immediately before or after each `=`.
 . In a terminal window, execute
 +
 [source]
+----
 export API_KEY=value
+----
 +
 where `value` is that (pasted) value, without any space immediately before or after the `=`.
 . Highlight and copy the value to the right of *Consumer Secret (API Secret)*.
 . In a terminal window, execute
 +
 [source]
+----
 export API_SECRET=value
+----
 +
 where `value` is that (pasted) value, without any space immediately before or after the `=`.
 
@@ -163,14 +169,18 @@ If you close that terminal window and/or open another, you'll need to repeat tho
 Next, try running
 
 [source]
+----
 ./smile
+----
 
 to see how it works. Keep in mind that all words will be classified (for now!) as neutral because of that hardcoded `0` in `analyze.py`.
 
 Next, try running
 
 [source]
+----
 flask run --host=0.0.0.0 --port=8080
+----
 
 and then select *CS50 IDE > Web Server* in CS50 IDE's top-left corner. Search for some user's screen name, and you should see a chart! Of course, it's all yellow for now because of that `100.0` in `application.py`. Quit Flask with control-c.
 
@@ -262,12 +272,16 @@ No `check50` for these! But here are some actual screen names on Twitter that mi
 === `smile`
 
 [source]
+----
 ~cs50/pset6/smile
+----
 
 === `tweets`
 
 [source]
+----
 ~cs50/pset6/tweets
+----
 
 == Hints
 
@@ -286,7 +300,9 @@ For instance, if `tweet` is `I love you`, then `tokens` will be `["I", "love", "
 * If you would like a variable to be accessible from both `++__init__++` and `analyze`, be sure to define it as an "instance variable" inside of `self`. For instance, if you were to define
 +
 [source,python]
+----
 self.n = 42
+----
 +
 inside of `++__init__++`, then `self.n` would also be accessible inside of `analyze`.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.lower`] of interest.
