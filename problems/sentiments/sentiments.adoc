@@ -89,19 +89,19 @@ Open up `tweets`. Ah, another shebang. But nothing else besides a `TODO`! More o
 
 Open up `helpers.py`. You should see two functions: `chart` and `get_user_timeline`. Given three values (`positive`, `negative`, and `neutral`, each an `int` or a `float`), `chart` generates HTML (as a `str`) for a pie chart depicting those values. Given a screen name, meanwhile, `get_user_timeline` returns a `list of tweets (each as a `str`). That function uses https://twython.readthedocs.io/[Twython] (har har), a library for Python, to retrieve those tweets via https://dev.twitter.com/overview/api[Twitter's API] (application programming interface), a free service that can be queried programmatically for tweets. Notice how the function expects two "environment variables" to exist. Environment variables exist within your terminal window, key/value pairs that programs (like `tweets`) can access programmatically. We'll soon use two, `API_KEY` and `API_SECRET` to store credentials for Twitter.
 
-=== `application.py`
+==== `application.py`
 
 Open up `application.py`. In this file is a "controller" for a Flask-based web app with two endpoints: `/` and `/search`. The first displays the simplest of forms via which you can search for a user on Twitter by screen name. The second displays one of those pie charts categorizing that user's tweets. Notice, though, how 100% of those tweets are (temporarily) assumed to be neutral.
 
-=== `templates/index.html`
+==== `templates/index.html`
 
 Open up `templates/index.html`. In there is that simplest of forms. Notice how it figures out via `url_for`, a function that comes with Flask, to what URL the form should be submitted.
 
-=== `templates/search.html`
+==== `templates/search.html`
 
 Open up `templates/search.html`. Notice how this template renders a user's screen name as well as that pie chart.
 
-=== `templates/layout.html`
+==== `templates/layout.html`
 
 Open up `templates/layout.html`. In here is a layout on which `index.html` and `search.html` depend. It leverages http://getbootstrap.com/[Bootstrap] to override browsers' default aesthetics.
 
