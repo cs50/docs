@@ -136,15 +136,6 @@ to install these programs' dependencies.
 . Click *modify app permissions*.
 . Select *Read only*, then click *Update Settings*.
 . Click *Keys and Access Permissions* again.
-. In a terminal window, execute
-+
-[source]
-----
-export FLASK_APP=application.py
-export FLASK_DEBUG=1
-----
-+
-without any space immediately before or after each `=`.
 . Highlight and copy the value to the right of *Consumer Key (API Key)*.
 . In a terminal window, execute
 +
@@ -163,6 +154,15 @@ export API_SECRET=value
 ----
 +
 where `value` is that (pasted) value, without any space immediately before or after the `=`.
+. In a terminal window, execute
++
+[source]
+----
+export FLASK_APP=application.py
+export FLASK_DEBUG=1
+----
++
+without any space immediately before or after each `=`.
 
 If you close that terminal window and/or open another, you'll need to repeat those last five steps.
 
