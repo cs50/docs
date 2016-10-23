@@ -87,7 +87,7 @@ A schedule of lectures, subject to change, appears below.
 | Week 6 | HTTP | Mon 10/3, 11:30am – 2:30pm | Fri 10/7, noon
 | Week 7 | Machine Learning | Thu 10/13, 4pm – 5:15pm | Thu 10/13, 4pm
 | Week 8 | Python | Tue 10/18, 12:30pm – 3:30pm | Fri 10/21, noon
-| Week 9 | SQL | Mon 10/24, 12pm – 3pm | Fri 10/28, noon
+| Week 9 | SQL | Tue 10/25, 12pm – 3pm | Fri 10/28, noon
 | Week 10 | JavaScript | Mon 10/31, 11:30am – 2:30pm | Fri 11/4, noon
 | Week 11 | The End | Mon 11/21, 1pm – 2:30pm | Mon 11/21, 1pm
 |===
