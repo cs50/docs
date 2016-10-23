@@ -4,7 +4,7 @@ published: false
 
 == Help
 
-For help with Weeks 6 – 8 and Problem Set 8:
+For help with Weeks 6 – 8 and Problem Set 6:
  
 * Attend a walkthrough (of Sentiments) on Thu 10/26, 4pm – 5:15pm, in SSS 114.
 * Watch David's walkthroughs (of Sentiments) herein (coming Mon 10/24 eve).
