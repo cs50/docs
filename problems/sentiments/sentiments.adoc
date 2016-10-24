@@ -320,7 +320,9 @@ inside of `++__init__++`, then `self.n` would also be accessible inside of `anal
 
 == FAQs
 
-_None so far! Reload this page periodically to check if any arise!_
+=== Could not build url for endpoint '/'
+
+If you find that when you try to search in your Flask app without typing anything into the text field, you get a `Could not build url for endpoint '/'.`, change the line in `application.py` that reads `redirect(url_for("/"))` to `return redirect(url_for("index"))`.
 
 == CHANGELOG
 
