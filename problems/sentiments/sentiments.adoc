@@ -89,7 +89,7 @@ Open up `tweets`. Ah, another shebang. But nothing else besides a `TODO`! More o
 
 ==== `helpers.py`
 
-Open up `helpers.py`. You should see two functions: `chart` and `get_user_timeline`. Given three values (`positive`, `negative`, and `neutral`, each an `int` or a `float`), `chart` generates HTML (as a `str`) for a pie chart depicting those values. Given a screen name, meanwhile, `get_user_timeline` returns a `list` of tweets (each as a `str`). That function uses https://twython.readthedocs.io/[Twython] (har har), a library for Python, to retrieve those tweets via https://dev.twitter.com/overview/api[Twitter's API] (application programming interface), a free service that can be queried programmatically for tweets. Notice how the function expects two "environment variables" to exist. Environment variables exist within your terminal window, key/value pairs that programs (like `tweets`) can access programmatically. We'll soon use two, `API_KEY` and `API_SECRET` to store credentials for Twitter.
+Open up `helpers.py`. You should see two functions: `chart` and `get_user_timeline`. Given three values (`positive`, `negative`, and `neutral`, each an `int` or a `float`), `chart` generates HTML (as a `str`) for a pie chart depicting those values. Given a screen name, meanwhile, `get_user_timeline` returns a `list` of tweets (each as a `str`). That function uses https://twython.readthedocs.io/[Twython] (har har), a library for Python, to retrieve those tweets via https://dev.twitter.com/overview/api[Twitter's API] (application programming interface), a free service that can be queried programmatically for tweets. Notice how the function expects two "environment variables" to exist. Environment variables exist within your terminal window, key/value pairs that programs (like `tweets`) can access programmatically. We'll soon use two, `API_KEY` and `API_SECRET`, to store credentials for Twitter.
 
 ==== `application.py`
 
@@ -320,7 +320,9 @@ inside of `++__init__++`, then `self.n` would also be accessible inside of `anal
 
 == FAQs
 
-_None so far! Reload this page periodically to check if any arise!_
+=== Could not build url for endpoint '/'
+
+If you find that when you try to search in your Flask app without typing anything into the text field, you get a `Could not build url for endpoint '/'.`, change the line in `application.py` that reads `redirect(url_for("/"))` to `return redirect(url_for("index"))`.
 
 == CHANGELOG
 
