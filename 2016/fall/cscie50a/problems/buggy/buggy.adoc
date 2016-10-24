@@ -147,9 +147,13 @@ buggy1.c  buggy2.c  buggy3.c  buggy4.c  buggy5.c
 
 == debug50
 
-As mentioned earlier, you are not on your own when it comes to debugging these programs. Here’s David with some information a tool, debug50, that might help you as you debug these programs.
+As mentioned earlier, you are not on your own when it comes to debugging these programs. Here’s David with some information about a tool, debug50, that might help you as you debug these programs.
 
 video::2zPEHYoiyfc[youtube,height=540,width=960,start=1339,end=1742]
+
+== Debugging Buggy
+
+
 
 
 This was Buggy.
