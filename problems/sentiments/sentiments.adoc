@@ -132,10 +132,10 @@ to install these programs' dependencies.
 * Leave *Callback URL* blank.
 --
 . Click *Create your Twitter application*. You should see "Your application has been created."
-. Click *Keys and Access Permissions*.
+. Click *Keys and Access Tokens*.
 . Click *modify app permissions*.
 . Select *Read only*, then click *Update Settings*.
-. Click *Keys and Access Permissions* again.
+. Click *Keys and Access Tokens* again.
 . Highlight and copy the value to the right of *Consumer Key (API Key)*.
 . In a terminal window, execute
 +
