@@ -124,7 +124,7 @@ and then run
 unzip buggy.zip
 ----
 
-to unzip the file. If you then run `ls` again, you should see that you have a newly unzipped directory called `friends` as well. Proceed to execute
+to unzip the file. If you then run `ls` again, you should see that you have a newly unzipped directory called `buggy` as well. Proceed to execute
 
 [source,bash]
 ----
