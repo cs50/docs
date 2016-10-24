@@ -70,7 +70,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Buggin’ Out
 
-Tell me if this sounds familiar, you’ve written some code and maybe used help50 and your program compiles. Then you run your program with some sample inputs (so long as you know what the output should be) and you get some unexpected results. This is what is referred to as a bug. Fear not, there are many tools specifically designed to help us find and fix these bugs. But more on those later.
+Tell me if this sounds familiar, you’ve written some code and maybe used help50, and your program compiles. Then you run your program with some sample inputs (so long as you know what the output should be) and you get some unexpected results. This is what is referred to as a bug. Fear not, there are many tools specifically designed to help us find and fix these bugs. But more on those later.
 
 You'll be downloading some "distribution code" (otherwise known as a "distro"), written by us, and make modifications to it. You're welcome of course to use all the CS50 tools and resources to help you debug.
 Start off by opening up CS50 IDE and then type
@@ -100,7 +100,7 @@ Now, at the prompt, type:
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2016/ap/problems/buggy/buggy.zip
+wget http://docs.cs50.net/2016/fall/cscie50a/problems/buggy/buggy.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see some output followed by:
@@ -154,6 +154,82 @@ video::2zPEHYoiyfc[youtube,height=540,width=960,start=1339,end=1742]
 == Debugging Buggy
 
 
+=== Buggy1
 
+We’ve written five programs that seem to act a bit buggy. Let’s go through each one to see what needs to be done. The first program, buggy1, is meant to print: 
+
+[source,bash]
+----
+*#*#*#*#*#*#*#*#*#*#
+----
+
+but instead prints:
+
+[source,bash]
+----
+***********#
+----
+
+Seems easy enough to fix (indeed this should be rather trivial).
+
+=== Buggy2
+
+Buggy2 is a program that is supposed to print out a string, entered by the user, character by character. The program should exit if the string contains a character that is not a letter in the alphabet.
+
+However the program seems to print out the string regardless of if there are symbols or numbers. When Zamyla1 is entered, the program should exit, instead it prints:
+
+[source,bash]
+----
+Z
+a
+m
+y
+l
+a
+1
+----
+
+(hint: take a look at https://reference.cs50.net)
+
+=== Buggy3
+
+Buggy3 should bring back memories of high school (Ah, the nostalgia). If the pythagorean theorem doesn’t ring a bell, it is the formula that two legs of a right triangle (a, b) are related the hypotenuse (c) in the following way, a^2^ + b^2^ = c^2^. 
+
+You may have also learned about pythagorean triples (not to worry if you didn’t). These are lengths of right triangles that are strictly integers, ex. 3, 4, 5. Since 3^2^ + 4^2^ = 9 + 16 = 25 = 5^2^.
+
+In buggy3.c, the same logic was attempted. Looks like part of the function is defined in main and some of it is defined in the function. It also looks like when 3 and 4 are entered as legs of the triangle, 25 is printed. So this is a two step problem, first clean up this program by abstracting out all aspects of the pythagorean theorem into the function `pythag` and change your parameters accordingly, then fix the logic aspect so that 5 would be printed if 3 and 4 are entered. Your program should take in two legs of a triangle and print the hypotenuse. 
+
+=== Buggy4
+
+This is a long one. Take some time to read through it carefully. This program takes in four parameters: min1, min2_10, min11, and s. The first, min1, represents the cost of a phone call (in cents) for the first minute. Likewise, min2_10, represents the cost of minutes 2-10 (inclusive) and as you might have guessed, min11 represents the cost per minute thereafter. Lastly, s, represents how much change the user has. So if I input [3, 1, 2, 4] respectively, the program should print:
+
+[source,bash]
+----
+The longest phone call that can be made is 2 minutes long.
+----
+
+This is because the first minute costs 3 cents and the second minute costs 1 cent. 
+
+Be sure to check corner cases here. Try to intentionally put in strange cases to make sure you get the expected output. One such case is that when s = 0, the program should always return: 
+
+[source,bash]
+----
+The longest phone call that can be made is 0 minutes long.
+----
+
+regardless of the other inputs.
+
+=== Buggy5
+
+This last program takes two integers from the user. The first of which, n, represents the number of children present and the second, m, represents the pieces of candy that the children are going to split amongst themselves. In order to be fair (which we know is usually not the case), each child has to have the same amount of pieces of candy. 
+
+For example if `n = 3` and `m = 2`, buggy5.c should output:
+
+[source,bash]
+----
+The children ate 0 pieces of candy
+----
+
+Since there weren’t enough pieces of candy to go around. Similar if `n = 3` and `m = 10`, buggy5.c should output 9, since each child could eat 3 pieces and there are 3 children. Again be sure to check corner cases here as well, to make sure your fixes work in all cases.
 
 This was Buggy.
