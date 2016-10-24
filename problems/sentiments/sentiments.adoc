@@ -328,3 +328,7 @@ If you find that when you try to search in your Flask app without typing anythin
 
 * 2016-10-21
 ** Initial release.
+
+== Acknowledgements
+
+Special thanks to John DeNero and Aditi Muralidharan of UC Berkeley and to Minqing Hu and Bing Liu of the University of Illinois at Chicago!
