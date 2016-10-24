@@ -1,4 +1,4 @@
-default: run
+default: container
 
 image:
 	docker build -t docs .

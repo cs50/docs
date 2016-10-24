@@ -28,6 +28,8 @@ $ [underline]#./tweets @cs50#
 ...
 ----
 . Implement a website that generates a pie chart categorizing a user's tweets.
++
+image::chart.png["@katyperry",role="related thumb"]
 
 == Background
 
