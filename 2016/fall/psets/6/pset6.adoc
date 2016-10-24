@@ -71,6 +71,7 @@ No `check50` for these!
 import cs50
 +
 atop your code. Or you can use https://docs.python.org/3/library/functions.html#input[`input`] and validate users' input yourself.
+* You might find https://docs.python.org/3/library/functions.html#chr[`chr`] and/or https://docs.python.org/3/library/functions.html#ord[`ord`] of help.
 * You might find these references of interest:
 ** https://docs.python.org/3/reference/index.html[The Python Language Reference]
 ** https://docs.python.org/3/library/[The Python Standard Library]
