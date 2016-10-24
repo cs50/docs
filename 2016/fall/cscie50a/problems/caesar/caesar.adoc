@@ -238,6 +238,14 @@ BTW, `uggc://jjj.lbhghor.pbz/jngpu?i=bUt5FWLEUN0`.
 
 == How to Submit
 
-Coming Mon 10/24!
+To submit your assignment, please do the following by *Wed 10/26 at noon*.
+
+. Open up CS50 IDE.
+. Navigate to your `~/workspace/week7` directory, ensuring that `caesar.c` exists therein.
+. Type `rm *.zip` to delete the ZIP file you made for the Initials programs in the `week7` directory.
+. At the terminal, type `zip first_last.zip caesar.c`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `week7` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/CpMstiE9OYidXqMWKRV8[this link] to upload your ZIP file containing `caesar.c`!
 
 This was Caesar.
