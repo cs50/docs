@@ -81,11 +81,11 @@ Log into your CS50 IDE workspace and execute
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. Next, navigate to your `workspace` directory and create a new directory therein called `week8` (remember how?) and then navigate inside (remember how?) Your prompt should now resemble the below.
+within a terminal window to make sure your workspace is up-to-date. Next, navigate to your `workspace` directory and create a new directory therein called `chapter2` (remember how?) and then navigate inside (remember how?) Your prompt should now resemble the below.
 
 [source,bash]
 ----
-~/workspace/week8 $
+~/workspace/chapter2 $
 ----
 Start off by opening up CS50 IDE and then type
 
