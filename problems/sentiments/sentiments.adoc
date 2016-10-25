@@ -227,9 +227,7 @@ Complete the implementation of `search` in `application.py` in such a way that t
 
 == Walkthrough
 
-== Walkthrough
-
-_This problem set's new this year, so we shot its walkthrough on Mon 10/24 and are still editing, but here's a rough draft so that you can   dive in whenever you'd like!_
+_This problem set's new this year, so we shot its walkthrough on Mon 10/24 and are still editing, but here's a rough draft so that you can dive in whenever you'd like! Skip ahead to 12:00._
 
 ++++
 <div class="videoblock">
