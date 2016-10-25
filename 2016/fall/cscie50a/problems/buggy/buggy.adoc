@@ -160,7 +160,9 @@ As mentioned earlier, you are not on your own when it comes to debugging these p
 
 video::2zPEHYoiyfc[youtube,height=540,width=960,start=1339,end=1742]
 
-You may also find a function called `eprintf` of use. You can find out more about it in the https://reference.cs50.net[CS50 Reference].
+You may also find a function called `eprintf` of use.
+
+video::2zPEHYoiyfc[youtube,height=540,width=895,start=,end=1090]
 
 == Stop Bugging Me!
 
