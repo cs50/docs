@@ -154,19 +154,19 @@ make buggyX
 
 substituting `X` for the number of the program you wish to compile. Now the fun can begin!
 
-== `debug50`
+== `debug50` and `eprintf`
 
 As mentioned earlier, you are not on your own when it comes to debugging these programs. Here’s David with some information about a tool, `debug50`, that might help you as you debug these programs.
 
 video::2zPEHYoiyfc[youtube,height=540,width=960,start=1339,end=1742]
 
-One more tool you may also find useful is a function called `eprintf`. Be sure to `#inlcude <cs50.h>` so you can access it in your code. Here’s David with how you could use it to debug a program:
+One more tool you may also find useful is a function called `eprintf`. Be sure to `#include <cs50.h>` so you can access it in your code. Here’s David with how you could use it to debug a program:
 
 video::2zPEHYoiyfc[youtube,height=540,width=960,start=895,end=1090]
 
 == Stop Bugging Me!
 
-These five programs seem to act a bit buggy. Let’s go through each one to see what needs to be done. Be sure to take a quick look at buggy.txt just to see what you should be keeping in mind as you debug these programs. 
+These five programs seem to act a bit buggy. Let’s go through each one to see what needs to be done. Be sure to take a quick look at buggy.txt just to see what you should be keeping in mind as you debug these programs.
 
 === `buggy1`
 
@@ -252,18 +252,18 @@ regardless of the other inputs.
 
 This last program takes two integers from the user. The first of which, `n`, represents the number of children present and the second, `m`, represents the pieces of candy that the children are going to split amongst themselves. In order to be fair (which we know is usually not the case!), each child has to have the same amount of pieces of candy.
 
-For example if `n = 3` and `m = 2`, `buggy5` should output:
+For example if `n == 3` and `m == 2`, `buggy5` should output:
 
 [source,bash]
 ----
 The children ate 0 pieces of candy
 ----
 
-Since there weren’t enough pieces of candy to go around. Similar if `n = 3` and `m = 10`, buggy5.c should output 9, since each child could eat 3 pieces and there are 3 children. Again be sure to check corner cases here as well, to make sure your fixes work in all cases.
+Since there weren’t enough pieces of candy to go around. Similarly if `n == 3` and `m == 10`, the program should output 9, since each child could eat 3 pieces and there are 3 children. Again be sure to check corner cases here as well, to make sure your fixes work in all cases.
 
 === Write-Up
 
-Now that you’ve fixed all the bugs its time to reflect on the types of bugs you encountered. For each of the buggy programs you fixed, you will need to write a few sentences explaining what the bug(s) were for that program as well as a short paragraph on how you remedied it. Be sure to consider the things you tried that did not work and tools you used as these will be helpful looking ahead to recognize how to fix similar bugs in the future.
+Now that you’ve fixed all the bugs its time to reflect on the types of bugs you encountered. For each of the buggy programs you fixed, you will need to write a few sentences explaining what the bug(s) were for that program as well as a few sentences on how you remedied it. Some `TODO`pass:[s] await you in `buggy.txt` for exactly this purpose! Be sure to consider the things you tried that did not work and tools you used, as these will be helpful looking ahead to recognize how to fix similar bugs in the future!
 
 === How to Submit
 
@@ -276,4 +276,4 @@ To submit your assignment, please do the following by *Sat 10/28 at noon ET*:
 . In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
 . Head to https://www.dropbox.com/request/WFi5KULZugemrNN4sAje[this link] to upload your ZIP file containing your bug fixes and your `buggy.txt` writeup!
 
-This was Buggy.
+This was Buggy. (But hopefully not anymore!)
