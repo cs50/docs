@@ -307,7 +307,7 @@ tokenizer = nltk.tokenize.TweetTokenizer()
 tokens = tokenizer.tokenize(tweet)
 ----
 +
-For instance, if `tweet` is `I love you`, then `tokens` will be `["I", "love", "you"]`. It treats punctuation as separate tokens, so not to worry if it splits `a+` (which is a word in `positive-words.txt`) into two tokens.
+For instance, if `tweet` is `I love you`, then `tokens` will be `["I", "love", "you"]`. The tokenizer treats some punctuation as separate tokens, so not to worry if it splits words like `a+` (which is in `positive-words.txt`) into two tokens.
 * Be sure to ignore any comments or blank lines inside of `positives` and `negatives`.
 * If you would like a variable to be accessible from both `++__init__++` and `analyze`, be sure to define it as an "instance variable" inside of `self`. For instance, if you were to define
 +
