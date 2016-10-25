@@ -2,22 +2,41 @@
 
 == Overview
 
-The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this course’s lessons, the nature of your project is entirely up to you, albeit subject to the staff’s approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff
-ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon the course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
+
+Extensions on the final project are not ordinarily granted, except in cases of emergency.
+
+== Joint Projects
 
 If taking some other course this semester that has a final project, you are welcome and encouraged to combine this course's project and that course's project into one, toward an end of applying lessons learned in CS50 to some other field, so long as the joint project satisfies this course's and that course's expectations. Before pursuing a joint project, though, you must disclose to both courses and receive approval from both courses (as from your TF in CS50).
 
-Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group’s project. Moreover, it is expected that the scope of a two- or three-person group’s project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind
-you, should entail more time and effort than is required by each of the course’s problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course’s policy on academic honesty.
+== Ideas
 
-Extensions on the final project are not ordinarily granted, except in cases of emergency. Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
+Here are just some of the possibilities! Discuss any and all with your TF!
+
+* a web-based application using Python and SQL, based in part on Problem Set 7's distribution code
+* a web-based application using JavaScript, based in part on Problem Set 8's distribution code
+* a web-based application using PHP or Ruby
+* a Chrome extension using JavaScript
+* an iOS app using Swift (or Objective-C)
+* an Android app using Java
+* a command-line program using C
+* ...
 
 If at a loss for ideas, turn to the below (and your TF) for inspiration!
 
 * https://manual.cs50.net/seminars/[CS50 Seminars]
 * http://newapps.cs50.net/cs50/@/discuss/threads/156/all/new/1[CS50 Discuss]
 
-Know, too, that CS50 has:
+=== HSA Track
+
+Like to make an impact on campus by building a project for the largest student-run corporation in the world? Consider tackling one of Harvard Student Agencies' http://hsa.net/cs50/hsa-track/suggested-projects[suggested project ideas] via CS50's http://hsa.net/cs50/hsa-track[HSA Track]. 
+
+=== Hardware Track
+
+Know that CS50 has the following hardware with which you're welcome to create amazing projects:
 
 * an https://developer.apple.com/programs/[iOS Developer Program], which allows you to install homemade apps on your own iOS device,
 * some https://www.arduino.cc/en/Main/arduinoBoardUno[Arduino Uno] boards, for which there's an https://www.arduino.cc/en/Reference/HomePage[API],

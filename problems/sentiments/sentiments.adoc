@@ -227,7 +227,17 @@ Complete the implementation of `search` in `application.py` in such a way that t
 
 == Walkthrough
 
-_Coming Mon 10/24 eve._
+== Walkthrough
+
+_This problem set's new this year, so we shot its walkthrough on Mon 10/24 and are still editing, but here's a rough draft so that you can   dive in whenever you'd like!_
+
+++++
+<div class="videoblock">
+<div class="content">
+<iframe src="https://video.cs50.net/2016/fall/psets/6/pset6" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+++++
 
 == Usage
 
