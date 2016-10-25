@@ -261,13 +261,13 @@ The children ate 0 pieces of candy
 
 Since there weren’t enough pieces of candy to go around. Similarly if `n == 3` and `m == 10`, the program should output 9, since each child could eat 3 pieces and there are 3 children. Again be sure to check corner cases here as well, to make sure your fixes work in all cases.
 
-=== Write-Up
+== Write-Up
 
 Now that you’ve fixed all the bugs its time to reflect on the types of bugs you encountered. For each of the buggy programs you fixed, you will need to write a few sentences explaining what the bug(s) were for that program as well as a few sentences on how you remedied it. Some `TODO`pass:[s] await you in `buggy.txt` for exactly this purpose! Be sure to consider the things you tried that did not work and tools you used, as these will be helpful looking ahead to recognize how to fix similar bugs in the future!
 
-=== How to Submit
+== How to Submit
 
-To submit your assignment, please do the following by *Sat 10/28 at noon ET*:
+To submit your assignment, please do the following by *Sat 10/29 at noon ET*:
 
 . Open up CS50 IDE.
 . Navigate to your `~/workspace/chapter2` directory, ensuring that the `buggy` directory containing all of your bugfixes and your `buggy.txt` file exists therein.
