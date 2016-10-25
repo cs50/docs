@@ -160,9 +160,9 @@ As mentioned earlier, you are not on your own when it comes to debugging these p
 
 video::2zPEHYoiyfc[youtube,height=540,width=960,start=1339,end=1742]
 
-You may also find a function called `eprintf` of use.
+One more tool you may also find useful is a function called `eprintf`. Be sure to `#inlcude <cs50.h>` so you can access it in your code. Here’s David with how you could use it to debug a program:
 
-video::2zPEHYoiyfc[youtube,height=540,width=895,start=,end=1090]
+video::2zPEHYoiyfc[youtube,height=540,width=960,start=895,end=1090]
 
 == Stop Bugging Me!
 
