@@ -138,11 +138,11 @@ followed by
 ls
 ----
 
-and you should indeed see five buggy programs!
+and you should indeed see five buggy programs and a text file!
 
 [source,bash]
 ----
-buggy1.c  buggy2.c  buggy3.c  buggy4.c  buggy5.c
+buggy.txt  buggy1.c  buggy2.c  buggy3.c  buggy4.c  buggy5.c
 ----
 
 You can compile all of the programs by typing the following:
@@ -164,7 +164,7 @@ You may also find a function called `eprintf` of use. You can find out more abou
 
 == Stop Bugging Me!
 
-These five programs seem to act a bit buggy. Let’s go through each one to see what needs to be done.
+These five programs seem to act a bit buggy. Let’s go through each one to see what needs to be done. Be sure to take a quick look at buggy.txt just to see what you should be keeping in mind as you debug these programs. 
 
 === `buggy1`
 
@@ -207,11 +207,11 @@ Hmm...
 
 Fond memories of high school should be flooding back (ah, the nostalgia). If the Pythagorean theorem doesn’t ring a bell, it is the formula that two legs of a right triangle (`a`, `b`) are related the hypotenuse (`c`) in the following way:
 
-latexmath:[$a^2 + b^2 = c^2$]
+a^2^ + b^2^ = c^2^
 
 You may have also learned about Pythagorean triples (not to worry if you didn’t). These are lengths of right triangles that are strictly integers, ex. 3, 4, 5. Since
 
-latexmath:[$3^2 + 4^2 = 9 + 16 = 25 = 5^2$]
+3^2^ + 4^2^ = 9 + 16 = 25 = 5^2^
 
 then (3, 4, 5) is indeed a Pythagorean triple!
 
@@ -250,7 +250,7 @@ regardless of the other inputs.
 
 This last program takes two integers from the user. The first of which, `n`, represents the number of children present and the second, `m`, represents the pieces of candy that the children are going to split amongst themselves. In order to be fair (which we know is usually not the case!), each child has to have the same amount of pieces of candy.
 
-For example if `n == 3` and `m == 2`, `buggy5` should output:
+For example if `n = 3` and `m = 2`, `buggy5` should output:
 
 [source,bash]
 ----
@@ -261,16 +261,16 @@ Since there weren’t enough pieces of candy to go around. Similar if `n = 3` an
 
 === Write-Up
 
-Require them to do the write up in a file called `buggy.txt` in their `buggy` directory, Erin!
+Now that you’ve fixed all the bugs its time to reflect on the types of bugs you encountered. For each of the buggy programs you fixed, you will need to write a few sentences explaining what the bug(s) were for that program as well as a short paragraph on how you remedied it. Be sure to consider the things you tried that did not work and tools you used as these will be helpful looking ahead to recognize how to fix similar bugs in the future.
 
 === How to Submit
 
 To submit your assignment, please do the following by *Sat 10/28 at noon ET*:
 
 . Open up CS50 IDE.
-. Navigate to your `~/workspace/week8` directory, ensuring that the `buggy` directory containing all of your bugfixes and your `buggy.txt` file exists therein.
+. Navigate to your `~/workspace/chapter2` directory, ensuring that the `buggy` directory containing all of your bugfixes and your `buggy.txt` file exists therein.
 . At the terminal, type `zip -r first_last.zip buggy`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
-. This should create a new file called `first_last.zip` in your `week8` directory.
+. This should create a new file called `first_last.zip` in your `chapter2` directory.
 . In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
 . Head to https://www.dropbox.com/request/WFi5KULZugemrNN4sAje[this link] to upload your ZIP file containing your bug fixes and your `buggy.txt` writeup!
 
