@@ -33,24 +33,24 @@ All code that you write should be consistent with https://www.python.org/dev/pep
 . Implement either of the below exactly as specified but in Python:
 +
 --
-* link:../../../problems/mario/less/mario.html[Mario], less comfortable, in a file called `mario.py` in `pset6/`.
-* link:../../../problems/mario/more/mario.html[Mario], more comfortable, in a file called `mario.py` in `pset6/`.
+* link:../../../../problems/mario/less/mario.html[Mario], less comfortable, in a file called `mario.py` in `pset6/`.
+* link:../../../../problems/mario/more/mario.html[Mario], more comfortable, in a file called `mario.py` in `pset6/`.
 --
 +
 . Implement either of the below exactly as specified but in Python:
 +
 --
-* link:../../../problems/greedy/greedy.html[Greedy], less comfortable, in a file called `greedy.py` in `pset6/`.
-* link:../../../problems/credit/credit.html[Credit], more comfortable, in a file called `credit.py` in `pset6/`.
+* link:../../../../problems/greedy/greedy.html[Greedy], less comfortable, in a file called `greedy.py` in `pset6/`.
+* link:../../../../problems/credit/credit.html[Credit], more comfortable, in a file called `credit.py` in `pset6/`.
 --
 . Implement any (one) of the below exactly as specified but in Python:
 +
 --
-* link:../../../problems/caesar/caesar.html[Caesar], less comfortable, in a file called `caesar.py` in `pset6/`.
-* link:../../../problems/vigenere/vigenere.html[Vigenère], less comfortable, in a file called `vigenere.py` in `pset6/`.
-* link:../../../problems/crack/crack.html[Crack], more comfortable, in a file called `crack.py` in `pset6/`.
+* link:../../../../problems/caesar/caesar.html[Caesar], less comfortable, in a file called `caesar.py` in `pset6/`.
+* link:../../../../problems/vigenere/vigenere.html[Vigenère], less comfortable, in a file called `vigenere.py` in `pset6/`.
+* link:../../../../problems/crack/crack.html[Crack], more comfortable, in a file called `crack.py` in `pset6/`.
 --
-. Implement link:../../../problems/sentiments/sentiments.html[Sentiments] in `pset6/sentiments/`.
+. Implement link:../../../../problems/sentiments/sentiments.html[Sentiments] in `pset6/sentiments/`.
 
 No `check50` for these!
 
@@ -92,7 +92,7 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 
 === Problem 4
 
-See link:../../../problems/sentiments/sentiments.html#walkthrough[Sentiments]
+See link:../../../../problems/sentiments/sentiments.html#walkthrough[Sentiments]
 
 == How to Submit
 
