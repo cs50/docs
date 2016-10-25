@@ -12,7 +12,7 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 
 == Ideas
 
-Here are just some of the possibilities, organized into (non-exhaustive) "tracks". Discuss any and all with your TF!
+Here are just some of the possibilities, organized into (non-exhaustive) "tracks". Discuss any and all with your TA!
 
 If at a loss for ideas, look here for more inspiration!
 
@@ -32,12 +32,7 @@ If at a loss for ideas, look here for more inspiration!
 
 === Cross-Course Track
 
-Like to combine two courses' projects? If taking some other course this semester that has a final project, you are welcome and encouraged to combine this course's project and that course's project into one, toward an end of applying lessons learned in CS50 to some other field, so long as the joint project satisfies this course's and that course's expectations. Before pursuing a joint project, though, you must disclose to both courses and receive approval from both courses (as from your TF in CS50).
-
-=== Cross-Campus Track
-
-* Like to build a website via which undergrads can schedule Classroom-to-Table meals with faculty? Email Dean Rakesh Khurana for details!
-* ...
+Like to combine two courses' projects? If taking some other course this semester that has a final project, you are welcome and encouraged to combine this course's project and that course's project into one, toward an end of applying lessons learned in CS50 to some other field, so long as the joint project satisfies this course's and that course's expectations. Before pursuing a joint project, though, you must disclose to both courses and receive approval from both courses (as from your TA in CS50).
 
 === Hardware Track
 
@@ -46,23 +41,13 @@ Like to integrate hardware into your project? Know that CS50 has the following h
 * an https://developer.apple.com/programs/[iOS Developer Program], which allows you to install homemade apps on your own iOS device,
 * some https://www.arduino.cc/en/Main/arduinoBoardUno[Arduino Uno] boards, for which there's an https://www.arduino.cc/en/Reference/HomePage[API],
 * some https://www.google.com/get/cardboard/[Google Cardboards], for which there's an developers.google.com/cardboard[API],
-* an https://www.vive.com/us/[HTC Vive], for which there's an https://developer.viveport.com/us/develop_portal/[SDK]
 * some https://www.leapmotion.com/[Leap Motion Controllers], for which there's an https://developer.leapmotion.com/[API],
-* some http://www.microsoft.com/microsoft-band/en-us[Microsoft Bands], for which there's an https://developer.microsoftband.com/[SDK]
-* a https://www.microsoft.com/microsoft-hololens/en-us[Microsoft HoloLens], for which there's an https://www.microsoft.com/microsoft-hololens/en-us/developers[SDK]
 * some https://www.myo.com/[Myo Armbands], for which there's an https://developer.thalmic.com/[API],
-* an https://www.oculus.com/[Oculus Rift] and an https://www3.oculus.com/en-us/dk2/[Oculus DK2], for which there's an https://developer.oculus.com/[SDK]
 * some http://www2.meethue.com/en-us/productdetail/philips-hue-white-and-color-ambiance-starter-kit-a19[Philips hue bulbs], for which there's an http://www.developers.meethue.com/[API],
 * some http://www2.meethue.com/en-us/productdetail/philips-hue-lightstrip[Philips hue lightstrips], for which there's an http://www.developers.meethue.com/[API], and
 * some http://www.samsung.com/global/galaxy/gear-vr/[Samsung Gear VRs], for which there's an http://developer.samsung.com/gear/[SDK].
 
 If you'd like to borrow something for a project, email borrow@cs50.harvard.edu, and we'll do our best to oblige, sharing hardware across classmates as needed. Let us know, too, if there's some other hardware or software you'd like to utilize for a project, and we'll do our best to find it.
-
-=== HSA Track
-
-Like to make an impact on campus by building a project for the largest student-run corporation in the world? Consider tackling one of Harvard Student Agencies' http://hsa.net/cs50/hsa-track/suggested-projects[suggested project ideas] and applying for the http://hsa.net/cs50/bootcamp[HSA Dev Bootcamp], which picks up in January where CS50 leaves off! Thereafter, consider joining http://hsa.net/dev[HSA Dev]!
-
-video::_vAQNwhYOyU[youtube]
 
 == Schedule
 
@@ -84,11 +69,11 @@ _from 7pm on Thu 12/1 until 7am on Fri 12/2_
 
 === Implementation
 
-_due by noon on Thu 12/8_ 
+_due by noon on Sun 12/11_ 
 
 === CS50 Fair
 
-_from 11am until 4:30pm on Fri 12/9_
+_from 12pm until 3pm on Mon 12/12_
 
 Extensions on the final project are not granted, except in cases of emergency.
 
@@ -104,7 +89,7 @@ If, incidentally, you have an idea for a final project that you think someone sh
 
 === Proposal
 
-The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at https://cs50.harvard.edu/proposal/[cs50.harvard.edu/proposal].
+The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at https://cs50.yale.edu/proposal/[cs50.yale.edu/proposal].
 
 Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
 
@@ -112,7 +97,7 @@ After submitting your proposal, a teaching fellow other than your own may be app
 
 === Status Report
 
-Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report at https://cs50.harvard.edu/project/report/[cs50.harvard.edu/project/report].
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report at https://cs50.yale.edu/project/report/[cs50.yale.edu/project/report].
 
 === CS50 Hackathon
 
@@ -138,7 +123,7 @@ _Coming Soon._
 ////
 *If you have collaborated with one or two other students, each of you should submit via this same process.*
 
-*If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project's needs.*
+*If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TA advising you is aware of and has approved your project's needs.*
 
 ==== Step 1 of 2
 
