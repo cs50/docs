@@ -4,7 +4,7 @@ title: Buggy
 ---
 :skip-front-matter:
 
-= Problem: Buggy
+= Writing Problem: Buggy
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
@@ -73,28 +73,21 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 Tell me if this sounds familiar, you’ve written some code and maybe used help50, and your program compiles. Then you run your program with some sample inputs (so long as you know what the output should be) and you get some unexpected results. This is what is referred to as a bug. Fear not, there are many tools specifically designed to help us find and fix these bugs. But more on those later.
 
 You'll be downloading some "distribution code" (otherwise known as a "distro"), written by us, and make modifications to it. You're welcome of course to use all the CS50 tools and resources to help you debug.
-Start off by opening up CS50 IDE and then type
+
+Log into your CS50 IDE workspace and execute
 
 [source,bash]
 ----
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
-
-Next, navigate to your `chapter2` directory, as with
+within a terminal window to make sure your workspace is up-to-date. Next, navigate to your `workspace` directory and create a new directory therein called `week8` (remember how?) and then navigate inside (remember how?) Your prompt should now resemble the below.
 
 [source,bash]
 ----
-cd ~/workspace/chapter2
+~/workspace/week8 $
 ----
-
-Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/chapter2` denotes a directory called `chapter2` within `~/workspace`. Your prompt should now resemble the below.
-
-[source,bash]
-----
-~/workspace/chapter2 $
-----
+Start off by opening up CS50 IDE and then type
 
 Now, at the prompt, type:
 
@@ -107,7 +100,7 @@ to download a ZIP of this problem's distro into your workspace (with a command-l
 
 [source,bash]
 ----
-‘buggy.zip' saved
+'buggy.zip' saved
 ----
 
 Confirm that you've indeed downloaded `buggy.zip` by executing
@@ -124,7 +117,14 @@ and then run
 unzip buggy.zip
 ----
 
-to unzip the file. If you then run `ls` again, you should see that you have a newly unzipped directory called `buggy` as well. Proceed to execute
+to unzip the file. If you then run `ls` again, you should see that you have a newly unzipped directory called `buggy` as well. Let's first delete that ZIP file with:
+
+[source,bash]
+----
+rm buggy.zip
+----
+
+confirming your intent to delete. Then proceed to execute
 
 [source,bash]
 ----
@@ -145,18 +145,30 @@ and you should indeed see five buggy programs!
 buggy1.c  buggy2.c  buggy3.c  buggy4.c  buggy5.c
 ----
 
-== debug50
+You can compile all of the programs by typing the following:
 
-As mentioned earlier, you are not on your own when it comes to debugging these programs. Here’s David with some information about a tool, debug50, that might help you as you debug these programs.
+[source,bash]
+----
+make buggyX
+----
+
+substituting `X` for the number of the program you wish to compile. Now the fun can begin!
+
+== `debug50`
+
+As mentioned earlier, you are not on your own when it comes to debugging these programs. Here’s David with some information about a tool, `debug50`, that might help you as you debug these programs.
 
 video::2zPEHYoiyfc[youtube,height=540,width=960,start=1339,end=1742]
 
-== Debugging Buggy
+You may also find a function called `eprintf` of use. You can find out more about it in the https://reference.cs50.net[CS50 Reference].
 
+== Stop Bugging Me!
 
-=== Buggy1
+These five programs seem to act a bit buggy. Let’s go through each one to see what needs to be done.
 
-We’ve written five programs that seem to act a bit buggy. Let’s go through each one to see what needs to be done. The first program, buggy1, is meant to print: 
+=== `buggy1`
+
+This program is meant to print:
 
 [source,bash]
 ----
@@ -170,13 +182,13 @@ but instead prints:
 ***********#
 ----
 
-Seems easy enough to fix (indeed this should be rather trivial).
+Seems easy enough to fix?
 
-=== Buggy2
+=== `buggy2`
 
-Buggy2 is a program that is supposed to print out a string, entered by the user, character by character. The program should exit if the string contains a character that is not a letter in the alphabet.
+This program is supposed to print out a string, entered by the user, character by character.
 
-However the program seems to print out the string regardless of if there are symbols or numbers. When Zamyla1 is entered, the program should exit, instead it prints:
+The program should exit if the string contains a character that is not a letter in the alphabet. However the program seems to print out the string regardless of if there are symbols or numbers. When, say, `Zamyla1` is entered, the program should exit, instead it prints:
 
 [source,bash]
 ----
@@ -189,28 +201,43 @@ a
 1
 ----
 
-(hint: take a look at https://reference.cs50.net)
+Hmm...
 
-=== Buggy3
+=== `buggy3`
 
-Buggy3 should bring back memories of high school (Ah, the nostalgia). If the pythagorean theorem doesn’t ring a bell, it is the formula that two legs of a right triangle (a, b) are related the hypotenuse (c) in the following way, a^2^ + b^2^ = c^2^. 
+Fond memories of high school should be flooding back (ah, the nostalgia). If the Pythagorean theorem doesn’t ring a bell, it is the formula that two legs of a right triangle (`a`, `b`) are related the hypotenuse (`c`) in the following way:
 
-You may have also learned about pythagorean triples (not to worry if you didn’t). These are lengths of right triangles that are strictly integers, ex. 3, 4, 5. Since 3^2^ + 4^2^ = 9 + 16 = 25 = 5^2^.
+latexmath:[$a^2 + b^2 = c^2$]
 
-In buggy3.c, the same logic was attempted. Looks like part of the function is defined in main and some of it is defined in the function. It also looks like when 3 and 4 are entered as legs of the triangle, 25 is printed. So this is a two step problem, first clean up this program by abstracting out all aspects of the pythagorean theorem into the function `pythag` and change your parameters accordingly, then fix the logic aspect so that 5 would be printed if 3 and 4 are entered. Your program should take in two legs of a triangle and print the hypotenuse. 
+You may have also learned about Pythagorean triples (not to worry if you didn’t). These are lengths of right triangles that are strictly integers, ex. 3, 4, 5. Since
 
-=== Buggy4
+latexmath:[$3^2 + 4^2 = 9 + 16 = 25 = 5^2$]
 
-This is a long one. Take some time to read through it carefully. This program takes in four parameters: min1, min2_10, min11, and s. The first, min1, represents the cost of a phone call (in cents) for the first minute. Likewise, min2_10, represents the cost of minutes 2-10 (inclusive) and as you might have guessed, min11 represents the cost per minute thereafter. Lastly, s, represents how much change the user has. So if I input [3, 1, 2, 4] respectively, the program should print:
+then (3, 4, 5) is indeed a Pythagorean triple!
+
+In `buggy3.c`, the same logic was attempted. Looks like part of the program is defined in `main` and some of it is defined in a separate function, `pythag`. It also looks like when `3` and `4` are entered as legs of the triangle, 25 is printed.
+
+So this is a two step problem, first clean up this program by abstracting out all aspects of the Pythagorean theorem into the function `pythag` and change your parameters accordingly, then fix the logic aspect so that `5` would be printed if `3` and `4` are entered. Your program should take in two legs of a triangle and print the hypotenuse.
+
+=== `buggy4`
+
+This is a longer one, but do take some time to read through it carefully. This program takes in four parameters: `min1`, `min2_10`, `min11`, and `s`. The first, `min1`, represents the cost of a phone call (in cents) for the first minute. Likewise, `min2_10`, represents the cost of minutes 2-10 (inclusive) and as you might have guessed, `min11` represents the cost per minute thereafter. Lastly, `s`, represents how much change the user has. So if I input `3` (the cost of the first minute), followed by `1` (for minutes 2 through 10), then `2` (for minutes 11 on), and finally `4` (meaning I have 4 cents), the program should print:
 
 [source,bash]
 ----
 The longest phone call that can be made is 2 minutes long.
 ----
 
-This is because the first minute costs 3 cents and the second minute costs 1 cent. 
+This is because the first minute costs 3 cents and the second minute costs 1 cent. But it seems to instead print now:
 
-Be sure to check corner cases here. Try to intentionally put in strange cases to make sure you get the expected output. One such case is that when s = 0, the program should always return: 
+[source,bash]
+----
+The longest phone call that can be made is 5 minutes long.
+----
+
+That's not right!
+
+Fix the behavior of this program in general, and be sure to check corner cases. Try to intentionally put in strange cases to make sure you get the expected output. One such case, for example, is when `s == 0` . The  program should always return:
 
 [source,bash]
 ----
@@ -219,11 +246,11 @@ The longest phone call that can be made is 0 minutes long.
 
 regardless of the other inputs.
 
-=== Buggy5
+=== `buggy5`
 
-This last program takes two integers from the user. The first of which, n, represents the number of children present and the second, m, represents the pieces of candy that the children are going to split amongst themselves. In order to be fair (which we know is usually not the case), each child has to have the same amount of pieces of candy. 
+This last program takes two integers from the user. The first of which, `n`, represents the number of children present and the second, `m`, represents the pieces of candy that the children are going to split amongst themselves. In order to be fair (which we know is usually not the case!), each child has to have the same amount of pieces of candy.
 
-For example if `n = 3` and `m = 2`, buggy5.c should output:
+For example if `n == 3` and `m == 2`, `buggy5` should output:
 
 [source,bash]
 ----
@@ -231,5 +258,20 @@ The children ate 0 pieces of candy
 ----
 
 Since there weren’t enough pieces of candy to go around. Similar if `n = 3` and `m = 10`, buggy5.c should output 9, since each child could eat 3 pieces and there are 3 children. Again be sure to check corner cases here as well, to make sure your fixes work in all cases.
+
+=== Write-Up
+
+Require them to do the write up in a file called `buggy.txt` in their `buggy` directory, Erin!
+
+=== How to Submit
+
+To submit your assignment, please do the following by *Sat 10/28 at noon ET*:
+
+. Open up CS50 IDE.
+. Navigate to your `~/workspace/week8` directory, ensuring that the `buggy` directory containing all of your bugfixes and your `buggy.txt` file exists therein.
+. At the terminal, type `zip -r first_last.zip buggy`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `week8` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/WFi5KULZugemrNN4sAje[this link] to upload your ZIP file containing your bug fixes and your `buggy.txt` writeup!
 
 This was Buggy.
