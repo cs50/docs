@@ -77,7 +77,7 @@ This program defines only one function, `main`, which gets called per the file's
 
 Open up `anlyzer.py` in `sentiments/`. Not much going on in there (yet)! Notice, though, that it imports the http://www.nltk.org/[Natural Language Toolkit], among whose features is a http://www.nltk.org/api/nltk.tokenize.html[tokenizer] that you can use to split a tweet (which is maximally a 140-character `str` object) into a `list` of words (i.e., shorter `str` objects).
 
-In there is our definition of that `Analyzer` class, which has two methods: `++__init__++`, which is called whenever `Analyzer` is instantiated; and `analyze`, which can be called to analyze some `text`. That first method takes two arguments in addition to `self`: `positives`, whose value is the path to a text file containing positive words; and `negatives`, whose value is the path to a text file containing negative words. Notice how both "named parameters" have default values so that a caller (e.g., `smile`) doesn't need to provide them. Meanwhile, `analyze` takes one argument in addition to `self`: a word to be analyzed for sentiment. Though that function is (temporarily) hardcoded to return `0` no matter what.
+In there is our definition of that `Analyzer` class, which has two methods: `++__init__++`, which is called whenever `Analyzer` is instantiated; and `analyze`, which can be called to analyze some `text`. That first method takes two arguments in addition to `self`: `positives`, whose value is the path to a text file containing positive words; and `negatives`, whose value is the path to a text file containing negative words. Notice how both "named parameters" have default values so that a caller (e.g., `smile`) doesn't need to provide them. Meanwhile, `analyze` takes one argument in addition to `self`: a `str` to be analyzed for sentiment. Though that function is (temporarily) hardcoded to return `0` no matter what.
 
 Recall that methods are automatically passed that first reference to `self` so that they have a way of referring to objects' "instance variables."
 
@@ -335,6 +335,8 @@ If you find that when you try to search in your Flask app without typing anythin
 
 == CHANGELOG
 
+* 2016-10-26
+** Clarified that `analyze` takes a (potentially multi-word) `str` as an argument, not just a word.
 * 2016-10-21
 ** Initial release.
 
