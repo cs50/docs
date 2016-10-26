@@ -316,6 +316,7 @@ self.n = 42
 +
 inside of `++__init__++`, then `self.n` would also be accessible inside of `analyze`.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.lower`] of interest.
+* And here's the https://wiki.python.org/moin/TimeComplexity[time-complexity (aka "Big O" or "Big Oh") of various operations in current CPython], the implementation of Python we're using (which is an interpreter called `python`, or really `python3`, which itself is actually written in C).
 
 === `tweets`
 
