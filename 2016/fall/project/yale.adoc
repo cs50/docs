@@ -24,6 +24,7 @@ If at a loss for ideas, look here for more inspiration!
 * a web-based application using Python and SQL, based in part on Problem Set 7's distribution code
 * a web-based application using JavaScript, based in part on Problem Set 8's distribution code
 * a web-based application using PHP or Ruby
+* a plugin for CS50 IDE using JavaScript
 * a Chrome extension using JavaScript
 * an iOS app using Swift (or Objective-C)
 * an Android app using Java
