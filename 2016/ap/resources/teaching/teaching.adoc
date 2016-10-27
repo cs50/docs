@@ -57,7 +57,7 @@ And the six computational thinking practices are:
 *  Communicating (both orally and in writing)
 *  Collaborating
 
-This course consists of 7 core chapters and 2 fast track chapters. In chapters 0-4, students will work mainly in C. In chapter 5, students transition from a command-line environment to the Internet. Finally, in chapter 6, they will begin to dabble in other languages to prepare for the create task. The fast track chapters A and B are meant to fit into the curriculum between chapters 4 and 5, since they touch on some of the more complex concepts in C. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect
+This course consists of 7 core chapters and 2 fast track chapters. In chapters 0-4, students will work mainly in C. In chapter 5, students transition from a command-line environment to the Internet. Finally, in chapter 6, they will begin to dabble in other languages to prepare for the create task. The fast track chapters A and B are meant to fit into the curriculum between chapters 4 and 5, since they touch on some of the more complex concepts in C. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect.
 
 |===
 2+| Chapter | Topics | Recommended Timeframe

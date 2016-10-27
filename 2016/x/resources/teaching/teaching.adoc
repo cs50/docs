@@ -20,13 +20,13 @@ Interested in teaching CS50x at your university, city or community? Great! Follo
 
 a.	http://cs50.edx.org[CS50 via edX]: this is a free course you can take on your own time, with all the tools and resources you need to be successful in CS50. Your problem sets will be automatically graded, and if stuck, you can ask for help in our online https://cs50.harvard.edu/discuss[discussion forum] and https://facebook.com/cs50[Facebook group]. Given the scale of this online course, we don’t offer dedicated teaching staff for edX students.
 
-b.	CS50 via Harvard's Extension School: this is a paid course, where you earn a Harvard Extension School certificate and have a CS50 teaching fellow assigned to lead you through weekly sessions to dive deeper into the content, help you stay on track and on schedule, offer online office hours, and give you grading feedback. Unlike the edX version, this course is paced, and you may choose between taking the full course in one semester via https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science/14290[CSCI E-50], or take it between two semesters with https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-i/14880[CSCI E-50A] and https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-ii/15041[CSCI E-50B].
+b.	CS50 via Harvard's Extension School: this is a paid course, where you earn a Harvard Extension School certificate and have a CS50 teaching fellow assigned to lead you through weekly sessions to dive deeper into the content, help you stay on track and on schedule, offer online office hours, and give you grading feedback. Unlike the edX version, this course is paced, and you may choose between taking the full course in one semester via https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science/14290[CSCI E-50], or take it between two semesters with https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-i/14880[CSCI E-50a] and https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-ii/15041[CSCI E-50b].
 
-2.	Familiarize yourself with our tools and resources. We’ve developed various tools that make your life as a teacher easier, such as our https://cs50.readme.io/[CS50 IDE], CS50 Submit, and CS50 Gradebook. You’ll need to use your edX login credentials to use most of our tools, so be sure to have those handy. After taking the course, you’d be familiar with many of these already. We filmed one of 2016’s CS50 https://www.youtube.com/playlist?list=PLhQjrBD2T383M087Hg318-gtadqgsTPzw[AP Workshops in Cambridge], which covers many of these teaching tools.
+2.	Familiarize yourself with our tools and resources. We’ve developed various tools that make your life as a teacher easier, such as our https://cs50.readme.io/[CS50 IDE], https://reference.cs50.net/[CS50 reference], and other command line tools like help50, check50, render50 and style50. You’ll need to use your edX login credentials to use most of our tools, so be sure to have those handy. After taking the course, you’d be familiar with many of these already. We filmed one of 2016’s CS50 https://www.youtube.com/playlist?list=PLhQjrBD2T383M087Hg318-gtadqgsTPzw[AP Workshops in Cambridge], which covers many of these teaching tools.
 
-3.	When naming your course, follow these conventions:
+3.	When naming your course, follow these conventions and notify outreach@cs50.harvard.edu once you have chosen a name:
 
-a.	If you're teaching university level, name your group CS50x [University Name]. 
+a.	If you're teaching at a university level, name your group CS50x [University Name]. 
 
 b.	If teaching independent of a school or university, name it CS50x [City].
 
@@ -63,66 +63,45 @@ with the understanding that:
 
 == Overview of Curriculum
 
-Week 0
-Binary. ASCII. Algorithms. Pseudocode. Source code. Compiler. Object code. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Functions. Arrays. Threads. Events.
+|===
+| Lecture | Topics 
 
-Week 1
-Linux. C. Compiling. Libraries. Types. Standard output.
-
-Week 2
-Casting. Imprecision. Switches. Scope. Strings. Arrays. Cryptography.
-
-Week 3
-Command-line arguments. Searching. Sorting. Bubble sort. Selection sort. Insertion sort. O. Ω .Θ. Recursion. Merge Sort.
-
-Week 4
-Stack. Debugging. File I/O. Hexadecimal. Strings. Pointers. Dynamic memory allocation.
-
-Week 5
-Heap. Buffer overflow. Linked lists. Hash tables. Tries. Trees. Stacks. Queues.
-
-Week 6
-TCP/IP. HTTP.
-
-Week 7
-HTML. CSS. PHP.
-
-Week 8
-MVC. SQL.
-
-Week 9
-JavaScript. Ajax.
-
-Week 10
-Security. Artificial intelligence.
-
-Week 11
-Artificial intelligence, continued.
-
-Week 12
-Exciting conclusion.
+| Week 0 | Binary. ASCII. Algorithms. Pseudocode. Source code. Compiler. Object code. Scratch. Statements. Boolean expressions. Conditions. Loops. Variables. Functions. Arrays. Threads. Events.
+| Week 1 | Linux. C. Compiling. Libraries. Types. Standard output.
+| Week 2 | Casting. Imprecision. Switches. Scope. Strings. Arrays. Cryptography.
+| Week 3 | Command-line arguments. Searching. Sorting. Bubble sort. Selection sort. Insertion sort. O. Ω .Θ. Recursion. Merge Sort.
+| Week 4 | Stack. Debugging. File I/O. Hexadecimal. Strings. Pointers. Dynamic memory allocation.
+| Week 5 | Heap. Buffer overflow. Linked lists. Hash tables. Tries. Trees. Stacks. Queues.
+| Week 6 | TCP/IP. HTTP.
+| Week 7 | HTML. CSS. PHP.
+| Week 8 | MVC. SQL.
+| Week 9 | JavaScript. Ajax.
+| Week 10 | Security. Artificial intelligence.
+| Week 11 | Artificial intelligence, continued.
+| Week 12 | Exciting conclusion.
+|===
 
 === Problem Sets
 
 We have developed nine problem sets for this course. In order to accommodate students with different backgrounds, some problem sets are released in two editions: a standard edition intended for most students and a "Hacker Edition" intended for some students. Both editions essentially cover the same material. But the Hacker Edition typically presents that material from a more technical angle and poses more sophisticated questions.
 
-Problem Set 0: Scratch
+Problem Set 0: Scratch - Students will create a scratch program to get their feet wet with the logical problem solving.
 
-Problem Set 1: C
+Problem Set 1: C - Students will implement 3 programs in C, demonstrating their understanding of the syntax of C.
 
-Problem Set 2: Crypto
+Problem Set 2: Crypto - Students will explore different ways to encrypt and decrypt data.
 
-Problem Set 3: Game of Fifteen
+Problem Set 3: Game of Fifteen - Students will complete an implementation of the Game of Fifteen, specifically 4 functions: init, draw, move, and won.
 
-Problem Set 4: Forensics
+Problem Set 4: Forensics - Students will manipulate image files to decode a secret message, resize images, and recover photos off of a corrupted SD card.
 
-Problem Set 5: Mispellings
+Problem Set 5: Mispellings - Students will implement a spellchecker and use data structures to load a dictionary and compare it against a text file to find misspelled words.
 
-Problem Set 6: Web Server
+Problem Set 6: Web Server - Students will complete an implementation of a web server in C, whereby they will implement functions to find specific file names, read bytes from files, store those bytes, and much more!
 
-Problem Set 7: C$50 Finance
+Problem Set 7: C$50 Finance - Students will implement a basic webpage to buy, sell, and quote stocks in (nearly) real time.
 
-Problem Set 8: Mashup
+Problem Set 8: Mashup - Students will Google APIs to mash together a map with news stories occurring in the respective city or location.
 
 === Final Project
 
