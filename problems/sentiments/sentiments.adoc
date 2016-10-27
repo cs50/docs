@@ -181,7 +181,7 @@ Next, try running
 
 [source]
 ----
-flask run
+flask run --host=0.0.0.0 --port=8080
 ----
 
 and then select *CS50 IDE > Web Server* in CS50 IDE's top-left corner. Search for some user's screen name, and you should see a chart! Of course, it's all yellow for now because of that `100.0` in `application.py`. Quit Flask with control-c.
