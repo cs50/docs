@@ -316,6 +316,7 @@ self.n = 42
 +
 inside of `++__init__++`, then `self.n` would also be accessible inside of `analyze`.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.lower`] of interest.
+* Note that `get_user_timeline` returns `None` in cases of error, as might happen if a screen name doesn't exist or a screen name's tweets are private.
 * And here's the https://wiki.python.org/moin/TimeComplexity[time-complexity (aka "Big O" or "Big Oh") of various operations in current CPython], the implementation of Python we're using (which is an interpreter called `python`, or really `python3`, which itself is actually written in C).
 
 === `tweets`
@@ -333,9 +334,14 @@ inside of `++__init__++`, then `self.n` would also be accessible inside of `anal
 
 If you find that when you try to search in your Flask app without typing anything into the text field, you get a `Could not build url for endpoint '/'.`, change the line in `application.py` that reads `redirect(url_for("/"))` to `return redirect(url_for("index"))`.
 
+=== TypeError: 'NoneType' object is not iterable
+
+If seeing this in a `for` loop, be sure you're indeed iterating over a `list` and not, e.g., `None`. In particular, be sure you're checking the return value of `get_user_timeline`, which, per its implementation, can return `None` in cases of error.
+
 == CHANGELOG
 
 * 2016-10-26
+** Added hint and FAQ about how `get_user_timeline` can return `None`.
 ** Clarified that `analyze` takes a (potentially multi-word) `str` as an argument, not just a word.
 * 2016-10-21
 ** Initial release.
