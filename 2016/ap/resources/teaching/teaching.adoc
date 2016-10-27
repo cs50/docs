@@ -57,39 +57,27 @@ And the six computational thinking practices are:
 *  Communicating (both orally and in writing)
 *  Collaborating
 
-This course consists of 7 core chapters and 2 fast track chapters. In chapters 0-4, students will work mainly in C. In chapter 5, students transition from a command-line environment to the Internet. Finally, in chapter 6, they will begin to dabble in other languages to prepare for the create task. The fast track chapters A and B are meant to fit into the curriculum between chapters 4 and 5, since they touch on some of the more complex concepts in C. 
+This course consists of 7 core chapters and 2 fast track chapters. In chapters 0-4, students will work mainly in C. In chapter 5, students transition from a command-line environment to the Internet. Finally, in chapter 6, they will begin to dabble in other languages to prepare for the create task. The fast track chapters A and B are meant to fit into the curriculum between chapters 4 and 5, since they touch on some of the more complex concepts in C. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect
 
-Chapter 0 - Computers and Computing
+|===
+2+| Chapter | Topics | Recommended Timeframe
 
-Computers and Computing. How Computers Work. Bits and Bytes. Hardware. Memory. Binary. ASCII. Algorithms.
+| Chapter 0 | Computers and Computing | Computers and Computing. How Computers Work. Bits and Bytes. Hardware. Memory. Binary. ASCII. Algorithms. | 3 weeks
+| Chapter 1 | Building Blocks of Programming | Pseudocode. Scratch. Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops.  | 4 weeks
+| Chapter 2 | Putting the Blocks Together | Compiling. Functions and Returning. Arrays and Strings. Command-Line Interaction. Exit Codes. Libraries. Typecasting. Bugs and Debugging.  | 5 weeks
+| Chapter 3 | Thinking Computationally | Linear Search. Bubble sort. Selection sort. Insertion sort. Binary Search. Time Complexity. Unsolvable Problems. Simulation. | 4 weeks
+| Chapter 4 | Design, Elegance, and Efficiency | Principles of Good Design. Ncurses. Structures and Encapsulation. Recursion. Merge Sort. Hexadecimal. File I/O. Images. Version Control and Collaboration. | 4 weeks
+| Chapter A | Managing Data | Stacks. Queues. Pointers. Dynamic Memory. Valgrind. Trees. Tries. Linked Lists. Hash Tables. | optional (no timeframe)
+| Chapter B | Developer Toolbox | Abstraction and API. Data Compression. Huffman Coding. LZW Compression. Scalability. Principles of Good Design. Modern-Day Computing Problems. Collaboration (cont’d) | optional (no timeframe)
+| Chapter 5 | Networking and the Internet | Internet Basics. IP Addresses. DNS and DHCP. Routers. TCP and IP. HTTP. Trust Models. Cybersecurity. HTML. CSS. | 3 weeks
+| Chapter 6 | Problem Solving in an Interconnected World | PHP. PHP for Web Programming. SQL. MVC. JavaScript. Ajax. Artificial Intelligence. Virtual and Augmented Reality. | 5 weeks
+|===
 
-Chapter 1 - Building Blocks of Programming
+== Explore and Create Tasks
 
-Pseudocode. Scratch. Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops. 
+In addition to the end of course exam provided by the College Board, students are required to complete two through assessments. The first of which is the explore task. Students will show their understanding of any computing innovation they choose through a computational artifact as well as a written response.For more information view the https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-principles-course-and-exam-description.pdf[curriculum framework] page 72.
 
-Chapter 2 - Putting the Blocks Together
-
-Compiling. Functions and Returning. Arrays and Strings. Command-Line Interaction. Exit Codes. Libraries. Typecasting. Bugs and Debugging.
-
-Chapter 3 - Thinking Computationally
-
-Linear Search. Bubble sort. Selection sort. Insertion sort. Binary Search. Time Complexity. Unsolvable Problems. Simulation.
-
-Chapter 4 - Design, Elegance, and Efficiency
-
-Principles of Good Design. Ncurses. Structures and Encapsulation. Recursion. Merge Sort. Hexadecimal. File I/O. Images. Version Control and Collaboration.
-
-Chapter 5 - Networking and the Internet
-
-Internet Basics. IP Addresses. DNS and DHCP. Routers. TCP and IP. HTTP. Trust Models. Cybersecurity. HTML. CSS.
-
-Chapter 6 - Problem Solving in an Interconnected World
-
-PHP. PHP for Web Programming. SQL. MVC. JavaScript. Ajax. Artificial Intelligence. Virtual and Augmented Reality.
-
-Optional Chapters
-
-Chapter A and B are optional and cover some of the more complex topics. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect. We recommend completing these chapters between Chapter 4 and 5.
+The second task is a create task. In this task, students will create a program that integrates mathematical logical concepts, develops abstractions, and implements algorithms.There is no restriction on programming language or languages that students can use here. For more information view the https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-principles-course-and-exam-description.pdf[curriculum framework] page 76. Both tasks need to completed and turned in via the http://apcentral.collegeboard.com/apc/members/exam/exam_information/227536.html[AP Digital Portfolio] by April 30.
 
 == License and Fair Use
 
