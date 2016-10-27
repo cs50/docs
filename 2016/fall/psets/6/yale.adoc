@@ -94,6 +94,29 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 
 See link:../../../../problems/sentiments/sentiments.html#walkthrough[Sentiments]
 
+== FAQs
+
+=== AttributeError: 'module' object has no attribute `get_`
+
+If seeing this error (for `cs50.get_char`, `cs50.get_float`, `cs50.get_int`, or `cs50.get_string`), try executing the below (which fixes a bug in an earlier version of the CS50 Library for Python):
+
+[source]
+----
+sudo chmod -R a+rX /usr/lib/python2.7/dist-packages/cs50
+sudo chmod -R a+rX /usr/lib/python3/dist-packages/cs50
+----
+
+=== ImportError: No module named 'sqlalchemy'
+
+If seeing this error, execute
+
+[source]
+----
+pip install --user sqlalchemy
+----
+
+to resolve!
+
 == How to Submit
 
 === Step 1 of 2
