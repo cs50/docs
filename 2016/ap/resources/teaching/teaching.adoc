@@ -20,19 +20,19 @@ Whether students elect to take no other computer science courses in their lifeti
 
 Interested in teaching CS50 AP at your high school? Great! Follow these steps and you’ll be on your way.
 
-1.	Take CS50! The best way to teach this class is to take it; indeed we require it of all our own teaching staff! You can find us on https://www.edx.org/course/introduction-computer-science-harvardx-cs50x[edX] or you can take the class online via Harvard’s Extension School. You may choose to take the full course, https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science/14290[CSCI E50] or as a two semester variant via CSCI https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-i/14880[E50a] and https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-ii/15041[E50b].  In both cases the course content is functionally identical; the main difference between them is that taking the class through Harvard Extension provides you with more resources: In particular, you will be assigned to a teaching fellow, who will lead you through weekly sessions to dive deeper into the content, help you stay on track and on schedule, and you can attend live online office hours with course staff to help get you unstuck in your weekly problem sets.
+1.	Take CS50! The best way to teach this class is to take it; indeed we require it of all our own teaching staff! You can find us on https://www.edx.org/course/introduction-computer-science-harvardx-cs50x[edX] or you can take the class online via Harvard’s Extension School. You may choose to take the full course, https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science/14290[CSCI E-50] or as a two semester variant via CSCI https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-i/14880[E-50a] and https://www.extension.harvard.edu/academics/courses/intensive-introduction-computer-science-ii/15041[E-50b].  In both cases the course content is functionally identical; the main difference between them is that taking the class through Harvard Extension provides you with more resources: In particular, you will be assigned to a teaching fellow, who will lead you through weekly sessions to dive deeper into the content, help you stay on track and on schedule, and you can attend live online office hours with course staff to help get you unstuck in your weekly problem sets.
 
 2.	Sign up for a workshop. Go to https://cs50.ly/teach to sign up for one of our upcoming workshops.
 
-3.	Familiarize yourself with our tools. At the CS50 AP workshop we will introduce you to many of the tools we have developed to make your life as a teacher easier. All our curriculum lives at https://cs50.harvard.edu/ap [cs50.harvard.edu/ap], which is publicly accessible once you create an account and it is activated. We also have a https://cs50.harvard.edu/ap/discuss[discussion forum] where you can ask questions to our team as well as the CS50 AP teacher community; to access it, you only need to have an active edX account, which are freely obtainable on https://edx.org[edx.org].
+3.	Familiarize yourself with our tools. At the CS50 AP workshop we will introduce you to many of the tools we have developed to make your life as a teacher easier. All our curriculum lives at https://cs50.harvard.edu/ap[cs50.harvard.edu/ap], which is publicly accessible once you create an account and it is activated. We also have a https://cs50.harvard.edu/ap/discuss[discussion forum] where you can ask questions to our team as well as the CS50 AP teacher community; to access it, you only need to have an active edX account, which are freely obtainable on https://edx.org[edx.org].
 
-4.	Submit our pre approved syllabus to the College Board with 1658725v1 as the syllabus number to get approved. You can view it https://www.dropbox.com/s/0vknqlm35bu2d94/2016-17.pdf?dl=0[here]; you must use exactly this PDF if you use the syllabus number above. After submitting, confer with your school’s AP coordinator to check on the approval process.
+4.	Submit our pre approved syllabus to the College Board with _1658725v1_ as the syllabus number to get approved. You can view it https://www.dropbox.com/s/0vknqlm35bu2d94/2016-17.pdf?dl=0[here]; you must use exactly this PDF if you use the syllabus number above. After submitting, confer with your school’s AP coordinator to check on the approval process.
 
 5.	Once approved, start teaching! 
 
 == Website
 
-This course lives at http://harvard.cs50.edu/ap.
+This course lives at https://harvard.cs50.edu/ap.
 
 Visit the course's website to watch videos, to get help, to download handouts and software, and to follow links to other resources.
 
@@ -40,23 +40,24 @@ Visit the course's website to watch videos, to get help, to download handouts an
 
 Consistent with the AP Computer Science Principles curriculum framework, the course’s material is organized around seven so-called “big ideas” as well as six computational thinking practices. The seven big ideas are:
 
-1.	Creativity
-2.	Abstraction
-3.	Data and Information
-4.	Algorithms
-5.	Programming
-6.	The Internet
-7.	Global Impact
+*	Creativity
+*	Abstraction
+*	Data and Information
+*	Algorithms
+*	Programming
+*	The Internet
+*	Global Impact
 
 And the six computational thinking practices are:
 
-* P1. Connecting Computing
-* P2. Creating Computational Artifacts
-* P3. Abstracting
-* P4. Analyzing Problems and Artifacts
-* P5. Communicating (both orally and in writing)
-* P6. Collaborating
- 
+*  Connecting Computing
+*  Creating Computational Artifacts
+*  Abstracting
+*  Analyzing Problems and Artifacts
+*  Communicating (both orally and in writing)
+*  Collaborating
+
+This course consists of 7 core chapters and 2 fast track chapters. In chapters 0-4, students will work mainly in C. In chapter 5, students transition from a command-line environment to the Internet. Finally, in chapter 6, they will begin to dabble in other languages to prepare for the create task. The fast track chapters A and B are meant to fit into the curriculum between chapters 4 and 5, since they touch on some of the more complex concepts in C. 
 
 Chapter 0 - Computers and Computing
 
@@ -120,7 +121,7 @@ with the understanding that:
 
 ** Rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.
 
-* Notice — For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by-nc-sa/3.0/.
+* Notice — For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to https://creativecommons.org/licenses/by-nc-sa/3.0/.
 
 == FAQs
 
@@ -130,7 +131,7 @@ Indeed you can! We are currently located in nearly 20 countries and would love t
 
 === Can I teach CS50 AP if I am not affiliated with a high school?
 
-Typically, our workshops are geared towards high school teachers. If you intend to teach high school or are looking to adapt our course for middle school, feel free to follow the steps listed above. If you are in fact looking to teach to in a community, city, or university, refer to http://docs.cs50.net/2016/x/resources/teaching/teaching.html
+Typically, our workshops are geared towards high school teachers. If you intend to teach high school or are looking to adapt our course for middle school, feel free to follow the steps listed above. If you are in fact looking to teach to in a community, city, or university, refer to https://docs.cs50.net/2016/x/resources/teaching/teaching.html
 
 === Are the workshops only for high school teachers?
 
