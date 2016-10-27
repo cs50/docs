@@ -345,9 +345,13 @@ pip install --user sqlalchemy
 
 to resolve!
 
+=== twython.exceptions.TwythonError: Twitter API returned a 404 (Not Found), Sorry, that page does not exist
+
+If seeing this error, odds are you're trying to get tweets for a screen name that doesn't exist or that's private!
+
 === TypeError: 'NoneType' object is not iterable
 
-If seeing this in a `for` loop, be sure you're indeed iterating over a `list` and not, e.g., `None`. In particular, be sure you're checking the return value of `get_user_timeline`, which, per its implementation, can return `None` in cases of error.
+If seeing this error in a `for` loop, be sure you're indeed iterating over a `list` and not, e.g., `None`. In particular, be sure you're checking the return value of `get_user_timeline`, which, per its implementation, can return `None` in cases of error.
 
 == CHANGELOG
 
