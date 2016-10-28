@@ -225,6 +225,8 @@ Complete the implementation of `search` in `application.py` in such a way that t
 * classifies each tweet as positive, negative, or neutral,
 * generates a chart that accurately depicts those sentiments as percentages.
 
+If a user has tweeted fewer than 100 times, classify as many tweets as exist.
+
 == Walkthrough
 
 ++++
@@ -355,6 +357,8 @@ If seeing this error in a `for` loop, be sure you're indeed iterating over a `li
 
 == CHANGELOG
 
+* 2016-10-27
+** Clarified that `search` should classify <= 100 tweets.
 * 2016-10-26
 ** Added hint and FAQ about how `get_user_timeline` can return `None`.
 ** Clarified that `analyze` takes a (potentially multi-word) `str` as an argument, not just a word.
