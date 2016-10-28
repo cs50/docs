@@ -176,4 +176,4 @@ To submit your assignment, please do the following by *Wed 11/2 at noon*.
 . In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
 . Head to https://www.dropbox.com/request/DttNdpJwg4fogVAFfKz3[this link] to upload your ZIP file containing `vigenere.c`!
 
-This was Caesar.
+C'était Vigenère.
