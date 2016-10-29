@@ -6,7 +6,7 @@
 
 == tl;dr
  
-. Watch https://video.cs50.net/2016/fall/lectures/9[Week 9's lecture].
+. Watch https://video.cs50.net/2016/fall/lectures/9?t=8m42s[Week 9's lecture].
 . Implement a stock-trading website.
 . Submit a form.
 
@@ -23,7 +23,7 @@ cd ~/workspace/pset7/
 
 == Problems
 
-* Implement link:../../../../problems/finance/finance.html[C$50 Finance] in `pset7/finance/`.
+Implement link:../../../../problems/finance/finance.html[C$50 Finance] in `pset7/finance/`.
 
 No `check50` for this one!
 
