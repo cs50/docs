@@ -1,22 +1,22 @@
 ---
+title: Initials
 ---
 :skip-front-matter:
 
-= Problem: Mario
+= Problem: Initials
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+==  Objectives
 
-* Get further practice with loops and taking user input.
-* Use terminal printing to communicate information to a user graphically.
+* Become better acquainted with functions and libraries.
+* Become comfortable working with strings and arrays.
 
 == Recommended Reading
 
-* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-// TODO
-* Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
-* Chapters 1 – 6 of _Programming in C_.
+* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
+* Chapters 6, 7, 10, 17, 19, 21, 22, 30, and 32 of _Absolute Beginner's Guide to C_.
+* Chapters 7, 8, and 10 of _Programming in C_.
 
 == Academic Honesty
 
@@ -72,81 +72,92 @@ Style::
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
+== Getting Ready
 
-== Itsa Mario
+First, curl up with the below short on loops...
 
-Toward the end of World 1-1 in Nintendo's Super Mario Brothers, Mario must ascend a "half-pyramid" of blocks before leaping (if he wants to maximize his score) toward a flag pole. Below is a screenshot.
+video::HHmiHx7GGLE[youtube,height=540,width=960]
 
-image:pyramid.png[Super Mario Brothers]
+Next, take a self-paced tour through a few coding examples that are likely to prove quite useful to you as you work on this and some future problems in this unit, the source code for which can be found at http://cdn.cs50.net/2015/fall/lectures/2/w/src2w/:
 
-Write, in a file called `mario.c` in your `~/workspace/chapter1` directory, a program that recreates this half-pyramid using hashes (`#`) for blocks. However, to make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.) If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again. Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid. Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window, as in the sample output below, wherein underlined text represents some user's input.
+video::BYbuuUntOZ4[youtube,height=540,width=960,list=PLhQjrBD2T380sc-fXwl1sviA-twxFduVU]
 
-[source,subs="macros,quotes"]
+You might also find this short on arrays of interest as well!
+
+video::7mOJN1c1JEo[youtube,height=540,width=960]
+
+== Getting Started
+
+Alright, here we go!
+
+Log into your CS50 IDE workspace and execute
+
+[source,bash]
 ----
-~/workspace/chapter1 $ [underline]#./mario#
-height: [underline]#8#
-       pass:[##]
-      pass:[###]
-     pass:[####]
-    pass:[#####]
-   pass:[######]
-  pass:[#######]
- pass:[########]
-pass:[#########]
+update50
 ----
 
-Note that the rightmost two columns of blocks must be of the same height. No need to generate the pipe, clouds, numbers, text, or Mario himself.
+within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
 
-By contrast, if the user fails to provide a non-negative integer no greater than `23`, your program's output should instead resemble the below, wherein underlined text again represents some user's input. (Recall that `GetInt` will handle some, but not all, re-prompting for you.)
+If you have not done so already, create a new `chapter2` directory, as with
+
+[source,bash]
+----
+~/workspace/ $ mkdir chapter2
+----
+
+Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/chapter2` denotes a directory called `chapter2` within `~/workspace`. Your prompt should now resemble the below.
+
+[source,bash]
+----
+~/workspace/chapter2 $
+----
+
+If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
+
+[source,bash]
+----
+history
+----
+
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. If still unsure how to fix, remember that the online forums are your friends!
+
+== Initializing
+
+Alright, let's get more comfortable with `string`.
+
+Write, in a file called `initials.c`, a program that prompts a user for their name (using `get_string` to obtain their name as a `string`) and then outputs their initials in uppercase with no spaces or periods, followed by a newline (`\n`) and nothing more. You may assume that the user's input will contain only letters (uppercase and/or lowercase) plus single spaces between words. Folks like `Joseph Gordon-Levitt`, `Conan O'Brien`, and `David J. Malan` won't be using your program. (If only!)
+
+Though he won't be __using__ your program, David does have a few similar programs (`capitalize-0`, `capitalize-1`, and `capitalize-2`), the walkthroughs of which may conjure up some ideas as to how to solve this particular problem. Have a look:
+
+video::vp3TBL4WTbc[youtube,height=540,width=960,list=PLhQjrBD2T380sc-fXwl1sviA-twxFduVU]
+
+In `capitalize-1` and `capitalize-2`, David refers to a few functions that live in the header file `ctype.h` that seem quite useful. Odds are you might be able to make use of at least https://reference.cs50.net/ctype.h/isspace[one other function] declared in that file as you work through this problem to figure out how to detect the ends of words. In fact, best to familiarize yourself with `ctype.h` generally; there's a number of very useful functions therein!
+
+So that we can automate some tests of your code, your program must behave per the examples below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes]
 ----
-~/workspace/chapter1 $ [underline]#./mario#
-Height: [underline]#-2#
-Height: [underline]#-1#
-Height: [underline]#foo#
-Retry: [underline]#bar#
-Retry: [underline]#1#
-##
-----
-
-To compile your program, remember that you can execute
-
-[source,bash]
-----
-make mario
-----
-
-or, more manually,
-
-[source,bash]
-----
-clang -o mario mario.c -lcs50
-----
-
-after which you can run your program with the below.
-
-[source,bash]
-----
-./mario
+~/workspace/chapter2 $ [underline]#./initials#
+[underline]#Zamyla Chan#
+ZC
+username@ide50:~/workspace/unit2 $ [underline]#./initials#
+[underline]#robert thomas bowden#
+RTB
 ----
 
 If you'd like to check the correctness of your program with `check50`, you may execute the below.
 
 [source,bash]
 ----
-check50 1617.chapter1.mario mario.c
+check50 1617.chapter2.initials initials.c
 ----
 
-And if you'd like to play with the staff's own implementation of mario, you may execute the below.
+And if you'd like to play with the staff's own implementation of `initials`, you may execute the below.
 
 [source,bash]
 ----
-~cs50/chapter1/mario
+~cs50/chapter2/initials
 ----
 
-Not sure where to begin? Not to worry. A walkthrough awaits!
-
-video::z32BxNe2Sfc[youtube,height=540,width=960]
-
-This was Mario.
+This was Initials.
