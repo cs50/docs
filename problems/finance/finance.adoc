@@ -216,6 +216,7 @@ It is *reasonable* to look at the staff's HTML and CSS.
 --
 +
 If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index), then `execute` returns `None`. In cases of error, `execute` raises a `RuntimeError`.
+* If (and only if) already comfortable with SQL, you're welcome to use http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy Core] or http://flask-sqlalchemy.pocoo.org/[Flask-SQLAlchemy] (i.e., http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy ORM]) instead of `cs50.SQL`. 
 * You're welcome to add additional static files to `static/`.
 * You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site as well as change the site's aesthetics more generally, including https://memegen.link/api/templates/[apologies].
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
