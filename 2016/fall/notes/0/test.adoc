@@ -2,7 +2,7 @@
 ---
 :author: Cheng Gong
 
-= Week 0: Testing Here
+= Week 0
 
 [t=0m0s]
 == This is CS50.
