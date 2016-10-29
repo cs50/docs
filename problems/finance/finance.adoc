@@ -228,6 +228,10 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 
 By default, `flask` looks for a file called `application.py` in your current working directory (because we've configured the value of `FLASK_APP`, an environment variable, to be `application.py`). If seeing this error, odds are you've run `flask` in the wrong directory!
 
+=== OSError: [Errno 98] Address already in use
+
+If, upon running `flask`, you see this error, odds are you (still) have `flask` running in another tab. Be sure to kill that other process, as with ctrl-c, before starting `flask` again.
+
 == CHANGELOG
 
 * 2016-10-28
