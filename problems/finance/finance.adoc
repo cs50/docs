@@ -142,7 +142,7 @@ Once you've implemented `buy` correctly, you should be able to see users' purcha
 
 Complete the implementation of `index` in such a way that it displays an HTML table summarizing, for the user currently logged in, which stocks the user owns, the numbers of shares owned, the current price of each stock, and the total value of each holding (i.e., shares times price). Also display the user's current cash balance along with a grand total (i.e., stocks' total value plus cash).
 
-* Odds are you'll want to execute multiple `SELECT`s. Depending on how you implement your table(s), you might find https://www.google.com/search?q=SQLite+GROUP+BY[GROUP BY], https://www.google.com/search?q=SQLite+HAVING[HAVING], https://www.google.com/search?q=SQLite+SUM[SUM], and/or https://www.google.com/search?q=SQLite+WHERE[WHERE] of interest.
+* Odds are you'll want to execute multiple ``SELECT``s. Depending on how you implement your table(s), you might find https://www.google.com/search?q=SQLite+GROUP+BY[GROUP BY], https://www.google.com/search?q=SQLite+HAVING[HAVING], https://www.google.com/search?q=SQLite+SUM[SUM], and/or https://www.google.com/search?q=SQLite+WHERE[WHERE] of interest.
 * Odds are you'll want to call `lookup` for each stock.
 
 === `sell`
@@ -216,6 +216,7 @@ It is *reasonable* to look at the staff's HTML and CSS.
 --
 +
 If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index), then `execute` returns `None`. In cases of error, `execute` raises a `RuntimeError`.
+* Be sure to use named bind parameters (i.e., a https://www.python.org/dev/peps/pep-0249/#paramstyle[paramstyle] of `named`) when calling CS50's `execute` method, a la `WHERE name=:name`. Do *not* use https://docs.python.org/3.1/library/functions.html#format[`format`] or `+` (i.e., concatenation), lest you risk a SQL injection attack.
 * If (and only if) already comfortable with SQL, you're welcome to use http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy Core] or http://flask-sqlalchemy.pocoo.org/[Flask-SQLAlchemy] (i.e., http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy ORM]) instead of `cs50.SQL`. 
 * You're welcome to add additional static files to `static/`.
 * You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site as well as change the site's aesthetics more generally, including https://memegen.link/api/templates/[apologies].
