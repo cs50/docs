@@ -217,7 +217,7 @@ It is *reasonable* to look at the staff's HTML and CSS.
 +
 If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index), then `execute` returns `None`. In cases of error, `execute` raises a `RuntimeError`.
 * You're welcome to add additional static files to `static/`.
-* You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site (and change the site's aesthetics more generally).
+* You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site as well as change the site's aesthetics more generally, including https://memegen.link/api/templates/[apologies].
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
 * It is *reasonable* to ask others to try out (and try to trigger errors in) your site. Via *Share* in CS50 IDE's top-right corner can you share your *Application* by making it *Public*. Take care not to share your *Editor*, which would provide access to your Python code and SQLite database.
 
