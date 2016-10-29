@@ -224,7 +224,9 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 
 == FAQs
 
-_None so far! Reload this page periodically to check if any arise!_
+=== ImportError: No module named 'application'
+
+By default, `flask` looks for a file called `application.py` in your current working directory (because we've configured the value of `FLASK_APP`, an environment variable, to be `application.py`). If seeing this error, odds are you've run `flask` in the wrong directory!
 
 == CHANGELOG
 
