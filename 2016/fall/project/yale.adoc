@@ -6,7 +6,7 @@
 
 The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon the course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
 
-Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty. Graduate and professional students are expected to produce a final project that is 50% greater in scope than what is expected of undergraduate students.
 
 Extensions on the final project are not ordinarily granted, except in cases of emergency.
 
@@ -74,7 +74,7 @@ _due by noon on Sun 12/11_
 
 === CS50 Fair
 
-_from 12pm until 3pm on Mon 12/12_
+_from 12pm until 2pm on Mon 12/12_
 
 Extensions on the final project are not granted, except in cases of emergency.
 
@@ -82,7 +82,7 @@ Extensions on the final project are not granted, except in cases of emergency.
 
 === Pre-Proposal
 
-Intended to promote early thought, the pre-proposal is your opportunity to bounce one or more ideas off of your teaching fellow.  Quite simply, by this pre-proposal's deadline, send an email to your teaching fellow describing one or more ideas that you have for your final project.  Short, casual emails are fine, but do explain the motivation behind each of your ideas (i.e., why it interests you).  Treat this requirement as an opportunity for counsel.  Certainly include any questions or concerns that you have in this email.
+Intended to promote early thought, the pre-proposal is your opportunity to bounce one or more ideas off of your teaching assistant.  Quite simply, by this pre-proposal's deadline, send an email to your teaching assistant describing one or more ideas that you have for your final project.  Short, casual emails are fine, but do explain the motivation behind each of your ideas (i.e., why it interests you).  Treat this requirement as an opportunity for counsel.  Certainly include any questions or concerns that you have in this email.
 
 The subject line of your email should be *Pre-Proposal*.
 
@@ -90,11 +90,11 @@ If, incidentally, you have an idea for a final project that you think someone sh
 
 === Proposal
 
-The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at https://cs50.yale.edu/proposal/[cs50.yale.edu/proposal].
+The proposal is your opportunity to receive approval and counsel from your teaching assistant before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at https://cs50.yale.edu/proposal/[cs50.yale.edu/proposal].
 
-Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
+Your teaching assistant will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
 
-After submitting your proposal, a teaching fellow other than your own may be appointed your advisor and grader for the remainder of the final project, depending on your proposal's nature.
+After submitting your proposal, a teaching assistant other than your own may be appointed your advisor and grader for the remainder of the final project, depending on your proposal's nature.
 
 === Status Report
 
@@ -106,6 +106,8 @@ The CS50 Hackathon is an epic all-nighter during which you can dive into your fi
 
 Dinner will be served around 9pm, second dinner will be served around 1am, and those still standing around 5am will be treated to breakfast at IHOP.
 
+Transportation to and from the CS50 Hackathon in Cambridge will be provided, with buses leaving Yale by 4pm and returning to Yale by 10am.
+
 Additional details on the CS50 Hackathon's logistics will be announced via email and the course's home page the week before the CS50 Hackathon.
 
 === Implementation
@@ -115,7 +117,7 @@ Ultimately due are implementation and documentation of your final project.  Your
 . Documentation for your project in the form of a file called `documentation.html`, `documentation.pdf`, `documentation.php`, or `documentation.txt`.  This documentation is to be a user's manual for your project.  Though the structure of your documentation is entirely up to you, it should be incredibly clear to the staff how and where, if applicable, to compile, configure, and use your project.  Your documentation should be at least several paragraphs in length.  It should not be necessary for us to contact you with questions regarding your project after its submission.  Hold our hand with this documentation; be sure to answer in your documentation any questions that you think we might have while testing your work.
 . A "design document" for your project in the form of a file called `design.html`, `design.pdf`, `design.php`, or `design.txt` that discusses, technically, how you implemented your project and why you made the design decisions you did.  Your design document should be at least several paragraphs in length.  Whereas your documentation is meant to be a user's manual, consider your design document your opportunity to give the staff a technical tour of your project underneath its hood.
 . Any and all files required to run your software (even if intended for some infrastructure other than CS50 IDE), including source code as well as, if applicable, configuration files, Makefiles, sample inputs, and so forth.   Needless to say, all source code should be thoroughly commented.  If your project uses a MySQL database, be sure to export it to a file (e.g., `project.sql`), as with phpMyAdmin's *Export* tab, and include that file in the directory that you submit.
-. A short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action.  Your video should somehow include your project's title, your name and year, your dorm/house and concentration, and any other details that you'd like to convey to viewers.  See http://www.cs171.org/2015/screencast/[CS171's tips on how to make a "screencast"] though you're welcome to use an actual camera.  Upload your video to YouTube as "public" or "unlisted" and take note of its URL.
+. A short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action.  Your video should somehow include your project's title, your name and year, your college and major, and any other details that you'd like to convey to viewers.  See some http://www.cs171.org/2015/screencast/[tips on how to make a "screencast"] though you're welcome to use an actual camera.  Upload your video to YouTube as "public" or "unlisted" and take note of its URL.
 
 ==== How to Submit
 
@@ -146,7 +148,7 @@ Head to https://forms.cs50.net/2015/fall/project/implementation where a form (yo
 
 The CS50 Fair is an epic display of final projects, your opportunity to showcase your work not only to us but also to others on campus.  You will be expected to bring to the CS50 Fair a laptop with which to demonstrate your project.  Plan to tell attendees what you have done and why you have done it.  And perhaps have in mind a few anecdotes about lessons you learned, roadblocks you hit, or the like.
 
-The CS50 Fair will take place in the atrium of Northwest Science Labs at 52 Oxford Street.
+The CS50 Fair will take place in Commons.
 
 Additional details on the CS50 Fair's logistics will be announced via email and the course's home page the week before the CS50 Fair.
 
