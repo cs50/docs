@@ -347,9 +347,13 @@ pip install --user sqlalchemy
 
 to resolve!
 
+=== twython.exceptions.TwythonAuthError: Twitter API returned a 401 (Unauthorized), An error occurred processing your request
+
+If seeing this error, odds are you're trying to get tweets for a screen name that's protected (i.e., private)! Not to worry, though. You can assume we'll only test your code with screen names that aren't protected.
+
 === twython.exceptions.TwythonError: Twitter API returned a 404 (Not Found), Sorry, that page does not exist
 
-If seeing this error, odds are you're trying to get tweets for a screen name that doesn't exist or that's private!
+If seeing this error, odds are you're trying to get tweets for a screen name that doesn't exist! Not to worry, though. You can assume we'll only test your code with screen names that exist.
 
 === TypeError: 'NoneType' object is not iterable
 
