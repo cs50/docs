@@ -1,7 +1,4 @@
 ---
-layout: 2016/fall
-title: Vigenère
-
 ---
 :skip-front-matter:
 

@@ -1,6 +1,4 @@
 ---
-layout: 2016/fall
-title: Reverse Engineer
 ---
 :skip-front-matter:
 

@@ -11,3 +11,7 @@ For help with Weeks 6 – 8 and Problem Set 6:
 * Attend your TA's section (or another if you have a conflict).
 * Post questions and search answers in https://cs50.yale.edu/discuss[CS50 Discuss].
 * Attend https://cs50.yale.edu/hours[office hours].
+
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/yale.html#academic-honesty[academic honesty], particularly    its "regret clause."

@@ -225,6 +225,8 @@ Complete the implementation of `search` in `application.py` in such a way that t
 * classifies each tweet as positive, negative, or neutral,
 * generates a chart that accurately depicts those sentiments as percentages.
 
+If a user has tweeted fewer than 100 times, classify as many tweets as exist.
+
 == Walkthrough
 
 ++++
@@ -345,12 +347,22 @@ pip install --user sqlalchemy
 
 to resolve!
 
+=== twython.exceptions.TwythonAuthError: Twitter API returned a 401 (Unauthorized), An error occurred processing your request
+
+If seeing this error, odds are you're trying to get tweets for a screen name that's protected (i.e., private)! Not to worry, though. You can assume we'll only test your code with screen names that aren't protected.
+
+=== twython.exceptions.TwythonError: Twitter API returned a 404 (Not Found), Sorry, that page does not exist
+
+If seeing this error, odds are you're trying to get tweets for a screen name that doesn't exist! Not to worry, though. You can assume we'll only test your code with screen names that exist.
+
 === TypeError: 'NoneType' object is not iterable
 
-If seeing this in a `for` loop, be sure you're indeed iterating over a `list` and not, e.g., `None`. In particular, be sure you're checking the return value of `get_user_timeline`, which, per its implementation, can return `None` in cases of error.
+If seeing this error in a `for` loop, be sure you're indeed iterating over a `list` and not, e.g., `None`. In particular, be sure you're checking the return value of `get_user_timeline`, which, per its implementation, can return `None` in cases of error.
 
 == CHANGELOG
 
+* 2016-10-27
+** Clarified that `search` should classify <= 100 tweets.
 * 2016-10-26
 ** Added hint and FAQ about how `get_user_timeline` can return `None`.
 ** Clarified that `analyze` takes a (potentially multi-word) `str` as an argument, not just a word.

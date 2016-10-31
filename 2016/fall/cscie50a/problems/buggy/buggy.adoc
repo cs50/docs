@@ -81,11 +81,11 @@ Log into your CS50 IDE workspace and execute
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. Next, navigate to your `workspace` directory and create a new directory therein called `chapter2` (remember how?) and then navigate inside (remember how?) Your prompt should now resemble the below.
+within a terminal window to make sure your workspace is up-to-date. Next, navigate to your `workspace` directory and create a new directory therein called `week8` (remember how?) and then navigate inside (remember how?) Your prompt should now resemble the below.
 
 [source,bash]
 ----
-~/workspace/chapter2 $
+~/workspace/week8 $
 ----
 Start off by opening up CS50 IDE and then type
 
@@ -270,9 +270,9 @@ Now that you’ve fixed all the bugs its time to reflect on the types of bugs yo
 To submit your assignment, please do the following by *Sat 10/29 at noon ET*:
 
 . Open up CS50 IDE.
-. Navigate to your `~/workspace/chapter2` directory, ensuring that the `buggy` directory containing all of your bugfixes and your `buggy.txt` file exists therein.
+. Navigate to your `~/workspace/week8` directory, ensuring that the `buggy` directory containing all of your bugfixes and your `buggy.txt` file exists therein.
 . At the terminal, type `zip -r first_last.zip buggy`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
-. This should create a new file called `first_last.zip` in your `chapter2` directory.
+. This should create a new file called `first_last.zip` in your `week8` directory.
 . In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
 . Head to https://www.dropbox.com/request/WFi5KULZugemrNN4sAje[this link] to upload your ZIP file containing your bug fixes and your `buggy.txt` writeup!
 

@@ -133,7 +133,7 @@ A schedule of problems, subject to change, appears below.
 | http://docs.cs50.net/2016/fall/cscie50a/problems/initials/initials.html[Initials]| Programming | Tue 10/18 | Sat 10/22
 | http://docs.cs50.net/2016/fall/cscie50a/problems/caesar/caesar.html[Caesar] | Programming | Fri 10/21 | Wed 10/26
 | http://docs.cs50.net/2016/fall/cscie50a/problems/buggy/buggy.html[Buggy] | Written | Tue 10/25 | Sat 10/29
-| Vigenere | Programming | Fri 10/28 | Wed 11/2
+| http://docs.cs50.net/2016/fall/cscie50a/problems/vigenere/vigenere.html[Vigenere] | Programming | Fri 10/28 | Wed 11/2
 | Seek | Programming | Tue 11/1 | Sat 11/5
 | Fifteen | Programming | Fri 11/4 | Sat 11/12
 | Sudoku | Programming | Fri 11/11 | Sat 11/19

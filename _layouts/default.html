@@ -46,9 +46,16 @@
         </style>
         <style>
 
-            /* don't wrap long code lines */
-            pre code {
+            /* wrap inline code */
+            *:not(pre) > code {
+                white-space: pre-wrap;
+            }
+            
+            /* don't wrap code blocks */
+            pre, pre code {
+                overflow: auto;
                 white-space: pre;
+                word-wrap: normal;
             }
 
             /* match margin-bottom of div.paragraph */

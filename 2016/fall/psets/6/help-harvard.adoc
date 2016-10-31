@@ -12,3 +12,7 @@ For help with Weeks 6 – 8 and Problem Set 6:
 * Post questions and search answers in https://cs50.harvard.edu/discuss[CS50 Discuss].
 * Attend individual TFs' and CAs' https://cs50.harvard.edu/hours[office hours] at HSA.
 * Attend course-wide https://cs50.harvard.edu/hours[office hours].
+
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly    its "regret clause."

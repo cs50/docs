@@ -1,6 +1,4 @@
 ---
-layout: 2016/fall
-title: Hello
 ---
 :skip-front-matter:
 
