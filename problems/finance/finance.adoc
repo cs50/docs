@@ -171,7 +171,7 @@ Implement one (1) additional feature, a personal touch of your choice:
 
 == Walkthrough
 
-video::sPpoqwoY6pI[youtube,list=PLhQjrBD2T383nc2LUdF5XWbyrsqiYy4nq]
+video::sPpoqwoY6pI[youtube,list=PLhQjrBD2T383KQ0yBY2yQwpYv-OiR-4f1]
 
 == Testing
 
