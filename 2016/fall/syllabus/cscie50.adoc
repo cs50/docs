@@ -88,7 +88,7 @@ A schedule of lectures, subject to change, appears below.
 | Week 7 | Machine Learning | Thu 10/13, 4pm – 5:15pm | Thu 10/13, 4pm
 | Week 8 | Python | Tue 10/18, 12:30pm – 3:30pm | Fri 10/21, noon
 | Week 9 | SQL | Thu 10/27, 11:30am – 2:30pm | Fri 10/28, noon
-| Week 10 | JavaScript | Mon 10/31, 11:30am – 2:30pm | Fri 11/4, noon
+| Week 10 | JavaScript | Wed 11/2, 11:15am – 2:15pm | Fri 11/4, noon
 | Week 11 | The End | Mon 11/21, 1pm – 2:30pm | Mon 11/21, 1pm
 |===
 
@@ -155,12 +155,24 @@ A schedule of problem sets, subject to change, appears below.
 |===
 
 == Test
+ 
+|===
+| Released        | Due
 
+| Fri 10/14, noon | Mon 10/17, noon
+|===
+ 
 Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
-
+ 
 == Quiz
+ 
+|===
+| Released       | Due
 
-Due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+| Mon 11/14, 5pm | Thu 11/17, noon
+|===
+ 
+Due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom  you may turn for help or from whom you may receive help are the course's heads.
 
 == Final Project
 

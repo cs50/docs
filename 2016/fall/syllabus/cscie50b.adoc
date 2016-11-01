@@ -137,7 +137,7 @@ Extensions on the final project are not ordinarily granted, except in cases of m
 | Milestone | Date
 
 | Pre-Proposal | Mon 10/31, noon
-| Proposal | Mon 11/7, noon
+| Proposal | Mon 11/14, noon
 | Status Report | Mon 11/28, noon
 | CS50 Hackathon | Thu 12/1, 7pm – Fri 12/2, 7am
 | Implementation | Thu 12/8, noon
