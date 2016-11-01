@@ -168,6 +168,7 @@ A schedule of problem sets, subject to change, appears below.
 
 |===
 |      | Released        | Due
+
 | Test | Fri 10/14, noon | Mon 10/17, noon
 |===
 
@@ -177,6 +178,7 @@ Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (
 
 |===
 |      | Released       | Due
+
 | Quiz | Mon 11/14, 5pm | Thu 1/17, noon
 |===
 
