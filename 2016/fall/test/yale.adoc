@@ -1,13 +1,11 @@
 ---
-layout: 2016/fall
-title: About Test
 ---
 
 = About Test
 
-Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
+Released at noon on Fri 10/14 and due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
 
-The test will be released via the course's website at noon on Fri 10/14 and will be submitted via `submit50` (anytime before noon on Mon 10/17). You should expect to spend several (but not 72!) hours on the test.
+The test will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 72!) hours on the test.
 
 Sections on Mon 10/10 and Tue 10/11 will be opportunities to review content and prepare for the test. Office hours on Wed 10/12 and Thu 10/13 will be additional opportunities for Q&A. Also, a course-wide review session on Wed 10/12 from 1:00pm until 2:30pm will be streamed live at https://live.cs50.net/[live.cs50.net] and be available on demand immediately afterward at https://cs50.yale.edu/[cs50.yale.edu].
 
@@ -17,12 +15,11 @@ Among the test's aims is to assess your newfound comfort with the course's mater
 
 Ultimately, how best to prepare depends on how you learn best. But allow us to recommend that you prioritize your studies per the ordering below.
 
-. Consult the latest version of the *syllabus* for a (non-exhaustive) list of topics covered in lectures in weeks 0 through 5. Keep in mind that topics that appeared in one week might have reappeared in subsequent weeks.
 . Review each lecture's *notes*.
 . Review each lecture's *source code*, if any.
 . Review each lecture's *slides*.
 . Review each lecture's *video*.
-. Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's syllabus, lectures, and problem sets as the official sources for this year's topics.
+. Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
 . Review problem sets' *specifications*, *postmortems*, and *distribution code*, if any.
 
 == Practice Exercises

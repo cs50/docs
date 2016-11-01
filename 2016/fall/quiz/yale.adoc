@@ -1,0 +1,21 @@
+---
+---
+
+= About Quiz
+
+Released at 5pm on Mon 11/14 and due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
+
+The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 67!) hours on the quiz.
+
+A course-wide review session for the quiz will be streamed live at https://live.cs50.net/[live.cs50.net] and be available on demand immediately afterward at https://cs50.yale.edu/[cs50.yale.edu]. Sections will not be held on Mon 11/14 or Tue 11/15. Office hours will not be held on Wed 11/16.
+
+The quiz's format will be similar to the test's format, with short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE).
+
+== How to Prepare
+
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any.
+. Review each lecture's *slides*.
+. Review each lecture's *video*.
+. Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Review problem sets' *specifications*, *postmortems*, and *distribution code*, if any.
