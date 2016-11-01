@@ -171,17 +171,7 @@ Implement one (1) additional feature, a personal touch of your choice:
 
 == Walkthrough
 
-_Coming Mon 10/31 eve._
-
-////
-++++
-<div class="videoblock">
-<div class="content">
-<iframe src="https://video.cs50.net/2016/fall/psets/7/pset7/finance" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-++++
-////
+video::sPpoqwoY6pI[youtube,list=PLhQjrBD2T383nc2LUdF5XWbyrsqiYy4nq]
 
 == Testing
 
