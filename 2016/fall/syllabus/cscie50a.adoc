@@ -82,8 +82,8 @@ For students taking CSCI E-50a, the pace of the course differs from CSCI E-50, w
 | Week 6 | https://ap.cs50.net/cscie50a/2/command-line/[Command line]. https://ap.cs50.net/cscie50a/2/exit-codes[Exit codes]. | Fri 10/14
 | Week 7 | https://ap.cs50.net/cscie50a/2/libraries[Libraries. Frameworks.] https://ap.cs50.net/cscie50a/2/typecasting[Typecasting]. | Tue 10/18, Fri 10/21
 | Week 8 | https://ap.cs50.net/cscie50a/2/bugs-debugging[Debugging]. | Tue 10/25
-| Week 9 | Sorting. Bubble sort. Selection sort. Insertion sort. Linear search. Binary search. | Tue 11/1, Fri 11/4
-| Week 10 | Time complexity. Unsolvable problems. Structures. Encapsulation. | Tue 11/8, Fri 11/11
+| Week 9 | https://ap.cs50.net/cscie50a/3/linear-search[Linear search]. https://ap.cs50.net/cscie50a/3/bubble-sort[Bubble sort]. https://ap.cs50.net/cscie50a/3/selection-sort[Selection sort]. https://ap.cs50.net/cscie50a/3/insertion-sort[Insertion sort]. Binary search. Time complexity. | Tue 11/1, Fri 11/4
+| Week 10 | Unsolvable problems. Structures. Encapsulation. | Tue 11/8, Fri 11/11
 | Week 11 | Recursion. Merge sort. Hexadecimal. File I/O. | Tue 11/15, Fri 11/18
 | Week 12 | __no lecture, Thanksgiving__ |
 | Week 13 | Images. Version control. Collaboration. | Tue 11/29, Fri 12/2
@@ -134,7 +134,7 @@ A schedule of problems, subject to change, appears below.
 | http://docs.cs50.net/2016/fall/cscie50a/problems/caesar/caesar.html[Caesar] | Programming | Fri 10/21 | Wed 10/26
 | http://docs.cs50.net/2016/fall/cscie50a/problems/buggy/buggy.html[Buggy] | Written | Tue 10/25 | Sat 10/29
 | http://docs.cs50.net/2016/fall/cscie50a/problems/vigenere/vigenere.html[Vigenere] | Programming | Fri 10/28 | Wed 11/2
-| Seek | Programming | Tue 11/1 | Sat 11/5
+| Sort Race | Programming | Tue 11/1 | Sat 11/5
 | Fifteen | Programming | Fri 11/4 | Sat 11/12
 | Sudoku | Programming | Fri 11/11 | Sat 11/19
 | Analyze This | Written | Fri 11/18 | Wed 11/23
