@@ -134,7 +134,7 @@ A schedule of problems, subject to change, appears below.
 | http://docs.cs50.net/2016/fall/cscie50a/problems/caesar/caesar.html[Caesar] | Programming | Fri 10/21 | Wed 10/26
 | http://docs.cs50.net/2016/fall/cscie50a/problems/buggy/buggy.html[Buggy] | Written | Tue 10/25 | Sat 10/29
 | http://docs.cs50.net/2016/fall/cscie50a/problems/vigenere/vigenere.html[Vigenere] | Programming | Fri 10/28 | Wed 11/2
-| Sort Race | Programming | Tue 11/1 | Sat 11/5
+| http://docs.cs50.net/2016/fall/cscie50a/problems/race/race.html[Sort Race] | Programming | Tue 11/1 | Sat 11/5
 | Fifteen | Programming | Fri 11/4 | Sat 11/12
 | Sudoku | Programming | Fri 11/11 | Sat 11/19
 | Analyze This | Written | Fri 11/18 | Wed 11/23
