@@ -8,7 +8,7 @@ Released at 5pm on Mon 11/14 and due by noon on Thu 11/17 is a take-home quiz th
 
 The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 67!) hours on the quiz.
 
-A course-wide review session for the quiz will be streamed live at https://live.cs50.net/[live.cs50.net] and be available on demand immediately afterward at https://cs50.yale.edu/[cs50.yale.edu]. Sections will not be held on Mon 11/14 or Tue 11/15. Office hours will not be held on Wed 11/16.
+Sections on Mon 11/14 and Tue 11/15 will be opportunities to review content and prepare for the quiz. Office hours on Mon 11/14, Tue 11/15, and Wed 11/16 will be additional opportunities for Q&A. Also, a course-wide review session on Mon 11/14 from 1:00pm until 2:30pm will be streamed live at https://live.cs50.net/[live.cs50.net] and be available on demand immediately afterward at https://cs50.yale.edu/[cs50.yale.edu].
 
 The quiz's format will be similar to the test's format, with short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE).
 
