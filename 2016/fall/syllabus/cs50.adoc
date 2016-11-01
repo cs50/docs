@@ -167,9 +167,9 @@ A schedule of problem sets, subject to change, appears below.
 == Test
 
 |===
-|      | Released        | Due
+| Released        | Due
 
-| Test | Fri 10/14, noon | Mon 10/17, noon
+| Fri 10/14, noon | Mon 10/17, noon
 |===
 
 Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
@@ -177,9 +177,9 @@ Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (
 == Quiz
 
 |===
-|      | Released       | Due
+| Released       | Due
 
-| Quiz | Mon 11/14, 5pm | Thu 1/17, noon
+| Mon 11/14, 5pm | Thu 11/17, noon
 |===
 
 Due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
