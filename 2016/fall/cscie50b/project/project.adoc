@@ -1,0 +1,112 @@
+---
+---
+:skip-front-matter:
+
+= Final Project
+
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon the course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
+
+Extensions on the final project are not ordinarily granted, except in cases of emergency.
+
+== Ideas
+
+Here are just some of the possibilities, organized into (non-exhaustive) "tracks". Discuss any and all with your TF!
+
+If at a loss for ideas, look here for more inspiration!
+
+* https://manual.cs50.net/seminars/[CS50 Seminars]
+* http://newapps.cs50.net/cs50/@/discuss/threads/156/all/new/1[CS50 Discuss]
+
+== Schedule
+
+=== Pre-Proposal
+
+_due by noon on Mon 10/31_
+
+=== Proposal
+
+_due by noon on Mon 11/14_
+
+=== Status Report
+
+_due by noon on Mon 11/28_
+
+=== CS50 Hackathon
+
+_from 7pm on Thu 12/1 until 7am on Fri 12/2_
+
+=== Implementation
+
+_due by noon on Thu 12/8_
+
+=== CS50 Fair
+
+_from 11am until 4:30pm on Fri 12/9_
+
+Extensions on the final project are not granted, except in cases of emergency.
+
+== Specifications
+
+=== Pre-Proposal
+
+Intended to promote early thought, the pre-proposal is your opportunity to bounce one or more ideas off of your teaching fellow.  Quite simply, by this pre-proposal's deadline, send an email to your teaching fellow describing one or more ideas that you have for your final project.  Short, casual emails are fine, but do explain the motivation behind each of your ideas (i.e., why it interests you).  Treat this requirement as an opportunity for counsel.  Certainly include any questions or concerns that you have in this email.
+
+The subject line of your email should be *Pre-Proposal*.
+
+=== Proposal
+
+The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, you will submit your proposal via a web form. If working with one or two other classmates, it suffices for just one of you to submit the proposal.
+
+Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
+
+After submitting your proposal, a teaching fellow other than your own may be appointed your advisor and grader for the remainder of the final project, depending on your proposal's nature.
+
+=== Status Report
+
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  You will submit your status report via a web form.
+
+=== CS50 Hackathon
+
+The CS50 Hackathon is an epic all-nighter during which you can dive into your final project's implementation alongside classmates and staff. If you happen to be in the Cambridge area that evening, you are welcome to attend! If you indeed choose to partake, you'll be asked to propose three milestones for yourself that evening: a "good" one that you intend to achieve no matter what; a "better" one that you think you can achieve; and a "best" one that you hope to achieve.
+
+Dinner will be served around 9pm, second dinner will be served around 1am, and those still standing around 5am will be treated to breakfast at IHOP.
+
+Additional details on the CS50 Hackathon's logistics will be announced later.
+
+=== Implementation
+
+Ultimately due are implementation and documentation of your final project. Your submission thereof must include all of the below.
+
+. Documentation for your project in the form of a file called `documentation.txt`. This documentation is to be a user's manual for your project.  Though the structure of your documentation is entirely up to you, it should be incredibly clear to the staff how and where, if applicable, to compile, configure, and use your project.  Your documentation should be at least several paragraphs in length.  It should not be necessary for us to contact you with questions regarding your project after its submission.  Hold our hand with this documentation; be sure to answer in your documentation any questions that you think we might have while testing your work.
+. A "design document" for your project in the form of a file called `design.txt` that discusses, technically, how you implemented your project and why you made the design decisions you did.  Your design document should be at least several paragraphs in length.  Whereas your documentation is meant to be a user's manual, consider your design document your opportunity to give the staff a technical tour of your project underneath its hood.
+. Any and all files required to run your software (even if intended for some infrastructure other than CS50 IDE), including source code as well as, if applicable, configuration files, Makefiles, sample inputs, SQLite databases, and so forth. Needless to say, all source code should be thoroughly commented.
+. A short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action.  Your video should somehow include your project's title, your name and year, your dorm/house and concentration, and any other details that you'd like to convey to viewers.  See http://www.cs171.org/2015/screencast/[CS171's tips on how to make a "screencast"] though you're welcome to use an actual camera.  Upload your video to YouTube as "public" or "unlisted" and take note of its URL.
+
+==== How to Submit
+
+_Coming Soon._
+
+== CS50 Fair
+
+The CS50 Fair is an epic display of final projects, your opportunity to showcase your work not only to us but also to others on campus.  You will be expected to bring to the CS50 Fair a laptop with which to demonstrate your project.  Plan to tell attendees what you have done and why you have done it.  And perhaps have in mind a few anecdotes about lessons you learned, roadblocks you hit, or the like.
+
+The CS50 Fair will take place in the atrium of Northwest Science Labs at 52 Oxford Street.
+
+Additional details on the CS50 Fair's logistics will be announced via email and the course's home page the week before the CS50 Fair.
+
+== Assessment
+
+Your pre-proposal, proposal, and status report will be evaluated on the bases of, at least, clarity and thoroughness. Your implementation will be evaluated along four axes primarily:
+
+Scope::
+  To what extent does your code implement the features required by our specification?
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+All students, whether or not taking the course for a letter grade, must ordinarily submit this final project to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
