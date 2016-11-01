@@ -315,7 +315,7 @@ Ouch! Or lastly
 
 [source,subs=quotes]
 ----
-username@ide50:~/workspace/unit3/race $ [underline]#./race -s 20000#
+~/workspace/week9/race $ [underline]#./race -s 20000#
 bubble sort benchmark:         0.000 seconds
 selection sort benchmark:      0.592 seconds
 insertion sort benchmark:      0.000 seconds
