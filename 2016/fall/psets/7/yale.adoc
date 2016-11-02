@@ -40,7 +40,7 @@ Implement link:../../../../problems/finance/finance.html[C$50 Finance] in `pset7
 [source]
 ----
 update50
-cd ~/workspace/pset7/
+cd ~/workspace/pset7/finance/
 submit50 pset7
 ----
 
