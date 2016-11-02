@@ -1,6 +1,4 @@
 ---
-layout: 2016/fall
-title: Scramble (Part 1)
 ---
 :skip-front-matter:
 
