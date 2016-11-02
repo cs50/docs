@@ -93,7 +93,7 @@ No pressure of course, but it's worth noting that by the end of your time in thi
 
 == We've Just Scratched the Surface
 
-In http://cdn.cs50.net/ap/1617/problems/scratch.html[Scratch], your charge was to explore Scratch, tinkering around with puzzle pieces as you saw fit and creating a project entirely of your own design. To that end, you may not have had the chance to explore all facets of Scratch, including one of the features that makes it such a fun language to play with--remixing.
+In http://docs.cs50.net/2016/ap/problems/scratch/scratch.html[Scratch], your charge was to explore Scratch, tinkering around with puzzle pieces as you saw fit and creating a project entirely of your own design. To that end, you may not have had the chance to explore all facets of Scratch, including one of the features that makes it such a fun language to play with--remixing.
 
 In the context of Scratch, _remixing_ a project means creating a copy of its sprites and scripts (which is saved online in your Scratch account), and then putting your own unique twist on those sprites and scripts to create a Scratch project that draws inspiration from the original but takes it one step further in some way.footnote:[Alternatively, you could download all project's assets and remix the project using the offline editor!]
 

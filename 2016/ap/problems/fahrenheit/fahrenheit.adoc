@@ -100,7 +100,7 @@ Let's do a quick test to make sure things work as expected. Worldwide, the commo
 
 Log into your CS50 IDE account (remember how?) and be sure before doing anything to run `update50` in your terminal window, waiting until any updates finish processing before moving further. We'll remind you of this as much as possible, but do note that before each problem you should remember to run that command to be sure your IDE workspace is fully up-to-date.
 
-If you have it from http://cdn.cs50.net/ap/1617/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be somewhere in your `chapter1` directory. (If you don't have it, create it now.) The contents should look probably like this:
+If you have it from http://docs.cs50.net/2016/ap/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be somewhere in your `chapter1` directory. (If you don't have it, create it now.) The contents should look probably like this:
 
 [source,c]
 ----
@@ -122,14 +122,14 @@ To make our program more adaptable, instead of having it always print the same s
 int main(void)
 {
     printf("Enter your name: ");
-    string name = GetString();
+    string name = get_String();
     printf("hello, %s\n", name);
 }
 ----
 
-Notice a couple of important differences in this program. It seems that we have decided to include another header file called `cs50.h`. In this file, which you can have a peek at http://mirror.cs50.net/library50/c/cs50-library-c-3.0/cs50.h[here] and which we'll also discuss in more detail later in the course (so don't be alarmed by some unfamiliar syntax), you'll see that that's where we've declared the data type of `string` and declared a function called `GetString`.
+Notice a couple of important differences in this program. It seems that we have decided to include another header file called `cs50.h`. In this file, which you can have a peek at http://mirror.cs50.net/library50/c/cs50-library-c-3.0/cs50.h[here] and which we'll also discuss in more detail later in the course (so don't be alarmed by some unfamiliar syntax), you'll see that that's where we've declared the data type of `string` and declared a function called `get_string`.
 
-A `string` in computer science essentially refers to a collection of characters--a word, a sentence, or a phrase. Because when we ask the user for their name it probably consists of more than a single letter, which would be just a character (`char`), we need to use `GetString` to collect their input and we need to store it in a variable whose data type is `string`; we've done this, the variable called `name` has the data type of `string`.
+A `string` in computer science essentially refers to a collection of characters--a word, a sentence, or a phrase. Because when we ask the user for their name it probably consists of more than a single letter, which would be just a character (`char`), we need to use `get_string` to collect their input and we need to store it in a variable whose data type is `string`; we've done this, the variable called `name` has the data type of `string`.
 
 What else has changed, though? That last line of code looks a bit strange. There's a `%s` in there, and the variable `name` appears. What's going on?
 
@@ -144,7 +144,7 @@ Enter your name: [underline]#Alice#
 hello, Alice
 ----
 
-There's not just `GetString` in `cs50.h` though. There are functions to get user input of nearly all types: `GetInt`, `GetFloat`, `GetDouble`, `GetLongLong`, `GetChar`.
+There's not just `get_string` in `cs50.h` though. There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long_long`, `get_char`.
 
 == Getting Warmer ==
 
@@ -161,7 +161,7 @@ F: 212.0
 
 To solve this problem, you needn't do anything more complex than use your currently existing knowledge of C, and the information contained in this specification, including the temperature conversion formula. No matter how the user inputs the temperature in Celsius (that is, no matter to how many decimal places they choose), take care to display Fahrenheit to _exactly_ one decimal place. No need to worry about floating-point imprecision or integer overflow, if you recall what those terms mean.footnote:[If you don't, you soon will!]
 
-Do recall that if you include `<cs50.h>` atop your `fahrenheit.c` file, you will have access to a function called `GetFloat`, which will allow the user to input a floating-point value (a number with a decimal point in it, also known as a __real number__).
+Do recall that if you include `<cs50.h>` atop your `fahrenheit.c` file, you will have access to a function called `get_float`, which will allow the user to input a floating-point value (a number with a decimal point in it, also known as a __real number__).
 
 Incidentally, know that `printf` can be used to specify how many places after the decimal point you wish to display to the user. For example, assuming you've written the following program in a file called `truncate.c`:
 

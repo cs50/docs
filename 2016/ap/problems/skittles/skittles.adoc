@@ -150,7 +150,7 @@ Never mind what `NULL` is for now, but know that `time(NULL)` returns the curren
 == Guesstimating
 
 Alright, what other puzzle pieces do we need? Well, your program will need to tell the user what to do, for which `printf` should be helpful. And you'll want to allow the user an infinite number
-of guesses, for which some looping construct is probably necessary. And you'll also want to get integers from the user, for which `GetInt`, declared in `cs50.h`, is definitely handy.
+of guesses, for which some looping construct is probably necessary. And you'll also want to get integers from the user, for which `get_int`, declared in `cs50.h`, is definitely handy.
 
 Okay, where to begin? Allow us to suggest that you begin by filling `skittles.c` with this code:
 
