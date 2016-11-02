@@ -338,4 +338,16 @@ passing in appropriate command-line arguments.
 
 In no part of this problem are you expected to optimize your runtimes for any of these algorithms (beyond, of course, implementing them correctly). Rather, after you get them implemented you should test different arrays of different sizes and different configurations to see under which circumstances each algorithm "shines". So you can see actual differences between these algorithms, we recommend that your `size` argument be at least `1000`, as that way they'll tend to take at least a few thousandths of a second to sort.
 
+
+== How to Submit
+
+To submit your assignment, please do the following by *Sat 11/5 at noon*.
+
+. Open up CS50 IDE.
+. Navigate to your `~/workspace/week9` directory, ensuring that the directory called `race` containing all of your work on this problem exists therein.
+. At the terminal, type `zip -r first_last.zip race`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `week9` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/nQRJHx0JfQllpKv0q4FU[this link] to upload your ZIP file containing your completed implementation of the sort race.
+
 This was Sort Race.
