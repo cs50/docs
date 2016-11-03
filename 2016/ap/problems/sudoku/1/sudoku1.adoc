@@ -87,7 +87,7 @@ Then, create a new directory inside of your `workspace` called `chapter4` (Remem
 
 [source,bash]
 ----
-wget http://cs50.docs.net/2016/ap/problems/sudoku/sudoku.zip
+wget http://docs.cs50.net/2016/ap/problems/sudoku/sudoku.zip
 ----
 
 Unzip the ZIP file (remember how?) and then delete the ZIP file from your `chapter4` directory. Navigate into your newly-created `sudoku` directory and type:
