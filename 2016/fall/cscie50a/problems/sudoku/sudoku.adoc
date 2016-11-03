@@ -269,6 +269,7 @@ sscanf(argv[2], " %d %c", &g.number, &c)
 . What function (that we wrote) can you call to make the cursor actually appear at those coordinates? (Hint: we told you a little while back!)
 . Around what line number in `main` could you add additional `case` statements to handle keystrokes besides N, R, and ctrl-L?
 . Most n00b and l33t boards have lots of blanks. How many blanks are in debug #1? Debug #2? Debug #9?
+
 More than any other problem to date, this problem is about design. Do give some thought about how best to implement some feature, given the game's framework. With that said, you are welcome to change most any aspect of code if the change fits your design better. However, what you must not change is anything with respect to logging, including `log_move`.
 
 === Required Features
