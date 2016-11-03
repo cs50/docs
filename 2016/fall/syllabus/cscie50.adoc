@@ -111,7 +111,7 @@ A schedule of sections appears below. After sectioning is complete, this list wi
 | Python | week of Sun 10/23
 | SQL | week of Sun 10/30
 | JavaScript | week of Sun 11/6
-| Review for Quiz | week of Sun 11/13
+| Review for Quiz | Mon 11/14*
 |===
 
 pass:[*] Course-wide and filmed.
@@ -169,10 +169,10 @@ Due by noon on Mon 10/17 is a take-home test that will cover Weeks 0 through 5 (
 |===
 | Released       | Due
 
-| Wed 11/16, 6pm | Fri 11/18, 6pm
+| Tue 11/15, noon | Thu 11/17, noon
 |===
  
-Due by 6pm on Fri 11/18 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom  you may turn for help or from whom you may receive help are the course's heads.
+Due by noon on Thu 11/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom  you may turn for help or from whom you may receive help are the course's heads.
 
 == Final Project
 
