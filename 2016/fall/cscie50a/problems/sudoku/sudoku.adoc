@@ -167,7 +167,7 @@ Now, let's talk about that skeleton. Basically, we've implemented the aesthetics
 
 Because this game is meant to be more sophisticated (and fun) than previous ones, you'll also find that we've given you quite a bit more code this time. Don't freak out, but it's just over 600 lines. But know now that none of it is all that complex. In fact, if you look at each of the functions in isolation, you'll likely find each pretty straightforward. What's neat is that when you combine so many building blocks, you get some pretty compelling results. In fact, let's take a look.
 
-Navigate to your `~/workspace/chapter4/sudoku` directory and execute the increasingly familiar command below:
+Navigate to your `~/workspace/week10/sudoku` directory and execute the increasingly familiar command below:
 
 [source,bash]
 ----
@@ -281,7 +281,7 @@ So that's everything. Not bad for about 600 lines.
 
 The funny thing is that none of the 600 or so lines actually implements Sudoku. But that's where you come in! Your challenge is to implement a few features, among them support for actual game play.
 
-Before you do, though, a few questions for you. Create a file called `questions.txt` in `~/workspace/chapter4/sudoku` and record in it your answers to the below:
+Before you do, though, a few questions for you. Create a file called `questions.txt` in `~/workspace/week10/sudoku` and record in it your answers to the below:
 
 . Notice that `main` calls `strcmp`. What does it mean if `strcmp`, when passed two strings as arguments, returns `0`?
 . How would you rewrite the line below, excerpted from `main`, using only `if` and `else`?
