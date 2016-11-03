@@ -37,7 +37,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Getting Started
 
-Be forewarned that this spec is long... but that's why you've got a week to tackle this one!
+This problem is longer than any you've previously tackled... but that's why you've got a week to work on it. We hope the results will be worth the effort!
 
 First, log into https://cs50.io/[cs50.io] and execute
 
