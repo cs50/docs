@@ -1,0 +1,99 @@
+---
+toclevels: 1
+---
+
+= Mashup
+
+== tl;dr
+ 
+Implement a website that lets users search for articles atop a map, a la the below.
+
+image::mashup.png["Mashup",role="related thumb"]
+
+== Background
+
+== Distribution
+
+=== Downloading
+
+[source]
+----
+$ wget https://github.com/cs50/problems/archive/mashup.zip
+$ unzip mashup.zip
+$ rm mashup.zip
+$ mv problems-mashup mashup
+$ cd mashup
+$ ls
+application.py  mashup.db         static/
+helpers.py      requirements.txt  templates/
+----
+
+=== Running
+
+. Install this problem's dependencies (within `mashup/`):
++
+[source]
+----
+pip3 install --user -r requirements.txt
+----
+. Start Flask's built-in web server (within `mashup/`):
++
+[source]
+----
+flask run
+----
++
+Select *CS50 IDE > Web Server* to see the distribution code in action. You won't be able to search for news, though, just yet!
+. In another terminal window, start phpLiteAdmin (within `mashup/`):
++
+[source]
+----
+phpliteadmin mashup.db
+----
++
+And open the URL that `phpliteadmin` outputs in a new tab. No tables yet! Here on out, if you'd prefer a command line, you're welcome to use `sqlite3` instead of phpLiteAdmin.
+
+=== Understanding
+
+TODO
+
+== Specification
+
+TODO
+
+== Walkthrough
+
+_Coming Mon 11/7 eve._
+////
+video::TODO[youtube,list=TODO]
+////
+
+== Testing
+
+No `check50` for this one, but be sure to try to "break" your own site, as by
+
+* searching for cities that don't exist,
+* clicking markers for cities that don't have any articles,
+* dragging and zooming in and out to update your map's markers, and
+* searching with potentially dangerous characters like `'` and `;`.
+
+== Staff's Solution
+
+You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
+
+http://pset8.cs50.net/
+
+It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* to look at the staff's JavaScript.
+
+== Hints
+
+TODO
+
+== FAQs
+
+_None so far! Reload this page periodically to check if any arise!_
+
+== CHANGELOG
+
+* 2016-11-04
+** Initial release.
