@@ -41,9 +41,12 @@ Interesting, it looks like our input is now the value of an HTTP parameter, `geo
 * https://news.google.com/news/section?geo=Cambridge,+Massachusetts
 * https://news.google.com/news/section?geo=New+Haven,+Connecticut
 
-Nice! Never fear a bit of trial and error! Now try changing the value of `geo` to, say, `02138` or `06511` and then hit Enter again. You should find yourself at the URL below? The articles might change (since Cambridge and New Haven have more than one postal code each), but the news should still be about Cambridge or New Haven?
+Nice. Never fear a bit of trial and error! Now try changing the value of `geo` to, say, `02138` or `06511` and then hit Enter again. You should find yourself at the URL below? The articles might change (since Cambridge and New Haven have more than one postal code each), but the news should still be about Cambridge or New Haven?
 
-Nice. Though the page you're looking at, of course, is written in HTML. And all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Scroll down to the page's bottom and look for *RSS*. Click that link, and you should find yourself at one of the URLs below?
+* https://news.google.com/news/section?geo=02138
+* https://news.google.com/news/section?geo=06511
+
+Very nice. Though the page you're looking at, of course, is written in HTML. And all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Scroll down to the page's bottom and look for *RSS*. Click that link, and you should find yourself at one of the URLs below?
 
 * https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&geo=02138&output=rss
 * https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&geo=06511&output=rss
@@ -127,14 +130,34 @@ application.py  mashup.db   requirements.txt  templates/
 helpers.py      readme.txt  static/           US.txt
 ----
 
-=== Running
+=== Configuring
 
-. Install this problem's dependencies (within `mashup/`):
+. In a terminal window, within `mashup/`, execute
 +
 [source]
 ----
-pip3 install --user -r requirements.txt
+pip install --user -r requirements.txt
 ----
++
+to install this problem's dependencies.
+. If you don't already have a Google account (e.g., Gmail), sign up at https://accounts.google.com/SignUp[accounts.google.com/SignUp].
+. Visit https://developers.google.com/maps/web/[developers.google.com/maps/web/], logging in if prompted, and click **GET A KEY** at top-right.
+. Click *Select or create project*, click *+Create a new project*, and input *pset8* (or anything else) under *Enter new project name*.
+. Click *CREATE AND ENABLE API*.
+. Highlight and copy the value below *YOUR API KEY*.
+. In a terminal window, execute
++
+[source]
+----
+export API_KEY=value
+----
++
+where `value` is that (pasted) value, without any space immediately before or after the `=`.
+
+If you need to find that value later (to copy and paste it again), visit https://console.developers.google.com/[console.developers.google.com] and click *Credentials* at top-left.
+
+=== Running
+
 . Start Flask's built-in web server (within `mashup/`):
 +
 [source]
@@ -243,7 +266,7 @@ Below those lines, meanwhile, are these:
 [source,js]
 ----
 $("#q").focus(function(eventData) {
-    hideInfo();
+    info.close();
 });
 ----
 
@@ -263,10 +286,6 @@ document.addEventListener("contextmenu", function(event) {
 Unfortunately, Google Maps disables ctrl- and right-clicks on maps, which interferes with using Chrome's (amazingly useful) *Inspect Element* feature, so these lines re-enable those.
 
 Last up in `configure` is a call to `update` (which we'll soon look at) and a call to `focus`, this time with no arguments. See http://api.jquery.com/focus/ for why!
-
-===== hideInfo
-
-Thankfully, a short function! This one just calls `close` on our global info window.
 
 ===== removeMarkers
 
@@ -360,7 +379,7 @@ Using phpLiteAdmin or `sqlite3`, create a table in `mashup.db` called `places` t
 . `longitude`
 . `accuracy`
 
-See `readme.txt` (or `US.txt` itself) for clues as to appropriate types for these fields. Don't include an `id` field.
+See `readme.txt` (or `US.txt` itself) for clues as to appropriate types for these fields. Don't include an `id` field (else you can't do what we're about to do!).
 
 Rather than `INSERT` the rows from `US.txt` into your newly created table, let's now import them in bulk as follows:
 
@@ -391,33 +410,44 @@ in `sqlite3` or phpLiteAdmin. The counts should match!
 
 ==== `articles`
 
-Complete the implementation of `/articles` in such a way that it outputs a JSON array of objects, each of which represents an article for `q`, where `q` is passed into `/articles` as a GET parameter. Odds are you'll want to call `lookup`!
+Complete the implementation of `/articles` in such a way that it outputs a JSON array of objects, each of which represents an article for `geo`, whereby `geo` is passed into `/articles` as a GET parameter, as in the staff solution, below. 
 
-To test `/articles`, even before your text box is operational, simply visit URLs like
+* http://pset8.cs50.net/articles?geo=02138
+* http://pset8.cs50.net/articles?geo=06511
+* http://pset8.cs50.net/articles?geo=90210
 
-* `pass:[https://ide50-username.cs50.io/articles?q=02138]`
-* `pass:[https://ide50-username.cs50.io/articles?q=06511]`
-* `pass:[https://ide50-username.cs50.io/articles?q=90210]`
+Odds are you'll want to call `lookup`! To test `/articles`, even before your text box is operational, simply visit URLs like
+
+* `pass:[https://ide50-username.cs50.io/articles?geo=02138]`
+* `pass:[https://ide50-username.cs50.io/articles?geo=06511]`
+* `pass:[https://ide50-username.cs50.io/articles?geo=90210]`
 
 and other such variants, where `username` is your own username, to see if you get back the JSON you expect.
 
 ==== `search`
 
-Complete the implementation of `/search` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `geo`. The value of `geo`, passed into `/search` as a GET parameter, meanwhile, might be a city, state, and/or postal code. We leave it to you to decide what constitutes a match and, therefore, which rows to `SELECT`. It suffices to support searching by postal codes only, but try to support searching by city and/or state as well. Odds are you'll find SQL's `LIKE` keyword helpful. If feeling adventurous, you might like (but are not required) to experiment with SQLite's support for https://www.sqlite.org/fts3.html[full-text searches].
+Complete the implementation of `/search` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `q`, as in the staff solution below. 
+
+* http://pset8.cs50.net/search?q=02138
+* http://pset8.cs50.net/search?q=Cambridge
+* http://pset8.cs50.net/search?q=06511
+* http://pset8.cs50.net/search?q=New+Haven
+
+The value of `q`, passed into `/search` as a GET parameter, might be a city, state, and/or postal code. We leave it to you to decide what constitutes a match and, therefore, which rows to `SELECT`. It suffices to support searching by postal codes only, but try to support searching by city and/or state as well. Odds are you'll find SQL's `LIKE` keyword helpful. If feeling adventurous, you might like (but are not required) to experiment with SQLite's support for https://www.sqlite.org/fts3.html[full-text searches].
 
 For instance, consider the query below.
 
 [source,sql]
 ----
-db.execute("SELECT * FROM places WHERE postal_code = :geo", geo=request.form.get("geo"))
+db.execute("SELECT * FROM places WHERE postal_code = :q", geo=request.form.get("q"))
 ----
 
 Unfortunately, that query requires that a user's input be exactly equal to a postal code (per the `=`), which isn't all that compelling for autocomplete. How about this one instead? (Recall that `+` is Python's concatenation operator.)
 
 [source,sql]
 ----
-geo = request.form.get("geo") + "%"
-db.execute("SELECT * FROM places WHERE postal_code LIKE :geo", geo=geo)
+q = request.form.get("q") + "%"
+db.execute("SELECT * FROM places WHERE postal_code LIKE :q", q=q)
 ----
 
 Notice how this example appends `%` to the user's input, which happens to be SQL's "wildcard" character that means "match any number of characters." The effect is that this query will return rows whose postal codes match whatever the user typed followed by any number of other characters. In other words, any of `0`, `02`, `021`, `0213`, and `02138` might return rows, as might any of `0`, `06`, `065`, `0651`, and `06511`.
@@ -426,19 +456,19 @@ If you'd like to support searching by more than just postal codes, keep in mind 
 
 To test `/search`, even before your text box is operational, simply visit URLs like
 
-* `pass:[https://ide50-username.cs50.io/search?geo=02138]`
-* `pass:[https://ide50-username.cs50.io/search?geo=Cambridge+MA]`
-* `pass:[https://ide50-username.cs50.io/search?geo=Cambridge,+MA]`
-* `pass:[https://ide50-username.cs50.io/search?geo=Cambridge,+Massachusetts]`
-* `pass:[https://ide50-username.cs50.io/search?geo=Cambridge,+Massachusetts,+US]`
+* `pass:[https://ide50-username.cs50.io/search?q=02138]`
+* `pass:[https://ide50-username.cs50.io/search?q=Cambridge+MA]`
+* `pass:[https://ide50-username.cs50.io/search?q=Cambridge,+MA]`
+* `pass:[https://ide50-username.cs50.io/search?q=Cambridge,+Massachusetts]`
+* `pass:[https://ide50-username.cs50.io/search?q=Cambridge,+Massachusetts,+US]`
 
 or
 
-* `pass:[https://ide50-username.cs50.io/search?geo=06511]`
-* `pass:[https://ide50-username.cs50.io/search?geo=New+Haven+CT]`
-* `pass:[https://ide50-username.cs50.io/search?geo=New+Haven,+CT]`
-* `pass:[https://ide50-username.cs50.io/search?geo=New+Haven,+Connecticut]`
-* `pass:[https://ide50-username.cs50.io/search?geo=New+Haven,+Connecticut,+US]`
+* `pass:[https://ide50-username.cs50.io/search?q=06511]`
+* `pass:[https://ide50-username.cs50.io/search?q=New+Haven+CT]`
+* `pass:[https://ide50-username.cs50.io/search?q=New+Haven,+CT]`
+* `pass:[https://ide50-username.cs50.io/search?q=New+Haven,+Connecticut]`
+* `pass:[https://ide50-username.cs50.io/search?q=New+Haven,+Connecticut,+US]`
 
 and other such variants, where `username` is your own username, to see if you get back the JSON you expect. Again, though, we leave it to you to decide just how supportive `/search` will be of such variants. The more flexible, though, the better! Try to implement features that you yourself would expect as a user!
 
@@ -456,10 +486,10 @@ Now that `/search` and your text box are (hopefully!) working, modify the value 
 
 [source,js]
 ----
-<p><%- place_name %>, <%- admin_name1 %></p>
+<div>{{place_name}}, {{admin_name1}}, {{postal_code}}</div>
 ----
 
-might do the trick, perhaps coupled with some CSS.
+might do the trick.
 
 ==== `addMarker`
 
