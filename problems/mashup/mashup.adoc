@@ -330,23 +330,11 @@ Notice how this first route checks for an `API_KEY`, which Google Maps' JavaScri
 
 ===== `articles`
 
-This route we've implemented for you. Notice how it expects a GET parameter called `geo`, which it passes to `lookup` (which is defined in `helpers.py`) for localized news, thereafter returning a JSON array of objects, each of which has two keys: `link` and `title`. 
-
-You can actually see this file in action. Go ahead and visit URLs like
-
-* https://ide50-username.cs50.io:8080/articles?geo=Cambridge,+Massachusetts
-* https://ide50-username.cs50.io:8080/articles?geo=02138
-
-or
-
-* https://ide50-username.cs50.io:8080/articles?geo=New+Haven,+Connecticut
-* https://ide50-username.cs50.io:8080/articles?geo=06511
-
-where `username` is your own username. You should see (pretty-printed) JSON arrays of articles!
+Not much in here yet, just a `TODO`!
 
 ===== `search`
 
-Not much in this route yet. Just an eventual `TODO`!
+Not much in this route yet either, just another `TODO`!
 
 ===== `update`
 
