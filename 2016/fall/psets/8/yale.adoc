@@ -7,7 +7,7 @@
 == tl;dr
  
 . Watch https://video.cs50.net/2016/fall/lectures/10[Week 10's lecture].
-. Implement a stock-trading website.
+. Implement a news map.
 . Submit a form.
 
 include::help-yale.adoc[]
