@@ -427,14 +427,14 @@ For instance, consider the query below.
 
 [source,sql]
 ----
-db.execute("SELECT * FROM places WHERE postal_code = :q", q=request.form.get("q"))
+db.execute("SELECT * FROM places WHERE postal_code = :q", q=request.args.get("q"))
 ----
 
 Unfortunately, that query requires that a user's input be exactly equal to a postal code (per the `=`), which isn't all that compelling for autocomplete. How about this one instead? (Recall that `+` is Python's concatenation operator.)
 
 [source,sql]
 ----
-q = request.form.get("q") + "%"
+q = request.args.get("q") + "%"
 db.execute("SELECT * FROM places WHERE postal_code LIKE :q", q=q)
 ----
 
