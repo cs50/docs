@@ -491,7 +491,7 @@ If you'd like to customize your markers' icon, see https://developers.google.com
 
 ==== removeMarkers
 
-Implement `removeMarkers` in such a way that it removes all markers from the map. Odds are you'll need `addMarker` to modify that global variable called `markers` in order for `removeMarkers` to work its own magic!
+Implement `removeMarkers` in such a way that it removes all markers from the map (and deletes them). Odds are you'll need `addMarker` to modify that global variable called `markers` in order for `removeMarkers` to work its own magic!
 
 == Walkthrough
 
