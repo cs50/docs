@@ -472,7 +472,7 @@ As before, feel free to tinker with the staff's solution at http://pset8.cs50.ne
 
 Now that `/search` and your text box are (hopefully!) working, modify the value of `suggestion` in `configure`, the function in `scripts.js`, so that it displays matches (i.e., `place_name`, `admin_name1`, and/or other fields) instead of `TODO`. Recall that a value like
 
-[source,js]
+[source,html]
 ----
 <div>{{place_name}}, {{admin_name1}}, {{postal_code}}</div>
 ----
