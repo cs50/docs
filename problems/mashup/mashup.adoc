@@ -350,7 +350,7 @@ Finally, take a look at `helpers.py`. In this file we've defined just one functi
 
 === `mashup.db`
 
-Per `readme.txt`, `US.txt` is quite like a CSV file except that its fields are delimited with `\t` (a tab character) instead of a comma. Conveniently, SQLite allows you to https://www.sqlite.org/cli.html#csv_import[import CSV files] and, as it turns out, TSV (tab-separated values) files as well. But you first need a table into which to import such a file can be imported.
+Per `readme.txt`, `US.txt` is quite like a CSV file except that its fields are delimited with `\t` (a tab character) instead of a comma. Conveniently, SQLite allows you to https://www.sqlite.org/cli.html#csv_import[import CSV files] and, as it turns out, TSV (tab-separated values) files as well. But you first need a table into which to import such a file.
 
 Using phpLiteAdmin or `sqlite3`, create a table in `mashup.db` called `places` that has these twelve fields, in this order:
 
