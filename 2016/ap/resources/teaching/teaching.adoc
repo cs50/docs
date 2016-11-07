@@ -117,7 +117,7 @@ Indeed you can! We are currently located in nearly 20 countries and would love t
 
 === Can I teach CS50 AP if I am not affiliated with a high school?
 
-Typically, our workshops are geared towards high school teachers. If you intend to teach high school or are looking to adapt our course for middle school, feel free to follow the steps listed above. If you are in fact looking to teach to in a community, city, or university, refer to https://docs.cs50.net/2016/x/resources/teaching/teaching.html
+Typically, our workshops are geared towards high school teachers. If you intend to teach high school or are looking to adapt our course for middle school, feel free to follow the steps listed above. If you are in fact looking to teach to in a community, city, or university, refer to http://docs.cs50.net/2016/x/resources/teaching/teaching.html
 
 === Are the workshops only for high school teachers?
 
