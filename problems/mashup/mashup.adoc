@@ -495,10 +495,7 @@ Implement `removeMarkers` in such a way that it removes all markers from the map
 
 == Walkthrough
 
-_Coming Mon 11/7 eve._
-////
-video::TODO[youtube,list=TODO]
-////
+video::RmpbJ8IlTmA[youtube,list=PLhQjrBD2T382F3hESnES3I7g-MqrW7yyF]
 
 == Testing
 

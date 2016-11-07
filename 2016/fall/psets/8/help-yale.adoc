@@ -7,7 +7,7 @@ published: false
 For help with Week 10 and Problem Set 8:
  
 * Attend a walkthrough on Thu 11/10, 4pm – 5:15pm, in SSS 114.
-* Watch David's walkthroughs herein (coming Mon 11/7 eve).
+* Watch David's walkthroughs herein.
 * Attend your TA's section (or another if you have a conflict).
 * Post questions and search answers in https://cs50.yale.edu/discuss[CS50 Discuss].
 * Attend https://cs50.yale.edu/hours[office hours].
