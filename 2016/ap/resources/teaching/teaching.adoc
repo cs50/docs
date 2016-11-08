@@ -66,7 +66,7 @@ This course consists of 7 core chapters and 2 fast track chapters. In chapters 0
 | Chapter 3 | Thinking Computationally | Linear Search. Bubble sort. Selection sort. Insertion sort. Binary Search. Time Complexity. Unsolvable Problems. Simulation. | 4 weeks
 | Chapter 4 | Design, Elegance, and Efficiency | Principles of Good Design. Ncurses. Structures and Encapsulation. Recursion. Merge Sort. Hexadecimal. File I/O. Images. Version Control and Collaboration. | 4 weeks
 | Chapter A | Managing Data | Stacks. Queues. Pointers. Dynamic Memory. Valgrind. Trees. Tries. Linked Lists. Hash Tables. | optional (no timeframe)
-| Chapter B | Developer Toolbox | Abstraction and API. Data Compression. Huffman Coding. LZW Compression. Scalability. Principles of Good Design. Modern-Day Computing Problems. Collaboration (cont’d) | optional (no timeframe)
+| Chapter B | Developer Toolbox | Abstraction and API. Data Compression. Huffman Coding. LZW Compression. Scalability. Modern-Day Computing Problems. Collaboration (cont’d) | optional (no timeframe)
 | Chapter 5 | Networking and the Internet | Internet Basics. IP Addresses. DNS and DHCP. Routers. TCP and IP. HTTP. Trust Models. Cybersecurity. HTML. CSS. | 3 weeks
 | Chapter 6 | Problem Solving in an Interconnected World | PHP. PHP for Web Programming. SQL. MVC. JavaScript. Ajax. Artificial Intelligence. Virtual and Augmented Reality. | 5 weeks
 |===
