@@ -520,7 +520,9 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 
 == FAQs
 
-_None so far! Reload this page periodically to check if any arise!_
+=== CREATE TABLE places(...) failed: duplicate column name
+
+If you see this message upon running `.import` in `sqlite3`, odds are you haven't run `sqlite3` in the same directory as `mashup.db`. If so, exit `sqlite3` with `.exit`, `cd` to your `mashup` directory, and then re-run `sqlite3 mashup.db`.
 
 == CHANGELOG
 
