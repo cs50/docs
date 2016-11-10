@@ -107,7 +107,7 @@ image::tally_marks.png[alt="Tally marks", width=300]
 * So our computer has many many switches (called transistors) that can be turned on or off given electricity, and a switch that is on will represent a 1 and a switch that is off will represent a 0.
 * Eight bits, by the way, is called a *byte*.
 * So far we've represented numbers, but we also know that computers can represent letters of the alphabet. Some years ago the world decided on a standard mapping of numbers to letters, called http://en.wikipedia.org/wiki/ASCII[*ASCII*].
-* In ASCII, the letter `A` is the decimal number 65, `B` 66, `C` 77, and so on. And lowercase letters are another set of numbers. Numbers, too, that you type, would be represented as different numbers according to the table.
+* In ASCII, the letter `A` is the decimal number 65, `B` 66, `C` 67, and so on. And lowercase letters are another set of numbers. Numbers, too, that you type, would be represented as different numbers according to the table.
 * We can also represent colors using a system called https://en.wikipedia.org/wiki/RGB_color_model[*RGB*], where three values that each represent the amount of red, green, and blue, mixing together to represent some color.
 * And computer screens, if you lean in really close, are made up of lots and lots of dots, or *pixels*, each with some RGB value that together form a picture or text.
 * And with lots of images, one after another, we get videos.
