@@ -54,8 +54,9 @@ Like to integrate hardware into your project? Know that CS50 has the following h
 * some https://www.myo.com/[Myo Armbands], for which there's an https://developer.thalmic.com/[API],
 * an https://www.oculus.com/[Oculus Rift] and an https://www3.oculus.com/en-us/dk2/[Oculus DK2], for which there's an https://developer.oculus.com/[SDK]
 * some http://www2.meethue.com/en-us/productdetail/philips-hue-white-and-color-ambiance-starter-kit-a19[Philips hue bulbs], for which there's an http://www.developers.meethue.com/[API],
-* some http://www2.meethue.com/en-us/productdetail/philips-hue-lightstrip[Philips hue lightstrips], for which there's an http://www.developers.meethue.com/[API], and
-* some http://www.samsung.com/global/galaxy/gear-vr/[Samsung Gear VRs], for which there's an http://developer.samsung.com/gear/[SDK].
+* some http://www2.meethue.com/en-us/productdetail/philips-hue-lightstrip[Philips hue lightstrips], for which there's an http://www.developers.meethue.com/[API],
+* some http://www.samsung.com/global/galaxy/gear-vr/[Samsung Gear VRs], for which there's an http://developer.samsung.com/gear/[SDK], and
+* some http://www.sonos.com/en-us/shop/play1.html[Sonos PLAY:1s], for which there's an http://musicpartners.sonos.com/?q=docs[API].
 
 If you'd like to borrow something for a project, email borrow@cs50.harvard.edu, and we'll do our best to oblige, sharing hardware across classmates as needed. Let us know, too, if there's some other hardware or software you'd like to utilize for a project, and we'll do our best to find it.
 
