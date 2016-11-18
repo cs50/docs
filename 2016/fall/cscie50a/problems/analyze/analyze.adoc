@@ -72,7 +72,7 @@ ____
 
 Odds are, particularly if you find yourself among those less comfortable and this is your first course in computer science, you've made a remarkable amount of progress as a programmer, perhaps much moreso than you predicted. But as the above quote illlustrates, merely knowing how to write code does not a good programmer make. Many members of the CS50 staff have been programming for upwards of ten years, and as any of them will quickly tell you, their learning never ceases. There is always an opportunity for growth and improvement, and often times the largest amounts of growth and improvement come from taking the time for some self-reflection.
 
-In this writing problem, we want to provide you with a structured opportunity to perform some of this self-reflection. There are no wrong or right answers to any portion of this problem; rather, the most important thing is that you analyze your own experiences in CS50 AP over the last several weeks or months with a critical eye.
+In this writing problem, we want to provide you with a structured opportunity to perform some of this self-reflection. There are no wrong or right answers to any portion of this problem; rather, the most important thing is that you analyze your own experiences in CSCI E-50a over the last several weeks or months with a critical eye.
 
 In 500-1,000 words, prepare an essay on your experience, expectations, growths, triumphs, and struggles up through this point in the course. You can spend as much time as you feel is appropriate on each of these questions, but over the course of your writing you should touch on at least the following topics:
 
@@ -85,5 +85,11 @@ In 500-1,000 words, prepare an essay on your experience, expectations, growths, 
 * Talk about each of these with a classmate, and compare notes. How have your experiences differed and how have they aligned?
 
 This metacognitive assessment is but one step in not necessarily becoming a better programmer or a better computer scientist, but really becoming a better learner. The better you understand your thought process, the easier it becomes to determine how to best understand something that may initially confound you. Once you've figured that out, your horizons can expand infinitely.
+
+== How to Submit
+
+To submit your writing assignment, give it the name *Last,First-AnalyzeThis*, substituting *Last* and *First* with your own last and first names, respectively. So, if your name were __John Harvard__, your file would be named *Harvard,John-AnalyzeThis*. You can upload this writing assignment as either a Word document (`.doc`), PDF file (`.pdf`), or text file (`.rtf`, `.txt`).
+
+Then, visit https://www.dropbox.com/request/LmC5itoVC7ppHHgYA9tL[this link] and upload your file to our Dropbox folder. Remember that the deadline for this assignment is Wednesday, November 23 at noon Eastern time. If you wish to resubmit your assignment, know that you can do so as many times as you'd like. We will grade your latest submission that was received prior to the deadline.
 
 This was Analyze This.
