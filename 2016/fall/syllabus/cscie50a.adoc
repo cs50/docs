@@ -24,7 +24,7 @@ https://cs50.harvard.edu/cscie50a
 
 == Grades
 
-All students must ordinarily submit all assigned problems, take the quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+All students must ordinarily submit all assigned problems and take the two quizzes in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 Final grades are determined using the following weights:
 
