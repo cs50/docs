@@ -46,6 +46,16 @@
         </style>
         <style>
 
+            /* http://stackoverflow.com/a/30195325 */
+            ol > li:before {
+                content: "";
+                display: block;
+                height: 1em;
+            }
+            ol > li > p:first-child {
+                margin-top: -1em;
+            }
+
             /* wrap inline code */
             *:not(pre) > code {
                 white-space: pre-wrap;
