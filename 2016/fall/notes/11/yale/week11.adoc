@@ -31,13 +31,28 @@ image::automated_summarization.png[alt="Automated Summarization", width=400]
 * An important concept is abstraction, which hides the "complexity of hardware."
 * One example is a file system, with which we can save files without knowing how each bit is actually saved to a disk.
 * End-to-end metrics are an important way to measure how well a system performs, such as its throughput, latency, and reliability.
-*
+* Another area of study is building distributed systems, where many machines are connected to provide a single service, through replicating and partitioning data.
 
+[t=25m15s]
+== A Look Back
 
-
-
-
-
-
-
-
+* Bringing both campuses together has again been a great collaboration.
+* David lifts his black sweater to reveal an "I love Yale" shirt, which he's been wearing "all this time."
+* We watch https://www.youtube.com/watch?v=LO26ThcsvF0[look back at CS50 this year].
+* Then we watch a video describing a prank a few years back, where two Yale students placed signs in Harvard Stadium that they then convinced fans to hold up during the game, only to reveal a message that read "WE SUCK."
+* Remember that, at the beginning of the semester we said, "what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in Week 11, end up relative to yourself in Week 0."
+* In Week 0, we had all of you build something interesting with Scratch, and so we demonstrate some of the more interesting projects, including https://scratch.mit.edu/projects/120043152/[Bob the Bear by mandaleeyp], https://scratch.mit.edu/projects/120101068/[Cat Goes to Yale Final by JPBosco], and https://scratch.mit.edu/projects/119940148/[Spot the Freshman! Star Wars Edition @ Yale by justinc324].
+* With Problem Set 4, we also challenged you to a scavenger hunt, and Theodore has found the most staff members to take a photo with, so he and his section will win a special prize.
+* In Problem Set 5, we created the Big Board in which students and staff can compete for the fastest spell-checker solution, and this year the winner is Shreyas on staff.
+* We also had a CS50 Coding Contest, and the top performer at Yale was Julia, @apple_cider, who will also receive a prize.
+* We thank the production team, with whom we've been able to pre-produce lectures in Cambridge, such that the experience for students on both campuses are nearly the same now.
+* The outros at the end of each lecture are actually scenes from a short film the production team wrote and filmed over the summer, which we've combined https://www.youtube.com/watch?v=h9dia3WkzJI[here] for you to get the full experience.
+* We also want to thank the team in New Haven, Patrick, the head TAs, and the rest of the staff that make this possible.
+* You too, can be involved next year. Visit https://cs50.yale.edu/apply[https://cs50.yale.edu/apply] to find out how!
+* Jason Hirschhorn, without whom CS50 at Yale would not be possible, used to tell great jokes at the beginning of staff meetings. (_Ed. Note: Can confirm_). David shares a clip that Facebook brought up from 5 years ago where Jason tells one such joke.
+* We'll leave you with one last message, that problem-solving is just taking inputs and using an algorithm to find outputs we want.
+* Coming up soon is the CS50 Hackathon, an overnight event in Cambridge where we'll serve multiple dinners and breakfast at IHOP, between which you'll work on your final projects. Sign up at https://cs50.yale.edu/register[https://cs50.yale.edu/register].
+* We'll also be holding a CS50 Fair on each campus, where you'll present your final projects to other students and recruiters.
+* Now we play our game of Family Feud, based on the most popular responses you submitted to Problem Set 8.
+* We watch a https://www.youtube.com/watch?v=zCLP-33AnK8[thank you video] to our staff to round out the course.
+* This was CS50!
