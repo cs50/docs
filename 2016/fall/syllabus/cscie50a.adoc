@@ -139,7 +139,7 @@ A schedule of problems, subject to change, appears below.
 | http://docs.cs50.net/2016/fall/cscie50a/problems/sudoku/sudoku.html[Sudoku] | Programming | Fri 11/11 | Sat 11/19
 | http://docs.cs50.net/2016/fall/cscie50a/problems/analyze/analyze.html[Analyze This] | Written | Fri 11/18 | Wed 11/23
 | http://docs.cs50.net/2016/fall/cscie50a/problems/scale/scale.html[Scale] | Programming | Wed 11/23 | Sat 12/3
-| Recover | Programming | Fri 12/2 | Wed 12/7
+| Recover | Programming | Thu 12/1 | Wed 12/7
 |===
 
 == Quizzes
