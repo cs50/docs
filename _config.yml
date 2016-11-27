@@ -25,3 +25,4 @@ exclude:
 - README.md
 gems:
 - jekyll-asciidoc
+- jekyll-redirect-from
