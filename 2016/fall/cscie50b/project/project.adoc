@@ -65,7 +65,9 @@ After submitting your proposal, a teaching fellow other than your own may be app
 
 === Status Report
 
-Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  You will submit your status report via a web form.
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.
+
+You will submit your status report by completing https://docs.google.com/forms/d/e/1FAIpQLScVHRzon7jByU08GbdeUzWxdEM-xhEtOhwj9giI_FHm643x6g/viewform[this web form].
 
 === CS50 Hackathon
 
