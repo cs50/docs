@@ -336,7 +336,7 @@ If you'd like to peek at, e.g., ``large.bmp``'s headers (in a more user-friendly
 ~cs50/chapter4/peek large.bmp
 ----
 
-Better yet, if you'd like to compare your outfile's headers against the staff's, you might want to execute commands like the below while inside your `~/workspace/chapter4/scale` directory.  (Think about what each is doing.)
+Better yet, if you'd like to compare your outfile's headers against the staff's, you might want to execute commands like the below while inside your `~/workspace/week12/scale` directory.  (Think about what each is doing.)
 
 [source,bash]
 ----
@@ -351,8 +351,15 @@ Here's Zamyla again!
 
 video::g8LEbJapnj8[youtube,height=540,width=960]
 
-== How to submit
+== How to Submit
 
-Coming Mon 11/28.
+To submit your assignment, please do the following by *Sat 12/3 at noon*.
+
+. Open up CS50 IDE.
+. Navigate to your `~/workspace/week12` directory, ensuring that the directory called `scale` containing at a minimum `scale.c` and `bmp.h` exists therein.
+. At the terminal, type `zip first_last.zip scale`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `week12` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/hSjl7gJ3Kf62RP3t2HlG[this link] to upload your ZIP file containing your solution to this problem!
 
 This was Scale, your most complex challenge to date!
