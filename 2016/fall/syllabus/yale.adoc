@@ -201,7 +201,7 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 | Status Report | Mon 11/28, noon
 | CS50 Hackathon | Thu 12/1, 7pm – Fri 12/2, 7am
 | Implementation | Sun 12/11, noon
-| CS50 Fair | Mon 12/12, noon – 3pm
+| CS50 Fair | Mon 12/12, 1pm – 3pm
 |===
 
 == CS50 Hackathon
