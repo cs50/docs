@@ -300,7 +300,7 @@ image::insert_user.png[alt="insert user", width=800]
 +
 [source]
 ----
-SELECT * FROM users JOIN zipcodes ON users.zipcode = zipcode.id
+SELECT * FROM users JOIN zipcodes ON users.zipcode = zipcodes.id
 ----
 ** Now we'll combine the tables on the fields that should be linked to each other, the `zipcode` field in the `users` table and the `id` field in the `zipcodes` table.
 * So that gives us back:
