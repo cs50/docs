@@ -86,7 +86,7 @@ For students taking CSCI E-50a, the pace of the course differs from CSCI E-50, w
 | Week 10 | https://ap.cs50.net/cscie50a/3/unsolvable-problems/[Unsolvable problems]. https://ap.cs50.net/cscie50a/4/good-design-principles/[Principles of good design]. https://ap.cs50.net/cscie50a/4/ncurses/[ncurses.] https://ap.cs50.net/cscie50a/4/structures-encapsulation/[Structures. Encapsulation.] | Tue 11/8, Fri 11/11
 | Week 11 | https://ap.cs50.net/cscie50a/4/recursion/[Recursion]. https://ap.cs50.net/cscie50a/4/merge-sort/[Merge sort]. https://ap.cs50.net/cscie50a/4/hexadecimal/[Hexadecimal]. https://ap.cs50.net/cscie50a/4/file-i-o/[File I/O]. | Tue 11/15, Fri 11/18
 | Week 12 | __no lecture, Thanksgiving__ |
-| Week 13 | https://ap.cs50.net/cscie50a/4/images/[Images]. Version control. Collaboration. | Tue 11/29, Fri 12/2
+| Week 13 | https://ap.cs50.net/cscie50a/4/images/[Images]. https://ap.cs50.net/cscie50a/4/version-control/[Version control. Collaboration.] | Tue 11/29, Fri 12/2
 | Week 14 | __no lecture, Quiz 1__ |
 
 |===
