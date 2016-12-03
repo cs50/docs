@@ -172,7 +172,7 @@ As before, if you happen to use `malloc`, be sure to use `free` so as not to lea
 
 Here's Zamyla!
 
-video::Y4vV61lbL3g[youtube,height=540,width=960]
+video::hOWYGowwId0[youtube,height=540,width=960]
 
 == Sanity Checks
 
@@ -182,5 +182,9 @@ Before you consider this problem set done, best to ask yourself these questions 
 * Does `recover` output 50 JPEGs when not passed in any command-line arguments?  Are all 50 viewable?
 * Does `recover` name the JPEGs `pass:[###].jpg`, where `pass:[###]` is a three-digit number from `000` through `049`?
 * Are you sure that `recover` doesn't have any memory leaks?
+
+== How to submit
+
+Refresh this page on Mon 12/5.
 
 This was Recover, your last problem in CSCI E-50a. Congratulations!
