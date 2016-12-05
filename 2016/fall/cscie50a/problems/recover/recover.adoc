@@ -87,30 +87,19 @@ update50
 
 to make sure your workspace is up-to-date.
 
-Next, navigate to your `~/workspace/week13` directory.  For the first time in a while, no big code distro this time, but there is one important file to download.
-
-**NOTE: These instructions were updated on December 5.**
-
-Execute the following steps, starting within `~/workspace/week13`, where the `$` represents your prompt (so don't retype it!)
+Next, navigate to your `~/workspace/week13` directory.  For the first time in a while, no big code distro this time, but there is one important file to download. Execute
 
 [source,bash]
 ----
-$ mkdir recover
-$ cd recover
-$ touch recover.c
-$ wget http://cdn.cs50.net/2016/fall/psets/4/pset4/card.raw
-$ mv card.raw camera.raw
-$ ls
+wget http://docs.cs50.net/2016/fall/cscie50a/problems/recover/recover.zip
 ----
 
-You should see the below:
+This file's somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created `recover` directory. If you list the contents of your directory, you should find two files therein:
 
 [source,bash]
 ----
 camera.raw  recover.c
 ----
-
-**END OF UPDATED INSTRUCTIONS**
 
 You'll be doing all your work for this problem inside of this `recover.c` file. Open it up and... darn, it's totally empty!
 
