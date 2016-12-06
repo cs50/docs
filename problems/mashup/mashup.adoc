@@ -188,7 +188,7 @@ Next take a look at the page's `body`, inside of which is `div` with a unique `i
 
 Next open up `static/styles.css`. In there is a bunch of CSS that implements the mashup's default UI. Feel free to tinker (i.e., make changes, save the file, and reload the page in Chrome) to see how everything works, but best to undo any such changes for now before forging ahead.
 
-==== scripts.js
+=== scripts.js
 
 Next open up `static/scripts.js`. Ah, the most interesting file yet! It's this file that implements the mashup's "front-end" UI, relying on Google Maps and some "back-end" Flask routes for data (that we'll soon explore). Let's walk through this one.
 
