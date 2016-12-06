@@ -183,8 +183,17 @@ Before you consider this problem set done, best to ask yourself these questions 
 * Does `recover` name the JPEGs `pass:[###].jpg`, where `pass:[###]` is a three-digit number from `000` through `049`?
 * Are you sure that `recover` doesn't have any memory leaks?
 
-== How to submit
+== How to Submit
 
-Refresh this page on Mon 12/5.
+To submit your assignment, please do the following by *Thu 12/8 at noon*.
+
+. Open up CS50 IDE.
+. Navigate to your `~/workspace/week13` directory, ensuring that the directory called `recover` containing all of your work on this problem exists therein.
+. Navigate inside of your `recover` directory and *delete* the `camera.raw` file (either using `rm` or from the file tree at left). That file is pretty large, and we don't need you to submit that; we'll use our own version instead.
+. Navigate back to your `~/workspace/week13` directory (as by `cd ..`).
+. At the terminal, type `zip -r first_last.zip recover`, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
+. This should create a new file called `first_last.zip` in your `week13` directory.
+. In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
+. Head to https://www.dropbox.com/request/hs0DaA3H9nSLnLEzrExK[this link] to upload your ZIP file containing your completed implementation of Recover.
 
 This was Recover, your last problem in CSCI E-50a. Congratulations!
