@@ -134,28 +134,20 @@ Ultimately due are implementation and documentation of your final project.  Your
 
 ==== How to Submit
 
-_Coming Soon._
-
-////
 *If you have collaborated with one or two other students, each of you should submit via this same process.*
 
 *If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project's needs.*
 
-==== Step 1 of 2
+[source]
+----
+update50
+cd ~/workspace/project/ # or wherever you've stored your project
+submit50 project
+----
 
-* Create a ZIP (i.e., compressed) file containing your entire project, including all files prescribed above.
-* Once done creating your ZIP file, open up a browser and visit https://cs50.net/submit[CS50 Submit], logging in if prompted.
-* Click *Submit* toward the window's top-left corner.
-* Under *Implementation* on the screen that appears, click *Upload New Submission*.
-* On the screen that appears, click *Add files...*.  A window entitled *Open Files* should appear.
-* Navigate your way to your project's ZIP file.  Once you find it, click it once to select it, then click *Open*.
-* Click *Start upload* to upload your ZIP file to CS50's servers.
-* On the screen that appears, you should see a window with *No File Selected*.  If you move your mouse toward the window's lefthand side, you should see a list of the files you uploaded.  Click each to confirm the contents of each.  (No need to click any other buttons or icons.)  If confident that you submitted the files you intended, consider your source code submitted!  If you'd like to re-submit different (or modified) files, simply return to https://cs50.net/submit[CS50 Submit] and repeat these steps.  You may re-submit as many times as you'd like; we'll grade your most recent submission, so long as it's before the deadline.
+=== Step 2 of 2
 
-==== Step 2 of 2
-
-Head to https://forms.cs50.net/2015/fall/project/implementation where a form (your last!) awaits.  Once you have submitted that form (as well as your source code), you are done!
-////
+Submit https://forms.cs50.net/2016/fall/project/implementation[]!
 
 == CS50 Fair
 
