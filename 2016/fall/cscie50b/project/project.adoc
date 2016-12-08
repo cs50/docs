@@ -95,7 +95,7 @@ Ultimately due are implementation and documentation of your final project. Your 
 . At the terminal, type `zip -r first_last.zip <project>`, where `<project>` is the name of the directory containing your final project materials, replacing your own first and last name with `first` and `last` respectively. (So, for instance, `john_harvard.zip`)
 . This should create a new file called `first_last.zip` in your `~/workspace` directory.
 . In the file browser at left, right-click (or Ctrl-click, with a Mac) on the `first_last.zip` file, choosing **Download** from the context menu. This will save a local copy of `first_last.zip` on your machine.
-. Head to https://www.dropbox.com/request/NiqUdcePuVhCI0cYxGQl[this link] to upload your ZIP file containing your `pset8` submission!
+. Head to https://www.dropbox.com/request/NiqUdcePuVhCI0cYxGQl[this link] to upload your ZIP file containing your Final Project submission!
 
 Congratulations! You did it!
 
