@@ -1,0 +1,318 @@
+---
+---
+:skip-front-matter:
+
+= Problem: Mashup (Part 1)
+
+== Prerequisites
+
+* Javascript
+* AJAX
+
+== Objectives
+
+* Introduction to JavaScript, Ajax, JSON.
+* Exposure to objects and methods.
+* Grapple with real-world APIs and libraries.
+
+== Recommended Reading
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+
+== Recommended Viewing
+
+* Doug's video on Javascript 
+
+video::JYIKYnbdu4E[youtube,height=540,width=960]
+
+include::../../../lectures/0/w/syllabus/honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+  To what extent does your code implement the features required by our specification?
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+All students, whether or not taking the course for a letter grade, must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+
+== Treasure Map?
+
+Your mission for this set of two problems is to implement "mashup" that integrates Google Maps with Google News with a MySQL database containing thousands of postal codes, GPS coordinates, and more. Quite like this here version by the staff!
+
+https://mashup.cs50.net/
+
+Not only can you search for places via the text box up top, you can also click on and drag the map elsewhere. Scattered across the map, meanwhile, are newspaper icons that, when clicked, provide links to local news! 
+
+You may notice that some markers (and labels) overlap others or are otherwise at the wrong coordinates. The http://www.geonames.org/[GeoNames] geographical database that we're using is actually imperfect, whereby some places' coordinates are off. For instance, East Boston isn't in Back Bay. And Readville isn't in Boston Harbor. Not to worry if you see those same symptoms in your mashup, assuming the source of the problem is indeed the data itself!
+
+In Part 1, you will populate the database with all the places in the world (well, most of them)!
+
+Anyhow, how neat! But where to begin?
+
+=== Google Maps
+
+Odds are you're already familiar, but surf on over to Google Maps anyway at https://www.google.com/maps. Input *42.374490, -71.117185* into the search box up top, and you should find yourself at Harvard. Input *41.3163284, -72.9245318*, and you should find yourself at Yale.
+
+Interesting! It seems Google Maps understands GPS coordinates (i.e., latitude and longitude). In fact, search for *28.410, -81.584*. Perhaps you'd rather be there? (You might need to zoom out.)
+
+It turns out that Google Maps offers an API that allows you to embed Google's maps into your own web apps. Hey, that's one of the ingredients we need! Go ahead and familiarize yourself with https://developers.google.com/maps/documentation/javascript/[Google Maps Javascript API] by perusing the three sections below of its Developer's Guide. Read through any sample code carefully, clicking *View example* below it, if present, to see the code in action.
+
+* https://developers.google.com/maps/documentation/javascript/tutorial[Getting Started]
+* Drawing on the Map
+** https://developers.google.com/maps/documentation/javascript/markers[Markers]
+** https://developers.google.com/maps/documentation/javascript/infowindows[Info Windows]
+
+=== typeahead.js
+
+Now take a look at a demo of Twitter's typeahead.js library, a jQuery "plugin" that adds support for autocompletion to HTML text fields. See *The Basics* specifically:
+
+http://twitter.github.io/typeahead.js/examples/
+
+And now skim the documentation for version 0.10.5 of that same library, which (surprise, surprise) isn't as user-friendly as would be ideal. But, again, not to worry.
+
+https://gist.github.com/dmalan/8abe1025cfe5121614b8
+
+Incidentally, the latest version of Twitter's library is actually 0.11.1, but it's buggy. :-(
+
+=== Underscore
+
+Finally, skim the documentation for http://underscorejs.org/[Underscore], another popular JavaScript library that offers functions that many folks wish were built into JavaScript itself! In particular, take note of `template`. Admittedly, this documentation isn't very user-friendly either, so not to worry if usage is non-obvious for the moment.
+
+* http://underscorejs.org/#template
+
+Underscore uses `pass:[_]` is its symbol. For instance `_.template` means that Underscore has a method (i.e., function) called `template`.
+
+== Mapping It Out
+
+Phew, that was a lot! But think of it this way: that's a lot of functionality you don't need to implement yourself! Indeed, implementing autocompletion alone could be a project unto itself. We just need to figure out how to wire (or, if you will, "mash") all of these components together in order to build our own amazing web app.
+
+Anyhow! Log into https://cs50.io/[CS50 IDE] and, open a terminal window, and execute `update50` to ensure that your workspace is up-to-date!
+
+Then, within CS50 IDE, download this problem set's distribution code from 
+
+[source,bash]
+----
+wget http://cdn.cs50.net/2015/fall/psets/8/8-4/8-4.zip
+----
+
+Unzip it into `~/workspace`, so that you ultimately have a `8-4` directory in `~/workspace`. Then delete `8-4.zip`. And then download http://cdn.cs50.net/2015/fall/psets/8/8-4/8-4.sql into `~/workspace` as well.
+
+(Remember how?)
+
+Next, execute `ls` within `~/workspace/8-4`, and you should see three subdirectories: `bin`, `includes`, and `public`. Ensure that permissions are as follows:
+
+* `700`
+** `bin`
+** `bin/import`
+** `includes`
+** `vendor`
+* `711`
+** `public`
+** `public/css`
+** `public/fonts`
+** `public/img`
+** `public/js`
+* `600`
+** `includes/*.php`
+** `public/*.php`
+* `644`
+** `public/css/*`
+** `public/fonts/*`
+** `public/img/*`
+** `public/index.html`
+** `public/js/*`
+
+(Remember how? Remember why?)
+
+Next, ensure that Apache isn't already running (with some other root) by executing the below.
+
+[source,bash]
+----
+apache50 stop
+----
+
+Then (re)start Apache with the below so that it uses `~/workspace/8-4/public` as its root.
+
+[source,bash]
+----
+apache50 start ~/workspace/8-4/public
+----
+
+Next, ensure MySQL is running by executing the below.
+
+[source,bash]
+----
+mysql50 start
+----
+
+Alright, time for a test! In another tab, visit `pass:[https://ide50-username.cs50.io/]`, where `username` is your own username.
+
+You should find yourself at a map (without much of anything going on)! (If you instead see Forbidden, odds are you missed a step earlier; best to try all those chmod steps again.) Feel free to click on the map and drag it around. Or try searching for your home town via the text box up top. It won't find it yet! Indeed, the mashup itself doesn't do much just yet!
+
+Next, head to `pass:[https://ide50-username.cs50.io/phpmyadmin]`, where `username` is again your own username, to access phpMyAdmin. Log in if prompted. (Recall that you can the ⓘ icon toward CS50 IDE's top-right corner to see your *MySQL Username* and your *MySQL Password*.) You should then find yourself at phpMyAdmin's main page.  
+
+Within CS50 IDE, now, open up `8-4.sql`, which you downloaded earlier. You should see a whole bunch of SQL statements.  Highlight them all, select *Edit > Copy* (or hit control-c), then return to phpMyAdmin.  Click phpMyAdmin's *SQL* tab, and paste everything you copied into that page's big text box (which is below *Run SQL query/queries on server "127.0.0.1"*).  Skim what you just pasted to get a sense of the commands you're about to execute, then click *Go*.  You should then see a greenish banner indicating success (i.e., *1 row affected*).  In phpMyAdmin's top-left corner, you should now see link to a database called *8-4*, beneath which is a link to a table called *places*. (If you don't, try reloading the page.) If you click *places*, you'll find (gasp!) that this table is empty. But we have defined its "schema" (i.e., structure) for you. Click phpMyAdmin's *Structure* tab to see. 
+
+Let's now download the data that we'll ultimately import into this table. In a separate tab, head to http://download.geonames.org/export/zip/, where you'll see a whole bunch of ZIP files, "data dumps" (in `.txt` format) from the http://www.geonames.org/[GeoNames] geographical database, which "covers all countries and contains over eight million placenames that are available for download free of charge." Control- or right-click `US.zip` and select *Copy Link Address* (or your browser's equivalent), and then download that ZIP into `~/workspace` within CS50 IDE, as by typing `wget` into a terminal and then pasting the address you just copied. Alternatively, you're welcome to download another country's data, though this spec will assume the US for the sake of discussion. See http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements if unsure how to interpret the ZIP files' 2-letter "base names." (They're "ISO 3166-1 alpha-2" country codes.)
+
+Next, unzip `US.zip`, which should yield `US.txt`. (Remember how?) And then delete `US.zip`.
+
+Per http://download.geonames.org/export/zip/readme.txt, `US.txt` is quite like a CSV file except that fields are delimited with `\t` (a tab character) instead of a comma. To see the file's contents, you're welcome to open it within CS50 IDE, but take care not to change it.
+
+=== import
+
+Navigate your way to `~/workspace/8-4/bin` and open up `import`. Not much there yet! Just a shebang and `TODO`. It's in this file that you'll ultimately write a PHP script that iterates over the lines in `US.txt`, ``INSERT``ing data from each into `places`, that MySQL table. But more on that later.
+
+=== index.html
+
+Next navigate your way to `~/workspace/8-4/public` and open up `index.html`. Ah, there we go. If you look at the page's `head`, you'll see all those CSS and JavaScript libraries we'll be using (plus some others). Included in HTML comments are URLs for each library's documentation. 
+
+Next take a look at the page's `body`, inside of which is `div` with a unique `id` of `map-canvas`. It's into that `div` that we'll be injecting a map. Below that `div`, meanwhile, is a `form`, inside of which is an `input` of type `text` with a unique `id` of `q` that we'll use to take input from users.
+
+=== styles.css
+
+Now navigate your way to `~/workspace/8-4/public/css` and open up `styles.css`. In there is a bunch of CSS that implements the mashup's default UI. Feel free to tinker (i.e., make changes, save the file, and reload the page in Chrome) to see how everything works, but best to undo any such changes for now before forging ahead.
+
+=== update.php
+
+Now navigate your way to `~/workspace/8-4/public` and open up `update.php`. Ah, okay, here's the "back-end" script that outputs a JSON array of up to 10 places (i.e., cities) that fall within the specified bounds (i.e., within the rectangle defined by those corners). You won't need to make changes to this file, but do read through it line by line, Googling any function with which you're not familiar. Of particular interest should be `preg_match`, which allows you to compare strings against "regular expressions." While cryptic at first glance, our two calls to `preg_match` in `update.php` are simply ensuring that both `sw` and `ne` are comma-separated latitudes and longitudes.
+
+Oh, and yes, this file's SQL queries assume that the world is flat for simplity.
+
+=== search.php
+
+Next open up `search.php`. Ah, not much in there now. Just an eventual `TODO`!
+
+=== config.php
+
+Let's now take a quick peek at the file that all those other PHP files have required. Navigate your way to `~/workspace/8-4/includes` and open up `config.php`. Ah, a file quite like Problem Set 7's own `config.php`, albeit simpler. It even loads CS50's PHP library, along with `helpers.php`.
+
+=== helpers.php
+
+In this file we've defined just one function, `lookup`. Unlike Problem Set 7's `lookup`, though, this version of `lookup` queries Google News for articles for a particular geography. No need to understand every one this file's lines, but do review its comments!
+
+=== config.json
+
+Next open up `config.json`. Ah, another familiar sight, albeit with for database called `8-4`.
+
+== All of the Places
+
+Alright, it's time to get started mashing Google's two APIs together.
+
+=== config.json
+
+First, tackle those ``TODO``s inside of `config.json`, just as you did for Problem 8-2.
+
+=== import
+
+Next, recall that `places`, that MySQL table you imported earlier, is currently empty. The data that needs to be in it, meanwhile, is in `US.txt`.
+
+Write, in `import`, a command-line script in PHP that accepts as a command-line argument the path to a file (which can be assumed to be formatted like `US.txt`) that iterates over the file's lines, inserting each as new row in `places`. We leave the overall design of this script to you, but be sure to perform rigorous error-checking, leveraging http://php.net/manual/en/function.file-exists.php[`file_exists`], http://php.net/manual/en/function.is-readable.php[`is_readable`], and/or similar. Odds are you'll find http://php.net/manual/en/function.fopen.php[`fopen`], http://php.net/manual/en/function.fgetcsv.php[`fgetcsv`], and http://php.net/manual/en/function.fclose.php[`fclose`] of particular help, along with `CS50::query` from CS50's PHP library. Note that `fgetcsv` takes an optional third argument that allows you to override the default delimiter from a comma to something else.
+
+To run this script, you'll want to execute a command like
+
+[source,bash]
+----
+./import /path/to/US.txt
+----
+
+where `/path/to/US.txt` is indeed the (relative or absolute) path to that file.
+
+Odds are the first several runs of your script won't be quite right, so you'll likely want to empty `places` between runs, as by executing
+
+[source,sql]
+----
+TRUNCATE places
+----
+
+in phpMyAdmin's *SQL* tab or by clicking *Empty the table (TRUNCATE)* in phpMyAdmin's *Operations* tab. If you take the latter approach, be sure that you've first selected *places* (as by clicking it in phpMyAdmin's lefthand column) so that you don't truncate some other table. And be sure not to click *Delete the table (DROP)*, else you'll have to re-import `8-4.sql` and re-create any changes you'd made.
+
+Either now or later on, you should probably add one or more additional indexes to `places` in order to expedite searches (for `search.php`). See http://dev.mysql.com/doc/refman/5.5/en/mysql-indexes.html and http://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html (and Google!) for tips. (We defined `places` in `8-4.sql` as using a MyISAM "engine" so that a `FULLTEXT` index is an option.)
+
+Even though data can sometimes be imported in bulk via phpMyAdmin's *Import* tab, you must indeed (in case wondering!) implement `import` as prescribed!
+
+=== search.php
+
+Implement `search.php` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `geo`. The value of `geo`, passed into `search.php` as a GET parameter, meanwhile, might be a city, state, and/or postal code. We leave it to you to decide what constitutes a match and, therefore, which rows to `SELECT`. Odds are you'll find SQL's `LIKE` and/or `MATCH` keywords helpful.
+
+For instance, consider the query below.
+
+[source,sql]
+----
+CS50::query("SELECT * FROM places WHERE postal_code = ?", $_GET["geo"])
+----
+
+Unfortunately, that query requires that a user's input be exactly equal to a postal code (per the `=`), which isn't all that compelling for autocomplete. How about this one instead?
+
+[source,sql]
+----
+CS50::query("SELECT * FROM places WHERE postal_code LIKE ?", $_GET["geo"] . "%")
+----
+
+Notice how this query appends `%` to the user's input, which happens to be SQL's "wildcard" character that means "match any number of characters." The effect is that this query will return rows whose postal codes match whatever the user typed followed by any number of other characters. In other words, any of `0`, `02`, `021`, `0213`, and `02138` might return rows, as might any of `0`, `06`, `065`, `0651`, and `06511`.
+
+Finally, consider a query like the below.
+
+[source,sql]
+----
+CS50::query("SELECT * FROM places WHERE MATCH(postal_code, place_name) AGAINST (?)", $_GET["geo"])
+----
+
+This query searches not only on `postal_code` but also on `place_name`, but it leaves it to MySQL to figure out how. It assumes, though, that you've defined a `FULLTEXT` index jointly on `postal_code` and `place_name`, which you can do via phpMyAdmin's *Structure* tab. (See if you can determine how!)
+
+Odds are you won't want to use any of these queries outright, instead deciding for yourself what kind of searches to support and what fields to search!
+
+As before, see http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html and http://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html for some guidance as well, though Google and Stack Overflow might yield more helpful tips.) 
+
+To test `search.php`, even before your text box is operational, simply visit URLs like
+
+* https://ide50-username.cs50.io/search.php?geo=Cambridge,+Massachusetts,+US
+* https://ide50-username.cs50.io/search.php?geo=Cambridge,+Massachusetts
+* https://ide50-username.cs50.io/search.php?geo=Cambridge,+MA
+* https://ide50-username.cs50.io/search.php?geo=Cambridge+MA
+* https://ide50-username.cs50.io/search.php?geo=02138
+
+or
+
+* https://ide50-username.cs50.io/search.php?geo=New+Haven,+Connecticut,+US
+* https://ide50-username.cs50.io/search.php?geo=New+Haven,+Massachusetts
+* https://ide50-username.cs50.io/search.php?geo=New+Have,+MA
+* https://ide50-username.cs50.io/search.php?geo=New+Haven+MA
+* https://ide50-username.cs50.io/search.php?geo=06511
+
+and other such variants, where `username` is your own username, to see if you get back the JSON you expect (and not, say, some big, orange error!). Again, though, we leave it to you to decide just how tolerate `search.php` will be of abbreviations, punctuation, and the like. The more flexible, though, the better! Try to implement features that you yourself would expect as a user!
+
+Feel free to tinker with the staff's solution at https://mashup.cs50.net/, inspecting its HTTP requests via Chrome's Network tab as needed, if unsure how your own code should work!
+
+== Check It Out
+
+Before turning in your code, here are a few quick sanity checks:
+
+* Does `import` properly import US.txt into the database?
+* Do links like https://ide50-username.cs50.io/articles.php?geo=New+Haven,+Connecticut show valid JSON objects?
+* Does your `config.json` refer to the correct database?
+
+== Turn It In
+
+. When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where `username` is your own username, pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by clicking the ⓘ icon toward CS50 IDE's top-right corner.) For security, you won't see the password as you paste it.
++
+[source]
+----
+cd ~/workspace/8-4
+mysqldump -u username -p 8-4 > 8-4.sql
+----
++
+If you type `ls` thereafter, you should see that you have a new file called `8-4.sql` in `~/workspace/8-4`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `8-4.sql` with `rm 8-4.sql`, then re-export as before.) +
+Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `8-4` folder and then select *Download*. You should find that your browser has downloaded `8-4.tar.gz`, a "gzipped tarball" that's similar in spirit to a ZIP file.
+
+Await instructions on how to submit the tarball!
+ 
+
+This was Mashup (Part 1).
