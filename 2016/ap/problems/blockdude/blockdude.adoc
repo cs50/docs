@@ -1,0 +1,216 @@
+---
+---
+:skip-front-matter:
+
+= Problem: Blockdude
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Learn about and use an API.
+* Understand abstraction.
+* Have fun.
+
+== Academic Honesty
+
+This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
+
+The essence of all work that you submit to this course must be your own. Collaboration on problems is not permitted (unless explicitly stated otherwise) except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your code or writing to others, but you may not view theirs, so long as you and they respect this policy's other constraints. Collaboration on quizzes and tests is not permitted at all. Collaboration on the final project is permitted to the extent prescribed by its specification.
+
+Below are the rules of thumb that (inexhaustibly) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it until you solicit and receive approval in writing from your instructor. If a violation of this policy is suspected and confirmed, your instructor reserves the right to impose local sanctions on top of any disciplinary outcome that may include an unsatisfactory or failing grade for work submitted or for the course itself.
+
+=== Reasonable
+
+* Communicating with classmates about problems in English (or some other spoken language).
+* Discussing the course's material with others in order to understand it better.
+* Helping a classmate identify a bug in his or her code, such as by viewing, compiling, or running his or her code, even on your own computer.
+* Incorporating snippets of code that you find online or elsewhere into your own code, provided that those snippets are not themselves solutions to assigned problems and that you cite the snippets' origins.
+* Reviewing past years' quizzes, tests, and solutions thereto.
+* Sending or showing code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a bug.
+* Sharing snippets of your own solutions to problems online so that others might help you identify and fix a bug or other issue.
+* Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problems or your own final project.
+* Whiteboarding solutions to problems with others using diagrams or pseudocode but not actual code.
+* Working with (and even paying) a tutor to help you with the course, provided the tutor does not do your work for you.
+
+=== Not Reasonable
+
+* Accessing a solution to some problem prior to (re-)submitting your own.
+* Asking a classmate to see his or her solution to a problem before (re-)submitting your own.
+* Decompiling, deobfuscating, or disassembling the staff's solutions to problems.
+* Failing to cite (as with comments) the origins of code, writing, or techniques that you discover outside of the course's own lessons and integrate into your own work, even while respecting this policy's other constraints.
+* Giving or showing to a classmate a solution to a problem when it is he or she, and not you, who is struggling to solve it.
+* Looking at another individual's work during a quiz or test.
+* Paying or offering to pay an individual for work that you may submit as (part of) your own.
+* Providing or making available solutions to problems to individuals who might take this course in the future.
+* Searching for, soliciting, or viewing a quiz's questions or answers prior to taking the quiz.
+* Searching for or soliciting outright solutions to problems online or elsewhere.
+* Splitting a problem's workload with another individual and combining your work (unless explicitly authorized by the problem itself).
+* Submitting (after possibly modifying) the work of another individual beyond allowed snippets.
+* Submitting the same or similar work to this course that you have submitted or will submit to another.
+* Using resources during a quiz beyond those explicitly allows in the quiz's instructions.
+* Viewing another's solution to a problem and basing your own solution on it.
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Started
+
+First, log into cs50.io and execute
+
+[source,bash]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date.
+
+Then, create a new directory inside of your `workspace` called `unit6` (Remember how?) and navigate inside. Once there, obtain a copy of this problem's distro by typing:
+
+[source,bash]
+----
+wget http://docs.cs50.net/2016/ap/problems/blockdude/blockdude.zip
+----
+
+Unzip the ZIP file and then delete the ZIP file from your `unit6` directory (remember how?). Navigate into your newly-created `block dude` folder and execute
+
+[source,bash]
+----
+ls
+----
+
+after which you should see that your directory contains eight files.
+
+[source,bash]
+----
+Makefile	blockdude.h	lvl2.txt	lvl4.txt
+blockdude.c	lvl1.txt	lvl3.txt	lvl5.txt
+----
+
+Confirm that all the files are, indeed, in your directory and let's get started, shall we?
+
+== Dude, Stop Blocking Me
+
+For this problem, we'll implement a game called blockdude. For some, this game may ring a bell and for others, it may not. Blockdude is a game played on the TI83/84 calculators back in the day. Take a look at this video below to see the game in action and understand how it works.
+
+video::ErFXHHYXByk[youtube,height=540,width=960]
+
+Before we continue on, remember adjusting your terminal window to be the right size to play `sudoku`? Here too must we adjust the terminal window to be a accommodating for the game. If you type
+
+[source,bash]
+----
+watch tput lines
+----
+
+your prompt should change, telling you that every two seconds it is updating what it perceives as the number of lines in your terminal window. If you drag your window up and down, you should see the number a few lines down update. When it says "46", you can press ctrl+C to quit the `put` program. Similarly, you can type
+
+[source,bash]
+----
+watch tput cols
+----
+
+to figure out how many columns your terminal window has. When you stretch or shrink your window and it reports "68",  you can press ctrl+C to quit.
+
+If you don't remember why we need this specific terminal size, it's because ncurses individually addresses each character in your terminal window by way of (y,x) coordinates, whereby (0,0) refers to your terminal window's top-left corner and (45,67) refers to the bottom-right corner.
+
+Open up `blockdude.c` and you'll see that an old friend has revisited us: `ncurses`! In case you've forgotten, ncurses was used back in Unit 4 to help implement `sudoku`. ncurses provides us with an API that allows us to create a rudimentary GUI in a terminal-independent manner.
+
+Now about that skeleton. Odds are you'll read through the code and not understand most of the code. Basically, we've implemented the aesthetics for the game as well as the left and right movements so that you can focus on other parts of the game. But know that none of it is all that complex. In fact, if you look at each of the functions in isolation, you'll likely find each pretty straightforward.
+
+Navigate to your `~/workspace/chapterB/blockdude` directory and execute the increasingly familiar command below:
+
+[source,bash]
+----
+make
+----
+
+You should find a brand new executable called `blockdude` in your current working directory. Go ahead and run it by typing
+
+[source,bash]
+----
+./blockdude
+----
+
+and you should see the game appear in your terminal window, something like the picture below. If not, do just check again to ensure your terminal dimensions are correct.
+
+image::blockdudeshot.png[width=320]
+
+If you read through `main`, you'd have seen that the program allows for one additional command line argument, a level code, or an `int`, that specifies which level you'd like to start. If no command line argument is given or an incorrect level code, the game will start at level 1.
+
+Now back to the game. The many `=`pass:[s] represent bricks on which you walk, the `#`pass:[s] represent blocks that you may pick up, if possible, and move, and the `*` represents the level's exit that you must reach.
+
+If you press the left or right arrow keys, you'll find that the character will move. Try moving around to get a sense of how the character moves.
+
+But trying to pick up the `#` block with the up arrow key, you'll see that the character can't pick it up. Looking back through the distro, you'll see in the `reposition` function that `case KEY_UP:` and `case KEY_DOWN:` have yet to be implemented!
+
+To test the staff's solution, and ultimately how your solution should work, execute the below:
+
+[source,bash]
+----
+~cs50/chapterB/blockdude
+----
+
+Now open up `blockdude.h`. Here, you'll see a lot of `#define`pass:[s] that we use in `blockdude.c`. Of interest to you will be `DISPLACE`, `SPACE`, `BRICK`, `BLOCK`, `PRIGHT`, and `PLEFT`.
+
+For our implementation of `blockdude`, all bricks have been separated by 2 units, or displaced (hence the `#define DISPLACE 2`), for aesthetic purposes. Thus, when we mean something is to the right of something, we actually mean 2 units to the right.
+
+Next, is `SPACE`, `BRICK`, and `BLOCK`, which are exactly what they sound like. `SPACE` just denotes empty space. `BRICK` represents the bricks for the level layout. And `BLOCK` is the blocks the character may pick up and drop in order to pass the level.
+
+Finally, though the character initially starts off as the letter `O` (denoted by the `#define PLAYER 'O'`), when the character moves, the `O` becomes a `<` if moving to the left and a `>` if moving the right. Thus, `PRIGHT` and `PLEFT` represent which way the character is facing, and thus which way it should pick up and drop blocks.
+
+Here's what lies ahead.
+
+== Started From the Bottom
+
+Complete the implementation of `reposition` such that when the user presses the up or down arrow keys, the character picks up or puts down a block if possible.
+
+While completing the `KEY_UP` case for reposition, keep in mind the following.
+
+* The character should pick up a block only if it does not already have a block picked up.
+* When a character picks up a block, the code should indicate that the character currently has a block picked up.
+* If facing left, the character should only pick up a block if there is one to the left of the character.
+* Similarly, if the character is facing right, it should pick up a block to the right.
+* If there is anything else, such as another block, that is above the block that the character tries to pick up, the character should not be able to pick it up.
+* If there is no block next to the character, it should not do any action.
+* The character can only pick up blocks immediately to the left or right of it. It cannot pick up blocks above or below it.
+* Once the character picks up the block, the original coordinates where the block was should be replaced with a blank space and the block should be placed above the character.
+
+And for the `KEY_DOWN` case, the following.
+
+* The character should be able to drop a block only if it currently holds a block.
+* When a character drops a block, the code should indicate that the character is no longer holding a block.
+* If facing left, the character should drop the block to the left and if facing right, should drop the block to the right.
+** When dropping the block, the block can go land in multiple positions.
+** If facing right (or left) and the position right (or left) of the character is an empty space, then it should drop the block to the left.
+** Keep in mind, the block is indeed "dropping" and should drop until it "lands" directly above either a brick or another block. Odds are you may implement a while loop to increment the y coordinate of the block until a non empty space unit is detected.
+* If the position left or right of the character is not an empty space (i.e., a brick or a block), the character may place the block to the left or right and one unit above, if that position is an empty space.
+
+For both `KEY_UP` and `KEY_DOWN`, odds are code will take into consideration when the character is facing left and when it's facing right.
+
+Odds are you'll find the functions `inch`, `mvinch`, and `mvaddch` of the `ncurses` library of use.
+
+If in need of some inspiration, take a look at the `case KEY_LEFT:` and `case KEY_RIGHT:` parts of `reposition` as well as the `check_win` function.
+
+And if confused on how your implementation should work after completion of `reposition`, test the staff's implementation!
+
+== Now We're Here
+
+Upon completing `reposition`, try playing around with your implementation of blockdude and test if all runs smoothly and as expected.
+
+And if you'd like, try beating all 5 levels of the game!
+
+image::meme.jpg[width=360]
+
+This was Blockdude.
