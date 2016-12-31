@@ -61,7 +61,7 @@ Alright, off you go. Make us proud!
 
 Incidentally, if you don't have the best Internet access, you're welcome to download Scratch's "offline editor" at https://scratch.mit.edu/scratch2download/. But when done with your project offline, be sure to upload it to your account at http://scratch.mit.edu/ via *File > Share to website* in the offline editor.
 
-Once finished with your project, click *See project page* in Scratch's top-right corner. Ensure your project has a title (in Scratch's top-left corner), some instructions (in Scratch's top-right corner), and some notes and/or credits (in Scratch's bottom-right corner). Then click *Share* in Scratch's top-right corner so that others (e.g., your TF!) can see your project. Finally, take note of the URL in your browser's address bar. That's your project's URL on MIT's website, and you'll need to know it later.
+Once finished with your project, click *See project page* in Scratch's top-right corner. Ensure your project has a title (in Scratch's top-left corner), some instructions (in Scratch's top-right corner), and some notes and/or credits (in Scratch's bottom-right corner). Then click *Share* in Scratch's top-right corner so that others can see your project. Finally, take note of the URL in your browser's address bar. That's your project's URL on MIT's website, and you'll need to know it later.
 
 Oh, and if you'd like to exhibit your project in Fall 2016's studio, head to https://scratch.mit.edu/studios/3009443/, then click *Add projects*, and paste in your own project's URL.
 
