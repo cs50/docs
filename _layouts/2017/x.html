@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+        <script crossorigin="anonymous" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    displayMath: [["\\[", "\\]"]],
+                    ignoreClass: "nostem|nostem|nolatexmath",
+                    inlineMath: [["\\(", "\\)"]]
+                },
+                asciimath2jax: {
+                    delimiters: [["\\$", "\\$"]],
+                    ignoreClass: "nostem|nostem|noasciimath",
+                    processEnvironments: true
+                }
+            });
+        </script>
+        <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script>
+
+            $(function() {
+
+                // responsive embed
+                // http://getbootstrap.com/components/#responsive-embed
+                $('div.videoblock div.content').addClass('embed-responsive embed-responsive-16by9');
+                $('div.videoblock div.content iframe').addClass('embed-responsive-item');
+
+            });
+
+        </script>
+        <style>
+
+            {% include asciidoctor.css %}
+
+        </style>
+        <style>
+
+            {% include asciidoc-pygments.css %}
+
+        </style>
+        <style>
+
+            /* http://stackoverflow.com/a/30195325 */
+            ol > li:before {
+                content: "";
+                display: block;
+                height: 1em;
+            }
+            ol > li > p:first-child {
+                margin-top: -1em;
+            }
+
+            /* wrap inline code */
+            *:not(pre) > code {
+                white-space: pre-wrap;
+            }
+            
+            /* don't wrap code blocks */
+            pre, pre code {
+                overflow: auto;
+                white-space: pre;
+                word-wrap: normal;
+            }
+
+            /* match margin-bottom of div.paragraph */
+            div.stemblock div.content {
+                margin-bottom: 1.25em;
+            }
+
+            /* fill page */
+            table {
+                width: 100%;
+            }
+
+            /* allow captions to wrap */
+            .tableblock > caption {
+                max-width: inherit;
+                white-space: inherit;
+            }
+
+        </style>
+        <title>{{ page.title }}</title>
+    </head>
+    {% if page.toc != false %}
+        <body class="toc2 toc-left">
+            <div id="header">
+                <div class="toc2" id="toc">
+                    <div id="toctitle">Table of Contents</div>
+                    {{ page.document | tocify_asciidoc: page.toclevels }}
+                </div>
+            </div>
+            <div id="content">
+                {{ content }}
+            </div>
+        </body>
+    {% else %}
+        <body>
+            <div id="content">
+                {{ content }}
+            </div>
+        </body>
+    {% endif %}
+</html>
