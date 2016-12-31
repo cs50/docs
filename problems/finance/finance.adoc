@@ -169,9 +169,9 @@ Implement one (1) additional feature, a personal touch of your choice:
 * Empower users to buy more shares or sell shares of stocks they already own via `index` itself, without having to type stocks' symbols manually.
 * Empower users with some other feature of comparable scope.
 
-== Walkthrough
+== Walkthroughs
 
-video::sPpoqwoY6pI[youtube,list=PLhQjrBD2T383KQ0yBY2yQwpYv-OiR-4f1]
+video::Fq2FkZ5_kL0[youtube,height=540,width=960,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 == Testing
 
