@@ -1,0 +1,117 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= Problem Set 1: C
+
+== tl;dr
+
+[start=0]
+. Watch https://video.cs50.net/2016/fall/lectures/1[Week 1's lecture].
+. Say hellow to the world with `hello.c`.
+. Calculate your water consumption with `water.c`.
+. Recreate one of Mario's pyramids, in `mario.c`.
+. Provide a user with either cash or credit in `greedy.c` or `credit.c`.
+. Submit your code.
+. Submit a form.
+
+== Help
+
+For help with Week 1 and Problem Set 1:
+
+* Watch Zamyla's walkthroughs herein.
+* Start a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussion] with classmates.
+
+== Getting Started
+
+Recall that CS50 IDE is a web-based "integrated development environment" that allows you to program "in the cloud," without installing any software locally. Underneath the hood is a popular operating system, Ubuntu Linux, that's been "containerized" with open-source software called Docker, that allows multiple users (like you!) to share the operating system's "kernel" (its nucleus, so to speak) and files, even while having files of their own. Indeed, CS50 IDE provides you with your very own "workspace" (i.e., storage space) in which you can save your own files and folders (aka directories).
+
+=== Logging In
+
+Head to https://cs50.io/[cs50.io] and log into CS50 IDE. 
+
+[IMPORTANT]
+====
+If you typically sign into https://courses.edx.org/login[edX] via Facebook, Google, or Microsoft, you'll first need to create a password for your edX account as follows:
+
+. Sign into your edX account at https://courses.edx.org/login[courses.edx.org/login] (via Facebook, Google, or Microsoft).
+. Visit https://courses.edx.org/account/settings[courses.edx.org/account/settings].
+. Click *Reset Your Password* (even though you don't yet have one) under *Password*.
+. Check your email for a message from edX. (If it hasn't arrived after a few minutes, do check your spam folder.) Click the link in that message to reset (i.e., create) your password.
+. Log into https://cs50.io/[cs50.io]!
+====
+
+Upon logging into CS50 IDE for the first time, you may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then click *Create workspace*.
+
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble mine from Week 1. If not, do just email the course's heads to inquire!
+
+=== Updating
+
+Toward the bottom of CS50 IDE's UI is a "terminal window" (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace's files and directories, compile code, run programs, and even install new software. You should find that its "prompt" resembles the below.
+
+[source,text]
+----
+~/workspace/ $
+----
+
+Click inside of that terminal window and then type
+
+[source,text]
+----
+update50
+----
+
+followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!)
+
+Next, execute
+
+[source]
+----
+mkdir ~/workspace/pset1/
+----
+
+at your prompt in order to make a directory called `pset1` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset1` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset1` denotes a directory called `pset1` within `~/workspace`.
+
+Now execute
+
+[source]
+----
+cd ~/workspace/pset1/
+----
+
+to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
+
+[source]
+----
+~/workspace/pset1/ $
+----
+
+If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
+
+[source,bash]
+----
+history
+----
+
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like.
+
+== What to Do
+
+. Implement link:../../../../problems/hello/hello.html[Hello]
+. Implement link:../../../../problems/water/water.html[Water]
+. Implement either of:
++
+--
+* link:../../../../problems/mario/less/mario.html[Mario], less comfortable
+* link:../../../../problems/mario/more/mario.html[Mario], more comfortable
+--
++
+. Implement either of:
++
+--
+* link:../../../../problems/greedy/greedy.html[Greedy], less comfortable
+* link:../../../../problems/credit/credit.html[Credit], more comfortable
+--
+
+include::../submit.adoc[]

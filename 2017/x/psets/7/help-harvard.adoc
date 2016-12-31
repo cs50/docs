@@ -1,0 +1,21 @@
+---
+published: false
+---
+
+== Help
+
+For help with Week 9 and Problem Set 7:
+
+* Attend David's walkthrough on Mon 10/31, 1pm – 2:30pm, in Sanders Theatre.
+* Watch David's walkthrough herein.
+* Attend a walkthrough during office hours on
+** Wed 11/2 at 9pm in Widener or
+** Thu 11/3 at 9pm in Widener.
+* Attend your TF's section (or another if you have a conflict).
+* Post questions and search answers in https://cs50.harvard.edu/discuss[CS50 Discuss].
+* Attend individual TFs' and CAs' https://cs50.harvard.edu/hours[office hours] at HSA.
+* Attend course-wide https://cs50.harvard.edu/hours[office hours].
+
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly    its "regret clause."
