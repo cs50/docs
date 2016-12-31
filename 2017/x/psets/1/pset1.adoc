@@ -29,7 +29,7 @@ Recall that CS50 IDE is a web-based "integrated development environment" that al
 
 === Logging In
 
-Head to https://cs50.io/[cs50.io] and log into CS50 IDE. 
+Head to https://cs50.io/[cs50.io] and log into CS50 IDE, selecting *edX* from the drop-down menu when prompted.
 
 [IMPORTANT]
 ====
