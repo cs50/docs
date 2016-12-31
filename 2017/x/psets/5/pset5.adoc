@@ -12,7 +12,13 @@ layout: 2016/fall
 . Implement a spell checker.
 . Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For help with Week 5 and Problem Set 5:
+
+* Watch Zamyla's walkthroughs herein.
+* Take advantage of `help50`, `eprintf`, and `debug50`.
+* Start a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussion] with classmates.
 
 == Getting Started
 
@@ -47,10 +53,6 @@ and your prompt should resemble the below.
 ----
 ~/workspace/pset5/ $
 ----
-
-== Academic Honesty
-
-Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
 
 == Problems
 

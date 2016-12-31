@@ -12,7 +12,12 @@ layout: 2016/fall
 . Analyze some sentiments.
 . Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For help with Weeks 6 – 8 and Problem Set 6:
+
+* Watch Zamyla's walkthroughs herein.
+* Start a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussion] with classmates.
 
 == Getting Started
 
@@ -73,45 +78,40 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 ** https://docs.python.org/3/library/[The Python Standard Library]
 ** https://docs.python.org/3/tutorial/index.html[The Python Tutorial]
 
-== Walkthrough
+== Walkthroughs
 
-=== Problems 1 – 3
+=== Mario
 
-++++
-<div class="sectionbody">
-<div class="videoblock">
-<div class="content">
-<iframe src="https://video.cs50.net/2016/fall/psets/6/pset6/c-python" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-++++
+==== less comfortable
 
-=== Problem 4
+video::syt3NZhllwc[youtube,height=540,width=960]
 
-See link:../../../../problems/sentiments/sentiments.html#walkthrough[Sentiments]
+==== more comfortable
 
-== FAQs
+video::gqS876f0lk0[youtube,height=540,width=960]
 
-=== AttributeError: 'module' object has no attribute `get_`
+=== Greedy
 
-If seeing this error (for `cs50.get_char`, `cs50.get_float`, `cs50.get_int`, or `cs50.get_string`), try executing the below (which fixes a bug in an earlier version of the CS50 Library for Python):
+video::f3iMmGry05Q[youtube,height=540,width=960]
 
-[source]
-----
-sudo chmod -R a+rX /usr/lib/python2.7/dist-packages/cs50
-sudo chmod -R a+rX /usr/lib/python3/dist-packages/cs50
-----
+=== Credit
 
-=== ImportError: No module named 'sqlalchemy'
+video::o2nVBm9S3iw[youtube,height=540,width=960]
 
-If seeing this error, execute
+=== Caesar
 
-[source]
-----
-pip install --user sqlalchemy
-----
+_Coming Soon_
 
-to resolve!
+=== Vigenère
+
+_Coming Soon_
+
+=== Crack
+
+_Coming Soon_
+
+=== Sentiments
+
+See link:../../../../problems/sentiments/sentiments.html#walkthrough[Sentiments].
 
 include::../submit.adoc[]

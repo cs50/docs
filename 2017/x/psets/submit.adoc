@@ -4,4 +4,4 @@ published: false
 
 == How to Submit
 
-_Coming in a few weeks, still readying CS50x 2017's new-and-improved submission system!_
+_Coming in a few weeks, still readying CS50x 2017's new-and-improved submission system! Just hang on to your code for now, and reload this page in a few weeks!_

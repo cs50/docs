@@ -227,15 +227,9 @@ Complete the implementation of `search` in `application.py` in such a way that t
 
 If a user has tweeted fewer than 100 times, classify as many tweets as exist.
 
-== Walkthrough
+== Walkthroughs
 
-++++
-<div class="videoblock">
-<div class="content">
-<iframe src="https://video.cs50.net/2016/fall/psets/6/pset6/sentiments" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-++++
+video::_rBWbyoJmaU[youtube,height=540,width=960,list=PLhQjrBD2T381evKksbwphwMyBIP40rgEX]
 
 == Usage
 
