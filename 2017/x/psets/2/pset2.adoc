@@ -21,7 +21,12 @@ layout: 2016/fall
 . Submit your code.
 . Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For help with Week 2 and Problem Set 2:
+
+* Watch Zamyla's walkthroughs herein.
+* Start a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussion] with classmates.
 
 == Reminders
 
@@ -51,7 +56,7 @@ Next, execute
 mkdir ~/workspace/pset2/
 ----
 
-at your prompt in order to make a directory called `pset2` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset2` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset2` denotes a directory called `pset2` within `~/workspace`.
+at your prompt in order to make a directory called `pset2` in your `workspace` directory. 
 
 Now execute
 
