@@ -156,15 +156,6 @@ export API_SECRET=value
 ----
 +
 where `value` is that (pasted) value, without any space immediately before or after the `=`.
-. In a terminal window, execute
-+
-[source]
-----
-export FLASK_APP=application.py
-export FLASK_DEBUG=1
-----
-+
-without any space immediately before or after each `=`.
 
 If you close that terminal window and/or open another, you'll need to repeat those last five steps.
 
@@ -181,7 +172,7 @@ Next, try running
 
 [source]
 ----
-flask run --host=0.0.0.0 --port=8080
+flask run
 ----
 
 and then select *CS50 IDE > Web Server* in CS50 IDE's top-left corner. Search for some user's screen name, and you should see a chart! Of course, it's all yellow for now because of that `100.0` in `application.py`. Quit Flask with control-c.

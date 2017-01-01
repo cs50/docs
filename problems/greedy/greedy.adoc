@@ -42,18 +42,11 @@ video::6w7Tws0seJk[youtube,height=540,width=960]
 
 == Usage
 
-[source]
-----
-$ ./greedy
-----
-
-== Testing
-
 Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes]
 ----
-~/workspace/pset1/ $ [underline]#./greedy#
+$ [underline]#./greedy#
 O hai! How much change is owed?
 [underline]#0.41#
 4
@@ -61,7 +54,7 @@ O hai! How much change is owed?
 
 [source,subs=quotes]
 ----
-~/workspace/pset1 $ [underline]#./greedy#
+$ [underline]#./greedy#
 O hai! How much change is owed?
 [underline]#-0.41#
 How much change is owed?
@@ -72,7 +65,9 @@ Retry: [underline]#0.41#
 4
 ----
 
-=== check50
+== Testing
+
+=== `check50`
 
 [source,text]
 ----
