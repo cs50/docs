@@ -10,12 +10,12 @@ Implement a program that reports a user's water usage, converting minutes spent 
 [source,subs=quotes]
 ----
 $ [underline]#./water#
-[underline]#1#
-12
+Minutes: [underline]#1#
+Bottles: 12
 
 $ [underline]#./water#
-[underline]#10#
-120
+Minutes: [underline]#10#
+Bottles: 120
 ----
 
 == Background
@@ -33,23 +33,18 @@ video::oAcVHgmjTHE[youtube,height=540,width=960]
 
 == Usage
 
-[source]
-----
-$ ./water
-----
-
-== Testing
-
 Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes,text]
 ----
-~/workspace/pset1/ $ [underline]#./water#
-minutes: [underline]#10#
-bottles: 120
+$ [underline]#./water#
+Minutes: [underline]#10#
+Bottles: 120
 ----
 
-=== check50
+== Testing
+
+=== `check50`
 
 [source,text]
 ----

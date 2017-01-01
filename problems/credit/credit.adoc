@@ -9,7 +9,7 @@ Implement a program that determines whether a provided credit card number is val
 
 [source,subs=quotes]
 ----
-~/workspace/pset1/ $ [underline]#./credit#
+$ [underline]#./credit#
 Number: [underline]#378282246310005#
 AMEX
 ----
@@ -65,25 +65,18 @@ video::06wNhN54P6k[youtube,height=540,width=960]
 
 == Usage
 
-[source]
-----
-$ ./credit
-----
-
-== Testing
-
 Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes]
 ----
-~/workspace/pset1/ $ [underline]#./credit#
+$ [underline]#./credit#
 Number: [underline]#378282246310005#
 AMEX
 ----
 
 [source,subs=quotes,text]
 ----
-~/workspace/pset1/ $ [underline]#./credit#
+$ [underline]#./credit#
 Number: [underline]#3782-822-463-10005#
 Retry: [underline]#foo#
 Retry: [underline]#378282246310005#
@@ -92,12 +85,14 @@ AMEX
 
 [source,subs=quotes,text]
 ----
-~/workspace/pset1/ $ [underline]#./credit#
+$ [underline]#./credit#
 Number: [underline]#6176292929#
 INVALID
 ----
 
-=== check50
+== Testing
+
+=== `check50`
 
 [source,text]
 ----

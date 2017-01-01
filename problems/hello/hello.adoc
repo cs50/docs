@@ -110,13 +110,6 @@ video::vbkTzOytISY[youtube,height=540,width=960]
 
 == Usage
 
-[source]
-----
-$ ./hello
-----
-
-== Testing
-
 Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes]
@@ -125,8 +118,9 @@ $ [underline]#./hello#
 Hello, world!
 ----
 
+== Testing
 
-=== check50
+=== `check50`
 
 [source,text]
 ----
