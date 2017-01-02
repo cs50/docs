@@ -1,0 +1,132 @@
+---
+layout: 2017/x
+---
+
+= What's new?
+
+Here's (much of) what's new in CS50x 2017 vis-à-vis CS50x 2016!
+
+== Lectures
+
+=== Machine Learning
+
+CS50x now covers a bit of machine learning (ML), thanks to Patrick Rebeschini at Yale.
+
+=== Python
+
+Most of CS50x is still taught in C, but as of 2017, PHP has been replaced with Python.
+
+=== SQLite
+
+CS50x now introduces SQL using SQLite instead of MySQL.
+
+=== Videos
+
+Instead of two lectures per week (as in 2016), CS50x now has one lecture per week, albeit longer. But you can now watch those lectures (on laptops and desktops) in CS50's new-and-improved video player, thanks to CS50's own Luke Jackson, whose features include:
+
+* Video fills your browser's viewport.
+* Three different modes for watching:
+** A default mode, which automatically cuts among camera angles and David's laptop.
+** A multicam mode, which overlays David's laptop on the video continually. You can resize the overlay by clicking and dragging its bottom-right corner and even swap it with the video itself by clicking it.
+** A 360º stereoscopic VR mode, which allows you to experience Sanders Theatre in its entirety by clicking and dragging.
+* A searchable transcript of everything David says (for better or for worse), organized with a table of contents.
+* Ability to rewind a few seconds (if you zone out).
+* Ability to fast-forward to the video's next "chapter," per the table of contents.
+* 1x, 1.5x, an 2x playback speeds.
+* Closed captioning.
+* Ability to download videos in multiple resolutions.
+* Ability to full-screen videos.
+
+Here's https://video.cs50.net/2016/fall/lectures/0[Week 0's lecture] if you'd like to try out the new player.
+
+=== Virtual Reality
+
+Each of CS50x's lectures can now be viewed in 360º stereoscopic virtual reality (VR) using Google Cardboard, HTC Vive, Oculus Rift, Samsung Gear, or YouTube's mobile app.
+
+== Sections, Shorts
+
+In 2016, Doug's "sections" were a bit of a misnomer, since they were really just short, non-interactive videos, just like the course's actual "shorts." And they were also a bit redundant with the course's actual shorts, which have been showing their age, not to mention time-consuming to watch! For 2017, then, each week of CS50x has one lecture and zero or more shorts (and no "sections").
+
+== Seminars
+
+Thanks to CS50's TFs and CAs, new to CS50x are seminars on:
+
+* Automated Analysis of Music and Audio
+* Chrome Extensions
+* Data Analytics with Meteor.js + ReactJS
+* Data Science with Python Pandas
+* Data Visualization with D3
+* Drawing Real Web Apps with Pagedraw
+* An Introduction to Git and GitHub
+* JavaScript with Exponent and React Native
+* Making the Most of Bootstrap
+* P vs. NP
+* Smart Cities Data
+
+== Problem Sets
+
+Problem Sets 0 through 5 are largely unchanged, though "Hacker Editions" have been replaced with "more-comfortable" problems. Meanwhile http://docs.cs50.net/2017/x/psets/6/pset6.html[Problem Set 6] (in Python) is entirely new this year, and http://docs.cs50.net/2017/x/psets/7/pset7.html[Problem Set 7] and http://docs.cs50.net/2017/x/psets/8/pset8.html[Problem Set 8] have also been ported to Python.
+
+== Software
+
+=== `help50`
+
+http://cs50.io/[CS50 IDE] now comes with `help50`, a command-line tool that can help you understand (many!) error messages, thanks to CS50's own Brian Yu and Annie Chen. For instance, suppose that you're trying to compile `hello.c` with
+
+[source]
+----
+$ make hello
+----
+
+and you encounter one or more error messages that you don't understand. Try running
+
+[source]
+----
+$ help50 make hello
+----
+
+instead, and `help50` will do its best to help you understand (at least) the first of those error messages!
+
+=== `eprintf`
+
+The CS50 Library now comes with `eprintf`, a function that you might want to add (temporarily) to your code when trying to find a bug. It works just like `printf` except that the output of `eprintf` is prepended with the calling function's file name and line number. For instance, suppose that you're trying to find some bug in `hello.c`. Were you to add
+
+[source,c]
+----
+eprintf("hello, world\n");
+----
+
+on line 50 of `hello.c` and then compile and run the program with
+
+[source]
+----
+$ make hello
+$ ./hello
+----
+
+you should see
+
+[source]
+----
+hello.c:50: hello, world
+----
+
+assuming execution indeed reaches line 50!
+
+=== `debug50`
+
+http://cs50.io/[CS50 IDE] now has a new-and-improved graphical debugger for C, thanks to CS50's own Dan Armendariz and Kareem Zidane. Last year's *Debug* button has been replaced with `debug50`, a command-line program that starts the graphical debugger (more precisely). For instance, suppose that you're writing a program called `hello` in a file called `hello.c` that expects three command-line arguments. To debug that program, first compile it with:
+
+[source]
+----
+$ make hello
+----
+
+And then run
+
+[source]
+----
+$ debug50 ./hello foo bar baz
+----
+
+assuming `foo`, `bar`, and `baz` are the intended command-line arguments. The graphical debugger should open, at which point you can navigate via CS50 IDE's right-hand panel.
