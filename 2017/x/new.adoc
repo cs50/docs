@@ -4,7 +4,7 @@ layout: 2017/x
 
 = What's new?
 
-Here's (much of) what's new in CS50x 2017 vis-à-vis CS50x 2016!
+Here's what's new in CS50x 2017 vis-à-vis CS50x 2016!
 
 == Lectures
 
