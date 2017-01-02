@@ -9,7 +9,7 @@ layout: 2017/x
 
 [start=0]
 . Watch https://video.cs50.net/2016/fall/lectures/1[Week 1's lecture].
-. Say hellow to the world with `hello.c`.
+. Say hello to the world with `hello.c`.
 . Calculate your water consumption with `water.c`.
 . Recreate one of Mario's pyramids, in `mario.c`.
 . Provide a user with either cash or credit in `greedy.c` or `credit.c`.

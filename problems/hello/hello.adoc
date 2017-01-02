@@ -45,7 +45,7 @@ Let's confirm that `hello.c` is indeed where it should be. Type
 ls
 ----
 
-followed by Enter, and you should see both `hello.c` and `hello.txt`? If not, no worries; you probably just missed a small step. Best to restart these past several steps or ask for help!
+followed by Enter, and you should see `hello.c`? If not, no worries; you probably just missed a small step. Best to restart these past several steps or ask for help!
 
 Assuming you indeed see `hello.c`, let's try to compile! Cross your fingers and then type
 
@@ -75,7 +75,7 @@ And if you type
 ls
 ----
 
-followed by Enter, you should see a new file, `hello`, alongside `hello.c` and `hello.txt`. The first of those files, `hello`, should have an asterisk after its name that, in this context, means it's "executable," a program that you can execute (i.e., run).
+followed by Enter, you should see a new file, `hello`, alongside `hello.c`. The first of those files, `hello`, should have an asterisk after its name that, in this context, means it's "executable," a program that you can execute (i.e., run).
 
 If, though, upon running `make`, you instead see some error(s), it's time to debug! (If the terminal window's too small to see everything, click and drag its top border upward to increase its height.) If you see an error like "expected declaration" or something just as mysterious, odds are you made a syntax error (i.e., typo) by omitting some character or adding something in the wrong place. Scour your code for any differences vis-à-vis the template above. It's easy to miss the slightest of things when learning to program, so do compare your code against ours character by character; odds are the mistake(s) will jump out! Anytime you make changes to your own code, just remember to re-save via *File > Save* (or command- or control-s), then re-click inside of the terminal window, and then re-type
 
