@@ -57,7 +57,7 @@ video::G58ujNjWEJY[youtube,height=540,width=960]
 
 Phew, bit of a fire hydrant, no?  Not to worry, some fun and more comfort await!
 
-include::../../../lectures/0/w/syllabus/honesty.adoc[]
+include::../../../fall/honesty.adoc[]
 
 == Assessment
 

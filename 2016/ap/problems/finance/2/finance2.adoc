@@ -24,7 +24,7 @@
 
 This problem is an extension of Part 1. As such, you should have already watched all the videos necessary to finishing C$50 Finance. If stuck, feel free to take a peek back at the videos, which can be found in the specification for Part 1!
 
-include::../../../lectures/0/w/syllabus/honesty.adoc[]
+include::../../../fall/honesty.adoc[]
 
 == Assessment
 
