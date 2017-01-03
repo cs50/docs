@@ -69,7 +69,26 @@ Problem Sets 0 through 5 are largely unchanged, though "Hacker Editions" have be
 
 == Software
 
-=== `help50`
+=== CS50 IDE
+
+==== `debug50`
+
+http://cs50.io/[CS50 IDE] now has a new-and-improved graphical debugger for C, thanks to CS50's own Dan Armendariz and Kareem Zidane. Last year's *Debug* button has been replaced with `debug50`, a command-line program that starts the graphical debugger (more precisely). For instance, suppose that you're writing a program called `hello` in a file called `hello.c` that expects three command-line arguments. To debug that program, first compile it with:
+
+[source]
+----
+$ make hello
+----
+
+And then run
+
+[source]
+----
+$ debug50 ./hello foo bar baz
+----
+
+assuming `foo`, `bar`, and `baz` are the intended command-line arguments. The graphical debugger should open, at which point you can navigate via CS50 IDE's right-hand panel.
+==== `help50`
 
 http://cs50.io/[CS50 IDE] now comes with `help50`, a command-line tool that can help you understand (many!) error messages, thanks to CS50's own Brian Yu and Annie Chen. For instance, suppose that you're trying to compile `hello.c` with
 
@@ -87,9 +106,21 @@ $ help50 make hello
 
 instead, and `help50` will do its best to help you understand (at least) the first of those error messages!
 
+=== CS50 Library
+
+To be more consistent with stylistic conventions in C, we've renamed the functions in the CS50 Library as follows:
+
+* `GetChar` is now `get_char`
+* `GetFloat` is now `get_float`
+* `GetInt` is now `get_int`
+* `GetLongLong` is now `get_long_long`
+* `GetString` is now `get_string`
+
+The old spellings still work (for now!) but best to migrate your code to the new spellings!
+
 === `eprintf`
 
-The CS50 Library now comes with `eprintf`, a function that you might want to add (temporarily) to your code when trying to find a bug. It works just like `printf` except that the output of `eprintf` is prepended with the calling function's file name and line number. For instance, suppose that you're trying to find some bug in `hello.c`. Were you to add
+The CS50 Library also now comes with `eprintf`, a function that you might want to add (temporarily) to your code when trying to find a bug. It works just like `printf` except that the output of `eprintf` is prepended with the calling function's file name and line number. For instance, suppose that you're trying to find some bug in `hello.c`. Were you to add
 
 [source,c]
 ----
@@ -112,21 +143,3 @@ hello.c:50: hello, world
 ----
 
 assuming execution indeed reaches line 50!
-
-=== `debug50`
-
-http://cs50.io/[CS50 IDE] now has a new-and-improved graphical debugger for C, thanks to CS50's own Dan Armendariz and Kareem Zidane. Last year's *Debug* button has been replaced with `debug50`, a command-line program that starts the graphical debugger (more precisely). For instance, suppose that you're writing a program called `hello` in a file called `hello.c` that expects three command-line arguments. To debug that program, first compile it with:
-
-[source]
-----
-$ make hello
-----
-
-And then run
-
-[source]
-----
-$ debug50 ./hello foo bar baz
-----
-
-assuming `foo`, `bar`, and `baz` are the intended command-line arguments. The graphical debugger should open, at which point you can navigate via CS50 IDE's right-hand panel.
