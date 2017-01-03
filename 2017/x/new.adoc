@@ -88,6 +88,7 @@ $ debug50 ./hello foo bar baz
 ----
 
 assuming `foo`, `bar`, and `baz` are the intended command-line arguments. The graphical debugger should open, at which point you can navigate via CS50 IDE's right-hand panel.
+
 ==== `help50`
 
 http://cs50.io/[CS50 IDE] now comes with `help50`, a command-line tool that can help you understand (many!) error messages, thanks to CS50's own Brian Yu and Annie Chen. For instance, suppose that you're trying to compile `hello.c` with
