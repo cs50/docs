@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+
+            {% include asciidoctor.css %}
+
+        </style>
+        <style>
+
+            {% include asciidoc-pygments.css %}
+
+        </style>
+        <title>{{ page.title }}</title>
+    </head>
+    <body class="toc2 toc-left">
+        <div id="header">
+            <div class="toc2" id="toc">
+                <div id="toctitle">Table of Contents</div>
+                {{ page.document | tocify_asciidoc: page.toclevels }}
+            </div>
+        </div>
+        <div id="content">
+            {{ content }}
+        </div>
+    </body>
+</html>
