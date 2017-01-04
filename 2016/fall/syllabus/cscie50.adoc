@@ -24,9 +24,7 @@ https://cs50.harvard.edu/
 
 == Grades
 
-You may take this course Satisfactory/Unsatisfactory (SAT/UNS) or for a letter grade. Even though first years may not ordinarily enroll in both a Freshman Seminar and another non-letter-graded course in any one term, they may take both CS50 and a Freshman Seminar SAT/UNS.
-
-Whether taking the course SAT/UNS or for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+If taking the course for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 Final grades are determined using the following weights:
 
