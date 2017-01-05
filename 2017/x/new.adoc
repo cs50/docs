@@ -152,13 +152,13 @@ In years past, the course encouraged that pointers be declared a la
 [source,c]
 ----
 int* p;
----
+----
 
 with the `*` touching the variable's type. For CS50x 2017, the course has transitioned to
 
 [source,c]
 ----
 int *p;
----
+----
 
 with the `*` touching the variable's name, which is more conventional.
