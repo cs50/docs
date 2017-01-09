@@ -220,7 +220,7 @@ If a user has tweeted fewer than 100 times, classify as many tweets as exist.
 
 == Walkthroughs
 
-video::_rBWbyoJmaU[youtube,height=540,width=960,list=PLhQjrBD2T381evKksbwphwMyBIP40rgEX]
+video::yTNp6wiU1ZI[youtube,height=540,width=960,list=PLhQjrBD2T381evKksbwphwMyBIP40rgEX]
 
 == Usage
 
