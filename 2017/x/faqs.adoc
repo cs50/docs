@@ -16,11 +16,11 @@ Nope! CS50 at Harvard University and Yale University does have a test and quiz, 
 
 == Does CS50x have office hours?
 
-No, afraid CS50x is too large, but you can still strike a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussions] with classmates!
+No, afraid CS50x is too large, but you can still start a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussion] with classmates!
 
 == Does CS50x have sections?
 
-No, afraid CS50x is too large, but you can still strike a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussions] with classmates!
+No, afraid CS50x is too large, but you can still start a https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/[discussion] with classmates!
 
 == If I paid for a verified certificate before 2017, do I need to pay again?
 
