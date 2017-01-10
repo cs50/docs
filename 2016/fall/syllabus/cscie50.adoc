@@ -1,6 +1,5 @@
 ---
 layout: 2016/fall
-title: CSCI E-50 Syllabus
 ---
 :skip-front-matter:
 
