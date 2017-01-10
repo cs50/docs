@@ -101,7 +101,7 @@ A summary of problem sets appears below. CS50x does not have deadlines for probl
 
 | https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/5b52cf0573bb4c9ab8bc979e728b2446/[Problem Set 0] | Scratch | Scratch
 | https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/da6b01d04a5643e796a4ec904db9363c/[Problem Set 1] | C | C
-| https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/e7180a2d0f4445878d0e74f6ddbde944/Problem Set 2] | Crypto | C
+| https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/e7180a2d0f4445878d0e74f6ddbde944/[Problem Set 2] | Crypto | C
 | https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/423d8aa02ac945acb41fdb3fa5e8af88/[Problem Set 3] | Game of Fifteen | C
 | https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/04d14ed5bcaf4d7fae80b6e0772fd1c7/[Problem Set 4] | Forensics | C
 | https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/9096126aaf144aab9fa4aeb8ad9eb938/[Problem Set 5] | Mispellings | C
