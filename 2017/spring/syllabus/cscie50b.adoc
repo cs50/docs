@@ -27,7 +27,7 @@ https://cs50.harvard.edu/cscie50b
 
 == Grades
 
-If taking the course for a letter grade, you must ordinarily submit all five problem sets, take one quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads. The first of the course's problem sets is a "warm-up" exercise to reacquaint you with the course material from the tail end of CSCI E-50a, and is weighted less than the other problem sets.
+If taking the course for a letter grade, you must ordinarily submit the warm-up and the other four problem sets, take one quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads. The first of the course's problem sets is a "warm-up" exercise to reacquaint you with the course material from the tail end of CSCI E-50a, and is weighted less than the other problem sets.
 
 Final grades are determined using the following weights:
 
@@ -129,7 +129,7 @@ A schedule of problem sets, subject to change, appears below.
 |===
 | Problem Set | Language | Released | Due
 
-| Problem Set 4½: Sudoku | C | Fri 1/27 | Fri 2/10, noon
+| Warm-Up: Sudoku | C | Fri 1/27 | Fri 2/10, noon
 | Problem Set 5: Mispellings | C | Fri 2/10 | Fri 3/3, noon
 | Problem Set 6: Sentiments | Python | Fri 3/3 | Fri 3/17, noon
 | Problem Set 7: C$50 Finance | Python, SQL | Fri 3/17 | Fri 3/31, noon
