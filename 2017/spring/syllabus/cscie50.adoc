@@ -20,7 +20,7 @@ You are expected to
 
 == Website
 
-https://cs50.harvard.edu/
+https://cs50.harvard.edu/2017/spring/e50
 
 == Grades
 
