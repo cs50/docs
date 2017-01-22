@@ -408,15 +408,6 @@ How to assess just how fast (and correct) your code is? Well, as always, feel fr
 ~cs50/pset5/speller texts/austinpowers.txt
 ----
 
-=== Big Board
-
-But also feel free (just for fun) to put your code to the test against classmates'! Execute the command below to challenge the Big Board.
-
-[source]
-----
-~cs50/pset5/challenge ~/workspace/pset5/speller/
-----
-
 == FAQs
 
 _None so far! Reload this page periodically to check if any arise!_

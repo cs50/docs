@@ -56,6 +56,15 @@ Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/c
 
 * Implement link:../../../../problems/speller/speller.html[Speller]
 
+=== Big Board
+
+If you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit!
+
+[source]
+----
+~cs50/pset5/challenge ~/workspace/pset5/speller/
+----
+
 == How to Submit
 
 === Step 1 of 2
