@@ -129,7 +129,7 @@ A schedule of problem sets, subject to change, appears below.
 |===
 | Problem Set | Language | Released | Due
 
-| Warm-Up: Sudoku | C | Fri 1/27 | Fri 2/10, noon
+| Warm-Up: Scramble | C | Fri 1/27 | Fri 2/10, noon
 | Problem Set 5: Mispellings | C | Fri 2/10 | Fri 3/3, noon
 | Problem Set 6: Sentiments | Python | Fri 3/3 | Fri 3/17, noon
 | Problem Set 7: C$50 Finance | Python, SQL | Fri 3/17 | Fri 3/31, noon
