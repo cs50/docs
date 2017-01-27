@@ -39,7 +39,7 @@ Next, execute
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/spring/psets/warmup/warmup.zip
+wget http://docs.cs50.net/2017/spring/cscie50b/psets/warmup/warmup.zip
 ----
 
 to download this problem's distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `workspace` directory. Navigate into your newly-created `warmup` directory (remember how?) and type:
