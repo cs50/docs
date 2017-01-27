@@ -1,7 +1,6 @@
 ---
 layout: 2017/spring
 ---
-:skip-front-matter:
 
 = Problem Set 1: C
 
@@ -15,8 +14,6 @@ layout: 2017/spring
 . Provide a user with either cash or credit in `greedy.c` or `credit.c`.
 . Submit your code.
 . Submit a form.
-
-include::help-harvard.adoc[]
 
 == Getting Started
 
