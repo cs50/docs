@@ -83,6 +83,7 @@ check50 2016.greedy greedy.c
 
 == Hints
 
+* Per the final bullet point of the Specification, above, don't forget th put a newline character at the end of your printout!
 * Do beware the inherent imprecision of floating-point values. For instance, `0.1` cannot be represented exactly as a `float`. Try printing its value to, say, `55` decimal places, with code like the below:
 +
 [source,c]
@@ -100,6 +101,8 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == CHANGELOG
 
+* 2017-01-27
+** Added hint about `\n`.
 * 2016-10-05
 ** Reformatted.
 * 2016-09-02
