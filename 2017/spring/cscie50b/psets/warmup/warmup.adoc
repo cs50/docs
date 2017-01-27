@@ -157,4 +157,8 @@ type `FOO` or `foo` (or even `FoO` or any other capitalization thereof) in order
 
 Now you can play (well, maybe after some debugging) your own version of `scramble`!
 
+== How to Submit
+
+Refresh this page on (or after) Mon 2/6 for submission instructions!
+
 This was Scramble (Part 1).
