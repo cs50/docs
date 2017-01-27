@@ -38,7 +38,7 @@ Present are words like `THIS`, `SING`, `GEAR`, `HIS`, `RED`, along with many oth
 ----
 $ wget http://docs.cs50.net/2017/spring/cscie50b/psets/warmup/warmup.zip
 $ unzip warmup.zip
-$ rm fifteen.zip
+$ rm warmup.zip
 $ cd warmup
 $ ls
 scramble.c  words.txt
