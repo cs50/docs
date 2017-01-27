@@ -136,12 +136,12 @@ Notice, incidentally, how we're utilizing some "ANSI color codes" in main in ord
 
 Also, while debugging your program, you might want to comment out the call to `clear` in `main` so that you can see everything printed by `printf`, without anything disappearing.
 
-Next read through each of the functions below `main`. Don't fret if you don't understand `find` and `crawl`, but do take a stab at reading through them. It turns out that `crawl` implements a
+Next read through each of the functions below `main`. In particular, make an effort to understand what is happening in `find` and `crawl`. It turns out that `crawl` implements a
 "recursive" algorithm (whereby `crawl` calls itself) that searches the grid horizontally, vertically, and diagonally for a particular word, "marking" letters temporarily as it visits them so that it doesn't accidentally get caught in an infinite loop.
 
 Meanwhile, `initialize` might look a bit intimidating, but spend some time figuring out how it goes about initializing the grid with a distribution of letters. The `man` page for `rand` (albeit a bit cryptic itself) might help you figure out all the arithmetic.
 
-Finally, `load` definitely has some new syntax, particularly `FILE`. We'll revisit `FILE` and more in the weeks to come. For now, know that `load` simply loads a whole bunch of words, one per line, from a file into an array.
+Finally, `load` should have some somewhat familiar syntax, particularly `FILE`. We'll revisit `FILE` and more in the weeks to come. For now, know that `load` simply loads a whole bunch of words, one per line, from a file into an array.
 
 Hm, it seems we forgot to implement `draw`, `lookup`, and `scramble`. Oops!
 
@@ -152,6 +152,18 @@ Suffice it to say we need your help finishing this implementation of `scramble`!
 * Complete the implementation of `draw` (using some loops and `printf`) in such a way that `grid[i][j]` represents the letter in row `i`, column `j`. You're welcome to stray from the aesthetics of the staff's own solution.
 * Complete the implementation of `lookup` in such a way that the function returns `true` if and only if `word` is in `dictionary`. Odds are you can do better than linear search. Be sure to also mark the word's `found` attribute to be `true` also, to prevent users from scoring the same word multiple times!
 * Complete the implementation of `scramble` (the function) in such a way that the grid is **rotated** 90 degrees clockwise anytime the user types ``SCRAMBLE``, per the comments therein.  Note that this feature doesn't affect the words in the grid; it simply lets the user see them from different perspective.
+* By default, the distribution code makes it so that if you find an _n_-letter word, you score _n_ points. Create a new function called `score` to instead have the user to score points according to the following table. You will, of course, also have to alter `main` to call your new `score` function when awarding the user points.
+
+|===
+| Word Length | Points
+
+| 1, 2, or 3 | 1 point
+| 4 | 2 points
+| 5 | 4 points
+| 6 | 8 points
+| 7 or more | 16 points
+|===
+
 * By default, the distribution code is case-sensitive, whereby if `FOO` is in dictionary, the user must type `FOO`, not `foo`, in order to score. Alter `main` in such a way that the user can
 type `FOO` or `foo` (or even `FoO` or any other capitalization thereof) in order to score.
 
@@ -161,4 +173,4 @@ Now you can play (well, maybe after some debugging) your own version of `scrambl
 
 Refresh this page on (or after) Mon 2/6 for submission instructions!
 
-This was Scramble (Part 1).
+This was the Warm-Up.
