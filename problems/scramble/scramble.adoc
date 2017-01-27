@@ -10,7 +10,6 @@ Implement Scramble, per the below.
 [source]
 ----
 $ ./scramble 1
-WELCOME TO GAME OF FIFTEEN
 
   T H S S
   T E G S
