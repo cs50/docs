@@ -37,7 +37,7 @@ image::chart.png["@katyperry",role="related thumb"]
 
 Some words tend to have positive connotations (e.g., "love"), while some words tend to have negative connotations (e.g., "hate"). And so, if someone were to tweet "I love you", you might infer positive sentiment. And if someone were to tweet "I hate you", you might infer negative sentiment. Of course, individual words alone aren't always reliable, as "I do not love you" probably isn't a positive sentiment, but let's not worry about those cases. Some words, meanwhile, have neither positive nor negative connotations (e.g., "the").
 
-A few years back, Dr. Minqing Hu and Prof. Bing Liu of the University of Illinois at Chicago kindly put together https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon[lists] of http://cdn.cs50.net/2016/fall/psets/6/pset6/positive-words.txt[2006 positive words] and http://cdn.cs50.net/2016/fall/psets/6/pset6/negative-words.txt[4783 negative words]. We'll use those to classify tweets! But first a tour.
+A few years back, Dr. Minqing Hu and Prof. Bing Liu of the University of Illinois at Chicago kindly put together https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon[lists] of https://raw.githubusercontent.com/cs50/problems/sentiments/positive-words.txt[2006 positive words] and https://raw.githubusercontent.com/cs50/problems/sentiments/negative-words.txt[4783 negative words]. We'll use those to classify tweets! But first a tour.
 
 == Distribution
 
