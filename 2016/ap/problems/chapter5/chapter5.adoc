@@ -82,7 +82,7 @@ First consider joining Daven for a tour of HTML.
 
 video::dM5V1epAbSs[youtube,height=540,width=960]
 
-And consider reviewing some of David's examples. There are a lot of videos here, so don't feel like you have to watch them all if you are comfortable with the topics they cover! 
+And consider reviewing some of David's examples. There are a lot of videos here, so don't feel like you have to watch them all if you are comfortable with the topics they cover!
 
 video::1TgTA4o_AM8[youtube,height=540,width=960]
 
@@ -102,7 +102,7 @@ Next consider joining Joseph again for a tour of CSS, the language with which we
 
 video::kg0ZOmUREwc[youtube,height=540,width=960]
 
-And consider reviewing some of David's examples. 
+And consider reviewing some of David's examples.
 
 video::TKZlfZDF8Y4[youtube,height=540,width=960]
 
@@ -152,14 +152,14 @@ update50
 
 to ensure that your workspace is up-to-date!
 
-Next, execute 
+Next, execute
 
 [source,bash]
 ----
 mkdir ~/workspace/chapter5
 ----
 
-followed by 
+followed by
 
 [source,bash]
 ----
@@ -187,7 +187,9 @@ and then
 apache50 start .
 ----
 
-you'll have a newly created webpage... containing nothing (for now).
+you'll have a newly created webpage... containing nothing (for now). If you still see the "Happy Cat" from before, it's likely that your browser is just caching the previous content at the site. Press and hold the *Shift* key while clicking on refresh in your browser. Ultimately, assuming you haven't put any other content in `~/workspace/chapter5`, you should see something like the below.
+
+image::blankpage.png[Sample Page]
 
 == Permissions
 
@@ -211,14 +213,14 @@ You should see an output similar to the below, but with a different time stamp.
 
 [source,bash]
 ----
--rw------- 1 ubuntu ubuntu 0 Jan 21 22:53 index.html
+-rw------- 1 ubuntu ubuntu 0 Feb 1 12:27 index.html
 ----
 
-Remember our discussion of permissions earlier in this unit? Here's where they come into play. Permissions are split into three parts: readable, writeable, and executable. Similarly, there are three levels of permissions: user, group, and all. Thus, you can, for example, make a file both readable and writeable for yourself (as the user), but only readable for everyone else. 
+Remember our discussion of permissions earlier in this unit? Here's where they come into play. Permissions are split into three parts: readable, writeable, and executable. Similarly, there are three levels of permissions: user, group, and all. Thus, you can, for example, make a file both readable and writeable for yourself (as the user), but only readable for everyone else.
 
-When you execute the `ls -l` command, the levels of permissions are ordered as follows: first `user`, then `group`, then `all`. 
+When you execute the `ls -l` command, the levels of permissions are ordered as follows: first `user`, then `group`, then `all`.
 
-Note the number of dashes in addition to the "r" and "w" in the above output. They all represent bits, and can be thought of as groups of 1, 3, 3, and 3. The dashes indicate permission bits that have not been set. This breaks down in the following way: 
+Note the number of dashes in addition to the "r" and "w" in the above output. They all represent bits, and can be thought of as groups of 1, 3, 3, and 3. The dashes indicate permission bits that have not been set. This breaks down in the following way:
 
 * The first bit is a _directory_ bit, and is set to a "d" if the file you've listed is a directory.
 * The next set of three bits are the _user_ bits, and will be set for user permissions. Here we see an "r" and a "w" but no "x"; this means that the user (which is you!) is able to both read and write `index.html`, but you are not able to execute it. That's ok, though, because we don't need to compile HTML files anyway!
@@ -227,14 +229,14 @@ Note the number of dashes in addition to the "r" and "w" in the above output. Th
 
 But didn't we just say that Apache needs access to your files to be able to display them via the web server we've just started? Indeed, we did! If only you have access to the files, neither Apache nor anyone else will be able to see any web page you create.
 
-Therefore, you must make sure that every file within your current directory is "world-readable". You can do this for `index.html` by executing 
+Therefore, you must make sure that every file within your current directory is "world-readable". You can do this for `index.html` by executing
 
 [source,bash]
 ----
 chmod a+r index.html
 ----
 
-Don't forget this step for all other files you create, or you won't be able to view anything you've written in the web server! Incidentally, every directory within your root that you want to be publicly accessible must be "world-executable", which is why we executed 
+Don't forget this step for all other files you create, or you won't be able to view anything you've written in the web server! Incidentally, every directory within your root that you want to be publicly accessible must be "world-executable", which is why we executed
 
 [source,bash]
 ----
