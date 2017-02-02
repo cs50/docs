@@ -222,7 +222,21 @@ mysql50 start
 Then open up `finance/config.json`, which is a configuration file in JSON (JavaScript Object Notation) format, which essentially means it's a collection of key-value pairs. JSON is a popular format for configuration files these days, since libraries that can read (i.e., parse) it exist for lots of languages, PHP among them. The curly braces at the top and bottom of this file indicate that the file contains an object, inside of which is one key (`database`) whose value is another object (per
 the innermost curly braces). That latter object, meanwhile, has four keys (`host`, `name`, `password`, and `username`), each of whose values is a string, two of which are `TODO`! Those values will be used by CS50's PHP library (which can be found in `finance/vendor`) in order to connect to your workspace's MySQL database. CS50's PHP library includes a function, `query`, that will allow you to send queries to that database.
 
-Anyhow, let's tackle those ``TODO``s! Click the ⓘ icon toward CS50 IDE's top-right corner. You should see your *MySQL Username* and your *MySQL Password*. Copy and paste those values, one at a time, into the appropriate places in `config.json`, then save and close that file.
+Anyhow, let's tackle those ``TODO``s! Enter the command
+
+[source,bash]
+----
+username50
+----
+
+and 
+
+[source,bash]
+----
+password50
+----
+
+You should see your *MySQL Username* and your *MySQL Password*. Copy and paste those values, one at a time, into the appropriate places in `config.json`, then save and close that file.
 
 It's now time for a test! Visit `pass:[https://ide50-username.cs50.io/]`, where `username` is your own username.  You should find yourself redirected to C$50 Finance's login page!  (If you instead see *Forbidden*, odds are you missed a step earlier; best to try all those chmod steps again.)  If you try logging into C$50 Finance with a username of, oh, *skroob* and a password of *12345*, you should encounter an error about an *Unknown database*.  That's simply because you haven't created it yet!  Let's create it.
 
@@ -658,7 +672,7 @@ Before you consider this problem set done, best to ask yourself these questions 
 
 == Turn It In
 
-. When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where `username` is your own username, pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by clicking the ⓘ icon toward CS50 IDE's top-right corner.) For security, you won't see the password as you paste it.
+. When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where `username` is your own username (type the command ‘username50’ if you forgot it), and pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by typing ‘password50’). For security, you won't see the password as you paste it.
 +
 [source]
 ----
