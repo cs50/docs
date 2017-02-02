@@ -98,6 +98,7 @@ in order to navigate to your `~/workspace` directory.  Then execute
 [source,bash]
 ----
 wget http://docs.cs50.net/2016/ap/problems/finance/finance.zip
+wget http://docs.cs50.net/2016/ap/problems/finance/finance.sql
 ----
 
 in order to download a ZIP (i.e., compressed version) of this problem set's distro as well as a MySQL database (that's been exported to a text file).  If you then execute
