@@ -82,7 +82,7 @@ Design and implement a program, `caesar`, that encrypts messages using Caesar's 
 * Your program must output ``plaintext:`` (without a newline) and then prompt the user for a `string` of plaintext (using `get_string`).
 * Your program must output ``ciphertext:`` (without a newline) followed by the plaintext's corresponding ciphertext, with each alphabetical character in the plaintext "rotated" by _k_ positions; non-alphabetical characters should be outputted unchanged.
 * Your program must preserve case: capitalized letters, though rotated, must remain capitalized letters; lowercase letters, though rotated, must remain lowercase letters.
-* After outputting ciphertext, your program should exit by returning `0` from `main`.
+* After outputting ciphertext, you should print a newline. Your program should then exit by returning `0` from `main`.
 
 == Walkthrough
 
