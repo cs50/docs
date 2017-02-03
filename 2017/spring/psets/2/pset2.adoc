@@ -28,6 +28,7 @@ Per https://video.cs50.net/2016/fall/lectures/2[Week 2's lecture]:
 * Use `help50` as needed.
 * Use `eprintf` as needed.
 * Use `debug50` as needed.
+* Turn to https://cs50.harvard.edu/discuss[CS50 Discuss] or office hours if stuck!
 
 == Getting Started
 

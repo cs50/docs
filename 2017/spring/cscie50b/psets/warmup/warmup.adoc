@@ -36,6 +36,48 @@ Head to https://cs50.io/[cs50.io] and log into CS50 IDE. Toward the bottom of CS
 
 == How to Submit
 
-Refresh this page on (or after) Mon 2/6 for submission instructions!
+== How to Submit
+
+For this and future problem sets, we'll be using a submission system based on GitHub, a popular site for storing code. Recall that when you filled out http://forms.cs50.net/2017/spring/e50b/section[the sectioning preference] you signed up (hopefully!) for an account on https://github.com/[github.com]. If you didn't, please go fill out that form now; you won't be able to submit without a GitHub account, and we'll need to know your account name in order to give your teaching fellow access to grading it!
+
+=== Step 1 of 4
+
+Execute
+
+[source]
+----
+update50
+----
+
+to bring your IDE up-to-date.
+
+=== Step 2 of 4
+
+Visit https://cs50.me[cs50.me] and sign in using your GitHub credentials. This will authorize the `submit50` utility to push your code to your GitHub repositories on your behalf so that your work can be commented on and graded by your teaching fellow.
+
+=== Step 3 of 4
+
+Return to your CS50 IDE and navigate to your terminal window. Begin by first executing:
+[source]
+----
+cd ~/workspace/warmup
+----
+
+* Then, to submit `scramble`, execute
++
+[source]
+----
+submit50 e50b/2017/spring/scramble
+----
++
+inputting your GitHub username and GitHub password as prompted. You should be notified that `scramble.c` (along with most other files you may have optionally created) will be submitted, but some files (e.g. `words.txt`) will (intentionally!) not be.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu, cc'ing heads@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like, up until the problem set deadline.
+
+=== Step 4 of 4
+
+To confirm that your work was indeed submitted, you can either visit the link that is generated at the end of the `submit50` output, or you can view your work in a centralized location at https://cs50.me[cs50.me].
 
 This was the Warm-Up.
