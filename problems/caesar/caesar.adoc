@@ -200,3 +200,6 @@ _None so far! Reload this page periodically to check if any arise!_
 
 * 2016-09-09
 ** Initial release.
+
+* 2017-02-01
+** Clarified requirement of a newline at the end of the ciphered text.
