@@ -96,6 +96,74 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == How to Submit
 
-Refresh this page on or after Fri 2/3 for submission instructions!
+For this and future problem sets, we'll be using a submission system based on GitHub, a popular site for storing code. Recall that for link:../0/pset0.html[Problem Set 0] you signed up (hopefully!) for an account on https://github.com/[github.com]. If you didn't, please go fill out that form now; you won't be able to submit without a GitHub account, and we'll need to know your account name in order to give your teaching fellow access to grading it!
+
+=== Step 1 of 5
+
+Execute
+
+[source]
+----
+update50
+----
+
+to bring your IDE up-to-date.
+
+=== Step 2 of 5
+
+Visit https://cs50.me[cs50.me] and sign in using your GitHub credentials. This will authorize the `submit50` utility to push your code to your GitHub repositories on your behalf so that your work can be commented on and graded by your teaching fellow.
+
+=== Step 3 of 5
+
+Return to your CS50 IDE and navigate to your terminal window. Begin by first executing:
+[source]
+----
+cd ~/workspace/pset1
+----
+
+* Then, to submit `hello`, execute
++
+[source]
+----
+submit50 2017/spring/hello
+----
++
+inputting your GitHub username and GitHub password as prompted. You should be notified that `hello.c` will be submitted, but no other files in your `~/workspace/pset1` directory will. This is to be expected; you'll submit the other files using other submission commands in just a moment!
+* To submit `water`, execute:
++
+[source]
+----
+submit50 2017/spring/water
+----
+* To submit `mario`, execute:
++
+[source]
+----
+submit50 2017/spring/mario
+----
+* To submit `greedy` (if you implemented it), execute:
++
+[source]
+----
+submit50 2017/spring/greedy
+----
+* To submit `credit` (if you implemented it), execute:
++
+[source]
+----
+submit50 2017/spring/credit
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu, cc'ing heads@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like, up until the problem set deadline.
+
+=== Step 4 of 5
+
+To confirm that your work was indeed submitted, you can either visit the links that are generated at the end of the `submit50` output, or you can view all of your work in a centralized location at https://cs50.me[cs50.me].
+
+=== Step 5 of 5
+
+Submit https://forms.cs50.net/2017/spring/psets/1[]!
 
 This was Problem Set 1.
