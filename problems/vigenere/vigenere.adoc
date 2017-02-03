@@ -116,6 +116,9 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == Changelog
 
+
+* 2017-02-01
+** Clarified requirement of a newline at the end of the ciphered text.
 * 2016-09-15
 ** Clarified usage of user prompts.
 * 2016-09-14
