@@ -253,7 +253,7 @@ Feel free to be creative with this assignment. Make something that is meaningful
 
 * A table
 * A link to an external website
-* A button, which can do anything you'd like as long as it works
+* A button (which needn't actually have a function, but should exist on the page)
 * At least two divs, with div IDs
 * A list
 * A heading
