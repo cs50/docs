@@ -36,9 +36,7 @@ Head to https://cs50.io/[cs50.io] and log into CS50 IDE. Toward the bottom of CS
 
 == How to Submit
 
-== How to Submit
-
-For this and future problem sets, we'll be using a submission system based on GitHub, a popular site for storing code. Recall that when you filled out http://forms.cs50.net/2017/spring/e50b/section[the sectioning preference] you signed up (hopefully!) for an account on https://github.com/[github.com]. If you didn't, please go fill out that form now; you won't be able to submit without a GitHub account, and we'll need to know your account name in order to give your teaching fellow access to grading it!
+For this and future problem sets, we'll be using a submission system based on GitHub, a popular site for storing code. Recall that when you filled out https://newforms.cs50.net/2017/spring/e50b/section[the sectioning preference] you signed up (hopefully!) for an account on https://github.com/[github.com]. If you didn't, please go fill out that form now; you won't be able to submit without a GitHub account, and we'll need to know your account name in order to give your teaching fellow access to grading it!
 
 === Step 1 of 4
 
