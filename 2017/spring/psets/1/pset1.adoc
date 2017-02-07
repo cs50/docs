@@ -164,6 +164,6 @@ To confirm that your work was indeed submitted, you can either visit the links t
 
 === Step 5 of 5
 
-Submit https://newforms.cs50.net/2017/spring/psets/1[]!
+Submit https://forms.cs50.net/2017/spring/psets/1[]!
 
 This was Problem Set 1.
