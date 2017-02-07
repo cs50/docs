@@ -67,7 +67,7 @@ Oh, and if you'd like to exhibit your project in Fall 2016/Spring 2017's studio,
 
 == How to Submit
 
-Submit https://forms.cs50.net/2017/spring/psets/0. 
+Submit https://newforms.cs50.net/2017/spring/psets/0. 
 
 CS50 collects some start-of-semester data for planning purposes via Problem Set 0's form, so expect the form to take 15 minutes or so. Subsequent problem sets' forms will be shorter.
 
