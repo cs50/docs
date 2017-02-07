@@ -94,6 +94,126 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == How to Submit
 
-Refresh this page on or after Wed 2/8!
+=== Step 1 of 4
+
+Execute
+
+[source]
+----
+update50
+----
+
+again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 4
+
+* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`.
+** Be sure that `initials.c` is in `~/workspace/pset2/initials`, as with:
++
+[source]
+----
+cd ~/workspace/pset2/initials/
+ls
+----
+* Recall that you were asked to implement any two (2) of `caesar`, `vigenere`, and `crack`.
+** If you implemented `caesar`, be sure that `caesar.c` is in `~/workspace/pset2/caesar/`.
+** If you implemented `vigenere`, be sure that `vigenere.c` is in `~/workspace/pset2/vigenere/`.
+** If you implemented `crack`, be sure that `crack.c` is in `~/workspace/pset2/crack/`.
+
+If not sure how to confirm or fix something, do just reach out to your TF or via https://cs50.net/discuss[CS50 Discuss]!
+
+=== Step 3 of 4
+
+* To submit `initials`, execute
++
+[source]
+----
+cd ~/workspace/pset2/initials/
+submit50 2017/spring/initials
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `caesar` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/caesar/
+submit50 2017/spring/caesar
+----
+* To submit `vigenere` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/vigenere/
+submit50 2017/spring/vigenere
+----
+* To submit `crack` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/crack/
+submit50 2017/spring/crack
+----
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 4 of 4
+
+Submit https://newforms.cs50.net/2017/spring/psets/2[].
 
 This was Problem Set 2.
+
+== FAQs
+
+=== command not found
+
+If you execute, e.g.,
+
+[source]
+----
+submit50 initials
+----
+
+and see
+
+[source]
+----
+bash: submit50: command not found
+----
+
+odds are you haven't run `update50` again, per Step 1 of 4. Do just re-run `update50`!
+
+=== Not a directory
+
+If you execute, e.g.,
+
+[source]
+----
+cd ~/workspace/pset2/initials/
+----
+
+and see
+
+[source]
+----
+bash: cd: /home/ubuntu/workspace/pset2/initials/: Not a directory
+----
+
+odds are you don't have a `pset2/` directory inside of `~/workspace/` and/or you don't have an `initials/` directory inside of `~/workspace/pset2/`. Check as much using `ls` (remember how?) or poke around your IDE's file browser at left. Make sure that:
+
+* you have a `pset2/` directory inside of `~/workspace/`,
+* you have an `initials/` directory inside of `~/workspace/pset2/`, inside of which is `initials.c`,
+* you have an `caesar/` directory inside of `~/workspace/pset2/`, inside of which is `caesar.c`,
+* you have an `vigenere/` directory inside of `~/workspace/pset2/`, inside of which is `vigenere.c`, and/or
+* you have an `crack/` directory inside of `~/workspace/pset2/`, inside of which is `crack.c`.
+
+=== The request URL returned error: 403
+
+If you see
+
+[source]
+----
+fatal: unable to access 'https://username@github.com/submit50/username/': The request URL returned error: 403
+----
+
+when running `submit50`, where `username` is your own GitHub username, odds are you haven't confirmed your email address with GitHub. Visit https://github.com/settings/emails to confirm it, then re-run `submit50`!
