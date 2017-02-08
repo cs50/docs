@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/asciidoctor/jekyll-asciidoc.git
-  revision: 3bc658a90a4f185e281a94e1dbcac86a0144496a
+  revision: 98300767d57fdc58cc6c571f1c6f2c01bea1ee56
   specs:
     jekyll-asciidoc (2.1.0.dev)
       asciidoctor (>= 1.5.0)
@@ -13,9 +13,9 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     asciidoctor (1.5.5)
     colorator (1.1.0)
-    ffi (1.9.14)
+    ffi (1.9.17)
     forwardable-extended (2.6.0)
-    jekyll (3.3.1)
+    jekyll (3.4.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -26,13 +26,13 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-redirect-from (0.11.0)
-      jekyll (>= 2.0)
+    jekyll-redirect-from (0.12.1)
+      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    kramdown (1.13.1)
+    kramdown (1.13.2)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -41,11 +41,11 @@ GEM
     multi_json (1.12.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    public_suffix (2.0.4)
+    public_suffix (2.0.5)
     pygments.rb (1.1.1)
       multi_json (>= 1.0.0)
     rb-fsevent (0.9.8)
-    rb-inotify (0.9.7)
+    rb-inotify (0.9.8)
       ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
@@ -60,4 +60,4 @@ DEPENDENCIES
   pygments.rb
 
 BUNDLED WITH
-   1.13.6
+   1.14.3
