@@ -29,7 +29,7 @@ Suffice it to say that the longer you shower, the more water you use. But just h
 
 == Walkthrough
 
-video::oAcVHgmjTHE[youtube,height=540,width=960]
+video::oAcVHgmjTHE[youtube]
 
 == Usage
 

@@ -40,7 +40,7 @@ image:pyramid.png[Super Mario Brothers, width="50%"]
 
 == Walkthrough
 
-video::EGWRG5e1O2s[youtube,height=540,width=960]
+video::EGWRG5e1O2s[youtube]
 
 == Usage
 

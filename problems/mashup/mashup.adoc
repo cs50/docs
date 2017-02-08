@@ -495,7 +495,7 @@ Implement `removeMarkers` in such a way that it removes all markers from the map
 
 == Walkthroughs
 
-video::LGOXIN87giE[youtube,height=540,width=960,list=PLhQjrBD2T383MDO-WBcfAq5SIsoEfoW07]
+video::LGOXIN87giE[youtube,list=PLhQjrBD2T383MDO-WBcfAq5SIsoEfoW07]
 
 == Testing
 
