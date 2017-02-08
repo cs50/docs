@@ -61,7 +61,7 @@ So, validating credit card numbers isn't hard, but it does get a bit tedious by 
 
 == Walkthrough
 
-video::06wNhN54P6k[youtube,height=540,width=960]
+video::06wNhN54P6k[youtube]
 
 == Usage
 
