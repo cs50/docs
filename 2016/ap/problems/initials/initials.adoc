@@ -75,15 +75,15 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 First, curl up with the below short on loops...
 
-video::HHmiHx7GGLE[youtube,height=540,width=960]
+video::HHmiHx7GGLE[youtube]
 
 Next, take a self-paced tour through a few coding examples that are likely to prove quite useful to you as you work on this and some future problems in this unit, the source code for which can be found at http://cdn.cs50.net/2015/fall/lectures/2/w/src2w/:
 
-video::BYbuuUntOZ4[youtube,height=540,width=960,list=PLhQjrBD2T380sc-fXwl1sviA-twxFduVU]
+video::BYbuuUntOZ4[youtube,list=PLhQjrBD2T380sc-fXwl1sviA-twxFduVU]
 
 You might also find this short on arrays of interest as well!
 
-video::7mOJN1c1JEo[youtube,height=540,width=960]
+video::7mOJN1c1JEo[youtube]
 
 == Getting Started
 
@@ -129,7 +129,7 @@ Write, in a file called `initials.c`, a program that prompts a user for their na
 
 Though he won't be __using__ your program, David does have a few similar programs (`capitalize-0`, `capitalize-1`, and `capitalize-2`), the walkthroughs of which may conjure up some ideas as to how to solve this particular problem. Have a look:
 
-video::vp3TBL4WTbc[youtube,height=540,width=960,list=PLhQjrBD2T380sc-fXwl1sviA-twxFduVU]
+video::vp3TBL4WTbc[youtube,list=PLhQjrBD2T380sc-fXwl1sviA-twxFduVU]
 
 In `capitalize-1` and `capitalize-2`, David refers to a few functions that live in the header file `ctype.h` that seem quite useful. Odds are you might be able to make use of at least https://reference.cs50.net/ctype.h/isspace[one other function] declared in that file as you work through this problem to figure out how to detect the ends of words. In fact, best to familiarize yourself with `ctype.h` generally; there's a number of very useful functions therein!
 

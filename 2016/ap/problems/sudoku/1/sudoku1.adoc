@@ -319,7 +319,7 @@ Just implementing these two features (movements and number entry) will allow use
 
 Once your implementation is working, you might find that you feel a little like this:
 
-video::AXwGVXD7qEQ[youtube,height=540,width=960]
+video::AXwGVXD7qEQ[youtube]
 
 And you might wish that your Sudoku game was more like http://xkcd.com/74/[this]. But you'll have created a pretty darn impressive game, that hopefully your family and friends will enjoy.
 

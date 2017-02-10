@@ -139,7 +139,7 @@ Copy and paste your `parser.c` from Part 1 into the distro's `parser.c`, and if 
 
 The files in [blue]#`public`#/ as well as `parser.c` and `parser.h` should be familiar to you from Problem 6-6. But maybe not so much with `server.c`. In this problem, you will implement the serving side of the server in order to create a complete server! Let's dive into that distribution code, starting with a high-level overview.
 
-video::OnAItxJhS70?rel=0[youtube,height=540,width=960]
+video::OnAItxJhS70?rel=0[youtube]
 
 And now a lower-level tour through the code.
 

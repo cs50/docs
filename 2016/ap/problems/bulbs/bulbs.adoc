@@ -67,13 +67,13 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Recently, you may have watched Nate's short on binary numbers. If you haven't seen it (or don't recall having done so) or you wish to have another peek at it, we've put it here below. If you remember all of the information in that video, feel free to skip past it.
 
-video::hacBFrgtQjQ[youtube,height=540,width=960]
+video::hacBFrgtQjQ[youtube]
 
 Not long ago, we thought it would be a fun idea to create a more interesting demonstration for binary numbers, and two members of our staff, Ansel and Dan, put together a rig made up of http://www.meethue.com[Hue] light bulbs (a type of LED, color-changing lightbulb with an application programming interface--API--that allows them to be controlled wirelessly over the Internet) and an associated iPad app. After all, since the 0s and 1s of binary are implement on some machines with *transistors* (very small pieces of electronic equipment), we thought it would be particularly appropriate to create a demonstration that relied heavily on electricity as a means of representing binary.
 
 How did it go over? Have a peek at two recent CS50 students having a turn playing a game with the binary bulbs rig both in standard mode and in a more challenging mode, with the place value hints removed.
 
-video::lhlBWlhS7Vg[youtube,height=540,width=960,start=812,end=1091]
+video::lhlBWlhS7Vg[youtube,start=812,end=1091]
 
 Another member of our staff, Michael, also built a version of the binary bulbs came for online play. Turn on Game Mode a few times and challenge yourself with these inputs, one game at a time:
 

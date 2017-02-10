@@ -66,19 +66,19 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 If not familiar with what computers are, take a quick look at a more modern spin on them here:
 
-video::WAxH0YHdTuA[youtube,height=540,width=960]
+video::WAxH0YHdTuA[youtube]
 
 Although they've also been known to be a bit smaller than that:
 
-video::p2_O6M1m6xg[youtube,height=540,width=960]
+video::p2_O6M1m6xg[youtube]
 
 But perhaps there are some that do not even use electricity?
 
-video::GcDshWmhF4A[youtube,height=540,width=960]
+video::GcDshWmhF4A[youtube]
 
 Or perhaps may not even have moving parts?
 
-video::tI0GqYJha1Q[youtube,height=540,width=960]
+video::tI0GqYJha1Q[youtube]
 
 
 If you had some preconceived notions about what a computer is, odds are they were challenged somewhat by watching the videos above (particularly the last two!), and that's okay! In fact, you may find that some folks quickly agree that everything shown above is a computer, and some won't. Try speaking with family and friends about it and see if it doesn't spark an interesting discussion.

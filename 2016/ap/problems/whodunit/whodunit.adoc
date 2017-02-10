@@ -80,15 +80,15 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 First, curl up with Jason's short on file I/O and Rob's short on structs.  Just keep in mind that Jason's short happens to focus on ASCII (i.e., text) files as opposed to binary files (like images). More on those later!
 
-video::KwvObCA04dU[youtube,height=540,width=960,playlist="EzRwP7NV0LM"]
+video::KwvObCA04dU[youtube,playlist="EzRwP7NV0LM"]
 
 Next, join Nate on a tour of `valgrind`, a command-line tool that will help you find "memory leaks": memory that you've allocated (i.e., asked the operating system for), as with `malloc`, but not freed (i.e., given back to the operating system).
 
-video::fvTsFjDuag8[youtube,height=540,width=960]
+video::fvTsFjDuag8[youtube]
 
 Finally, remind yourself how GDB works if you've forgotten or not yet used! (It's worth it!)
 
-video::-G_klBQLgdc[youtube,height=540,width=960]
+video::-G_klBQLgdc[youtube]
 
 ==  Getting Started
 
@@ -392,7 +392,7 @@ Because `whodunit` can be implemented in several ways, you won't be able to chec
 
 But here is Zamyla!
 
-video::AkEpi5tQ9Qc[youtube,height=540,width=960]
+video::AkEpi5tQ9Qc[youtube]
 
 In `~/workspace/chapter4/whodunit/questions.txt`, answer the question below.
 

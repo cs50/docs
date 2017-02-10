@@ -80,35 +80,35 @@ Beyond introducing you to web programming, the overarching goal of this problem 
 
 First consider joining Daven for a tour of HTML.
 
-video::dM5V1epAbSs[youtube,height=540,width=960]
+video::dM5V1epAbSs[youtube]
 
 And consider reviewing some of David's examples. There are a lot of videos here, so don't feel like you have to watch them all if you are comfortable with the topics they cover!
 
-video::1TgTA4o_AM8[youtube,height=540,width=960]
+video::1TgTA4o_AM8[youtube]
 
-video::dW4giTKrgzo[youtube,height=540,width=960]
+video::dW4giTKrgzo[youtube]
 
-video::GgpyVgkW_xk[youtube,height=540,width=960]
+video::GgpyVgkW_xk[youtube]
 
-video::whYnf7PFZ74[youtube,height=540,width=960]
+video::whYnf7PFZ74[youtube]
 
-video::s1_kxTs5GfI[youtube,height=540,width=960]
+video::s1_kxTs5GfI[youtube]
 
-video::qyJXI2v7N8k[youtube,height=540,width=960]
+video::qyJXI2v7N8k[youtube]
 
-video::DQLbgo7Rzpg[youtube,height=540,width=960]
+video::DQLbgo7Rzpg[youtube]
 
 Next consider joining Joseph again for a tour of CSS, the language with which web pages can be stylized.
 
-video::kg0ZOmUREwc[youtube,height=540,width=960]
+video::kg0ZOmUREwc[youtube]
 
 And consider reviewing some of David's examples.
 
-video::TKZlfZDF8Y4[youtube,height=540,width=960]
+video::TKZlfZDF8Y4[youtube]
 
-video::VwCSw2ts388[youtube,height=540,width=960]
+video::VwCSw2ts388[youtube]
 
-video::-7wiXVMh4XY[youtube,height=540,width=960]
+video::-7wiXVMh4XY[youtube]
 
 Got it all? Not to worry if not, you'll have plenty of time to look back and review! For now, on to the problem.
 

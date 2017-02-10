@@ -89,7 +89,7 @@ Next, navigate to your `workspace` directory and create a new subdirectory insid
 
 Finally, take a few minutes to watch Doug's video on stacks.
 
-video::9Tp8wHD66lw[youtube,height=540,width=960]
+video::9Tp8wHD66lw[youtube]
 
 == Divide and Conquer, again
 

@@ -236,7 +236,7 @@ As always, be sure that your HTML is valid!
 
 And as always, here is Zamyla!
 
-video::OfMXp22SNq8[youtube,height=540,width=960]
+video::OfMXp22SNq8[youtube]
 
 === buy
 
@@ -262,7 +262,7 @@ As always, be sure to bang on your code.  And be sure that your HTML is valid!
 
 Here's Zamyla with some additional help:
 
-video::vWIKlxF1iog[youtube,height=540,width=960]
+video::vWIKlxF1iog[youtube]
 
 === history
 
@@ -280,7 +280,7 @@ Then, by way of a controller called, say, `history.php` and some number of views
 
 Here's Zamyla again:
 
-video::XuxJbwCdquk[youtube,height=540,width=960]
+video::XuxJbwCdquk[youtube]
 
 
 == Check It Out

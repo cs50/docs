@@ -95,7 +95,7 @@ You can compile each individual `.c` file into a program in the usual way. Or, i
 
 Finally, take a few minutes to watch Nate's video on Valgrind, a command-line utility that can be used to root out and give you clues on how to fix memory leaks!
 
-video::fvTsFjDuag8[youtube,height=540,width=960]
+video::fvTsFjDuag8[youtube]
 
 == Leaks
 

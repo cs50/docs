@@ -74,7 +74,7 @@ Before we begin, know that this problem involves relatively little coding. It's 
 
 To get started, have a look at Rob's short on compilers.
 
-video::CSZLNYF4Klo[youtube,height=540,width=960]
+video::CSZLNYF4Klo[youtube]
 
 Notice how in that video Rob not only compiles some simple programs, but actually interrupts the compilation process to show what is happening at the various steps. To compile a program, a compiler goes through a set of four steps.
 
@@ -96,7 +96,7 @@ to obtain the output you'll see at the bottom of this specification, which came 
 
 Though not produced by us, there following video shows someone going through the process of comparing C code to assembly code (sometimes called "machine code") that will likely be quite helpful as you start to think about this problem.
 
-video::yOyaJXpAYZQ[youtube,height=540,width=960]
+video::yOyaJXpAYZQ[youtube]
 
 Along the same lines is http://cs.lmu.edu/~ray/notes/c2asmexamples/[this webpage] which also shows a little bit of translating between source code and machine code.
 

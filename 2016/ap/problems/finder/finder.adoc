@@ -80,11 +80,11 @@ Curl up with some shorts to re-familiarize yourself with file I/O and recursion.
 
 First, here's Zamyla with recursion:
 
-video::t4MSwiqfLaY[youtube,height=540,width=960]
+video::t4MSwiqfLaY[youtube]
 
 And Jason, with file I/O:
 
-video::KwvObCA04dU[youtube,height=540,width=960]
+video::KwvObCA04dU[youtube]
 
 These two concepts are the basis of this problem, so make sure you understand how both work before proceeding further.
 

@@ -70,27 +70,27 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 First, join David for a tour of HTTP, the “protocol” via which web browsers and web servers communicate.
 
-video::hU4XuBe50K4?rel=0[youtube,height=540,width=960]
+video::hU4XuBe50K4?rel=0[youtube]
 
 Next, consider reviewing some of these examples from Week 7, via which we introduced HTML, the language in which web pages are written.
 
-video::1TgTA4o_AM8?rel=0&amp;playlist=dW4giTKrgzo,GgpyVgkW_xk,whYnf7PFZ74,s1_kxTs5GfI,qyJXI2v7N8k,DQLbgo7Rzpg[youtube,height=540,width=960]
+video::1TgTA4o_AM8?rel=0&amp;playlist=dW4giTKrgzo,GgpyVgkW_xk,whYnf7PFZ74,s1_kxTs5GfI,qyJXI2v7N8k,DQLbgo7Rzpg[youtube]
 
 And also some of these examples, via which we introduced CSS, the language with which web pages can be stylized.
 
-video::TKZlfZDF8Y4?rel=0&amp;playlist=VwCSw2ts388,-7wiXVMh4XY[youtube,height=540,width=960]
+video::TKZlfZDF8Y4?rel=0&amp;playlist=VwCSw2ts388,-7wiXVMh4XY[youtube]
 
 Next, consider reviewing some of these examples, via which we introduced HTML forms, which we used to submit GET queries to Google.
 
-video::RQ2_TIXBo00?rel=0&amp;playlist=14jiSM4CMtY,uqsKEAAvpTA,P7oACLRGnEg,AI2nKW7_pck[youtube,height=540,width=960]
+video::RQ2_TIXBo00?rel=0&amp;playlist=14jiSM4CMtY,uqsKEAAvpTA,P7oACLRGnEg,AI2nKW7_pck[youtube]
 
 For another perspective altogether, join Daven for a tour of HTML too. Don’t miss the bloopers at the end!
 
-video::dM5V1epAbSs?rel=0[youtube,height=540,width=960]
+video::dM5V1epAbSs?rel=0[youtube]
 
 Finally, join Joseph (and Rob) for a closer look at CSS.
 
-video::kg0ZOmUREwc?rel=0[youtube,height=540,width=960]
+video::kg0ZOmUREwc?rel=0[youtube]
 
 == Getting Started
 
@@ -259,7 +259,7 @@ What’s going on if so? Well, by convention, a lot of websites have in their ro
 
 Here’s a quick walkthrough if a demo may help.
 
-video::3dmp0ycKC5c?rel=0[youtube,height=540,width=960]
+video::3dmp0ycKC5c?rel=0[youtube]
 
 Alright, now try visiting `https://ide50-username.cs50.io/cat.html`. (Note the `.html` instead of `.jpg` this time.) You should see Happy Cat again, possibly with a bit of margin around him (simply because of Chrome’s default CSS properties). If you look at the developer tools’ *Network* tab (possibly after reloading, if they weren’t still open), you should see that Chrome first requested `cat.html` followed by `cat.jpg`, since the latter, really, was specified as the value of the `img` element’s `src` attribute that we saw earlier in `cat.html`. To confirm as much, take a look at the developer tools’ *Elements* tab, wherein you’ll see a pretty-printed version of the HTML in `cat.html`. You can even change the HTML, but only Chrome’s in-memory copy thereof. To change the actual file, you’d need to do so in the usual way within CS50 IDE. Incidentally, you might find it interesting to tinker with the developer tools’ *Styles* tab, too. Even though this page doesn’t’ have any CSS of its own, you can see and change (temporarily) Chrome’s default CSS properties via that tab.
 

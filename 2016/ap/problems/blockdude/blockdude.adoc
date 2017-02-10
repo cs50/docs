@@ -105,7 +105,7 @@ Confirm that all the files are, indeed, in your directory and let's get started,
 
 For this problem, we'll implement a game called blockdude. For some, this game may ring a bell and for others, it may not. Blockdude is a game played on the TI83/84 calculators back in the day. Take a look at this video below to see the game in action and understand how it works.
 
-video::ErFXHHYXByk[youtube,height=540,width=960]
+video::ErFXHHYXByk[youtube]
 
 Before we continue on, remember adjusting your terminal window to be the right size to play `sudoku`? Here too must we adjust the terminal window to be a accommodating for the game. If you type
 

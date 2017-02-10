@@ -79,15 +79,15 @@ Make sure you've taken a good look at the CS50 materials on HTML and PHP.
 
 Here's Doug with a discussion of PHP in a web development context.
 
-video::l5O-HKElXPc[youtube,height=540,width=960]
+video::l5O-HKElXPc[youtube]
 
 And Daven with a few words on HTML!
 
-video::wjkJaQYDxjQ[youtube,height=540,width=960]
+video::wjkJaQYDxjQ[youtube]
 
 For good measure, take a look at Doug's video on PHP as well, if needing a refresher on the syntax beyond just that used for web development!
 
-video::abUuRqYUUaY[youtube,height=540,width=960]
+video::abUuRqYUUaY[youtube]
 
 Once comfortable, its time to dive in!
 

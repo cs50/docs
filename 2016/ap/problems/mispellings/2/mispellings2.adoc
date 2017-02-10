@@ -73,17 +73,17 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Let's brush up on a few recent topics before diving in. First, join Jackson and Lauren for tours of singly linked lists and hash tables.
 
-video::5nsKtQuT6E8[youtube,height=540,width=960,playlist=h2d9b_nEzoA]
+video::5nsKtQuT6E8[youtube,playlist=h2d9b_nEzoA]
 
 Then, brush up your `valgrind` knowledge with Nate!
 
-video::fvTsFjDuag8[youtube,height=540,width=960]
+video::fvTsFjDuag8[youtube]
 
 If still desiring more practice with linked lists or hash tables, Doug is here to help!
 
-video::ZoG2hOIoTnA[youtube,height=540,width=960]
+video::ZoG2hOIoTnA[youtube]
 
-video::tjtFkT97Xmc[youtube,height=540,width=960]
+video::tjtFkT97Xmc[youtube]
 
 == Getting Started
 
@@ -170,7 +170,7 @@ Implement `load`!
 
 Allow us to suggest that you whip up some dictionaries smaller than the 143,091-word default with which to test your code during development.  And here's Zamyla with some additional guidance:
 
-video::E_1D17P-bM0[youtube,height=540,width=960,end=533]
+video::E_1D17P-bM0[youtube,end=533]
 
 === size
 

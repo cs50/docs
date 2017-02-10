@@ -77,11 +77,11 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 We'd recommend you get started by watching a few short videos; in particular, these three on functions, command-line arguments, and the Vigenère cipher. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-video::Pi0Yf-jn7O8[youtube,height=540,width=960]
+video::Pi0Yf-jn7O8[youtube]
 
-video::X8PmYwnbLKM[youtube,height=540,width=960]
+video::X8PmYwnbLKM[youtube]
 
-video::9zASwVoshiM[youtube,height=540,width=960]
+video::9zASwVoshiM[youtube]
 
 Be sure you're reasonably comfortable answering the below questions before moving too far!
 
@@ -140,7 +140,7 @@ This time though, you need to decide which character in _k_ to use as you iterat
 
 Here's Zamyla with some tips:
 
-video::Uma2HZMPm2M[youtube,height=540,width=960]
+video::Uma2HZMPm2M[youtube]
 
 It's quite likely you'll find some handy functions documented at https://reference.cs50.net/ under **ctype.h** and **stdlib.h**. For instance, `isalpha` seems promising for checking out that __k__ consists only of alphabetic characters. And, with regard to wrapping around from Z to A (or z to a) when necessary, don't forget about `%`, C's modulo operator. You might also want to check out http://asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
 

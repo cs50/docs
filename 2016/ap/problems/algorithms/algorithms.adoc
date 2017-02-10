@@ -68,7 +68,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Let's start off by watching David's video (from Ted-ED) on Algorithms.
 
-video::6hfOvs8pY1k[youtube,height=540,width=960]
+video::6hfOvs8pY1k[youtube]
 
 As we see from that video, algorithms are sets of instructions for completing a task step-by-step. Sometimes these algorithms can be quite simple. One way to express an algorithm for deciding how to dress based on the weather might be to say something like this.
 
@@ -81,7 +81,7 @@ Sometimes they can be a bit more complex. Dropbox, if unfamiliar, is a service t
 
 As the company began to grow and have many users, Dropbox needed many more file servers and a way to organize their millions of users and their billions of files across those servers. As computer scientists might say, they had to develop algorithms for dealing with issues of _chunking_ and _sharding_:
 
-video::VECV6r9s5SE[youtube,height=540,width=960]
+video::VECV6r9s5SE[youtube]
 
 And don't worry if you don't yet understand the processes that Thomas and Alex described in that video. You certainly don't need to understand either of those things for this assignment, but rest assured that by the time you've completed the course, you'll have a much better appreciation for how this might work!
 
@@ -91,7 +91,7 @@ The concept of an algorithm is fundamental in computer science. Recall from earl
 
 Say you're playing your favorite video game of all time. If you're a fan of nostalgia, it might be this gem.footnote:[Don't worry, we'll give Mario his due soon enough, too!]
 
-video::zNBwkI0ytZo[youtube,height=540,width=960]
+video::zNBwkI0ytZo[youtube]
 
 Assume you're racing Sonic around Green Hill Zone and you see a couple of rings up in the air, over Sonic's head. Because they protect you in the event you are attacked by an enemy, you want to pick them up. In order to grab them, you have to press one of the buttons on the controller. When you press that button, Sonic jumps into the air to a consistent height. When and if he touches the ring, it disappears from the screen so it cannot be claimed multiple times, and the number of rings in his possession--indicated by a ring counter--increases by one.
 
@@ -179,7 +179,7 @@ Next, think of something that you do every day or nearly every day. Write an alg
 
 If you're stuck, know that you aren't just limited to purely text-based ways of writing out algorithms when trying to come up with them. It may help to just get started with a simple flowchart, such as the one Sheldon Cooper used in this clip from TV's _The Big Bang Theory_:
 
-video::k0xgjUhEG3U[youtube,height=540,width=960]
+video::k0xgjUhEG3U[youtube]
 
 Just do your best to avoid any infinite loops (a loop that's impossible to ever break out of) in your algorithm, lest you be stuck in one forever!
 
@@ -188,7 +188,7 @@ Just do your best to avoid any infinite loops (a loop that's impossible to ever 
 
 Now for a little bit of fun. Before you actually turn in your algorithms, you probably should have someone test them out. Here's what happened in a recent iteration of CS50 when we asked a few brave volunteers to make a peanut butter and jelly sandwich using an algorithm supplied by their classmates.
 
-video::KUB-aJXquUA[youtube,height=540,width=960,start=1034,end=1608]
+video::KUB-aJXquUA[youtube,start=1034,end=1608]
 
 As you can see, describing algorithms precisely is crucial in order to have the desired effect! Have a few friends or family members test out your algorithms, instructing them to make absolutely no assumptions beyond exactly what you've written. Is your algorithm described clearly enough that your set of instructions can be repeated exactly without any ambiguity as to what to do? Did your friend or family member find a way to break your algorithm or, worse, find themselves in an infinite loop?
 

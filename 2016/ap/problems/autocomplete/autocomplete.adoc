@@ -91,17 +91,17 @@ Makefile  autocomplete.c  autocomplete.h  large.txt  small.txt  trie.c  trie.h
 
 Make sure to watch the following shorts before you trie... err, __try__ this problem. Here are Doug and Kevin on tries:
 
-video::TRg9DQFu0kU[youtube,height=540,width=960]
+video::TRg9DQFu0kU[youtube]
 
 
-video::NKr6gWcXkIM[youtube,height=540,width=960]
+video::NKr6gWcXkIM[youtube]
 
 And here are Zamyla and Doug for a quick refresher on recursion:
 
-video::t4MSwiqfLaY[youtube,height=540,width=960]
+video::t4MSwiqfLaY[youtube]
 
 
-video::VrrnjYgDBEk[youtube,height=540,width=960]
+video::VrrnjYgDBEk[youtube]
 
 All right, here we go!
 

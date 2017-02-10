@@ -103,7 +103,7 @@ Before doing any math, then, you'll probably want to convert the user's input en
 
 Not sure where to begin? Not to worry, start with a walkthrough:
 
-video::9dZzyl7dCuw[youtube,height=540,width=960]
+video::9dZzyl7dCuw[youtube]
 
 Incidentally, so that we can automate some tests of your code, we ask that your program's last line of output be only the minimum number of coins possible: an integer followed by `\n`. Consider the below representative of how your own program should behave, wherein underlined text is some user's input.
 

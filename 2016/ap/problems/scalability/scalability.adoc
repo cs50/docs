@@ -71,7 +71,7 @@ No need to open up the IDE for this problem, just get out some good old-fashione
 
 First, take a look at how Dropbox scales.
 
-video::VECV6r9s5SE[youtube,height=540,width=960]
+video::VECV6r9s5SE[youtube]
 
 Answer the following writing questions, giving both your answer and a justification. There is not necessarily a _correct_ answer to each question, rather the important part is your justification for the choice(s) you make.
 
