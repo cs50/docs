@@ -114,4 +114,98 @@ at the prompt to see your last several commands in chronological order if you'd 
 * link:../../../../problems/credit/credit.html[Credit], more comfortable
 --
 
-include::../submit.adoc[]
+== How to Submit
+
+=== Step 1 of 4
+
+Recall that, for Problem Set 0, you signed up for a https://github.com/[GitHub account]. 
+
+Visit https://cs50.me/[cs50.me] and, when prompted to log in, log in with that same GitHub account. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
+
+=== Step 2 of 4
+
+Recall that you were asked to create the files below:
+
+* `hello.c`
+* `water.c`
+* `mario.c`
+* `greedy.c` or `credit.c`
+
+Be sure that each of your files is in `~/workspace/pset1`, as with:
+
+[source]
+----
+cd ~/workspace/pset1/
+ls
+----
+
+If any file is not in `~/workspace/pset1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 4
+
+* To submit `hello`, execute
++
+[source]
+----
+cd ~/workspace/pset1/
+submit50 2017/x/hello
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `water`, execute
++
+[source]
+----
+cd ~/workspace/pset1/
+submit50 2017/x/water
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit the less-comfortable version of `mario` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/pset1/
+submit50 2017/x/mario/less
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit the more-comfortable version of `mario` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/pset1/
+submit50 2017/x/mario/more
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `greedy` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/pset1/
+submit50 2017/x/greedy
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `credit` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/pset1/
+submit50 2017/x/credit
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 4 of 4
+  
+Submit https://newforms.cs50.net/2017/x/psets/1[this form]!
+ 
+Your submission should be graded within 2 weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Problem Set 2.
