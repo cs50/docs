@@ -122,6 +122,8 @@ Recall that, for Problem Set 0, you signed up for a https://github.com/[GitHub a
 
 Visit https://cs50.me/[cs50.me] and, when prompted to log in, log in with that same GitHub account. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
 
+Once you've logged into https://cs50.me/[cs50.me], you can immediately log out. Logging in once simply ensures that you can submit code via `submit50`, per step 3 of 4!
+
 === Step 2 of 4
 
 Recall that you were asked to create the files below:
