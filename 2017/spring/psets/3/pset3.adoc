@@ -1,0 +1,101 @@
+---
+layout: 2017/spring
+---
+:skip-front-matter:
+
+= Problem Set 3: Game of Fifteen
+
+== tl;dr
+
+[start=0]
+. Watch https://video.cs50.net/2016/fall/lectures/3[Week 3's lecture].
+. Search and sort some numbers.
+. Implement the Game of Fifteen.
+. Submit your code.
+. Submit a form.
+
+== Reminders
+
+* Use `help50` as needed.
+* Use `eprintf` as needed.
+* Use `debug50` as needed.
+
+== Getting Started
+
+Alright, here we go again!
+
+Log into https://cs50.io/[cs50.io] and execute
+
+[source]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date.
+
+Next, execute
+
+[source]
+----
+mkdir ~/workspace/pset3/
+----
+
+at your prompt in order to make a directory called `pset3` in your `workspace` directory.
+
+Now execute
+
+[source]
+----
+cd ~/workspace/pset3/
+----
+
+and your prompt should resemble the below.
+
+[source]
+----
+~/workspace/pset3/ $
+----
+
+== What to Do
+
+. Implement either of:
++
+--
+* link:../../../../problems/find/less/find.html[Find], less comfortable
+* link:../../../../problems/find/more/find.html[Find], more comfortable
+--
++
+. Implement link:../../../../problems/fifteen/fifteen.html[Game of Fifteen]
+
+== How to Submit
+
+=== Step 1 of 2
+
+* Update your IDE:
++
+[source]
+----
+update50
+----
+* Submit `find`:
++
+[source]
+----
+cd ~/workspace/pset3/find/
+submit50 2017/spring/find
+----
+* Submit `fifteen`:
++
+[source]
+----
+cd ~/workspace/pset3/fifteen/
+submit50 2017/spring/fifteen
+----
+
+To confirm that your code was submitted properly, visit https://cs50.me[].
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.net/2017/spring/psets/3[]!
+
+This was Problem Set 3.
