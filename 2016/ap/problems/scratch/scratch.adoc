@@ -65,11 +65,11 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 First curl up with Nate's short on binary, if not too familiar:
 
-video::hacBFrgtQjQ[youtube,height=540,width=960]
+video::hacBFrgtQjQ[youtube]
 
 And next with Nate's short on ASCII:
 
-video::UPlR4eMMCmI[youtube,height=540,width=960]
+video::UPlR4eMMCmI[youtube]
 
 Consider these questions rhetorical for now, but odds are they'll come up again! Not to worry if the answers aren't obvious at first. They're meant to induce a bit of thought! The material you've seen so far, along with Nate's videos, should provide you with the building blocks (daresay inputs!) with which to solve these problems.
 
@@ -79,7 +79,7 @@ Consider these questions rhetorical for now, but odds are they'll come up again!
 
 Incidentally, ever seen a _really_ old computer? In the Harvard Science Center, there's a big machine by the main stairwell. It's the link:http://en.wikipedia.org/wiki/Harvard_Mark_I[Harvard Mark I], one of the world's earliest (electro-mechanical) computers, whose purpose was, well, to compute (albeit slowly by today's standards)! You might enjoy this tour by link:http://lewis.seas.harvard.edu/[Prof. Harry Lewis]:
 
-video::4ObouwCHk8w[youtube,height=540,width=960]
+video::4ObouwCHk8w[youtube]
 
 == Itching to Program?
 
@@ -97,7 +97,7 @@ video::tveoFN0NHE0[youtube,height=540,list=PLhQjrBD2T383nc2LUdF5XWbyrsqiYy4nq,wi
 
 And you might also want to watch Allison's short on Scratch:
 
-video::52JoFF4HMA4[youtube,height=540,width=960]
+video::52JoFF4HMA4[youtube]
 
 Feel free to download the source code for a few more projects from http://scratch.mit.edu/explore/projects/all/ or elsewhere.  For each program, run it to see how it works overall and then look over its scripts to understand how it works underneath the hood. Feel free to make changes to scripts and observe the effects. Once you can say to yourself, "Okay, I think I get this," you're ready to proceed.
 
@@ -117,7 +117,7 @@ Alright, off you go. Make us proud!
 
 Not quite sure how to begin? Feeling a bit overwhelmed? Not to worry. Join Zamyla for a walkthrough of this problem, if you'd like more of a tour:
 
-video::697pD31GCZg[youtube,height=540,width=960]
+video::697pD31GCZg[youtube]
 
 Incidentally, if you don't have the best Internet access, you're welcome to download Scratch's "offline editor" at http://scratch.mit.edu/scratch2download/. But when done with your project offline, be sure to upload it to your account at http://scratch.mit.edu/ via *File > Share to website* in the offline editor.
 
@@ -127,6 +127,6 @@ Oh, and if you'd like to exhibit your project in CS50 AP 1617’s studio with st
 
 Incidentally, if curious to learn more about the design of Scratch itself, you might like this segment with our friends from MIT's Media Lab:
 
-video::iLSBUKs4AYU[youtube,height=540,width=960]
+video::iLSBUKs4AYU[youtube]
 
 This was Scratch, your first programming problem in CS50 AP!

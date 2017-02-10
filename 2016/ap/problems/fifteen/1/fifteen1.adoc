@@ -79,7 +79,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Have a more in-depth look at debugging techniques from Dan. (Odds are these 23 minutes with Dan will save you hours over the course of the term, since GDB is a far better tool than `printf` in many cases!)
 
-video::-G_klBQLgdc[youtube,height=540,width=960]
+video::-G_klBQLgdc[youtube]
 
 == Getting Started
 
@@ -299,11 +299,11 @@ You're welcome to write your own functions and even change the prototypes of fun
 
 Here are some tips from Zamyla to get you started. First, for `init`:
 
-video::xPa4Wb5Uyhc[youtube,height=540,width=960]
+video::xPa4Wb5Uyhc[youtube]
 
 And also for `draw`:
 
-video::k4P0SojW9oM[youtube,height=540,width=960]
+video::k4P0SojW9oM[youtube]
 
 If you'd like to play with the staff's own implementation of the full `fifteen` game, you may execute the below.
 

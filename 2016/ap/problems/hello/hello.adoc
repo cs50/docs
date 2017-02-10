@@ -204,7 +204,7 @@ Make sense? If not, no worries; it soon will! It's in this terminal window that 
 
 First, a hello from Zamyla if you'd like a tour of what's to come, particularly if less comfortable. Note that in this video, she is using the CS50 Appliance, which is somewhat different from the CS50 IDE, but not a problem.
 
-video::HkQD6aw7oDc[youtube,height=540,width=960]
+video::HkQD6aw7oDc[youtube]
 
 Shall we have you write your first program? You could go ahead create a new file inside of your `chapter1` directory and save the file as `hello.c` (not `hello.txt`), just as before (remember how?), but we'll also take this opportunity to show you another way. In the terminal window, type
 

@@ -90,7 +90,7 @@ In the above example, we found an approximate value of &pi;. That's a pretty coo
 
 In the video below, professional test pilots explain the advantages of using simulation software before constructing planes.
 
-video::P2XpjLtnPsY[youtube,height=540,width=960]
+video::P2XpjLtnPsY[youtube]
 
 *BAE Systems* uses their simulator to save money and time in production. If there's a mistake in a design, they can find it using the simulator, and fix it before they spend time, money, and materials building the physical plane. The simulator also allows them to prepare their pilots for worst-case situations without actually putting the pilots in those situations. 
 
@@ -122,7 +122,7 @@ Need some ideas? Check out:
 
 Once you've finished your writing problem, go ahead and watch the video below, in which Elon Musk (of SpaceX and Tesla) discusses a theory of his.
 
-video::2KK_kzrJPS8[youtube,height=540,width=960]
+video::2KK_kzrJPS8[youtube]
 
 
 Ponder that. Was someone programming you to write this problem?

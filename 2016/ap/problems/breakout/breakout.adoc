@@ -196,7 +196,7 @@ image:window.png[window.c]
 
 Neat, eh? Go ahead and open up `window.c` with `gedit`. Let's take a tour together:
 
-video::IMOujDlGebQ[youtube,height=540,width=960]
+video::IMOujDlGebQ[youtube]
 
 How did we know how to call `newGWindow` like that?  Well, there aren't `man` pages for SPL, but you can peruse the relevant "header file" (i.e., `gwindow.h`) by executing:
 
@@ -234,23 +234,23 @@ on video, we've since installed SPL deep inside the appliance (for convenience),
 
 Anyhow, now open up `click.c` (in `~/Dropbox/src4m`) with `gedit`. This one's a bit more involved but it's representative of how to "listen" for "events", quite like those you could "broadcast" in Scratch.  Let's take a look.
 
-video::BStiekPFKWI[youtube,height=540,width=960]
+video::BStiekPFKWI[youtube]
 
 See http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gevents.html for SPL's documentation of `GEvent`.
 
 Now open up `cursor.c` (in `~/Dropbox/src4m`) with `gedit`.  This program, too, handles events, but it also responds to those events by moving a circle (well, a `GOval`) in lockstep.  Let's take a look.
 
-video::xsB0v8GtVMw[youtube,height=540,width=960]
+video::xsB0v8GtVMw[youtube]
 
 See http://cdn.cs50.net/2014/fall/psets/3/pset3/spl/doc/gobjects.html for SPL's documentation of `GOval` and other types of objects.
 
 Next open `bounce.c` (in `~/Dropbox/src4m`) with `gedit`.  This one uses a bit of arithmetic to bounce a circle back and forth between a window's edges.  Let's take a look.
 
-video::8RMHJe1ZpKM[youtube,height=540,width=960]
+video::8RMHJe1ZpKM[youtube]
 
 Finally, take a look at `button.c`, `checkbox.c`, `label.c`, `slider.c`, and `text.c` in any order with `gedit`. And feel free to join David on a tour:
 
-video::uFnsMLEgajQ[youtube,height=540,width=960,playlist="1o0xfkkPDFQ,ONSsCsNJcsE,mKiDejZId2g,2s_WGOz6SAs"]
+video::uFnsMLEgajQ[youtube,playlist="1o0xfkkPDFQ,ONSsCsNJcsE,mKiDejZId2g,2s_WGOz6SAs"]
 
 And, of course, feel free to compile (as with `make`) and run any of those programs.
 

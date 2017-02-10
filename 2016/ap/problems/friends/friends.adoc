@@ -154,7 +154,7 @@ How nice to see them again!
 
 Lastly, have a look at Christopher's short video on command-line arguments. Since we'll be converting all three of the programs listed above to accept command-line arguments (none of them currently do!), this video should come in handy.
 
-video::X8PmYwnbLKM[youtube,height=540,width=960]
+video::X8PmYwnbLKM[youtube]
 
 If you happen to see (and are confused by!) `char *` in this and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 

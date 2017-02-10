@@ -76,7 +76,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 First, say hello to Tommy, who's here to teach you a bit about some basic file input and output techniques using the command line.
 
-video::L1c4oSI6RAE[youtube,height=540,width=960]
+video::L1c4oSI6RAE[youtube]
 
 Next, read up on two functions you'll probably want to know a thing or two about for this problem: `https://reference.cs50.net/stdlib/srand48[srand48]` and `https://reference.cs50.net/stdlib/drand48[drand48]`. `srand48` and `drand48` are similar in spirit to `srand` and `rand`, which you may recall using in http://docs.cs50.net/2016/ap/problems/skittles/skittles.html[Skittles], but perform their calculations using 48-bit arithmetic. Suffice it to say, given identical seeds, `rand` and `drand48` will generate different sets of pseudorandom numbers.
 

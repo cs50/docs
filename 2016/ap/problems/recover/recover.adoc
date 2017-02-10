@@ -172,7 +172,7 @@ As before, if you happen to use `malloc`, be sure to use `free` so as not to lea
 
 Here's Zamyla!
 
-video::Y4vV61lbL3g[youtube,height=540,width=960]
+video::Y4vV61lbL3g[youtube]
 
 == Sanity Checks
 

@@ -102,15 +102,15 @@ Next create a new file entitled `calc.c` in your `chapter2` directory.
 
 Though we'll remind you of the existence of this video many times throughout the problems in this chapter, be sure to have a look at Christopher's short video on command-line arguments.
 
-video::X8PmYwnbLKM[youtube,height=540,width=960]
+video::X8PmYwnbLKM[youtube]
 
 If you happen to see (and are confused by!) `char *` in this and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
 The shorts on arrays and strings wouldn't hurt either, if you want a refresher.
 
-video::7mOJN1c1JEo[youtube,height=540,width=960]
+video::7mOJN1c1JEo[youtube]
 
-video::z3j-gK1u6Kg[youtube,height=540,width=960]
+video::z3j-gK1u6Kg[youtube]
 
 == Divide and Conquer
 

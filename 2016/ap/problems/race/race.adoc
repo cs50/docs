@@ -77,11 +77,11 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 First, refresh your memory on the __O(n^2^)__ sorting algorithms we've learned about so far in the course. Here are Jackson and Tommy to explain:
 
-video::8Kp-8OGwphY[youtube,height=540,width=960]
+video::8Kp-8OGwphY[youtube]
 
-video::f8hXR_Hvybo[youtube,height=540,width=960]
+video::f8hXR_Hvybo[youtube]
 
-video::DFG-XuyPYUQ[youtube,height=540,width=960]
+video::DFG-XuyPYUQ[youtube]
 
 Before moving on, be sure you're comfortable answering the following questions:
 
@@ -184,7 +184,7 @@ race: race.o helpers.c helpers.h
 
 Per the dependencies implied above (after the colon), any changes to either `race.o`, `helpers.c`, or `helpers.h` will compel `make` to rebuild `race` the next time it's invoked for this target. In other words, this means that `race` is not simply comprised of a single source file, but rather of **three** separate files. `helpers.c` and `helpers.h` you probably can figure out. But what the heck is `race.o`? A refresher on the compilation process might be in order here, first. Take it away, Rob:
 
-video::CSZLNYF4Klo[youtube,height=540,width=960]
+video::CSZLNYF4Klo[youtube]
 
 Interesting... so it turns out that `race.o` contains the __object code__ that was generated from a source file (presumably called `race.c`) that we wrote and partially compiled, but then chose not to include in the distro. We made this choice on the one hand because the code therein is a bit complicated at this stage of the course (thus allowing us to **abstract** some of the complex detail), but further because it provides you with an opportunity to write code that simply __must__ conform to a precise specification, or it won't work! 
 

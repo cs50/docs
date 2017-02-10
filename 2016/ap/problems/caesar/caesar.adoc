@@ -76,11 +76,11 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 First, have a look at a few shorts; in particular, these three on loops, command-line arguments, and the Caesar cipher. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-video::HHmiHx7GGLE[youtube,height=540,width=960]
+video::HHmiHx7GGLE[youtube]
 
-video::X8PmYwnbLKM[youtube,height=540,width=960]
+video::X8PmYwnbLKM[youtube]
 
-video::36xNpbosfTY[youtube,height=540,width=960]
+video::36xNpbosfTY[youtube]
 
 Be sure you're reasonably comfortable answering the below questions before moving too far!
 
@@ -207,7 +207,7 @@ Incidentally, you'll need to `#include` yet another header file in order to use 
 
 And Zamyla has some tips for you as well:
 
-video::V6IDxl-3WAA[youtube,height=540,width=960]
+video::V6IDxl-3WAA[youtube]
 
 So that we can automate some tests of your code, your program must behave per the below. Assumed that the underlined text is what some user has typed.
 

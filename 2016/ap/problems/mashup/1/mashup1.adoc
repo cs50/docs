@@ -23,7 +23,7 @@
 
 * Doug's video on Javascript 
 
-video::JYIKYnbdu4E[youtube,height=540,width=960]
+video::JYIKYnbdu4E[youtube]
 
 include::../../../../fall/honesty.adoc[]
 

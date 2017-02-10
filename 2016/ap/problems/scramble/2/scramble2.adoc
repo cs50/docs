@@ -80,7 +80,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Before diving in, take a few minutes and join Zamyla on a quick foray into recursion, an elegant problem-solving technique that (hint, hint) will probably prove useful as you work on this problem.
 
-video::t4MSwiqfLaY[youtube,height=540,width=960]
+video::t4MSwiqfLaY[youtube]
 
 == Getting Started
 

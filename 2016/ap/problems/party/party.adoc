@@ -118,7 +118,7 @@ PHP is a big language, and while we've spent months learning C, we don't have th
 
 It's important, though, to (re)acquaint yourself to these differences before diving in too deep. Here's Doug to give you a PHP crash course on syntax, which may come in handy as you start to work through this problem. The video is long, so feel free to skip around or fast forward through parts if you're already comfy with them.
 
-video::abUuRqYUUaY[youtube,height=540,width=960]
+video::abUuRqYUUaY[youtube]
 
 === helpers.php 
 

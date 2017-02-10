@@ -67,7 +67,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Odds are, at some point in your life, you've used the Internet. In fact, more likely than not you use it many times a day, every single day, and have done so for as far back as you can remember. Given that level of real-world Internet experience, it won't surprise you to know that the Web contains a lot of very useful data... and also some data that might not be quite so useful:
 
-video::QH2-TGUlwu4[youtube,height=540,width=960]
+video::QH2-TGUlwu4[youtube]
 
 Good luck getting that out of your head.
 

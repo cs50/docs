@@ -73,17 +73,17 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Let's brush up on a few recent topics before diving in. First, join Jackson and Lauren for tours of singly linked lists and hash tables.
 
-video::5nsKtQuT6E8[youtube,height=540,width=960,playlist=h2d9b_nEzoA]
+video::5nsKtQuT6E8[youtube,playlist=h2d9b_nEzoA]
 
 Then, brush up your `valgrind` knowledge with Nate!
 
-video::fvTsFjDuag8[youtube,height=540,width=960]
+video::fvTsFjDuag8[youtube]
 
 If still desiring more practice with linked lists or hash tables, Doug is here to help!
 
-video::ZoG2hOIoTnA[youtube,height=540,width=960]
+video::ZoG2hOIoTnA[youtube]
 
-video::tjtFkT97Xmc[youtube,height=540,width=960]
+video::tjtFkT97Xmc[youtube]
 
 == Getting Started
 
@@ -315,7 +315,7 @@ Incidentally, to be clear, by "misspelled" we simply mean that some word is not 
 
 And now this:
 
-video::RIevazPIPzU[youtube,height=540,width=960]
+video::RIevazPIPzU[youtube]
 
 == Spell Checking
 
@@ -341,7 +341,7 @@ Implement `check`!
 
 Allow us to suggest that you whip up some small files to spell-check before trying out, oh, War and Peace.  Here's Zamyla:
 
-video::r7CVY6O-XJw[youtube,height=540,width=960,end=65]
+video::r7CVY6O-XJw[youtube,end=65]
 
 === unload
 
@@ -349,7 +349,7 @@ Implement `unload`!
 
 Be sure to free any memory that we allocated in `load`! (Per `dictionary.h`, the hash table itself is declared on the stack, but all of the nodes that are inserted into the hash table are dynamically allocated.) Remember that we used a hash table, and that you know how all the data in that hash table is organized and stored by virtue of its declaration and the definition of each node, even if you can't see the exact mechanics we used to store it there.  Here's Zamyla with some final suggestions!
 
-video::VodrNEvdBBc[youtube,height=540,width=960,end=56]
+video::VodrNEvdBBc[youtube,end=56]
 
 In fact, be sure that your spell-checker doesn't leak any memory at all.  Recall that `valgrind` is your newest best friend.  Know that `valgrind` watches for leaks while your program is actually running, so be sure to provide command-line arguments if you want `valgrind` to analyze `speller` while you use a particular `dictionary` and/or text, as in the below.
 
