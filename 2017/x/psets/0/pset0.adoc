@@ -65,4 +65,8 @@ Once finished with your project, click *See project page* in Scratch's top-right
 
 Oh, and if you'd like to exhibit your project in CS50x 2017's studio, head to https://scratch.mit.edu/studios/3678335/, then click *Add projects*, and paste in your own project's URL.
 
-include::../submit.adoc[]
+== How to Submit
+
+Submit https://newforms.cs50.net/2017/x/psets/0[this form]!
+
+Your submission should be graded within 2 weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
