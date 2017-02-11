@@ -124,4 +124,75 @@ odds are you don't have a `pset2/` directory inside of `~/workspace/` and/or you
 * you have an `vigenere/` directory inside of `~/workspace/pset2/`, inside of which is `vigenere.c`, and/or
 * you have an `crack/` directory inside of `~/workspace/pset2/`, inside of which is `crack.c`.
 
-include::../submit.adoc[]
+== How to Submit
+
+=== Step 1 of 4
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 4
+
+* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
+** Be sure that `initials.c` is in `~/workspace/pset2/initials/`, as with:
++
+[source]
+----
+cd ~/workspace/pset2/initials/
+ls
+----
+* Recall that you were asked to implement any two (2) of `caesar`, `vigenere`, and `crack`.
+** If you implemented `caesar`, be sure that `caesar.c` is in `~/workspace/pset2/caesar/`.
+** If you implemented `vigenere`, be sure that `vigenere.c` is in `~/workspace/pset2/vigenere/`.
+** If you implemented `crack`, be sure that `crack.c` is in `~/workspace/pset2/crack/`.
+
+=== Step 3 of 4
+
+* To submit the less-comfortable version of `initials` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/pset2/initials/
+submit50 2017/x/initials/less
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit the more-comfortable version of `initials` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/pset2/initials/
+submit50 2017/x/initials/more
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `caesar` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/caesar/
+submit50 2017/x/caesar
+----
+* To submit `vigenere` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/vigenere/
+submit50 2017/x/vigenere
+----
+* To submit `crack` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/pset2/crack/
+submit50 2017/x/crack
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 4 of 4
+  
+Submit https://newforms.cs50.net/2017/x/psets/2[this form]!
+ 
+This was Problem Set 2.
