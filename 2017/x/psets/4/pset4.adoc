@@ -85,21 +85,28 @@ update50
 [source]
 ----
 cd ~/workspace/pset4/whodunit/
-submit50 whodunit
+submit50 2017/x/whodunit
 ----
-* Submit `resize`:
+* Submit the less-comfortable version of `resize` (if you implemented it):
 +
 [source]
 ----
 cd ~/workspace/pset4/resize/
-submit50 resize
+submit50 2017/x/resize/less
+----
+* Submit the more-comfortable version of `resize` (if you implemented it):
++
+[source]
+----
+cd ~/workspace/pset4/resize/
+submit50 2017/x/resize/more
 ----
 * Submit `recover`:
 +
 [source]
 ----
 cd ~/workspace/pset4/recover/
-submit50 recover
+submit50 2017/x/recover
 ----
 
 === Step 2 of 2
