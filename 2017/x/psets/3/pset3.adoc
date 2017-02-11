@@ -78,7 +78,12 @@ and your prompt should resemble the below.
 
 === Step 1 of 2
 
-* Update your IDE with `update50`.
+* Update your IDE:
++
+[source]
+----
+update50
+----
 * Submit `find`:
 +
 [source]
