@@ -74,4 +74,28 @@ and your prompt should resemble the below.
 +
 . Implement link:../../../../problems/fifteen/fifteen.html[Game of Fifteen]
 
-include::../submit.adoc[]
+== How to Submit
+
+=== Step 1 of 2
+
+* Update your IDE with `update50`.
+* Submit `find`:
++
+[source]
+----
+cd ~/workspace/pset3/find/
+submit50 find
+----
+* Submit `fifteen`:
++
+[source]
+----
+cd ~/workspace/pset3/fifteen/
+submit50 fifteen
+----
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2017/x/psets/3[this form]!
+
+This was Problem Set 3.
