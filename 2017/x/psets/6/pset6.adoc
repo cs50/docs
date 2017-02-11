@@ -122,7 +122,7 @@ See link:../../../../problems/sentiments/sentiments.html#walkthrough[Sentiments]
 ----
 update50
 cd ~/workspace/pset6/
-submit50 pset6
+submit50 2017/x/pset6
 ----
 
 === Step 2 of 2
