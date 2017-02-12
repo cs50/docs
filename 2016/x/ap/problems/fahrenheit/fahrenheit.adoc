@@ -198,6 +198,34 @@ If you'd like to play with our own implementation of `fahrenheit` in the IDE, yo
 
 == How to Submit
 
-We are still in the process of building the submission platform for coding problems. In the meantime, use `check50` to review your code and refresh this page on October 21, 2016 to submit your problem for a grade.
+=== Step 1 of 3
+
+Recall that, in the Scratch problem, you signed up for a https://github.com/[GitHub account].
+
+If you haven't already, visit https://cs50.me/[cs50.me], log in with that same GitHub account, and click *Authorize application*. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
+
+Once you've logged in and authorized, you can immediately log out. Logging in once simply ensures that you can submit code via `submit50`, per step 2 of 3!
+
+=== Step 2 of 3
+
+* To submit `fahrenheit`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/
+submit50 2016/ap/fahrenheit
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 3 of 3
+
+Submit https://newforms.cs50.net/2016/x/ap/fahrenheit[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Fahrenheit.
