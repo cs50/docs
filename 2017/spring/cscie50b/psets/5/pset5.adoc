@@ -51,7 +51,7 @@ Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/c
 
 == Problems
 
-* Implement link:../../../../problems/speller/speller.html[Speller]
+* Implement link:../../../../../problems/speller/speller.html[Speller]
 
 == How to Submit
 
