@@ -133,7 +133,6 @@ video::iLSBUKs4AYU[youtube,height=540,width=960]
 
 == How to Submit
 
-To submit this assignment, please fill out 
-https://cs50.wufoo.com/forms/cs50x-ap-2016-scratch/[this form], where you’ll answer a few questions and provide a link to your Scratch project on the MIT website!
+Submit https://newforms.cs50.net/2016/x/ap/scratch[this form]!
 
-This was Scratch, your first programming problem in CS50 AP!
+This was Scratch!
