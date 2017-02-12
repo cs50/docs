@@ -126,7 +126,7 @@ odds are you don't have a `pset2/` directory inside of `~/workspace/` and/or you
 
 == How to Submit
 
-Be sure you've signed up for a https://github.com/join[GitHub account], per Problem Set 0, and that you've logged into https://cs50.me/[CS50.me] at least once, per Problem Set 1!
+Be sure you've signed up for a https://github.com/join[GitHub account], per Problem Set 0, and that you've logged into and authorized https://cs50.me/[CS50.me] at least once, per Problem Set 1!
 
 === Step 1 of 4
 

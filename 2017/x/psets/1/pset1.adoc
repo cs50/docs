@@ -120,9 +120,9 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 Recall that, for Problem Set 0, you signed up for a https://github.com/[GitHub account]. 
 
-Visit https://cs50.me/[cs50.me] and, when prompted to log in, log in with that same GitHub account. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
+Visit https://cs50.me/[cs50.me], log in with that same GitHub account, and click *Authorize application*. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
 
-Once you've logged into https://cs50.me/[cs50.me], you can immediately log out. Logging in once simply ensures that you can submit code via `submit50`, per step 3 of 4!
+Once you've logged in and authorized, you can immediately log out. Logging in once simply ensures that you can submit code via `submit50`, per step 3 of 4!
 
 === Step 2 of 4
 
