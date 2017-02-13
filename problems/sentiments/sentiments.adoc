@@ -43,7 +43,7 @@ A few years back, Dr. Minqing Hu and Prof. Bing Liu of the University of Illinoi
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/sentiments.zip
 $ unzip sentiments.zip

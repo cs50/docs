@@ -36,7 +36,7 @@ TIME IN TOTAL:
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/speller.zip
 $ unzip speller.zip

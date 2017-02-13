@@ -24,7 +24,7 @@ Let's turn our attention now to the app's distribution code!
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/finance.zip
 $ unzip finance.zip

@@ -25,7 +25,7 @@ Be sure you're familiar with the structure of 24-bit uncompressed BMPs, as intro
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/resize.zip
 $ unzip resize.zip

@@ -40,7 +40,7 @@ image:adapted.png[solvable configuration, width="25%"]
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/fifteen.zip
 $ unzip fifteen.zip

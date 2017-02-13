@@ -112,7 +112,7 @@ Note that Twitter hasn't updated their own version of the library for quite some
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/mashup.zip
 $ unzip mashup.zip

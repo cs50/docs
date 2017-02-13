@@ -17,7 +17,7 @@ Didn't find needle in haystack.
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/find.zip
 $ unzip find.zip

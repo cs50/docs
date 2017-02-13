@@ -16,7 +16,7 @@ $ [underline]#./whodunit clue.bmp verdict.bmp#
 
 === Downloading
 
-[source]
+[source,subs="macros"]
 ----
 $ wget https://github.com/cs50/problems/archive/whodunit.zip
 $ unzip whodunit.zip
