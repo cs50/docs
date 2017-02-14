@@ -1,8 +1,9 @@
 ---
+layout: default
 ---
 :skip-front-matter:
 
-= Problem: Address Book 
+= Problem: Address Book
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
@@ -75,7 +76,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Getting Ready
 
-Make sure you've taken a good look at the CS50 materials on HTML and PHP. 
+Make sure you've taken a good look at the CS50 materials on HTML and PHP.
 
 Here's Doug with a discussion of PHP in a web development context.
 
@@ -109,7 +110,7 @@ contacts.csv  index.html  styles.css submit.php  whoops.html
 
 == One Birthday Every Year?
 
-It's the CS50 Muppet's birthday again! As one would expect, he has quite a few friends and, magnanimous muppet that he is, wants to invite them all to his birthday party! 
+It's the CS50 Muppet's birthday again! As one would expect, he has quite a few friends and, magnanimous muppet that he is, wants to invite them all to his birthday party!
 
 Unfortunately, our friendly neighborhood Muppet has suffered an organizational disaster since his https://docs.cs50.net/2016/ap/problems/party/party.html[last birthday], losing almost all of his contact list. He has a few cobbled together from his phonefootnote:[Yes, Muppets use phones.], others in his emailfootnote:[Yes, Muppets use email.], and a select few he only has on business cardsfootnote:[Yes, Muppets have business cards.]. Instead of sending out lots of individual invitations, our Muppet wants to email all his friends at once (sound familiar?). But to do that, he needs to have all his friends' contact information in the same place, and ideally have a way to add new contacts for safe(r) keeping.
 
@@ -121,11 +122,11 @@ How do we do this and what shall you do? Allow us to briefly touch on the five f
 
 === contacts.csv
 
-Remember that a CSV, or comma separated values file, is quite literally just a list of values separated by commas. Values are grouped together by the line that they are on in the file, thus a newline character separates each row of values. Our file, `contacts.csv`, contains the contact information of CS50 Muppet's friends--or at least it will once you complete this problem! 
+Remember that a CSV, or comma separated values file, is quite literally just a list of values separated by commas. Values are grouped together by the line that they are on in the file, thus a newline character separates each row of values. Our file, `contacts.csv`, contains the contact information of CS50 Muppet's friends--or at least it will once you complete this problem!
 
 Our file is structured like this: `first name, last name, street address, city, state, zip code, cake preference`. Notice that these are indeed the column headers that we included in the first line of the file!
 
-As such, CS50's own Milo Banana's contact line would look like this: + 
+As such, CS50's own Milo Banana's contact line would look like this: +
 `Milo,Banana,50 CS Way,Cambridge,MA,02138,vanilla`
 
 But how will you fill this file, and ensure that it remains properly organized?
@@ -157,7 +158,7 @@ But how will you get the form results into the CSV file? Well, that's where `sub
 . A PHP script that will enter the data from `$_POST` into `contacts.csv`, one row per submission
 . A web page with a button that, when clicked, redirects the user back to `index.html` to submit another form
 
-Recall that it is perfectly okay to mix PHP and HTML together, so long as the overall file extension is `.php`, so these two goals can indeed be accomplished in the same file! You'll see that we've provided a very small skeleton to get you started. 
+Recall that it is perfectly okay to mix PHP and HTML together, so long as the overall file extension is `.php`, so these two goals can indeed be accomplished in the same file! You'll see that we've provided a very small skeleton to get you started.
 
 Remember also that when you open a file (in C or in PHP) you have to specify the __mode__ in which you are opening it. Be careful not to inadvertently choose the wrong mode! Read up on them a little bit, perhaps checking out the manual page for `fopen`.
 
@@ -177,4 +178,4 @@ When finished your locally hosted site should be able to:
 * Ensure that the contact information is complete, redirecting the user to try again if not
 * If the contact information is complete, write it to `contacts.csv`
 
-This was Address Book. 
+This was Address Book.
