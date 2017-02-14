@@ -1,6 +1,5 @@
 ---
-layout: 2016/fall
-title: Fifteen (Part 2)
+layout: default
 ---
 :skip-front-matter:
 
