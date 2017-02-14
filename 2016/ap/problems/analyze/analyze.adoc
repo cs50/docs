@@ -1,6 +1,5 @@
 ---
-layout: 2016/fall
-title: Analyze This
+layout: default
 ---
 :skip-front-matter:
 
