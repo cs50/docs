@@ -327,7 +327,7 @@ Once you've logged in and authorized, you can immediately log out. Logging in on
 +
 [source]
 ----
-cd ~/workspace/chapter2/
+cd ~/workspace/chapter2/friends
 submit50 2016/ap/friends
 ----
 +
