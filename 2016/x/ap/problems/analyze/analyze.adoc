@@ -88,4 +88,8 @@ In 500-1,000 words, prepare an essay on your experience, expectations, growths, 
 
 This metacognitive assessment is but one step in not necessarily becoming a better programmer or a better computer scientist, but really becoming a better learner. The better you understand your thought process, the easier it becomes to determine how to best understand something that may initially confound you. Once you've figured that out, your horizons can expand infinitely.
 
+== How to Submit
+
+Submit https://newforms.cs50.net/2016/x/ap/analyze[this form]!
+
 This was Analyze This.

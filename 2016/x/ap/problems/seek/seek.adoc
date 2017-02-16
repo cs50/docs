@@ -103,7 +103,7 @@ But first, log into https://cs50.io/[cs50.io] and execute
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. 
+within a terminal window to make sure your workspace is up-to-date.
 
 Then, execute
 
@@ -154,7 +154,7 @@ confirming your intent to delete that file, then proceed to execute
 cd seek
 ----
 
-followed by 
+followed by
 
 [source,bash]
 ----
@@ -165,7 +165,7 @@ and you should see that the directory contains five files:
 
 [source,bash]
 ----
-Makefile  generate.c  helpers.c  helpers.h  seek.c 
+Makefile  generate.c  helpers.c  helpers.h  seek.c
 ----
 
 **Only choose one of the below two options.**
@@ -174,7 +174,7 @@ Then, after having chosen your option and followed all the steps therein, pick u
 
 === Option 1: Use the Staff's PRNG
 
-You're pretty much done getting set up at this point, actually. Except you should probably peruse `generate.c`; you'll notice that we've left several comments just reading `TODO`. Take a few minutes to complete those comments, just to ensure you understand what's happening in that file. 
+You're pretty much done getting set up at this point, actually. Except you should probably peruse `generate.c`; you'll notice that we've left several comments just reading `TODO`. Take a few minutes to complete those comments, just to ensure you understand what's happening in that file.
 
 === Option 2: Use Your Own PRNG
 
@@ -242,9 +242,9 @@ To begin, simply type
 make
 ----
 
-which will create not one but **two** executables: `seek` and `generate` (open up `Makefile` to see why!). 
+which will create not one but **two** executables: `seek` and `generate` (open up `Makefile` to see why!).
 
-Now take a look at `seek.c`.  Notice that this program expects a single command-line argument: a "needle" to search for in a "haystack" of values.  
+Now take a look at `seek.c`.  Notice that this program expects a single command-line argument: a "needle" to search for in a "haystack" of values.
 
 Go ahead and run this program by executing, say, the below.
 
@@ -298,7 +298,7 @@ Because one of the numbersfootnote:[Again, assuming you're using the staff-provi
 
 Because `128` is not among the numbers outputted by `generate`, when seeded with `50`, your code shouldn't find that needle.  Best to try some other tests as well, as by running `generate` with some seed, taking a look at its output, then piping that same output to `seek`, looking for a "needle" you know to be among the "hay".
 
-Incidentally, note that `main` in `seek.c` is written in such a way that `seek` returns `0` if the needle is found, else it returns `1`.  You can check the so-called "exit code" with which `main` returns by executing 
+Incidentally, note that `main` in `seek.c` is written in such a way that `seek` returns `0` if the needle is found, else it returns `1`.  You can check the so-called "exit code" with which `main` returns by executing
 
 [source,bash]
 ----
@@ -323,7 +323,7 @@ echo $?
 
 you should see `1`, since `128` is, again, not among the 1,000 numbers outputted by `generate` when seeded with `50`, and so `search` (written by you) should return `false`, in which case `main` (written by us) should return (i.e., exit with) `1`.  Make sense?
 
-When ready to check the correctness of your program officially with `check50`, you may execute the below. 
+When ready to check the correctness of your program officially with `check50`, you may execute the below.
 
 [source,bash]
 ----
@@ -343,7 +343,7 @@ Alright, linear search is pretty meh.  Recall from Week 0 that we can do better,
 
 === sort
 
-Notice that `seek.c` calls `sort`, a function declared in `helpers.h`.  Unfortunately, we forgot to implement that function fully too in `helpers.c`!  Take a peek at `helpers.c`, and you'll see that `sort` returns immediately, even though ``seek``'s `main` function does pass it an actual array.  
+Notice that `seek.c` calls `sort`, a function declared in `helpers.h`.  Unfortunately, we forgot to implement that function fully too in `helpers.c`!  Take a peek at `helpers.c`, and you'll see that `sort` returns immediately, even though ``seek``'s `main` function does pass it an actual array.
 
 Now, recall the syntax for declaring an array.  Not only do you specify the array's type, you also specify its size between brackets, just as we do for `haystack` in `seek.c`:
 
@@ -375,7 +375,7 @@ Go ahead and implement `sort` so that the function actually sorts, from smallest
 void sort(int values[], int n);
 ----
 
-As this return type of `void` implies, this function must not return a sorted array; it must instead "destructively" sort the actual array that it's passed by moving around the values therein.  
+As this return type of `void` implies, this function must not return a sorted array; it must instead "destructively" sort the actual array that it's passed by moving around the values therein.
 
 Although you may not alter our declaration of `sort`, you're welcome to define your own function(s) in `helpers.c` that `sort` itself may then call.
 
@@ -403,7 +403,7 @@ Now that `sort` (presumably) works, it's time to improve upon `search`, the othe
 
 Cruel, we know.
 
-Anyway, re-implement `search` as binary search, that divide-and-conquer strategy we've seen employed. You are welcome to take an iterative approach (as with a loop) or, if feeling like jumping ahead a bit, a recursive approach (wherein a function calls itself). If you pursue the latter, though, know that you may not change our declaration of `search`, but you may write a new, recursive function (that perhaps takes different parameters) that `search` itself calls.  
+Anyway, re-implement `search` as binary search, that divide-and-conquer strategy we've seen employed. You are welcome to take an iterative approach (as with a loop) or, if feeling like jumping ahead a bit, a recursive approach (wherein a function calls itself). If you pursue the latter, though, know that you may not change our declaration of `search`, but you may write a new, recursive function (that perhaps takes different parameters) that `search` itself calls.
 
 When it comes time to submit your work, it suffices to submit this new-and-improved version of `search` only; you needn't submit your original version that used linear search.
 
@@ -413,6 +413,28 @@ video::7DSRJj7qfP8[youtube,height=540,width=960]
 
 == How to Submit
 
-//TODO
+Completing the submission process for Chapter 3 onward requires that you have turned in all problems from Chapters 0, 1, and 2.
+
+=== Step 1 of 2
+
+* To submit `seek`, execute
++
+[source]
+----
+cd ~/workspace/chapter3/seek
+submit50 2016/ap/seek
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/seek[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Seek.

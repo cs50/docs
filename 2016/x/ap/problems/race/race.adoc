@@ -13,7 +13,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 * Implement several __O(n^2^)__ sorting algorithms.
 * Experience principles of abstraction.
 * Write code that must conform into an existing framework.
-* Experience how real-world run time of algorithms differs from theoretical run time. 
+* Experience how real-world run time of algorithms differs from theoretical run time.
 
 == Recommended Reading
 
@@ -87,7 +87,7 @@ video::DFG-XuyPYUQ[youtube,height=540,width=960]
 
 Before moving on, be sure you're comfortable answering the following questions:
 
-** Why is bubble sort in _O_(_n_^2^)? 
+** Why is bubble sort in _O_(_n_^2^)?
 ** Why is insertion sort in Ω(_n_)?
 ** How does selection sort work?
 
@@ -149,7 +149,7 @@ Careful! We've added the `-f` flag this time, so `rm` will not confirm that you 
 cd race
 ----
 
-followed by 
+followed by
 
 [source,bash]
 ----
@@ -174,7 +174,7 @@ In this problem, you'll be racing the three __O(n^2^)__ sorting algorithms we've
 * arrays in completely random order, and
 * arrays that are already sorted.
 
-The good news is that you don't have to implement anything involving populating the arrays! You only have to do a tiny amount of command-line validation and implement the three sorting algorithms themselves. 
+The good news is that you don't have to implement anything involving populating the arrays! You only have to do a tiny amount of command-line validation and implement the three sorting algorithms themselves.
 
 But we're getting a bit ahead of ourselves. First we need to deal with the contents of the directory you just unzipped. Have a peek at the `Makefile` we've prepared for you. In particular, focus on this portion.
 
@@ -188,7 +188,7 @@ Per the dependencies implied above (after the colon), any changes to either `rac
 
 video::CSZLNYF4Klo[youtube,height=540,width=960]
 
-Interesting... so it turns out that `race.o` contains the __object code__ that was generated from a source file (presumably called `race.c`) that we wrote and partially compiled, but then chose not to include in the distro. We made this choice on the one hand because the code therein is a bit complicated at this stage of the course (thus allowing us to **abstract** some of the complex detail), but further because it provides you with an opportunity to write code that simply __must__ conform to a precise specification, or it won't work! 
+Interesting... so it turns out that `race.o` contains the __object code__ that was generated from a source file (presumably called `race.c`) that we wrote and partially compiled, but then chose not to include in the distro. We made this choice on the one hand because the code therein is a bit complicated at this stage of the course (thus allowing us to **abstract** some of the complex detail), but further because it provides you with an opportunity to write code that simply __must__ conform to a precise specification, or it won't work!
 
 It turns out that `race.o` contains the object code for, among other things, `main`. And if you can't change `main` then you can't change the way that `main` calls any functions, including the functions you'll be tasked with writing in this problem. Bummer!
 
@@ -340,8 +340,30 @@ passing in appropriate command-line arguments.
 
 In no part of this problem are you expected to optimize your runtimes for any of these algorithms (beyond, of course, implementing them correctly). Rather, after you get them implemented you should test different arrays of different sizes and different configurations to see under which circumstances each algorithm "shines". So you can see actual differences between these algorithms, we recommend that your `size` argument be at least `1000`, as that way they'll tend to take at least a few thousandths of a second to sort.
 
-== How to Submit 
+== How to Submit
 
-//TODO
+Completing the submission process for Chapter 3 onward requires that you have turned in all problems from Chapters 0, 1, and 2.
+
+=== Step 1 of 2
+
+* To submit Sort Race, execute
++
+[source]
+----
+cd ~/workspace/chapter3/race
+submit50 2016/ap/race
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/race[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Sort Race.

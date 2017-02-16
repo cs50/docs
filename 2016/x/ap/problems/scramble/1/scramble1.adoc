@@ -83,7 +83,7 @@ First, log into https://cs50.io/[cs50.io] and execute
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. 
+within a terminal window to make sure your workspace is up-to-date.
 
 Then, execute
 
@@ -115,7 +115,7 @@ scramble.c  words.txt
 
 == Scramblin'
 
-Scramble wasfootnote:[The game is probably more commonly known--as of this writing--as "Word Streak with Friends".] a game, popular on smartphones, that challenges you to find as many words as possible in a 4x4 grid of letters before a timer expires. Each pair of letters in a word can be adjacent horizontally, vertically, or diagonally. Below, for instance, is what the modern version of the game looks like on an Android phone. 
+Scramble wasfootnote:[The game is probably more commonly known--as of this writing--as "Word Streak with Friends".] a game, popular on smartphones, that challenges you to find as many words as possible in a 4x4 grid of letters before a timer expires. Each pair of letters in a word can be adjacent horizontally, vertically, or diagonally. Below, for instance, is what the modern version of the game looks like on an Android phone.
 
 image::scramble.png[Scramble]
 
@@ -157,7 +157,7 @@ to play grid #2, etc. That otherwise optional command-line arguments will be use
 
 Time to take a break from playing! Open up `scramble.c`. The challenge at hand in this problem is to complete this game's implementation. But first, let's take a tour.
 
-Notice first that atop `scramble.c` are a bunch of constants. Take note of the comments above each. Recall that declaring as constants values that you intend to use multiple times throughout 
+Notice first that atop `scramble.c` are a bunch of constants. Take note of the comments above each. Recall that declaring as constants values that you intend to use multiple times throughout
 your code tends to be good practice, so that you can change the value as needed in a single place.
 
 Next, below those constants are some global variables. Global variables tend to be frowned upon (because there's usually a cleaner way to achieve some goal). But when the sole purpose of a file is to implement some program, as is the case here with `scramble.c`, it's not unreasonable to use globals to avoid passing around particularly important values again and again among several functions. For instance, we've declared `grid` as a global simply because so many functions will need access to it anyway, as you'll eventually see.
@@ -170,8 +170,8 @@ Consider the prototypes below `dictionary` a sneak preview of the functions to c
 
 Incidentally, take care not to change any code related to `logfile`, which we use to automate some tests of your code!
 
-Next read through `main`, focusing first on the comments and then on the code. If unsure at first glance what some line does, take some time to figure it out. It'll be a lot easier to write new 
-code if you understand the code that's already there! If unfamiliar with some function, try to find it on CS50 Reference, else consult its "man page." 
+Next read through `main`, focusing first on the comments and then on the code. If unsure at first glance what some line does, take some time to figure it out. It'll be a lot easier to write new
+code if you understand the code that's already there! If unfamiliar with some function, try to find it on CS50 Reference, else consult its "man page."
 
 For instance, to pull up the manual for `atoi`, execute the below.footnote:[On occasion, you may need to execute `man 2 function` or `man 3 function`, where `function` is some function's name, lest you pull up the manual for a Linux command as opposed to a C function. For instance, the `man` page for C's `printf` is in (chapter) 3 and not 1, which is the default if you don't specify a chapter explicitly.]
 
@@ -184,7 +184,7 @@ Notice, incidentally, how we're utilizing some "ANSI color codes" in main in ord
 
 Also, while debugging your program, you might want to comment out the call to `clear` in `main` so that you can see everything printed by `printf`, without anything disappearing.
 
-Next read through each of the functions below `main`. Don't fret if you don't understand `find` and `crawl`, but do take a stab at reading through them. It turns out that `crawl` implements a 
+Next read through each of the functions below `main`. Don't fret if you don't understand `find` and `crawl`, but do take a stab at reading through them. It turns out that `crawl` implements a
 "recursive" algorithm (whereby `crawl` calls itself) that searches the grid horizontally, vertically, and diagonally for a particular word, "marking" letters temporarily as it visits them so that it doesn't accidentally get caught in an infinite loop.
 
 Meanwhile, `initialize` might look a bit intimidating, but spend some time figuring out how it goes about initializing the grid with a distribution of letters. The `man` page for `rand` (albeit a bit cryptic itself) might help you figure out all the arithmetic.
@@ -198,15 +198,37 @@ Hm, it seems we forgotfootnote:[Has the conceit of us "forgetting" to do certain
 Suffice it to say we need your help finishing this implementation of `scramble`! And just a couple other favors, too, if you don't mind!
 
 * Complete the implementation of `draw` (using some loops and `printf`) in such a way that `grid[i][j]` represents the letter in row `i`, column `j`. You're welcome to stray from the aesthetics of the staff's own solution.
-* Complete the implementation of `lookup` in such a way that the function returns `true` if and only if `word` is in `dictionary`. Odds are you can do better than linear search. Be sure to also mark the word's `found` attribute to be `true` also, to prevent users from scoring the same word multiple times! 
+* Complete the implementation of `lookup` in such a way that the function returns `true` if and only if `word` is in `dictionary`. Odds are you can do better than linear search. Be sure to also mark the word's `found` attribute to be `true` also, to prevent users from scoring the same word multiple times!
 * Complete the implementation of `scramble` (the function) in such a way that the grid is **rotated** 90 degrees clockwise anytime the user types ``SCRAMBLE``, per the comments therein.  Note that this feature doesn't affect the words in the grid; it simply lets the user see them from different perspective.
-* By default, the distribution code is case-sensitive, whereby if `FOO` is in dictionary, the user must type `FOO`, not `foo`, in order to score. Alter `main` in such a way that the user can 
+* By default, the distribution code is case-sensitive, whereby if `FOO` is in dictionary, the user must type `FOO`, not `foo`, in order to score. Alter `main` in such a way that the user can
 type `FOO` or `foo` (or even `FoO` or any other capitalization thereof) in order to score.
 
 Now you can play (well, maybe after some debugging) your own version of `scramble`!
 
 == How to Submit
 
-//TODO
+Completing the submission process for Chapter 3 onward requires that you have turned in all problems from Chapters 0, 1, and 2.
+
+=== Step 1 of 2
+
+* To submit Scramble (Part 1), execute
++
+[source]
+----
+cd ~/workspace/chapter3/scramble
+submit50 2016/ap/scramble
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/scramble[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Scramble (Part 1).

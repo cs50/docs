@@ -115,4 +115,8 @@ If completely unsure where to begin, head to Netflix's repository of science fic
 
 You needn't write more than 200 words for this part of the problem; predicting the future is tough work! Just ask a meteorologist.
 
+== How to Submit
+
+Submit https://newforms.cs50.net/2016/x/ap/ui[this form]!
+
 This was Me, Myself, and UI.
