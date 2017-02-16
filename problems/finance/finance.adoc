@@ -5,7 +5,7 @@ toclevels: 1
 = C$50 Finance
 
 == tl;dr
- 
+
 Implement a website via which users can "buy" and "sell" stocks, a la the below.
 
 image::finance.png["C$50 Finance",role="related thumb"]
@@ -97,7 +97,7 @@ Glance too at `static/`, inside of which is `styles.css`. That's where some init
 
 ==== `templates/`
 
-Now look in `templates/`. In `login.html` is, essentially, just an HTML form, stylized with http://getbootstrap.com/[Bootstrap]. In `apology.html`, meanwhile, is a template for an apology. Recall that `apology` in `helpers.py` took two arguments: `top` and `bottom`. Here they are again! And https://github.com/jacebrowning/memegen[here's why]. 0:-) 
+Now look in `templates/`. In `login.html` is, essentially, just an HTML form, stylized with http://getbootstrap.com/[Bootstrap]. In `apology.html`, meanwhile, is a template for an apology. Recall that `apology` in `helpers.py` took two arguments: `top` and `bottom`. Here they are again! And https://github.com/jacebrowning/memegen[here's why]. 0:-)
 
 Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.11/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
@@ -105,7 +105,7 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 === `register`
 
-Complete the implementation of `register` in such a way that it allows a user to register for an account. 
+Complete the implementation of `register` in such a way that it allows a user to register for an account.
 
 * Require that a user input a username. Render an apology if the user's input is blank or the username already exists.
 * Require that a user input a password and then that same password again. Render an apology if either input is blank or the passwords do not match.
@@ -157,7 +157,7 @@ Complete the implementation of `sell` in such a way that it enables a user to se
 
 Complete the implementation of `history` in such a way that it displays an HTML table summarizing all of a user's transactions ever, listing row by row each and every buy and every sell.
 
-* For each row, make clear whether a stock was bought or sold and include the stock's symbol, the (purchase or sale) price, the number of shares bought or sold, and the date and time at which the transaction occurred. 
+* For each row, make clear whether a stock was bought or sold and include the stock's symbol, the (purchase or sale) price, the number of shares bought or sold, and the date and time at which the transaction occurred.
 * You might need to alter the table you created for `buy` or supplement it with an additional table. Try to minimize redundancies.
 
 === personal touch
@@ -171,7 +171,7 @@ Implement one (1) additional feature, a personal touch of your choice:
 
 == Walkthroughs
 
-video::Fq2FkZ5_kL0[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
+video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 == Testing
 
@@ -207,7 +207,7 @@ It is *reasonable* to look at the staff's HTML and CSS.
 +
 If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index), then `execute` returns `None`. In cases of error, `execute` raises a `RuntimeError`.
 * Be sure to use named bind parameters (i.e., a https://www.python.org/dev/peps/pep-0249/#paramstyle[paramstyle] of `named`) when calling CS50's `execute` method, a la `WHERE name=:name`. Do *not* use https://docs.python.org/3.1/library/functions.html#format[`format`] or `+` (i.e., concatenation), lest you risk a SQL injection attack.
-* If (and only if) already comfortable with SQL, you're welcome to use http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy Core] or http://flask-sqlalchemy.pocoo.org/[Flask-SQLAlchemy] (i.e., http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy ORM]) instead of `cs50.SQL`. 
+* If (and only if) already comfortable with SQL, you're welcome to use http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy Core] or http://flask-sqlalchemy.pocoo.org/[Flask-SQLAlchemy] (i.e., http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy ORM]) instead of `cs50.SQL`.
 * You're welcome to add additional static files to `static/`.
 * You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site as well as change the site's aesthetics more generally, including https://memegen.link/api/templates/[apologies].
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
