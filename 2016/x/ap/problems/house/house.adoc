@@ -126,4 +126,8 @@ In no more than 400 wordsfootnote:[Seriously! In the real world, projects often 
 
 Conduct a little bit of research (formal or informal), and if you suspect others may be skeptical of your assertion that the device you chose is a computer, write persuasively so as to do your best to convince such individuals that you aren't crazy and that you know what you're talking about.
 
+== How to Submit
+
+Submit https://newforms.cs50.net/2016/x/ap/house[this form]!
+
 This was Around the House, your first problem in CS50 AP!

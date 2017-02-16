@@ -132,5 +132,8 @@ Ponder that. Was someone programming you to write this problem?
   <img src="http://media4.giphy.com/media/xT0GqtcVR0jOXzmmPK/giphy.gif" width="960"/>
 ++++
 
+== How to Submit
+
+Submit https://newforms.cs50.net/2016/x/ap/simulate[this form]!
 
 This was Simulate!

@@ -98,4 +98,8 @@ It's worth mentioning here that other than reporting on some technical specifica
 
 To be clear, you're not standing in the role of a salesperson. Make sure to speak factually for the most part, and if you do cite or offer an opinion on the product (e.g., "I think this product is great because..."), be sure that your paper is balanced by offering the opposing opinion too (e.g., "Some people might dislike this product because...").
 
+== How to Submit
+
+Submit https://newforms.cs50.net/2016/x/ap/tech[this form]!
+
 This was Tech Spotlight. And unfortunately, the Nyan Cat song is still stuck in our heads. :\
