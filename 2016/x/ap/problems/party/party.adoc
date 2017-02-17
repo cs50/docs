@@ -1,0 +1,237 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Problem: Birthday Party
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Begin your exploration of PHP.
+* Write a script to automate a process.
+* Read up on how to use an API.
+* Deal with "big data".
+
+== Recommended Reading
+
+* https://en.wikipedia.org/wiki/Comma-separated_values
+* http://php.net/manual/en/langref.php
+
+== Academic Honesty
+
+This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
+
+The essence of all work that you submit to this course must be your own. Collaboration on problems is not permitted (unless explicitly stated otherwise) except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your code or writing to others, but you may not view theirs, so long as you and they respect this policy's other constraints. Collaboration on quizzes and tests is not permitted at all. Collaboration on the final project is permitted to the extent prescribed by its specification.
+
+Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it until you solicit and receive approval in writing from your instructor. If a violation of this policy is suspected and confirmed, your instructor reserves the right to impose local sanctions on top of any disciplinary outcome that may include an unsatisfactory or failing grade for work submitted or for the course itself.
+
+=== Reasonable
+
+* Communicating with classmates about problems in English (or some other spoken language).
+* Discussing the course's material with others in order to understand it better.
+* Helping a classmate identify a bug in his or her code, such as by viewing, compiling, or running his or her code, even on your own computer.
+* Incorporating snippets of code that you find online or elsewhere into your own code, provided that those snippets are not themselves solutions to assigned problems and that you cite the snippets' origins.
+* Reviewing past years' quizzes, tests, and solutions thereto.
+* Sending or showing code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a bug.
+* Sharing snippets of your own solutions to problems online so that others might help you identify and fix a bug or other issue.
+* Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problems or your own final project.
+* Whiteboarding solutions to problems with others using diagrams or pseudocode but not actual code.
+* Working with (and even paying) a tutor to help you with the course, provided the tutor does not do your work for you.
+
+=== Not Reasonable
+
+* Accessing a solution to some problem prior to (re-)submitting your own.
+* Asking a classmate to see his or her solution to a problem before (re-)submitting your own.
+* Decompiling, deobfuscating, or disassembling the staff's solutions to problems.
+* Failing to cite (as with comments) the origins of code, writing, or techniques that you discover outside of the course's own lessons and integrate into your own work, even while respecting this policy's other constraints.
+* Giving or showing to a classmate a solution to a problem when it is he or she, and not you, who is struggling to solve it.
+* Looking at another individual's work during a quiz or test.
+* Paying or offering to pay an individual for work that you may submit as (part of) your own.
+* Providing or making available solutions to problems to individuals who might take this course in the future.
+* Searching for, soliciting, or viewing a quiz's questions or answers prior to taking the quiz.
+* Searching for or soliciting outright solutions to problems online or elsewhere.
+* Splitting a problem's workload with another individual and combining your work (unless explicitly authorized by the problem itself).
+* Submitting (after possibly modifying) the work of another individual beyond allowed snippets.
+* Submitting the same or similar work to this course that you have submitted or will submit to another.
+* Using resources during a quiz beyond those explicitly allowed in the quiz's instructions.
+* Viewing another's solution to a problem and basing your own solution on it.
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Started
+
+As always, we'll begin the setup process for this problem by logging into https://cs50.io[cs50.io] and executing:
+
+[source,bash]
+----
+update50
+----
+
+From there, create a new directory within your workspace called `unit8` and navigate inside. Then download the distro for this assignment by executing:
+
+[source,bash]
+----
+wget http://docs.cs50.net/2016/ap/problems/party/party.zip
+----
+
+and unzip the directory and navigate inside (remember how?). You should see a few files and directories:
+
+[source,bash]
+----
+body.txt  friends.csv  helpers.php  muppet.jpg  output/  template.php  vendor/
+----
+
+== Getting Ready
+
+It's CS50 Muppet's birthday!
+
+image:muppet.jpg[muppet.jpg]
+
+As you can see, he's quite excited about it. So excited, in fact, that he's throwing himself a huge celebration in his honor. (CS50 Muppet is nothing if not humble.) He's rented out his favorite location and now he just needs to send invitations to all of his friends!
+
+In addition to his humility, CS50 Muppet is also known for his organizational skills and over the years he's kept a meticulous database of every single one of his friends in a spreadsheet which he can also export as a comma-separated values file (CSV). We can't open a spreadsheet inside of CS50 IDE, but we can open a CSV file because those can also be read by text editors. So let's just open it up and see how many invitations we need to write. Can't be that bad!
+
+Oh. It is that bad.
+
+By the time CS50 Muppet finishes writing all of those invitations, he'll be getting ready to celebrate his **next** birthday! Fortunately, we can help generate those invitations for him.
+
+== PHParty
+
+Hopefully when reading the background here, you felt some comfort with the task at hand. This isn't the first time you've had to read a file--indeed, you did quite a bit of that in Chapter 4--nor is it the first time you've generated new files based on reading information from old ones. The major difference, of course, is that in this assignment you'll be doing all of the exploration of files and file construction using PHP instead of C, the language we've been using up to this point.
+
+PHP is a big language, and while we've spent months learning C, we don't have the time or the opportunity to dive deeply into PHP in quite the same way. But that's okay! The good news is that PHP is structurally quite similar to C. It has a lot of the same basic syntax rules, with just a few twists and quirks that make it different, and also a few improvements. This means that you can build upon the knowledge you've been acquiring and bootstrap yourself into learning more languages!
+
+It's important, though, to (re)acquaint yourself to these differences before diving in too deep. Here's Doug to give you a PHP crash course on syntax, which may come in handy as you start to work through this problem. The video is long, so feel free to skip around or fast forward through parts if you're already comfy with them.
+
+video::abUuRqYUUaY[youtube]
+
+=== helpers.php 
+
+There's actually even more good news than just the syntax similarity. Generating PDFs (which, of course, is the file format that CS50 Muppet wants for his birthday party invitations) is somewhat tricky, and delves into aspects of the language (such as __objects__) that we're not quite ready to throw your way just yetfootnote:[We'll wait until JavaScript before that!]. While fortunately there exists a PHP library called http://www.fpdf.org/[FPDF] that we can use to generate PDFs, the functions themselves sometimes have confusing and/or distracting parameter lists.
+
+So to that end, we've constructed an API that will give a feel similar to C to your first foray working with PHP to make the introduction just a bit more gentle. The functions that comprise that API can be found inside `helpers.php`; we'll quickly run them down for you now, though you should also peek inside that file (but don't edit it!) to see how the functions work.
+
+==== create_pdf
+
+This function initializesfootnote:[In object-oriented programming parlance, we would typically term this a __constructor__ but because we are "cheating" and using this API to avoid OOP, we won't call it that now.] a PDF object that we can then begin to work with. 
+
+But `create_pdf` does not itself actually save a file to your system. Similar to when you open up a file in, say, Microsoft Word, you could write an entire novel inside of `Document1`, but until and unless you save that filefootnote:[Let's leave temporary system files and autorecover out of the discussion so the water doesn't get too murky!] and (typically) give it a more permanent name, it's transient. If you close the program without saving, and then reopen Word, `Document1` will be blank. 
+
+So `create_pdf` is just like opening a new file in a text editor. We can type and edit as much as we want (which is what many of the below functions do), but until we actually save that file to the system, its contents are ephemeral.
+
+==== insert_image
+
+Because of the way FPDF works, we only need to specify the intended width of the image on the page; from there, the library examines the image and will output it at the correct height to preserve its aspect ratio so that it won't be blurry (unless, of course, the original image was itself blurry). Neat! Anyway, here all that needs to happen is for you to pass in a legal path an image file and that target width.
+
+==== save_as
+
+This is the function that actually takes the PDF object that you've been building and saves it. By default, FPDF would actually try to open up the PDF object in a browser, but that's not what we're hoping for here. Instead, we want to save it to a file (that's what the `F` parameter means in that functionfootnote:[Again, in object-oriented programming parlance, you'll soon see that we would typically refer to this as a "method".] call to `Output` within `save_as`) so that we could open it using a system viewer later.
+
+==== skip
+
+All this function does is permit us to literally "skip" down the page, creating some amount of blank space between sections.
+
+==== write_address
+
+This function writes the three lines that comprise the address block. You need only pass in the data you wish to see appear on each of the lines.
+
+==== write_body
+
+This function opens up another file (after first checking that said file exists), reads its content into a string, and then writes that. This form of __abstraction__ allows us to write the bulk of our letter separately, and then programmatically access the file when we want to build our PDFs.
+
+==== write_date
+
+This function writes the date line of the letter. It behaves quite similarly to `write_address`.
+
+==== write_line
+
+`write_line` is called by all of the other `write_` functions. The FPDF library stores data in the PDF by placing all text, images, and the like into "cells". This function is among the closest levels of direct interaction with FPDF's functions, and because of that all of the "higher-level" functions that write things larger than just lines can call `write_line` instead of similarly interfacing with FPDF directly.
+
+Recall from way back that the CS50 Library's `Get` functions actually do something quite similar. `GetString` is quite complex and handles memory allocation and buffers, the real nitty-gritty stuff of getting user data in C, but once that interface has been established, `GetInt` for example can just call `GetString` and then converts what it sees to an integer, instead of reinventing the wheel.
+
+==== write_signature
+
+Much like `write_date` or `write_address`, this function writes the signature portion of the letter.
+
+=== template.php
+
+Even more good news! `template.php` appears to contain the code to generate a single PDF with dummy information. To be sure, it isn't doing any reading of a CSV file, but it does show how all of the helper functions we've written are called, and it does produce a single output file. You can see as much by executing
+
+[source,bash]
+----
+php template.php
+----
+
+and then downloading the file that should be generated and saved in `output/template.pdf` and opening it on your local machine (*but not inside of CS50 IDE, which unfortunately does not yet have native PDF viewing support*).
+
+As an aside, one subtle thing you may have noticed by glancing at `template.php` is that it seems we are able to pass `$pdf` as a parameter to many functions, almost none of which has a return value, but it seems that `$pdf` itself is nevertheless changed. This seems to suggest that PHP always passes data by reference and not by value. 
+
+But that's not actually the case. PHP, like C, will by default pass data by value. However, the "value" of an object in PHP just so happens to be a reference to that object (known as a __reference handle__).
+
+Don't worry if you didn't quite follow that; it's not terribly important that you know each detail there, just know that that's why `$pdf` is changing from function call to function call despite `$pdf` itself only being a parameter to those functions and not somehow altered by the return value of those functions.
+
+=== body.txt
+
+As alluded to in the description for `write_body` above, this file simply contains the body paragraphs for our invitation. Editing this text and rerunning the program will result in updated invitations, so feel free to customize the body of your invitations with whatever text you'd like!
+
+=== friends.csv
+
+Aha! Here is the dataset that we are going to be processing. Notice that this file contains no information about what the columns mean (for reasons of simplicity), but know that each row is laid out in exactly this order:
+
+__firstname, lastname, address, city, state, zip__
+
+Such as, for example
+
+[source,txt]
+----
+David J.,Malan,33 Oxford Street,Cambridge,MA,02138
+----
+
+Rest assured, furthermore, that we will only ever test your program using CSV files that have exactly these six columns arranged in exactly that order.
+
+== One to Many
+
+Okay, now for coding part. Inside of a file called `invite.php`, write the code needed to generate one invitation PDF per guest.
+
+You are free to use `template.php` as a... err... template for the work that you'll do to create the invitations using the data in the CSV file. In fact, you may even wish to
+
+[source,bash]
+----
+cp template.php invite.php
+----
+
+to get started on the latter! It won't be a perfect translation from one to the other, of course. You'll first have to open and investigate `friends.csv`, but fortunately one of the functions in `helpers.php` does something similar! You'll have to loop through a number of invitations, possibly without knowing how many there are, and so a `while` loop may come in handy. And since you are going through a CSV file, you may find a PHP function like http://php.net/manual/en/function.fgetcsv.php[fgetcsv] is particularly well-suited to your needs. Be sure to read through the examples of its use for inspiration! As you'll see from those examples, here exists an opportunity to practice with PHP arrays.
+
+In a few places, such as when you make your call to `write_address`, you'll notice that you have six pieces of information (which you read from the CSV) at your disposal, but can only pass three parameters to `write_address`. Be sure to go back to Doug's video embedded above if you forget how to concatenate strings together, as you'll need to do that in order to get around this restriction. 
+
+At its core, this problem is about exploring PHP, so use it as an opportunity to research and explore... you'll be doing quite a bit of that in the future if you decide to continue down the road of being a computer scientist!
+
+Ultimately your program should be run as follows:
+
+[source,bash]
+----
+php invite.php friends.csv
+----
+
+So, looks like you'll also need to check to make sure you have the right number of command-line arguments!
+
+This should end up producing one PDF for each line in `friends.csv`, saving the results in the `output` folder with the filename `FirstLast.pdf` where `First` and `Last`, respectively, are the first and last names of the invitee as extracted from `friends.csv`. You can further assume, then, that no two people in that will have the same first and last name combination. For David Malan, then, the invitation would be saved in `output/DavidMalan.pdf`.
+
+When you're done... congratulations! Now CS50 Muppet has all the invitations for his birthday party. If only he had a process to automate stuffing the envelopes and mailing them out!
+
+This was Birthday Party.
