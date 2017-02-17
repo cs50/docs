@@ -97,4 +97,8 @@ In this writing problem, we want you to delve deeper into one particular cyberat
 
 Start by taking a look at the different types of attacks, and find one that intrigues you. From there, search the different examples of those attacks that have come up over the past few years and read a bit about each before picking the one you want to dive into. News stories covering major security breaches will be a good resource for you as well. This assignment will provide you with a deeper understanding of the creativity involved in these attacks and the necessity of robust testing - and it's an interesting conversation topic too.
 
+== How to Submit
+
+Submit https://newforms.cs50.net/2016/x/ap/defender[this form]!
+
 This was Defender of the Web.

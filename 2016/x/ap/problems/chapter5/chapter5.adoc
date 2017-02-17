@@ -269,4 +269,29 @@ Of course, you can do many more of each of the above; and to make a neat website
 
 Because this assignment will result in something different for each person, there's no `check50` for this one. Make sure that you've included everything listed above and you have no broken links or permission issues and you should be good to go.
 
+
+== How to Submit
+
+=== Step 1 of 2
+
+* To submit your website, execute
++
+[source]
+----
+cd ~/workspace/chapter5
+submit50 2016/ap/chapter5
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/chapter5[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
+
 This was </Chapter5>.
