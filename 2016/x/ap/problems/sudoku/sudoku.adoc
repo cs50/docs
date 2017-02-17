@@ -81,7 +81,7 @@ First, log into https://cs50.io/[cs50.io] and execute
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. 
+within a terminal window to make sure your workspace is up-to-date.
 
 Then, create a new directory inside of your `workspace` called `chapter4` (Remember how?) and navigate inside. Once there, obtain a copy of this problem's distro by typing:
 
@@ -159,11 +159,11 @@ watch tput cols
 
 to figure out how many columns your terminal window has. When you stretch or shrink your window and it reports "80", you can press ctrl+C to quit.
 
-Anyway, why this foray into terminal size? It turns out that ncurses individually addresses each character in your terminal window by way of (y, x) coordinatesfootnote:[Yes, annoyingly, (y, x) coordinates and not the typical (x, y) coordinates.], whereby (0, 0) refers to your terminal window's top-left corner, (0, 79) refers to your window's top-right corner, (23, 0) refers to the bottom-left corner, and (23, 79) refers to the bottom-right corner. 
+Anyway, why this foray into terminal size? It turns out that ncurses individually addresses each character in your terminal window by way of (y, x) coordinatesfootnote:[Yes, annoyingly, (y, x) coordinates and not the typical (x, y) coordinates.], whereby (0, 0) refers to your terminal window's top-left corner, (0, 79) refers to your window's top-right corner, (23, 0) refers to the bottom-left corner, and (23, 79) refers to the bottom-right corner.
 
 Even if your window boasts dimensions smaller or larger than these, the idea is the same. When it comes time to fill in a blank with respect to Sudoku, you'll simply update the `char` at some (y, x) coordinate.
 
-Now, let's talk about that skeleton. Basically, we've implemented the aesthetics for the game so that you can focus on the more interesting parts: the game's features. In fact, we've written the code (and comments) in such a way that you should be able to learn quite a bit about ncurses and more simply by reading our code. 
+Now, let's talk about that skeleton. Basically, we've implemented the aesthetics for the game so that you can focus on the more interesting parts: the game's features. In fact, we've written the code (and comments) in such a way that you should be able to learn quite a bit about ncurses and more simply by reading our code.
 
 Because this game is meant to be more sophisticated (and fun) than previous ones, you'll also find that we've given you quite a bit more code this time. Don't freak out, but it's just over 600 lines. But know now that none of it is all that complex. In fact, if you look at each of the functions in isolation, you'll likely find each pretty straightforward. What's neat is that when you combine so many building blocks, you get some pretty compelling results. In fact, let's take a look.
 
@@ -219,7 +219,7 @@ Now open up `sudoku.h` and play with all those mentions of color. It turns out t
 * `COLOR_CYAN`
 * `COLOR_WHITE`
 
-You will, of course, need to recompile your game to see any colorful changes. Not all that hard to make things look pretty hideous, eh? 
+You will, of course, need to recompile your game to see any colorful changes. Not all that hard to make things look pretty hideous, eh?
 
 In fact, for best results when working with ncurses you may find it convenient to change the theme of your CS50 IDE if you haven't already. By default, your terminal window has a blue background because your default theme is "Cloud9 Day". You can change the theme of your workspace at any time, however, by going to **View > Themes** and then choosing from the slate of available options. One easy switch is to use "Cloud9 Night" from that list. To be clear, you don't have to do this, but because the theme might override your ncurses color choices, a darker theme from the get-go might be your safest bet.
 
@@ -263,7 +263,7 @@ Next, have a look at `load_board`, which loads a n00b or l33t (or debug) board f
 
 Now peek at `draw_borders`. Mostly we want you to poke around here because it demonstrates how to use ncurses. Notice, for instance, that the function first determines your terminal window's dimensions using a macro called `getmaxyx`, a function built-in to ncurses. It eventually uses those maxima to fill your window's topmost and bottommost rows with color and instructions. Notice how the function enables color, specifically turning on the `COLOR_PAIR` attribute that we called `PAIR_BORDER` back in `sudoku.h`. It then proceeds to draw the game's borders by moving, left to right, coordinate to coordinate, laying down blank spaces, and doing some other neat things (like centering your `TITLE` and `AUTHOR` in the top order and planting instructions at the bottom) before shutting color back off.
 
-Now take a look at `draw_grid`, which lays down the ASCII art representing our game board. Similarly does it first determine your window's dimensions, then uses those values to determine coordinates for the grid's top left cornerfootnote:[We decided that we wanted the grid roughly in the middle of your window but slightly to the left, and so we came up with those formulas by trial and error.]. Rather then generate the grid character by character, this function instead lays down whole strings (using `mvaddstr`, another ncurses function) at once, repeatedly inside of a `for` loop. Then it also reminds the user of the level and board they are playing, and so we constructed a string on the fly with `sprintf`, then added it to the screen with a final call to `mvaddstr`. 
+Now take a look at `draw_grid`, which lays down the ASCII art representing our game board. Similarly does it first determine your window's dimensions, then uses those values to determine coordinates for the grid's top left cornerfootnote:[We decided that we wanted the grid roughly in the middle of your window but slightly to the left, and so we came up with those formulas by trial and error.]. Rather then generate the grid character by character, this function instead lays down whole strings (using `mvaddstr`, another ncurses function) at once, repeatedly inside of a `for` loop. Then it also reminds the user of the level and board they are playing, and so we constructed a string on the fly with `sprintf`, then added it to the screen with a final call to `mvaddstr`.
 
 Incidentally, we've mentioned a few of them now, but if curious to learn more about all these ncurses functions, `man` is your friend.
 
@@ -313,7 +313,7 @@ More than any other problem to date, this problem is about design. Do give some 
 * Enable the user to replace any blank with a number by moving his or her cursor over that blank and then hitting a number from 1 to 9.
 * Enable the user to change a number that they already inputted back to a blank by hitting any of 0, a period, `KEY_BACKSPACE`, or `KEY_DC` or to some other number from 1 to 9 by hitting that number.footnote:[Know that `KEY_BACKSPACE` and `KEY_DC` generally map to a keyboard's Backspace and Delete keys, respectively, if they're actually present. Don't worry if your own Backspace and/or Delete keys don't seem to work, even though you're listening for `KEY_BACKSPACE` and `KEY_DC`; some keyboards send different codes altogether.] You needn't (yet) prevent the user from altering numbers that "came with" the board.
 
-Just implementing these two features (movements and number entry) will allow users to play (and win!) the game of Sudoku... but even if they fill in all the numbers correctly, they won't know it quite yet! 
+Just implementing these two features (movements and number entry) will allow users to play (and win!) the game of Sudoku... but even if they fill in all the numbers correctly, they won't know it quite yet!
 
 == The student becomes the teacher
 
@@ -341,5 +341,31 @@ To play with the staff's own implementation of Sudoku, which incorporates all of
 ----
 ~cs50/chapter4/sudoku
 ----
+
+== How to Submit
+
+Completing the submission process for Chapter 4 onward requires that you have turned in all problems from Chapters 0, 1, 2, and 3.
+
+=== Step 1 of 2
+
+* To submit `sudoku`, execute
++
+[source]
+----
+cd ~/workspace/chapter4/sudoku
+submit50 2016/ap/sudoku
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/sudoku[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Sudoku.
