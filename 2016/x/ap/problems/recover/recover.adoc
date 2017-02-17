@@ -115,7 +115,7 @@ Ummm.
 
 image::adele.jpg[Adele]
 
-Okay, here's the thing.  Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patterns of bytes that can distinguish them from other file formats. Specifically, the first three bytes of JPEGs are 
+Okay, here's the thing.  Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patterns of bytes that can distinguish them from other file formats. Specifically, the first three bytes of JPEGs are
 
 [source,bash]
 ----
@@ -128,11 +128,11 @@ Odds are, if you find this pattern of four bytes on a disk known to store photos
 
 Fortunately, digital cameras tend to store photographs contiguously on CF cards, whereby each photo is stored immediately after the previously taken photo.  Accordingly, the start of a JPEG usually demarks the end of another.  However, digital cameras generally initialize CF cards with a FAT file system whose "block size" is 512 bytes (B).  The implication is that these cameras only write to those cards in units of 512 B.  A photo that's 1 MB (i.e., 1,048,576 B) thus takes up 1048576 ÷ 512 = 2048 "blocks" on a CF card.  But so does a photo that's, say, one byte smaller (i.e., 1,048,575 B)!  The wasted space on disk is called "slack space."  Forensic investigators often look at slack space for remnants of suspicious data.
 
-The implication of all these details is that you, the investigator, can probably write a program that iterates over a copy of David's CF card, looking for JPEGs' signatures.  Each time you find a signature, you can open a new file for writing and start filling that file with bytes from his CF card, closing that file only once you encounter another signature.  Moreover, rather than read his CF card's bytes one at a time, you can read 512 of them at a time into a buffer for efficiency's sake.  Thanks to FAT, you can trust that JPEGs' signatures will be "block-aligned."  That is, you need only look for those signatures in a block's first four bytes. 
+The implication of all these details is that you, the investigator, can probably write a program that iterates over a copy of David's CF card, looking for JPEGs' signatures.  Each time you find a signature, you can open a new file for writing and start filling that file with bytes from his CF card, closing that file only once you encounter another signature.  Moreover, rather than read his CF card's bytes one at a time, you can read 512 of them at a time into a buffer for efficiency's sake.  Thanks to FAT, you can trust that JPEGs' signatures will be "block-aligned."  That is, you need only look for those signatures in a block's first four bytes.
 
 Realize, of course, that JPEGs can span contiguous blocks.  Otherwise, no JPEG could be larger than 512 B.  But the last byte of a JPEG might not fall at the very end of a block.  Recall the possibility of slack space.  But not to worry.  Because this CF card was brand-new when he started snapping photos, odds are it'd been "zeroed" (i.e., filled with 0s) by the manufacturer, in which case any slack space will be filled with 0s.  It's okay if those trailing 0s end up in the JPEGs you recover; they should still be viewable.
 
-David, of course, only has one CF card, so he's gone ahead and created a "forensic image" of the card, storing its contents, byte after byte, in the file `camera.raw`. which lives inside of `~cs50/chapter4`.  So that you don't waste time iterating over millions of 0s unnecessarily, he's only imaged the first few megabytes of the CF card.  But you should ultimately find that the image contains 50 JPEGs (but don't hardcode that number in, lest we also need to use your program to recover a different set of images off of a different CF card).  You can, then, open the file programmatically with `fopen`, as in the below.  
+David, of course, only has one CF card, so he's gone ahead and created a "forensic image" of the card, storing its contents, byte after byte, in the file `camera.raw`. which lives inside of `~cs50/chapter4`.  So that you don't waste time iterating over millions of 0s unnecessarily, he's only imaged the first few megabytes of the CF card.  But you should ultimately find that the image contains 50 JPEGs (but don't hardcode that number in, lest we also need to use your program to recover a different set of images off of a different CF card).  You can, then, open the file programmatically with `fopen`, as in the below.
 
 [source,c]
 ----
@@ -149,7 +149,7 @@ Odds are, though, the JPEGs that the first draft of your code spits out won't be
 ----
 rm *.jpg
 ----
-   
+
 If you'd rather not be prompted to confirm each deletion, execute the command below instead.
 
 [source,bash]
@@ -182,5 +182,31 @@ Before you consider this problem set done, best to ask yourself these questions 
 * Does `recover` output 50 JPEGs when not passed in any command-line arguments?  Are all 50 viewable?
 * Does `recover` name the JPEGs `pass:[###].jpg`, where `pass:[###]` is a three-digit number from `000` through `049`?
 * Are you sure that `recover` doesn't have any memory leaks?
+
+== How to Submit
+
+Completing the submission process for Chapter 4 onward requires that you have turned in all problems from Chapters 0, 1, 2, and 3.
+
+=== Step 1 of 2
+
+* To submit `recover`, execute
++
+[source]
+----
+cd ~/workspace/chapter4/recover
+submit50 2016/ap/recover
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/recover[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Recover.

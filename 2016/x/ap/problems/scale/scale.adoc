@@ -230,7 +230,7 @@ Recall that `smiley.bmp` is 8 by 8 pixels, and so it should take up 14 + 40 + (8
 
 image:disk.png[smiley.bmp on disk]
 
-As this figure suggests, order does matter when it comes to ``struct``s' members.  Byte 57 is `rgbtBlue` (and not, say, `rgbtRed`), because `rgbtBlue` is defined first in `RGBTRIPLE`.  Our use, incidentally, of the `__attribute__` called `__packed__` ensures that `clang` does not try to "word-align" members (whereby the address of each member's first byte is a multiple of 4), lest we end up with "gaps" in our `struct`s that don't actually exist on disk. 
+As this figure suggests, order does matter when it comes to ``struct``s' members.  Byte 57 is `rgbtBlue` (and not, say, `rgbtRed`), because `rgbtBlue` is defined first in `RGBTRIPLE`.  Our use, incidentally, of the `__attribute__` called `__packed__` ensures that `clang` does not try to "word-align" members (whereby the address of each member's first byte is a multiple of 4), lest we end up with "gaps" in our `struct`s that don't actually exist on disk.
 
 Now go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.  These reference guides will allow you go get some answers to your bitmap-related questions from MSDN (Microsoft Developer Network).
 
@@ -243,7 +243,7 @@ Alright, next challenge!  Implement now in `scale.c` a program called `scale` th
 Usage: ./scale n infile outfile
 ----
 
-With a program like this, we could have created `large.bmp` out of `small.bmp` by resizing the latter by a factor of 4 (i.e., by multiplying both its width and its height by 4), per the below. 
+With a program like this, we could have created `large.bmp` out of `small.bmp` by resizing the latter by a factor of 4 (i.e., by multiplying both its width and its height by 4), per the below.
 
 [source,bash]
 ----
@@ -259,7 +259,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 check50 1617.chapter4.scale bmp.h scale.c
 ----
 
-If you'd like to play with the staff's own implementation of `scale`, you may execute the below.   
+If you'd like to play with the staff's own implementation of `scale`, you may execute the below.
 
 [source,bash]
 ----
@@ -287,5 +287,31 @@ If you happen to use `malloc`, be sure to use `free` so as not to leak memory. T
 Here's Zamyla again!
 
 video::g8LEbJapnj8[youtube,height=540,width=960]
+
+== How to Submit
+
+Completing the submission process for Chapter 4 onward requires that you have turned in all problems from Chapters 0, 1, 2, and 3.
+
+=== Step 1 of 2
+
+* To submit `scale`, execute
++
+[source]
+----
+cd ~/workspace/chapter4/scale
+submit50 2016/ap/scale
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/scale[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Scale.
