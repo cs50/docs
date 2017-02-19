@@ -5,7 +5,6 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
         <script crossorigin="anonymous" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
@@ -36,11 +35,17 @@
         </script>
         <style>
 
-            {% include asciidoctor.css %}
+            /* asciidoctor -a linkcss -b html5 -D . /dev/null */
+            /* remove a:focus for accessibility */
+            {% capture css %}{% include asciidoctor.css %}{% endcapture %}
+            {% capture none %}{% raw %}a:focus { outline: none; }{% endraw %}{% endcapture %}
+            {% capture dotted %}{% raw %}a:focus { outline: thin dotted; }{% endraw %}{% endcapture %}
+            {{ css | replace: none, '' | replace: dotted, '' }}
 
         </style>
         <style>
 
+            /* https://github.com/asciidoctor/jekyll-asciidoc#adding-supplemental-assets */
             {% include asciidoc-pygments.css %}
 
         </style>
