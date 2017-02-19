@@ -27,7 +27,7 @@ If you feel you need to, take another peek at Doug's video on Javascript!
 
 video::JYIKYnbdu4E[youtube]
 
-include::../../../../fall/honesty.adoc[]
+include::../../../../../fall/honesty.adoc[]
 
 == Assessment
 
