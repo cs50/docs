@@ -17,3 +17,8 @@ _If your changes do not affect the rendered files under `docs/` (e.g., changes t
 1. `make container`
 1. `make docs`
 1. View `docs/*`.
+
+# TODO
+
+* Move copies of `problems/*` into `2016/` and `2017/`.
+  * Add `layout: 2016/fall` and `layout: 2017/spring` and `layout: 2017/x` to front matter.
