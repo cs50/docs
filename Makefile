@@ -3,8 +3,8 @@ default: container
 image:
 	docker build -t docs .
 
-container: image
-	docker run -i --name cli50 --rm -v "$(PWD)":/root -t docs
+container:
+	docker run -i --rm -v "$(PWD)":/root -t docs
 
 docs: clean
 	jekyll build -V
