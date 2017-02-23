@@ -11,7 +11,7 @@ layout: default
 * Compare and contrast different modern user interface designs
 * Predict the future
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

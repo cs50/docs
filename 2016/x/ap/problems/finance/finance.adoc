@@ -58,7 +58,7 @@ video::G58ujNjWEJY[youtube]
 
 Phew, bit of a fire hydrant, no?  Not to worry, some fun and more comfort await!
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

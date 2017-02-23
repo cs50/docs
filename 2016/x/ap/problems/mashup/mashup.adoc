@@ -26,7 +26,7 @@ layout: default
 
 video::ZyXuwTTKKM0[youtube]
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

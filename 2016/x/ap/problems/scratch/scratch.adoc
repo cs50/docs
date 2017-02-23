@@ -12,7 +12,7 @@ layout: default
 * Design your own animation, game, or interactive art.
 * Impress your friends.
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

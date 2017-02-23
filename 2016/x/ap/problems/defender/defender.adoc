@@ -13,7 +13,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 * Delve into one in more depth and understand exactly how it works.
 * Become familiar with how to defend against the attack.
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

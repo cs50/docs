@@ -23,7 +23,7 @@ WELCOME TO GAME OF FIFTEEN
 Tile to move:
 ----
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

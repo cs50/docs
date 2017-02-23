@@ -12,7 +12,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 * Ensure you're familiar with all components of the Internet.
 * Think about how to talk about technical topics in layman's terms.
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

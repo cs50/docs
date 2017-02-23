@@ -12,7 +12,7 @@ layout: default
 * Become familiar with "pseudocode."
 * Have fun experimenting with your peers' algorithms.
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

@@ -17,7 +17,7 @@ layout: default
 * Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
 * Chapters 1 – 6 of *Programming in C*.
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 
