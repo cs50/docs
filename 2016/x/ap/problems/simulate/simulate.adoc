@@ -11,7 +11,7 @@ layout: default
 * Articulate uses for simulation software in everyday life
 * Use models and simulations to formulate, refine, and test hypotheses
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../honesty.adoc[]
 
 == Assessment
 

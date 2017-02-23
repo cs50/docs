@@ -19,7 +19,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 * Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
 * Chapters 7, 8, and 10 of _Programming in C_.
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../honesty.adoc[]
 
 == Assessment
 

@@ -21,7 +21,7 @@ Don't be alarmed by the length of this problem's specification. Most of it is ju
 * Chapters 1 – 5, 9, and 11 – 17 of _Absolute Beginner's Guide to C_.
 * Chapters 1 – 6 of _Programming in C_.
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../honesty.adoc[]
 
 == Getting Started
 
