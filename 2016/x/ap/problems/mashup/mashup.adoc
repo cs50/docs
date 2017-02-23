@@ -3,7 +3,7 @@ layout: default
 ---
 :skip-front-matter:
 
-= Problem: Mashup (Part 1)
+= Problem: Mashup
 
 == Prerequisites
 
@@ -26,7 +26,7 @@ layout: default
 
 video::ZyXuwTTKKM0[youtube]
 
-include::../../../../fall/honesty.adoc[]
+include::/2016/fall/honesty.adoc
 
 == Assessment
 
