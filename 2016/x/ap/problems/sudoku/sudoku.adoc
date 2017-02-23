@@ -19,7 +19,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 
 * Sections 1&mdash;13 of http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/.
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 

@@ -14,7 +14,7 @@ Questions?  Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], 
 * Start thinking about what constitutes good design.
 * Creatively extend the work of others.
 
-include:: ../../honesty.adoc[]
+include::../../honesty.adoc[]
 
 == Assessment
 
