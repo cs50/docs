@@ -10,7 +10,7 @@ layout: default
 * Think critically about computers and computing.
 * Learn about how to write with an eye towards a technical audience.
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../honesty.adoc[]
 
 == Assessment
 

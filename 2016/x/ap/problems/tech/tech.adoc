@@ -11,7 +11,7 @@ layout: default
 * Incorporate multiple sources into your writing.
 * Understand and reflect on some of the real-world implications of new technologies.
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../honesty.adoc[]
 
 == Assessment
 

@@ -23,7 +23,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 
 * This problem requires that you have completed http://cdn.cs50.net/ap/1516/problems/3/7/3-7.html[Problem 3-7]. Unfortunately we are not able to provide a partial staff solution as the basis for this particular problem. 
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../../honesty.adoc[]
 
 == Assessment
 

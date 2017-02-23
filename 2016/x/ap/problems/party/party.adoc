@@ -19,7 +19,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 * https://en.wikipedia.org/wiki/Comma-separated_values
 * http://php.net/manual/en/langref.php
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../honesty.adoc[]
 
 == Assessment
 

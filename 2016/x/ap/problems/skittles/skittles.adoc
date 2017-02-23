@@ -21,7 +21,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 * Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
 * Chapters 1 – 6 of _Programming in C_.
 
-include::/2016/fall/honesty.adoc[]
+include:: ../../honesty.adoc[]
 
 == Assessment
 
