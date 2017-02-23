@@ -1,6 +1,5 @@
 ---
-layout: 2016/fall
-title: Pennies
+layout: default
 ---
 :skip-front-matter:
 
@@ -17,48 +16,10 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 == Recommended Reading
 
 * Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-// TODO
 * Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
 * Chapters 1 – 6 of _Programming in C_.
 
-== Academic Honesty
-
-This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
-
-The essence of all work that you submit to this course must be your own. Collaboration on problems is not permitted (unless explicitly stated otherwise) except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your code or writing to others, but you may not view theirs, so long as you and they respect this policy's other constraints. Collaboration on quizzes and tests is not permitted at all. Collaboration on the final project is permitted to the extent prescribed by its specification.
-
-Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it until you solicit and receive approval in writing from your instructor. If a violation of this policy is suspected and confirmed, your instructor reserves the right to impose local sanctions on top of any disciplinary outcome that may include an unsatisfactory or failing grade for work submitted or for the course itself.
-
-=== Reasonable
-
-* Communicating with classmates about problems in English (or some other spoken language).
-* Discussing the course's material with others in order to understand it better.
-* Helping a classmate identify a bug in his or her code, such as by viewing, compiling, or running his or her code, even on your own computer.
-* Incorporating snippets of code that you find online or elsewhere into your own code, provided that those snippets are not themselves solutions to assigned problems and that you cite the snippets' origins.
-* Reviewing past years' quizzes, tests, and solutions thereto.
-* Sending or showing code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a bug.
-* Sharing snippets of your own solutions to problems online so that others might help you identify and fix a bug or other issue.
-* Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problems or your own final project.
-* Whiteboarding solutions to problems with others using diagrams or pseudocode but not actual code.
-* Working with (and even paying) a tutor to help you with the course, provided the tutor does not do your work for you.
-
-=== Not Reasonable
-
-* Accessing a solution to some problem prior to (re-)submitting your own.
-* Asking a classmate to see his or her solution to a problem before (re-)submitting your own.
-* Decompiling, deobfuscating, or disassembling the staff's solutions to problems.
-* Failing to cite (as with comments) the origins of code, writing, or techniques that you discover outside of the course's own lessons and integrate into your own work, even while respecting this policy's other constraints.
-* Giving or showing to a classmate a solution to a problem when it is he or she, and not you, who is struggling to solve it.
-* Looking at another individual's work during a quiz or test.
-* Paying or offering to pay an individual for work that you may submit as (part of) your own.
-* Providing or making available solutions to problems to individuals who might take this course in the future.
-* Searching for, soliciting, or viewing a quiz's questions or answers prior to taking the quiz.
-* Searching for or soliciting outright solutions to problems online or elsewhere.
-* Splitting a problem's workload with another individual and combining your work (unless explicitly authorized by the problem itself).
-* Submitting (after possibly modifying) the work of another individual beyond allowed snippets.
-* Submitting the same or similar work to this course that you have submitted or will submit to another.
-* Using resources during a quiz beyond those explicitly allowed in the quiz's instructions.
-* Viewing another's solution to a problem and basing your own solution on it.
+include::/2016/fall/honesty.adoc[]
 
 == Assessment
 

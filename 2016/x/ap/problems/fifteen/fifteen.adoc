@@ -1,10 +1,9 @@
 ---
-layout: 2016/fall
-title: Game of Fifteen
+layout: default
 ---
 :skip-front-matter:
 
-= Game of Fifteen
+= Problem: Game of Fifteen
 
 == tl;dr
 
@@ -23,6 +22,23 @@ WELCOME TO GAME OF FIFTEEN
 
 Tile to move:
 ----
+
+include::/2016/fall/honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Background
 
