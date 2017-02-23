@@ -58,7 +58,7 @@ video::G58ujNjWEJY[youtube]
 
 Phew, bit of a fire hydrant, no?  Not to worry, some fun and more comfort await!
 
-include::../../../../../fall/honesty.adoc[]
+include::../../../../fall/honesty.adoc[]
 
 == Assessment
 
@@ -113,7 +113,7 @@ you should see that you now have a file called `finance.zip` in your `~/workspac
 
 [source]
 ----
-unzip finance
+unzip finance.zip
 ----
 
 If you again execute
@@ -534,7 +534,7 @@ Exactly what sort of information need we keep in this new table in order to "rem
 
 If you decide to go with four fields (namely `id`, `user_id`, `symbol`, and `shares`), realize that `user_id` should not be defined as a `UNIQUE` key in this table, else each user could own no more than one company's stock since his or her `id` could not appear (as `user_id`) in more than one row).  Realize, too, that you shouldn't let some `user_id` and some `symbol` to appear together in more than one row.  Better to consolidate users' holdings by updating shares whenever some user sells or buys more shares of some stock he or she already owns.  (A neat way to impose this restriction _after_ creating your table is to add a "joint key." After saving your table, click phpMyAdmin's *Structure* tab for the table, then check both `user_id` and `symbol`, then click *Unique* to the right of *With selected*.  That way, `INSERT` will fail if you try to insert more than one row for some pair of `user_id` and `symbol`.)  We leave it to you, though, to decide your fields' types.  (Just know that `user_id` in this table should have a type that's identical to `id` in `users`.  But don't specify `AUTO_INCREMENT` for that field in this new table, as you only want auto-incrementation when user IDs are created for new users.)  When done defining your table, click *Save*!
 
-Before we let users buy and sell stocks themselves (see the forthcoming Part 2!), let's give some shares to President Skroob and friends at no charge.  Click, in phpMyAdmin's left-hand frame, the link to `users` and remind yourself of your current users' IDs.  Then click, in phpMyAdmin's left-hand frame, the link to your new table (for users' portfolios), followed by the tab labeled *Insert*.  Via this interface, go ahead and "buy" some shares of some stocks on behalf of your users by manually inserting rows into this table.  (You may want to return to Yahoo! Finance to look up some actual symbols.)  No need to debit their `cash` in `users`; consider these shares freebies.  
+Before we let users buy and sell stocks themselves, let's give some shares to President Skroob and friends at no charge.  Click, in phpMyAdmin's left-hand frame, the link to `users` and remind yourself of your current users' IDs.  Then click, in phpMyAdmin's left-hand frame, the link to your new table (for users' portfolios), followed by the tab labeled *Insert*.  Via this interface, go ahead and "buy" some shares of some stocks on behalf of your users by manually inserting rows into this table.  (You may want to return to Yahoo! Finance to look up some actual symbols.)  No need to debit their `cash` in `users`; consider these shares freebies.  
 
 Once you've bought your users some shares, let's see what you did.  Click the tab labeled *SQL* and run a query like the below.
 
@@ -661,6 +661,80 @@ Here's Zamyla with some additional tips:
 
 video::ExR5lqe3ogc[youtube]
 
+== Money Never Sleeps
+
+You implemented the functionality to register new users, get stock quotes, and show a user's stock portfolio. Now, its time to let them "buy" and "sell" stocks, filling up (or emptying) their portfolio!
+
+=== sell
+
+And now it is time to implement the ability to sell with a controller called, say, `sell.php` and some number of views.  We leave the design of this feature to you.  But know that you can delete rows from your table (on behalf of, say, President Skroob) with SQL like the below.
+
+[source,sql]
+----
+DELETE FROM portfolios WHERE user_id = 9 AND symbol = 'FREE'
+----
+
+We leave it to you to infer exactly what that statement should do.  Of course, you could try the above out via phpMyAdmin's *SQL* tab.  Now what about the user's cash balance?  Odds are, your user is going to want the proceeds of all sales.  So selling a stock involves updating not only your table for users' portfolios but `users` as well.  We leave it to you to determine how to compute how much cash a user is owed upon sale of some stock.  But once you know that amount (say, $500), SQL like the below should take care of the deposit (for, say, President Skroob). 
+
+[source,sql]
+----
+UPDATE users SET cash = cash + 500 WHERE id = 9
+----
+
+Of course, if the database or web server happens to die between this `DELETE` and `UPDATE`, President Skroob might lose out on all of that cash.  You need not worry about such cases!  It's also possible, because of multithreading and, thus, race conditions, that a clever president could trick your site into paying out more than once.  You need not worry about such cases either!  Though, if you're so very inclined, you can employ SQL "transactions" (with InnoDB tables).  See http://dev.mysql.com/doc/refman/5.5/en/sql-syntax-transactions.html if curious.
+
+It's fine, for simplicity, to require that users sell all shares of some stock or none, rather than only a few.  Needless to say, try out your code by logging in as some user and selling some stuff.  You can always "buy" it back manually with phpMyAdmin.
+
+As always, be sure that your HTML is valid!
+
+And as always, here is Zamyla!
+
+video::OfMXp22SNq8[youtube]
+
+=== buy
+
+Now it's time to support actual buys.  Implement the ability to buy, with a controller called, say, `buy.php` and some number of views.  (As before, you need not worry about interruptions of service or race conditions.)  The interface with which you provide a user is entirely up to you, though, as before, feel free to look to https://finance.cs50.net/ for inspiration or hints.  Of course, you'll need to ensure that a user cannot spend more cash than he or she has on hand.  And you'll want to make sure that users can only buy whole shares of stocks, not fractions thereof.  For this latter requirement, know that a call like
+
+[source,php]
+----
+preg_match("/^\d+$/", $_POST["shares"])
+----
+
+will return `true` if and only if `$_POST["shares"]` contains a non-negative integer, thanks to its use of a regular expression.  See http://www.php.net/preg_match for details.  Take care to apologize to the user if you must reject their input for any reason.  In other words, be sure to perform rigorous error-checking.  (We leave to you to determine what needs to be checked!)
+
+When it comes time to store stocks' symbols in your database table, take care to store them in uppercase (as is convention), no matter how they were inputted by users, so that you don't accidentally treat, say, `free` and `FREE` as different stocks.  Don't force users, though, to input symbols in uppercase.
+
+Incidentally, if you implemented your table for users' portfolios as we did ours (with that joint key), know that SQL like the below (which, unfortunately, wraps onto two lines) will insert a new row into table unless the specified pair of `id` and `symbol` already exists in some row, in which case that row's number of shares will simply be increased (say, by `10`).
+
+[source,sql]
+----
+INSERT INTO portfolios (user_id, symbol, shares) VALUES(9, 'FREE', 10) ON DUPLICATE KEY UPDATE shares = shares + VALUES(shares)
+----
+
+As always, be sure to bang on your code.  And be sure that your HTML is valid!
+
+Here's Zamyla with some additional help:
+
+video::vWIKlxF1iog[youtube]
+
+=== history
+
+Alright, so your users can now buy and sell stocks and even check their portfolio's value.  But they have no way of viewing their history of transactions.
+
+Enhance your implementations for buying and selling in such a way that you start logging transactions, recording for each:
+
+* Whether a stock was bought or sold.
+* The symbol bought or sold.
+* The number of shares bought or sold.
+* The price of a share at the time of transaction.
+* The date and time of the transaction.
+
+Then, by way of a controller called, say, `history.php` and some number of views, enable users to peruse their own history of transactions, formatted as you see fit.  Be sure that your HTML is valid!
+
+Here's Zamyla again:
+
+video::XuxJbwCdquk[youtube]
+
 == Check It Out
 
 Before you consider this problem set done, best to ask yourself these questions and then go back and improve your code as needed!  Do not consider the below an exhaustive list of expectations, though, just some helpful reminders.  The checkboxes that have come before these represent the exhaustive list!  To be clear, consider the questions below rhetorical.  No need to answer them in writing for us, since all of your answers should be "yes!"
@@ -671,7 +745,9 @@ Before you consider this problem set done, best to ask yourself these questions 
 * Are you displaying any dollar amounts to at least two decimal places but no more than four?
 * Are you storing stocks' symbols in your table(s) in uppercase?
 
-== Turn It In
+== How to Submit
+
+=== Step 1 of 4
 
 . When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where `username` is your own username (type the command ‘username50’ if you forgot it), and pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by typing ‘password50’). For security, you won't see the password as you paste it.
 +
@@ -682,8 +758,36 @@ mysqldump -u username -p finance > finance.sql
 ----
 +
 If you type `ls` thereafter, you should see that you have a new file called `finance.sql` in `~/workspace/finance`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `finance.sql` with `rm finance.sql`, then re-export as before.)
-. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*. You should find that your browser has downloaded `finance.tar.gz`, a "gzipped tarball" that's similar in spirit to a ZIP file.
-. Await instructions from your instructor on how to submit the tarball!
+
+=== Step 2 of 4
+
+Recall that, in the Scratch problem, you signed up for a https://github.com/[GitHub account].
+
+If you haven't already, visit https://cs50.me/[cs50.me], log in with that same GitHub account, and click *Authorize application*. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
+
+Once you've logged in and authorized, you can immediately log out. Logging in once simply ensures that you can submit code via `submit50`, per step 3 of 4!
+
+=== Step 3 of 4
+
+* To submit `finance`, execute
++
+[source]
+----
+cd ~/workspace/chapter6/
+submit50 2016/ap/finance
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 4 of 4
+
+Submit https://newforms.cs50.net/2016/x/ap/finance[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 
-This was Problem C$50 Finance (Part 1).
+This was Problem C$50 Finance.
