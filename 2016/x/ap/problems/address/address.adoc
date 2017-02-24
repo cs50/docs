@@ -57,7 +57,7 @@ Once comfortable, its time to dive in!
 
 == Getting started
 
-Open up your IDE and make sure you have an updated IDE before executing (from within the directory where you are working on problems in Chapter 6):
+Open up your IDE and make sure you have an updated IDE before executing (from within the directory where you are working on problems in Chapter 6, which ordinarily should be `~/workspace/chapter6`):
 
 [source,bash]
 ----
@@ -140,5 +140,31 @@ When finished your locally hosted site should be able to:
 * Take contact information from CS50 Muppet, entered via a web form
 * Ensure that the contact information is complete, redirecting the user to try again if not
 * If the contact information is complete, write it to `contacts.csv`
+
+== How to Submit
+
+=== Step 1 of 2
+
+So long as you've previously activated your cs50.me account:
+
+* To submit Address Book, execute
++
+[source]
+----
+cd ~/workspace/chapter6/address
+submit50 2016/ap/address
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/address[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Address Book.

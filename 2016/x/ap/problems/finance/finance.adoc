@@ -7,8 +7,8 @@ layout: default
 
 == Prerequisites
 
-* PHP syntax 
-* PHP web programming 
+* PHP syntax
+* PHP web programming
 
 == Objectives
 
@@ -109,7 +109,7 @@ in order to download a ZIP (i.e., compressed version) of this problem set's dist
 ls
 ----
 
-you should see that you now have a file called `finance.zip` in your `~/workspace` directory (along with `finance.sql`).  Unzip it by executing the below.
+you should see that you now have a file called `finance.zip` in your `~/workspace` directory (along with `finance.sql`). (Make sure it's in your `~/workspace` directory, and not `~/workspace/chapter6`. Trust us, it's easier this way.)  Unzip it by executing the below.
 
 [source]
 ----
@@ -230,7 +230,7 @@ Anyhow, let's tackle those ``TODO``s! Enter the command
 username50
 ----
 
-and 
+and
 
 [source,bash]
 ----
@@ -241,7 +241,7 @@ You should see your *MySQL Username* and your *MySQL Password*. Copy and paste t
 
 It's now time for a test! Visit `pass:[https://ide50-username.cs50.io/]`, where `username` is your own username.  You should find yourself redirected to C$50 Finance's login page!  (If you instead see *Forbidden*, odds are you missed a step earlier; best to try all those chmod steps again.)  If you try logging into C$50 Finance with a username of, oh, *skroob* and a password of *12345*, you should encounter an error about an *Unknown database*.  That's simply because you haven't created it yet!  Let's create it.
 
-In a separate tab, head to `pass:[https://ide50-username.cs50.io/phpmyadmin]` (where `username` is, again, your own username) to access phpMyAdmin, a Web-based tool (that happens to be written in PHP) with which you can manage MySQL databases.  (MySQL is a free, open-source database that CS50, Facebook, and lots of other sites use.)  Log in with the same username and password that you pasted into `config.json`.  You should then find yourself at phpMyAdmin's main page.  
+In a separate tab, head to `pass:[https://ide50-username.cs50.io/phpmyadmin]` (where `username` is, again, your own username) to access phpMyAdmin, a Web-based tool (that happens to be written in PHP) with which you can manage MySQL databases.  (MySQL is a free, open-source database that CS50, Facebook, and lots of other sites use.)  Log in with the same username and password that you pasted into `config.json`.  You should then find yourself at phpMyAdmin's main page.
 
 Within CS50 IDE, now, open up `finance.sql`, which you downloaded earlier (via `wget`). You should see a whole bunch of SQL statements.  Highlight them all, select *Edit > Copy* (or hit control-c), then return to phpMyAdmin.  Click phpMyAdmin's *SQL* tab, and paste everything you copied into that page's big text box (which is below *Run SQL query/queries on server "127.0.0.1"*).  Skim what you just pasted to get a sense of the commands you're about to execute, then click *Go*.  You should then see a greenish banner indicating success (i.e., *1 row affected*).  In phpMyAdmin's top-left corner, you should now see link to a database called *finance*, beneath which is a link to a table called *users*. (If you don't, try reloading the page.) But more on those later.
 
@@ -320,7 +320,7 @@ In fact, let's turn our attention to the code you've been given.
 
 Navigate your way to `~/workspace/finance/public` and open up `index.php`.  Know that `index.php` is the file that's loaded by default when you visit a URL like `pass:[https://ide50-username.cs50.io/]`.  Well, it turns out there's not much PHP code in this file.  And there isn't any HTML at all.  Rather, `index.php` "requires" `config.php` (which is in a directory called `includes` in ``index.php``'s parent directory).  And `index.php` then calls `render` (a function implemented in a file called `helpers.php` that can also be found inside of `includes`) in order to render (i.e., output) a view (i.e., template) called `portfolio.php` (which is in a directory called `views` in `index.php`'s parent directory).  Phew, that was a mouthful.
 
-It turns out that `index.php` is considered a "controller," whereby its purpose in life is to control the behavior of your website when a user visits `pass:[https://ide50-username.cs50.io/]` (or, equivalently, `pass:[https://ide50-username.cs50.io/index.php]`).  Eventually, you'll need to add some more PHP code to this file in order to pass more than just title to render.  But for now, let's take a look at `portfolio.php`, the view that this controller ultimately renders.  
+It turns out that `index.php` is considered a "controller," whereby its purpose in life is to control the behavior of your website when a user visits `pass:[https://ide50-username.cs50.io/]` (or, equivalently, `pass:[https://ide50-username.cs50.io/index.php]`).  Eventually, you'll need to add some more PHP code to this file in order to pass more than just title to render.  But for now, let's take a look at `portfolio.php`, the view that this controller ultimately renders.
 
 === portfolio
 
@@ -364,7 +364,7 @@ in `login.php` is to replace `?` with whatever username has been submitted (via 
 
 [source,sql]
 ----
-SELECT * FROM users WHERE username='skroob' 
+SELECT * FROM users WHERE username='skroob'
 ----
 
 Beware, though. PHP is weakly (i.e., loosely) typed, and so functions like `query` can actually return different types. If `query` is passed a `SELECT` statement, it will return an `array` with 0 or more rows. If `query` is instead passed a `DELETE`, `INSERT`, or `UPDATE` statement, it will return a non-negative `integer` that represents the number of rows deleted, inserted, or updated, respectively. For instance, consider the below, which you might find helpful when it's time to implement `register.php`. Note our use of `IGNORE`, which ensures that this statement will return `0` if `username` already exists (because of that column's `UNIQUE` constraint, per `finance.sql`); without `IGNORE`, this statement might otherwise trigger an error.
@@ -379,7 +379,7 @@ if ($rows !== 1)
 }
 ----
 
-Anyhow, notice that `login.php` verifies a user's password with `password_verify`. See http://php.net/manual/en/function.password-verify.php for details. And notice too that `login.php` "remembers" that a user is logged in by storing his or her unique ID inside of `$_SESSION`.  As before, this controller does not contain any HTML.  Rather, it calls `apologize` or renders `login_form.php` as needed.  In fact, open up `login_form.php` in `~/workspace/finance/views`.  Most of that file is HTML that's stylized via some of Bootstrap's CSS classes, but notice how the HTML form therein POSTs to `login.php`.  Just for good measure, take a peek at `apology.php` while you're in that directory as well.  And also take a peek at `logout.php` back in `~/workspace/finance/public` to see how it logs out a user. 
+Anyhow, notice that `login.php` verifies a user's password with `password_verify`. See http://php.net/manual/en/function.password-verify.php for details. And notice too that `login.php` "remembers" that a user is logged in by storing his or her unique ID inside of `$_SESSION`.  As before, this controller does not contain any HTML.  Rather, it calls `apologize` or renders `login_form.php` as needed.  In fact, open up `login_form.php` in `~/workspace/finance/views`.  Most of that file is HTML that's stylized via some of Bootstrap's CSS classes, but notice how the HTML form therein POSTs to `login.php`.  Just for good measure, take a peek at `apology.php` while you're in that directory as well.  And also take a peek at `logout.php` back in `~/workspace/finance/public` to see how it logs out a user.
 
 === styles
 
@@ -391,7 +391,7 @@ Phew, that was a lot.  Help yourself to a snack.
 
 === users
 
-Alright, let's talk about that database you created earlier (by executing the statements in `finance.sql` in phpMyAdmin's *SQL* tab).  Head back to `pass:[https://ide50-username.cs50.io/phpmyadmin/]` to access phpMyAdmin.  Log in as before if prompted. You should then find yourself at phpMyAdmin's main page, in the top-left corner of which is a database called *finance* that has (if you click the *pass:[+]*) a table called *users*.  Click the name of that table to see its contents.  Ah, some familiar folks.  In fact, there's President Skroob's username and a hash of his password (which is the same as the combination to his luggage)!  
+Alright, let's talk about that database you created earlier (by executing the statements in `finance.sql` in phpMyAdmin's *SQL* tab).  Head back to `pass:[https://ide50-username.cs50.io/phpmyadmin/]` to access phpMyAdmin.  Log in as before if prompted. You should then find yourself at phpMyAdmin's main page, in the top-left corner of which is a database called *finance* that has (if you click the *pass:[+]*) a table called *users*.  Click the name of that table to see its contents.  Ah, some familiar folks.  In fact, there's President Skroob's username and a hash of his password (which is the same as the combination to his luggage)!
 
 Now click the tab labeled *Structure*.  Ah, some familiar fields.  Recall that `login.php` generates queries like the below.
 
@@ -412,7 +412,7 @@ Via the form that appears, define a field called cash of type `DECIMAL` with a l
 
 image::save.png[Save]
 
-If you pull up the documentation for MySQL at http://dev.mysql.com/doc/refman/5.5/en/numeric-types.html, you'll see that the `DECIMAL` data type is used to "store exact numeric data values."  A length of `65,4` for a `DECIMAL` means that values for `cash` can have no more than 65 digits in total, 4 of which can be to the right of the decimal point.  (Ooo, fractions of pennies.  Sounds like *Office Space*.)  
+If you pull up the documentation for MySQL at http://dev.mysql.com/doc/refman/5.5/en/numeric-types.html, you'll see that the `DECIMAL` data type is used to "store exact numeric data values."  A length of `65,4` for a `DECIMAL` means that values for `cash` can have no more than 65 digits in total, 4 of which can be to the right of the decimal point.  (Ooo, fractions of pennies.  Sounds like *Office Space*.)
 
 Okay, return to the tab labeled *Browse* and give everyone $10,000.00 manually.  (In theory, we could have defined `cash` as having a default value of `10000.000`, but, in general, best to put such settings in code, not your database, so that they're easier to change.)  The easiest way is to click *Check All*, then click *Change* to the right of the pencil icon.  On the page that appears, change `0.0000` to `10000.0000` for each of your users, then click *Go*.  Won't they be happy!
 
@@ -429,7 +429,7 @@ Return to a terminal window, navigate your way to `~/workspace/finance/views` an
 cp login_form.php register_form.php
 ----
 
-Then open up `register_form.php` and change the value of form's `action` attribute from `login.php` to `register.php`.  Next add an additional field of type `password` called `confirmation` to the HTML form so that users are prompted to input their choice of passwords twice (to discourage mistakes).  Finally, change the button's text from `Log In` to `Register` and change 
+Then open up `register_form.php` and change the value of form's `action` attribute from `login.php` to `register.php`.  Next add an additional field of type `password` called `confirmation` to the HTML form so that users are prompted to input their choice of passwords twice (to discourage mistakes).  Finally, change the button's text from `Log In` to `Register` and change
 
 [source,html]
 ----
@@ -444,7 +444,7 @@ or <a href="login.php">log in</a>
 ----
 
 so that users can navigate away from this page if they already have accounts.
-   
+
 Then create a new file called `register.php` with the contents below, taking care to save it in `~/workspace/finance/public`.
 
 [source,php]
@@ -474,7 +474,7 @@ Alright, let's take a look at your work!  Bring up `pass:[https://ide50-username
 
 Of course, `register.php` doesn't actually register users yet, so it's time to tackle that `TODO`!   Allow us to offer some hints.
 
-* If `$_POST["username"]` or `$_POST["password"]` is empty or if `$_POST["password"]` does not equal `$_POST["confirmation"]`, you'll want to inform registrants of their error. 
+* If `$_POST["username"]` or `$_POST["password"]` is empty or if `$_POST["password"]` does not equal `$_POST["confirmation"]`, you'll want to inform registrants of their error.
 * To insert a new user into your database, you should call
 +
 [source,sql]
@@ -534,7 +534,7 @@ Exactly what sort of information need we keep in this new table in order to "rem
 
 If you decide to go with four fields (namely `id`, `user_id`, `symbol`, and `shares`), realize that `user_id` should not be defined as a `UNIQUE` key in this table, else each user could own no more than one company's stock since his or her `id` could not appear (as `user_id`) in more than one row).  Realize, too, that you shouldn't let some `user_id` and some `symbol` to appear together in more than one row.  Better to consolidate users' holdings by updating shares whenever some user sells or buys more shares of some stock he or she already owns.  (A neat way to impose this restriction _after_ creating your table is to add a "joint key." After saving your table, click phpMyAdmin's *Structure* tab for the table, then check both `user_id` and `symbol`, then click *Unique* to the right of *With selected*.  That way, `INSERT` will fail if you try to insert more than one row for some pair of `user_id` and `symbol`.)  We leave it to you, though, to decide your fields' types.  (Just know that `user_id` in this table should have a type that's identical to `id` in `users`.  But don't specify `AUTO_INCREMENT` for that field in this new table, as you only want auto-incrementation when user IDs are created for new users.)  When done defining your table, click *Save*!
 
-Before we let users buy and sell stocks themselves, let's give some shares to President Skroob and friends at no charge.  Click, in phpMyAdmin's left-hand frame, the link to `users` and remind yourself of your current users' IDs.  Then click, in phpMyAdmin's left-hand frame, the link to your new table (for users' portfolios), followed by the tab labeled *Insert*.  Via this interface, go ahead and "buy" some shares of some stocks on behalf of your users by manually inserting rows into this table.  (You may want to return to Yahoo! Finance to look up some actual symbols.)  No need to debit their `cash` in `users`; consider these shares freebies.  
+Before we let users buy and sell stocks themselves, let's give some shares to President Skroob and friends at no charge.  Click, in phpMyAdmin's left-hand frame, the link to `users` and remind yourself of your current users' IDs.  Then click, in phpMyAdmin's left-hand frame, the link to your new table (for users' portfolios), followed by the tab labeled *Insert*.  Via this interface, go ahead and "buy" some shares of some stocks on behalf of your users by manually inserting rows into this table.  (You may want to return to Yahoo! Finance to look up some actual symbols.)  No need to debit their `cash` in `users`; consider these shares freebies.
 
 Once you've bought your users some shares, let's see what you did.  Click the tab labeled *SQL* and run a query like the below.
 
@@ -561,14 +561,14 @@ If you happened to buy President Skroob some shares of that company, the above s
 
 Incidentally, via this *SQL* tab, you could have inserted those "purchases" with `INSERT` statements.  But phpMyAdmin's GUI saved you the trouble.
 
-Alright, let's put this knowledge to use.  It's time to let users peruse their portfolios!  Overhaul `index.php` (a controller) and `portfolio.php` (a view) in such a way that they report each of the stocks in a user's portfolio, including number of shares and current price thereof, along with a user's current cash balance.  Needless to say, `index.php` will need to invoke `lookup` much like `quote.php` did, though perhaps multiple times.  And know that a PHP script can certainly invoke `query` multiple times, even though, thus far, we've seen it used in a file no more than once.  And you can certainly iterate over the array it returns in a view (assuming you pass it in via `render`).  For instance, if your goal is simply to display, say, President Skroob's holdings, one per row in some HTML table, you can generate rows with code like the below, where `$positions` is an array of associative arrays, each of which represents a position (i.e., a stock owned).  
+Alright, let's put this knowledge to use.  It's time to let users peruse their portfolios!  Overhaul `index.php` (a controller) and `portfolio.php` (a view) in such a way that they report each of the stocks in a user's portfolio, including number of shares and current price thereof, along with a user's current cash balance.  Needless to say, `index.php` will need to invoke `lookup` much like `quote.php` did, though perhaps multiple times.  And know that a PHP script can certainly invoke `query` multiple times, even though, thus far, we've seen it used in a file no more than once.  And you can certainly iterate over the array it returns in a view (assuming you pass it in via `render`).  For instance, if your goal is simply to display, say, President Skroob's holdings, one per row in some HTML table, you can generate rows with code like the below, where `$positions` is an array of associative arrays, each of which represents a position (i.e., a stock owned).
 
 [source,php]
 ----
 <table>
     <?php
 
-        foreach ($positions as $position) 
+        foreach ($positions as $position)
         {
             print("<tr>");
             print("<td>" . $position["symbol"] . "</td>");
@@ -588,7 +588,7 @@ Alternatively, you can avoid using the concatenation operator (`.`) via syntax l
 <table>
     <?php
 
-        foreach ($positions as $position) 
+        foreach ($positions as $position)
         {
             print("<tr>");
             print("<td>{$position["symbol"]}</td>");
@@ -649,7 +649,7 @@ Of course, you'll also need to pass a user's current cash balance from `index.ph
 
 To be clear, in the spirit of MVC, though, do take care [.underline]#not# to call `lookup` inside of that (or any other) view; you should only call `lookup` in controllers.  Even though views (aka views) can contain PHP code, that code should only be used to print and/or iterate over data that's been passed in (as via render) from a controller.
 
-As for what HTML to generate, look, as before, to https://finance.cs50.net/ for inspiration or hints.  But do not feel obliged to mimic our design.  Make this website your own!  Although any HTML and PHP code that you yourself write should be pretty-printed (i.e., nicely indented), it's okay if lines exceed 80 characters in length.   HTML that you generate dynamically (as via calls to `print`), though, does not need to be pretty-printed.  
+As for what HTML to generate, look, as before, to https://finance.cs50.net/ for inspiration or hints.  But do not feel obliged to mimic our design.  Make this website your own!  Although any HTML and PHP code that you yourself write should be pretty-printed (i.e., nicely indented), it's okay if lines exceed 80 characters in length.   HTML that you generate dynamically (as via calls to `print`), though, does not need to be pretty-printed.
 
 As before, be sure to display stocks' prices and users' cash balances to at least two decimal places but no more than four.
 
@@ -674,7 +674,7 @@ And now it is time to implement the ability to sell with a controller called, sa
 DELETE FROM portfolios WHERE user_id = 9 AND symbol = 'FREE'
 ----
 
-We leave it to you to infer exactly what that statement should do.  Of course, you could try the above out via phpMyAdmin's *SQL* tab.  Now what about the user's cash balance?  Odds are, your user is going to want the proceeds of all sales.  So selling a stock involves updating not only your table for users' portfolios but `users` as well.  We leave it to you to determine how to compute how much cash a user is owed upon sale of some stock.  But once you know that amount (say, $500), SQL like the below should take care of the deposit (for, say, President Skroob). 
+We leave it to you to infer exactly what that statement should do.  Of course, you could try the above out via phpMyAdmin's *SQL* tab.  Now what about the user's cash balance?  Odds are, your user is going to want the proceeds of all sales.  So selling a stock involves updating not only your table for users' portfolios but `users` as well.  We leave it to you to determine how to compute how much cash a user is owed upon sale of some stock.  But once you know that amount (say, $500), SQL like the below should take care of the deposit (for, say, President Skroob).
 
 [source,sql]
 ----
@@ -747,7 +747,7 @@ Before you consider this problem set done, best to ask yourself these questions 
 
 == How to Submit
 
-=== Step 1 of 4
+=== Step 1 of 3
 
 . When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where `username` is your own username (type the command ‘username50’ if you forgot it), and pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by typing ‘password50’). For security, you won't see the password as you paste it.
 +
@@ -759,21 +759,15 @@ mysqldump -u username -p finance > finance.sql
 +
 If you type `ls` thereafter, you should see that you have a new file called `finance.sql` in `~/workspace/finance`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `finance.sql` with `rm finance.sql`, then re-export as before.)
 
-=== Step 2 of 4
+=== Step 2 of 3
 
-Recall that, in the Scratch problem, you signed up for a https://github.com/[GitHub account].
+So long as you've previously activated your cs50.me account:
 
-If you haven't already, visit https://cs50.me/[cs50.me], log in with that same GitHub account, and click *Authorize application*. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
-
-Once you've logged in and authorized, you can immediately log out. Logging in once simply ensures that you can submit code via `submit50`, per step 3 of 4!
-
-=== Step 3 of 4
-
-* To submit `finance`, execute
+* To submit C$50 Finance, execute
 +
 [source]
 ----
-cd ~/workspace/chapter6/
+cd ~/workspace/finance
 submit50 2016/ap/finance
 ----
 +
@@ -783,11 +777,10 @@ If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
 
-=== Step 4 of 4
+=== Step 3 of 3
 
 Submit https://newforms.cs50.net/2016/x/ap/finance[this form]!
 
 Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
-
-This was Problem C$50 Finance.
+This was C$50 Finance.
