@@ -45,7 +45,7 @@ As always, we'll begin the setup process for this problem by logging into https:
 update50
 ----
 
-From there, create a new directory within your workspace called `unit8` and navigate inside. Then download the distro for this assignment by executing:
+From there, create a new directory within your workspace called `chapter6` and navigate inside. Then download the distro for this assignment by executing:
 
 [source,bash]
 ----
@@ -83,7 +83,7 @@ It's important, though, to (re)acquaint yourself to these differences before div
 
 video::abUuRqYUUaY[youtube]
 
-=== helpers.php 
+=== helpers.php
 
 There's actually even more good news than just the syntax similarity. Generating PDFs (which, of course, is the file format that CS50 Muppet wants for his birthday party invitations) is somewhat tricky, and delves into aspects of the language (such as __objects__) that we're not quite ready to throw your way just yetfootnote:[We'll wait until JavaScript before that!]. While fortunately there exists a PHP library called http://www.fpdf.org/[FPDF] that we can use to generate PDFs, the functions themselves sometimes have confusing and/or distracting parameter lists.
 
@@ -91,9 +91,9 @@ So to that end, we've constructed an API that will give a feel similar to C to y
 
 ==== create_pdf
 
-This function initializesfootnote:[In object-oriented programming parlance, we would typically term this a __constructor__ but because we are "cheating" and using this API to avoid OOP, we won't call it that now.] a PDF object that we can then begin to work with. 
+This function initializesfootnote:[In object-oriented programming parlance, we would typically term this a __constructor__ but because we are "cheating" and using this API to avoid OOP, we won't call it that now.] a PDF object that we can then begin to work with.
 
-But `create_pdf` does not itself actually save a file to your system. Similar to when you open up a file in, say, Microsoft Word, you could write an entire novel inside of `Document1`, but until and unless you save that filefootnote:[Let's leave temporary system files and autorecover out of the discussion so the water doesn't get too murky!] and (typically) give it a more permanent name, it's transient. If you close the program without saving, and then reopen Word, `Document1` will be blank. 
+But `create_pdf` does not itself actually save a file to your system. Similar to when you open up a file in, say, Microsoft Word, you could write an entire novel inside of `Document1`, but until and unless you save that filefootnote:[Let's leave temporary system files and autorecover out of the discussion so the water doesn't get too murky!] and (typically) give it a more permanent name, it's transient. If you close the program without saving, and then reopen Word, `Document1` will be blank.
 
 So `create_pdf` is just like opening a new file in a text editor. We can type and edit as much as we want (which is what many of the below functions do), but until we actually save that file to the system, its contents are ephemeral.
 
@@ -142,7 +142,7 @@ php template.php
 
 and then downloading the file that should be generated and saved in `output/template.pdf` and opening it on your local machine (*but not inside of CS50 IDE, which unfortunately does not yet have native PDF viewing support*).
 
-As an aside, one subtle thing you may have noticed by glancing at `template.php` is that it seems we are able to pass `$pdf` as a parameter to many functions, almost none of which has a return value, but it seems that `$pdf` itself is nevertheless changed. This seems to suggest that PHP always passes data by reference and not by value. 
+As an aside, one subtle thing you may have noticed by glancing at `template.php` is that it seems we are able to pass `$pdf` as a parameter to many functions, almost none of which has a return value, but it seems that `$pdf` itself is nevertheless changed. This seems to suggest that PHP always passes data by reference and not by value.
 
 But that's not actually the case. PHP, like C, will by default pass data by value. However, the "value" of an object in PHP just so happens to be a reference to that object (known as a __reference handle__).
 
@@ -180,7 +180,7 @@ cp template.php invite.php
 
 to get started on the latter! It won't be a perfect translation from one to the other, of course. You'll first have to open and investigate `friends.csv`, but fortunately one of the functions in `helpers.php` does something similar! You'll have to loop through a number of invitations, possibly without knowing how many there are, and so a `while` loop may come in handy. And since you are going through a CSV file, you may find a PHP function like http://php.net/manual/en/function.fgetcsv.php[fgetcsv] is particularly well-suited to your needs. Be sure to read through the examples of its use for inspiration! As you'll see from those examples, here exists an opportunity to practice with PHP arrays.
 
-In a few places, such as when you make your call to `write_address`, you'll notice that you have six pieces of information (which you read from the CSV) at your disposal, but can only pass three parameters to `write_address`. Be sure to go back to Doug's video embedded above if you forget how to concatenate strings together, as you'll need to do that in order to get around this restriction. 
+In a few places, such as when you make your call to `write_address`, you'll notice that you have six pieces of information (which you read from the CSV) at your disposal, but can only pass three parameters to `write_address`. Be sure to go back to Doug's video embedded above if you forget how to concatenate strings together, as you'll need to do that in order to get around this restriction.
 
 At its core, this problem is about exploring PHP, so use it as an opportunity to research and explore... you'll be doing quite a bit of that in the future if you decide to continue down the road of being a computer scientist!
 
@@ -196,5 +196,31 @@ So, looks like you'll also need to check to make sure you have the right number 
 This should end up producing one PDF for each line in `friends.csv`, saving the results in the `output` folder with the filename `FirstLast.pdf` where `First` and `Last`, respectively, are the first and last names of the invitee as extracted from `friends.csv`. You can further assume, then, that no two people in that will have the same first and last name combination. For David Malan, then, the invitation would be saved in `output/DavidMalan.pdf`.
 
 When you're done... congratulations! Now CS50 Muppet has all the invitations for his birthday party. If only he had a process to automate stuffing the envelopes and mailing them out!
+
+== How to Submit
+
+=== Step 1 of 2
+
+So long as you've previously activated your cs50.me account:
+
+* To submit Birthday Party, execute
++
+[source]
+----
+cd ~/workspace/chapter6/party
+submit50 2016/ap/party
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+=== Step 2 of 2
+
+Submit https://newforms.cs50.net/2016/x/ap/party[this form]!
+
+Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Birthday Party.
