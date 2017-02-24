@@ -159,10 +159,10 @@ Due by noon on Mon 3/13 is a take-home test that will cover Weeks 0 through 5 (a
 |===
 | Released       | Due
 
-| Sat 4/15, noon | Mon 4/17, noon
+| Tue 4/18, noon | Thu 4/20, noon
 |===
 
-Due by noon on Mon 4/17 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom  you may turn for help or from whom you may receive help are the course's heads.
+Due by noon on Thu 4/20 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom  you may turn for help or from whom you may receive help are the course's heads.
 
 == Final Project
 
