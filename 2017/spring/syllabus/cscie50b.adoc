@@ -141,10 +141,10 @@ A schedule of problem sets, subject to change, appears below.
 |===
 | Released       | Due
 
-| Tue 4/18, noon | Thu 4/20, noon
+| Wed 4/19, noon | Fri 4/21, noon
 |===
 
-Due by noon on Thu 4/20 is a take-home quiz that will cover both CSCI E-50a and CSCI E-50b, with an emphasis on the material in CSCI E-50b. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom  you may turn for help or from whom you may receive help are the course's heads.
+Due by noon on Fri 4/21 is a take-home quiz that will cover both CSCI E-50a and CSCI E-50b, with an emphasis on the material in CSCI E-50b. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom  you may turn for help or from whom you may receive help are the course's heads.
 
 == Final Project
 
