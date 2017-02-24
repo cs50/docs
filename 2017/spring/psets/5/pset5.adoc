@@ -48,7 +48,7 @@ and your prompt should resemble the below.
 
 == Academic Honesty
 
-Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
+Do keep in mind the course's policy on http://docs.cs50.net/2017/spring/syllabus/cscie50.html#academic-honesty[academic honesty], particularly its "regret clause."
 
 == Problems
 
