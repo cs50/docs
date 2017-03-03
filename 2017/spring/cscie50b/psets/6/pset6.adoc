@@ -1,0 +1,123 @@
+---
+layout: 2017/spring
+---
+:skip-front-matter:
+
+= Problem Set 6: Sentimental
+
+== tl;dr
+
+. Watch https://video.cs50.net/2016/fall/lectures/8[Week 8's lecture] (and https://video.cs50.net/2016/fall/lectures/6[Week 6's] and https://video.cs50.net/2016/fall/lectures/7[Week 7's], if you haven't already).
+. Port some programs from C to Python.
+. Analyze some sentiments.
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset6/
+cd ~/workspace/pset6/
+----
+
+== Problems
+
+All code that you write should be consistent with https://www.python.org/dev/peps/pep-0008/[Style Guide for Python Code], otherwise known as PEP 8.
+
+. Implement either of the below exactly as specified but in Python:
++
+--
+* link:../../../../../problems/mario/less/mario.html[Mario], less comfortable, in a file called `mario.py` in `pset6/`.
+* link:../../../../../problems/mario/more/mario.html[Mario], more comfortable, in a file called `mario.py` in `pset6/`.
+--
++
+. Implement either of the below exactly as specified but in Python:
++
+--
+* link:../../../../../problems/greedy/greedy.html[Greedy], less comfortable, in a file called `greedy.py` in `pset6/`.
+* link:../../../../../problems/credit/credit.html[Credit], more comfortable, in a file called `credit.py` in `pset6/`.
+--
+. Implement any (one) of the below exactly as specified but in Python:
++
+--
+* link:../../../../../problems/caesar/caesar.html[Caesar], less comfortable, in a file called `caesar.py` in `pset6/`.
+* link:../../../../../problems/vigenere/vigenere.html[Vigenère], less comfortable, in a file called `vigenere.py` in `pset6/`.
+* link:../../../../../problems/crack/crack.html[Crack], more comfortable, in a file called `crack.py` in `pset6/`.
+--
+. Implement link:./sentiments/sentiments.html[Sentiments] in `pset6/sentiments/`.
+
+No `check50` for these!
+
+== Hints
+
+* Be sure to use Python 3, not Python 2.
+* If a program is in a file called, say, `foo.py`, you can run that program with `python foo.py`.
+* For Mario, Greedy, Credit, Caesar, Vigenère, and Crack, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python. It is *not reasonable* to look at others' implementations of Sentiments.
+* Consider this problem set an opportunity not only to port your own prior work from C to Python but to improve upon your earlier designs using lessons learned since!
+* When porting code from C to Python in CS50 IDE, you might want to select *View > Layout > Horizontal Split* so that you can see both side by side.
+* Insofar as a goal of this problem set is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
+** Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
+** Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.
+* You're welcome to use the CS50 Library for Python, which includes `get_float`, `get_int`, and `get_string`. Just remember to include
++
+[source]
+import cs50
++
+atop your code. Or you can use https://docs.python.org/3/library/functions.html#input[`input`] and validate users' input yourself.
+* You might find https://docs.python.org/3/library/functions.html#chr[`chr`] and/or https://docs.python.org/3/library/functions.html#ord[`ord`] of help.
+* You might find these references of interest:
+** https://docs.python.org/3/reference/index.html[The Python Language Reference]
+** https://docs.python.org/3/library/[The Python Standard Library]
+** https://docs.python.org/3/tutorial/index.html[The Python Tutorial]
+
+== Walkthrough
+
+=== Problems 1 – 3
+
+++++
+<div class="sectionbody">
+<div class="videoblock">
+<div class="content">
+<iframe src="https://video.cs50.net/2016/fall/psets/6/pset6/c-python" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+++++
+
+=== Problem 4
+
+See link:./sentiments/sentiments.html#walkthrough[Sentiments]
+
+== FAQs
+
+=== AttributeError: 'module' object has no attribute `get_`
+
+If seeing this error (for `cs50.get_char`, `cs50.get_float`, `cs50.get_int`, or `cs50.get_string`), try executing the below (which fixes a bug in an earlier version of the CS50 Library for Python):
+
+[source]
+----
+sudo chmod -R a+rX /usr/lib/python2.7/dist-packages/cs50
+sudo chmod -R a+rX /usr/lib/python3/dist-packages/cs50
+----
+
+=== ImportError: No module named 'sqlalchemy'
+
+If seeing this error, execute
+
+[source]
+----
+pip install --user sqlalchemy
+----
+
+to resolve!
+
+== How to Submit
+
+[source]
+----
+update50
+cd ~/workspace/pset6/
+submit50 e50b/2017/spring/pset6
+----
+
+This was Problem Set 6.
