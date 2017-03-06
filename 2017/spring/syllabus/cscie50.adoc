@@ -37,7 +37,7 @@ Final grades are determined using the following weights:
 
 Problem sets and the final project are evaluated primarily along axes of correctness, design, and style, with scores ordinarily determined by (3 × correctness + 2 × design + 1 × style). Scores are normalized across teaching fellows at term's end, so mid-semester comparisons among students of scores are not reliable indicators of standing.
 
-Although you must submit all nine problem sets, your lowest score among those problem sets on which you completed all problems therein with a non-trivial effort will be dropped when final grades are determined.
+Although you must submit all nine problem sets, your lowest score among those problem sets on which you completed all problems therein in a manner that evinces a non-trivial effort (as determined by the course's heads) will be dropped when final grades are determined.
 
 Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between. However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in Week 11, end up relative to yourself in Week 0.
 
@@ -126,7 +126,7 @@ Available after problem sets' deadlines are "postmortems," videos via which the 
 
 == Problem Sets
 
-Nine problem sets are assigned during the semester. Each is due by noon (Eastern time) on a Monday. Late work is not ordinarily accepted, except in cases of emergency. Although you must submit all nine problem sets, your lowest score among those problem sets on which you completed all problems therein with a non-trivial effort will be dropped when final grades are determined.
+Nine problem sets are assigned during the semester. Each is due by noon (Eastern time) on a Monday. Late work is not ordinarily accepted, except in cases of emergency. Although you must submit all nine problem sets, your lowest score among those problem sets on which you completed all problems therein in a manner that evinces a non-trivial effort (as determined by the course's heads) will be dropped when final grades are determined.
 
 A schedule of problem sets, subject to change, appears below.
 
