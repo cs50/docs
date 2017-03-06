@@ -1,0 +1,46 @@
+---
+toc: false
+---
+
+= About Test
+
+Released at noon on Fri 3/10 and due by noon on Mon 3/13 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
+
+The test will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 72!) hours on the test.
+
+Sections on Sun 3/5, Mon 3/6, Tue 3/7, and Wed 3/8 will also be opportunities for review. Office hours on Sat 3/4, Sun 3/5, Tue 3/7, and Wed 3/8 will be additional opportunities for Q&A. There will be no office hours on Sat 3/11 or Sun 3/12, nor will CS50 Discuss be staffed during the test.
+
+The teaching fellows held a course-wide review session in the fall, which is available on the course website to supplement sections this week.
+
+Among the test's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. Unlike past years' quizzes, the test will not have multiple-choice or true-false questions. But it will have short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE).
+
+== How to Prepare
+
+Ultimately, how best to prepare depends on how you learn best. But allow us to recommend that you prioritize your studies per the ordering below.
+
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any.
+. Review each lecture's *slides*.
+. Review each lecture's *video*.
+. Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Review problem sets' *specifications*, *postmortems*, and *distribution code*, if any.
+
+== Practice Exercises
+
+The following two questions are representative of the type of question you may see on this year's Test, given the new format:
+
+* link:practice/help50/help50.html[Human `help50`]
+* link:practice/sales/sales.html[Sales Force]
+
+You may also find this list of questions from https://cs50.harvard.edu/quizzes[years past] more representative of the sort of questions we may ask this time around. Note, though, that the course's content does vary slightly year to year:
+
+* *2015 Quiz 0*
+** 8, 17, 18, 23
+* *2014 Quiz 1*
+** 4
+* *2014 Quiz 0*
+** 27
+* *2013 Quiz 1*
+** 0, 1, 2, 12, 17, 20, 22
+* *2013 Quiz 0*
+** 8, 21, 22
