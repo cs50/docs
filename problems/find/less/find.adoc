@@ -264,20 +264,20 @@ video::eXeP__gBMrM[youtube]
 
 == Usage
 
-Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+Your program should behave per the examples below. Assumed that the underlined text is what some user has typed. (`^d` represents the ctrl-d character described above)
 
 [source,subs=quotes]
 ----
 $ [underline]#./find 42#
 [underline]#50#
 [underline]#43#
-[underline]#^D#
+[underline]#^d#
 Didn't find needle in haystack.
 
 $ [underline]#./find 42#
 [underline]#50#
 [underline]#42#
-[underline]#^D#
+[underline]#^d#
 Found needle in haystack!
 
 ----
