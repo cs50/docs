@@ -32,7 +32,7 @@ The following two questions are representative of the type of question you may s
 * link:practice/help50/help50.html[Human `help50`]
 * link:practice/sales/sales.html[Sales Force]
 
-You may also find this list of questions from https://cs50.harvard.edu/quizzes[years past] more representative of the sort of questions we may ask this time around. Note, though, that the course's content does vary slightly year to year:
+You may also find this list of questions from https://cs50.harvard.edu/2017/spring/e50/quizzes[years past] more representative of the sort of questions we may ask this time around. Note, though, that the course's content does vary slightly year to year:
 
 * *2015 Quiz 0*
 ** 8, 17, 18, 23
