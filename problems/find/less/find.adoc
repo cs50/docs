@@ -268,7 +268,18 @@ Your program should behave per the examples below. Assumed that the underlined t
 
 [source,subs=quotes]
 ----
-$ [underline]#./find TODO#
+$ [underline]#./find 42#
+[underline]#50#
+[underline]#43#
+[underline]#^D#
+Didn't find needle in haystack.
+
+$ [underline]#./find 42#
+[underline]#50#
+[underline]#42#
+[underline]#^D#
+Found needle in haystack!
+
 ----
 
 == Testing
@@ -344,6 +355,8 @@ _None so far! Reload this page periodically to check if any arise!_
 
 == Changelog
 
+* 2017-03-09
+** Clarified usage.
 * 2016-09-21
 ** Update to `search` walkthrough
 * 2016-09-17
