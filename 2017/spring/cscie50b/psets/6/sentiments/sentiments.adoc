@@ -120,7 +120,7 @@ Open up `requirements.txt` (without changing it, though you can later if you'd l
 [source]
 ----
 cd ~/workspace/pset6/sentiments/
-pip3 install --user -r requirements.txt
+pip3 install --user -r --upgrade requirements.txt
 ----
 +
 to install these programs' dependencies.
