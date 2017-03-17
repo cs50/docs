@@ -99,8 +99,7 @@ A sectioning time preference sheet will be distributed during the first week of 
 | Machine Learning | week of Sun 2/26
 | Python I | week of Sun 3/5
 | Python II | week of Sun 3/12
-| SQL I | week of Sun 3/19
-| SQL II | week of Sun 3/26
+| SQL | week of Sun 3/26
 | JavaScript I | week of Sun 4/2
 | JavaScript II | week of Sun 4/9
 | Review for Quiz | week of Sun 4/16*
