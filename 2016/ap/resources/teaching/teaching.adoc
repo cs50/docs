@@ -30,7 +30,7 @@ Interested in teaching CS50 AP at your high school? Great! Follow these steps an
 
 == Website
 
-This course lives at https://harvard.cs50.edu/ap.
+This course lives at https://cs50.harvard.edu/ap.
 
 Visit the course's website to watch videos, to get help, to download handouts and software, and to follow links to other resources.
 
