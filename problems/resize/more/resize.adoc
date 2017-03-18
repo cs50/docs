@@ -53,7 +53,7 @@ Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-
 
 == Walkthrough
 
-video::TKD7Ot_kt8w[youtube]
+video::iv9cw-PTSnA[youtube]
 
 == Usage
 
