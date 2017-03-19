@@ -683,8 +683,8 @@ mysqldump -u$(username50) -p$(password50) pset7 > finance.sql
 ----
 +
 If you type `ls` thereafter, you should see that you have a new file called `finance.sql` in `~/workspace/finance`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `finance.sql` with `rm finance.sql`, then re-export as before.)
-. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*. You should find that your browser has downloaded `finance.tar.gz`, a "gzipped tarball" that's similar in spirit to a ZIP file.
-. Await instructions from your instructor on how to submit the tarball!
+. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*. You should find that your browser has downloaded `finance.zip`.
+. Await instructions from your instructor on how to submit the ZIP file!
 
 
 This was Problem C$50 Finance (Part 1).
