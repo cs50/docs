@@ -637,7 +637,7 @@ foreach ($rows as $row)
 }
 ----
 
-Note that, with this code, we're deliberately create a new array of associative arrays (`$positions`) rather than add names and prices to an existing array of associative arrays (`$rows`).  In the interests of good design, it's generally best not to alter functions' return values (like `$rows` from `query`).
+Note that, with this code, we're deliberately creating a new array of associative arrays (`$positions`) rather than add names and prices to an existing array of associative arrays (`$rows`).  In the interests of good design, it's generally best not to alter functions' return values (like `$rows` from `query`).
 
 Now, much like you can pass a page's title to render, so can you pass these positions, as with the below.
 
@@ -648,7 +648,7 @@ render("portfolio.php", ["positions" => $positions, "title" => "Portfolio"]);
 
 Of course, you'll also need to pass a user's current cash balance from `index.php` to `portfolio.php` via `render` as well, but we leave it to you to figure out how.
 
-To be clear, in the spirit of MVC, though, do take care [.underline]#not# to call `lookup` inside of that (or any other) view; you should only call `lookup` in controllers.  Even though views (aka views) can contain PHP code, that code should only be used to print and/or iterate over data that's been passed in (as via render) from a controller.
+To be clear, in the spirit of MVC, though, do take care [.underline]#not# to call `lookup` inside of that (or any other) view; you should only call `lookup` in controllers.  Even though views can contain PHP code, that code should only be used to print and/or iterate over data that's been passed in (as via render) from a controller.
 
 As for what HTML to generate, look, as before, to https://finance.cs50.net/ for inspiration or hints.  But do not feel obliged to mimic our design.  Make this website your own!  Although any HTML and PHP code that you yourself write should be pretty-printed (i.e., nicely indented), it's okay if lines exceed 80 characters in length.   HTML that you generate dynamically (as via calls to `print`), though, does not need to be pretty-printed.  
 
