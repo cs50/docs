@@ -674,12 +674,12 @@ Before you consider this problem set done, best to ask yourself these questions 
 
 == Turn It In
 
-. When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where `username` is your own username (type the command ‘username50’ if you forgot it), and pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by typing ‘password50’). For security, you won't see the password as you paste it.
+. When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below.
 +
 [source]
 ----
 cd ~/workspace/finance
-mysqldump -u username -p finance > finance.sql
+mysqldump -u$(username50) -p$(password50) pset7 > finance.sql
 ----
 +
 If you type `ls` thereafter, you should see that you have a new file called `finance.sql` in `~/workspace/finance`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `finance.sql` with `rm finance.sql`, then re-export as before.)
