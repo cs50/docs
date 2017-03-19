@@ -82,7 +82,6 @@ Log into https://cs50.io/[CS50 IDE] and, in a terminal window, execute
 [source]
 ----
 update50
-sudo apt-get install -y php5-xdebug
 ----
 
 to ensure that your workspace is up-to-date!
@@ -278,9 +277,9 @@ chmod 711 directory
 
 so that its contents are accessible via a browser (if that's indeed your intention).
 
-What's with all these numbers we're having you type?  Well, `600` happens to mean `rw-------`, and so all PHP files are made readable and writable only by you; `644` happens to mean `rw-r--r--`, and so all non-PHP files are to be readable and writable by you and just readable by everyone else; and `711` happens to mean `rwx--x--x`, and so all directories are to be readable, writable, and executable by you and just executable by everyone else.  Wait a minute, don't we want everyone to be able to read (i.e., interpret) your PHP files?  Nope!  For security reasons, PHP-based web pages are interpreted "as you" (i.e., under your username) in the workspace.
+What's with all these numbers we're having you type?  Well, `600` happens to mean `rw-------`, and so all PHP files are made readable and writable only by you; `644` happens to mean `rw-r\--r--`, and so all non-PHP files are to be readable and writable by you and just readable by everyone else; and `711` happens to mean `rwx\--x\--x`, and so all directories are to be readable, writable, and searchable by you and just searchable by everyone else.  Wait a minute, don't we want everyone to be able to read (i.e., interpret) your PHP files?  Nope!  For security reasons, PHP-based web pages are interpreted "as you" (i.e., under your username) in the workspace.
 
-Okay, still, what's with all those numbers?  Well, think of `rw-r--r--` as representing three triples of bits, the first triple of which, to be clear, is `rw-`.  Imagine that `-` represents `0`, whereas `r`, `w`, and `x` represent `1`.  And, so, this same triple (`rw-`) is just `110` in binary, or `6` in decimal!  The other two triples, `r--` and `r--`, then, are just `100` and `100` in binary, or `4` and `4` in decimal!  How, then, to express a pattern like `rw-r--r--` with numbers?  Why, with `644`.
+Okay, still, what's with all those numbers?  Well, think of `rw-r\--r--` as representing three triples of bits, the first triple of which, to be clear, is `rw-`.  Imagine that `-` represents `0`, whereas `r`, `w`, and `x` represent `1`.  And, so, this same triple (`rw-`) is just `110` in binary, or `6` in decimal!  The other two triples, `r--` and `r--`, then, are just `100` and `100` in binary, or `4` and `4` in decimal!  How, then, to express a pattern like `rw-r\--r--` with numbers?  Why, with `644`.
 
 Actually, this is a bit of a white lie.  Because you can represent only eight possible values with three bits, these numbers (`6`, `4`, and `4`) are not actually decimal digits but "octal."  So you can now tell your friends that you speak not only binary, decimal, and hexadecimal, but octal as well.
 
@@ -318,7 +317,7 @@ In fact, let's turn our attention to the code you've been given.
 
 === index
 
-Navigate your way to `~/workspace/finance/public` and open up `index.php`.  Know that `index.php` is the file that's loaded by default when you visit a URL like `pass:[https://ide50-username.cs50.io/]`.  Well, it turns out there's not much PHP code in this file.  And there isn't any HTML at all.  Rather, `index.php` "requires" `config.php` (which is in a directory called `includes` in ``index.php``'s parent directory).  And `index.php` then calls `render` (a function implemented in a file called `helpers.php` that can also be found inside of `includes`) in order to render (i.e., output) a view (i.e., template) called `portfolio.php` (which is in a directory called `views` in `index.php`'s parent directory).  Phew, that was a mouthful.
+Navigate your way to `~/workspace/finance/public` and open up `index.php`.  Know that `index.php` is the file that's loaded by default when you visit a URL like `pass:[https://ide50-username.cs50.io/]`.  Well, it turns out there's not much PHP code in this file.  And there isn't any HTML at all.  Rather, `index.php` "requires" `config.php` (which is in a directory called `includes` in ``index.php``'s parent directory).  And `index.php` then calls `render` (a function implemented in a file called `helpers.php` that can also be found inside of `includes`) in order to render (i.e., output) a view (i.e., template) called `portfolio.php` (which is in a directory called `views` in ``index.php``'s parent directory).  Phew, that was a mouthful.
 
 It turns out that `index.php` is considered a "controller," whereby its purpose in life is to control the behavior of your website when a user visits `pass:[https://ide50-username.cs50.io/]` (or, equivalently, `pass:[https://ide50-username.cs50.io/index.php]`).  Eventually, you'll need to add some more PHP code to this file in order to pass more than just title to render.  But for now, let's take a look at `portfolio.php`, the view that this controller ultimately renders.  
 
@@ -328,7 +327,7 @@ Navigate your way to `~/workspace/finance/views` and open up `portfolio.php`.  A
 
 === config
 
-Now navigate your way to `~/workspace/finance/includes` and open up `config.php`.  Recall that `config.php` was required by `index.php`.  Notice how `config.php` first enables display of all errors (and warnings and notices, which are less severe errors) so that you're aware of any syntactical mistakes (and more) in your code.  Notice, too, that `config.php` itself requires two other files, `helpers.php` and `CS50.php`, the latter of which is CS50's PHP library, inside of which is that function, `query`, that will allow you to query your workspace's database. Notice how we configure (i.e., initialize) CS50's library by passing its `init` method (i.e., function) the path to `config.json`. (That `::` syntax just means that `init` is "inside of" an "object" called `CS50`. An object in PHP, meanwhile, is similar in spirit to, but more featureful then, a `struct` in C. Meanwhile, `pass:[__DIR__]` is a constant that represents the current file's parent directory.) Next, `config.php` calls `session_start` in order to enable `$_SESSION`, a "superglobal" variable via which we'll remember that a user is logged in.   (Even though HTTP is a "stateless" protocol, whereby browsers are supposed to disconnect from servers as soon as they're done downloading pages, "cookies" allow browsers to remind servers who they or, really, you are on subsequent requests for content.  PHP uses "session cookies" to provide you with `$_SESSION`, an associative array in which you can store any data to which you'd like to
+Now navigate your way to `~/workspace/finance/includes` and open up `config.php`.  Recall that `config.php` was required by `index.php`.  Notice how `config.php` first enables display of all errors (and warnings and notices, which are less severe errors) so that you're aware of any syntactical mistakes (and more) in your code.  Notice, too, that `config.php` itself requires two other files, `helpers.php` and `CS50.php`, the latter of which is CS50's PHP library, inside of which is that function, `query`, that will allow you to query your workspace's database. Notice how we configure (i.e., initialize) CS50's library by passing its `init` method (i.e., function) the path to `config.json`. (That `::` syntax just means that `init` is "inside of" a "class" called `CS50`. A class in PHP, meanwhile, is similar in spirit to, but more featureful than, a `struct` in C. Meanwhile, `pass:[__DIR__]` is a constant that represents the current file's parent directory.) Next, `config.php` calls `session_start` in order to enable `$_SESSION`, a "superglobal" variable via which we'll remember that a user is logged in.   (Even though HTTP is a "stateless" protocol, whereby browsers are supposed to disconnect from servers as soon as they're done downloading pages, "cookies" allow browsers to remind servers who they or, really, you are on subsequent requests for content.  PHP uses "session cookies" to provide you with `$_SESSION`, an associative array in which you can store any data to which you'd like to
 have access for the duration of some user's visit.  The moment a user ends his or her "session" (i.e., visit) by quitting his or her browser, the contents of `$_SESSION` are lost for that user specifically because the next time that user visits, he or she will be assigned a new cookie!)  Meanwhile, `config.php` takes care to redirect the user to `login.php` anytime he or she visits some page other than `login.php`, `logout.php`, and `register.php`, assuming `$_SESSION["id"]` isn't yet set.  In other words, `config.php` requires users to log in if they aren't logged in already (and if they aren't already at one of those three pages).
 
 === helpers
@@ -636,7 +635,7 @@ foreach ($rows as $row)
 }
 ----
 
-Note that, with this code, we're deliberately create a new array of associative arrays (`$positions`) rather than add names and prices to an existing array of associative arrays (`$rows`).  In the interests of good design, it's generally best not to alter functions' return values (like `$rows` from `query`).
+Note that, with this code, we're deliberately creating a new array of associative arrays (`$positions`) rather than add names and prices to an existing array of associative arrays (`$rows`).  In the interests of good design, it's generally best not to alter functions' return values (like `$rows` from `query`).
 
 Now, much like you can pass a page's title to render, so can you pass these positions, as with the below.
 
@@ -647,7 +646,7 @@ render("portfolio.php", ["positions" => $positions, "title" => "Portfolio"]);
 
 Of course, you'll also need to pass a user's current cash balance from `index.php` to `portfolio.php` via `render` as well, but we leave it to you to figure out how.
 
-To be clear, in the spirit of MVC, though, do take care [.underline]#not# to call `lookup` inside of that (or any other) view; you should only call `lookup` in controllers.  Even though views (aka views) can contain PHP code, that code should only be used to print and/or iterate over data that's been passed in (as via render) from a controller.
+To be clear, in the spirit of MVC, though, do take care [.underline]#not# to call `lookup` inside of that (or any other) view; you should only call `lookup` in controllers.  Even though views can contain PHP code, that code should only be used to print and/or iterate over data that's been passed in (as via render) from a controller.
 
 As for what HTML to generate, look, as before, to https://finance.cs50.net/ for inspiration or hints.  But do not feel obliged to mimic our design.  Make this website your own!  Although any HTML and PHP code that you yourself write should be pretty-printed (i.e., nicely indented), it's okay if lines exceed 80 characters in length.   HTML that you generate dynamically (as via calls to `print`), though, does not need to be pretty-printed.  
 
@@ -673,17 +672,17 @@ Before you consider this problem set done, best to ask yourself these questions 
 
 == Turn It In
 
-. When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where `username` is your own username (type the command ‘username50’ if you forgot it), and pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by typing ‘password50’). For security, you won't see the password as you paste it.
+. When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below.
 +
 [source]
 ----
 cd ~/workspace/finance
-mysqldump -u username -p finance > finance.sql
+mysqldump -u$(username50) -p$(password50) pset7 > finance.sql
 ----
 +
 If you type `ls` thereafter, you should see that you have a new file called `finance.sql` in `~/workspace/finance`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `finance.sql` with `rm finance.sql`, then re-export as before.)
-. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*. You should find that your browser has downloaded `finance.tar.gz`, a "gzipped tarball" that's similar in spirit to a ZIP file.
-. Await instructions from your instructor on how to submit the tarball!
+. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*. You should find that your browser has downloaded `finance.zip`.
+. Await instructions from your instructor on how to submit the ZIP file!
 
 
 This was Problem C$50 Finance (Part 1).
