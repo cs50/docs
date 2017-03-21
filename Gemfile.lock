@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/asciidoctor/jekyll-asciidoc.git
-  revision: 98300767d57fdc58cc6c571f1c6f2c01bea1ee56
+  revision: 829fa59b916cd5ac99f7d5ac3cedd490e51dfa55
   specs:
     jekyll-asciidoc (2.1.0.dev)
       asciidoctor (>= 1.5.0)
@@ -13,9 +13,9 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     asciidoctor (1.5.5)
     colorator (1.1.0)
-    ffi (1.9.17)
+    ffi (1.9.18)
     forwardable-extended (2.6.0)
-    jekyll (3.4.0)
+    jekyll (3.4.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -60,4 +60,4 @@ DEPENDENCIES
   pygments.rb
 
 BUNDLED WITH
-   1.14.3
+   1.13.1

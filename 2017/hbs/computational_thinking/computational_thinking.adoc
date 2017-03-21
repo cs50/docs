@@ -104,7 +104,7 @@
 +
 [source, subs=quotes]
 ----
-     8          4          2          1
+      8          4          2          1
 
       *1*          *0*          *0*          *0*
 
@@ -150,7 +150,7 @@ image::cube.png[alt="Cube", width=300]
 * We can go straight to the middle, and find ourselves in the M section, and know that Mike Smith is in the right half of the book, and throw the left half away. We can repeat this again and again, and eventually find one page. With 1000 pages, it would only take about 10 steps of division to reach that one page. This algorithm is called binary search, as we divide the problem in half each time.
 * As we think about how we might solve problems efficiently, we can write our algorithm in *pseudocode*, not actual code but more specific words than typical English:
 +
-[source, pseudocode, numbered]
+[source, pseudocode]
 ----
  0   pick up phone book
  1   open to middle of phone book
