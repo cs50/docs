@@ -8,7 +8,7 @@ Here are answers to some frequently asked questions (FAQs). For answers to other
 
 == Can I use CS50 IDE offline?
 
-Yes, if you have particularly slow, expensive, or infrequent Internet access, see https://cs50.readme.io/v2015/docs/offline for details on how you can run your own copy of CS50 IDE locally on your own computer.
+Yes, if you have particularly slow, expensive, or infrequent Internet access, see https://manual.cs50.net/cs50-ide/offline.html for details on how you can run your own copy of CS50 IDE locally on your own computer.
 
 == Does CS50x have a test or quiz?
 
