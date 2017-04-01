@@ -59,12 +59,6 @@ Like to integrate hardware into your project? Know that CS50 has the following h
 
 If you'd like to borrow something for a project, email borrow@cs50.harvard.edu, and we'll do our best to oblige, sharing hardware across classmates as needed. Let us know, too, if there's some other hardware or software you'd like to utilize for a project, and we'll do our best to find it.
 
-=== HSA Track
-
-Like to make an impact on campus by building a project for the largest student-run corporation in the world? Consider tackling one of Harvard Student Agencies' http://hsa.net/cs50/hsa-track/suggested-projects[suggested project ideas] and applying for the http://hsa.net/cs50/bootcamp[HSA Dev Bootcamp], which picks up in January where CS50 leaves off! Thereafter, consider joining http://hsa.net/dev[HSA Dev]!
-
-video::_vAQNwhYOyU[youtube]
-
 == Schedule
 
 === Pre-Proposal
