@@ -10,8 +10,6 @@
 . Implement a news map.
 . Submit a form.
 
-include::help-harvard.adoc[]
-
 == Getting Started
 
 [source]
