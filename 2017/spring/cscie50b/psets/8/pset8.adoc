@@ -1,0 +1,43 @@
+---
+---
+:skip-front-matter:
+
+= Problem Set 8: Mashup
+
+== tl;dr
+
+. Watch https://video.cs50.net/2016/fall/lectures/10[Week 10's lecture].
+. Implement a news map.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset8/
+cd ~/workspace/pset8/
+----
+
+== Problems
+
+Implement link:../../../../../problems/mashup/mashup.html[Mashup] in `pset8/mashup/`.
+
+== Hints
+
+* Be sure to use Python 3, not Python 2.
+* All Python code that you write should be consistent with https://www.python.org/dev/peps/pep-0008/[Style Guide for Python Code], otherwise known as PEP 8.
+* Insofar as a goal of this problem set is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
+** Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
+** Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.
+
+== How to Submit
+
+[source]
+----
+update50
+cd ~/workspace/pset8/mashup/
+submit50 e50b/2017/spring/pset8
+----

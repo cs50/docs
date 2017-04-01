@@ -1,0 +1,163 @@
+---
+---
+:skip-front-matter:
+
+= Final Project
+
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon the course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
+
+Extensions on the final project are not ordinarily granted, except in cases of emergency.
+
+== Ideas
+
+Here are just some of the possibilities, organized into (non-exhaustive) "tracks". Discuss any and all with your TF!
+
+If at a loss for ideas, look here for more inspiration!
+
+* https://manual.cs50.net/seminars/[CS50 Seminars]
+* http://newapps.cs50.net/cs50/@/discuss/threads/156/all/new/1[CS50 Discuss]
+
+=== Software Track
+
+* a web-based application using Python and SQL, based in part on Problem Set 7's distribution code
+* a web-based application using JavaScript, based in part on Problem Set 8's distribution code
+* a web-based application using PHP or Ruby
+* a plugin for CS50 IDE using JavaScript
+* a Chrome extension using JavaScript
+* an iOS app using Swift (or Objective-C)
+* an Android app using Java
+* a command-line program using C
+* ...
+
+=== Cross-Course Track
+
+Like to combine two courses' projects? If taking some other course this semester that has a final project, you are welcome and encouraged to combine this course's project and that course's project into one, toward an end of applying lessons learned in CS50 to some other field, so long as the joint project satisfies this course's and that course's expectations. Before pursuing a joint project, though, you must disclose to both courses and receive approval from both courses (as from your TF in CS50).
+
+=== Cross-Campus Track
+
+* Like to build a website via which undergrads can schedule Classroom-to-Table meals with faculty? Email Dean Rakesh Khurana for details!
+* ...
+
+=== Hardware Track
+
+Like to integrate hardware into your project? Know that CS50 has the following hardware with which you're welcome to create something amazing:
+
+* an https://developer.apple.com/programs/[iOS Developer Program], which allows you to install homemade apps on your own iOS device,
+* some https://www.arduino.cc/en/Main/arduinoBoardUno[Arduino Uno] boards, for which there's an https://www.arduino.cc/en/Reference/HomePage[API],
+* some https://www.google.com/get/cardboard/[Google Cardboards], for which there's an developers.google.com/cardboard[API],
+* an https://www.vive.com/us/[HTC Vive], for which there's an https://developer.viveport.com/us/develop_portal/[SDK]
+* some https://www.leapmotion.com/[Leap Motion Controllers], for which there's an https://developer.leapmotion.com/[API],
+* a https://www.microsoft.com/microsoft-hololens/en-us[Microsoft HoloLens], for which there's an https://www.microsoft.com/microsoft-hololens/en-us/developers[SDK]
+* some https://www.myo.com/[Myo Armbands], for which there's an https://developer.thalmic.com/[API],
+* an https://www.oculus.com/[Oculus Rift] and an https://www3.oculus.com/en-us/dk2/[Oculus DK2], for which there's an https://developer.oculus.com/[SDK]
+* some http://www2.meethue.com/en-us/productdetail/philips-hue-white-and-color-ambiance-starter-kit-a19[Philips hue bulbs], for which there's an http://www.developers.meethue.com/[API],
+* some http://www2.meethue.com/en-us/productdetail/philips-hue-lightstrip[Philips hue lightstrips], for which there's an http://www.developers.meethue.com/[API],
+* some http://www.samsung.com/global/galaxy/gear-vr/[Samsung Gear VRs], for which there's an http://developer.samsung.com/gear/[SDK], and
+* some http://www.sonos.com/en-us/shop/play1.html[Sonos PLAY:1s], for which there's an http://musicpartners.sonos.com/?q=docs[API].
+
+If you'd like to borrow something for a project, email borrow@cs50.harvard.edu, and we'll do our best to oblige, sharing hardware across classmates as needed. Let us know, too, if there's some other hardware or software you'd like to utilize for a project, and we'll do our best to find it.
+
+=== HSA Track
+
+Like to make an impact on campus by building a project for the largest student-run corporation in the world? Consider tackling one of Harvard Student Agencies' http://hsa.net/cs50/hsa-track/suggested-projects[suggested project ideas] and applying for the http://hsa.net/cs50/bootcamp[HSA Dev Bootcamp], which picks up in January where CS50 leaves off! Thereafter, consider joining http://hsa.net/dev[HSA Dev]!
+
+video::_vAQNwhYOyU[youtube]
+
+== Schedule
+
+=== Pre-Proposal
+
+_due by noon on Fri 4/7_
+
+=== Proposal
+
+_due by noon on Fri 4/14_
+
+=== Status Report
+
+_due by noon on Mon 5/1_
+
+=== Implementation
+
+_due by noon on Thu 5/11_
+
+=== CS50 Fair
+
+_from 5:30pm until 7pm on Fri 5/12_
+
+Extensions on the final project are not granted, except in cases of emergency.
+
+== Specifications
+
+=== Pre-Proposal
+
+Intended to promote early thought, the pre-proposal is your opportunity to bounce one or more ideas off of your teaching fellow.  Quite simply, by this pre-proposal's deadline, send an email to your teaching fellow describing one or more ideas that you have for your final project.  Short, casual emails are fine, but do explain the motivation behind each of your ideas (i.e., why it interests you).  Treat this requirement as an opportunity for counsel.  Certainly include any questions or concerns that you have in this email.
+
+The subject line of your email should be *Pre-Proposal*.
+
+If, incidentally, you have an idea for a final project that you think someone should do (if not you), post it http://newapps.cs50.net/cs50/@/discuss/threads/156/all/new/1[CS50 Discuss]!  And if you'd like to solicit one or two collaborators, do post there as well.
+
+=== Proposal
+
+The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at COMING SOON. If working with one or two other classmates, it suffices for just one of you to submit the proposal.
+
+Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
+
+After submitting your proposal, a teaching fellow other than your own may be appointed your advisor and grader for the remainder of the final project, depending on your proposal's nature.
+
+=== Status Report
+
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report at COMING SOON.
+
+=== Implementation
+
+Ultimately due are implementation and documentation of your final project.  Your submission thereof must include all of the below.
+
+. Documentation for your project in the form of a file called `documentation.txt`. This documentation is to be a user's manual for your project.  Though the structure of your documentation is entirely up to you, it should be incredibly clear to the staff how and where, if applicable, to compile, configure, and use your project.  Your documentation should be at least several paragraphs in length.  It should not be necessary for us to contact you with questions regarding your project after its submission.  Hold our hand with this documentation; be sure to answer in your documentation any questions that you think we might have while testing your work.
+. A "design document" for your project in the form of a file called `design.txt` that discusses, technically, how you implemented your project and why you made the design decisions you did.  Your design document should be at least several paragraphs in length.  Whereas your documentation is meant to be a user's manual, consider your design document your opportunity to give the staff a technical tour of your project underneath its hood.
+. Any and all files required to run your software (even if intended for some infrastructure other than CS50 IDE), including source code as well as, if applicable, configuration files, Makefiles, sample inputs, SQLite databases, and so forth. Needless to say, all source code should be thoroughly commented.
+. A short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action.  Your video should somehow include your project's title, your name and year, your dorm/house and concentration, and any other details that you'd like to convey to viewers.  See http://www.cs171.org/2015/screencast/[CS171's tips on how to make a "screencast"] though you're welcome to use an actual camera.  Upload your video to YouTube as "public" or "unlisted" and take note of its URL.
+
+==== How to Submit
+
+*If you have collaborated with one or two other students, each of you should submit via this same process.*
+
+*If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project's needs.*
+
+[source]
+----
+update50
+cd ~/workspace/project/ # or wherever you've stored your project
+FINAL SUBMISSION INSTRUCTIONS COMING SOON
+----
+
+=== Step 2 of 2
+
+FORM LINK COMING SOON
+
+== CS50 Fair
+
+The CS50 Fair is an epic display of final projects, your opportunity to showcase your work not only to us but also to others on campus.  You will be expected to bring to the CS50 Fair a laptop with which to demonstrate your project.  Plan to tell attendees what you have done and why you have done it.  And perhaps have in mind a few anecdotes about lessons you learned, roadblocks you hit, or the like.
+
+The CS50 Fair will take place in the CS50 office.
+
+Additional details on the CS50 Fair's logistics will be announced via email and the course's home page the week before the CS50 Fair.
+
+== Assessment
+
+Your pre-proposal, proposal, and status report will be evaluated on the bases of, at least, clarity and thoroughness. Your implementation will be evaluated along four axes primarily:
+
+Scope::
+  To what extent does your code implement the features required by our specification?
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+All students, whether or not taking the course for a letter grade, must ordinarily submit this final project to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+
+include::../honesty.adoc[]
