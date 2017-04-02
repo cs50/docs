@@ -187,7 +187,7 @@ You may resubmit any problem as many times as you'd like.
 
 === Step 2 of 2
 
-Submit https://newforms.cs50.net/2016/x/ap/rng[this form]!
+Submit https://forms.cs50.net/2016/x/ap/rng[this form]!
 
 Your submission should be graded within a few weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 

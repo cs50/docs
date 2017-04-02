@@ -166,6 +166,6 @@ This process may actually be more challenging than it first appears, and that's 
 
 == How to Submit
 
-Submit https://newforms.cs50.net/2016/x/ap/algorithms[this form]!
+Submit https://forms.cs50.net/2016/x/ap/algorithms[this form]!
 
 This was Everyday Algorithms.

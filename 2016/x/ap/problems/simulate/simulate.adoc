@@ -98,6 +98,6 @@ Ponder that. Was someone programming you to write this problem?
 
 == How to Submit
 
-Submit https://newforms.cs50.net/2016/x/ap/simulate[this form]!
+Submit https://forms.cs50.net/2016/x/ap/simulate[this form]!
 
 This was Simulate!

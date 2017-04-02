@@ -47,6 +47,6 @@ Don't be afraid to get creative with your explanations and come up with new anal
 
 == How to Submit
 
-Submit https://newforms.cs50.net/2016/x/ap/teacher[this form]!
+Submit https://forms.cs50.net/2016/x/ap/teacher[this form]!
 
 This was Be the Teacher.

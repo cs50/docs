@@ -113,6 +113,6 @@ submit50 2017/x/recover
 
 === Step 2 of 2
 
-Submit https://newforms.cs50.net/2017/x/psets/4[this form]!
+Submit https://forms.cs50.net/2017/x/psets/4[this form]!
  
 This was Problem Set 4.

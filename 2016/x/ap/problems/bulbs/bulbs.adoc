@@ -98,6 +98,6 @@ Instead, what you should do once you've finished is download your completed proj
 
 == How to Submit
 
-Submit https://newforms.cs50.net/2016/x/ap/binary-bulbs[this form]!
+Submit https://forms.cs50.net/2016/x/ap/binary-bulbs[this form]!
 
 This was Binary Bulbs.

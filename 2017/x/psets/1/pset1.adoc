@@ -206,7 +206,7 @@ You may resubmit any problem as many times as you'd like.
 
 === Step 4 of 4
   
-Submit https://newforms.cs50.net/2017/x/psets/1[this form]!
+Submit https://forms.cs50.net/2017/x/psets/1[this form]!
  
 Your submission should be graded within 2 weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
 

@@ -95,6 +95,6 @@ video::iLSBUKs4AYU[youtube,height=540,width=960]
 
 == How to Submit
 
-Submit https://newforms.cs50.net/2016/x/ap/scratch[this form]!
+Submit https://forms.cs50.net/2016/x/ap/scratch[this form]!
 
 This was Scratch!

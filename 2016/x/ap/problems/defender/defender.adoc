@@ -61,6 +61,6 @@ Start by taking a look at the different types of attacks, and find one that intr
 
 == How to Submit
 
-Submit https://newforms.cs50.net/2016/x/ap/defender[this form]!
+Submit https://forms.cs50.net/2016/x/ap/defender[this form]!
 
 This was Defender of the Web.

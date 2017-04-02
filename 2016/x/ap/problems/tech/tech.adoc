@@ -62,6 +62,6 @@ To be clear, you're not standing in the role of a salesperson. Make sure to spea
 
 == How to Submit
 
-Submit https://newforms.cs50.net/2016/x/ap/tech[this form]!
+Submit https://forms.cs50.net/2016/x/ap/tech[this form]!
 
 This was Tech Spotlight. And unfortunately, the Nyan Cat song is still stuck in our heads. :\

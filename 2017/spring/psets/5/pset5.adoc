@@ -74,6 +74,6 @@ submit50 2017/spring/speller
 
 === Step 2 of 2
 
-Submit https://newforms.cs50.net/2017/spring/psets/5[]!
+Submit https://forms.cs50.net/2017/spring/psets/5[]!
 
 This was Problem Set 5.

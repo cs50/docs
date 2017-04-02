@@ -44,6 +44,6 @@ submit50 2017/spring/pset8
 
 === Step 2 of 2
 
-Submit https://newforms.cs50.net/2017/spring/psets/8[]!
+Submit https://forms.cs50.net/2017/spring/psets/8[]!
 
 This was Problem Set 8, your last!
