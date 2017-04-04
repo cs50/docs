@@ -70,7 +70,7 @@ It turns out that Google Maps offers an API that allows you to embed Google's ma
 
 === Google News
 
-If you happen to have a Google Account (e.g., Gmail), head to https://news.google.com/ and click the *Personalize* button at top-right. Below the icon should appear *Personalize Google News*, down below which is *Advanced*. Click the latter, and *Add a local section* should appear at right. Input, say, *Cambridge, Massachusetts* or *New Haven, Connecticut* into that box, then click *Add*. You should find yourself at either of the URLs below?
+If you happen to have a Google Account (e.g., Gmail), head to https://news.google.com/ and click the Personalize button at top-right. Below the icon should appear *Personalize Google News*, down below which is *Add Any News Topic*. Input, say, *Cambridge, Massachusetts* or *New Haven, Connecticut* into that box, then click *+*. When you refresh your page you should see the new section added to your side bar. Additionally, you can search for location based news by modifying parameters in the URL, like the ones below. For a full list of parameters you can check out http://i-tweak.blogspot.com/2013/10/google-news-search-parameters-missing.html[this guide]. 
 
 * https://news.google.com/news/section?cf=all&pz=1&geo=Cambridge,+Massachusetts&ned=us&redirect=true
 * https://news.google.com/news/section?cf=all&pz=1&geo=New+Haven,+Connecticut&ned=us&redirect=true
