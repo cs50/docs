@@ -759,7 +759,7 @@ Registration Successful
 You are registered!  (Well, not really.)
 {% endblock %}
 ----
-* And `index.html` is familiar:
+* And `layout.html` is familiar:
 +
 [source]
 ----
