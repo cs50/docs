@@ -91,7 +91,7 @@ If, incidentally, you have an idea for a final project that you think someone sh
 
 === Proposal
 
-The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at COMING SOON. If working with one or two other classmates, it suffices for just one of you to submit the proposal.
+The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at forms.cs50.net/2017/spring/proposal[this link]. If working with one or two other classmates, it suffices for just one of you to submit the proposal.
 
 Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
 
@@ -99,11 +99,11 @@ After submitting your proposal, a teaching fellow other than your own may be app
 
 === Status Report
 
-Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report at COMING SOON.
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report at COMING SOON. All team members must submit the status report individually.
 
 === Implementation
 
-Ultimately due are implementation and documentation of your final project.  Your submission thereof must include all of the below.
+Ultimately due are implementation and documentation of your final project. All team members must submit the implementation individually. Your submission thereof must include all of the below.
 
 . Documentation for your project in the form of a file called `documentation.txt`. This documentation is to be a user's manual for your project.  Though the structure of your documentation is entirely up to you, it should be incredibly clear to the staff how and where, if applicable, to compile, configure, and use your project.  Your documentation should be at least several paragraphs in length.  It should not be necessary for us to contact you with questions regarding your project after its submission.  Hold our hand with this documentation; be sure to answer in your documentation any questions that you think we might have while testing your work.
 . A "design document" for your project in the form of a file called `design.txt` that discusses, technically, how you implemented your project and why you made the design decisions you did.  Your design document should be at least several paragraphs in length.  Whereas your documentation is meant to be a user's manual, consider your design document your opportunity to give the staff a technical tour of your project underneath its hood.
