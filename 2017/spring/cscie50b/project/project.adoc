@@ -16,7 +16,8 @@ Here are just some of the possibilities, organized into (non-exhaustive) "tracks
 
 If at a loss for ideas, look here for more inspiration!
 
-* https://manual.cs50.net/seminars/[CS50 Seminars]
+* https://www.youtube.com/playlist?list=PLhQjrBD2T382IHcDBSQYC4ZG4C2aTiA6C[CS50 Seminars 2016]
+* https://www.youtube.com/playlist?list=PLhQjrBD2T3819vqFDQ-EUVhjBxpU0fwKC[CS50 Seminars 2015]
 * http://newapps.cs50.net/cs50/@/discuss/threads/156/all/new/1[CS50 Discuss]
 
 === Software Track
@@ -34,11 +35,6 @@ If at a loss for ideas, look here for more inspiration!
 === Cross-Course Track
 
 Like to combine two courses' projects? If taking some other course this semester that has a final project, you are welcome and encouraged to combine this course's project and that course's project into one, toward an end of applying lessons learned in CS50 to some other field, so long as the joint project satisfies this course's and that course's expectations. Before pursuing a joint project, though, you must disclose to both courses and receive approval from both courses (as from your TF in CS50).
-
-=== Cross-Campus Track
-
-* Like to build a website via which undergrads can schedule Classroom-to-Table meals with faculty? Email Dean Rakesh Khurana for details!
-* ...
 
 === Hardware Track
 
