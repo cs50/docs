@@ -1,0 +1,44 @@
+---
+---
+:author: Cheng Gong
+
+= Privacy, Security
+
+* We look at this mysterious line:
+** Or fher gb qevax lbhe Binygvar.
+* Somehow, this is an encrypted, or scrambled version of "Be sure to drink your Ovaltine."
+* In the movie "A Christmas Story," the main character Ralphie has a decoder ring that he uses to encrypt and decrypt messages.
+* A cipher is an algorithm to convert letters from one to another, like using the number 2 to convert "a" to "c" and "b" to "d," shifting all the letters forward by 2.
+* With a code, letters are randomly converted from one to another with some mapping, like "b" to "q" and "c" to "z". This is more secure because there are more combinations, and the pattern is less obvious.
+* But these ciphers and codes are still easy to crack, since we can guess what the most frequent letters are, and what two-letter words are.
+* A cipher only requires O(_n_) to crack, since we can try every rotation number until we have a message.
+* We might try to add random letters to the output to hide the message.
+* We could also rotate each letter in the phrase by a different number.
+* For example, the first letter we might rotate by 13, the second one 14, the first one 13 again, etc.
+* If we had 6 different numbers to rotate by, we would have 26^6 = 308915776 combinations for an attacker to try.
+* We might use a cloud storage service like Dropbox or Google Drive, and they might say our files are kept secure by encryption.
+* We know that files in computers are represented in binary as 0s and 1s, so we can manipulate them as numbers to encrypt them.
+* But even if we have an algorithm to encrypt binary data, we need to provide it some key, like the number 13 in our cipher earlier (and hopefully much larger). And Dropbox might create a key to encrypt our data for us, and use our password to encrypt that key, so our files are still safe even if both the files and encrypted key are stolen.
+* Dropbox might want to use deduplication, or store each file that a user uploads only once. For example, everyone might have a copy of the same movie and upload it to Dropbox, but they don't want to store one copy for each person who uploads it, to minimize cost.
+* The implication there, though, is that Dropbox has to know the key that encrypts all the users' files, to check that the same file isn't stored multiple times.
+* To reduce costs of storage, we have the tradeoff of lower user privacy.
+* One way to get around this is to use some other software that encrypts your data on your computer, before it's uploaded to Dropbox. Then if you want to share a file with others, you can send them the Dropbox link along with the encryption key.
+* About a year ago, Apple had a legal battle with the FBI, who wanted Apple to modify the device to allow multiple attempts at guessing the passcode without destroying the data.
+* We might want to choose a short passcode that's easy to remember and use, but that comes with a tradeoff that it might be guessed in fewer attempts.
+* Whether or not there is a backdoor, or way to bypass a security system, is another discussion with tradeoffs.
+* We might also have smart TVs or phones that are vulnerable to hacking because they haven't been updated to fix security bugs. We might think a webcam isn't on because the light isn't on, but that line of code could be changed.
+* We generally trust software we download, and programs like Keynote might be secretly using our microphone without us knowing.
+* Our phones also have location services all the time.
+* If we think back to our discussion of compilers, source code that we write might be legitimate, but the compiled code might even include threats if the compiler is malicious.
+* And even if we write the binary program ourselves, we have to trust that the hardware, the Intel or AMD CPU, is not running instructions we didn't provide.
+* With so many layers in technology today, we inevitably have to trust someone somewhere.
+* The Volkswagen emissions scandal, where they wrote software to emit less fumes when the car was being tested, demonstrates that software could act differently while being tested, so malware might not be easily detectable.
+* Recently, Cloudflare, a CDN provider, experienced an obscure bug where data from other websites (stored in memory of the server) were being returned when they should not have been.
+* Encryption mechanisms are generally too secure to attack, but there are other ways (such as exploiting these bugs, or adding software to laptops before they leave the factory) to weaken a system's security.
+* We might have software that tries random inputs to look for anything that might be problematic, but if we do have widespread, serious issues, it's best to disclose and acknowledge the problem after it's fixed.
+* Many technology companies have bug bounty programs whereby they will offer some amount of money to external programmers who discover security bugs, report them to the company, and allow them time to fix the bugs.
+* A 0-day attack is where someone discovers a security issue and takes advantage of it before there is a solution or before the company is even aware.
+* So how might we establish a secure connection with a remote server? Encryption algorithms still require some secret key that both sides, but no one else, has.
+* Public-key cryptography is a system where two keys, one "public" key and one "private" key, has some mathematical properties such that data encrypted with the public key can only be decrypted with the private key, and there is no easy way to derive the private key from the public key.
+* Your browser uses the public key of a remote server to encrypt some secret key, thereby establishing a secure connection.
+* But these mathematical algorithms tend to rely on computationally difficult operations, such as factoring large numbers, to prevent the private key from being derived from the public key. But if these operations are more efficiently solved by new technologies, such as quantum computing, or even a mathematical way to reduce the time taken, then these encryption algorithms are severely weakened.
