@@ -1,5 +1,5 @@
 # CS50 Docs
-![Build Status](https://codeship.com/projects/e0762d30-50de-0134-3c37-4efbbc592ce7/status?branch=master)
+[![Build Status](https://travis-ci.org/cs50/docs.svg?branch=master)](https://travis-ci.org/cs50/docs)
 
 # Usage
 

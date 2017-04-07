@@ -1,13 +1,11 @@
-default: container
-
-image:
-	docker build -t docs .
-
 container:
-	docker run -i --rm -v "$(PWD)":/root -t docs
+	docker run -i --rm -v "$(PWD)":/root -t cs50/cli
+
+depends:
+	bundle install
 
 docs: clean
-	jekyll build -V
+	bundle exec jekyll build -V
 
 clean:
 	rm -rf css docs
