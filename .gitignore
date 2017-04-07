@@ -1,4 +1,6 @@
 .*
 !.gitignore
+!.travis.yml
 css/
 docs/
+Gemfile.lock
