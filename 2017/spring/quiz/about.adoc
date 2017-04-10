@@ -1,0 +1,24 @@
+---
+toc: false
+---
+
+= About Quiz
+
+Released at noon on Tue 4/18 and due by noon on Thu 4/20 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
+
+The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 48!) hours on the quiz.
+
+Sections on Sun 4/9, Mon 4/10, Tue 4/11, and Wed 4/12 will also be opportunities for review. Office hours on Sat 4/8, Sun 4/9, Tue 4/11, Wed 4/12, Sat 4/15, and Sun 4/16 will be additional opportunities for Q&A. There will be no office hours on Tue 4/19 or Wed 4/20, nor will CS50 Discuss be staffed during the quiz.
+
+The teaching fellows held a course-wide review session in the fall, which is available on the course website to supplement sections this week.
+
+The quiz's format will be similar to the test's format, with short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE).
+
+== How to Prepare
+
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any.
+. Review each lecture's *slides*.
+. Review each lecture's *video*.
+. Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Review problem sets' *specifications*, *postmortems*, and *distribution code*, if any.

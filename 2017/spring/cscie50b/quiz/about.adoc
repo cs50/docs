@@ -1,0 +1,46 @@
+---
+toc: false
+---
+
+= About Quiz
+
+Released at noon on Tue 4/18 and due by noon on Thu 4/20 is a take-home quiz that will cover the material in both CSCI E-50a and CSCI E-50b, with emphasis on the material in CSCI E-50b. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
+
+The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 48!) hours on the quiz.
+
+Sections on Sun 4/9 and (tentatively, due to the Easter holiday) Mon 4/17 will also be opportunities for review. Office hours on Thu 4/13 will be an additional opportunity for Q&A. There will be no office hours on Tue 4/19 or Wed 4/20, nor will CS50 Discuss be staffed during the quiz.
+
+The teaching fellows held a course-wide review session in the fall for both halves of the course, videos of which are available on the course website to supplement sections this week.
+
+The quiz's format differs from that used in CSCI E-50a. More information about the quiz is available below, but expect to see both short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE).
+
+== How to Prepare
+
+Ultimately, how best to prepare depends on how you learn best. But allow us to recommend that you prioritize your studies per the ordering below.
+
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any.
+. Review each lecture's *slides*.
+. Review each lecture's *video*.
+. Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Review problem sets' *specifications*, *postmortems*, and *distribution code*, if any.
+
+== Practice Exercises
+
+The following two questions are representative of the type of question you may see on this year's Test, given the new format:
+
+* link:practice/help50/help50.html[Human `help50`]
+* link:practice/sales/sales.html[Sales Force]
+
+You may also find this list of questions from https://cs50.harvard.edu/2017/spring/e50b/quizzes[years past] more representative of the sort of questions we may ask this time around. Note, though, that the course's content does vary slightly year to year:
+
+* *2015 Quiz 0*
+** 8, 17, 18, 23
+* *2014 Quiz 1*
+** 4
+* *2014 Quiz 0*
+** 27
+* *2013 Quiz 1*
+** 0, 1, 2, 12, 17, 20, 22
+* *2013 Quiz 0*
+** 8, 21, 22
