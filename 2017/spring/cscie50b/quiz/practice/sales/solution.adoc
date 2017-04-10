@@ -1,0 +1,73 @@
+=== Sales Force (sample solution)
+
+Other answers are possible.
+
+[source, c]
+----
+// constants
+#define ITEMS 4
+#define DAYS 7
+
+// includes
+#include <stdio.h>
+
+// global arrays
+int sales[DAYS][ITEMS] = {{7, 5, 26, 2},
+                          {8, 2, 13, 1},
+                          {6, 4, 22, 0},
+                          {5, 7, 19, 0},
+                          {6, 5,  8, 1},
+                          {8, 4, 24, 3},
+                          {9, 2, 43, 1}};
+
+float prices[ITEMS] = {19.95, 14.95, 1.49, 65.59};
+
+int main(void)
+{
+    // initial sales start as zero
+    float weekly_total = 0.00;
+
+    // arrays to hold daily and item totals
+    float daily_totals[DAYS];
+    float item_totals[ITEMS];
+
+    // iterate over every items in sales
+    for (int i = 0; i < DAYS; i++)
+    {
+        for (int j = 0; j < ITEMS; j++)
+        {
+            // calculate the daily sales amount
+            float daily = sales[i][j] * prices[j];
+
+            // add that amount to each set of totals, as appropriate
+            daily_totals[i] += daily;
+            weekly_total += daily;
+            item_totals[j] += daily;
+        }
+    }
+
+    // print the weekly total
+    printf("%.2f\n\n", weekly_total);
+
+    // print the seven daily totals
+    for (int i = 0; i < DAYS; i++)
+    {
+        printf("%.2f\n", daily_totals[i]);
+
+        // print an extra new line after the final daily
+        if(i == DAYS - 1)
+        {
+            printf("\n");
+        }
+    }
+
+    // print the four item totals
+    for (int j = 0; j < ITEMS; j++)
+    {
+        printf("%.2f\n", item_totals[j]);
+    }
+
+    // all done!
+    return 0;
+}
+----
