@@ -94,8 +94,6 @@ Of course, you needn't choose any of these if you don't want to, these are simpl
 
 Incidentally, once finished with your project you should *not* share it publicly on the Scratch website. The reason for this is that many of your peers will all be remixing the same original project and if you were to share your solution that would take the fun out of solving the problem for everyone else (not to mention would run you afoul of the course's academic honesty policy). :(
 
-Instead, what you should do once you've finished is download your completed project to your computer (as via *File... Download to your computer*), which should save your project as a `.sb2` file in your *Downloads* folder; rename the file to something identifying the project as your own; and then follow your teacher's instructions for collecting your downloaded Scratch projects.
-
 == How to Submit
 
 Submit https://forms.cs50.net/2016/x/ap/binary-bulbs[this form]!
