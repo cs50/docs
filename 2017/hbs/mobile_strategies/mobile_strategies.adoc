@@ -1,0 +1,52 @@
+---
+---
+:author: Cheng Gong
+
+= Mobile Strategies
+
+* Web programming allows us to generate dynamic web pages that can be responsive to users.
+* Today we look at how we might build a mobile website or app.
+* A *web app* is an application that's on a website, accessible by a browser. For example, GMail is a web app, since we can visit it in our desktop or phone browser, without having to download any additional programs. And it's an application since it's a dynamic site with interactive features that allow us to provide input and take advantage of certain features.
+* https://cs50.github.io/[https://cs50.github.io/], on the other hand, is not a web app since it's just some static content. On a phone, we might see a different layout, but it's still the same content written in HTML and CSS.
+* HBS' website has a hamburger menu:
++
+image::hbs.png[alt="HBS menu", width=300]
+** We might want to consider whether the user experience, especially given more options to choose from, is worth the cost and effort of implementing it.
+** We might also consider what we think is most important to present to the user, and we can even solve this quantitatively with A/B testing with different menus and layouts.
+* A *native app* is a standalone app that we download separately, has its own icon on the home screen, and possibly more screen space without the address bar that browsers have.
+* We might be taking up too much space on a user's phone if they have limited storage, and the phone's app stores might not approve our app. And a web app will be quicker to write than a native app.
+* A native app is slower to update, especially if users choose to not update them, while a the latest version of the web app is loaded every time.
+* On the plus side, we can get features like push notifications, and location services. Apps that have preloaded data can also be used offline. Users also experience less friction since they can log in once and have the app remember who they are, whereas a browser might need to reauthenticate every once in a while.
+* To implement a native app, we need to know the language that the mobile operating system requires, such as Swift or Objective-C for iOS, and Java for Android apps. And supporting both systems is often almost twice as much work than writing just a web app.
+* If we're a very small startup with a clear user base that primarily uses one platform, we might be able to start by developing for just one of them.
+* Another minus of developing a native app is that we'll need to think about different screen sizes and the user interface for each one.
+* *Hybrid apps* are written in the same languages as web apps, HTML and JavaScript, but use a framework that allows them to act like native apps. The skeleton of the app is already written, so we have a blank slate within which to place our web app, but otherwise the app will act like a native app and have its own icon.
+* A hybrid app's framework will provide some access to the hardware, like the camera, but not all features will be possible.
+* Our web app's files could also be embedded in the app, so offline access could be possible.
+* Three such popular frameworks for hybrid apps are:
+** React Native
+** Titanium
+** Vue
+* The popularity of these frameworks rise and fall rather quickly, but the principles that there are three types of mobile apps have generally remained true.
+* One of our former course assistants, Christina Pawlikowski, who is now a product manager at TripAdvisor, will discuss some of her experiences and decisions.
+* Three years ago, TripAdvisor's apps were native for phones and hybrid for tablets, and Christina worked to transition the tablet apps from hybrid to native.
+* Back then, hybrid apps lacked many features that they needed, and in fact maintaining both native and hybrid apps required twice the effort, whereas native apps for phones and tablets share at least some code.
+* And as more screen sizes became more popular, they needed to think about designing for those different sizes in the native apps anyway.
+* TripAdvisor doesn't have a separate mobile team. Rather, each feature team merges what they need into their shared mobile app codebase, with developers on each team who know iOS or Android app development.
+* By hiring business-minded engineers who think about their product's features, the teams work together better and create better products.
+* Machine learning is the process of telling a program what output we want, and letting it figure out the best way to get there through inputs and training data, or examples.
+* At TripAdvisor, machine learning helps them with ranking search results, determining categories of hotels, and tagging them automatically based on the text of comments. It is also used to help build a recommendation engine.
+* Though having these engineers in-house come with a high cost and effort to recruit, the benefits are that you won't have to deal with remote developers, or developers who aren't really invested in your business.
+* Instead of having a separate mobile team who reimplement features from all the other teams, the teams are organized such that each feature team implements their work on all platforms, so that the experience is consistent and polished for users.
+* The teams use standard tools like Jira, HipChat, and Trello, but also build certain data migration or analysis tools in-house.
+* A big company does see slower development sometimes, and as technical debt, or old code, builds up, development time also slows down.
+* In the product manager role, Christina finds herself often using SQL to quickly aggregate data and draw conclusions.
+* With a wider user base, they've needed to run tests with a range of users and iterate over designs for their software.
+* Development work also includes the tests that run in the background to make sure everything is functional and bug-free.
+* To decide which bugs to prioritize, factors such as how common it is, how important that feature is, and how much work is required to fix it, are all considered.
+* Even with a large development team, a website as complex as TripAdvisor has lots of places where something needs to be updated or broken as time goes on, so prioritization is important.
+* Another application of machine learning is to detect fraud, or content moderation. Personalization is also an important feature.
+* A product manager helps define the problem and solution, so there is a specification for engineers to implement, after they discuss the tradeoffs for potential approaches together.
+* Features like chatbots are far from perfect, so we might want to consider our audience and how much frustration they might tolerate before trying to implement.
+* Many online resources like Coursera offer courses in machine learning, for those more interested.
+* For our last class next time, we'll be talking about what technology stacks are, and how to choose one. Until then!
