@@ -1,0 +1,65 @@
+---
+---
+:author: Cheng Gong
+:toc: false
+
+= Technology Stacks
+
+* A technology stack is the collection of all the hardware and software needed to solve a problem.
+* To create a web application and a mobile application from just an idea, we might think about various tradeoffs.
+* What are the tech requirements of our idea? Do we want mobile apps for both iOS and Androids? Or is a website sufficient?
+** If latency is an important factor, we might require a native application that allows for local storage.
+** Hardware access, such as the GPS or camera, might also be a consideration.
+* From that, we can decide what kind of experience our technical candidates might need to have as we recruit for some to help us, but technologies change frequently so we should look for a general understanding, not just in a particular framework or tool.
+* We might also consider where we want to host our application, and choose between having servers locally or in the cloud.
+** Based on what we anticipate our user load to be, and testing with tools that simulate users, we can estimate how many servers we might need and thus our costs for both.
+** The feature set of different cloud service providers also vary and are at different price points, so we might consider the tradeoff of managing certain aspects versus paying for a provider to handle them.
+** We might also see savings from uptime, up-front costs, power, etc.
+** Encrypted data may still allow cloud providers to access our data, so we need to consider whether that is an acceptable tradeoff too.
+* The programming language we use might depend on what's popular or well-supported, such as:
+** Python
+** Swift
+** Ruby on Rails (RoR)
+** PHP
+** Java
+** JavaScript
+** C, C++, C#
+* The operating system we'd most likely to use these days is Linux, since there is no licensing cost compared to Windows. And since the same languages are supported on both, we usually won't have a strong reason to use Windows.
+* We also need to decide how to secure our data or design our database. With multiple database servers, we could replicate our databases with some latency, or use any number of other technologies to choose from.
+** Asking someone what technologies they would choose and why, would be a reasonable question to help guide any decisions down the line. And someone who has an open mind in suggesting various technologies might be more helpful than someone who always solves something in the same way, especially since technology changes so rapidly.
+* In the front-end, beyond HTML, CSS, and JavaScript, there are various frameworks and libraries that we can choose from to implement our applications with. For example, an auto-complete feature might have been written multiple times, and now a popular open source package might have all the code, minus a few small modifications, to fit our needs.
+* Bootstrap, for example, is a CSS library that includes stylization for elements such as forms and buttons, so our developers don't need to rewrite everything from the ground up.
+* For the back-end, too, there are many frameworks for almost every language. Django is a popular Python framework, with skeleton code for many common features a server needs.
+* There are also many cloud providers we might choose from.
+* In addition to developing and running our application, we might want:
+** code reviews, where engineers on your team review each others' code before deploying to production
+** continuous integration (CI), where your website is being tested for functionality constantly in the background
+** continuous deployment (CD), a process where new code is added and deployed multiple times a day
+** version control, where a program like Git keeps track of changes we make to the code, and logs it for us, so we know when and who made what changes. And we can even send our codebase to a centralized host like BitBucket, GitHub, or Gitlab, so it can be shared amongst the team easily.
+* Dr. Patrick Schmid, head of the engineering team at a startup called ACT.md, will talk to us about his experience and provide some context to what we've discussed so far.
+* ACT.md is a care coordination platform for healthcare, where providers have a centralized place to see all the information and plans for their patients.
+* Patients, too, can use it to see their status, especially if they have multiple diagnoses or providers as well.
+* The dashboard allows a quick overview of a patient's treatment plan, contacts, and history.
+* In version 1 of their product, all of this information was in one section, like a timeline, but with version 2 they had separated this information into different parts, with different permissions for each one.
+* Being able to share records is also important, since currently hospitals don't have a system to do that with each other. With ACT.md, patients and providers can share information with others as needed.
+* Since it's often critical for healthcare plans to be executed perfectly, the platform also includes sections for upcoming tasks, assessments, and appointments, so all of that information is clear and visible.
+* ACT.md is hosted by a provider called Armor, which is HIPAA-compliant, a law regarding the privacy rights to health-related information. Losing one data record, for example, could lead to large fines.
+* Their database was MySQL in version 1, and Postgres in version 2. They use Memcache and Redis for caching. They switched because Postgres allowed for easier failovers and backups.
+* Version 1 also used Flask with Python, and version 2 is using Ruby on Rails, which works well with Postgres. The database also supports storing JSON objects directly.
+* In a technology startup, the most expensive resource is an engineer. So version 1 used Flask and Python because the first engineers were most comfortable with those technologies, and time spent on learning new technologies would have been too expensive.
+* In version 1, their front-end used Bootstrap and Backbone, a JavaScript framework. The back-end was just an API that sent data back to the front-end and displayed it nicely.
+* Their servers and databases are on Armor because that provider checks off many requirements for data protection, such as locked doors, guards, cameras, power backup, etc. Amazon has similar features, but since they allow for more manual configuration, it also requires more effort to comply with those industry guidelines.
+* They stayed on version 1 for three years, and decided to rewrite their product because the architectural decisions made at the beginning no longer matched the direction that their product was going, so to change those underlying assumptions would have been a lot of work as well. And rewriting everything would allow for cleaner code.
+* A new language forced them to solve problems better the second time, without the ability to just copy and paste.
+* For hiring, there will be developers in most of the popular languages looking for jobs, but a startup needs to entice that set with their mission or culture.
+* They needed a mobile application that was basically just a wrapper for their web app, but they outsourced it, and got sub-standard code but no tests, information on how to package, or submit it to the App Store.
+* Management roles are overhead, but at the same time provide a centralized interface through which both internal teams and customers can communicate with each other. That layer saves time, but can also keep engineers from directly interacting with users and gaining from a direct experience.
+* Another problem for startups is that their code should be deployed and tested immediately, to prevent last-minute bugs. For example, on a local machine with one developer, a site might load instantly, but with latency and multiple users on a production server, pieces might load much slower.
+* The biggest errors in security tend to be human, where a missing if statement might allow anyone to search for someone else's file.
+* Instead of continuous deployment, they use continuous building, where everything is testable before the code is actually sent to production. When they do deploy, both sets of code are on the server, and the old version is turned off while the new one is turned on.
+* Who they hire also depends on the particular projects that they anticipate the new hire to be doing. For example, if there is a need for machine learning analysis on their data, they might look for someone with background there, but if there are just lots of small bugs accumulating, someone closer to a recent graduate might be a better fit.
+* Outsourcing might be quicker, but the downsides are cost and maintaining and supporting the code after.
+* Depending on the company, you might also want to look for someone with domain expertise. For example, a DNA sequencing company might look for engineers with some biology background so they can contribute to the process and not merely implementing requirements, but IMDB, a website for movies, can have a more general developer building their webpages.
+* Designing a good front-end might involve considering what a user is trying to accomplish, and how to make that interface as simple as possible. The back-end, then, might need to handle those requests in a performant way, and store the data needed for the future.
+* An important takeaway for the more business-minded roles is that they need to communicate business needs to engineers. In contrast, the engineering team doesn't need to communicate the underlying implementation, but rather whether the solution that they've built will meet those needs.
+* Thanks for joining us this year, and do stay in touch with any questions or advice!
