@@ -6,6 +6,7 @@ depends:
 	bundle install
 
 docs: clean depends
+	# removing bundle exec may cause command to fail
 	bundle exec jekyll build -V
 
 clean:
