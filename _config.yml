@@ -18,9 +18,7 @@ asciidoctor:
   safe: 0
 destination: docs
 exclude:
-- Dockerfile
 - Gemfile
-- Gemfile.lock
 - Makefile
 - README.md
 gems:
