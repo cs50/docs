@@ -116,16 +116,18 @@ Ultimately due are implementation and documentation of your final project. All t
 
 *If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project's needs.*
 
+=== Step 1 of 2
+
 [source]
 ----
 update50
 cd ~/workspace/project/ # or wherever you've stored your project
-FINAL SUBMISSION INSTRUCTIONS COMING SOON
+submit50 e50b/2017/spring/project
 ----
 
 === Step 2 of 2
 
-FORM LINK COMING SOON
+Complete the form at https://forms.cs50.net/2017/spring/implementation[].
 
 == CS50 Fair
 
