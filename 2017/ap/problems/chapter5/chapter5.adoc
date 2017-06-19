@@ -1,0 +1,235 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Problem: </Chapter 5>
+
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Acquaint yourself with how to set up a public webserver on the CS50 IDE.
+* Become familiar with basic HTML.
+* Become familiar with basic CSS.
+* Accustom yourself to searching for specific HTML tags and CSS values on the Internet.
+
+== Recommended Reading
+
+* http://diveintohtml5.info/
+* http://www.w3schools.com/html/
+* http://www.w3schools.com/css/
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Ready
+
+Beyond introducing you to web programming, the overarching goal of this problem is to empower you to teach yourself new languages so that you can stand on your own at the end of the year. We'll guide you through each, but if you nonetheless find yourself Googling and asking lots of questions of classmates and staff, rest assured you're doing it right!
+
+First consider joining Daven for a tour of HTML.
+
+video::dM5V1epAbSs[youtube]
+
+And consider reviewing some of David's examples. There are a lot of videos here, so don't feel like you have to watch them all if you are comfortable with the topics they cover!
+
+video::1TgTA4o_AM8[youtube]
+
+video::dW4giTKrgzo[youtube]
+
+video::GgpyVgkW_xk[youtube]
+
+video::whYnf7PFZ74[youtube]
+
+video::s1_kxTs5GfI[youtube]
+
+video::qyJXI2v7N8k[youtube]
+
+video::DQLbgo7Rzpg[youtube]
+
+Next consider joining Joseph again for a tour of CSS, the language with which web pages can be stylized.
+
+video::kg0ZOmUREwc[youtube]
+
+And consider reviewing some of David's examples.
+
+video::TKZlfZDF8Y4[youtube]
+
+video::VwCSw2ts388[youtube]
+
+video::-7wiXVMh4XY[youtube]
+
+Got it all? Not to worry if not, you'll have plenty of time to look back and review! For now, on to the problem.
+
+== Getting Started
+
+Up until this point in the course, you've been compiling just about all of your assignments in the terminal of CS50 IDE and running programs from there to see if they work. Now that we're diving into the land of web programming with HTML and CSS, however, you'll need to check the correctness of your program not by compiling, but rather by starting up CS50 IDE's web server (aka Apache), giving it permission to read your HTML and CSS files, and looking at the generated web page.
+
+When we start up the web server, we must give it a _root_ so that it knows which HTML page to display. We've provided a simple staff webpage to test that your web server works correctly that you can use as the root for now. Later, you'll be using your own!
+
+First, though, we need to ensure that no other servers are running accidentally in any other tabs by executing the below.
+
+[source,bash]
+----
+killall -9 server
+----
+
+Next, ensure that Apache isn't already running with some other root by executing the below.
+
+[source,bash]
+----
+apache50 stop
+----
+
+Then, (re)start Apache with the below so that it uses `~cs50/chapter5` as its root.
+
+[source,bash]
+----
+apache50 start ~cs50/chapter5
+----
+
+Visit `https://ide50-username.cs50.io/`, where `username` is your own username. You can do this either by typing in the URL or clicking the link at the top right of CS50 IDE. You should find yourself on a page that contains nothing other than a photo of an adorable cat. Congratulations! Your Apache web server works.
+
+It's now time to set up your own root so you too can begin building a web page, albeit one more complex than ours.
+
+As usual, log into https://cs50.io[CS50 IDE] and, in a terminal window, execute
+
+[source,bash]
+----
+update50
+----
+
+to ensure that your workspace is up-to-date!
+
+Next, execute
+
+[source,bash]
+----
+mkdir ~/workspace/chapter5
+----
+
+followed by
+
+[source,bash]
+----
+chmod a+x ~/workspace/chapter5
+----
+
+(don't worry about why for now!) and then
+
+[source,bash]
+----
+cd ~/workspace/chapter5
+----
+
+to create a directory for this problem and navigate into it. If you now execute
+
+[source,bash]
+----
+apache50 stop
+----
+
+and then
+
+[source,bash]
+----
+apache50 start .
+----
+
+you'll have a newly created webpage... containing nothing (for now). If you still see the "Happy Cat" from before, it's likely that your browser is just caching the previous content at the site. Press and hold the *Shift* key while clicking on refresh in your browser. Ultimately, assuming you haven't put any other content in `~/workspace/chapter5`, you should see something like the below.
+
+image::blankpage.png[Sample Page]
+
+== Permissions
+
+First, create your first HTML file by executing the below.
+
+[source,bash]
+----
+touch index.html
+----
+
+If you now type `ls`, you should see `index.html` listed in your current directory.
+
+Now execute the command
+
+[source,bash]
+----
+ls -l
+----
+
+You should see an output similar to the below, but with a different time stamp.
+
+[source,bash]
+----
+-rw------- 1 ubuntu ubuntu 0 Feb 1 12:27 index.html
+----
+
+Remember our discussion of permissions earlier in this unit? Here's where they come into play. Permissions are split into three parts: readable, writeable, and executable. Similarly, there are three levels of permissions: user, group, and all. Thus, you can, for example, make a file both readable and writeable for yourself (as the user), but only readable for everyone else.
+
+When you execute the `ls -l` command, the levels of permissions are ordered as follows: first `user`, then `group`, then `all`.
+
+Note the number of dashes in addition to the "r" and "w" in the above output. They all represent bits, and can be thought of as groups of 1, 3, 3, and 3. The dashes indicate permission bits that have not been set. This breaks down in the following way:
+
+* The first bit is a _directory_ bit, and is set to a "d" if the file you've listed is a directory.
+* The next set of three bits are the _user_ bits, and will be set for user permissions. Here we see an "r" and a "w" but no "x"; this means that the user (which is you!) is able to both read and write `index.html`, but you are not able to execute it. That's ok, though, because we don't need to compile HTML files anyway!
+* The next set of three bits are the _group_ bits, which dictate permissions for a specified group of people if you so desire, though we have no specified group in this case. You'll note that none of the three bits are set, so this group would not be able to read, write, or execute `index.html`.
+* The final three bits are the _all_ bits, which dictate permissions for everyone else with access to your directory. We can see here that none of these bits are set either; this means that no one except for you is able to read or write to `index.html`!
+
+But didn't we just say that Apache needs access to your files to be able to display them via the web server we've just started? Indeed, we did! If only you have access to the files, neither Apache nor anyone else will be able to see any web page you create.
+
+Therefore, you must make sure that every file within your current directory is "world-readable". You can do this for `index.html` by executing
+
+[source,bash]
+----
+chmod a+r index.html
+----
+
+Don't forget this step for all other files you create, or you won't be able to view anything you've written in the web server! Incidentally, every directory within your root that you want to be publicly accessible must be "world-executable", which is why we executed
+
+[source,bash]
+----
+chmod a+x ~/workspace/chapter5
+----
+
+above. Without that step, apache50 wouldn't have even been able to access the directory it wanted to be the root!
+
+== Hello, HTML
+
+Finally, you should be ready to go! Your assignment is simply to create a web page. You should have one HTML file (named whatever you'd like, it does not need to be `index.html`) containing the web page's structure, and one CSS file for styling. Other than that, there are no restrictions on other things you'd like to include.
+
+Feel free to be creative with this assignment. Make something that is meaningful to you - it could be a blog post, a pseudo-shopping website, or a family tree. The sky is the limit! At the bare minimum, your page *MUST* include the following:
+
+* A table
+* A link to an external website
+* A button (which needn't actually have a function, but should exist on the page)
+* At least two divs, with div IDs
+* A list
+* A heading
+* A paragraph
+* At least three images, either externally linked or contained within your `~/workspace/chapter5` directory
+* At least one block of text that is not left-aligned
+* At least two different fonts
+* At least three different colors of text
+* At least two other extra features, one in HTML and one in CSS
+
+Of course, you can do many more of each of the above; and to make a neat website, you'll have to!
+
+Because this assignment will result in something different for each person, there's no `check50` for this one. Make sure that you've included everything listed above and you have no broken links or permission issues and you should be good to go.
+
+This was </Chapter5>.
