@@ -69,7 +69,7 @@ Now, at the prompt, type:
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2016/ap/problems/friends/friends.zip
+wget http://docs.cs50.net/2017/ap/problems/friends/friends.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see some output followed by:
