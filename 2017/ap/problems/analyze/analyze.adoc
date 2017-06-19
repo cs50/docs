@@ -1,0 +1,53 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Writing Problem: Analyze This
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Reflect on your experience
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this writing problem will be evaluated along three axes primarily.
+
+Scope::
+    To what extent does your submission align with the requirements of the specification?
+Correctness::
+    To what extent is your submission correct and free of factual errors?
+Style::
+    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
+
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== So Meta
+
+[quote,Upchurch & Sims-Knight, Reflective Essays in Software Engineering (1999)]
+____
+The acquisition of expertise (a) takes a long time to develop, (b) takes intense, focused effort on the part of the individual, and (c) resists direct tuition. Ten years of exposure to a field appears to be a necessary, but not sufficient condition for the development of expertise. The number of years of experience is a weak predictor of performance. Practice alone is sufficient to develop a certain level of competence, but, for most people, will not result in true excellence. Deliberate practice, defined as practice in order to improve, has been suggested as the key to increasing competence. In many studies, the critical variable was not the amount of time engaged in the activity, rather it was practice with the intent of figuring out how to get better.
+____
+
+Odds are, particularly if you find yourself among those less comfortable and this is your first course in computer science, you've made a remarkable amount of progress as a programmer, perhaps much more so than you predicted. But as the above quote illustrates, merely knowing how to write code does not a good programmer make. Many members of the CS50 staff have been programming for upwards of ten years, and as any of them will quickly tell you, their learning never ceases. There is always an opportunity for growth and improvement, and often times the largest amounts of growth and improvement come from taking the time for some self-reflection.
+
+In this writing problem, we want to provide you with a structured opportunity to perform some of this self-reflection. There are no wrong or right answers to any portion of this problem; rather, the most important thing is that you analyze your own experiences in CS50 AP over the last several weeks or months with a critical eye.
+
+In 500-1,000 words, prepare an essay on your experience, expectations, growths, triumphs, and struggles up through this point in the course. You can spend as much time as you feel is appropriate on each of these questions, but over the course of your writing you should touch on at least the following topics:
+
+* Discuss your initial expectations of this course, and about how the course has either aligned with or deviated from these expectations.
+* Write about at least one programming problem and at least one writing problem that you enjoyed or did not enjoy. What specifically about that problem did you enjoy or not enjoy, and why do you feel that way?
+* Explain how your habits as a computer scientist have evolved. How do you do things differently at this point in the course from how you did the same things in Unit 1? For instance, has your debugging strategy changed? Do you find yourself more intuitively counting from 0 instead of 1? Do you find that some of what you've learned in this course has extended to other domains of interest to you? How?
+* Do you feel you learn the most from watching videos, reading excerpts, reviewing slides, hearing audio, or some amalgam of these? Why do you think that is?
+* Explain how you expect your habits as a computer scientist and programmer to evolve further as you proceed through the course.
+* Touch on an "a-ha!" moment that you encountered in the course; a moment when suddenly a concept that you struggled with made sense. If you have yet to encounter or experience such a moment, discuss why.
+* Talk about each of these with a classmate, and compare notes. How have your experiences differed and how have they aligned?
+
+This metacognitive assessment is but one step in not necessarily becoming a better programmer or a better computer scientist, but really becoming a better learner. The better you understand your thought process, the easier it becomes to determine how to best understand something that may initially confound you. Once you've figured that out, your horizons can expand infinitely.
+
+This was Analyze This.

@@ -1,0 +1,376 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Problem: Seek
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Explore Makefiles.
+* Reuse and repurpose previously written code.
+* Learn about and implement linear and binary search.
+
+== Recommended Reading
+
+* Page 17 of http://www.howstuffworks.com/c.htm.
+* Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
+* Chapters 13, 15, and 18 of _Programming in C_.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Ready
+
+Lots of recommended videos for you for this problem, although a few of them you've seen before and should feel free to skip over. Chances are at least a few of these will come in handy.
+
+First up, sorting algorithms with Jackson and Tommy:
+
+video::8Kp-8OGwphY[youtube]
+
+video::f8hXR_Hvybo[youtube]
+
+video::DFG-XuyPYUQ[youtube]
+
+And then a discussion of linear and binary search with Patrick (don't worry too much about when Patrick turns the discussion toward __binary search trees__ in the second half of the binary search video... we'll get there soon enough, though!):
+
+video::CX2CYIJLwfg[youtube]
+
+video::D5SrAga1pno[youtube]
+
+== Getting Started
+
+Below are two options for getting started with this problem. The first option is for those who wish to start with a staff-provided pseudorandom number generator. The second option is for those who wish to use their own pseudorandom number generator from http://docs.cs50.net/2017/ap/problems/rng/rng.html[RNG]
+
+But first, log into https://cs50.io/[cs50.io] and execute
+
+[source,bash]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date.
+
+Then, execute
+
+[source,bash]
+----
+cd ~/workspace/chapter3
+----
+
+at your prompt to ensure that you're inside of `chapter3` (which is inside of `workspace` which is inside of your home directory). Then execute
+
+[source,bash]
+----
+wget http://docs.cs50.net/2017/ap/problems/seek/seek.zip
+----
+
+to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see a bunch of output followed by:
+
+[source,bash]
+----
+'seek.zip' saved
+----
+
+Confirm that you've indeed downloaded `seek.zip` by executing
+
+[source,bash]
+----
+ls
+----
+
+and then run
+
+[source,bash]
+----
+unzip seek.zip
+----
+
+to unzip the file.  If you then run `ls` again, you should see that you have a newly unzipped directory called `seek` as well. You can now delete the ZIP, with:
+
+[source,bash]
+----
+rm seek.zip
+----
+
+confirming your intent to delete that file, then proceed to execute
+
+[source,bash]
+----
+cd seek
+----
+
+followed by
+
+[source,bash]
+----
+ls
+----
+
+and you should see that the directory contains five files:
+
+[source,bash]
+----
+Makefile  generate.c  helpers.c  helpers.h  seek.c
+----
+
+**Only choose one of the below two options.**
+
+Then, after having chosen your option and followed all the steps therein, pick up at "Seek and Find".
+
+=== Option 1: Use the Staff's PRNG
+
+You're pretty much done getting set up at this point, actually. Except you should probably peruse `generate.c`; you'll notice that we've left several comments just reading `TODO`. Take a few minutes to complete those comments, just to ensure you understand what's happening in that file.
+
+=== Option 2: Use Your Own PRNG
+
+The staff's PRNG can be found in `generate.c`, but you can fairly easily replace it with your own. Let's first delete the staff's PRNG with
+
+[source,bash]
+----
+rm -f generate.c
+----
+
+Now, let's copy over the PRNG that you wrote a few problems back. Assuming you followed our directory hierarchy conventions, that file should be called `rng.c` and should live inside of a directory called `rng` inside of your `chapter3` directory, inside of your `workspace`, all of which is inside of your home (`~`) directory. Sounds like a mouthful. But knowing that, we don't even need to move from where we currently are to get that file. That's kind of cool. Before doing anything, ensure that you currently are inside of your `seek` subdirectory. The Linux command `pwd` (for "present working directory") will tell you where you currently are. Type
+
+[source,bash]
+----
+pwd
+----
+
+and you should get the following output:
+
+[source,bash]
+----
+/home/ubuntu/workspace/chapter3/seek
+----
+
+If so, great! If not, make sure to navigate there with `cd`. Then, type the following:
+
+[source,bash]
+----
+cp ~/workspace/chapter3/rng/rng.c .
+----
+
+The space and the `.` are deliberate! What this command basically does is tell the computer to copy the first argument (which is the __absolute path__ to the `rng.c` file you've previously written) to the second. But what the heck is `.`? Well, it turns out that's the shorthand way of saying "where I currently am." So, you've just told the computer to place a copy of `rng.c` inside of your present working directory. Confirm as much with:
+
+[source,bash]
+----
+ls
+----
+
+and you should see `rng.c` among your files. If not, odds are you made a small mistake a few steps back. Retrace your steps and try again.
+
+Now, we could open up the `Makefile` and edit it so it creates an executable called `rng`, but that would require quite a bit of work. Why not instead just rename our file to `generate.c`? It's pretty easy, just:
+
+[source,bash]
+----
+mv rng.c generate.c
+----
+
+And now if you
+
+[source,bash]
+----
+ls
+----
+
+one final time, no longer should you see `rng.c` among your files, but rather `generate.c`.
+
+== Seek and Find
+
+You'll be writing your code in `helpers.c` and `helpers.h` only in this problem. `seek.c` can be left alone, as can `generate.c` (with the exception that if you are using the staff's PRNG you should comment that file!)
+
+To begin, simply type
+
+[source,bash]
+----
+make
+----
+
+which will create not one but **two** executables: `seek` and `generate` (open up `Makefile` to see why!).
+
+Now take a look at `seek.c`.  Notice that this program expects a single command-line argument: a "needle" to search for in a "haystack" of values.
+
+Go ahead and run this program by executing, say, the below.
+
+[source,bash]
+----
+./seek 13
+----
+
+You'll be prompted to provide some hay (i.e., some integers), one "straw" at a time.  As soon as you tire of providing integers, hit ctrl-d to send the program an `EOF` (end-of-file) character.  That character will compel `GetInt` from the CS50 Library to return `INT_MAX`, a constant that, per `seek.c`, will compel `seek` to stop prompting for hay.  The program will then look for that needle in the hay you provided, ultimately reporting whether the former was found in the latter.  In short, this program searches an array for some value.  At least, it should, but it won't find anything yet! That's where you come in.  More on your role in a bit.
+
+In turns out you can automate this process of providing hay, though, by "piping" the output of `generate` into `seek` as input.  For instance, the command belowfootnote:[This command and all subsequent references to the `generate` program assume use of the staff-provided PRNG. If you use your own PRNG you either have to change the command-line arguments you provide, since the PRNG you wrote took 2 or 3 command line arguments (not 1 or 2, like the staff's), or modify your copy of `generate.c` to no longer take the `max` parameter. Your choice!] passes 1,000 pseudorandom numbers to `seek`, which then searches those values for `42`.
+
+[source,bash]
+----
+./generate 1000 | ./seek 42
+----
+
+Note that, when piping output from `generate` into `seek` in this manner, you won't actually see ``generate``'s numbers, but you will see ``seek``'s prompts.
+
+Alternatively, you can "redirect" ``generate``'s output to a file with a command like the below.
+
+[source,bash]
+----
+./generate 1000 > numbers.txt
+----
+
+You can then redirect that file's contents as input to `seek` with the command below.
+
+[source,bash]
+----
+./seek 42 < numbers.txt
+----
+
+=== search (1)
+
+And now the fun begins!  Notice that `seek.c` calls `search`, a function declared in `helpers.h`.  Unfortunately, we forgot to implement that function fully in `helpers.c`!  (To be sure, we could have put the contents of `helpers.h` and `helpers.c` in `seek.c` itself.  But it's sometimes better to organize programs into multiple files, especially when some functions are essentially utility functions that might later prove useful to other programs as well, much like those in the CS50 Library.)  Take a peek at `helpers.c` with, and you'll see that `search` always returns `false`, whether or not `value` is in `values`.  Re-write `search` in such a way that it uses **linear search**, returning `true` if `value` is in `values` and `false` if `value` is not in `values`.  Take care to return `false` right away if `n` isn't even positive.
+
+When ready to check the correctness of your program, try running the command below.
+
+[source,bash]
+----
+./generate 1000 50 | ./seek 127
+----
+
+Because one of the numbersfootnote:[Again, assuming you're using the staff-provided PRNG!] outputted by `generate`, when seeded with `50`, is `127`, your code should find that "needle"!  By contrast, try running the command below as well.
+
+[source,bash]
+----
+./generate 1000 50 | ./seek 128
+----
+
+Because `128` is not among the numbers outputted by `generate`, when seeded with `50`, your code shouldn't find that needle.  Best to try some other tests as well, as by running `generate` with some seed, taking a look at its output, then piping that same output to `seek`, looking for a "needle" you know to be among the "hay".
+
+Incidentally, note that `main` in `seek.c` is written in such a way that `seek` returns `0` if the needle is found, else it returns `1`.  You can check the so-called "exit code" with which `main` returns by executing
+
+[source,bash]
+----
+echo $?
+----
+
+after running some other command.  For instance, assuming your implementation of `search` is correct, if you run
+
+[source,bash]
+----
+./generate 1000 50 | ./seek 127
+echo $?
+----
+
+you should see `0`, since `127` is, again, among the 1,000 numbers outputted by `generate` when seeded with `50`, and so `search` (written by you) should return `true`, in which case `main` (written by us) should return (i.e., exit with) `0`.  By contrast, assuming your implementation of `search` is correct, if you run
+
+[source,bash]
+----
+./generate 1000 50 | ./seek 128
+echo $?
+----
+
+you should see `1`, since `128` is, again, not among the 1,000 numbers outputted by `generate` when seeded with `50`, and so `search` (written by you) should return `false`, in which case `main` (written by us) should return (i.e., exit with) `1`.  Make sense?
+
+When ready to check the correctness of your program officially with `check50`, you may execute the below.
+
+[source,bash]
+----
+check50 1718.chapter3.seek helpers.c
+----
+
+Anyhow, if you'd like to play with the staff's own implementation of `seek`, you may execute the below.
+
+[source,bash]
+----
+~cs50/chapter3/seek
+----
+
+== Sorting
+
+Alright, linear search is pretty meh.  Recall from Week 0 that we can do better, but first we'd best sort that hay.
+
+=== sort
+
+Notice that `seek.c` calls `sort`, a function declared in `helpers.h`.  Unfortunately, we forgot to implement that function fully too in `helpers.c`!  Take a peek at `helpers.c`, and you'll see that `sort` returns immediately, even though ``seek``'s `main` function does pass it an actual array.
+
+Now, recall the syntax for declaring an array.  Not only do you specify the array's type, you also specify its size between brackets, just as we do for `haystack` in `seek.c`:
+
+[source,c]
+----
+int haystack[MAX];
+----
+
+But when passing an array, you only specify its name, just as we do when passing `haystack` to `sort` in `seek.c`:
+
+[source,c]
+----
+sort(haystack, size);
+----
+
+(Why do you think we pass in the size of that array separately?)
+
+When declaring a function that takes a one-dimensional array as an argument, though, you don't need to specify the array's size, just as we don't when declaring `sort` in `helpers.h` (and `helpers.c`):
+
+[source,c]
+----
+void sort(int values[], int n);
+----
+
+Go ahead and implement `sort` so that the function actually sorts, from smallest to largest, the array of numbers that it's passed, in such a way that its running time is in _O_(_n_^2^), where _n_ is the array's size.  Odds are you'll want to implement bubble sort, selection sort, or insertion sort, since you've already done so in http://docs.cs50.net/2017/ap/problems/race/race.html[the Sort Race]. Just realize that there's no one "right" way to implement any of those algorithms; variations abound.  In fact, you're welcome to improve upon them as you see fit, so long as your implementation remains in _O_(_n_^2^).  However, take care not to alter our declaration of `sort`.  Its prototype must remain:
+
+[source,c]
+----
+void sort(int values[], int n);
+----
+
+As this return type of `void` implies, this function must not return a sorted array; it must instead "destructively" sort the actual array that it's passed by moving around the values therein.
+
+Although you may not alter our declaration of `sort`, you're welcome to define your own function(s) in `helpers.c` that `sort` itself may then call.
+
+We leave it to you to determine how best to test your implementation of `sort`.  But don't forget that `printf` and GDB are your friends.  And don't forget that you can generate the same sequence of pseudorandom numbers again and again by explicitly specifying ``generate``'s seed.  Before you ultimately submit, though, be sure to remove any such calls to `printf`, as we like our programs' outputs just they way they are!
+
+Here's Zamyla with some tips:
+
+video::U8k-0StE1Ik[youtube]
+
+And if you'd like to play with the staff's own implementation of `seek`, you may execute the below.
+
+[source,bash]
+----
+~cs50/chapter3/seek
+----
+
+=== search (2)
+
+Now that `sort` (presumably) works, it's time to improve upon `search`, the other function that lives in `helpers.c`.  Recall that your first version implemented linear search.  Rip out the lines that you wrote earlier.
+
+++++
+<iframe scrolling="no" allowtransparency="true" src="spongebob.gif" width="480" height="268" frameBorder="0" allowFullScreen></iframe>
+++++
+
+
+Cruel, we know.
+
+Anyway, re-implement `search` as binary search, that divide-and-conquer strategy we've seen employed. You are welcome to take an iterative approach (as with a loop) or, if feeling like jumping ahead a bit, a recursive approach (wherein a function calls itself). If you pursue the latter, though, know that you may not change our declaration of `search`, but you may write a new, recursive function (that perhaps takes different parameters) that `search` itself calls.
+
+When it comes time to submit your work, it suffices to submit this new-and-improved version of `search` only; you needn't submit your original version that used linear search.
+
+Here's Zamyla again:
+
+video::7DSRJj7qfP8[youtube]
+
+This was Seek.
