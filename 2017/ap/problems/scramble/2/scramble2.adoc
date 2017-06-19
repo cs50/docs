@@ -1,0 +1,102 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Problem: Scramble (Part 2)
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Extend your code and modify distribution code.
+* Explore recursion.
+* (Play.)
+
+== Recommended Reading
+
+* Page 17 of http://www.howstuffworks.com/c.htm.
+* Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
+* Chapters 13, 15, and 18 of _Programming in C_.
+
+== Prerequisites
+
+* This problem requires that you have completed http://docs.cs50.net/2017/ap/problems/scramble/1/scramble1.html[Scramble (Part 1)]. Unfortunately we are not able to provide a partial staff solution as the basis for this particular problem.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Ready
+
+Before diving in, take a few minutes and join Zamyla on a quick foray into recursion, an elegant problem-solving technique that (hint, hint) will probably prove useful as you work on this problem.
+
+video::t4MSwiqfLaY[youtube]
+
+== Getting Started
+
+First, log into https://cs50.io/[cs50.io] and execute
+
+[source,bash]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date.
+
+Then, execute
+
+[source,bash]
+----
+cd ~/workspace/chapter4
+----
+
+at your prompt to ensure that you're inside of your `chapter4` directory. Now, we're going to copy your prior solution to `scramble` (which, if you've been adhering to our recommended hierarchy, should be living in `chapter3` inside of your `workspace`) over to `chapter4`. To do so, execute the following:
+
+[source,bash]
+----
+cp -r ../chapter3/scramble .
+----
+
+Whoa... what? What just happened? Well, we just asked the IDE to __recursively copy__ (`cp -r`) the entire contents of `../chapter3/scramble` (that is to say, navigate one level up, to `~/workspace`, then drill down into `chapter3/scramble` from there) into our current directory (`.`). Let's see if it worked. Type
+
+[source,bash]
+----
+ls
+----
+
+and hopefully among the directories you see available to you is one called `scramble`, and if you navigate into that directory some (hopefully!) familiar files await you. Atop the comments to `scramble.c`, be sure to change the problem number you are working on from `Part 1` to `Part 2`.
+
+== Feeling Inspired
+
+Let's take this game up another notch or two. Extend your previously-completed implementation of `scramble` and our distribution code by making the following modifications to the program:
+
+* Extend the implementation of the game in such a way that any time the user types `INSPIRATION`, up to three words are displayed, one of length 5 (if any), one of length 4 (if any), and one of length 3 (if any), all of which are in the dictionary and in the grid but not yet found. Odds are you'll be able to make use of one or more of the functions that we've provided as part of the original distribution to help.
+* Implement variable scoring, by which we mean that letters in words found contribute the values below to a user's score, instead of the default where every letter is simply worth 1 point.
+
+[width="80%"]
+|==============================
+|A = 1|G = 3|L = 2|Q = 10|V = 5
+|B = 4|H = 3|M = 4|R = 1|W = 4
+|C = 4|I = 1|N = 2|S = 1|X = 8
+|D = 2|J = 10|O = 1|T = 1|Y = 3
+|E = 1|K = 5|P = 4|U = 2|Z = 10
+|F = 4|     |     |     |
+|==============================
+
+Now you can play (well, maybe after some more debugging) a more complete version of `scramble`!
+
+This was Scramble (Part 2).
