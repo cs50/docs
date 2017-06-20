@@ -1,0 +1,173 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Problem: Address Book
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Further your understanding of HTML and CSS.
+* Gain comfort with Python in a web development context.
+* Work with files using Python.
+
+== Recommended Reading
+
+* http://flask.pocoo.org/docs/0.12/
+* http://www.w3schools.com/tags/ref_httpmethods.asp
+* http://www.w3schools.com/tags/tag_form.asp
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this writing problem will be evaluated along four axes primarily.
+
+Scope::
+    To what extent does your submission align with the requirements of the specification?
+Correctness::
+    To what extent is your submission correct and free of factual errors?
+Design::
+    To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
+
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Ready
+
+Make sure you've taken a good look at the CS50 materials on HTML and Python.
+
+Here's Daven with a few words on HTML!
+
+video::wjkJaQYDxjQ[youtube]
+
+For good measure, take a look at David's lecture on Python as well, if needing a refresher on the syntax beyond just that used for web development!
+
+video::5aP9Bl9hcqI[youtube]
+
+Once comfortable, it's time to dive in!
+
+== Getting started
+
+Open up your IDE and make sure you have an updated IDE before executing (from within the directory where you are working on problems in Chapter 6):
+
+[source,bash]
+----
+wget http://docs.cs50.net/2017/ap/problems/address/address.zip
+----
+
+Unzip and open up the directory. Recursively list the directory's contents (with `ls -R`) and you should see the below:
+
+[source,bash]
+----
+.:
+application.py  contacts.csv  static/  templates/
+
+./static:
+styles.css
+
+./templates:
+index.html  submit.html  whoops.html
+----
+
+== One Birthday Every Year?
+
+It's the CS50 Muppet's birthday again! As one would expect, he has quite a few friends and, magnanimous muppet that he is, wants to invite them all to his birthday party!
+
+Unfortunately, our friendly neighborhood Muppet has suffered an organizational disaster since his https://docs.cs50.net/2017/ap/problems/party/party.html[last birthday], losing almost all of his contact list. He has a few cobbled together from his phonefootnote:[Yes, Muppets use phones.], others in his emailfootnote:[Yes, Muppets use email.], and a select few he only has on business cardsfootnote:[Yes, Muppets have business cards.]. Instead of sending out lots of individual invitations, our Muppet wants to email all his friends at once (sound familiar?). But to do that, he needs to have all his friends' contact information in the same place, and ideally have a way to add new contacts for safe(r) keeping.
+
+== Contact Me
+
+The good news is, we've volunteered you to help CS50 Muppet out! The task at hand is to create a form in HTML to compile all of the necessary contact information, and make it so that when the form is submitted, the __action__ that form takes is to execute a Python file that opens up CS50 Muppet's contacts list (stored in a CSV file--do you remember https://en.wikipedia.org/wiki/Comma-separated_values[what that is]?), add a new line to it in that same format, and then close the file. You'll use some of your previous experience working with Python purely for scripting, as well as drawing upon your newfound knowledge of passing information from a form to a Python file using `GET` or `POST`.
+
+How do we do this and what shall you do? Allow us to briefly touch on the five files you've been given and make some suggestions on how to proceed:
+
+=== application.py
+
+Here will live the heart of your web application! `application.py` is a Python file, but it is **not** meant to be run as a script (as with `python application.py`, for instance), but rather through http://flask.pocoo.org/[Flask], a so-called "framework" which makes creating Python web applications much simpler! In fact, you can start CS50 Muppet's website right now by typing
+
+[source,bash]
+----
+flask run
+----
+
+while inside of your `address` directory. Hopefully, you'll get some output like the below:
+
+[source,bash]
+----
+* Serving Flask app "application"
+* Forcing debug mode on
+* Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+* Restarting with stat
+* Debugger is active!
+----
+
+Go ahead and click on the `http://0.0.0.0:8080/` line (alternatively, you can click on the "CS50 IDE" button in the top left of the IDE and the click "Web Server") to see the website in action! Unfortunately, there's not that much there yet. But that's why you're here! :-)
+
+=== contacts.csv
+
+Remember that a CSV, or comma separated values file, is quite literally just a list of values separated by commas. Values are grouped together by the line that they are on in the file, thus a newline character separates each row of values. Our file, `contacts.csv`, contains the contact information of CS50 Muppet's friends--or at least it will once you complete this problem!
+
+Our file is structured like this: `first name, last name, street address, city, state, zip code, cake preference`. Notice that these are indeed the column headers that we included in the first line of the file!
+
+As such, CS50's own Milo Banana's contact line would look like this: +
+`Milo,Banana,50 CS Way,Cambridge,MA,02138,vanilla`
+
+But how will you fill this file, and ensure that it remains properly organized?
+
+=== static/
+
+==== styles.css
+
+This file is simply a basic CSS stylesheet to make our form a little bit easier on CS50 Muppet's eyes. Feel free to play around with it to create your own unique look!
+
+=== templates/
+
+==== index.html
+
+`index.html` will be the portion of the site that the end-user (CS50 Muppet or his friends) will most frequently interact with. It needn't be terribly fancy--though this is a great opportunity to get more practice with CSS--but should simply be a form that collects *all* of the following information:
+
+* first name
+* last name
+* street address
+* city
+* state
+* zip code
+* cake preference
+
+Note again that these are the first few values we've included in `contacts.csv`. As they are the first row, these values aren't actually values, but the column headers! Thus, in every row, we can, and indeed should, expect the value to correspond to that column's header. For example, everything in the first column should have been entered in the "first name" area in the form.
+
+The last question should be a choice between *chocolate* and *vanilla*, but not both. Nor should users be able to enter any other flavors. Unfortunately, CS50 Muppet's favorite bakery is not very flexible with their cake choices.
+
+==== submit.html
+
+In this file, a confirmation message is displayed to the user that their data has been entered successfully.
+
+==== whoops.html
+
+But wait, just like an annoying infomercial, there's more. Sometimes, CS50 Muppet types so fast that he misses one of the entry fields for the form. This leads to missing contact information and then missing guests, which no one wants.
+
+== The Flask Task
+
+But how will you get the form results into the CSV file? Well, that's the interplay between back- and front-end (i.e. Python and HTML/CSS) comes in. Your form in `index.html` should, via `POST`, pass the form information to `application.py` when the submit button is pressed (naturally). Inside `application.py`, you should write a "route" method for `/submit`, such that
+
+. Each form submission enters one row of data into `contacts.csv`
+. Bad submissions (i.e. an incomplete form) are not entered into `contacts.csv` and the user is redirected to `whoops.html`
+
+Remember also that when you open a file (in C or in Python) you have to specify the __mode__ in which you are opening it. Be careful not to inadvertently choose the wrong mode! Read up on them a little bit, perhaps checking out the manual page for `fopen`.
+
+As far as working with the form data goes, a good start would be Flask's documentation! You'll find that there's quite a bit out there about how to do most anything in Python. Here's a hint: you may find http://flask.pocoo.org/docs/0.12/quickstart/[this page] especially helpful to start with.
+
+== Party Time
+
+When finished your locally hosted site should be able to:
+
+* Take contact information from CS50 Muppet, entered via a web form
+* Ensure that the contact information is complete, redirecting the user to try again if not
+* If the contact information is complete, write it to `contacts.csv`
+
+This was Address Book.
