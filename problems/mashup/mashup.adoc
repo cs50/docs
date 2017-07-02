@@ -122,7 +122,7 @@ $ cd mashup
 $ ls
 application.py  mashup.db         static/
 helpers.py      requirements.txt  templates/
-$ wget http://download.geonames.org/export/zip/US.zip
+$ wget http://cdn.cs50.net/2016/fall/psets/8/US.zip
 $ unzip US.zip
 $ rm US.zip
 $ ls
