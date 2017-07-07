@@ -677,7 +677,7 @@ Before you consider this problem set done, best to ask yourself these questions 
 [source]
 ----
 cd ~/workspace/finance
-mysqldump -u$(username50) -p$(password50) pset7 > finance.sql
+mysqldump -u$(username50) -p$(password50) finance > finance.sql
 ----
 +
 If you type `ls` thereafter, you should see that you have a new file called `finance.sql` in `~/workspace/finance`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `finance.sql` with `rm finance.sql`, then re-export as before.)

@@ -745,6 +745,16 @@ Before you consider this problem set done, best to ask yourself these questions 
 * Are you displaying any dollar amounts to at least two decimal places but no more than four?
 * Are you storing stocks' symbols in your table(s) in uppercase?
 
+== Staff's Solution
+
+You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
+
+http://finance.cs50.net/
+
+Feel free to register for an account and play around. Do *not* use a password that you use on other sites.
+
+It is *reasonable* to look at the staff's HTML and CSS.
+
 == How to Submit
 
 === Step 1 of 3

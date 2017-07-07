@@ -277,7 +277,7 @@ Enhance your implementations for buying and selling in such a way that you start
 * The price of a share at the time of transaction.
 * The date and time of the transaction.
 
-Then, by way of a controller called, say, `history.php` and some number of views, enable users to peruse their own history of transactions, formatted as you see fit.  Be sure that your HTML is valid!
+Then, by way of a controller called, say, `history.php` and some number of views, enable users to peruse their own history of transactions, formatted as you see fit.  Be sure that your HTML is valid! Feel free to learn from the staff's implementation of C$50 Finance at https://finance.cs50.net/.
 
 Here's Zamyla again:
 
@@ -303,12 +303,12 @@ Before you consider this problem set done, best to ask yourself these questions 
 [source]
 ----
 cd ~/workspace/8-3
-mysqldump -u username -p 8-3 > 8-3.sql
+mysqldump -u username -p finance > finance.sql
 ----
 +
-If you type `ls` thereafter, you should see that you have a new file called `8-3.sql` in `~/workspace/8-3`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `8-3.sql` with `rm 8-3.sql`, then re-export as before.)
-. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `8-3` folder and then select *Download*. You should find that your browser has downloaded `8-3.tar.gz`, a "gzipped tarball" that's similar in spirit to a ZIP file.
+If you type `ls` thereafter, you should see that you have a new file called `finance.sql` in `~/workspace/finance`.  (If you realize later that you need to make a change to your database and re-export it, you can delete `finance.sql` with `rm finance.sql`, then re-export as before.)
+. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*. You should find that your browser has downloaded `finance.tar.gz`, a "gzipped tarball" that's similar in spirit to a ZIP file.
 . Await instructions from your instructor on how to submit the tarball!
 
 
-This was Problem 8-3.
+This was Problem C$50 Finance (Part 2).
