@@ -189,7 +189,7 @@ No `check50` for this one, but be sure to try to "break" your own site, as by
 
 You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
 
-http://pset7.cs50.net/
+http://finance.cs50.net/
 
 Feel free to register for an account and play around. Do *not* use a password that you use on other sites.
 

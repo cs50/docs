@@ -565,6 +565,14 @@ Implement `removeMarkers` in such a way that it removes all markers from the map
 
 Last but not least, add at least one personal touch to your mashup, altering its aesthetics or adding some feature that (ideally!) no classmate has. Any touch that compels you to learn (or Google!) at least one new technique is of reasonable scope.
 
+== Staff's Solution
+
+You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
+
+http://mashup.cs50.net/
+
+It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* to look at the staff's JavaScript.
+
 == Check It Out
 
 Before turning in your code, here are a few quick sanity checks:

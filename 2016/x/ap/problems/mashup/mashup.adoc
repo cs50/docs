@@ -573,6 +573,14 @@ Before turning in your code, here are a few quick sanity checks:
 * Do links like https://ide50-username.cs50.io/articles.php?geo=New+Haven,+Connecticut show valid JSON objects?
 * Does your `config.json` refer to the correct database?
 
+== Staff's Solution
+
+You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
+
+http://mashup.cs50.net/
+
+It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* to look at the staff's JavaScript.
+
 == How to Submit
 
 === Step 1 of 3
