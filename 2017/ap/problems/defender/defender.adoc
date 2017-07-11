@@ -1,0 +1,63 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Writing Problem: Defender of the Web
+
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== Objectives
+
+* Think critically about the various kinds of cyberattacks.
+* Delve into one in more depth and understand exactly how it works.
+* Become familiar with how to defend against the attack.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this writing problem will be evaluated along three axes primarily.
+
+Scope::
+    To what extent does your submission align with the requirements of the specification?
+Correctness::
+    To what extent is your submission correct and free of factual errors?
+Style::
+    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
+
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Cyberwars
+
+As we've seen, it's an ongoing battle to try to prevent cyberattacks over networks and on the Internet. Bad guys are coming up with new ways to hack into supposedly secure systems at all hours of the day, while simultaneously trying old methods again and again to catch even a second of system failure. Though we'd like to believe all our data is safe, the reality is that a lot of it may be at risk - unless the good guys can catch the vulnerabilities first.
+
+Some of the major types of cyberattacks include:
+
+* Code Injection
+* Viruses
+* SSL Encryption Attacks
+* Spoofing (DNS or MAC, for example)
+* Denial-of-Service Attacks
+* Floods (a subset of denial-of-service attacks)
+
+While these attacks are generally eventually caught and defended against, much of the time they are caught too late to prevent significant damage to personal privacy and financial security. In addition, some are not publicized to a large degree, preventing other potentially vulnerable companies from becoming aware of the problem and fixing it before they too fall victim to an attack.
+
+== Be a Defender
+
+In this writing problem, we want you to delve deeper into one particular cyberattack you've not yet discussed in class. Research it and figure out exactly how it works, who it targets, and the damage it causes. How can we prevent ourselves from falling victim to that particular attack? This problem should be between *750-1,000 words*. In your writing, you should cover the following:
+
+* What is the name of the attack? What type of attack is it?
+* Where did it come from? Who created it (if known), and why?
+* How did we find out about it - how was it caught?
+* What types of companies or individuals does it target?
+* How does it work? What components of the network does it attack, and from which end (client or server)?
+* What damage is it capable of doing? What information does it target?
+* Has a fix been found? How does it work? Has it been implemented in all websites/servers with potential vulnerabilities?
+* If applicable, how can we defend ourselves against this attack?
+
+Start by taking a look at the different types of attacks, and find one that intrigues you. From there, search the different examples of those attacks that have come up over the past few years and read a bit about each before picking the one you want to dive into. News stories covering major security breaches will be a good resource for you as well. This assignment will provide you with a deeper understanding of the creativity involved in these attacks and the necessity of robust testing - and it's an interesting conversation topic too.
+
+This was Defender of the Web.
