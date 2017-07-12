@@ -431,9 +431,9 @@ in `sqlite3` or phpLiteAdmin. The counts should match!
 
 Complete the implementation of `/articles` in such a way that it outputs a JSON array of objects, each of which represents an article for `geo`, whereby `geo` is passed into `/articles` as a GET parameter, as in the staff solution, below.
 
-* http://pset8.cs50.net/articles?geo=02138
-* http://pset8.cs50.net/articles?geo=06511
-* http://pset8.cs50.net/articles?geo=90210
+* http://mashup.cs50.net/articles?geo=02138
+* http://mashup.cs50.net/articles?geo=06511
+* http://mashup.cs50.net/articles?geo=90210
 
 Odds are you'll want to call `lookup`! To test `/articles`, even before your text box is operational, simply visit URLs like
 
@@ -447,10 +447,10 @@ and other such variants, where `username` is your own username, to see if you ge
 
 Complete the implementation of `/search` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `q`, as in the staff solution below.
 
-* http://pset8.cs50.net/search?q=02138
-* http://pset8.cs50.net/search?q=Cambridge
-* http://pset8.cs50.net/search?q=06511
-* http://pset8.cs50.net/search?q=New+Haven
+* http://mashup.cs50.net/search?q=02138
+* http://mashup.cs50.net/search?q=Cambridge
+* http://mashup.cs50.net/search?q=06511
+* http://mashup.cs50.net/search?q=New+Haven
 
 The value of `q`, passed into `/search` as a GET parameter, might be a city, state, and/or postal code. We leave it to you to decide what constitutes a match and, therefore, which rows to `SELECT`. It suffices to support searching by postal codes only, but try to support searching by city and/or state as well. Odds are you'll find SQL's `LIKE` keyword helpful. If feeling adventurous, you might like (but are not required) to experiment with SQLite's support for https://www.sqlite.org/fts3.html[full-text searches].
 
@@ -491,13 +491,11 @@ or
 
 and other such variants, where `username` is your own username, to see if you get back the JSON you expect. Again, though, we leave it to you to decide just how supportive `/search` will be of such variants. The more flexible, though, the better! Try to implement features that you yourself would expect as a user!
 
-Feel free to tinker with the staff's solution at http://pset8.cs50.net/, inspecting its HTTP requests via Chrome's Network tab as needed, if unsure how your own code should work!
-
 ==== `scripts.js`
 
 First, toward the top of `scripts.js`, you'll see an anonymous function, inside of which is a definition of `options`, an object, one of whose keys is `center`, the value of which is an object with two keys of its own, `lat`, and `lng`. Per the comment alongside that object, your mashup's map is currently centered on Stanford, California. (D'oh.) Change the coordinates of your map's center to Cambridge (42.3770, -71.1256) or New Haven (41.3184, -72.9318) or anywhere else! (Though be sure to choose coordinates in the US if you downloaded `US.txt`!) Once you save your changes and reload your map, you should find yourself there! Zoom out as needed to confirm visually.
 
-As before, feel free to tinker with the staff's solution at http://pset8.cs50.net/, inspecting its HTTP requests via Chrome's Network tab as needed, if unsure how your own code should work!
+As before, feel free to tinker with the staff's solution at http://mashup.cs50.net/, inspecting its HTTP requests via Chrome's Network tab as needed, if unsure how your own code should work!
 
 ==== `configure`
 
@@ -541,7 +539,7 @@ No `check50` for this one, but be sure to try to "break" your own site, as by
 
 You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
 
-http://pset8.cs50.net/
+http://mashup.cs50.net/
 
 It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* to look at the staff's JavaScript.
 
@@ -554,3 +552,5 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 === CREATE TABLE places(...) failed: duplicate column name
 
 If you see this message upon running `.import` in `sqlite3`, odds are you haven't run `sqlite3` in the same directory as `mashup.db`. If so, exit `sqlite3` with `.exit`, `cd` to your `mashup` directory, and then re-run `sqlite3 mashup.db`.
+
+This was Mashup.
