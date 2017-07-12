@@ -397,3 +397,5 @@ Because `whodunit` can be implemented in several ways, afraid you can't check yo
 == Staff Solution
 
 No solution from the staff, lest it spoil your fun!
+
+This was Whodunit.
