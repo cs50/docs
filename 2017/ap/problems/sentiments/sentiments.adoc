@@ -143,7 +143,7 @@ Open up `requirements.txt` (without changing it, though you can later if you'd l
 +
 [source,bash]
 ----
-cd ~/workspace/pset6/sentiments/
+cd ~/workspace/chapter6/sentiments/
 pip3 install --user -r requirements.txt
 ----
 +
@@ -371,3 +371,5 @@ If seeing this error in a `for` loop, be sure you're indeed iterating over a `li
 == Acknowledgements
 
 Special thanks to Aditi Muralidharan and John DeNero of UC Berkeley and to Minqing Hu and Bing Liu of the University of Illinois at Chicago!
+
+This was Sentiments.

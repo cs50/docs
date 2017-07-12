@@ -314,7 +314,7 @@ No `check50` for this one, but be sure to try to "break" your own site, as by
 
 You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
 
-http://pset7.cs50.net/
+http://finance.cs50.net/
 
 Feel free to register for an account and play around. Do *not* use a password that you use on other sites.
 
@@ -348,7 +348,4 @@ By default, `flask` looks for a file called `application.py` in your current wor
 
 If, upon running `flask`, you see this error, odds are you (still) have `flask` running in another tab. Be sure to kill that other process, as with ctrl-c, before starting `flask` again. If you haven't any such other tab, execute `fuser -k 8080/tcp` to kill any processes that are (still) listening on TCP port 8080.
 
-== CHANGELOG
-
-* 2016-10-28
-** Initial release.
+This was C$50 Finance.
