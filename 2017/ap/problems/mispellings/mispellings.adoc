@@ -232,7 +232,7 @@ Odds are, you didn't spend enough time looking over `speller.c`. Go back one squ
 
 ==== `texts/`
 
-So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _Austin Powers: International Man of Mystery_, a sound bite from Ralph Wiggum, three million bytes from Tolstoy, some excerpts from Machiavelli and Shakespeare, the entirety of the King James V Bible, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `pset5` directory.
+So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _Austin Powers: International Man of Mystery_, a sound bite from Ralph Wiggum, three million bytes from Tolstoy, some excerpts from Machiavelli and Shakespeare, the entirety of the King James V Bible, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `mispellings` directory.
 
 Now, as you should know from having read over `speller.c` carefully, the output of `speller`, if executed with, say,
 
@@ -416,3 +416,5 @@ How to assess just how fast (and correct) your code is? Well, as always, feel fr
 ----
 ~cs50/chapterA/speller texts/austinpowers.txt
 ----
+
+This was Mispellings.
