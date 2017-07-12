@@ -148,7 +148,7 @@ Incidentally, because it is not a so-called "target" specified in the `Makefile`
 make helpers
 ----
 
-you'll actually default to using the standard `Makefile` included with CS50 IDEfootnote:[The existence of this file is why your programs in Units 1 and 2 compiled with no trouble despite not having a `Makefile` in the directory.] which will just try to compile the `helpers.c` file alone into its own program. Problem is, if you open up `helpers.c`, there's no `main` function, so you'll probably get a whole bunch of cryptic error messages concluding with one along these lines:
+you'll actually default to using the standard `Makefile` included with CS50 IDEfootnote:[The existence of this file is why your previous programs compiled with no trouble despite not having a `Makefile` in the directory.] which will just try to compile the `helpers.c` file alone into its own program. Problem is, if you open up `helpers.c`, there's no `main` function, so you'll probably get a whole bunch of cryptic error messages concluding with one along these lines:
 
 [source,bash]
 ----
@@ -264,7 +264,7 @@ Ouch! Or lastly
 
 [source,subs=quotes]
 ----
-~/workspace/unit3/race/ $ [underline]#./race -s 20000#
+~/workspace/chapter3/race/ $ [underline]#./race -s 20000#
 bubble sort benchmark:         0.000 seconds
 selection sort benchmark:      0.592 seconds
 insertion sort benchmark:      0.000 seconds
