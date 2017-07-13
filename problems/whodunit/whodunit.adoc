@@ -5,7 +5,7 @@
 
 == tl;dr
 
-Answer some questions and then implement a program that reveals a reveals a hidden message in a BMP, per the below.
+Answer some questions and then implement a program that reveals a hidden message in a BMP, per the below.
 
 [source,subs=quotes]
 ----
