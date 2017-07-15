@@ -713,7 +713,7 @@ def index():
 
 @app.route("/register", methods=["POST"])
 def register():
-    if request.form["name"] == "" or "captain" not in request.form or "comfort" not in request.form or request.form["dorm"] == "":
+    if request.form["name"] == "" or request.form["dorm"] == "":
         return render_template("failure.html")
     return render_template("success.html")
 ----
@@ -843,7 +843,33 @@ image::store.png[alt="store", width=200]
 +
 image::cart.png[alt="cart", width=200]
 * And if we closed the window and opened it, it would remember how many of each item we've added.
-* The HTML for the form is simple, as well as the template for the cart:
+* The HTML for the form is simple, using elements we've seen before ...
++
+[source]
+----
+{% extends "layout.html" %}
+
+{% block title %}
+store
+{% endblock %}
+
+{% block body %}
+<h1>Store</h1>
+<form action="{{ url_for('store') }}" method="post">
+    <input name="foo" type="number" value="0"/> Foo
+    <br/>
+    <input name="bar" type="number" value="0"/> Bar
+    <br/>
+    <input name="baz" type="number" value="0"/> Baz
+    <br/>
+    <input type="submit" value="Purchase"/>
+</form>
+<p>
+    View your <a href="{{ url_for('cart') }}">shopping cart</a>.
+</p>
+{% endblock %}
+----
+* ... as is the template for the cart:
 +
 [source]
 ----
