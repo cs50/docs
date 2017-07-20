@@ -7,11 +7,30 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Learn about and use an API.
-* Understand abstraction.
-* Have fun.
+Implement the game of Blockdude, a la the below.
+
+[source]
+----
+Blockdude50 by Sally Student
+Use arrow keys to move, pick up, and drop
++-----------------------------------------------------------+
+|                                                           |
+|                                                           |
+|                                                           |
+|                                                           |
+|          = = =       =           = =                      |
+|= O   # = = = = = =   =       = = = = = =     = = = =     *|
+|= = = = = = = = = = = = = = = = = = = = = = = = = = = = = =|
+|= = = = = = = = = = = = = = = = = = = = = = = = = = = = = =|
+|= = = = = = = = = = = = = = = = = = = = = = = = = = = = = =|
+|= = = = = = = = = = = = = = = = = = = = = = = = = = = = = =|
+|= = = = = = = = = = = = = = = = = = = = = = = = = = = = = =|
++-----------------------------------------------------------+
+    Level 1   Attempts: 0
+----
+
 
 include::../../honesty.adoc[]
 
