@@ -7,13 +7,14 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Acquaint you with file I/O.
-* Get you more comfortable with data structures and hexadecimal.
-* Experience the downside of some data compression techniques.
-* Gently introduce pointers.
-* Manipulate metadata.
+Implement a program that resizes BMPs, per the below.
+
+[source, subs=quotes]
+----
+$ [underline]#./scale .5 large.bmp small.bmp#
+----
 
 == Recommended Reading*
 

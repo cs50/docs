@@ -7,13 +7,19 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Further acquaint yourself with reading and understanding someone else's code.
-* Introduce you to memory allocation.
-* Recognize when recursion can be used to solve a problem.
-* Familiarize yourself with implementing recursive solutions.
-* Become familiar with basic file manipulation.
+Implement a program to recursively search for files, per the below:
+
+[source, subs=quotes]
+----
+$ [underline]#./finder hello ~/#
+$ [underline]#cat staff_found.txt#
+/nix/.node-gyp/4.3.1/include/node/openssl/symhacks.h
+/nix/.node-gyp/4.3.1/include/node/openssl/ssl.h
+[...]
+/home/ubuntu/.nvm/versions/node/v4.7.3/include/node/openssl/ssl.h
+----
 
 == Recommended Reading
 

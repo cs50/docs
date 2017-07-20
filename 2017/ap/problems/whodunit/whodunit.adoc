@@ -7,12 +7,14 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Acquaint you with file I/O.
-* Get you more comfortable with data structures and hexadecimal.
-* Gently introduce pointers.
-* Solve a murder mystery.
+Answer some questions and then implement a program that reveals a reveals a hidden message in a BMP, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./whodunit clue.bmp verdict.bmp#
+----
 
 == Recommended Reading*
 
