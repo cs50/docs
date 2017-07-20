@@ -7,13 +7,14 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Learn to use ncurses, a rudimentary library for GUIs.
-* Design and implement larger pieces of software.
-* Spend time reading and understanding a large distro.
-* Think deliberately about design.
-* Become a Sudoku apprentice.
+Implement the game of Sudoku, per the below:
+
+[source, subs=quotes]
+----
+$ [underline]#./sudoku n00b#
+----
 
 == Recommended Reading
 
@@ -297,7 +298,7 @@ video::AXwGVXD7qEQ[youtube]
 
 And you might wish that your Sudoku game was more like http://xkcd.com/74/[this]. But you'll have created a pretty darn impressive game, that hopefully your family and friends will enjoy.
 
-To play with the staff's own implementation of Sudoku, which incorporates all of the features in this portion of the problem as well as those you'll be expected to implement in the next, you may execute the below.
+To play with the staff's own implementation of Sudoku, you may execute the below.
 
 [source,bash]
 ----
