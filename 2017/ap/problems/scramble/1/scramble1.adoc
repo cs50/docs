@@ -7,6 +7,23 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
+== tl;dr
+
+Implement the game "Scramble," per the below:
+
+[source]
+----
+$ ./scramble
+
+  E H N A
+  E E A M
+  F H I R
+  A C M E
+
+Score: 0
+Time:  30
+----
+
 == Objectives
 
 * Learn to read and build upon someone else's code.

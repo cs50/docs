@@ -7,12 +7,23 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Accustom you to reading someone else's code.
-* Empower you with Makefiles.
-* Practice debugging your code with more advanced techniques.
-* Begin to implement a party favor.
+Implement the Game of Fifteen, per the below.
+
+[source]
+----
+$ ./fifteen 3
+WELCOME TO GAME OF FIFTEEN
+
+8  7  6
+
+5  4  3
+
+2  1  _
+
+Tile to move:
+----
 
 == Recommended Reading
 

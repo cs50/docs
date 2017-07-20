@@ -5,11 +5,9 @@ layout: default
 
 = Writing Problem: Simulate!
 
-== Objectives
+== tl;dr
 
-* Identify prior experiences with computer simulations
-* Articulate uses for simulation software in everyday life
-* Use models and simulations to formulate, refine, and test hypotheses
+Explore a computer simulation's functionality, uses, and impact.
 
 include::../../honesty.adoc[]
 
