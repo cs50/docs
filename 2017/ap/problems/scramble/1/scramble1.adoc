@@ -24,12 +24,6 @@ Score: 0
 Time:  30
 ----
 
-== Objectives
-
-* Learn to read and build upon someone else's code.
-* Learn how to encapsulate data.
-* (Play.)
-
 == Recommended Reading
 
 * Page 17 of http://www.howstuffworks.com/c.htm.
