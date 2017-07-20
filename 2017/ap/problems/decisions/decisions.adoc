@@ -7,11 +7,9 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Analyze the pros and cons of various data structures.
-* Consider situational context.
-* Apply the ideas of data structures in the real world.
+Analyze the pros and cons of various data structures.
 
 include::../../honesty.adoc[]
 

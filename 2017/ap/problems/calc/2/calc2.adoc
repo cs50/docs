@@ -7,13 +7,15 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  Objectives
+== tl;dr
 
-* Interact with users at the command line
-* Defend against malicious users
-* Parse and process user input
-* Get better acquainted with functions and libraries
-* Use stacks
+Implement an improved command line calculator, per the below
+
+[source, subs=quotes]
+----
+$ [underline]#./calc2 + - / 4 2 24 x 8 9#
+50.000000
+----
 
 == Recommended Reading
 

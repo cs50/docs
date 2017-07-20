@@ -5,10 +5,34 @@ layout: default
 
 = Problem: Mispellingsfootnote:[Hope you appreciate the irony.]
 
-== Objectives
+== tl;dr
 
-* Navigate a data structure of someone else's design.
-* Plug the memory leaks.
+Implement a program that spell-checks a file, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./speller texts/austinpowers.txt#
+MISSPELLED WORDS
+
+[...]
+Bigglesworth
+[...]
+Virtucon
+[...]
+friggin'
+[...]
+trippy
+[...]
+
+WORDS MISSPELLED:
+WORDS IN DICTIONARY:
+WORDS IN TEXT:
+TIME IN load:
+TIME IN check:
+TIME IN size:
+TIME IN unload:
+TIME IN TOTAL:
+----
 
 == Recommended Reading
 
