@@ -9,11 +9,32 @@ toclevels: 1
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Continue your exploration of Python.
-* Read up on how to use an API.
-* Delve into a rapidly growing field in computer science.
+. Implement a program that categorizes a word as positive or negative.
++
+[source,subs=quotes]
+----
+$ [underline]#./smile love#
+[green]#:)#
+$ [underline]#./smile hate#
+[red]#:(#
+$ [underline]#./smile Stanford#
+[yellow]#:|#
+----
+. Implement a program that categorizes a user's tweets as positive or negative.
++
+[source,subs=quotes]
+----
+$ [underline]#./tweets @cs50#
+ [yellow]#0 hello, @world#
+ [green]#1 I love you, @world#
+[red]#-1 I hate you, @world#
+...
+----
+. Implement a website that generates a pie chart categorizing a user's tweets.
++
+image::chart.png["@katyperry",role="related thumb"]
 
 == Recommended Reading
 
