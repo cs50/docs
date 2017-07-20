@@ -19,12 +19,6 @@ $ ./rng 3 100
 22
 ----
 
-== Objectives
-
-* Learn more about pseudorandom numbers.
-* Begin to introduce you to larger programs and programs with multiple source files.
-* Learn about rudimentary file input and output via redirection.
-
 == Recommended Reading
 
 * Page 17 of http://www.howstuffworks.com/c.htm.
