@@ -5,10 +5,11 @@ layout: default
 
 = Problem: C$50 Finance
 
-== Objectives
+== tl;dr
 
-* Introduce you to HTML, CSS, Python, and SQL.
-* Teach you how to teach yourself new languages.
+Implement a website via which users can "buy" and "sell" stocks, a la the below.
+
+image::finance.png["C$50 Finance",role="related thumb"]
 
 == Recommended Reading
 

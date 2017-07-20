@@ -6,11 +6,11 @@ layout: default
 
 = Problem: Mashup
 
-== Objectives
+== tl;dr
 
-* Introduction to JavaScript, Ajax, JSON.
-* Exposure to objects and methods.
-* Grapple with real-world APIs and libraries.
+Implement a website that lets users search for articles atop a map, a la the below.
+
+image::mashup.png["Mashup",role="related thumb"]
 
 == Recommended Reading
 
