@@ -7,12 +7,17 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Implement several __O(n^2^)__ sorting algorithms.
-* Experience principles of abstraction.
-* Write code that must conform into an existing framework.
-* Experience how real-world run time of algorithms differs from theoretical run time.
+Implement several __O(n^2^)__ sorting algorithms so that they can be compared under various conditions.
+
+[source]
+----
+$ ./race -r 30000
+bubble sort benchmark:         4.516 seconds
+selection sort benchmark:      1.308 seconds
+insertion sort benchmark:      0.992 seconds
+----
 
 == Recommended Reading
 
