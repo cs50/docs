@@ -8,12 +8,9 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Acquaint yourself with how to set up a public webserver on the CS50 IDE.
-* Become familiar with basic HTML.
-* Become familiar with basic CSS.
-* Accustom yourself to searching for specific HTML tags and CSS values on the Internet.
+Set up a web server on the CS50 IDE and build your own website.
 
 == Recommended Reading
 
@@ -180,7 +177,7 @@ You should see an output similar to the below, but with a different time stamp.
 -rw------- 1 ubuntu ubuntu 0 Feb 1 12:27 index.html
 ----
 
-Remember our discussion of permissions earlier in this unit? Here's where they come into play. Permissions are split into three parts: readable, writeable, and executable. Similarly, there are three levels of permissions: user, group, and all. Thus, you can, for example, make a file both readable and writeable for yourself (as the user), but only readable for everyone else.
+Remember our discussion of permissions earlier in this chapter? Here's where they come into play. Permissions are split into three parts: readable, writeable, and executable. Similarly, there are three levels of permissions: user, group, and all. Thus, you can, for example, make a file both readable and writeable for yourself (as the user), but only readable for everyone else.
 
 When you execute the `ls -l` command, the levels of permissions are ordered as follows: first `user`, then `group`, then `all`.
 

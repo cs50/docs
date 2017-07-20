@@ -8,11 +8,9 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Think critically about the various kinds of cyberattacks.
-* Delve into one in more depth and understand exactly how it works.
-* Become familiar with how to defend against the attack.
+Research methods and defenses against cyberattacks.
 
 include::../../honesty.adoc[]
 
