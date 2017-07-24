@@ -147,7 +147,6 @@ Although other configurations are possible, we shall assume that this game begin
 
 image:adapted.png[solvable configuration, width="25%"]
 
-
 === Understanding
 
 Take a look at `fifteen.c`. Within this file is an entire framework for the Game of Fifteen. The challenge up next is to complete this game's implementation.
