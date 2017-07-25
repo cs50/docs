@@ -84,7 +84,7 @@ at your prompt to ensure that you're inside of `workspace` (which is inside of y
 mkdir chapter3
 ----
 
-to create a new `chapter3` directory instead of your workspace. As we'll soon see in this chapter, our programs are going to get a bit more complex and if continue to organize our programs in the same manner we did in Chapters 1 and 2, our directory will rapidly become cluttered. To that end, we're going to add an additional level to our directory's hierarchy so as to help us keep things a bit more organized. So, navigate inside of your `chapter3` directory, as with:
+to create a new `chapter3` directory instead of your workspace. Navigate inside of your `chapter3` directory, as with:
 
 [source,bash]
 ----
