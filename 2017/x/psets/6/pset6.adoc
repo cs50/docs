@@ -124,7 +124,7 @@ Be sure you've signed up for a https://github.com/join[GitHub account], per Prob
 ----
 update50
 cd ~/workspace/pset6/
-submit50 2017/x/pset6
+submit50 cs50/2017/x/pset6
 ----
 
 === Step 2 of 2
