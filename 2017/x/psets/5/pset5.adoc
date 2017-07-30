@@ -75,7 +75,7 @@ update50
 [source]
 ----
 cd ~/workspace/pset5/speller/
-submit50 2017/x/speller
+submit50 cs50/2017/x/speller
 ----
 
 === Step 2 of 2

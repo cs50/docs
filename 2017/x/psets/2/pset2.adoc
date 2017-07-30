@@ -154,7 +154,7 @@ ls
 [source]
 ----
 cd ~/workspace/pset2/initials/
-submit50 2017/x/initials/less
+submit50 cs50/2017/x/initials/less
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -163,7 +163,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/workspace/pset2/initials/
-submit50 2017/x/initials/more
+submit50 cs50/2017/x/initials/more
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -172,21 +172,21 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/workspace/pset2/caesar/
-submit50 2017/x/caesar
+submit50 cs50/2017/x/caesar
 ----
 * To submit `vigenere` (if you implemented it), execute:
 +
 [source]
 ----
 cd ~/workspace/pset2/vigenere/
-submit50 2017/x/vigenere
+submit50 cs50/2017/x/vigenere
 ----
 * To submit `crack` (if you implemented it), execute:
 +
 [source]
 ----
 cd ~/workspace/pset2/crack/
-submit50 2017/x/crack
+submit50 cs50/2017/x/crack
 ----
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!

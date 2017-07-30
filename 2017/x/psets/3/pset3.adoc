@@ -91,21 +91,21 @@ update50
 [source]
 ----
 cd ~/workspace/pset3/find/
-submit50 2017/x/find/less
+submit50 cs50/2017/x/find/less
 ----
 * Submit the more-comfortable version of `find` (if you implemented it):
 +
 [source]
 ----
 cd ~/workspace/pset3/find/
-submit50 2017/x/find/more
+submit50 cs50/2017/x/find/more
 ----
 * Submit `fifteen`:
 +
 [source]
 ----
 cd ~/workspace/pset3/fifteen/
-submit50 2017/x/fifteen
+submit50 cs50/2017/x/fifteen
 ----
 
 === Step 2 of 2

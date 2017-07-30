@@ -14,7 +14,18 @@ If at a loss for ideas, turn to https://manual.cs50.net/seminars/[CS50's seminar
 
 == How to Submit
 
-Unlike problem sets, you don't actually have to submit the code that you write for your final project. (Or a pre-proposal, proposal, or status report, as are required on campus.) Rather, you only need to submit a short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action. Your video should somehow include your project's title, your name, your city and country, and any other details that you'd like to convey to viewers. See http://www.cs171.org/2015/screencast/ for tips from another class at Harvard on how to make a "screencast," though you're welcome to use an actual camera. Upload your video to YouTube (or, if blocked in your country, a similar site) and take note of its URL; it's fine to flag it as "unlisted," but don't flag it as "private."
+=== Step 1 of 2
+
+[source]
+----
+update50
+cd ~/workspace/project/
+submit50 cs50/2017/x/project
+----
+
+=== Step 2 of 2
+
+Submit a short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action. Your video should somehow include your project's title, your name, your city and country, and any other details that you'd like to convey to viewers. See http://www.cs171.org/2015/screencast/ for tips from another class at Harvard on how to make a "screencast," though you're welcome to use an actual camera. Upload your video to YouTube (or, if blocked in your country, a similar site) and take note of its URL; it's fine to flag it as "unlisted," but don't flag it as "private."
 
 When ready to submit your video, submit https://forms.cs50.net/2017/x/project[this form]!
 
