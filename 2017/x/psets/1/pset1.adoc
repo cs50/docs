@@ -150,7 +150,7 @@ If any file is not in `~/workspace/pset1/`, move it into that directory, as via 
 [source]
 ----
 cd ~/workspace/pset1/
-submit50 2017/x/hello
+submit50 cs50/2017/x/hello
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -159,7 +159,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/workspace/pset1/
-submit50 2017/x/water
+submit50 cs50/2017/x/water
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -168,7 +168,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/workspace/pset1/
-submit50 2017/x/mario/less
+submit50 cs50/2017/x/mario/less
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -177,7 +177,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/workspace/pset1/
-submit50 2017/x/mario/more
+submit50 cs50/2017/x/mario/more
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -186,7 +186,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/workspace/pset1/
-submit50 2017/x/greedy
+submit50 cs50/2017/x/greedy
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -195,7 +195,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/workspace/pset1/
-submit50 2017/x/credit
+submit50 cs50/2017/x/credit
 ----
 +
 inputting your GitHub username and GitHub password as prompted.

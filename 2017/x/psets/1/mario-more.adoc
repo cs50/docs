@@ -26,7 +26,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 2016.mario.more mario.c
+check50 cs50/2017/x/mario/more
 ----
 
 If you'd like to play with the staff's own implementation of `mario` within CS50 IDE, you may execute the below.

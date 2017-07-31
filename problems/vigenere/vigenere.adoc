@@ -96,7 +96,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 2016.vigenere vigenere.c
+check50 cs50/2017/x/vigenere
 ----
 
 == Staff's Solution

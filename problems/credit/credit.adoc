@@ -96,7 +96,7 @@ INVALID
 
 [source,text]
 ----
-check50 2016.credit credit.c
+check50 cs50/2017/x/credit
 ----
 
 == Staff Solution
