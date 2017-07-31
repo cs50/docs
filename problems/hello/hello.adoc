@@ -124,7 +124,7 @@ Hello, world!
 
 [source,text]
 ----
-check50 2016.hello hello.c
+check50 cs50/2017/x/hello
 ----
 
 Assuming your program is correct, you should then see output like

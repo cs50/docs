@@ -49,7 +49,7 @@ Be sure you've signed up for a https://github.com/join[GitHub account], per Prob
 ----
 update50
 cd ~/workspace/pset8/mashup/
-submit50 2017/x/pset8
+submit50 cs50/2017/x/pset8
 ----
 
 === Step 2 of 2

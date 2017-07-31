@@ -329,7 +329,7 @@ you should see `1`, since `128` is, again, not among the 1,000 numbers outputted
 
 [source]
 ----
-check50 2016.find.less helpers.c
+check50 cs50/2017/x/find/less
 ----
 
 == Staff's Solution

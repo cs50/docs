@@ -131,7 +131,7 @@ Usage: ./caesar k
 
 [source]
 ----
-check50 2016.caesar caesar.c
+check50 cs50/2017/x/caesar
 ----
 
 == Staff's Solution

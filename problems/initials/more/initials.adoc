@@ -52,7 +52,7 @@ RTB
 
 [source]
 ----
-check50 2016.initials.more initials.c
+check50 cs50/2017/x/initials/more
 ----
 
 == Staff's Solution

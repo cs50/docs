@@ -87,7 +87,7 @@ $ [underline]#echo $?#
 
 [source]
 ----
-check50 2016.recover recover.c
+check50 cs50/2017/x/recover
 ----
 
 == Staff's Solution
