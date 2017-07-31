@@ -71,7 +71,7 @@ Retry: [underline]#0.41#
 
 [source,text]
 ----
-check50 2016.greedy greedy.c
+check50 cs50/2017/x/greedy
 ----
 
 == Staff Solution

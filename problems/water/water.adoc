@@ -48,7 +48,7 @@ Bottles: 120
 
 [source,text]
 ----
-check50 2016.water water.c
+check50 cs50/2017/x/water
 ----
 
 == Staff Solution

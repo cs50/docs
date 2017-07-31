@@ -394,7 +394,7 @@ To test your code less manually (though still not exhaustively), you may also ex
 
 [source]
 ----
-check50 2016.speller dictionary.c dictionary.h Makefile
+check50 cs50/2017/x/speller
 ----
 
 Note that `check50` does not check for memory leaks, so be sure to run `valgrind` as well.

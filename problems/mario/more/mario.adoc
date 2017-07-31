@@ -86,7 +86,7 @@ pass:[####  ####]
 
 [source,text]
 ----
-check50 2016.mario.more mario.c
+check50 cs50/2017/x/mario/more
 ----
 
 == Staff Solution
