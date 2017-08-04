@@ -21,7 +21,7 @@ https://cs50.edx.org/
 
 == Certificates
 
-CS50x is free to take, and you are welcome to submit the course's nine problem sets and final project for automated feedback. To be eligible for a https://www.edx.org/verified-certificate[verified certificate] from edX, however, you must receive a satisfactory score (at least 70%) on every one of the course's nine problem sets as well as on the course's final project.
+CS50x is free to take, and you are welcome to submit the course's nine problem sets and final project for automated feedback. To be eligible for a https://www.edx.org/verified-certificate[verified certificate] from edX, however, you must receive a satisfactory score (at least 70%) on each problem you submit as part of one of the course's nine problem sets as well as on the course's final project.
 
 == Books 
 
