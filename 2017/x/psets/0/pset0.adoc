@@ -80,4 +80,10 @@ Oh, and if you'd like to exhibit your project in CS50x 2017's studio, head to ht
 
 Your submission should be graded within 2 weeks, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
 
+== FAQs
+
+=== Can't find the "Branch: master" button.
+
+If you don't see a "Branch: master" button upon going to your submit50 page on GitHub, click the "README" button next to "We recommend every repository include a..." and then click the green "Commit new file" button. After that, the "Branch: master" button should appear!
+
 This was Problem Set 0.
