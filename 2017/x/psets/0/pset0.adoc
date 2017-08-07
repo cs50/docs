@@ -68,17 +68,18 @@ Oh, and if you'd like to exhibit your project in CS50x 2017's studio, head to ht
 == How to Submit
 
 1. Submit https://forms.cs50.net/2017/x/psets/0[this form]!
-2. Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
-3. In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb2`.
-4. Go to https://github.com/submit50/USERNAME, where USERNAME is your GitHub username.
-5. On the left side of the screen, click on "Branch: master".
-6. In the field that says "Find or create a branch...", type `cs50/2017/x/scratch` and click "Create branch".
-7. Click the button that says "Upload files".
-8. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
-9. Click the green "Commit changes" button.
-10. You're done!
+2. Visit https://cs50.me[CS50.me], log in with your GitHub account, and click *Authorize application*.
+3. Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
+4. In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb2`.
+5. Go to https://github.com/submit50/USERNAME, substituting `USERNAME` for your GitHub username.
+6. On the left side of the screen, click on "Branch: master".
+7. In the field that says "Find or create a branch...", type `cs50/2017/x/scratch` and click "Create branch".
+8. Click the button that says "Upload files".
+9. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
+10. Click the green "Commit changes" button.
+11. You're done!
 
-Your submission should be graded within 2 weeks, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
+Your submission should be graded within 2 minutes, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
 
 == FAQs
 
