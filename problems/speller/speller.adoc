@@ -397,7 +397,7 @@ To test your code less manually (though still not exhaustively), you may also ex
 check50 cs50/2017/x/speller
 ----
 
-Note that `check50` does not check for memory leaks, so be sure to run `valgrind` as well.
+Note that `check50` will also check for memory leaks, so be sure you've run `valgrind` as well.
 
 == Staff's Solution
 
