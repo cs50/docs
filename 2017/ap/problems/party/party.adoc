@@ -1,0 +1,165 @@
+---
+layout: default
+---
+:skip-front-matter:
+
+= Problem: Birthday Party
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== tl;dr
+
+Write a Python program to automate creation of personalized party invitations for a bunch of guests.
+
+== Recommended Reading
+
+* https://en.wikipedia.org/wiki/Comma-separated_values
+* https://www.python.org/about/gettingstarted/
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Started
+
+As always, we'll begin the setup process for this problem by logging into https://cs50.io[cs50.io] and executing:
+
+[source,bash]
+----
+update50
+----
+
+From there, create a new directory within your workspace called `chapter6` and navigate inside. Then download the distro for this assignment by executing:
+
+[source,bash]
+----
+wget http://docs.cs50.net/2017/ap/problems/party/party.zip
+----
+
+Unzip the file you download (feel free to delete the `.zip` afterward) and navigate inside the new directory (remember how?). You should see a few files and directories:
+
+[source,bash]
+----
+body.txt  fpdf/  friends.csv  muppet.jpg  template.pdf  template.py
+----
+
+== Getting Ready
+
+It's CS50 Muppet's birthday!
+
+image:muppet.jpg[muppet.jpg]
+
+As you can see, he's quite excited about it. So excited, in fact, that he's throwing himself a huge celebration in his honor. (CS50 Muppet is nothing if not humble.) He's rented out his favorite location and now he just needs to send invitations to all of his friends!
+
+In addition to his humility, CS50 Muppet is also known for his organizational skills and over the years he's kept a meticulous database of every single one of his friends in a spreadsheet which he can also export as a comma-separated values file (CSV). We can't open a spreadsheet inside of CS50 IDE, but we can open a CSV file because those can also be read by text editors. So let's just open it up and see how many invitations we need to write. Can't be that bad!
+
+Oh. It is that bad.
+
+By the time CS50 Muppet finishes writing all of those invitations, he'll be getting ready to celebrate his **next** birthday! Fortunately, we can help generate those invitations for him.
+
+== A **Py**thon **P**art**y**
+
+Hopefully when reading the background here, you felt some comfort with the task at hand. This isn't the first time you've had to read a file--indeed, you did quite a bit of that in Chapter 4--nor is it the first time you've generated new files based on reading information from old ones. The major difference, of course, is that in this assignment you'll be doing all of the exploration of files and file construction using Python instead of C, the language we've been using up to this point.
+
+Python is a big language, and while we've spent months learning C, we don't have the time or the opportunity to dive deeply into Python in quite the same way. But that's okay! Python may be quite syntactically different from C on the surface, but as a programming language, the underlying techniques and mindset you'll be using are quite the same! This means that you can build upon the knowledge you've been acquiring and bootstrap yourself into learning more languages!
+
+It's important, though, to (re)acquaint yourself to these differences before diving in too deep. Best to check out David's lecture on Python below if unfamiliar! The video is long, so feel free to skip around or fast forward through parts if you're already comfy with them.
+
+video::5aP9Bl9hcqI[youtube]
+
+=== template.py
+
+There's actually even more good news than just the syntax similarity. Generating PDFs (which, of course, is the file format that CS50 Muppet wants for his birthday party invitations) is somewhat tricky, and delves into aspects of the language (such as __objects__) that we're not quite ready to throw your way just yetfootnote:[We'll wait until JavaScript before that!]. While fortunately there exists a Python module called http://pyfpdf.readthedocs.io/[PyFPDF] that we can use to generate PDFs, the functions themselves sometimes have confusing and/or distracting parameter lists.
+
+Even more good news! `template.py` appears to contain the code to generate a single PDF with dummy information. To be sure, it isn't doing any reading of a CSV file, but it does show how all of the helper functions we've written are called, and it does produce a single output file. You can see as much by executing
+
+[source,bash]
+----
+python template.py
+----
+
+and then downloading the file that should be generated and saved as `template.pdf` and opening it by right-clicking on the file and selecting "Preview" in the file tree.
+
+The syntax in `template.py` may seem intimidating at first, but not to worry! Most of the code is there to simplify the (rather complex) process of PDF creation for you! Below, find a breakdown of the "PDF" class:
+
+==== header
+
+This method adds a picture of the CS50 muppet atop the document.
+
+==== print_address
+
+This method writes a formatted address to the PDF. Note that the address is specified via parameters passed to the method.
+
+==== greeting
+
+This method writes a salutation to a specified person.
+
+==== format_body
+
+This method formats a generic body text (contained in a file) and writes it to the document.
+
+==== signature
+
+Finally, this method closes the document with a signature from the sender!
+
+=== body.txt
+
+As alluded to in the description for `write_body` above, this file simply contains the body paragraphs for our invitation. Editing this text and rerunning the program will result in updated invitations, so feel free to customize the body of your invitations with whatever text you'd like!
+
+=== friends.csv
+
+Aha! Here is the dataset that we are going to be processing. Notice that this file contains no information about what the columns mean (for reasons of simplicity), but know that each row is laid out in exactly this order:
+
+__firstname, lastname, address, city, state, zip__
+
+Such as, for example
+
+[source,txt]
+----
+David J.,Malan,33 Oxford Street,Cambridge,MA,02138
+----
+
+Rest assured, furthermore, that we will only ever test your program using CSV files that have exactly these six columns arranged in exactly that order.
+
+== One to Many
+
+Okay, now for coding part. Inside of a file called `invite.py`, write the code needed to generate one invitation PDF per guest.
+
+You are free to use `template.py` as a... err... template for the work that you'll do to create the invitations using the data in the CSV file. In fact, you may even wish to
+
+[source,bash]
+----
+cp template.py invite.py
+----
+
+to get started on the latter! It won't be a perfect translation from one to the other, of course. You'll first have to open and investigate `friends.csv`. You'll have to loop through a number of invitations, possibly without knowing how many there are, and so a `while` loop may come in handy. And since you are going through a CSV file, you may find a Python module like https://docs.python.org/3/library/csv.html[`csv`] is particularly well-suited to your needs. Be sure to read through the examples of its use for inspiration!
+
+At its core, this problem is about exploring Python, so use it as an opportunity to research and explore... you'll be doing quite a bit of that in the future if you decide to continue down the road of being a computer scientist!
+
+Ultimately your program should be run as follows:
+
+[source,bash]
+----
+python invite.py friends.csv
+----
+
+So, looks like you'll also need to check to make sure you have the right number of command-line arguments!
+
+This should end up producing one PDF for each line in `friends.csv`, saving the results in the `output` folder with the filename `FirstLast.pdf` where `First` and `Last`, respectively, are the first and last names of the invitee as extracted from `friends.csv`. You can further assume, then, that no two people in that will have the same first and last name combination. For David Malan, then, the invitation would be saved in `output/DavidMalan.pdf`.
+
+When you're done... congratulations! Now CS50 Muppet has all the invitations for his birthday party. If only he had a process to automate stuffing the envelopes and mailing them out!
+
+This was Birthday Party.
