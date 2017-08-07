@@ -197,6 +197,6 @@ You may resubmit any problem as many times as you'd like.
   
 Submit https://forms.cs50.net/2017/x/psets/2[this form]!
  
-Your submission should be graded within 2 weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
+Your submission should be graded within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Problem Set 2.
