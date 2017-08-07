@@ -116,15 +116,7 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == How to Submit
 
-=== Step 1 of 4
-
-Recall that, for Problem Set 0, you signed up for a https://github.com/[GitHub account]. 
-
-Visit https://cs50.me/[cs50.me], log in with that same GitHub account, and click *Authorize application*. If you've forgotten your GitHub account's password, https://github.com/password_reset[reset it] first.
-
-Once you've logged in and authorized, you can immediately log out. Logging in once simply ensures that you can submit code via `submit50`, per step 3 of 4!
-
-=== Step 2 of 4
+=== Step 1 of 3
 
 Recall that you were asked to create the files below:
 
@@ -143,7 +135,7 @@ ls
 
 If any file is not in `~/workspace/pset1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
-=== Step 3 of 4
+=== Step 2 of 3
 
 * To submit `hello`, execute
 +
@@ -204,10 +196,10 @@ If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
 
-=== Step 4 of 4
+=== Step 3 of 3
   
 Submit https://forms.cs50.net/2017/x/psets/1[this form]!
  
-Your submission should be graded within 2 weeks, at which point your score will appear at https://cs50.me/[cs50.me]!
+Your submission should be graded within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Problem Set 1.
