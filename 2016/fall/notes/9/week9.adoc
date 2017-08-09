@@ -257,7 +257,7 @@ DELETE FROM registrants WHERE name = 'Rob'
 * Just like how people have unique identifiers, like ID numbers, we can assign IDs to rows in our database tables.
 * Now we'll add an `id` field, an `INTEGER`, and make sure that it is a `Primary Key` so it is unique, and `Autoincrement`, where each row will be assigned a number as it is added, starting with `1`, `2`, `3`, and so forth.
 * Now if we run `INSERT INTO registrants (name, dorm) VALUES('David', 'Matthews')`, we aren't specifying the `id` but the database will automatically add that for us:
- +
++
 image::id.png[alt="registrants table with id", width=300]
 * Now we can specify which row we want to delete, as in `DELETE FROM registrants WHERE id = 2`.
 * And if we add yet another row after that, that row will have `id` `4`, so that these numbers are unique for the database forever (in case other tables reference the `id` `2`).
@@ -500,7 +500,7 @@ def unregister():
 
 * Writing our own SQL, too, can lead to problems.
 * SQL injection attacks are one such problem. For example, when we log in to some website we might fill out the username and password fields of some form, and the back-end might try to select from the database a row that has a matching username and password.
-* But if the server uses SQL, then what we pass in to the form might be directly include in the query. For example, suppose we pass in `me@examplemailprovider.com` as the username and `' OR '1' = '1` as our password:
+* But if the server uses SQL, then what we pass in to the form might be directly included in the query. For example, suppose we pass in `me@examplemailprovider.com` as the username and `' OR '1' = '1` as our password:
 +
 image::injection.png[alt="sql injection", width=600]
 * SQL happens to have the keyword `OR`, and it looks like this password value will change the meaning of a SQL query, if it's included directly with single quotes.
