@@ -208,14 +208,14 @@ Implement now in `shrink.c` a program called `shrink` that resizes 24-bit uncomp
 
 [source,bash]
 ----
-Usage: ./resize f infile outfile
+Usage: ./shrink f infile outfile
 ----
 
 With a program like this, we could have created `large.bmp` out of `small.bmp` by resizing the latter by a factor of 4.0 (i.e., by multiplying both its width and its height by 4.0), per the below.
 
 [source,bash]
 ----
-./resize 4.0 small.bmp large.bmp
+./shrink 4.0 small.bmp large.bmp
 ----
 
 You're welcome to get started by copying (yet again) `copy.c` and naming the copy `shrink.c`.  But spend some time thinking about what it means to resize a BMP, **particularly if `f` is in (0.0, 1.0)**.  (You may assume that `f` times the size of `infile` will not exceed 2^32^ - 1.  As for a value of `1.0` for `f`, the result should indeed be an `outfile` with dimensions identical to ``infile``'s.)  How you handle floating-point imprecision and rounding is entirely up to you, as is how you handle inevitable loss of detail.  Decide which of the fields in `BITMAPFILEHEADER` and `BITMAPINFOHEADER` you might need to modify.  Consider whether or not you'll need to add or subtract padding to scanlines.
