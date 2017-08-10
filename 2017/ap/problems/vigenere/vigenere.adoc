@@ -7,12 +7,16 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  Objectives
+== tl;dr
 
-* Become better acquainted with functions and libraries.
-* Take previously written code and modify it.
-* Interact with command-line inputs from users.
-* Dabble in cryptography.
+Implement a program that encrypts messages using Vigenère's cipher, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./vigenere ABC#
+plaintext:  [underline]#HELLO#
+ciphertext: HFNLP
+----
 
 == Recommended Reading
 
@@ -153,7 +157,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 1718.chapter2.vigenere vigenere.c
+check50 cs50/2017/ap/vigenere
 ----
 
 == Staff Solution
