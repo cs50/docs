@@ -5,11 +5,9 @@ layout: default
 
 = Writing Problem: Tech Spotlight
 
-== Objectives
+== tl;dr
 
-* Become familiar with popular tech news sites.
-* Incorporate multiple sources into your writing.
-* Understand and reflect on some of the real-world implications of new technologies.
+Write 600 words exploring a technology you commonly use.
 
 include::../../honesty.adoc[]
 

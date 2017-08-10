@@ -9,11 +9,15 @@ Questions?  Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], 
 
 Don't be alarmed by the length of this problem's specification. Most of it is just instructions for getting your programming environment set up and learning how to navigate within it. Once these steps are completed, you'll be good to go for the rest of the year in CS50 AP!
 
-== Objectives
+== tl;dr
 
-* Set up your CS50 programming environment.
-* Get comfortable with Linux.
-* Solve your first problem in C.
+Implement a program that prints out a simple greeting to the user, per the below.
+
+[source, subs=quotes]
+----
+$ [underline]#./hello#
+Hello, world!
+----
 
 == Recommended Reading
 
@@ -281,7 +285,7 @@ Hello, world!
 
 [source,text]
 ----
-check50 1718.chapter1.hello hello.c
+check50 cs50/2017/ap/hello
 ----
 
 Assuming your program is correct, you should then see output like
