@@ -162,7 +162,7 @@ To test the correctness of your prefix calculator, you can run `check50` with:
 
 [source,bash]
 ----
-check50 1718.chapterA.calc2 calc2.c
+check50 cs50/2017/ap/calc2
 ----
 
 And of course feel free to play with the staff solution to perform extra tests beyond those articulated in `check50`:
