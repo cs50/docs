@@ -7,12 +7,15 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  Objectives
+== tl;dr
 
-* Interact with users at the command line
-* Defend against malicious users
-* Parse and process user input
-* Get better acquainted with functions and libraries
+Implement a program that implements a command line calculator.
+
+[source,subs=quotes]
+----
+$ [underline]#./calc 50 x 28#
+1400.000000
+----
 
 == Recommended Reading
 
@@ -193,7 +196,7 @@ If you'd like to check the correctness of your calculator with `check50`, you ma
 
 [source,bash]
 ----
-check50 1718.chapter2.calc calc.c
+check50 cs50/2017/ap/calc
 ----
 
 If you'd like to play with the staff's own implementation of `calc`, you may execute the below.
