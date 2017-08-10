@@ -7,10 +7,17 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Use algorithms to solve problems.
-* Experiment with different designs in solving a problem.
+Implement a program that calculates the minimum number of coins required to give a user change.
+
+[source, subs=quotes]
+----
+$ [underline]#./greedy#
+O hai! How much change is owed?
+[underline]#0.41#
+4
+----
 
 == Recommended Reading
 
@@ -92,7 +99,7 @@ Retry: [underline]#0.41#
 
 [source,text]
 ----
-check50 1718.chapter1.greedy greedy.c
+check50 cs50/2017/ap/greedy
 ----
 
 == Staff Solution

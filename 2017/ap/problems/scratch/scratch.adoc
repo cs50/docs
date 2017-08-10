@@ -5,6 +5,10 @@ layout: default
 
 = Problem: Scratch
 
+== tl;dr
+
+Build a cool project in Scratch.
+
 == Objectives
 
 * Understand how information can be represented digitally.

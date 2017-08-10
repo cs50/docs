@@ -7,12 +7,9 @@ layout: default
 
 Questions?  Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Continue experimenting with Scratch.
-* Get a taste of remixing and working with distribution code.
-* Start thinking about what constitutes good design.
-* Creatively extend the work of others.
+Remix (and fix) an existing Scratch project.
 
 include::../../honesty.adoc[]
 
