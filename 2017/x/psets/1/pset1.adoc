@@ -59,7 +59,7 @@ Click inside of that terminal window and then type
 
 [source,text]
 ----
-update50
+~/.cs50/bin/update50
 ----
 
 followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!)
