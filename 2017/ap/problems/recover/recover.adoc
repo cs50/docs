@@ -137,7 +137,7 @@ $ [underline]#echo $?#
 
 [source]
 ----
-check50 1718.chapter4.recover recover.c
+check50 cs50/2017/ap/recover
 ----
 
 == Staff Solution
