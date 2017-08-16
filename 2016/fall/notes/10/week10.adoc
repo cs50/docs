@@ -229,8 +229,8 @@ document.getElementById('demo').onsubmit = greet;
 </html>
 ----
 ** First, we need to include the jQuery library, with the `src` attribute in a `script` tag, much like an `import` or `include`.
-** Then we need a line of code, `$(document).ready(function() {`, that ensures that the code inside only run when the entire document has loaded.
-** Inside, we use `$('#demo')` to select the element with the ID `demo`. `$` is used to call the jQuery library, and `#` indicates the ID of some element. Then `submit` is used to attach an anonymous function as the event handler to the `submit` event. This time, the function takes an argument `event` that has information about the event.
+** Then we need a line of code, `$(document).ready(function() {`, that ensures that the code inside only runs when the entire document has loaded.
+** Inside, we use `$('\#demo')` to select the element with the ID `demo`. `$` is used to call the jQuery library, and `#` indicates the ID of some element. Then `submit` is used to attach an anonymous function as the event handler to the `submit` event. This time, the function takes an argument `event` that has information about the event.
 ** When that function is called, in the `alert` we use `$('#name').val()` to get the value of the input again. Finally, we use `event.preventDefault();` like `return false;`, to keep the browser from doing anything else with the form.
 * In our previous example, if we had not used jQuery and `$(document).ready), we would have issues:
 +
