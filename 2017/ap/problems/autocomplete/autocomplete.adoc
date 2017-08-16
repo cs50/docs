@@ -7,7 +7,7 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  tl;dr
+== tl;dr
 
 Implement a program to autocomplete a user's input, per the below:
 
@@ -158,7 +158,14 @@ When all is said and done, your program should:
 
 Be certain that at no point in your work on this problem that you modify either `trie.c` or `trie.h` (though you are welcome and indeed encouraged to look through those two files!). All of your work should be on making changes to either `autocomplete.c` and/or `autocomplete.h`.
 
-To play with the staff's solution, feel free to run
+To test your code, you can use
+
+[source]
+----
+check50 cs50/2017/ap/autocomplete
+----
+
+And if you want to play with the staff's solution, it's available at
 
 [source,bash]
 ----
