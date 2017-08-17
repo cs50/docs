@@ -7,11 +7,19 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  Objectives
+== tl;dr
 
-* Revise old programs to make use of new found knowledge
-* Interact with users at the command line
-* Become familiar with functions and libraries
+Improve upon older problems.
+
+[source,subs=quotes]
+----
+$ [underline]#./hello Milo#
+hello, Milo
+$ [underline]#./fahrenheit 0#
+F: 32.0
+$ [underline]#./pennies 28 1#
+$2684354.55
+----
 
 == Recommended Reading
 
@@ -178,7 +186,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 1718.chapter2.hello hello.c
+check50 cs50/2017/ap/friends/hello
 ----
 
 If you'd like to play with the staff's own implementation of `hello`, you may execute the below.
@@ -224,7 +232,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 1718.chapter2.fahrenheit fahrenheit.c
+check50 cs50/2017/ap/friends/fahrenheit
 ----
 
 If you'd like to play with the staff's own implementation of `fahrenheit`, you may execute the below.
@@ -263,7 +271,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 1718.chapter2.pennies pennies.c
+check50 cs50/2017/ap/friends/pennies
 ----
 
 If you'd like to play with the staff's own implementation of `pennies`, you may execute the below.
