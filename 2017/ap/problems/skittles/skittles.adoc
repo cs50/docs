@@ -7,12 +7,22 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Learn about pseudorandom numbers.
-* Learn how to use online references to gain insight into using unfamiliar functions.
-* Continue experimenting with CS50 IDE.
-* Build your first game in C.
+Implement a program that challenges the user to a guessing game.
+
+[source, subs=quotes]
+----
+$ [underline]#./skittles#
+O hai! I'm thinking of a number between 0 and 1023. What is it?
+[underline]#28#
+Nope! There are more Skittles than that. Guess again.
+[underline]#171#
+Nope! There are fewer Skittles than that. Guess again.
+[underline]#50#
+That's right! Nom nom nom.
+----
+
 
 == Recommended Reading
 
