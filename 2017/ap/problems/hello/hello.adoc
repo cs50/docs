@@ -334,6 +334,37 @@ Know that `check50` won't actually record your scores in CS50's gradebook. Rathe
 ~cs50/chapter1/hello
 ----
 
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `hello.c` is in `~/workspace/chapter1`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/
+ls
+----
+
+If `hello.c` is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `hello`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/
+submit50 cs50/2017/ap/hello
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
 == Hints
 
 Be sure to re-type (and not just copy and paste!) the code we've provided you above to get this program running. It'll be good to develop this muscle memory starting now!
