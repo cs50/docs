@@ -1,182 +1,21 @@
 ---
-layout: default
 ---
-:skip-front-matter:
 
-= Problem: Hello
-
-Questions?  Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50x.slack.com[the CS50x Slack page], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
-
-Don't be alarmed by the length of this problem's specification. Most of it is just instructions for getting your programming environment set up and learning how to navigate within it. Once these steps are completed, you'll be good to go for the rest of the year in CS50 AP!
+= Hello
 
 == tl;dr
 
 Implement a program that prints out a simple greeting to the user, per the below.
 
-[source, subs=quotes]
+[source,subs=quotes]
 ----
 $ [underline]#./hello#
 Hello, world!
 ----
 
-== Recommended Reading
-
-* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-* Chapters 1 – 5, 9, and 11 – 17 of _Absolute Beginner's Guide to C_.
-* Chapters 1 – 6 of _Programming in C_.
-
-include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this problem set will be evaluated along four axes primarily.
-
-Scope::
-  To what extent does your code implement the features required by our specification?
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
-== Getting Started
-
-One of the hurdles that people getting started with programming frequently encounter is configuring their computer environment for programming. One approach would be to buy a new computer, install a programming-friendly operating system on it (such as Ubuntu Linux) on it, and use that! But that's a pretty big ask.
-
-Another approach is to do what we've done in the past. Several years back, our staff put together something called the CS50 Appliance, a "virtual machine" (running Ubuntu) that you can run inside of a window on your own computer, whether you run Windows, Mac OS, or even Linux itself. To do so, all you need is a "hypervisor" (otherwise known as a "virtual machine monitor"), software that tricks the Appliance into thinking that it's running on "bare metal."
-
-But why not skip that altogether? After all, wouldn't you like to get programming right away, without having to download, install, or configure much of anything at all?
-
-++++
-<iframe scrolling="no" allowtransparency="true" src="yes.gif" width="480" height="268" frameBorder="0" allowFullScreen></iframe>
-++++
-
-
-We thought you might! So in 2015, several members of our staff, prepared a successor to the CS50 Appliance that's "cloud-based" (remember what that means?) largely using open-source software developed by a company called Cloud9.
-
-So let's get you set up with your own instance of the so-called *CS50 IDE*, which we recommend you use for the majority of your programming work in the course. In order to do so, you'll first need an edX account if you don't already have one. Head to https://www.edx.org/ and sign up for an account (if you are 13 or older) by clicking **Register** atop the page. Any public username that's available is fine, but take care to remember it and your choice of password.
-
-After you confirm your account by clicking on the link in the email that edX will send, wait a few minutes and then head over to https://cs50.io[cs50.io] and log in using your edX credentials. You should have a CS50 IDE "workspace" automatically created for you (called *ide50*) on this first visit, and on every subsequent visit to https://cs50.io[cs50.io], you should be brought right back to this workspace (if not, just click on the colored avatar in the top-right corner after logging in to be brought to your Cloud9 dashboardfootnote:[Incidentally, the first time you visit your Cloud9 dashboard in this way, you may be prompted once again for your email address.], from which you'll be able to then open your workspace).
-
-That wasn't too bad, right?
-
-=== Updating
-
-Let's now make sure that you have the most up-to-date version of CS50 IDE. To do so, click in the *terminal window* (which probably has a tab that looks something like *workspace/*) at the bottom of the screen, where by default you should see a *prompt* which reads:
-
-[source]
-----
-~/workspace/ $
-----
-
-You are now about to work with a command-line (i.e., text-based) interface via which you can navigate your workspace's files and directories and run programs by typing their names. Updating the CS50 IDE is pretty easy. Just type
-
-[source]
-----
-update50
-----
-
-at the prompt and then hit Enter on your keyboard. It may take a while to finish executing, but after a minute or two (depending on the speed of your computer and the quality of your Internet connection), you'll see the terminal window eventually tells you
-
-[source]
-----
-Update complete!
-BE SURE TO CLOSE AND RE-OPEN ANY TERMINAL WINDOWS <3
-----
-
-after which you are free to continue exploring CS50 IDE.
-
-=== Navigating CS50 IDE
-
-Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/workspace/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `chapter1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it. Inside `chapter1`, add another new folder named `hello`.
-
-Front and center in the CS50 IDE workspace is a window wherein you'll be able to write your code, using Ace, a web-based text editor. Right now, assuming you haven't played around with the tabs, that window is blank.
-
-Let's create a new file to play around with. Right-click on your newly-created `hello` folder and choose *New File* from the context menu. Then, double-click on this new file (which should hopefully be called `Untitled` and which should be nested beneath `hello` in the file tree), and a blank window should open up in Ace with the tab for `Untitled` as the active one.
-
-Go ahead and type `hello` (or the ever-popular `asdf`) on line 1 of the document, and then notice how the tab's name in Ace now contains a red dot, indicating that you've made changes since the file was first opened. Select *File > Save*, and that red dot should turn green and then disappear, indicating all of our changes are saved.
-
-`Untitled` isn't exactly a useful name for this file though, is it? Let's fix that! In the file tree on the left, right-click on `Untitled` and select *Rename* from the context menu. Enter `hello.txt` when able, and then hit Enter on your keyboard. You should see the name of the file has changed both in the file tree on the left and in the name of the tab.
-
-Okay, with `hello.txt` still open in your workspace, notice that beneath your document is that terminal window. Notice that the window's prompt is, assuming you haven't otherwise manipulated it
-
-[source]
-----
-~/workspace/ $
-----
-
-(where `~/workspace/`—i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be both a `chapter1` and a `hello` directory somewhere inside, since we created them just a few moments ago. Let's confirm as much.
-
-Click somewhere inside of that terminal window and type
-
-[source]
-----
-ls
-----
-
-and then Enter. That's a lowercase `L` and a lowercase `S`, which is shorthand notation for "list." Indeed, you should then see a list of the folders inside of your workspace directory, among which is `chapter1`! Let's open that folder! Type
-
-[source]
-----
-cd chapter1
-----
-
-or even
-
-[source]
-----
-cd ~/workspace/chapter1/
-----
-
-followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/workspace/chapter1/` (ergo, `cd`). You should find that your prompt changes to
-
-[source]
-----
-~/workspace/chapter1/ $
-----
-
-confirming that you are indeed now inside of `~/workspace/chapter1/` (i.e., a directory called `chapter1` inside of a directory called `workspace` inside of your home directory). Then type
-
-[source]
-----
-cd hello
-----
-
-followed by Enter to enter into our directory `hello`. Now type
-
-[source]
-----
-ls
-----
-
-followed by Enter. You should see `hello.txt`! Now, you can't click or double-click on that file's name there; it's just text. But that listing does confirm that `hello.txt` is where we hoped it would be.
-
-Let's poke around a bit more. Go ahead and type
-
-[source]
-----
-cd
-----
-
-and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to the `~/workspace/` directory by default.
-
-And indeed, your prompt should now be:
-
-[source]
-----
-~/workspace/ $
-----
-
-Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/workspace/`.
-
-Make sense? If not, no worries; it soon will! It's in this terminal window that you'll soon be compiling your first program! For now, though, close Ace by clicking the small "x" in the tab for `hello.txt` (if you've made additional changes, you'll be asked if you want to save your file before the tab closes).
-
 == Specification
 
-Shall we have you write your first program? Inside of your *hello* folder, create a new file called *hello.c*, and then open that file in a tab. (Remember how?) Be sure to name the file just as we have, in all lowercase; files' and folders' names in Linux are "case-sensitive." Proceed to write your first program by typing precisely these lines into the file:
+Shall we have you write your first program? Inside of your *pset1* folder, create a new file called *hello.c*, and then open that file in a tab. (Remember how?) Be sure to name the file just as we have, in all lowercase; files' and folders' names in Linux are "case-sensitive." Proceed to write your first program by typing precisely these lines into the file:
 
 [source,c]
 ----
@@ -192,11 +31,11 @@ Notice how CS50 IDE adds "syntax highlighting" (i.e., color) as you type, though
 
 Do be sure that you type this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/chapter1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/chapter1/hello/` and then Enter.) Your prompt should be:
+When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/pset1/`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/pset1/` and then Enter.) Your prompt should be:
 
 [source,text]
 ----
-~/workspace/chapter1/hello/ $
+~/workspace/pset1/ $
 ----
 
 Let's confirm that `hello.c` is indeed where it should be. Type
@@ -245,7 +84,7 @@ If, though, upon running `make`, you instead see some error(s), it's time to deb
 make hello
 ----
 
-at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/chapter1/hello/` within your terminal window, as your prompt will confirm or deny.) If still seeing errors, try "prepending" `help50` to your command like this:
+at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/pset1/` within your terminal window, as your prompt will confirm or deny.) If still seeing errors, try "prepending" `help50` to your command like this:
 
 [source,text]
 ----
@@ -285,7 +124,7 @@ Hello, world!
 
 [source,text]
 ----
-check50 cs50/2017/ap/hello
+check50 cs50/2017/x/hello
 ----
 
 Assuming your program is correct, you should then see output like
@@ -325,13 +164,26 @@ Suppose instead you see the below.
 
 Odds are, in this case, you printed something other than `Hello, world!\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `Hello, world!`, without a trailing newline (`\n`).
 
+Know that `check50` won't actually record your scores in CS50's gradebook. Rather, it lets you check your work's correctness _before_ you submit your work. Once you actually submit your work (per the directions at this spec's end), CS50's staff will use `check50` to evaluate your work's correctness officially.
+
 == Staff Solution
 
 [source]
 ----
-~cs50/chapter1/hello
+~cs50/pset1/hello
 ----
 
 == Hints
 
 Be sure to re-type (and not just copy and paste!) the code we've provided you above to get this program running. It'll be good to develop this muscle memory starting now!
+
+== FAQs
+
+_None so far! Reload this page periodically to check if any arise!_
+
+== CHANGELOG
+
+* 2016-10-02
+** Reformatted.
+* 2016-09-02
+** Initial release.
