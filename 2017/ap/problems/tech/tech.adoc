@@ -5,6 +5,26 @@ layout: default
 
 = Writing Problem: Tech Spotlight
 
+== tl;dr
+
+[start=0]
+
+. In 600 words, describe a piece of technology. Consider:
++
+--
+* What is this technology called?
+* What does it do?
+* How does someone use this technology?
+* How is its quality of performance commonly measured? (e.g. in megabytes (MB), gigahertz (GHz), etc.)
+* How does the recent news about the technology change the product or service?
+* What older form of technology does it replace, if any?
+* How has this technology impacted your life, for better or worse?
+* How has this technology impacted society at large, for better or worse?
+
+--
++
+. Submit your essay.
+
 == Objectives
 
 * Become familiar with popular tech news sites.

@@ -5,12 +5,12 @@ layout: default
 
 = Problem: Scratch
 
-== Objectives
+== tl;dr
 
-* Understand how information can be represented digitally.
-* Leverage some fundamental programming constructs.
-* Design your own animation, game, or interactive art.
-* Impress your friends.
+[start=0]
+. Watch https://video.cs50.net/2016/fall/lectures/0[Week 0's lecture].
+. Program in Scratch.
+. Submit a form. 
 
 include::../../honesty.adoc[]
 
@@ -78,5 +78,20 @@ Incidentally, if you don't have the best Internet access, you're welcome to down
 Once finished with your project, click *See project page* in Scratch's top-right corner. Ensure your project has a title (in Scratch's top-left corner), some instructions (in Scratch's top-right corner), and some notes and/or credits (in Scratch's bottom-right corner). Then click *Share* in Scratch's top-right corner so that others can see your project. Finally, take note of the URL in your browser's address bar. That's your project's URL on MIT's website, and you'll need to know it later.
 
 Oh, and if you'd like to exhibit your project in CS50 AP's studio for 2017-18, head to *TODO*, then click *Add projects*, and paste in your own project's URL.
+
+== How to Submit
+
+1. Visit https://cs50.me[CS50.me], log in with your GitHub account, and click *Authorize application*.
+2. Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
+3. In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb2`.
+4. Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username.
+5. On the left side of the screen, click on "Branch: master".
+6. In the field that says "Find or create a branch...", type `cs50/2017/ap/scratch` and click "Create branch".
+7. Click the button that says "Upload files".
+8. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
+9. Click the green "Commit changes" button.
+10. You're done!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
 
 This was Scratch, your first programming problem in CS50 AP!
