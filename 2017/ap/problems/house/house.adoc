@@ -7,6 +7,22 @@ layout: default
 
 == tl;dr
 
+[start=0]
+
+. In 400 words, describe a device in detail using the following questions:
++
+--
+* What does the device look like?
+* What kind of data does it accept?
+* How does it process that data?
+* What is the result of that processing?
+
+--
++
+. Submit your essay.
+
+== Objectives
+
 Write 400 words making a case for why a device in your home is a computer.
 
 include::../../honesty.adoc[]
