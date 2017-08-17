@@ -120,7 +120,7 @@ check50 cs50/2017/ap/mario/more
 
 [source]
 ----
-~cs50/chapter1/mario/less
+~cs50/chapter1/mario/more
 ----
 
 == Hints
