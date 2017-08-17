@@ -142,7 +142,7 @@ RTB
 
 [source]
 ----
-check50 1718.chapter2.initials.less initials.c
+check50 cs50/2017/ap/initials/less
 ----
 
 == Staff Solution
