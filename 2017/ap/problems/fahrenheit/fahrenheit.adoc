@@ -7,11 +7,16 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Use variables and perform mathematical manipulations.
-* Continue experimenting with CS50 IDE.
-* Build your first utility program in C.
+Implement a program that converts degrees in Celsius to Fahrenheit, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./fahrenheit#
+C: [underline]#0#
+F: 32.0
+----
 
 == Recommended Reading
 
@@ -38,11 +43,11 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Turning Up the Heat
 
-Time was if you wanted to know what the outdoor temperature was, you had to look around for one of these, which might have been mounted outside at your house.
+In the past, if you wanted to know what the outdoor temperature was, you had to look around for one of these, which might have been mounted outside at your house.
 
 image:thermo.png[Thermometer]
 
-Time really was that if you wanted to know what the temperature was outside, you just stood outside, but we digress. Nowadays, it's a fairly trivial exercise to pull open a weather app on your phone or visit a weather-reporting website to get the current temperature and the five-day forecast. No need to mess around with one of the above circular dials or its tube-of-mercury cousinfootnote:[e.g., https://upload.wikimedia.org/wikipedia/commons/b/ba/Thermometer.jpg.].
+Previous to that, if you wanted to know what the temperature was outside, you just stood outside, but we digress. Nowadays, it's a fairly trivial exercise to pull open a weather app on your phone or visit a weather-reporting website to get the current temperature and the five-day forecast. No need to mess around with one of the above circular dials or its tube-of-mercury cousinfootnote:[e.g., https://upload.wikimedia.org/wikipedia/commons/b/ba/Thermometer.jpg.].
 
 Depending on where you live in the world, your country uses one of two major temperature scales. If you live in the United States (and don't spend most of your day working in a science lab), it's likely that you're familiar with the Fahrenheit scale, and so if you hear that it's 30&deg; outside you're probably putting on a heavy coat and warm pants and bracing yourself for the possibility of snow, because that means it's quite cold, given that the freezing point of water is 32&deg;. On the other hand, it's not until the temperature hits 212&deg; that water boils.
 
@@ -71,11 +76,11 @@ If you have it from http://docs.cs50.net/2017/ap/problems/hello/hello.html[Hello
 
 int main(void)
 {
-    printf("hello, world\n");
+    printf(“Hello, world!\n”);
 }
 ----
 
-To make our program more adaptable, instead of having it always print the same simple message (`hello, world\n`) each time, we can modify this program to prompt a user to provide their name and then print out their name instead:
+To make our program more adaptable, instead of having it always print the same simple message (`Hello, world!\n`) each time, we can modify this program to prompt a user to provide their name and then print out their name instead:
 
 [source,c]
 ----
@@ -84,8 +89,7 @@ To make our program more adaptable, instead of having it always print the same s
 
 int main(void)
 {
-    printf("Enter your name: ");
-    string name = get_string();
+    string name = get_string("Enter your name: ");
     printf("hello, %s\n", name);
 }
 ----
@@ -104,14 +108,14 @@ What `string` will we print? Well, that'd be `name`! After we specify what we wa
 ----
 ~/workspace/chapter1/hello/ $ [underline]#./hello#
 Enter your name: [underline]#Alice#
-hello, Alice
+Hello, Alice!
 ----
 
 There's not just `get_string` in `cs50.h` though. There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long_long`, `get_char`.
 
 == Getting Warmer ==
 
-Now, create a file called `fahrenheit.c` (remember how?), ensuring that it is inside of a subdirectory called `fahrenheit` inside of your `chapter1` directory, and then double-click on that file in the file tree to the left. You should now have an open window in Ace with the tab name `fahrenheit.c`, and you're ready to write your first utility program--a program that can be used by others to do something meaningful for them. (Not to knock the value of saying `hello, world`... but we can do so much more!)
+Now, create a file called `fahrenheit.c` (remember how?), ensuring that it is inside of a subdirectory called `fahrenheit` inside of your `chapter1` directory, and then double-click on that file in the file tree to the left. You should now have an open window in Ace with the tab name `fahrenheit.c`, and you're ready to write your first utility program--a program that can be used by others to do something meaningful for them. (Not to knock the value of saying `Hello, world!`… but we can do so much more!)
 
 Write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein underlined text represents some user's inputfootnote:[Incidentally, while spelling Fahrenheit correctly is a little tricky, but do be careful to do so lest you be told that your program doesn't exist!].
 
@@ -124,7 +128,13 @@ F: 212.0
 
 To solve this problem, you needn't do anything more complex than use your currently existing knowledge of C, and the information contained in this specification, including the temperature conversion formula. No matter how the user inputs the temperature in Celsius (that is, no matter to how many decimal places they choose), take care to display Fahrenheit to _exactly_ one decimal place. No need to worry about floating-point imprecision or integer overflow, if you recall what those terms mean.footnote:[If you don't, you soon will!]
 
-Do recall that if you include `<cs50.h>` atop your `fahrenheit.c` file, you will have access to a function called `get_float`, which will allow the user to input a floating-point value (a number with a decimal point in it, also known as a __real number__).
+Do recall that if you include `<cs50.h>` atop your `fahrenheit.c` file, you will have access to a function called `get_float`, which will allow the user to input a floating-point value (a number with a decimal point in it, also known as a __real number__).The parameters of the get functions will display a prompt for users. So if you had a line in a file called `name.c` that looked like this `get_string(“name please:”)`, it will display the following:
+
+[source,bash,subs=quotes]
+----
+~/workspace/name/ $ [underline]#./name#
+name please:
+----
 
 Incidentally, know that `printf` can be used to specify how many places after the decimal point you wish to display to the user. For example, assuming you've written the following program in a file called `truncate.c`:
 
@@ -145,7 +155,7 @@ Before turning in your solution, be sure to test the correctness of your program
 
 [source,bash]
 ----
-check50 1718.chapter1.fahrenheit fahrenheit.c
+check50 cs50/2017/ap/fahrenheit
 ----
 
 If you pass all the `check50` test cases, and get a green smiley face when you run things through `style50`, congratulations! If not, don't worry: it's just time for a little bit of debugging and/or cleaning up your code.
