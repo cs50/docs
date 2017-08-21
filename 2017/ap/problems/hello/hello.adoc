@@ -368,3 +368,5 @@ Your submission should be graded for correctness within 2 minutes, at which poin
 == Hints
 
 Be sure to re-type (and not just copy and paste!) the code we've provided you above to get this program running. It'll be good to develop this muscle memory starting now!
+
+This was Hello.

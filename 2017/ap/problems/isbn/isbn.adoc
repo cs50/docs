@@ -132,7 +132,7 @@ ISBN: [underline]#0789751984#
 YES
 ----
 
-Of course, `get_long_long` itself will reject an ISBN-10's hyphens (and more) anyway:
+Of course, `get_long_long(“ISBN: “)` itself will reject an ISBN-10's hyphens (and more) anyway:
 
 [source,subs=quotes]
 ----
@@ -165,5 +165,36 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 ----
 ~cs50/chapter1/isbn
 ----
+
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `isbn.c` is in `~/workspace/chapter1`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/
+ls
+----
+
+If `isbn.c` is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `isbn`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/
+submit50 cs50/2017/ap/isbn
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was ISBN.
