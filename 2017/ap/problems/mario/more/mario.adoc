@@ -126,3 +126,38 @@ check50 cs50/2017/ap/mario/more
 == Hints
 
 Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to C!
+
+
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `mario.c` is in `~/workspace/chapter1`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/
+ls
+----
+
+If `mario.c` is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `mario`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/
+submit50 cs50/2017/ap/mario/more
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
+
+
+This was Mario.
