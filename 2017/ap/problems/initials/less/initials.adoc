@@ -149,8 +149,47 @@ check50 cs50/2017/ap/initials/less
 
 [source]
 ----
-~cs50/chapter2/initials
+~cs50/chapter2/initials/less
 ----
+
+== How to Submit
+
+Be sure you've signed up for a https://github.com/join[GitHub account], per http://docs.cs50.net/2017/ap/problems/scratch/scratch.html[Scratch], and that you've logged into and authorized https://cs50.me/[CS50.me] at least once, per the problem http://docs.cs50.net/2017/ap/problems/hello/hello.html[Hello]!
+
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
+** Be sure that `initials.c` is in `~/workspace/pset2/initials/`, as with:
++
+[source]
+----
+cd ~/workspace/chapter2/initials/
+ls
+----
+=== Step 3 of 3
+
+* To submit the less-comfortable version of `initials` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/chapter2/initials/
+submit50 cs50/2017/ap/initials/less
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Initials.
+
 
 == FAQs
 

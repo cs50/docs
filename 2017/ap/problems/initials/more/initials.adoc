@@ -7,6 +7,16 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
+== tl;dr
+ 
+Implement a program that, given a person's name, prints a person's initials, per the below.
+
+[source]
+----
+$ ./initials
+Regulus Arcturus Black
+RAB
+----
 
 == Recommended Reading
 
@@ -30,17 +40,6 @@ Style::
  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
-== tl;dr
-
-Implement a program that, given a person's name, prints a person's initials, per the below.
-
-[source]
-----
-$ ./initials
-Regulus Arcturus Black
-RAB
-----
 
 == Getting Ready
 
@@ -144,12 +143,50 @@ RTB
 
 [source]
 ----
-check50 1718.chapter2.initials.more initials.c
+check50 cs50/2017/ap/initials/more
 ----
 
 == Staff's Solution
 
 [source]
 ----
-~cs50/chapter2/initials_more
+~cs50/chapter2/initials/more
 ----
+
+== How to Submit
+
+Be sure you've signed up for a https://github.com/join[GitHub account], per http://docs.cs50.net/2017/ap/problems/scratch/scratch.html[Scratch], and that you've logged into and authorized https://cs50.me/[CS50.me] at least once, per the problem http://docs.cs50.net/2017/ap/problems/hello/hello.html[Hello]!
+
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
+** Be sure that `initials.c` is in `~/workspace/pset2/initials/`, as with:
++
+[source]
+----
+cd ~/workspace/chapter2/initials/
+ls
+----
+=== Step 3 of 3
+
+* To submit the more-comfortable version of `initials` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/chapter2/initials/
+submit50 cs50/2017/ap/initials/more
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Initials.
