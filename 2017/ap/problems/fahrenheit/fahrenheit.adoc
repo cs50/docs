@@ -47,7 +47,7 @@ In the past, if you wanted to know what the outdoor temperature was, you had to 
 
 image:thermo.png[Thermometer]
 
-Previous to that, if you wanted to know what the temperature was outside, you just stood outside, but we digress. Nowadays, it's a fairly trivial exercise to pull open a weather app on your phone or visit a weather-reporting website to get the current temperature and the five-day forecast. No need to mess around with one of the above circular dials or its tube-of-mercury cousinfootnote:[e.g., https://upload.wikimedia.org/wikipedia/commons/b/ba/Thermometer.jpg.].
+Prior to that, if you wanted to know what the temperature was outside, you just stood outside, but we digress. Nowadays, it's a fairly trivial exercise to pull open a weather app on your phone or visit a weather-reporting website to get the current temperature and the five-day forecast. No need to mess around with one of the above circular dials or its tube-of-mercury cousinfootnote:[e.g., https://upload.wikimedia.org/wikipedia/commons/b/ba/Thermometer.jpg.].
 
 Depending on where you live in the world, your country uses one of two major temperature scales. If you live in the United States (and don't spend most of your day working in a science lab), it's likely that you're familiar with the Fahrenheit scale, and so if you hear that it's 30&deg; outside you're probably putting on a heavy coat and warm pants and bracing yourself for the possibility of snow, because that means it's quite cold, given that the freezing point of water is 32&deg;. On the other hand, it's not until the temperature hits 212&deg; that water boils.
 
@@ -166,5 +166,41 @@ If you'd like to play with our own implementation of `fahrenheit` in the IDE, yo
 ----
 ~cs50/chapter1/fahrenheit
 ----
+
+== How to Submit
+
+=== Step 1 of 3
+
+Make sure your IDE is up-to-date by executing `update50`
+
+=== Step 2 of 3
+
+Ensure that `fahrenheit.c` is in `~/workspace/chapter1/fahrenheit`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/fahrenheit
+ls
+----
+
+If `fahrenheit.c` is not in `~/workspace/chapter1/fahrenheit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+* To submit `fahrenheit`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/fahrenheit
+submit50 cs50/2017/ap/fahrenheit
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
 
 This was Fahrenheit.
