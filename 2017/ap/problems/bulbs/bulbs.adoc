@@ -9,7 +9,7 @@ Questions?  Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], 
 
 == tl;dr
 
-Remix (and fix) an existing Scratch project.
+Remix a scratch project to create a working implementation of a game of binary bulbs. 
 
 include::../../honesty.adoc[]
 
