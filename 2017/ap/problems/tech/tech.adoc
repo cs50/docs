@@ -63,7 +63,7 @@ Sites like http://www.techcrunch.com[TechCrunch], http://www.wired.com[Wired], h
 
 Pick some piece of technology with which you are familiar and that you might use everyday. It needn't be a piece of hardware; software, websites, and the like are perfectly fine too. Explore it in depth. Find some articles about recent developments (i.e., within the last three months) in this technology that have been posted on sites like the ones described earlier. Specifically, you should read a minimum of three (3) articles about the technology you've chosen, and include your list of sources at the end of your paper.footnote:[Your list of sources needn't be prepared as a bibliography following any particular citation style, but do be sure to include for each the name of the article read, name of the website or publication where you found the article, date the article was written, author's name, and URL, if found online.]
 
-Then, in no more than *600 words*, expound on this technology. Assume for the purposes of this assignment that your audience is someone who has no prior knowledge about the technology you are describing, and so your objective is to provide them with a well-rounded, unbiased summary. In writing your response, you should consider this (non-exhaustive) list of questions a good starting point:
+Open a text editor and create a file called ‘tech’ (be sure that the file extension is either .doc, .docx, .pdf, or .txt). Then, in no more than *600 words*, expound on this technology. Assume for the purposes of this assignment that your audience is someone who has no prior knowledge about the technology you are describing, and so your objective is to provide them with a well-rounded, unbiased summary. In writing your response, you should consider this (non-exhaustive) list of questions a good starting point:
 
 * What is this technology called?
 * What does it do?
@@ -77,5 +77,25 @@ Then, in no more than *600 words*, expound on this technology. Assume for the pu
 It's worth mentioning here that other than reporting on some technical specifications, which you may not have previously known but which may be listed in the articles themselves, you shouldn't be using text from your sources in your assignment directly. Rather, the articles you read will hopefully provide slightly different perspectives on the technology you've chosen, and you should synthesize those perspectives to comment on the technology more broadly.
 
 To be clear, you're not standing in the role of a salesperson. Make sure to speak factually for the most part, and if you do cite or offer an opinion on the product (e.g., "I think this product is great because..."), be sure that your paper is balanced by offering the opposing opinion too (e.g., "Some people might dislike this product because...").
+
+== How to Submit
+
+=== Step 1 of 3
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/tech` and click "Create branch".
+
+=== Step 2 of 3
+
+Click the button that says "Upload files". Drag your `tech.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 3 of 3
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Tech Spotlight. And unfortunately, the Nyan Cat song is still stuck in our heads. :\
