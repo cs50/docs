@@ -13,7 +13,7 @@ Don't be alarmed by the length of this problem's specification. Most of it is ju
 
 Implement a program that prints out a simple greeting to the user, per the below.
 
-[source, subs=quotes]
+[source,subs=quotes]
 ----
 $ [underline]#./hello#
 Hello, world!
@@ -44,50 +44,50 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Getting Started
 
-One of the hurdles that people getting started with programming frequently encounter is configuring their computer environment for programming. One approach would be to buy a new computer, install a programming-friendly operating system on it (such as Ubuntu Linux) on it, and use that! But that's a pretty big ask.
+Recall that CS50 IDE is a web-based "integrated development environment" that allows you to program "in the cloud," without installing any software locally. Underneath the hood is a popular operating system, Ubuntu Linux, that’s been "containerized" with open-source software called Docker, that allows multiple users (like you!) to share the operating system’s "kernel" (its nucleus, so to speak) and files, even while having files of their own. Indeed, CS50 IDE provides you with your very own "workspace" (i.e., storage space) in which you can save your own files and folders (aka directories).
 
-Another approach is to do what we've done in the past. Several years back, our staff put together something called the CS50 Appliance, a "virtual machine" (running Ubuntu) that you can run inside of a window on your own computer, whether you run Windows, Mac OS, or even Linux itself. To do so, all you need is a "hypervisor" (otherwise known as a "virtual machine monitor"), software that tricks the Appliance into thinking that it's running on "bare metal."
-
-But why not skip that altogether? After all, wouldn't you like to get programming right away, without having to download, install, or configure much of anything at all?
+After all, wouldn't you like to get programming right away, without having to download, install, or configure much of anything at all?
 
 ++++
 <iframe scrolling="no" allowtransparency="true" src="yes.gif" width="480" height="268" frameBorder="0" allowFullScreen></iframe>
 ++++
 
+=== Logging In
 
-We thought you might! So in 2015, several members of our staff, prepared a successor to the CS50 Appliance that's "cloud-based" (remember what that means?) largely using open-source software developed by a company called Cloud9.
+Head to https://cs50.io/[cs50.io] and log into CS50 IDE, selecting *edX* from the drop-down menu when prompted.
 
-So let's get you set up with your own instance of the so-called *CS50 IDE*, which we recommend you use for the majority of your programming work in the course. In order to do so, you'll first need an edX account if you don't already have one. Head to https://www.edx.org/ and sign up for an account (if you are 13 or older) by clicking **Register** atop the page. Any public username that's available is fine, but take care to remember it and your choice of password.
+[IMPORTANT]
+====
+If you typically sign into https://courses.edx.org/login[edX] via Facebook, Google, or Microsoft, you'll first need to create a password for your edX account as follows:
 
-After you confirm your account by clicking on the link in the email that edX will send, wait a few minutes and then head over to https://cs50.io[cs50.io] and log in using your edX credentials. You should have a CS50 IDE "workspace" automatically created for you (called *ide50*) on this first visit, and on every subsequent visit to https://cs50.io[cs50.io], you should be brought right back to this workspace (if not, just click on the colored avatar in the top-right corner after logging in to be brought to your Cloud9 dashboardfootnote:[Incidentally, the first time you visit your Cloud9 dashboard in this way, you may be prompted once again for your email address.], from which you'll be able to then open your workspace).
+. Sign into your edX account at https://courses.edx.org/login[courses.edx.org/login] (via Facebook, Google, or Microsoft).
+. Visit https://courses.edx.org/account/settings[courses.edx.org/account/settings].
+. Click *Reset Your Password* (even though you don't yet have one) under *Password*.
+. Check your email for a message from edX. (If it hasn't arrived after a few minutes, do check your spam folder.) Click the link in that message to reset (i.e., create) your password.
+. Log into https://cs50.io/[cs50.io]!
+====
 
-That wasn't too bad, right?
+Upon logging into CS50 IDE for the first time, you may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then click *Create workspace*.
+
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble mine from Week 1. If not, do just email the course's heads to inquire!
 
 === Updating
 
-Let's now make sure that you have the most up-to-date version of CS50 IDE. To do so, click in the *terminal window* (which probably has a tab that looks something like *workspace/*) at the bottom of the screen, where by default you should see a *prompt* which reads:
+Toward the bottom of CS50 IDE's UI is a "terminal window" (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace's files and directories, compile code, run programs, and even install new software. You should find that its "prompt" resembles the below.
 
-[source]
+[source,text]
 ----
 ~/workspace/ $
 ----
 
-You are now about to work with a command-line (i.e., text-based) interface via which you can navigate your workspace's files and directories and run programs by typing their names. Updating the CS50 IDE is pretty easy. Just type
+Click inside of that terminal window and then type
 
-[source]
+[source,text]
 ----
 update50
 ----
 
-at the prompt and then hit Enter on your keyboard. It may take a while to finish executing, but after a minute or two (depending on the speed of your computer and the quality of your Internet connection), you'll see the terminal window eventually tells you
-
-[source]
-----
-Update complete!
-BE SURE TO CLOSE AND RE-OPEN ANY TERMINAL WINDOWS <3
-----
-
-after which you are free to continue exploring CS50 IDE.
+followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!). 
 
 === Navigating CS50 IDE
 
@@ -97,7 +97,7 @@ Front and center in the CS50 IDE workspace is a window wherein you'll be able to
 
 Let's create a new file to play around with. Right-click on your newly-created `hello` folder and choose *New File* from the context menu. Then, double-click on this new file (which should hopefully be called `Untitled` and which should be nested beneath `hello` in the file tree), and a blank window should open up in Ace with the tab for `Untitled` as the active one.
 
-Go ahead and type `hello` (or the ever-popular `asdf`) on line 1 of the document, and then notice how the tab's name in Ace now contains a red dot, indicating that you've made changes since the file was first opened. Select *File > Save*, and that red dot should turn green and then disappear, indicating all of our changes are saved.
+Go ahead and type `hello` (or the ever-popular `asdf`) on line 1 of the document, and then notice how the tab's name now contains a red dot, indicating that you've made changes since the file was first opened. Select *File > Save*, and that red dot should turn green and then disappear, indicating all of our changes are saved.
 
 `Untitled` isn't exactly a useful name for this file though, is it? Let's fix that! In the file tree on the left, right-click on `Untitled` and select *Rename* from the context menu. Enter `hello.txt` when able, and then hit Enter on your keyboard. You should see the name of the file has changed both in the file tree on the left and in the name of the tab.
 
@@ -172,7 +172,7 @@ And indeed, your prompt should now be:
 
 Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/workspace/`.
 
-Make sense? If not, no worries; it soon will! It's in this terminal window that you'll soon be compiling your first program! For now, though, close Ace by clicking the small "x" in the tab for `hello.txt` (if you've made additional changes, you'll be asked if you want to save your file before the tab closes).
+Make sense? If not, no worries; it soon will! It's in this terminal window that you'll soon be compiling your first program! For now, though, close the tab by clicking the small "x" in the tab for `hello.txt` (if you've made additional changes, you'll be asked if you want to save your file before the tab closes).
 
 == Specification
 
@@ -325,6 +325,8 @@ Suppose instead you see the below.
 
 Odds are, in this case, you printed something other than `Hello, world!\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `Hello, world!`, without a trailing newline (`\n`).
 
+Know that `check50` won't actually record your scores in CS50's gradebook. Rather, it lets you check your work's correctness _before_ you submit your work. Once you actually submit your work (per the directions at this spec's end), CS50's staff will use `check50` to evaluate your work's correctness officially.
+
 == Staff Solution
 
 [source]
@@ -332,6 +334,39 @@ Odds are, in this case, you printed something other than `Hello, world!\n` verba
 ~cs50/chapter1/hello
 ----
 
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `hello.c` is in `~/workspace/chapter1`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/
+ls
+----
+
+If `hello.c` is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `hello`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/
+submit50 cs50/2017/ap/hello
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
 == Hints
 
 Be sure to re-type (and not just copy and paste!) the code we've provided you above to get this program running. It'll be good to develop this muscle memory starting now!
+
+This was Hello.

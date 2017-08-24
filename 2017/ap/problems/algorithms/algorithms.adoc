@@ -7,7 +7,7 @@ layout: default
 
 == tl;dr
 
-Write up an algorithm to exhaustively describe an everyday process.
+Write up algorithms to exhaustively describe in text and pseudocode, steps to brush one's teeth, eat an orange, and something you do everyday.
 
 include::../../honesty.adoc[]
 
