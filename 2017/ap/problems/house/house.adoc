@@ -93,7 +93,7 @@ Have a look around your home. See any computers? Even if you don't have laptops 
 
 In this problem, we want you to think even more outside the box than that. Recall that we defined a computer as _a device that accepts input, and processes it in some way to produce a result automatically_. Surely there exists some device in your home that adheres to that definition but isn't something that before now you would have readily called a computer. If you can't think of any such device in your home, feel free to venture beyond those four walls and pick any device with which you may be familiar.
 
-In no more than 400 wordsfootnote:[Seriously! In the real world, projects often have specifications just like this one, and it's frequently quite important to adhere to those specifications exactly so that you are in compliance with project scope. So keep it to 400 words, tops!], describe this device in detail. You may wish to consider questions such as:
+Open a text editor and create a file called ‘house’ (be sure that the file extension is either .doc, .docx, .pdf, or .txt). In no more than 400 wordsfootnote:[Seriously! In the real world, projects often have specifications just like this one, and it's frequently quite important to adhere to those specifications exactly so that you are in compliance with project scope. So keep it to 400 words, tops!], describe this device in detail. You may wish to consider questions such as:
 
 * What does the device look like?
 * What kind of data does it accept?
@@ -101,5 +101,29 @@ In no more than 400 wordsfootnote:[Seriously! In the real world, projects often 
 * What is the result of that processing?
 
 Conduct a little bit of research (formal or informal), and if you suspect others may be skeptical of your assertion that the device you chose is a computer, write persuasively so as to do your best to convince such individuals that you aren't crazy and that you know what you're talking about.
+
+== How to Submit
+
+=== Step 1 of 4
+
+Go to https://github.com/join[GitHub] and create an account if you don’t already have one.  Then head over to https://cs50.me[CS50.me], and log in with your GitHub account credentials, and click *Authorize application*.
+
+=== Step 2 of 4
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/house` and click "Create branch".
+
+=== Step 3 of 4
+
+Click the button that says "Upload files". Drag your `house.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 4 of 4
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Around the House, your first problem in CS50 AP!
