@@ -154,8 +154,6 @@ check50 cs50/2017/ap/initials/less
 
 == How to Submit
 
-Be sure you've signed up for a https://github.com/join[GitHub account], per http://docs.cs50.net/2017/ap/problems/scratch/scratch.html[Scratch], and that you've logged into and authorized https://cs50.me/[CS50.me] at least once, per the problem http://docs.cs50.net/2017/ap/problems/hello/hello.html[Hello]!
-
 === Step 1 of 3
 
 Execute `update50` again to ensure that your IDE is up-to-date.
