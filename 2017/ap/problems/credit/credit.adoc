@@ -133,7 +133,7 @@ check50 cs50/2017/ap/credit
 
 === Step 1 of 2
 
-Ensure that `isbn.c` is in `~/workspace/chapter1/credit`, as with:
+Ensure that `credit.c` is in `~/workspace/chapter1/credit`, as with:
 
 [source]
 ----
