@@ -7,10 +7,7 @@ layout: default
 
 == tl;dr
 
-[start=0]
-. Watch https://video.cs50.net/2016/fall/lectures/0[Week 0's lecture].
 . Program in Scratch.
-. Submit a form. 
 
 include::../../honesty.adoc[]
 
@@ -81,16 +78,21 @@ Oh, and if you'd like to exhibit your project in CS50 AP's studio for 2017-18, h
 
 == How to Submit
 
-1. Visit https://cs50.me[CS50.me], log in with your GitHub account, and click *Authorize application*.
-2. Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
-3. In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb2`.
-4. Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username.
-5. On the left side of the screen, click on "Branch: master".
-6. In the field that says "Find or create a branch...", type `cs50/2017/ap/scratch` and click "Create branch".
-7. Click the button that says "Upload files".
-8. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
-9. Click the green "Commit changes" button.
-10. You're done!
+=== Step 1 of 4
+
+In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb2`.
+
+=== Step 2 of 4
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/scratch` and click "Create branch".
+
+=== Step 3 of 4
+
+Click the button that says "Upload files". Drag your `project.sb2` Scratch file into the box that says "Drag files here".
+
+=== Step 4 of 4
+
+Click the green "Commit changes" button. You're done!
 
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
 
@@ -99,19 +101,6 @@ Your submission should be graded for correctness within 2 minutes, at which poin
 === Can't find the "Branch: master" button.
 
 If you don't see a "Branch: master" button upon going to your submit50 page on GitHub, click the "README" button next to "We recommend every repository include a..." and then click the green "Commit new file" button. After that, the "Branch: master" button should appear!
-
-== How to Submit
-
-1. Visit https://cs50.me[CS50.me], log in with your GitHub account, and click *Authorize application*.
-2. Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
-3. In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb2`.
-4. Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username.
-5. On the left side of the screen, click on "Branch: master".
-6. In the field that says "Find or create a branch...", type `cs50/2017/ap/scratch` and click "Create branch".
-7. Click the button that says "Upload files".
-8. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
-9. Click the green "Commit changes" button.
-10. You're done!
 
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
 

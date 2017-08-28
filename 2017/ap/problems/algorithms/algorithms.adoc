@@ -131,7 +131,7 @@ Notice here that until your friend guesses the correct number, they will go back
 
 == Step 3: Write This.
 
-Okay, now you've learned a lot about algorithms and pseudocode. Perhaps we should try writing a few--three, to be precise. First, write up algorithms (both in sentence form and in pseudocode) for how to:
+Okay, now you've learned a lot about algorithms and pseudocode. Perhaps we should try writing a few--three, to be precise. Open a text editor and create a file called ‘algorithms’ (be sure that the file extension is either .doc, .docx, .pdf, or .txt). First, write up algorithms (both in sentence form and in pseudocode) for how to:
 
 * brush one's teeth
 * eat an orange
@@ -159,5 +159,26 @@ Go back to the first paragraph of this section and run through those steps again
 See what we did there?
 
 This process may actually be more challenging than it first appears, and that's okay. We promise though, once you start writing source code you'll have access to a new (but limited!) toolkit of keywords and commands that will make precise algorithm-writing substantially easier!
+
+==How to Submit
+
+=== Step 1 of 3
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/algorithms` and click "Create branch".
+
+=== Step 2 of 3
+
+Click the button that says "Upload files". Drag your `algorithms.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 3 of 3
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
 
 This was Everyday Algorithms.

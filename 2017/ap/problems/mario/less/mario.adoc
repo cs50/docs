@@ -138,11 +138,11 @@ Try to establish a relationship between (a) the height the user would like the p
 
 === Step 1 of 2
 
-Ensure that `mario.c` is in `~/workspace/chapter1`, as with:
+Ensure that `mario.c` is in `~/workspace/chapter1/mario`, as with:
 
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/mario
 ls
 ----
 
@@ -154,7 +154,7 @@ If `mario.c` is not in `~/workspace/chapter1/`, move it into that directory, as 
 +
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/mario
 submit50 cs50/2017/ap/mario/less
 ----
 +

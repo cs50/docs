@@ -231,8 +231,6 @@ And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forge
 
 == How to Submit
 
-Be sure you've signed up for a https://github.com/join[GitHub account], per Problem Set 0, and that you've logged into and authorized https://cs50.me/[CS50.me] at least once, per Problem Set 1!
-
 === Step 1 of 3
 
 Execute `update50` again to ensure that your IDE is up-to-date.
