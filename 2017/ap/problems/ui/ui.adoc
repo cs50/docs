@@ -5,11 +5,9 @@ layout: default
 
 = Writing Problem: Me, Myself, and UI
 
-== Objectives
+== tl;dr
 
-* Learn about the history of user interface design
-* Compare and contrast different modern user interface designs
-* Predict the future
+Learn about user interfaces and apply your knowledge toward predicting the future.
 
 include::../../honesty.adoc[]
 

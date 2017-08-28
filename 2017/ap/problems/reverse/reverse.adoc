@@ -7,13 +7,9 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  Objectives
+== tl;dr
 
-* Better understand the compilation process.
-* Understand how a machine converts source code into object code.
-* Get as close as humans today typically get to reading object code.
-* Appreciate just how few things a computer can actually do.
-* Reverse engineer a simple piece of software.
+Learn the compilation process and reverse engineer a piece of software.
 
 == Recommended Reading
 

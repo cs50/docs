@@ -5,10 +5,25 @@ layout: default
 
 = Writing Problem: Around the House
 
+== tl;dr
+
+[start=0]
+
+. In 400 words, describe a device in detail using the following questions:
++
+--
+* What does the device look like?
+* What kind of data does it accept?
+* How does it process that data?
+* What is the result of that processing?
+
+--
++
+. Submit your essay.
+
 == Objectives
 
-* Think critically about computers and computing.
-* Learn about how to write with an eye towards a technical audience.
+Write 400 words making a case for why a device in your home is a computer.
 
 include::../../honesty.adoc[]
 

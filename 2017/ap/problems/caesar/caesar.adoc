@@ -7,11 +7,16 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  Objectives
+== tl;dr
 
-* Become better acquainted with functions and libraries.
-* Interact with command-line inputs from users.
-* Dabble in cryptography.
+Implement a program that encrypts messages using Caesar's cipher, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./caesar 13#
+plaintext: [underline]#HELLO#
+ciphertext: URYYB
+----
 
 == Recommended Reading
 
@@ -127,21 +132,21 @@ Your program should behave per the examples below. Assumed that the underlined t
 [source,subs=quotes]
 ----
 $ [underline]#./caesar 1#
-plaintext:  [underline]#HELLO#
+plaintext: [underline]#HELLO#
 ciphertext: IFMMP
 ----
 
 [source,subs=quotes]
 ----
 $ [underline]#./caesar 13#
-plaintext:  [underline]#hello, world#
+plaintext: [underline]#hello, world#
 ciphertext: uryyb, jbeyq
 ----
 
 [source,subs=quotes]
 ----
 $ [underline]#./caesar 13#
-plaintext:  [underline]#be sure to drink your Ovaltine#
+plaintext: [underline]#be sure to drink your Ovaltine#
 ciphertext: or fher gb qevax lbhe Binygvar
 ----
 
@@ -163,7 +168,7 @@ Usage: ./caesar k
 
 [source]
 ----
-check50 1718.chapter2.caesar caesar.c
+check50 cs50/2017/ap/caesar
 ----
 
 == Staff Solution
@@ -223,3 +228,36 @@ Incidentally, you'll need to `#include` yet another header file in order to use 
 Besides `atoi`, you might find some handy functions documented at https://reference.cs50.net/[reference.cs50.net] under *ctype.h* and *stdlib.h*. For instance, `isalpha` might prove helpful when iterating over plaintext's characters.
 
 And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out http://asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
+
+== How to Submit
+
+Be sure you've signed up for a https://github.com/join[GitHub account], per Problem Set 0, and that you've logged into and authorized https://cs50.me/[CS50.me] at least once, per Problem Set 1!
+
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the `caesar`. 
+** Be sure that `caesar.c` is in `~/workspace/chapter2/caesar/`, as with:
++
+[source]
+----
+cd ~/workspace/chapter2/caesar/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `caesar` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/chapter2/caesar/
+submit50 cs50/2017/ap/caesar
+----
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Caesar.

@@ -7,11 +7,17 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Use algorithms to solve problems.
-* See firsthand the power of exponentiation.
-* Explore some of the other header files available to you.
+Implement a program that calculates the sum of getting a doubled amount of money each day for a month, per the below.
+
+[source, subs=quotes]
+----
+$ [underline]#./pennies#
+Days in month: [underline]#30#
+Pennies on first day: [underline]#1#
+$10737418.23
+----
 
 == Recommended Reading
 
@@ -92,8 +98,7 @@ make pennies
 
 in your terminal window, just to make sure you didn't make any syntactical mistakes, in which case you'll see errors that will need to be fixed! Then dive back into your code.
 
-Odds are you'll want a couple of loops, one with which to prompt (and potentially re-prompt) the user for a number of days, and another with which to prompt (and potentially re-prompt) the user
-for a number of first-day pennies. How to get both those numbers? Perhaps the CS50 Library offers some options? You may also find functions in the `math.h` header file that can help when working on this problem. Have a look at https://reference.cs50.net/[Reference50] to see which functions those might be. Be sure, if you use any of those functions, to place this line of code near the top of your `pennies.c` file:
+Odds are you'll want a couple of loops, one with which to prompt (and potentially re-prompt) the user for a number of days, and another with which to prompt (and potentially re-prompt) the user for a number of first-day pennies. How to get both those numbers? Perhaps the CS50 Library offers some options? You may also find functions in the `math.h` header file that can help when working on this problem. Have a look at https://reference.cs50.net/[Reference50] to see which functions those might be. Be sure, if you use any of those functions, to place this line of code near the top of your `pennies.c` file:
 
 [source,c]
 ----
@@ -110,7 +115,7 @@ To test the correctness of your program, you may execute the below at the termin
 
 [source,bash]
 ----
-check50 1718.chapter1.pennies pennies.c
+check50 cs50/2017/ap/pennies
 ----
 
 And if you'd like to play with the staff's own implementation of `pennies` in CS50 IDE, you may execute the below.

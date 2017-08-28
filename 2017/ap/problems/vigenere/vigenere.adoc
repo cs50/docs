@@ -7,12 +7,16 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-==  Objectives
+== tl;dr
 
-* Become better acquainted with functions and libraries.
-* Take previously written code and modify it.
-* Interact with command-line inputs from users.
-* Dabble in cryptography.
+Implement a program that encrypts messages using Vigenère's cipher, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./vigenere ABC#
+plaintext:  [underline]#HELLO#
+ciphertext: HFNLP
+----
 
 == Recommended Reading
 
@@ -153,7 +157,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 1718.chapter2.vigenere vigenere.c
+check50 cs50/2017/ap/vigenere
 ----
 
 == Staff Solution
@@ -166,3 +170,40 @@ check50 1718.chapter2.vigenere vigenere.c
 == Hints
 
 Not sure where to begin? As luck would have it, this program's pretty similar to link:../caesar/caesar.html[`caesar`]! Only this time, you need to decide which character in _k_ to use as you iterate from character to character in _p_.
+
+== How to Submit
+
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement `vigenere`
+
+** Be sure that `vigenere.c` is in `~/workspace/chapter2/vigenere/`, as with:
++
+[source]
+----
+cd ~/workspace/chapter2/vigenere/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `vigenere` (if you implemented it), execute:
++
+[source]
+----
+cd ~/workspace/chapter2/vigenere/
+submit50 cs50/2017/ap/vigenere
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Vigenère.
+

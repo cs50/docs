@@ -7,12 +7,15 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Become better acquainted with functions and libraries.
-* Dabble in cryptanalysis.
-* Play the role of an adversary.
-* Think more critically about data security.
+Implement a program that cracks passwords, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./crack 50fkUxYHbnXGw#
+rofl
+----
 
 == Recommended Reading
 

@@ -5,12 +5,9 @@ layout: default
 
 = Writing Problem: Everyday Algorithms
 
-== Objectives
+== tl;dr
 
-* Analyze the algorithmic processes of everyday activities.
-* Learn to express yourself clearly and succinctly.
-* Become familiar with "pseudocode."
-* Have fun experimenting with your peers' algorithms.
+Write up algorithms to exhaustively describe in text and pseudocode, steps to brush one's teeth, eat an orange, and something you do everyday.
 
 include::../../honesty.adoc[]
 
@@ -146,7 +143,6 @@ If you're stuck, know that you aren't just limited to purely text-based ways of 
 video::k0xgjUhEG3U[youtube]
 
 Just do your best to avoid any infinite loops (a loop that's impossible to ever break out of) in your algorithm, lest you be stuck in one forever!
-
 
 == Step 4: Do This.
 

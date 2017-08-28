@@ -5,11 +5,17 @@ layout: default
 
 = Problem: Credit
 
-== Objectives
 
-* Use algorithms to solve a problem.
-* Analyze the pros and cons of different designs.
-* Learn about real-world encoding phenomena.
+== tl;dr
+
+Implement a program that determines whether a provided credit card number is valid according to Luhn’s algorithm.
+
+[source, subs=quotes]
+----
+$ [underline]#./credit#
+Number: [underline]#378282246310005#
+AMEX
+----
 
 == Recommended Reading
 
@@ -115,7 +121,7 @@ INVALID
 
 [source,text]
 ----
-check50 1718.chapter1.credit credit.c
+check50 cs50/2017/ap/credit
 ----
 
 == Staff Solution

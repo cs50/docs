@@ -7,10 +7,17 @@ layout: default
 
 Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
-== Objectives
+== tl;dr
 
-* Use algorithms to solve problems.
-* Experiment with different designs in solving a problem.
+Implement a program that calculates the minimum number of coins required to give a user change.
+
+[source, subs=quotes]
+----
+$ [underline]#./greedy#
+O hai! How much change is owed?
+[underline]#0.41#
+4
+----
 
 == Recommended Reading
 
@@ -92,7 +99,7 @@ Retry: [underline]#0.41#
 
 [source,text]
 ----
-check50 1718.chapter1.greedy greedy.c
+check50 cs50/2017/ap/greedy
 ----
 
 == Staff Solution
@@ -115,3 +122,43 @@ printf("%.55f\n", f);
 +
 And so, before making change, you'll probably want to convert the user's input entirely to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up! Of course, don't just cast the user's input from a `float` to an `int`! After all, how many cents does one dollar equal?
 * And take care to https://reference.cs50.net/math.h/round[round] your cents (to the nearest penny); don't "truncate" (i.e., floor) your cents!
+
+== How to Submit
+
+=== Step 1 of 2
+
+Recall that you were asked to create the file below:
+
+* `greedy.c`
+
+Be sure that each of your file is in `~/workspace/chapter1`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/
+ls
+----
+
+If any file is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `greedy` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/chapter1/
+submit50 cs50/2017/ap/greedy
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Greedy.
+
