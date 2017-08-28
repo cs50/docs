@@ -52,18 +52,23 @@ check50 cs50/2017/x/water
 ----
 
 == Staff Solution
-
+Not sure how your solution should behave?
+Run our example by calling '~cs50/pset1/water'. Assumed that the underlined text is what some user has typed.
 [source]
 ----
-~cs50/pset1/water
+$ [underline]#~cs50/pset1/water#
+Minutes: [underline]#10#
+Bottles: 120
 ----
 
 == Hints
 
-* You can use the function `get_int` to prompt the user to input an integer value, as per the below:
+* 'cs50.h' has a helper function `get_int()` that prompts the user to input an integer value:
 +
 [source, c]
 ----
+#include <cs50.h>
+...
 int minutes = get_int();
 ----
 +
