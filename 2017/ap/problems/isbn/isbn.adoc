@@ -170,15 +170,15 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 
 === Step 1 of 2
 
-Ensure that `isbn.c` is in `~/workspace/chapter1`, as with:
+Ensure that `isbn.c` is in `~/workspace/chapter1/isbn`, as with:
 
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/isbn
 ls
 ----
 
-If `isbn.c` is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `isbn.c` is not in `~/workspace/chapter1/isbn`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -186,7 +186,7 @@ If `isbn.c` is not in `~/workspace/chapter1/`, move it into that directory, as v
 +
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/isbn
 submit50 cs50/2017/ap/isbn
 ----
 +

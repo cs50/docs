@@ -5,7 +5,6 @@ layout: default
 
 = Problem: Credit
 
-
 == tl;dr
 
 Implement a program that determines whether a provided credit card number is valid according to Luhn’s algorithm.
@@ -79,7 +78,7 @@ So, validating credit card numbers isn't hard, but it does get a bit tedious by 
 
 == Specification
 
-* In `credit.c`, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
+* In `~workspace/chapter1/credit`, create a file called `credit.c`. In `credit.c`, implement a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
 * So that we can automate some tests of your code, we ask that your program's last line of output be `AMEX\n` or `MASTERCARD\n` or `VISA\n` or `INVALID\n`, nothing more, nothing less, and that `main` always return `0`.
 * For simplicity, you may assume that the user's input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
 * Do not assume that the user's input will fit in an `int`! Best to use `get_long_long` from CS50's library to get users' input. (Why?)
@@ -129,6 +128,40 @@ check50 cs50/2017/ap/credit
 [source]
 ----
 ~cs50/chapter1/credit
+
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `credit.c` is in `~/workspace/chapter1/credit`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/credit
+ls
+----
+
+If `isbn.c` is not in `~/workspace/chapter1/credit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `credit`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/credit
+submit50 cs50/2017/ap/credit
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Credit.
+
 ----
 
 == Hints

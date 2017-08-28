@@ -47,10 +47,10 @@ Rob also talks about `clang`, which is the compiler that is used by default in C
 
 [source,bash]
 ----
-gcc -S file.c
+gcc -S mystery.c
 ----
 
-to obtain the output you'll see at the bottom of this specification, which came to live in a file called `file.s`.
+to obtain the output you'll see at the bottom of this specification, which came to live in a file called `mystery.s`.
 
 == Assemble Some Knowledge
 
@@ -78,7 +78,7 @@ then create a new `chapter2` directory as with
 ~/workspace/ $ mkdir chapter2
 ----
 
-Finally, make a subdirectory inside of `chapter2` called `reverse` (how?). Here's the assembly code you'll be trying to replicate in your `reverse` directory.
+Finally, make a subdirectory inside of `chapter2` called `reverse` (how?). Here's the assembly code you'll be trying to reverse engineer in a file called `mystery.c`.
 
 [source,bash]
 ----
@@ -118,7 +118,7 @@ Again, your goal here is to create C code that, when partially compiled with:
 
 [source,bash]
 ----
-gcc -S file.c
+gcc -S mystery.c
 ----
 
 results in assembly code that is effectively identical. (Because every machine is slightly different, the numbers and names and labels may differ, but for the most part things should look fairly similar.) We've also stripped out a few lines from our actual assembly code (in particular some stuff at the top and bottom of what was actually output by `gcc`) because it would much more obviously give away what the program does.
@@ -127,8 +127,39 @@ We will say this: The program is not terribly complex. Including curly braces, a
 
 In the interest of full disclosure, you should know that it *is* possible to transform the above assembly code into a typical executable which you could run. We're not going to share the steps for how to do that here, but if you know the right questions to ask of Google, it won't take you too long to figure out the answer. If you do so, what this program actually does will become incredibly obvious and you'll likely be able to replicate it very quickly.
 
-But this is a Hacker edition, and we expect you to hack. Sometimes that means being clever and finding a workaround, but since we've disclosed that such a path exists and we've intimated how to walk that path, you should try to solve this problem another (harder) way. This is an opportunity to learn about assembly code in a way that no other assignment in this course will permit, and we hope you'll take advantage of it. But that choice is yours. This problem is really not so much about getting the right answer (indeed, you are not being scored on correctness, design, or style this time around), but rather is about the process you use to arrive at your answer.
+But this is a more comfortable problem, and we expect you to hack. Sometimes that means being clever and finding a workaround, but since we've disclosed that such a path exists and we've intimated how to walk that path, you should try to solve this problem another (harder) way. This is an opportunity to learn about assembly code in a way that no other assignment in this course will permit, and we hope you'll take advantage of it. But that choice is yours. This problem is really not so much about getting the right answer (indeed, you are not being scored on correctness, design, or style this time around), but rather is about the process you use to arrive at your answer.
 
 There's no `check50` or staff solution for this problem. After all, where would be the fun in that?!
+
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `mystery.c` is in `~/workspace/chapter2/reverse`, as with:
+
+[source]
+----
+cd ~/workspace/chapter2/reverse
+ls
+----
+
+If `mystery.c` is not in `~/workspace/chapter2/reverse`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `reverse`, execute
++
+[source]
+----
+cd ~/workspace/chapter2/reverse
+submit50 cs50/2017/ap/reverse
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for completion within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Reverse Engineer.

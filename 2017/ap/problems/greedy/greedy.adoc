@@ -127,19 +127,16 @@ And so, before making change, you'll probably want to convert the user's input e
 
 === Step 1 of 2
 
-Recall that you were asked to create the file below:
-
-* `greedy.c`
-
-Be sure that each of your file is in `~/workspace/chapter1`, as with:
+Ensure that `greedy.c` is in `~/workspace/chapter1/greedy`, as with:
 
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/greedy
 ls
 ----
 
-If any file is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `greedy.c` is not in `~/workspace/chapter1/greedy`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
 
 === Step 2 of 2
 
@@ -147,7 +144,7 @@ If any file is not in `~/workspace/chapter1/`, move it into that directory, as v
 +
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/greedy
 submit50 cs50/2017/ap/greedy
 ----
 +
@@ -155,10 +152,9 @@ inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
-You may resubmit any problem as many times as you'd like.
+You may resubmit any problem as many times as you'd like before the deadline.
 
  
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Greedy.
-
