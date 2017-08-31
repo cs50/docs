@@ -112,7 +112,7 @@ A schedule of sections, subject to change, appears below.
 2+| Section
 
 | C | Fri 9/8*
-| C | Mon 9/11, Tue 9/12, Wed 9/13
+| C, continued | Mon 9/11, Tue 9/12, Wed 9/13
 | Algorithms | Mon 9/18, Tue 9/19, Wed 9/20
 | File I/O | Mon 9/25, Tue 9/26, Wed 9/27
 | Data Structures | Mon 10/2, Tue 10/3, Wed 10/4
