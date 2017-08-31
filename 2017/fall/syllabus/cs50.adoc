@@ -112,7 +112,7 @@ A schedule of sections, subject to change, appears below.
 2+| Section
 
 | C | Fri 9/8*
-| Arrays | Mon 9/11, Tue 9/12, Wed 9/13
+| C | Mon 9/11, Tue 9/12, Wed 9/13
 | Algorithms | Mon 9/18, Tue 9/19, Wed 9/20
 | File I/O | Mon 9/25, Tue 9/26, Wed 9/27
 | Data Structures | Mon 10/2, Tue 10/3, Wed 10/4
@@ -138,7 +138,7 @@ For students who avail themselves of the course's other resources but still find
 
 == Problem Sets
 
-Nine problem sets are assigned during the semester. Each is due by noon on a Monday. Late work is not ordinarily accepted, except in cases of emergency. 
+Nine problem sets are assigned during the semester. Late work is not ordinarily accepted, except in cases of emergency. 
 
 A schedule of problem sets appears below.
 

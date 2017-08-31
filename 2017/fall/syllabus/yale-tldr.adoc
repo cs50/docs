@@ -4,29 +4,23 @@ published: false
 
 == tl;dr
 
-See http://cs50.ly/new[cs50.ly] for what's new and why. See http://cs50.yale.edu/faqs[cs50.yale.edu/faqs] for FAQs. +
-Email heads@cs50.yale.edu with questions.
-
 .Lectures
-* Thu 9/1 is CS50's first lecture, aka Week 0, 4pm – 5:15pm.
-* Students are only expected to attend CS50's first lecture, mid-semester lecture on Thu 10/13, and final lecture on Thu 11/17.
-** Watch Week 1's lecture at https://cs50.yale.edu/[cs50.yale.edu] this weekend or early next week.
+* You are only expected to attend CS50's first lecture on Thu 8/31, mid-semester lecture on Thu 10/12, and final lecture on Thu 11/16.
+* Students may <<simultaneous-enrollment,simultaneously enroll>> in CS50 and another course that meets at the same time.
 
 .Sections
 * When submitting Problem Set 0, you'll be asked to section.
-* Course-wide "supersections" will be offered next week that anyone can attend (or watch).
-** Tue 9/6, 2:30pm – 4pm, in Watson Center B60 for those less comfortable.
-** Tue 9/6, 4:30pm – 6pm, in Watson Center B60 for those more comfortable.
-* Assigned sections will begin the week after next.
+* Course-wide "supersections" will be held on Friday 9/8 that anyone can attend (or watch).
+* Assigned sections will begin on Tuesday 9/12 and Wednesday 9/13.
+* Unlike last year, attendance at sections is now expected until the test.
 
 .Problem Sets
-* Problem Set 0
-** Posted already at https://cs50.yale.edu/[cs50.yale.edu].
-** Due by Mon 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.yale.edu to arrange alternative deadline. All other problem sets have 10-day timeframes.
-* Problem Set 1
-** To be posted this Fri 9/2 at https://cs50.yale.edu/[cs50.yale.edu].
-** Due by Mon 9/12 at noon.
+* Problem Set 0 is posted already at https://cs50.yale.edu/[cs50.yale.edu].
+** Due by Tue 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.yale.edu to arrange alternative deadline. Subsequent problem sets offer more time for completion.
+
+.Grades
+* You are encouraged to take CS50 Credit/D/Fail, but you may take it for a letter grade.
 
 .CS50 Puzzle Day
-* This Sat 9/3, 12pm – 3:30pm, at 17 Hillhouse.
+* This Sat 9/2, 12pm – 3:30pm, at 17 Hillhouse.
 * Register at https://cs50.yale.edu/register[cs50.yale.edu/register] (or upon arrival).

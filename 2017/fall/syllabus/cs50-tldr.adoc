@@ -11,7 +11,7 @@ published: false
 
 .Sections
 * When submitting Problem Set 0, you'll be asked to section.
-* Course-wide "supersections" will be held on Wednesday 9/6 and Thursday 9/7 that anyone can attend (or watch).
+* Course-wide "supersections" will be held on Friday 9/8 that anyone can attend (or watch).
 * Assigned sections will begin on Monday 9/11, Tuesday 9/12, and Wednesday 9/13.
 * Unlike last year, attendance at sections is now expected until the test.
 
