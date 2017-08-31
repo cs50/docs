@@ -150,7 +150,7 @@ A schedule of problem sets appears below.
 |===
 | Problem Set | Language | Released | Due
 
-| Problem Set 0 | Scratch | Fri 9/1 | Tue 9/5, noon
+| Problem Set 0 | Scratch | Thu 8/31 | Tue 9/5, noon
 | Problem Set 1 | C | Wed 9/6 | Mon 9/11, noon
 | Problem Set 2 | C | Mon 9/11 | Mon 9/18, noon
 | Problem Set 3 | C | Fri 9/15 | Mon 9/25, noon
@@ -196,7 +196,7 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 | Proposal | Fri 11/10, noon
 | Status Report | Mon 11/27, noon
 | CS50 Hackathon | Thu 11/30, 7pm – Fri 12/1, 7am
-| Implementation | Thu 12/7, noon
+| Implementation | Sun 12/10, noon
 | CS50 Fair | Mon 12/11, 12pm – 3pm
 |===
 
