@@ -68,7 +68,18 @@ Oh, and if you'd like to exhibit your project in Fall 2017's studio, head to htt
 == How to Submit
 
 1. Submit https://forms.cs50.net/2017/fall/psets/0. 
-1. TODO
+2. Visit https://cs50.me[CS50.me], log in with your GitHub account, and click *Authorize application*.
+3. You should receive two emails from GitHub inviting you to join CS50's GitHub organizations. Click the button to accept both of these invitations.
+4. On your Scratch project page, go to the "File" menu and click "Download to your computer". Make sure to save the file as `project.sb2` (case sensitive).
+5. Go to https://github.com/submit50/USERNAME, replacing `USERNAME` in the URL with your own GitHub username.
+6. On the left side of the screen, click on "Branch: master".
+7. In the field that says "Find or create a branch...", type `cs50/2017/fall/scratch` and click "Create branch".
+8. Click the button that says "Upload files".
+9. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
+10. Click the green "Commit changes" button.
+11. You're done! If you go back to https://cs50.me[CS50.me], you should see your Scratch submission. If you click on the **check50** link next to the submission, you should see (after a minute or two) whether your project met all of the requirements. You are welcome to resubmit as many times as you'd like (before the deadline)!
+
+If you have any questions or issues with the above steps, reach out to heads@cs50.harvard.edu!
 
 CS50 collects some start-of-semester data for planning purposes via Problem Set 0's form, so expect the form to take 15 minutes or so. Subsequent problem sets' forms will be shorter.
 
