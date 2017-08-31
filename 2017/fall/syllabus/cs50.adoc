@@ -187,23 +187,23 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 |===
 | Milestone | Date
 
-| Pre-Proposal | Fri 10/28, noon
-| Proposal | Fri 11/11, noon
-| Status Report | Mon 11/28, noon
-| CS50 Hackathon | Thu 12/1, 7pm – Fri 12/2, 7am
-| Implementation | Thu 12/8, noon
-| CS50 Fair | Fri 12/9, 11am – 4:30pm
+| Pre-Proposal | Fri 10/27, noon
+| Proposal | Fri 11/10, noon
+| Status Report | Mon 11/27, noon
+| CS50 Hackathon | Thu 11/30, 7pm – Fri 12/1, 7am
+| Implementation | Thu 12/7, noon
+| CS50 Fair | Fri 12/8, 11am – 4:30pm
 |===
 
 == CS50 Hackathon
 
-From 7pm on Thu 12/1 until 7am on Fri 12/2 is the CS50 Hackathon, an epic all-nighter during which you can dive into your final project's implementation alongside classmates (from Harvard and Yale alike!) and staff. If you choose to partake, you'll be asked to propose three milestones for yourself that evening: a "good" one that you intend to achieve no matter what; a "better" one that you think you can achieve; and a "best" one that you hope to achieve.
+From 7pm on Thu 11/30 until 7am on Fri 12/1 is the CS50 Hackathon, an epic all-nighter during which you can dive into your final project's implementation alongside classmates (from Harvard and Yale alike!) and staff. If you choose to partake, you'll be asked to propose three milestones for yourself that evening: a "good" one that you intend to achieve no matter what; a "better" one that you think you can achieve; and a "best" one that you hope to achieve.
 
 Dinner will be served around 9pm, second dinner will be served around 1am, and those still standing around 5am will be treated to breakfast at IHOP.
 
 == CS50 Fair
 
-From 11am until 4:30pm on Fri 12/9 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
+From 11am until 4:30pm on Fri 12/8 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
 
 Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
 
