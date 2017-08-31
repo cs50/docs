@@ -145,15 +145,15 @@ A schedule of problem sets appears below.
 |===
 | Problem Set | Language | Released | Due
 
-| Problem Set 0 | Scratch | Wed 8/31 | Mon 9/5, noon
-| Problem Set 1 | C | Fri 9/2 | Mon 9/12, noon
-| Problem Set 2 | C | Fri 9/9 | Mon 9/19, noon
-| Problem Set 3 | C | Fri 9/16 | Mon 9/26, noon
-| Problem Set 4 | C | Fri 9/23 | Mon 10/3, noon
-| Problem Set 5 | C | Fri 9/30 | Mon 10/10, noon
-| Problem Set 6 | Python | Fri 10/21 | Mon 10/31, noon
-| Problem Set 7 | Python, SQL | Fri 10/28 | Mon 11/7, noon
-| Problem Set 8 | JavaScript | Fri 11/4 | Mon 11/14, noon
+| Problem Set 0 | Scratch | Fri 9/1 | Tue 9/5, noon
+| Problem Set 1 | C | Wed 9/6 | Mon 9/11, noon
+| Problem Set 2 | C | Mon 9/11 | Mon 9/18, noon
+| Problem Set 3 | C | Fri 9/15 | Mon 9/25, noon
+| Problem Set 4 | C | Fri 9/22 | Mon 10/2, noon
+| Problem Set 5 | C | Fri 9/29 | Mon 10/9, noon
+| Problem Set 6 | Python | Fri 10/20 | Mon 10/30, noon
+| Problem Set 7 | Python, SQL | Fri 10/27 | Mon 11/6, noon
+| Problem Set 8 | JavaScript | Fri 11/3 | Mon 11/13, noon
 |===
 
 == Test
