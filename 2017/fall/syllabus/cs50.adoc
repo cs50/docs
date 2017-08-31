@@ -111,17 +111,17 @@ A schedule of sections, subject to change, appears below.
 |===
 2+| Section
 
-| C | Wed 9/7*
-| Arrays | Mon 9/12, Tue 9/13, Wed 9/14
-| Algorithms | Mon 9/19, Tue 9/20, Wed 9/21
-| File I/O | Mon 9/26, Tue 9/27, Wed 9/28
-| Data Structures | Mon 10/3, Tue 10/4, Wed 10/5
-| Review for Test | Mon 10/10, Tue 10/11, Wed 10/12
-| TF's Choice | Mon 10/17, Tue 10/18, Wed 10/19
-| Python | Mon 10/24, Tue 10/25, Wed 10/26
-| SQL | Mon 10/31, Tue 11/1, Wed 11/2
-| JavaScript | Mon 11/7, Tue 11/8, Wed 11/9
-| Review for Quiz | Mon 11/14*
+| C | Fri 9/8*
+| Arrays | Mon 9/11, Tue 9/12, Wed 9/13
+| Algorithms | Mon 9/18, Tue 9/19, Wed 9/20
+| File I/O | Mon 9/25, Tue 9/26, Wed 9/27
+| Data Structures | Mon 10/2, Tue 10/3, Wed 10/4
+| Review for Test | Mon 10/9, Tue 10/10, Wed 10/11
+| TF's Choice | Mon 10/16, Tue 10/17, Wed 10/18
+| Python | Mon 10/23, Tue 10/24, Wed 10/25
+| SQL | Mon 10/30, Tue 10/31, Wed 11/1
+| JavaScript | Mon 11/6, Tue 11/7, Wed 11/8
+| Review for Quiz | Mon 11/13*
 |===
 
 pass:[*] Course-wide and filmed.
@@ -145,15 +145,15 @@ A schedule of problem sets appears below.
 |===
 | Problem Set | Language | Released | Due
 
-| Problem Set 0 | Scratch | Fri 9/1 | Tue 9/5, noon
-| Problem Set 1 | C | Wed 9/6 | Mon 9/11, noon
-| Problem Set 2 | C | Mon 9/11 | Mon 9/18, noon
-| Problem Set 3 | C | Fri 9/15 | Mon 9/25, noon
-| Problem Set 4 | C | Fri 9/22 | Mon 10/2, noon
-| Problem Set 5 | C | Fri 9/29 | Mon 10/9, noon
-| Problem Set 6 | Python | Fri 10/20 | Mon 10/30, noon
-| Problem Set 7 | Python, SQL | Fri 10/27 | Mon 11/6, noon
-| Problem Set 8 | JavaScript | Fri 11/3 | Mon 11/13, noon
+| Problem Set 0 | Scratch | Wed 8/31 | Mon 9/5, noon
+| Problem Set 1 | C | Fri 9/2 | Mon 9/12, noon
+| Problem Set 2 | C | Fri 9/9 | Mon 9/19, noon
+| Problem Set 3 | C | Fri 9/16 | Mon 9/26, noon
+| Problem Set 4 | C | Fri 9/23 | Mon 10/3, noon
+| Problem Set 5 | C | Fri 9/30 | Mon 10/10, noon
+| Problem Set 6 | Python | Fri 10/21 | Mon 10/31, noon
+| Problem Set 7 | Python, SQL | Fri 10/28 | Mon 11/7, noon
+| Problem Set 8 | JavaScript | Fri 11/4 | Mon 11/14, noon
 |===
 
 == Test
