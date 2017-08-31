@@ -6,7 +6,6 @@ published: false
 
 .Lectures
 * You are only expected to attend CS50's first lecture on Thu 8/31, mid-semester lecture on Thu 10/12, and final lecture on Thu 11/16.  Other lectures are live-streamed from Harvard, though you’re welcome to watch on demand anytime thereafter. 
-* Students may <<simultaneous-enrollment,simultaneously enroll>> in CS50 and another course that meets at the same time.
 
 .Sections
 * When submitting Problem Set 0, you'll be asked to section.
