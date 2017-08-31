@@ -41,7 +41,7 @@ Final grades are determined using the following weights:
 | Engagement | 5%
 |===
 
-Problem sets and the final project are evaluated along axes of correctness, design, and style, with scores ordinarily computed as 3 × correctness + 2 × design + 1 × style. Engagement is a measure of participation in sections, office hours, and/or the course's online discussion forum. Scores are normalized across teaching fellows and comfort levels at term's end, so mid-semester comparisons among students of scores are not reliable indicators of standing. 
+Problem sets and the final project are evaluated along axes of correctness, design, and style, with scores ordinarily computed as 3 × correctness + 2 × design + 1 × style. Engagement takes into account participation in sections, office hours, and/or the course's online discussion forum. Scores are normalized across teaching fellows and comfort levels at term's end, so mid-semester comparisons among students of scores are not reliable indicators of standing. 
 
 Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between. However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in Week 11, end up relative to yourself in Week 0.
 

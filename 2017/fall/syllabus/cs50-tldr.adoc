@@ -5,23 +5,24 @@ published: false
 == tl;dr
 
 .Lectures
-* Lectures are ordinarily on Fridays, 10am – 12pm, but the course will also meet on one Wednesday, 9/6, 1pm – 2:30pm.
+* Unlike last year, the course now meets once per week on Fridays, 10am – 12pm, though the course will also meet on one Wednesday, 9/6, 1pm – 2:30pm.
 * Unlike last year, students are encouraged to attend all lectures in person this year; students with conflicts may watch later online.
 * Students may <<simultaneous-enrollment,simultaneously enroll>> in CS50 and another course that meets at the same time.
 
 .Sections
 * When submitting Problem Set 0, you'll be asked to section.
-* Course-wide "supersections" will be offered next week that anyone can attend (or watch).
+* Course-wide "supersections" will be held on Wednesday 9/6 and Thursday 9/7 that anyone can attend (or watch).
 * Assigned sections will begin on Monday 9/11, Tuesday 9/12, and Wednesday 9/13.
+* Unlike last year, attendance at sections is now expected until the test.
 
 .Problem Sets
-* Problem Set 0
-** Posted already at https://cs50.harvard.edu/[cs50.harvard.edu].
+* Problem Set 0 is posted already at https://cs50.harvard.edu/[cs50.harvard.edu].
 ** Due by Tue 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.harvard.edu to arrange alternative deadline. Subsequent problem sets offer more time for completion.
 
 .Grades
-* Unlike last year, CS50 is now graded SAT/UNS by default, much like freshman seminars and some tutorials.
+* Unlike last year, CS50 is now graded SAT/UNS by default, much like Freshman Seminars and some tutorials.
 * Students taking CS50 to fulfill old Gen Ed requirements or whose concentration requires letter grades should change their grading status to letter-graded via https://my.harvard.edu/[my.harvard] by the term’s fifth Monday.
+* First years may take both CS50 and a Freshman Seminar SAT/UNS.
 
 .CS50 Puzzle Day
 * This Sat 9/2, 12pm – 3:30pm, at i-lab.
