@@ -1,0 +1,161 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= CSCI E-50a Syllabus
+
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience
+
+*This course represents the first half of CSCI E-50. When taken in conjunction with CSCI E-50b, this course effectively allows students twice as much time to work through CSCI E-50's curriculum. When taken in coordination with a high school offering Advanced Placement courses, this course aligns to the AP Computer Science Principles curriculum framework, and students who earn satisfactory grades in the course may be able to earn AP credit.*
+
+== Expectations
+
+You are expected to
+
+* submit fifteen programming problems,
+* submit five written problems, and
+* take two quizzes.
+
+== Website
+
+https://cs50.harvard.edu/cscie50a
+
+== Grades
+
+All students must ordinarily submit all assigned problems and take the two quizzes in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+
+Final grades are determined using the following weights:
+
+|===
+| Programming Problems | 50%
+| Written Problems | 20%
+| Quiz 0     | 10%
+| Quiz 1     | 20%
+|===
+
+Programming problems are evaluated primarily along axes of scope, correctness, design, and style, with scores ordinarily determined by scope × (3 × correctness + 2 × design + 1 × style). Scores are normalized across TFs at term's end, so mid-semester comparisons among students of scores are not reliable indicators of standing. Written problems are evaluated holistically.
+
+Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between. However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in Week 14, end up relative to yourself in Week 0.
+
+The course is not graded on a curve. The course does not have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable. Each student's final grade is individually determined at term's end after input from the teaching fellows. Remarkable effort and upward trending are considered.
+
+== Books
+
+No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, resources can be found on the course's website.
+
+_C Programming Absolute Beginner's Guide_, Third Edition +
+Greg Perry, Dean Miller +
+Pearson Education, 2014 +
+ISBN 0-789-75198-4
+
+_Hacker's Delight_, Second Edition +
+Henry S. Warren Jr. +
+Pearson Education, 2013 +
+ISBN 0-321-84268-5
+
+_How Computers Work_, Tenth Edition +
+Ron White +
+Que Publishing, 2014 +
+ISBN 0-7897-4984-X
+
+_Programming in C_, Fourth Edition +
+Stephen G. Kochan +
+Pearson Education, 2015 +
+ISBN 0-321-77641-0
+
+== Lectures
+
+Most lectures were recorded at Harvard in Sanders Theatre in Fall 2015. (A few lectures were recorded at Yale.)
+
+For students taking CSCI E-50a, the pace of the course differs from CSCI E-50, which runs each semester in parallel. Below are dates on which lecture content will be made available to view through the course's website.
+
+|===
+2+| Lecture | Released
+| Week 0 | https://ap.cs50.net/cscie50a/0/computers-computing/[Computers] and https://ap.cs50.net/cscie50a/0/how-computers-work/[computing]. https://ap.cs50.net/cscie50a/0/hardware/[Hardware]. https://ap.cs50.net/cscie50a/0/memory/[Memory]. https://ap.cs50.net/cscie50a/0/binary/[Binary]. https://ap.cs50.net/cscie50a/0/ascii/[ASCII]. https://ap.cs50.net/cscie50a/0/algorithms/[Algorithms]. | Wed 8/31, Fri 9/2
+| Week 1 | https://ap.cs50.net/cscie50a/1/pseudocode/[Pseudocode]. https://ap.cs50.net/cscie50a/1/scratch/[Scratch]. https://ap.cs50.net/cscie50a/1/syntax/[Syntax]. https://ap.cs50.net/cscie50a/1/operators/[Operators]. | Tue 9/6, Fri 9/9
+| Week 2 | https://ap.cs50.net/cscie50a/1/variables/[Variables]. https://ap.cs50.net/cscie50a/1/data-types/[Data types]. https://ap.cs50.net/cscie50a/1/loops/[Loops]. | Tue 9/13, Fri 9/16
+| Week 3 | https://ap.cs50.net/cscie50a/1/boolean-expressions/[Conditionals]. https://ap.cs50.net/cscie50a/2/compiling/[Compiling. Source code. Object code.] | Tue 9/20, Fri 9/23
+| Week 4 | https://ap.cs50.net/cscie50a/2/functions/[Functions]. https://ap.cs50.net/cscie50a/2/arrays-strings/[Arrays]. https://ap.cs50.net/cscie50a/2/arrays-strings/[Strings]. | Tue 9/27, Fri 9/30
+| Week 5 | __no lecture__, Quiz 0 |
+| Week 6 | https://ap.cs50.net/cscie50a/2/command-line/[Command line]. https://ap.cs50.net/cscie50a/2/exit-codes[Exit codes]. | Fri 10/14
+| Week 7 | https://ap.cs50.net/cscie50a/2/libraries[Libraries. Frameworks.] https://ap.cs50.net/cscie50a/2/typecasting[Typecasting]. | Tue 10/18, Fri 10/21
+| Week 8 | https://ap.cs50.net/cscie50a/2/bugs-debugging[Debugging]. | Tue 10/25
+| Week 9 | https://ap.cs50.net/cscie50a/3/linear-search[Linear search]. https://ap.cs50.net/cscie50a/3/bubble-sort[Bubble sort]. https://ap.cs50.net/cscie50a/3/selection-sort[Selection sort]. https://ap.cs50.net/cscie50a/3/insertion-sort[Insertion sort]. https://ap.cs50.net/cscie50a/3/binary-search[Binary search]. https://ap.cs50.net/cscie50a/3/time-complexity[Time complexity]. | Tue 11/1, Fri 11/4
+| Week 10 | https://ap.cs50.net/cscie50a/3/unsolvable-problems/[Unsolvable problems]. https://ap.cs50.net/cscie50a/4/good-design-principles/[Principles of good design]. https://ap.cs50.net/cscie50a/4/ncurses/[ncurses.] https://ap.cs50.net/cscie50a/4/structures-encapsulation/[Structures. Encapsulation.] | Tue 11/8, Fri 11/11
+| Week 11 | https://ap.cs50.net/cscie50a/4/recursion/[Recursion]. https://ap.cs50.net/cscie50a/4/merge-sort/[Merge sort]. https://ap.cs50.net/cscie50a/4/hexadecimal/[Hexadecimal]. https://ap.cs50.net/cscie50a/4/file-i-o/[File I/O]. | Tue 11/15, Fri 11/18
+| Week 12 | __no lecture, Thanksgiving__ |
+| Week 13 | https://ap.cs50.net/cscie50a/4/images/[Images]. https://ap.cs50.net/cscie50a/4/version-control/[Version control. Collaboration.] | Tue 11/29, Fri 12/2
+| Week 14 | __no lecture, Quiz 1__ |
+
+|===
+
+== Sections
+
+Lectures are supplemented by twice-weekly, 45 to 60-minute sections led by the teaching fellows. Sections provide you with opportunities to explore the course's material in a more intimate environment.
+
+Sectioning begins in Week 1. Sections themselves begin in Week 2.
+
+After sectioning is complete, a schedule of sections will appear below.
+
+== Office Hours
+
+Office hours are online opportunities for assistance on problem sets with the course's teaching fellows and course assistants. A schedule of office hours will appear on the course's website. Office hours will begin in Week 2.
+
+== Walkthroughs
+
+Integrated into a number of the course's problems are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs before asking questions about problem sets at office hours or via https://cs50.harvard.edu/discuss[CS50 Discuss].
+
+== Postmortems
+
+Available after many problems' deadlines are "postmortems," videos via which the course's staff explore actual solutions to problem sets. You are expected to watch postmortems for insights into how else you could have (or should have!) implemented your own solutions.
+
+== Problems
+
+Twenty problems are assigned during the semester, each one a subset of what would be considered a "problem set" in CSCI E-50. Each is due by noon on either a Wednesday or a Saturday.  Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency.
+
+A schedule of problems, subject to change, appears below.
+
+|===
+| Problem | Type | Released | Due
+
+| http://docs.cs50.net/2016/fall/cscie50a/problems/algorithms/algorithms.html[Everyday Algorithms] | Written | Fri 9/2 | Wed 9/7
+| http://docs.cs50.net/2016/fall/cscie50a/problems/scratch/scratch.html[Scratch] | Programming | Tue 9/6 | Sat 9/10
+| http://docs.cs50.net/2016/fall/cscie50a/problems/hello/hello.html[Hello] | Programming | Fri 9/9 | Wed 9/14
+| http://docs.cs50.net/2016/fall/cscie50a/problems/fahrenheit/fahrenheit.html[Fahrenheit] | Programming | Tue 9/13 | Sat 9/17
+| http://docs.cs50.net/2016/fall/cscie50a/problems/mario/mario.html[Mario] | Programming | Fri 9/16 | Wed 9/21
+| http://docs.cs50.net/2016/fall/cscie50a/problems/greedy/greedy.html[Greedy] | Programming | Tue 9/20 | Sat 9/24
+| http://docs.cs50.net/2016/fall/cscie50a/problems/ui/ui.html[Me, Myself, and UI] | Written | Fri 9/23 | Wed 9/28
+| http://docs.cs50.net/2016/fall/cscie50a/problems/isbn/isbn.html[ISBN] | Programming | Tue 9/27 | Sat 10/1
+| http://docs.cs50.net/2016/fall/cscie50a/problems/tech/tech.html[Tech Spotlight] | Written | Tue 10/11 | Sat 10/15
+| http://docs.cs50.net/2016/fall/cscie50a/problems/calc/calc.html[Calc] | Programming | Sat 10/15 | Wed 10/19
+| http://docs.cs50.net/2016/fall/cscie50a/problems/initials/initials.html[Initials]| Programming | Tue 10/18 | Sat 10/22
+| http://docs.cs50.net/2016/fall/cscie50a/problems/caesar/caesar.html[Caesar] | Programming | Fri 10/21 | Wed 10/26
+| http://docs.cs50.net/2016/fall/cscie50a/problems/buggy/buggy.html[Buggy] | Written | Tue 10/25 | Sat 10/29
+| http://docs.cs50.net/2016/fall/cscie50a/problems/vigenere/vigenere.html[Vigenere] | Programming | Fri 10/28 | Wed 11/2
+| http://docs.cs50.net/2016/fall/cscie50a/problems/race/race.html[Sort Race] | Programming | Tue 11/1 | Sat 11/5
+| http://docs.cs50.net/2016/fall/cscie50a/problems/fifteen/fifteen.html[Fifteen] | Programming | Fri 11/4 | Sat 11/12
+| http://docs.cs50.net/2016/fall/cscie50a/problems/sudoku/sudoku.html[Sudoku] | Programming | Fri 11/11 | Sat 11/19
+| http://docs.cs50.net/2016/fall/cscie50a/problems/analyze/analyze.html[Analyze This] | Written | Fri 11/18 | Wed 11/23
+| http://docs.cs50.net/2016/fall/cscie50a/problems/scale/scale.html[Scale] | Programming | Wed 11/23 | Sat 12/3
+| http://docs.cs50.net/2016/fall/cscie50a/problems/recover/recover.html[Recover] | Programming | Fri 12/2 | Wed 12/7
+|===
+
+== Quizzes
+
+The course has two 60-minute quizzes. These quizzes are "closed-book," but you may utilize during each quiz one two-sided page (8.5" × 11") of handwritten or typed notes, blank scrap paper, and a pen or pencil, nothing else.
+
+Unless arranged with the course's heads in advance, the quiz cannot ordinarily be taken at alternative times even if missed by accident, except in cases of medical emergency.
+
+The quizzes take place online for a period of 24 hours (you may begin at any time within the window, but have 60 minutes from when you start), with the due dates outlined below.
+
+|===
+| Quiz | Released | Due
+
+| Quiz 0 | Thu 10/6, noon | Fri 10/7, noon
+| Quiz 1 | Thu 12/8, noon | Fri 12/9, noon
+|===
+
+include::../honesty.adoc[]
+
+include::../acknowledgement.adoc[]
