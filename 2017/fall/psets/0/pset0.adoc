@@ -9,15 +9,15 @@ layout: 2016/fall
 [start=0]
 . Attend or watch Week 0's lecture.
 . Program in Scratch.
+. Upload a file.
 . Submit a form. 
 
 == Help
   
 For help with Week 0 and Problem Set 0:
     
-* Post questions and search answers in http://cs50.net/discuss[CS50 Discuss].
 * Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
-* Attend http://cs50.net/hours[office hours].
+* Attend office hours, per the schedule on the course's website.
 
 == Itching to Program?
 
