@@ -207,6 +207,10 @@ From 11am until 4:30pm on Fri 12/8 is the CS50 Fair, an epic display of final pr
 
 Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
 
+== Financial Aid
+
+CS50 does not require that students purchase any books, hardware, or sofware. While not required, having one's own laptop is helpful, particularly for office hours. Students without their own laptops are encouraged to reach out at term's start to the course's instructor to discuss possibilities.
+
 include::../honesty.adoc[]
 
 include::../acknowledgement.adoc[]

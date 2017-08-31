@@ -4,29 +4,25 @@ published: false
 
 == tl;dr
 
-See http://cs50.ly/new[cs50.ly] for what's new and why. See http://cs50.ly/faqs[cs50.ly/faqs] for FAQs. +
-Email heads@cs50.harvard.edu with questions.
-
 .Lectures
-* Wed 8/31 is CS50's first lecture, aka Week 0, 1pm – 2:30pm. Short break around 2pm.
-** Aok if you need to leave early to shop; watch rest of lecture at https://cs50.harvard.edu/[cs50.harvard.edu].
-* Students are only expected to attend CS50's first lecture and last lecture on Mon 11/21.
-** Watch Week 1's lecture at https://cs50.harvard.edu/[cs50.harvard.edu] this weekend or early next week.
+* Lectures are ordinarily on Fridays, 10am – 12pm, but the course will also meet on one Wednesday, 9/6, 1pm – 2:30pm.
+* Unlike last year, students are encouraged to attend all lectures in person this year; students with conflicts may watch later online.
 * Students may <<simultaneous-enrollment,simultaneously enroll>> in CS50 and another course that meets at the same time.
 
 .Sections
 * When submitting Problem Set 0, you'll be asked to section.
 * Course-wide "supersections" will be offered next week that anyone can attend (or watch).
-* Assigned sections will begin the week after next.
+* Assigned sections will begin on Monday 9/11, Tuesday 9/12, and Wednesday 9/13.
 
 .Problem Sets
 * Problem Set 0
 ** Posted already at https://cs50.harvard.edu/[cs50.harvard.edu].
-** Due by Mon 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.harvard.edu to arrange alternative deadline. All other problem sets have 10-day timeframes.
-* Problem Set 1
-** To be posted this Fri 9/2 at https://cs50.harvard.edu/[cs50.harvard.edu].
-** Due by Mon 9/12 at noon.
+** Due by Tue 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.harvard.edu to arrange alternative deadline. Subsequent problem sets offer more time for completion.
+
+.Grades
+* Unlike last year, CS50 is now graded SAT/UNS by default, much like freshman seminars and some tutorials.
+* Students taking CS50 to fulfill old Gen Ed requirements or whose concentration requires letter grades should change their grading status to letter-graded via https://my.harvard.edu/[my.harvard] by the term’s fifth Monday.
 
 .CS50 Puzzle Day
-* This Sat 9/3, 12pm – 3:30pm, at i-lab.
+* This Sat 9/2, 12pm – 3:30pm, at i-lab.
 * Register at https://cs50.harvard.edu/register[cs50.harvard.edu/register] (or upon arrival).
