@@ -11,7 +11,7 @@ published: false
 * When submitting Problem Set 0, you'll be asked to section.
 * Course-wide "supersections" will be held on Fri 9/8 that anyone can attend (or watch).
 * Assigned sections will begin on Tue 9/12 and Wed 9/13.
-* Unlike last year, attendance at sections is now expected until the test.
+* Unlike last year, attendance at sections is now expected up until the test.
 
 .Problem Sets
 * Problem Set 0 is posted already at https://cs50.yale.edu/[cs50.yale.edu]. Due by Tue 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.yale.edu to arrange alternative deadline. Subsequent problem sets offer more time for completion.
