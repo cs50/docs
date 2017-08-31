@@ -5,24 +5,23 @@ published: false
 == tl;dr
 
 .Lectures
-* You are only expected to attend CS50's first lecture on Thu 8/31, mid-semester lecture on Thu 10/12, and final lecture on Thu 11/16.
+* You are only expected to attend CS50's first lecture on Thu 8/31, mid-semester lecture on Thu 10/12, and final lecture on Thu 11/16.  Other lectures are live-streamed from Harvard, though you’re welcome to watch on demand anytime thereafter. 
 * Students may <<simultaneous-enrollment,simultaneously enroll>> in CS50 and another course that meets at the same time.
 
 .Sections
 * When submitting Problem Set 0, you'll be asked to section.
-* Course-wide "supersections" will be held on Friday 9/8 that anyone can attend (or watch).
-* Assigned sections will begin on Tuesday 9/12 and Wednesday 9/13.
+* Course-wide "supersections" will be held on Fri 9/8 that anyone can attend (or watch).
+* Assigned sections will begin on Tue 9/12 and Wed 9/13.
 * Unlike last year, attendance at sections is now expected until the test.
 
 .Problem Sets
-* Problem Set 0 is posted already at https://cs50.yale.edu/[cs50.yale.edu].
-** Due by Tue 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.yale.edu to arrange alternative deadline. Subsequent problem sets offer more time for completion.
+* Problem Set 0 is posted already at https://cs50.yale.edu/[cs50.yale.edu]. Due by Tue 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.yale.edu to arrange alternative deadline. Subsequent problem sets offer more time for completion.
 
 .Grades
 * You are encouraged to take CS50 Credit/D/Fail, but you may take it for a letter grade.
 
 .Orientation
-* All students are expected to attend an orientation meeting in SSS 114 on Thursday 9/7, 4pm – 5:15pm; students with conflicts should email heads@cs50.yale.edu.
+* All students are expected to attend an orientation meeting in SSS 114 on Thu 9/7, 4pm – 5:15pm; students with conflicts should email heads@cs50.yale.edu.
 
 .CS50 Puzzle Day
 * This Sat 9/2, 12pm – 3:30pm, at 17 Hillhouse.

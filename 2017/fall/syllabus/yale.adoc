@@ -32,7 +32,7 @@ https://cs50.yale.edu/
 
 == Grades
 
-You are encouraged to take this course Credit/D/Fail but may take it for a letter grade.
+You are encouraged to take this course Credit/D/Fail, but you may take it for a letter grade.
 
 Whether taking the course Credit/D/Fail or for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a passing grade unless granted an exception in writing by the course's heads.         Graduate and professional students are expected to produce a final project that is 50% greater in scope than what is expected of             undergraduate students.
 
@@ -87,7 +87,7 @@ A schedule of lectures, subject to change, appears below.
 |===
 3+| Lecture
 
-| Week 0 | Scratch | Thu 8/31, 10am – 12pm, live at Yale
+| Week 0 | Scratch | Thu 8/31, 4pm – 5:15pm, live at Yale
 .2+| Week 1 | C | Wed 9/6, 1pm – 2:30pm
 | C, continued | Fri 9/8, 10am – 12pm
 | Week 2 | Algorithms | Fri 9/15, 10am – 12pm
@@ -100,7 +100,7 @@ A schedule of lectures, subject to change, appears below.
 | Week 8 | SQL | Fri 10/27, 10am – 12pm
 | Week 9 | JavaScript | Fri 11/3, 10am – 12pm
 | Week 10 | JavaScript, continued | Fri 11/10, 10am – 12pm
-| Week 11 | The End | Thu 11/16, 10am – 12pm, live at Yale
+| Week 11 | The End | Thu 11/16, 4pm – 5:15pm, live at Yale
 |===
 
 == Sections
@@ -115,7 +115,7 @@ A schedule of sections, subject to change, appears below. All teaching assistant
 2+| Section
 
 | C | Fri 9/8*
-| C | Tue 9/12, Wed 9/13
+| C, continued | Tue 9/12, Wed 9/13
 | Algorithms | Tue 9/19, Wed 9/20
 | File I/O | Tue 9/26, Wed 9/27
 | Data Structures | Tue 10/3, Wed 10/4
@@ -197,7 +197,7 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 | Status Report | Mon 11/27, noon
 | CS50 Hackathon | Thu 11/30, 7pm – Fri 12/1, 7am
 | Implementation | Thu 12/7, noon
-| CS50 Fair | Fri 12/8, 11am – 4:30pm
+| CS50 Fair | Mon 12/11, 12pm – 3pm
 |===
 
 == CS50 Hackathon
@@ -210,7 +210,7 @@ Transportation to and from the CS50 Hackathon will be provided.
 
 == CS50 Fair
 
-From 11am until 4:30pm on Fri 12/8 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
+From 12pm until 3pm on Mon 12/11 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
 
 Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
 
