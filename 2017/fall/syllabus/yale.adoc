@@ -216,7 +216,7 @@ Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Fami
 
 == Financial Aid
 
-CS50 does not require that students purchase any books, hardware, or sofware. While not required, having one's own laptop is helpful, particularly for office hours. Students without their own laptops are encouraged to reach out at term's start to the course's instructor to discuss possibilities.
+CS50 does not require that students purchase any books, hardware, or sofware. While not required, having one's own laptop is helpful, particularly for office hours. Students without their own laptops are encouraged to reach out at term's start to the course's instructor and/or college dean to discuss possibilities.
 
 include::../honesty.adoc[]
 
