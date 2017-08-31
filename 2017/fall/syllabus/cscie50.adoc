@@ -9,8 +9,6 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 This course meets on Fridays, 10am-12pm, starting September 1. The course also meets on one Wednesday, September 6, 1pm-2:30pm. Students without conflicts are encouraged to attend all lectures in person this year; students with conflicts may watch later online. All students are expected to attend an orientation meeting in Science Center D on either September 6, 5:30pm-6:30pm, or September 7, 3pm-4pm; students with conflicts may watch later online. See cs50.harvard.edu for FAQs. Required sections to be arranged.
 
-include::cs50-tldr.adoc[]
-
 == Expectations
 
 You are expected to:
