@@ -18,7 +18,7 @@ If you commit some act that is not reasonable but bring it to the attention of t
 * Discussing the course's material with others in order to understand it better.
 * Helping a classmate identify a bug in his or her code at office hours, elsewhere, or even online, as by viewing, compiling, or running his or her code, even on your own computer.
 * Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
-* Reviewing past semesters' quizzes and solutions thereto.
+* Reviewing past semesters' tests and quizzes and solutions thereto.
 * Sending or showing code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a bug.
 * Sharing a few lines of your own code online so that others might help you identify and fix a bug.
 * Turning to the course's heads for help or receiving help from the course's heads during the quiz or test.
