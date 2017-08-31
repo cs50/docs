@@ -1,0 +1,160 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= CSCI E-50b Syllabus
+
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, PHP, and JavaScript plus SQL, CSS, and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience
+
+*This course represents the second half of CSCI E-50. When taken in conjunction with CSCI E-50a, this course effectively allows students twice as much time to work through CSCI E-50's curriculum.*
+
+== Expectations
+
+You are expected to
+
+* submit four problem sets,
+* take one quiz, and
+* submit a final project.
+
+== Website
+
+https://cs50.harvard.edu/cscie50b
+
+In Fall 2016, the course is experimentally using a Google Sites page to manage submissions, deadlines, and student work.
+
+== Grades
+
+All students must ordinarily submit all four problem sets, take the quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+
+Final grades are determined using the following weights:
+
+|===
+| Problem Sets | 50%
+| Quiz      | 30%
+| Final Project | 20%
+|===
+
+Problem sets and the final project are evaluated primarily along axes of scope, correctness, design, and style, with scores ordinarily determined by scope × (3 × correctness + 2 × design + 1 × style). Scores are normalized across TFs at term's end, so mid-semester comparisons among students of scores are not reliable indicators of standing.
+
+Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between. However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in Week 11, end up relative to yourself in Week 0.
+
+The course is not graded on a curve. The course does not have pre-determined cutoffs for final grades. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable. Each student's final grade is individually determined at term's end after input from the teaching fellows. Remarkable effort and upward trending are considered.
+
+== Books
+
+No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, resources can be found on the course's website.
+
+_C Programming Absolute Beginner's Guide_, Third Edition +
+Greg Perry, Dean Miller +
+Pearson Education, 2014 +
+ISBN 0-789-75198-4
+
+_Hacker's Delight_, Second Edition +
+Henry S. Warren Jr. +
+Pearson Education, 2013 +
+ISBN 0-321-84268-5
+
+_How Computers Work_, Tenth Edition +
+Ron White +
+Que Publishing, 2014 +
+ISBN 0-7897-4984-X
+
+_Programming in C_, Fourth Edition +
+Stephen G. Kochan +
+Pearson Education, 2015 +
+ISBN 0-321-77641-0
+
+== Lectures
+
+Most lectures were recorded at Harvard in Sanders Theatre in Fall 2015. (A few lectures were recorded at Yale.)
+
+For students taking CSCI E-50b, the pace of the course differs from CSCI E-50, which runs each semester in parallel. Below are dates on which lecture content will be made available to view through the course's website.
+
+|===
+2+| Lecture | Released
+| Unit 0 | Heap. Buffer overflow. Linked lists. | Wed 8/31, Wed 9/7
+| Unit 1 | TCP/IP. HTTP. | Wed 9/14
+| Unit 2 | HTML. CSS. PHP. | Wed 9/21, Wed 9/28
+| Unit 3 | MVC. SQL. | Wed 10/5, Wed 10/12
+| Unit 4 | JavaScript. Ajax. | Wed 10/19, Wed 10/26
+| Unit 5 | Security. Artificial Intelligence. | Wed 11/2, Wed 11/9, Wed 11/16
+|===
+
+== Sections
+
+Lectures are supplemented by weekly, 60-minute sections led by the teaching fellows. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a handful of classmates present, as well as to dive into hands-on activities.
+
+Sectioning begins in the first week of September. Sections themselves begin the second week of September.
+
+A schedule of sections appears below. After sectioning is complete, this list will be updated with specific dates within the given weeks.
+
+== Office Hours
+
+Office hours are online opportunities for assistance on problem sets with the course's teaching fellows and course assistants. A schedule of office hours will appear on the course's website. Office hours will begin the week of Sun 9/11.
+
+== Walkthroughs
+
+Integrated into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs before asking questions about problem sets at office hours or via https://cs50.harvard.edu/discuss[CS50 Discuss].
+
+== Postmortems
+
+Available after problem sets' deadlines are "postmortems," videos via which the course's staff explore actual solutions to problem sets. You are expected to watch postmortems for insights into how else you could have (or should have!) implemented your own solutions.
+
+== Problem Sets
+
+Four problem sets are assigned during the semester (the numbering scheme continues from CSCI E-50a). Each is due by noon on a Friday.  Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency.
+
+A schedule of problem sets, subject to change, appears below.
+
+|===
+| Problem Set | Language | Released | Due
+
+| http://docs.cs50.net/2016/fall/cscie50b/psets/5/pset5.html[Problem Set 5: Mispellings] | C | Fri 9/2 | Fri 9/23, noon
+| http://docs.cs50.net/2016/fall/cscie50b/psets/6/pset6.html[Problem Set 6: Web Server] | PHP | Fri 9/23 | Fri 10/7, noon
+| http://docs.cs50.net/2016/fall/cscie50b/psets/7/pset7.html[Problem Set 7: C$50 Finance] | PHP, SQL | Fri 10/7 | Fri 10/21, noon
+| http://docs.cs50.net/2016/fall/cscie50b/psets/7/pset7.html[Problem Set 8: Mashup] | JavaScript | Fri 10/21 | Fri 11/4, noon
+|===
+
+== Quiz
+
+The course has one 75-minute quiz. This quiz is "closed-book," but you may utilize during each quiz one two-sided page (8.5" × 11") of handwritten or typed notes, blank scrap paper, and a pen or pencil, nothing else.
+
+Unless arranged with the course's heads in advance, the quiz cannot ordinarily be taken at alternative times even if missed by accident, except in cases of medical emergency.
+
+The quiz takes place online, beginning on Wed 11/30. Students begin the quiz during a 24-hour-long window beginning at 1:00pm Eastern time on that date and have 75 minutes to complete the quiz after they have begun. The Quiz covers the material in both CSCI E-50a and CSCI E-50b, but has an emphasis on the material of CSCI E-50b.
+
+== Final Project
+
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
+
+Extensions on the final project are not ordinarily granted, except in cases of medical emergency. Technical difficulties are not considered emergencies. Problem sets' late days cannot be spent on the final project. Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
+
+|===
+| Milestone | Date
+
+| Pre-Proposal | Mon 10/31, noon
+| Proposal | Mon 11/14, noon
+| Status Report | Mon 11/28, noon
+| CS50 Hackathon | Thu 12/1, 7pm – Fri 12/2, 7am
+| Implementation | Thu 12/8, noon
+| CS50 Fair | Fri 12/9, 11am – 4:30pm
+|===
+
+== CS50 Hackathon
+
+From 7pm on Thu 12/1 until 7am on Fri 12/2 is the CS50 Hackathon, an epic all-nighter during which you can dive into your final project's implementation alongside classmates (from Harvard and Yale alike!) and staff. If you choose to partake, you'll be asked to propose three milestones for yourself that evening: a "good" one that you intend to achieve no matter what; a "better" one that you think you can achieve; and a "best" one that you hope to achieve.
+
+Dinner will be served around 9pm, second dinner will be served around 1am, and those still standing around 5am will be treated to breakfast at IHOP.
+
+== CS50 Fair
+
+From 11am until 4:30pm on Fri 12/9 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is strongly encouraged for all students.
+
+Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
+
+include::../honesty.adoc[]
+
+include::../acknowledgement.adoc[]
