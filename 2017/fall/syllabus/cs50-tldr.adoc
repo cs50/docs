@@ -24,6 +24,9 @@ published: false
 * Students taking CS50 to fulfill old Gen Ed requirements or whose concentration requires letter grades should change their grading status to letter-graded via https://my.harvard.edu/[my.harvard] by the term’s fifth Monday.
 * First years may take both CS50 and a Freshman Seminar SAT/UNS.
 
+.Orientation
+* All students are expected to attend an orientation meeting in Science Center D on either Wednesday 9/6, 5:30pm – 6:30pm, or Thursday 9/7, 3pm – 4pm; students with conflicts may watch later online. 
+
 .CS50 Puzzle Day
 * This Sat 9/2, 12pm – 3:30pm, at i-lab.
 * Register at https://cs50.harvard.edu/register[cs50.harvard.edu/register] (or upon arrival).
