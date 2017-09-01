@@ -23,6 +23,8 @@ For help with Week 0 and Problem Set 0:
 
 Head to https://scratch.mit.edu/ and sign up for an account on MIT's website by clicking **Join Scratch** atop the page. Any username (that's available) is fine, but take care to remember it and your choice of password.
 
+*Make sure that your web browser has Flash enabled. If you're using Google Chrome, you can go to `chrome://settings/content`, click on Advanced -> Content settings, and make sure you "allow" Flash!*
+
 Then head to https://scratch.mit.edu/help/ and take note of the resources available to you before you dive into Scratch itself. In particular, you might want to skim the link:pass:[https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/pdfs/help/Getting-Started-Guide-Scratch2.pdf][Getting Started Guide].
 
 Next try your hand at _Pikachu's Pastry Catch_ by (former student) Gabe Walker! Click the green flag and then, per Gabe's instructions, hit your keyboard's space bar, at which point the game will begin! Feel free to procrastinate a bit. 
