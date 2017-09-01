@@ -5,23 +5,25 @@ published: false
 == tl;dr
 
 .Lectures
-* You are only expected to attend CS50's first lecture on Thu 8/31, mid-semester lecture on Thu 10/12, and final lecture on Thu 11/16.  Other lectures are live-streamed from Harvard, though you’re welcome to watch on demand anytime thereafter. 
+* You are strongly encouraged to attend CS50's first lecture on Thu 8/31, mid-semester lecture on Thu 10/12, and final lecture on Thu 11/16.  However, if you have a time conflict with another class, you should the recordings instead.  Other lectures are live-streamed from Harvard, though you’re welcome to watch on demand anytime thereafter. During these weeks, the Thursday time slot will be devoted to enrichment material that complements the course but is not required.  You are encouraged to attend, but will not be at any disadvantage if you do not.
 
 .Sections
-* When submitting Problem Set 0, you'll be asked to section.
+* You will need to sign up for a section in OCS starting Wed 9/6.  The section times and distribution of comfort levels are based on the preferences many of you entered through the preference selection tool.
+* If you have already added CS50 to your worksheet, the easiest way to sign up for a section will be to remove and re-add the course to your worksheet after 9/6.
 * Course-wide "supersections" will be held on Fri 9/8 that anyone can attend (or watch).
 * Assigned sections will begin on Tue 9/12 and Wed 9/13.
 * Unlike last year, attendance at sections is now expected up until the test.
+* Professional students: If you are not able to sign up for a section through OCS (access depends on which school you are in), you will need to add the section using a paper form.  Please check with your school's registrar if you have any questions.  (GSAS students should be able to sign-up online through OCS.)
 
 .Problem Sets
 * Problem Set 0 is posted already at https://cs50.yale.edu/[cs50.yale.edu]. Due by Tue 9/5 at noon. If you add CS50 late, not to worry; email heads@cs50.yale.edu to arrange alternative deadline. Subsequent problem sets offer more time for completion.
 
 .Grades
-* You are encouraged to take CS50 Credit/D/Fail, but you may take it for a letter grade.
+* You are encouraged to take CS50 Credit/D/Fail if you will feel less nervous without the pressure of a letter grade.
 
 .Orientation
-* All students are expected to attend an orientation meeting in SSS 114 on Thu 9/7, 4pm – 5:15pm; students with conflicts should email heads@cs50.yale.edu.
+* All students are expected to attend an orientation meeting in SSS 114 on Thu 9/7, 4pm – 5:15pm unless you have a time conflict with another class.
 
 .CS50 Puzzle Day
-* This Sat 9/2, 12pm – 3:30pm, at 17 Hillhouse.
+* This Sat 9/2, 12pm – 3:30pm, at 17 Hillhouse.
 * Register at https://cs50.yale.edu/register[cs50.yale.edu/register] (or upon arrival).
