@@ -32,7 +32,7 @@ https://cs50.yale.edu/
 
 You are encouraged to take CS50 Credit/D/Fail if you will feel less nervous without the pressure of a letter grade.  Note however, that Freshman are generally discouraged from taking classes Credit/D/Fail in their first term, and it will only satisfy the QR requirement if you take it for a grade.  Please also remember that your course grade will reflect how much *you* progress over the semester.  We expect you to work hard and learn a lot, and your course grades will reflect that.
 
-Whether taking the course Credit/D/Fail or for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a passing grade unless granted an exception in writing by the course's heads.         Graduate and professional students are expected to produce a final project that is 50% greater in scope than what is expected of             undergraduate students.
+Whether taking the course Credit/D/Fail or for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a passing grade unless granted an exception in writing by the course's heads. Graduate and professional students are expected to produce a final project that is 50% greater in scope than what is expected of undergraduate students.
 
 Final grades are determined using the following weights:
 
@@ -142,7 +142,7 @@ For students who avail themselves of the course's other resources but still find
 
 == Problem Sets
 
-Nine problem sets are assigned during the semester. Late work is not ordinarily accepted, except with a Dean's excuse.  (Graduate students should e-mail heads@cs50 as early as possible to request an extension.)
+Nine problem sets are assigned during the semester. Late work is not ordinarily accepted, except with a Dean's excuse.  (Graduate students should e-mail heads@cs50.yale.edu as early as possible to request an extension.)
 
 A schedule of problem sets appears below.
 
