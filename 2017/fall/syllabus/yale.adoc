@@ -10,9 +10,7 @@ Introduction to the intellectual enterprises of computer science and to the art 
 
 No previous programming experience required. Open to students of all levels and majors.
 
-CS50 officially meets on Thursdays, from 4pm until 5:15pm in Sheffield-Sterling-Strathcona Hall (SSS) Room 114, but students are only        expected to attend in person the course's first lecture on Thursday 8/31, mid-semester lecture on Thursday 10/12, and final lecture on Thursday 11/16. Required sections to be arranged.
-
-Students are encouraged to take CS50 Credit/D/Fail but may take it for a letter grade. CS50 satisfies the Quantitative Reasoning Skill requirement. Graduate and professional students are welcome to enroll in CS50.
+CS50 officially meets on Thursdays, from 4pm until 5:15pm in Sheffield-Sterling-Strathcona Hall (SSS) Room 114, but students are only expected to attend in person the course's first lecture on Thursday 8/31, mid-semester lecture on Thursday 10/12, and final lecture on Thursday 11/16. If you have a time conflict with any of those lectures, you should watch the recordings instead.  Required sections to be arranged.
 
 include::yale-tldr.adoc[]
 
@@ -32,7 +30,7 @@ https://cs50.yale.edu/
 
 == Grades
 
-You are encouraged to take this course Credit/D/Fail, but you may take it for a letter grade.
+You are encouraged to take CS50 Credit/D/Fail if you will feel less nervous without the pressure of a letter grade.  Note however, that Freshman are generally discouraged from taking classes Credit/D/Fail in their first term, and it will only satisfy the QR requirement if you take it for a grade.  Please also remember that your course grade will reflect how much *you* progress over the semester.  We expect you to work hard and learn a lot, and your course grades will reflect that.
 
 Whether taking the course Credit/D/Fail or for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a passing grade unless granted an exception in writing by the course's heads.         Graduate and professional students are expected to produce a final project that is 50% greater in scope than what is expected of             undergraduate students.
 
@@ -80,7 +78,8 @@ ISBN 0-321-77641-0
 
 CS50 officially meets on Thursdays, from 4pm until 5:15pm in Sheffield-Sterling-Strathcona Hall (SSS) Room 114, but students are only        expected to attend in person the course's first lecture on Thursday 8/31, mid-semester lecture on Thursday 10/12, and final lecture on Thursday 11/16. If you've a conflict, though, you're welcome to watch those lectures online.
 
-Other lectures are live-streamed from Harvard on Fridays, though you're welcome to watch on demand anytime thereafter. On Thursdays, CS50 holds "walkthroughs" in SSS 114 for students who would like additional guidance on problem sets;  you are welcome but not expected to attend those walkthroughs.
+
+Other lectures are live-streamed from Harvard on Fridays, though you're welcome to watch on demand anytime thereafter. On Thursdays, CS50 holds "enrichment" in SSS 114 for students who would like additional context and depth on some of the topics covered in class.  Attendance is optional, but encouraged if you do not have a conflict.  Because these will not be "review" or "help" sessions, you will not be at any disadvantage if you are unable to attend.
 
 A schedule of lectures, subject to change, appears below. 
 
@@ -105,7 +104,7 @@ A schedule of lectures, subject to change, appears below.
 
 == Sections
 
-Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Different sections are offered for those less        comfortable, those more comfortable, and those somewhere in between. You will be asked for your sectioning preferences on Problem Set 0, and you will be assigned to a section (and teaching assistant) shortly thereafter.
+Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Different sections are offered for those less comfortable, those more comfortable, and those somewhere in between. You will sign up for a section in the Online Course Selection system starting Wed. 9/6 at 9:00am.  The times and distribution of comfort levels is based on the preferences many of you entered in the preference selection system.
 
 Attendance at section is expected up until the test.
 
@@ -143,7 +142,7 @@ For students who avail themselves of the course's other resources but still find
 
 == Problem Sets
 
-Nine problem sets are assigned during the semester. Late work is not ordinarily accepted, except in cases of emergency. 
+Nine problem sets are assigned during the semester. Late work is not ordinarily accepted, except with a Dean's excuse.  (Graduate students should e-mail heads@cs50 as early as possible to request an extension.)
 
 A schedule of problem sets appears below.
 
@@ -187,7 +186,7 @@ The climax of this course is its final project. The final project is your opport
 
 Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
 
-Extensions on the final project are not ordinarily granted, except in cases of emergency. Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
+Extensions on the final project are not ordinarily granted, except in cases of emergency. A Dean's excuse is required.  Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
 
 |===
 | Milestone | Date
