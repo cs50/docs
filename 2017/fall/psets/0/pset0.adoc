@@ -82,7 +82,7 @@ Oh, and if you'd like to exhibit your project in Fall 2017's studio, head to htt
 3. On your Scratch editor page (e.g. https://scratch.mit.edu/projects/123456789/#editor), go to the "File" menu and click "Download to your computer". Make sure to save the file as `project.sb2` (case sensitive).
 4. Go to https://github.com/submit50/USERNAME, replacing `USERNAME` in the URL with your own GitHub username.
 5. On the left side of the screen, click on "Branch: master".
-6. In the field that says "Find or create a branch...", type the following branch name exactly: `cs50/2017/fall/scratch`, and click "Create branch".
+6. In the field that says "Find or create a branch...", copy/paste the following branch name exactly: `cs50/2017/fall/scratch`, and click "Create branch".
 7. Click the button that says "Upload files".
 8. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
 9. Click the green "Commit changes" button.
