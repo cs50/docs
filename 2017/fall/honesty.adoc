@@ -21,6 +21,7 @@ If you commit some act that is not reasonable but bring it to the attention of t
 * Reviewing past semesters' tests and quizzes and solutions thereto.
 * Sending or showing code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a bug.
 * Sharing a few lines of your own code online so that others might help you identify and fix a bug.
+* Submitting the same or similar work to this course that you have submitted previously to this course, CS50 AP, or CS50x.
 * Turning to the course's heads for help or receiving help from the course's heads during the quiz or test.
 * Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.
 * Whiteboarding solutions to problem sets with others using diagrams or pseudocode but not actual code.
