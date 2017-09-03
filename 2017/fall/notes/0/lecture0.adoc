@@ -75,6 +75,7 @@ image::problem_solving.png[alt="inputs -> black box -> outputs", width=400]
       *0*          *1*          *1*
 
              2 x 1      1 x 1
+----
 * We can continue this pattern:
 +
 [source, subs=quotes]
@@ -145,7 +146,7 @@ image::time_to_solve.png[alt="graph of times to solve: n, n/2, log(n)", width=40
 ** Our last algorithm is a different shape, with time to solve growing more and more slowly as the size of the problem increases, since we are dividing the problem in half with each step. So an increase from 1000 to 2000 pages only requires one more step to solve.
 * We also need to formalize the steps we are using to solve this problem. We can write something like the following:
 +
-[source, pseudocode, numbered]
+[source]
 ----
  0   pick up phone book
  1   open to middle of phone book
