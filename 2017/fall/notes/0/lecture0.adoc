@@ -2,7 +2,7 @@
 ---
 :author: Cheng Gong
 
-= Week 0
+= Lecture 0
 
 [t=0m0s]
 == Introduction
