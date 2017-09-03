@@ -3,7 +3,7 @@
 
 # Usage
 
-1. Edit `2016/*`.
+1. Edit `2017/*`.
 1. `git add ...`
 1. `git commit`
 1. `git push`
