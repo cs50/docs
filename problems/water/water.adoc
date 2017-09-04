@@ -52,8 +52,7 @@ check50 cs50/2017/x/water
 ----
 
 == Staff Solution
-Not sure how your solution should behave?
-Run our example by calling '~cs50/pset1/water'. Assumed that the underlined text is what some user has typed.
+You can run our solution by calling `~cs50/pset1/water`. 
 [source]
 ----
 $ [underline]#~cs50/pset1/water#
@@ -63,7 +62,7 @@ Bottles: 120
 
 == Hints
 
-* 'cs50.h' has a helper function `get_int()` that prompts the user to input an integer value:
+* `cs50.h` has a helper function `get_int()` that prompts the user to input an integer value:
 +
 [source, c]
 ----
