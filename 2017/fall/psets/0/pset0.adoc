@@ -79,7 +79,7 @@ Oh, and if you'd like to exhibit your project in Fall 2017's studio, head to htt
 
 1. After https://github.com/join[creating a GitHub account], visit https://cs50.me[CS50.me], log in with your GitHub account, and click *Authorize submit50*.
 2. You should receive two emails from GitHub inviting you to join CS50's GitHub organizations. Click the button to accept both of these invitations.
-3. On your Scratch editor page (e.g. https://scratch.mit.edu/projects/123456789/#editor), go to the "File" menu and click "Download to your computer". Make sure to save the file as `project.sb2` (case sensitive).
+3. On your Scratch editor page (e.g. https://scratch.mit.edu/projects/123456789/#editor), go to the "File" menu and click "Download to your computer". Make sure to save the file as `project.sb2` (case sensitive). Make sure the filename is exactly `project.sb2`, otherwise CS50.me won't be able to recognize your submission!
 4. Go to https://github.com/submit50/USERNAME, replacing `USERNAME` in the URL with your own GitHub username.
 5. On the left side of the screen, click on "Branch: master".
 6. In the field that says "Find or create a branch...", copy/paste the following branch name exactly: `cs50/2017/fall/scratch`, and click "Create branch".
