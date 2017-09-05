@@ -92,7 +92,7 @@ If you don't see results on CS50.me, make sure that your branch is named `cs50/2
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2017/fall/psets/0. 
+Submit https://forms.cs50.net/2017/fall/psets/0. **If you have trouble logging in, try using your browser's "incognito" or "private" mode.**
 
 CS50 collects some start-of-semester data for planning purposes via Problem Set 0's form, so expect the form to take 15 minutes or so. Subsequent problem sets' forms will be shorter.
 
