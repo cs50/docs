@@ -105,7 +105,7 @@ at the prompt to see your last several commands in chronological order if you'd 
 [source]
 ----
 cd ~/workspace/pset1/hello
-submit50 2017/cs50/fall/hello
+submit50 cs50/2017/fall/hello
 ----
 . Submit either or both of:
 +
@@ -115,14 +115,32 @@ submit50 2017/cs50/fall/hello
 [source]
 ----
 cd ~/workspace/pset1/mario/less
-submit50 2017/cs50/fall/mario/less
+submit50 cs50/2017/fall/mario/less
 ----
 * Mario, more comfortable, by executing:
 +
 [source]
 ----
 cd ~/workspace/pset1/mario/more
-submit50 2017/cs50/fall/mario/more
+submit50 cs50/2017/fall/mario/more
+----
+--
+. Submit either or both of:
++
+--
+* Cash, by executing:
++
+[source]
+----
+cd ~/workspace/pset1/cash
+submit50 cs50/2017/fall/cash
+----
+* Credit, by executing:
++
+[source]
+----
+cd ~/workspace/pset1/credit
+submit50 cs50/2017/fall/credit
 ----
 --
 
