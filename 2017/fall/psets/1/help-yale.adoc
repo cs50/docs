@@ -6,14 +6,8 @@ published: false
 
 For help with Week 1 and Problem Set 1:
  
-* Attend a walkthrough on Thu 9/8, 4pm – 5:15pm, in SSS 114.
+* Attend a walkthrough on Thu 9/7, 4pm – 5:15pm, in SSS 114.
 * Watch Zamyla's walkthroughs herein.
-* Attend one of Week 1's course-wide sections (aka supersections):
-+
---
-** Tue 9/6, 2:30pm – 4pm, in Watson Center B60 for those less comfortable (and somewhere in between)
-** Tue 9/6, 4:30pm – 6pm, in Watson Center B60 for those more comfortable (and somewhere in between)
---
-Or https://cs50.yale.edu/sections[watch afterward].
-* Post questions and search answers in https://cs50.yale.edu/discuss[CS50 Discuss].
+* Attend one of Week 1's course-wide sections (aka supersections). Or https://cs50.yale.edu/sections[watch afterward].
+* Post questions and search answers in https://discourse.cs50.net/[CS50 Discourse]. Email heads@cs50.yale.edu if you don't see any topics after logging in (and thus might not yet have access).
 * Attend https://cs50.yale.edu/hours[office hours].
