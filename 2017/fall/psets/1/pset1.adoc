@@ -91,7 +91,7 @@ at the prompt to see your last several commands in chronological order if you'd 
 . Implement either of:
 +
 --
-* link:../../../../problems/greedy/cash.html[Cash], less comfortable
+* link:../../../../problems/cash/cash.html[Cash], less comfortable
 * link:../../../../problems/credit/credit.html[Credit], more comfortable
 --
 
