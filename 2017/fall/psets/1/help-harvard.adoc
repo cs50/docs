@@ -13,5 +13,5 @@ published: false
 --
 +
 Or https://cs50.harvard.edu/sections[watch afterward].
-* Post questions and search answers in https://discourse.cs50.net/[CS50 Discourse]. Email heads@cs50.harvard.edu if you don't see any topics after logging in (and thus might not yet have access).
+* Post questions and search answers in https://discourse.cs50.net/[CS50 Discourse]. When you register, make sure your username is the same as your GitHub username! Email heads@cs50.harvard.edu if you don't see any topics after logging in (and thus might not yet have access).
 * Attend https://cs50.harvard.edu/hours[office hours].
