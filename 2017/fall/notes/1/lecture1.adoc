@@ -1,0 +1,155 @@
+---
+---
+:author: Cheng Gong
+
+= Lecture 1
+
+[t=0m0s]
+== Introduction
+
+* Last week we used Scratch to better understand ideas and concepts in programming, like loops and functions.
+* Today, we'll get an introduction to C, an older language, as another way of familiarizing ourselves with the tool of programming.
+* We can start translating our simple programs from Scratch to C, the code of which is written purely in text.
+* The `say` block in Scratch is a function, which the equivalent in C is the following:
++
+[source, c]
+----
+printf("hello,  world\n");
+----
+** Notice that the function itself is called `printf`, and that the arguments, or parameters, to the function are wrapped inside symmetrical parentheses, `(` and `)`.
+** The double quotes, `"`, are also symmetrical and surround words, or any sequence of characters, in C. We'll start calling these sequences of characters *strings*.
+** The line also ends with a semicolon, which new programmers like us need to remember to include, but will come more naturally with practice!
+* To make this a complete program, we can add the following:
++
+[source, c]
+----
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+}
+----
+** Just like how we need the `when green flag clicked` block in Scratch to start our program, our C program won't run unless we write a few lines to set it up.
+** We notice that there's a `int main(void)` line, and `main` is the standard name in C to indicate that it is the default function in a program that should be run.
+** The top line is harder to guess, but `include` is a keyword that indicates we want to include some other file in our program. `stdio.h` contains (and we only know from searching online and looking at documentation) the standard input/output library, which means that it deals with input (like from the keyboard) and output (printing characters to the screen). In fact, it contains the code of `printf` that we are using. There is no equivalent in Scratch, since by default the functions are already defined and created for us.
+* A `forever` block can be translated to C like this:
++
+[source, c]
+----
+while (true)
+{
+    printf("hello, world\n");
+}
+----
+** The `while` keyword means that the loop will run as long as the Boolean expression inside the parentheses is true. And since `true` will always be true, the loop will run forever.
+* To `repeat` something a certain number of times, we can use this:
++
+[source, c]
+----
+for (int i = 0; i < 50; i++)
+{
+    printf("hello, world\n");
+}
+----
+** This is a little harder to figure out, but we can go through step by step. `for` is another keyword in C that indicates a loop.
+** `int i = 0` is an initialization of a variable, which means that we created a variable with the name `i`, of the type `int`, or integer, and set its initial value to `0`. In C, each variable has a type of value.
+** Then `i < 50` is the Boolean expression that the `for` loop checks, to determine if it will continue or not. Since this condition is true, the `for` loop will run the `printf` line. And since we started `i` at 0, stopping before `i` reaches 50 will mean this runs exactly 50 times, as we intended.
+** Finally, `i++` is an expression in C that adds 1 to the value of `i`. Then, the `for` loop will check `i < 50`, and repeat this process until the Boolean expression is no longer true.
+* Last time, we also created a nested set of conditions in Scratch:
++
+image::conditions.png[alt="Nested conditions", width=300]
+* In C, the equivalent code will look like this:
++
+[source, c]
+----
+if (x < y)
+{
+    printf("x is less than y\n");
+}
+else if (x > y)
+{
+    printf("x is greater than y\n");
+}
+else
+{
+    printf("x is equal to y\n");
+}
+----
+** In our code, we assume that `x` and `y` have already been initialized or set to some other values beforehand.
+** We use the `if`, `else if`, and `else` keywords to denote the forks in the road, based on Boolean expressions. `else` simply captures all the cases that haven't fit into a previous condition.
+** Notice that curly braces, `{` and `}`, are used to wrap the lines of code that we want to run for each of the conditions if they are true. We also use indentation to make the lines of code more readable.
+* So now we can write fairly basic programs in C. But computers only understand binary, so the *source code* that we write need to be converted to 0s and 1s, or *machine code* that a computer actually uses.
+* This conversion is done by software called a *compiler*. We'll set everyone up with the same environment, or the same platform.
+* This environment is the CS50 IDE (Integrated Development Environment), at cs50.io[cs50.io]. We can think of it as a web application, inside which we can write, compile, and run code:
++
+image::cs50ide.png[alt="CS50 IDE", width=500]
+** We could each do this on our own computers, but setting up the editors, compilers, and other necessary software is a lot of work
+** Notice that we have a file browser to the left, where we can upload or download files from it, the code editor on the right, and the terminal at bottom right, into which we can type commands that our virtual environment will run.
+** We'll have instructions to log in in http://docs.cs50.net/2017/fall/psets/1/pset1.html[Problem Set 1], but for now, just follow along!
+** By default, we have a `~/workspace` folder where we can save files to.
+* First, let's create a new file. We'll use `File > Save`, and call our new file `hello.c`:
++
+image::save.png[alt="Saving in CS50 IDE", width=300]
+** Since we are going to write a program in C, we will end our file with the `.c` extension. And we'll only use lowercase, with underscores or hyphens instead of space, by convention.
+* We can type out our basic program, compile it, and run it:
++
+image::hello.png[alt="Compiling hello.c in CS50 IDE", width=500]
+** Notice that the editor automatically makes our code colorful, or has syntax highlighting, to help us see patterns.
+** We'll type the command `clang hello.c` in the terminal at bottom of our IDE, to compile it. `clang` is a compiler that's been pre-installed for our use.
+** Nothing seems to happen, but no errors is good news. We can open the file browser and see that there's a new file, `a.out`, which is the machine code of our program.
+* To run it, we can't just click on it. Instead, this program runs in a command-line environment, also known as the terminal. So we type `./a.out` to run it. `.` indicates the current directory:
++
+image::running_hello.png[alt="Running hello.c in CS50 IDE", width=400]
+* We see the output of our program, but the next line of our terminal prompt is on the same line. We needed to add `\n` in our source code, which is a special, escaped character that adds a new line to what we printed to the terminal.
+* Now we can save, compile, and run our program again. We can actually pass in command-line arguments to `clang`, or additional parameters that changes its behavior:
++
+image::clang_o.png[alt="Clang -o in CS50 IDE", width=300]
+** Here, we are telling `clang` to name the output file `hello`.
+* There are other commands built into our environment that we can use:
++
+image::commands.png[alt="Commands in CS50 IDE", width=300]
+** `ls` lists the files in the current directory, which we see in blue in the terminal screen above.
+** `cd` lets us change our current working directory (as in `cd pset1`, which we can create new ones of with the file browser on the left. And to change to the parent directory, we can use `cd ..` to go up one level.
+** Finally, we can use `rmdir` to remove directories.
+* We take a volunteer to demonstrate how `printf` is a function we pass arguments to. David hands Sam, our volunteer, a piece of paper with what he wanted to be written on the screen, and Sam copied it to the screen for David. Functions in programming, too, can be considered similar in that we can just call them and use them.
+* Some functions relating to input include:
+** `get_char` - gets a character from the user
+** `get_double`
+** `get_float`
+** `get_int`
+** `get_long_long`
+** `get_string`
+* We'll test out `get_string` with the following program:
++
+[source, c]
+----
+#include <stdio.h>
+
+int main(void)
+{
+    string s = get_string("Name: ");
+    printf("hello, %s\n", s);
+}
+----
+** On line 5, we are declaring, or creating, a new variable called `s`, of type `string`. And the value it will store is whatever `get_string` returns. Some functions like `printf` might not return any value, but other functions like `get_string` can. `When we call `get_string`, we pass in `"Name: "` as an argument, so it knows what to prompt the user.
+** Next, we want to print out what was stored in our string `s`, so we use the `%s` syntax to include a string inside `printf`. And the string in question is `s`.
+* Going back to our list of functions that collect input, we notice that there are other types of data built into C: `double`, `float`, and `long long`.
+* Let's start with getting an integer:
++
+image::int.png[alt="int.c in CS50 IDE", width=500]
+** We can save, compile, and run this file as `int.c`. We can use another tool in the IDE called `make` to compile it. By simply running `make int`, `make` will take the file `int.c` and use a compiler to compile it into `int`, which we can run with `./int`.
+** At first, we get several errors. Usually, we can start by fixing the first error, save, compile again, and repeat until our program compiles without errors.
+** The first error here is telling us that `get_int` isn't actually declared. In fact, it's defined in another library, or set of code we can include, alongside `stdio.h`. `get_int`, along with other functions, live in `cs50.h`, a library written by CS50 staff to help make tedious tasks easier. So we simply need to add `#include <cs50.h>` at the top of our file.
++
+[source, c]
+----
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int i = get_int("Integer: ");
+    printf("hello, %i\n", i);
+}
+----
