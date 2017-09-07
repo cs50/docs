@@ -8,8 +8,8 @@ published: false
 * Attend one of Week 1's course-wide sections (aka supersections):
 +
 --
-** Fri 9/8, 3pm – 4pm, in Science Center D for those less comfortable (and somewhere in between)
-** Fri 9/8, 4:15pm – 5:15pm for those more comfortable (and somewhere in between)
+** Fri 9/8, 3pm – 4pm, in Science Center C for those less comfortable (and somewhere in between)
+** Fri 9/8, 4:15pm – 5:15pm, in Science Center C for those more comfortable (and somewhere in between)
 --
 +
 Or https://cs50.harvard.edu/sections[watch afterward].
