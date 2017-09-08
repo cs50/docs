@@ -85,12 +85,12 @@ else
 
 * So now we can write fairly basic programs in C. But computers only understand binary, so the *source code* that we write need to be converted to 0s and 1s, or *machine code* that a computer actually uses.
 * This conversion is done by software called a *compiler*. We'll set everyone up with the same environment, or the same platform.
-* This environment is the CS50 IDE (Integrated Development Environment), at cs50.io[cs50.io]. We can think of it as a web application, inside which we can write, compile, and run code:
+* This environment is the CS50 IDE (Integrated Development Environment), at http://cs50.io[cs50.io]. We can think of it as a web application, inside which we can write, compile, and run code:
 +
 image::cs50ide.png[alt="CS50 IDE", width=500]
 ** We could each do this on our own computers, but setting up the editors, compilers, and other necessary software is a lot of work
 ** Notice that we have a file browser to the left, where we can upload or download files from it, the code editor on the right, and the terminal at bottom right, into which we can type commands that our virtual environment will run.
-** We'll have instructions to log in in http://docs.cs50.net/2017/fall/psets/1/pset1.html[Problem Set 1], but for now, just follow along!
+** We'll have instructions to log in for http://docs.cs50.net/2017/fall/psets/1/pset1.html[Problem Set 1], but for now, just follow along!
 ** By default, we have a `~/workspace` folder where we can save files to.
 * First, let's create a new file. We'll use `File > Save`, and call our new file `hello.c`:
 +
