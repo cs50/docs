@@ -9,7 +9,7 @@ layout: 2016/fall
  
 [start=0]
 . Watch https://video.cs50.net/2017/fall/lectures/2[Week 2's lecture].
-. Choose two adventures:
+. Choose two out of three adventures:
 +
 --
 * Implement Caesar's cipher.
@@ -83,6 +83,8 @@ Implement any two (2) of:
 * link:vigenere/vigenere.html[Vigenère], less comfortable
 * link:crack/crack.html[Crack], more comfortable
 
+You're welcome but not expected to implement all three; if you submit all three, we'll grade your two best.
+
 == How to Submit
 
 === Step 1 of 2
@@ -118,8 +120,6 @@ submit50 cs50/2017/fall/vigenere
 cd ~/workspace/pset2/crack/
 submit50 cs50/2017/fall/crack
 ----
-+
-You're welcome but not expected to submit all three; if you do, we'll grade your two best.
 --
 
 === Step 2 of 2
