@@ -62,14 +62,14 @@ Change owed: [underline]#0.41#
 
 == Testing
 
-=== `check50`
+=== Correctness
 
 [source]
 ----
 check50 cs50/2017/fall/cash
 ----
 
-=== `style50`
+=== Style
 
 [source]
 ----

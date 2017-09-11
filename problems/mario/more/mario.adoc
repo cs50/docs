@@ -82,14 +82,14 @@ pass:[####  ####]
 
 == Testing
 
-=== `check50`
+=== Correctness
 
 [source]
 ----
 check50 cs50/2017/fall/mario/more
 ----
 
-=== `style50`
+=== Style
 
 [source]
 ----

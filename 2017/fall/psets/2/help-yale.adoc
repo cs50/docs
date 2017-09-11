@@ -1,0 +1,13 @@
+---
+published: false
+---
+
+== Help
+
+For help with Week 2 and Problem Set 2:
+ 
+* Attend the *walkthrough* on Thu 9/14, 4pm – 5:15pm, in SSS 114.
+* Watch Zamyla's *walkthroughs* herein.
+* Attend your TA's *section* (or another if you have an unavoidable conflict).
+* Post questions and search answers in https://discourse.cs50.net/c/cs50-2017[*CS50 Discourse*].
+* Attend https://cs50.yale.edu/hours[*office hours*].
