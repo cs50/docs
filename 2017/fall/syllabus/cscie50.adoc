@@ -94,7 +94,11 @@ A schedule of lectures, subject to change, appears below.
 
 Lectures are supplemented by weekly, 2-hour sections led by the teaching fellows. You will be asked for your sectioning preferences on Problem Set 0, and you will be assigned to a section (and teaching fellow) shortly thereafter.
 
-Attendance at section is expected up until the test.
+Attendance at section is expected up until the test. Sections for CSCI E-50 are held online, by visiting cs50.ly/cscie50 at any of the times listed below. Students are welcome to attend any of these three online sessions week to week.
+
+* Sundays, 1–3pm
+* Mondays, 8–10pm
+* Tuesdays, 7–9pm
 
 A schedule of sections, subject to change, appears below.
 
