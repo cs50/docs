@@ -4,7 +4,7 @@
 = Crack
 
 == tl;dr
- 
+
 Implement a program that cracks passwords, per the below.
 
 [source,subs=quotes]
@@ -63,7 +63,7 @@ Usage: ./crack hash
 
 [source,subs=quotes]
 ----
-$ [underline]#./crack 50JGnXUgaafgc
+$ [underline]#./crack 50JGnXUgaafgc#
 ROFL
 ----
 
