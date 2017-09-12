@@ -47,6 +47,8 @@ Design and implement a program, `crack`, that cracks passwords.
 
 == Walkthrough
 
+**Note: The walkthrough video incorrectly states that passwords are no longer than four (4) characters. Instead, per the specification, make sure to handle passwords that are up to five (5) characters.**
+
 video::w78QYcmpA8o[youtube]
 
 == Usage
