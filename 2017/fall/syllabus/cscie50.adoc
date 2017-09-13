@@ -94,7 +94,7 @@ A schedule of lectures, subject to change, appears below.
 
 Lectures are supplemented by weekly, 2-hour sections led by the teaching fellows. You will be asked for your sectioning preferences on Problem Set 0, and you will be assigned to a section (and teaching fellow) shortly thereafter.
 
-Attendance at section is expected up until the test. Sections for CSCI E-50 are held online, by visiting cs50.ly/cscie50 at any of the times listed below. Students are welcome to attend any of these three online sessions week to week.
+Attendance at section is expected up until the test. Sections for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] at any of the times listed below. Students are welcome to attend any of these three online sessions week to week.
 
 * Sundays, 1–3pm
 * Mondays, 8–10pm
@@ -122,9 +122,16 @@ pass:[*] Course-wide and filmed.
 
 == Office Hours
 
-Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants.
+Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants. Office hours for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] at any of the times listed below.
 
-A schedule of office hours appears on the course's website.
+* Tuesdays, 2–5pm (with Amrit Hothi)
+* Tuesdays, 9–10pm (with Pete Gartland)
+* Wednesdays, 8–11pm (with Pete Gartland and Teresa Lee)
+* Thursdays, 5–6pm (with Teresa Lee)
+* Thursdays, 7–9pm (with Eric Twark)
+* Fridays, 2–4pm (with Amrit Hothi)
+* Fridays, 7–9pm (with Pete Gartland)
+* Saturdays, 8–10pm (with Tom Ballatore)
 
 == Tutoring
 
