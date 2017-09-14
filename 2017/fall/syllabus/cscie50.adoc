@@ -100,13 +100,13 @@ Attendance at section is expected up until the test. Sections for CSCI E-50 are 
 * Mondays, 8–10pm
 * Tuesdays, 7–9pm
 
-A schedule of sections, subject to change, appears below.
+A schedule of sections, subject to change, appears below. Recordings of the sections, where available, are linked below as well.
 
 |===
 2+| Section
 
-| C | Fri 9/8*
-| C, continued | week of Sun 9/10
+| https://www.youtube.com/watch?v=RJabe6tN3_c[C] | Fri 9/8*
+| https://vault.cs50.net/2017/fall/e50/section/2[C, continued] | week of Sun 9/10
 | Algorithms | week of Sun 9/17
 | File I/O | week of Sun 9/24
 | Data Structures | week of Sun 10/1
