@@ -30,12 +30,10 @@
                 }
             });
         </script>
-        <script>
 
-            /* https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML */
-            {% include MathJax.js %}
+        <!-- mathjax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-        </script>
         <script>
 
             $(function() {
@@ -86,7 +84,7 @@
             *:not(pre) > code {
                 white-space: pre-wrap;
             }
-            
+
             /* don't wrap code blocks */
             pre, pre code {
                 overflow: auto;
