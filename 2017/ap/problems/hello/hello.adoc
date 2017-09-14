@@ -342,15 +342,15 @@ Visit https://cs50.me/account[cs50.me/account], and follow the link to connect y
 
 === Step 2 of 3
 
-Head back to the cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/workspace/chapter1/hello`, as with:
+Head back to the https://cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/workspace/chapter1/hello`, as with:
 
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/hello
 ls
 ----
 
-If `hello.c` is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `hello.c` is not in `~/workspace/chapter1/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 3 of 3
 
@@ -358,7 +358,7 @@ If `hello.c` is not in `~/workspace/chapter1/`, move it into that directory, as 
 +
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/chapter1/hello
 submit50 cs50/2017/ap/hello
 ----
 +
