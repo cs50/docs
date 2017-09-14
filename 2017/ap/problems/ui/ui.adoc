@@ -75,7 +75,7 @@ If completely unsure where to begin, head to Netflix's repository of science fic
 
 You needn't write more than 200 words for this part of the problem (both write ups should be in the same file); predicting the future is tough work! Just ask a meteorologist.
 
-==How to Submit
+== How to Submit
 
 === Step 1 of 3
 
