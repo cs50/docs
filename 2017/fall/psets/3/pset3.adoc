@@ -1,0 +1,92 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= Problem Set 3: Music
+
+== tl;dr
+ 
+[start=0]
+. Watch Week 3's lecture.
+. Make beautiful music. 
+. Submit your code.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+Alright, here we go again!
+
+Log into https://cs50.io/[cs50.io] and execute
+
+[source]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*.
+
+Next, execute
+
+[source]
+----
+mkdir ~/workspace/pset3/
+----
+
+at your prompt in order to make a directory called `pset3` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset3/` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace/` denotes a directory called `workspace` therein, and `~/workspace/pset3/` denotes a directory called `pset3` within `~/workspace/`.
+
+Now execute
+
+[source]
+----
+cd ~/workspace/pset3/
+----
+
+to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
+
+[source]
+----
+~/workspace/pset3/ $
+----
+
+If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
+
+[source,bash]
+----
+history
+----
+
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. 
+
+== What to Do
+
+Implement link:music/music.html[Music].
+
+== How to Submit
+
+=== Step 1 of 2
+
+. Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
+. Ensure your workspace is up-to-date by executing:
++
+[source]
+----
+update50
+----
+. Submit Music by executing:
++
+[source]
+----
+cd ~/workspace/pset4/music/
+submit50 cs50/2017/fall/song
+submit50 cs50/2017/fall/piano
+submit50 cs50/2017/fall/synthesize
+----
+
+=== Step 2 of 2
+  
+Submit https://forms.cs50.net/2017/fall/psets/3[]!
+ 
+This was Problem Set 3.
