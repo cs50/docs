@@ -19,46 +19,14 @@ include::help-yale.adoc[]
 
 Alright, here we go again!
 
-Log into https://cs50.io/[cs50.io] and execute
+Log into https://cs50.io/[cs50.io] and execute the below in a terminal window.
 
 [source]
 ----
 update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*.
-
-Next, execute
-
-[source]
-----
 mkdir ~/workspace/pset3/
-----
-
-at your prompt in order to make a directory called `pset3` in your `workspace` directory. 
-
-Now execute
-
-[source]
-----
 cd ~/workspace/pset3/
 ----
-
-to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
-
-[source]
-----
-~/workspace/pset3/ $
-----
-
-If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
-
-[source,bash]
-----
-history
-----
-
-at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. 
 
 == What to Do
 
@@ -81,7 +49,7 @@ update50
 ----
 cd ~/workspace/pset4/music/
 submit50 cs50/2017/fall/song
-submit50 cs50/2017/fall/piano
+submit50 cs50/2017/fall/notes
 submit50 cs50/2017/fall/synthesize
 ----
 
