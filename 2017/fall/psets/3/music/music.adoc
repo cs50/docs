@@ -186,7 +186,7 @@ $ [underline]#echo $?#
 
 == Walkthrough
 
-_Coming Sat 9/16_
+video::yTNp6wiU1ZI[youtube,list=PLhQjrBD2T380boRF-5b7Dow2opWBbZhLH]
 
 == Testing
 
