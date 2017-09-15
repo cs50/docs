@@ -1,0 +1,218 @@
+---
+---
+
+= Music
+
+== tl;dr
+
+. Learn to read sheet music.
+. Convert musical notes to frequencies.
+. Sythesize songs.
+
+== Distribution
+
+=== Downloading
+
+[source]
+----
+$ cd ~/workspace/pset3/
+$ wget http://cdn.cs50.net/2017/fall/psets/3/music.zip
+$ unzip music.zip
+$ rm music.zip
+$ cd music
+$ ls
+Makefile  helpers.c  helpers.h  notes.c  synthesize.c  songs/  wav.c  wav.h
+----
+
+=== Understanding
+
+==== `songs`
+
+==== `notes.c`
+
+==== `synthesize.c`
+
+==== `helpers.h`
+
+==== `helpers.c`
+
+==== `wav.h`
+
+==== `wav.c`
+
+==== `Makefile`
+
+== Background
+
+Odds are you're familiar with this song or some variant thereof:
+
+[quote]
+____
+Happy birthday to you,
+
+Happy birthday to you,
+
+Happy birthday dear someone,
+
+Happy birthday to you.
+____
+
+Moreover, you likely associate these lyrics with particular sounds, otherwise known as "notes." And you might have even read those words at a particular rate, otherwise known as "tempo."
+
+image::bday.png[]
+////
+audio::flat-happy-birthday.wav[]
+////
+
+Odds are you've heard or sung some variant of this song on someone's birthday. 
+
+=== Notes 
+
+Think of a song as a sequence of sounds, otherwise known as notes, each of which is known by a letter, A through G. These notes happen to correspond to the white keys on a piano, otherwise known as "natural keys," per the image below.
+
+image:keys.png[Keys]
+
+Notice how each letter is assigned to multiple keys and, thus, notes. For instance, C appears at the beginning of this sequence of keys as well as just after the first B. In music theory, we say that these notes that have the same letter but represent different keys are members of the same "pitch class" but are in different "octaves." "Oct" implies eight, and indeed between identical letters is a sequence inclusive of eight keys (e.g., C, D, E, F, G, A, B, and C). Keys with identical letters will sound similar in quality, but the rightmost one will have a higher pitch!
+
+What about the black keys on a piano? To identify those, we need to use two "accidentals," symbols that indicate that a note should be moved to the immediate next or immediate prior note. Appending a letter with the "sharp" accidental (&#9839;), often represented in ASCII using the `#` symbol, means the note should be moved up one semitone (i.e., a single piano key), while appending a letter with the "flat" accidental (&#9837;), often represented in ASCII with `b`, means the note should be moved down one semitone.
+
+This gives us the picture below.
+
+image:keys_accidentals.png[Keys with Accidentals]
+
+Notice how the leftmost black key is called C&#9839; (i.e., "C sharp"), since it's one semitone up from C. But that same black key can also be called D&#9837; (i.e., "D flat"), since it's one semitone down from D. Similarly do other keys have multiple identities.
+
+=== Sheet Music
+
+Sheet music is a visual representation of the notes that compose a song. On sheet music, a song is divided into "measures," separated by vertical bars, as in the below. A measure is rather like a sentence, not of words but of notes.
+
+image:notes.png[Notes]
+
+The above piece of music has three measures, per the vertical bars separating the twelve notes into three groups of four. The `4/4` at the beginning of the piece is just a convention that means that each measure is divided into enough time for four "quarter notes" (i.e., a note that lasts a quarter of a measure.) Which note should be played depends upon the line or space between lines the note is drawn on. Each line or space between lines represents one of the natural keys on the piano, with notes on higher lines representing higher pitched notes. The letters correspond to each note are included here, though typically the letters themselves are omitted from the sheet music in practice.
+
+Notice again how there can be notes represented by the same letter, but in different octaves: each of C, D, E, F, and G appear twice in different octaves in the sheet music above. To be more precise about which note we wish to refer to, sometimes musicians will place an octave number after the letter to represent the note's octave as well as pitch.
+
+image:notes_octaves.png[Notes with Octaves]
+
+Sheet music also needs a way to represent accidentals, like the &#9839; and &#9837; symbols. For instance, to indicate the note G&#9839; in sheet music, musicians place a note on the line assigned to G, and then add a &#9839; symbol before it. The same can be done for &#9837;.
+
+What about representing a pause between notes? In music, a pause between notes is called a "rest." There are different symbols for different rests, depending on how long they are.
+
+Here's what some accidentals and rests might look like in a measure of sheet music:
+
+image:accidentals.png[Accidentals]
+
+Since the `4/4` time signature means that there should be four quarter notes in the measure, and since we can see that there are only three quarter notes in this measure, we can determine that the rest symbol in this measure of music must have a length equal to that of a quarter note.
+
+But what if we don't want all of our notes to have the same length? Well, just as a quarter note is a note which lasts a quarter of the measure, an eighth note is a note which lasts an eighth of a measure (assuming `4/4` time). Two eighth notes are typically represented as two notes connected by a bar atop both of them, like the below.
+
+image:eighth_notes.png[Eighth Notes]
+
+In this example, the first two notes (both C4) are eighth notes which each take up an eighth of the measure. The next four notes (two G4s followed by two A4s) are also eighth notes. That's a total of six eighth notes, which together take up 6/8 = 3/4 of the time in this measure. The remaining 1/4 of the time in this measure is taken by the final G4, a quarter note, which lasts twice as long as the other notes in this measure.
+
+=== Representing Notes
+
+Now, how do we represent sheet music using just ASCII symbols? Let's have every three characters stand for an eighth note. To represent the note G&#9839; in the fourth octave as an eighth note, we would thus write `G#4`. We could likewise represent the same note but flat as `Gb4`, and the natural version of the note as `G4_` (notice that we add an `_` at the end of the note to maintain a three-character representation of eighth notes.)
+
+What about notes that last more than an eighth of a measure? We can let the sequence `pass:[...]` indicate that a note should continue for an extra eighth note. So the notation `G5_pass:[...]` would represent the key G (natural) in the fifth octave, lasting one quarter note (two eighth notes). And the notation `D#4pass:[.........]` would represent the key D&#9839; in the fourth octave, lasting four eighth notes (half a measure).
+
+Finally, we can represent a rest lasting one eighth of a measure as a sequence of three spaces `pass:[   ]`. You can see some examples of representing notes and this rests in this way in the `songs/` directory. Each file represents a song, with all of the notes and rests represented in ASCII on a single line.
+
+Now, take a look at the sheet music below from a familiar children's song.
+
+image:twinkle.png[Twinkle]
+
+Using our ASCII representation of notes, we could represent the first measure as:
+
+[source]
+----
+C4_C4_G4_G4_A4_A4_G4_...
+----
+
+Now it's your turn to figure out the rest! Write out the ASCII representation for this song in a single line, and save it in the file `songs/twinkle.txt`.
+
+Finally, it's time to write a program that can take notes written out in this ASCII format, and convert them into a MIDI file that you can listen to.
+
+== Specification
+
+=== `song.txt`
+
+In `song.txt`, type the ASCII representation of _Happy Birthday_, translating its sheet music to the machine-readable representation prescribed herein. You should find that the song begins with:
+
+[source]
+----
+D4@1/8
+D4@1/8
+E4@1/4
+D4@1/4
+G4@1/4
+F4@1/2
+----
+
+Implement a program called `music` that generates MIDI files from a sequence of notes.
+
+* Implement your program in a file called `music.c` in a directory called `music`.
+* Your program should accept exactly one command-line argument, the name of the MIDI file which your program will eventually generate.
+** If your program is not executed with exactly one command-line argument, it should remind the user of correct usage, as with `fprintf` (to `stderr`), and `main` should return `1`.
+* Your program should first get (via `stdin`) a string from the user, which is the ASCII representation of the song you should generate, formatted according to the above specification.
+** This means that you can also pass in the contents of a file as the notes to generate via file redirection (remember how?)
+* Your program should then output a playable MIDI audio file based on those notes.
+* If your program is passed an invalid representation of a song, it should display an error message, and `main` should return `2`.
+
+== Usage
+
+Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#./music#
+Usage: ./music output.mid 
+----
+
+[source,subs=quotes]
+----
+$ [underline]#./music bday.mid < songs/bday.txt#
+$ [underline]#echo $?#
+0
+----
+
+[source,subs=quotes]
+----
+$ [underline]#./music output.mid#
+[underline]#D4_...F#4...A4_...D5_...   D5_...A4_...F#4...D4_...#
+$ [underline]#echo $?#
+0
+----
+
+== Walkthrough
+
+_Coming Sat 9/16_
+
+== Testing
+
+=== `song`
+
+[source]
+----
+check50 2017/fall/music/song
+----
+
+=== `piano`
+
+[source]
+----
+check50 2017/fall/music/piano
+----
+
+=== `synthesize`
+
+[source]
+----
+check50 2017/fall/music/synthesize
+----
+
+////
+== Hints
+
+TODO
+////
