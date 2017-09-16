@@ -48,9 +48,7 @@ update50
 [source]
 ----
 cd ~/workspace/pset3/music/
-submit50 cs50/2017/fall/song
-submit50 cs50/2017/fall/notes
-submit50 cs50/2017/fall/synthesize
+submit50 cs50/2017/fall/music
 ----
 
 === Step 2 of 2
