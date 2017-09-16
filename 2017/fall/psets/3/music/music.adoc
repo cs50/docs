@@ -16,7 +16,7 @@ A song is essentially a sequence of sounds, otherwise known as notes, each of wh
   
 image:keys.png[Keys]
 
-Among all of those white keys are black keys, otherwise known as accidentals. (Though white keys can be accidentals too.) Those black keys are identified by their relation to white keys, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as #), otherwise known as a sharp; a black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as a lowercase b), otherwise known as a flat. Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
+Among all of those white keys are black keys, each of which is identified by its proximity to a white key, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as `#`), otherwise known as a sharp; a black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as `b`), otherwise known as a flat. Every key on a piano, meanwhile, is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black. The effect of `#` and `b`, otherwise known as accidentals, is to raise or lower, respectively, the pitch of a note by one semitone.
 
 image:keys_accidentals.png[Keys]
 
@@ -188,12 +188,67 @@ In `wav.c`, meanwhile, are the actual implementations of those functions plus a 
 
 No need to understand all of the code in `wav.c`, but you're welcome to read through it if you'd like!
 
+==== `Makefile`
+
+Next open up `Makefile`, the format of which is perhaps quite different from anything you've seen before. As its name might suggest, it's related to `make`, the program you've probably been using compile most of your programs, if only because compiling programs with `clang` itself tends to require more keystrokes. In previous problems, we've not needed a `Makefile`, which is essentially a configuration file for `make`, since `make` can infer how to compile a program that's composed of a single file (e.g., `hello.c`). But compiling both `notes` and `synthesize` requires multiple files, since both programs rely on `wav.h` and `wav.c`, plus two other files, `helpers.h` and `helpers.c`.
+
+Simply executing
+
+[source]
+make notes
+
+or
+
+[source]
+make synthesize
+
+wouldn't provide nearly enough information for `make` to be able to infer which files it needs. So this `Makefile` exists so that `make` knows how to compile these programs.
+
 ==== `helpers.h`
+
+In this file, now, are declarations for three functions:
+
+* `duration`, which should take as input as a `string` a fraction (e.g., `1/4`) and return as an `int` a corresponding number of eigths (`2`, in this case, since `1/4` is equivalent to `2/8`);
+* `frequency`, which should take as input as a `string` a note formatted as:
+** `XY` (e.g., `A4`), where `X` is any of `A` through `G` and `Y` is any of `0` through `8`,
+** or `XYZ` (e.g., `A#4`), where `X` is any of `A` through `G`, `Y` is `#` or `b`, and `Z` is any of `0` through `8`; and
+* `is_rest`, which should return `true` if its input, a `string`, represents a rest in our machine-readable format, otherwise `false`.
 
 ==== `helpers.c`
 
-==== `Makefile`
+And in this file there _should_ be implementations of those three functions, but no! Not yet. That's where you come in!
 
+== Specification
+
+=== `is_rest`
+
+Complete the implementation of `is_rest` in `helpers.c`. Recall that blank lines represent rests in our machine-readable format. And recall that `synthesize` will call this function in order to determine if one of the lines a user has typed in is indeed blank.
+
+What does it mean for a line to be blank? To answer that question, start by looking at `cs50.h` itself, wherein `get_string` is documented:
+
+https://github.com/cs50/libcs50/blob/develop/src/cs50.h
+
+What do the comments atop `get_string` say that the function returns if a user simply hits Enter, thereby inputting only a "line ending" (i.e., `\n`)? 
+
+When `is_rest` is subsequently passed such a `string`, `s`, how should it (nay, you!) recognize as much?
+
+=== `duration`
+
+Complete the implementation of `duration` in `helpers.c`. Recall that this function should take as input as a `string` a fraction and convert it into some integral number of eighths. You may assume that `duration` will only be passed a `string` formatted as `X/Y`, whereby each of `X` and `Y` is a positive decimal digit, and `Y` is, moreover, a power of 2.
+
+=== `frequency`
+
+Finally, complete the implementation of `frequency` in `helpers.c`. Recall that this function should take as input as a `string` a note (e.g., `A4`) and return its corresponding frequency in hertz as an `int`.
+
+Recall that:
+
+. The frequency, _f_, of some note is 2^_n_/12^ × 440, where _n_ is the number of semitones from that note to `A4`.
+. Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
+. The effect of `#` and `b`, otherwise known as accidentals, is to raise or lower, respectively, the pitch of a note by one semitone.
+
+In implementing this function, you might find https://reference.cs50.net/math/pow[`pow`], declared in `math.h`, of interest.
+
+////
 == Usage
 
 Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
@@ -218,6 +273,7 @@ $ [underline]#./music output.mid#
 $ [underline]#echo $?#
 0
 ----
+///
 
 == Walkthrough
 
@@ -225,29 +281,15 @@ video::yTNp6wiU1ZI[youtube,list=PLhQjrBD2T380boRF-5b7Dow2opWBbZhLH]
 
 == Testing
 
-=== `song`
-
 [source]
-----
-check50 2017/fall/music/song
-----
+check50 cs50/2017/fall/music
 
-=== `piano`
-
-[source]
-----
-check50 2017/fall/music/piano
-----
-
-=== `synthesize`
-
-[source]
-----
-check50 2017/fall/music/synthesize
-----
-
-////
 == Hints
 
-TODO
-////
+As always, when writing code, take baby steps, only implementing enough lines to make progress before testing (and, if need be, debugging) your code. Only once that first step is succesful (i.e., debugged!) should you take another.
+
+In the context of `frequency`, taking baby steps might mean:
+
+. Only implement support initially for `A0` through `A8`, no other notes. Ensure that `frequency` returns the expected values for those notes, as by running `notes` or using `debug50` or `eprintf`. Compare your function's output against your own calculations on paper or on a calculator.
+. Then add support for `#` and `b` but still only for `A0` through `A8` (i.e., `A#0` through `A#8` and `Ab0` through `Ab8`).
+. Then add support for `B`. Then for `C`. Then beyond.
