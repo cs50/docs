@@ -6,41 +6,9 @@
 == tl;dr
 
 . Learn to read sheet music.
+. Learn to read code.
 . Convert musical notes to frequencies.
 . Sythesize songs.
-
-== Distribution
-
-=== Downloading
-
-[source]
-----
-$ cd ~/workspace/pset3/
-$ wget http://cdn.cs50.net/2017/fall/psets/3/music.zip
-$ unzip music.zip
-$ rm music.zip
-$ cd music
-$ ls
-Makefile  helpers.c  helpers.h  notes.c  synthesize.c  songs/  wav.c  wav.h
-----
-
-=== Understanding
-
-==== `songs`
-
-==== `notes.c`
-
-==== `synthesize.c`
-
-==== `helpers.h`
-
-==== `helpers.c`
-
-==== `wav.h`
-
-==== `wav.c`
-
-==== `Makefile`
 
 == Background
 
@@ -128,6 +96,43 @@ Implement a program called `music` that generates MIDI files from a sequence of 
 ** This means that you can also pass in the contents of a file as the notes to generate via file redirection (remember how?)
 * Your program should then output a playable MIDI audio file based on those notes.
 * If your program is passed an invalid representation of a song, it should display an error message, and `main` should return `2`.
+
+== Distribution
+
+Included with this problem is "distribution code," code that we've written that you'll first need to read (and understand!) before contributing improvements of your own.
+
+=== Downloading
+
+Here's how to download it.
+
+[source]
+----
+$ cd ~/workspace/pset3/
+$ wget http://cdn.cs50.net/2017/fall/psets/3/music.zip
+$ unzip music.zip
+$ rm music.zip
+$ cd music
+$ ls
+Makefile  helpers.c  helpers.h  notes.c  synthesize.c  songs/  wav.c  wav.h
+----
+
+=== Understanding
+
+And here's how to read through it!
+
+==== `notes.c`
+
+==== `synthesize.c`
+
+==== `helpers.h`
+
+==== `helpers.c`
+
+==== `wav.h`
+
+==== `wav.c`
+
+==== `Makefile`
 
 == Usage
 
