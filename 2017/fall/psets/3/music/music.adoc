@@ -299,7 +299,7 @@ Typing notes into `synthesize`, though, will quickly become tedious. So you can 
 
 [source]
 ----
-,/synthesize jeopardy.wav < songs/jeopardy.txt
+./synthesize jeopardy.wav < songs/jeopardy.txt
 ----
 
 Then execute
