@@ -84,32 +84,44 @@ Here's how to download it.
 First, execute
 
 [source]
+----
 cd ~/workspace/pset3/
+----
 
 to ensure you're in `~/workspace/pset3/`. Then, execute
 
 [source]
+----
 wget http://cdn.cs50.net/2017/fall/psets/3/music.zip
+----
 
 to download the distribution code as a ZIP (i.e., compressed file). If you then execute `ls`, you should see `music.zip` inside of your `pset3` directory. To unzip (i.e., uncompress) that file, execut
 
 [source]
+----
 unzip music.zip
+----
 
 and then execute
 
 [source]
+----
 rm music.zip
+----
 
 in order to delete the ZIP file itself. If you execute `ls`, you should now see a folder called `music` inside of your `pset3` directory. Then execute
 
 [source]
+----
 cd music/
+----
 
 in order to change into that directory. And then execute `ls`. You should see the files and folder below, which collectively compose this problem's distribution!
 
 [source]
+----
 Makefile  helpers.c  helpers.h  notes.c  synthesize.c  songs/  wav.c  wav.h
+----
 
 === Understanding
 
@@ -256,46 +268,62 @@ which should compile both at the same time, provided that `helpers.c` has no syn
 To test your implementation of `frequency` in `helpers.c`, execute `notes`, which calls precisely that function, as via:
 
 [source]
+----
 ./notes
+----
 
 Confirm that the notes printed to the screen match your own calculations (whether on paper or calculator). You can also listen to the outputted `notes.wav` if you've an ear for the notes. Test other octaves by specifying them as command-line arguments, a la:
 
 [source]
+----
 ./notes 5
+----
 
 To test `frequency` further, along with `is_rest` and `duration`, execute `synthesize`, as via:
 
 [source]
+----
 ./synthesize test.wav
+----
 
 Then input one or more notes, one per line, and when done, hit ctrl-d to send `EOF` ("end of file") to `get_string` so that it breaks out of that program's loop. Open the resulting file (e.g., `test.wav`) by executing
 
 [source]
+----
 open test.wav
+----
 
 or by double-clicking `test.wav` in CS50 IDE's file browser. Listen to the song to see (well, hear) if it sounds like (you think) it should!
 
 Typing notes into `synthesize`, though, will quickly become tedious. So you can instead leverage "input redirection" in order to pass whole files into `synthesize` as input. For instance, to pass all of the notes in `jeopardy.txt` into `synthesize` at once, execute:
 
 [source]
+----
 ,/synthesize jeopardy.wav < songs/jeopardy.txt
+----
 
 Then execute
 
 [source]
+----
 open jeopardy.wav
+----
 
 or simply double-click `jeopardy.wav` in CS50 IDE's file browser to open and (assuming no bugs!) listen to the song you just synthesized.
 
 === Correctness
 
 [source]
+----
 check50 cs50/2017/fall/music # starting Sat 9/16 eve
+----
 
 === Style
 
 [source]
+----
 style50 helpers.c
+----
 
 == Hints
 
