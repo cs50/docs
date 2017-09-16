@@ -16,7 +16,7 @@ A song is essentially a sequence of sounds, otherwise known as notes, each of wh
   
 image:keys.png[Keys]
 
-Among all of those white keys are black keys, otherwise known as accidentals. (Though white keys can be accidentals too.) Those black keys are identified by their relation to white keys, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as #), otherwise known as a sharp; a white black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as a lowercase b), otherwise known as a flat. Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
+Among all of those white keys are black keys, otherwise known as accidentals. (Though white keys can be accidentals too.) Those black keys are identified by their relation to white keys, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as #), otherwise known as a sharp; a black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as a lowercase b), otherwise known as a flat. Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
 
 image:keys_accidentals.png[Keys]
 
@@ -31,7 +31,7 @@ Not only are notes identified by letters (and accidentals), then, but also by oc
 
 image::octaves.png[]
 
-Now, all of those keys, when pressed, generate waves of air molecules (i.e., alternations of high and low air pressure), otherwise known as sound waves, per the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves travels at some rate, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. If curious as to why some air molecules sound better than others, you might like https://plus.maths.org/content/magical-mathematics-music[the magical mathematics of music].
+Now, all of those keys, when pressed, generate vibrations and, in turn, waves of air molecules (i.e., alternations of high and low air pressure), otherwise known as sound waves, per the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves travels at some rate, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. If curious as to why some air molecules sound better than others, you might like https://plus.maths.org/content/magical-mathematics-music[the magical mathematics of music].
 
 ////
 https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
@@ -41,9 +41,9 @@ https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
 [caption=""]
 image::MathematicsOfMusic.png[]
 
-Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second. If you consider a note just an abstraction for a sound wave, then, it's fair to say that the note itself has a frequency.
+Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan above, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second. 
 
-The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^(_n_/12)^ × 440, where _n_ is the number of half steps from that note to A4.
+The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^_n_/12^ × 440, where _n_ is the number of semitones from that note to A4.
 
 Musicians, though, tend to write music not with letters or frequencies but with visual notations, otherwise known as sheet music, whereby notes are written on or between lines, otherwise known as a staff. The lines on or between which notes are written imply the notes' letters and octaves, per the below.
 
@@ -51,17 +51,17 @@ image::notes_octaves.png[]
 
 The duration of a note, meanwhile, is implied by its shape. For instance,
 
-* &#9834; is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la &#9835;;
-* &#9833; is a quarter note, the duration of which is twice that of an eighth note;
-* &#1D15E; is a half note, the duration of which is four times that of an eighth note; and
-* &#1D15D; is a whole note, the duration of which is eight times that of an eighth note.
+* image:Eighth_note.gif[] is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la &#9835;;
+* image:15px-Figure_rythmique_noire_hampe_haut.svg.png[] is a quarter note, the duration of which is twice that of an eighth note;
+* image:15px-Figure_rythmique_blanche_hampe_haut.svg.png[] is a half note, the duration of which is four times that of an eighth note; and
+* image:20px-Figure_rythmique_ronde.svg.png[] is a whole note, the duration of which is eight times that of an eighth note.
 
 An absence of a note (i.e., silence) is considered a rest, the duration of which is also implied by its shape. For instance,
 
-* &#1D13E; is an eighth rest, the duration of which is identical to that of an eighth note;
-* &#1D13D; is a quarter rest, the duration of which is twice that of an eighth rest;
-* &#1D13C; is a half rest, the duration of which is four times that of an eighth rest; and
-* &#1D13B; is a whole rest, the duration of which is eight times that of an eighth rest.
+* image:88px-Rests_on_stave_07_Quaver.svg.png[] is an eighth rest, the duration of which is identical to that of an eighth note;
+* image:160px-Crochet2.svg.png[] is a quarter rest, the duration of which is twice that of an eighth rest;
+* image:88px-Rests_on_stave_05_Minim.svg.png[] is a half rest, the duration of which is four times that of an eighth rest; and
+* image:88px-Rests_on_stave_04_Semibreve.svg.png[] is a whole rest, the duration of which is eight times that of an eighth rest.
 
 With these building blocks can you represent a song like the below.
 
@@ -99,38 +99,98 @@ Implement a program called `music` that generates MIDI files from a sequence of 
 
 == Distribution
 
-Included with this problem is "distribution code," code that we've written that you'll first need to read (and understand!) before contributing improvements of your own.
+Included with this problem is a "distribution," some files that we've written that you'll first need to read (and understand!) before contributing improvements of your own. Unlike `cs50.h` and `stdio.h` and other header files you've been using for some time, which live somewhere in CS50 IDE, these files will live alongside your own code, where you can see them more easily.
 
 === Downloading
 
 Here's how to download it.
 
+First, execute
+
 [source]
-----
-$ cd ~/workspace/pset3/
-$ wget http://cdn.cs50.net/2017/fall/psets/3/music.zip
-$ unzip music.zip
-$ rm music.zip
-$ cd music
-$ ls
+cd ~/workspace/pset3/
+
+to ensure you're in `~/workspace/pset3/`. Then, execute
+
+[source]
+wget http://cdn.cs50.net/2017/fall/psets/3/music.zip
+
+to download the distribution code as a ZIP (i.e., compressed file). If you then execute `ls`, you should see `music.zip` inside of your `pset3` directory. To unzip (i.e., uncompress) that file, execut
+
+[source]
+unzip music.zip
+
+and then execute
+
+[source]
+rm music.zip
+
+in order to delete the ZIP file itself. If you execute `ls`, you should now see a folder called `music` inside of your `pset3` directory. Then execute
+
+[source]
+cd music/
+
+in order to change into that directory. And then execute `ls`. You should see the files and folder below, which collectively compose this problem's distribution!
+
+[source]
 Makefile  helpers.c  helpers.h  notes.c  synthesize.c  songs/  wav.c  wav.h
-----
 
 === Understanding
 
-And here's how to read through it!
+Let's read through those files in order to understand them. Moving forward, reading (and understanding!) someone else's code, whether ours or some library's, will often be the first step in solving a problem. That way, you can build upon the work of others and solve even more interesting problems yourself!
+
+==== `songs/`
+
+First open up `songs/`, as with `cd` or CS50 IDE's file browser. In that directory are a bunch of `.txt` files, inside of which, it turns out, are a number of songs! Because ASCII alone doesn't lend itself to beautiful sheet music, we've instead adopted for these files a "machine-readable" format for songs instead. On each line of a file is a note and duration, separated by an `@`. For instance, atop `jeopardy.txt` (which you're welcome to open) are these lines:
+
+[source]
+----
+G4@1/4
+C5@1/4
+G4@1/4
+C4@1/4
+G4@1/4
+C5@1/4
+G4@1/4
+----
+
+The first note in the theme song for Jeopardy is indeed a quarter note (per the `1/4`), specifically a G in the fourth octave. The second note is also a quarter note, but that one's a C in the fifth octave (a few keys to the right of the first one on a piano). Thereafter are five additional quarter notes.
+
+Below those first seven lines in `jeopardy.txt`, notice, are two blank lines, the implication of which is that the seventh note is followed by two eighth rests (or, equivalently, one quarter rest). After those rests, the song resumes, resting only once more several notes later.
+
+Make sense? Feel free to look through some of the other `.txt` files in `songs`. Cryptic though the files' lines might be at first glance, they're really just a top-down translation of (prettier) sheet music to a machine-readable text format, machine-readable in the sense that you're soon going to write code that reads those notes and durations!
 
 ==== `notes.c`
 
+Next open up `notes.c`. In this file is a program (soon to be called `notes`) that not only prints the frequencies (in Hz) of all of the notes in an octave, it also outputs a WAV file (an audio file) via which you can hear those same notes. By default, it does so for the fourth octave, but if you pass it a command-line argument (a number between 0 and 8, inclusive), you can see and hear the frequencies of any octave's notes.
+
+Read through the comments and code in `notes.c` and try to understand most, if not all, of its lines. Some might look unfamiliar. For instance, by convention, it uses a function called `fprintf` to print error messages to `stderr` (aka standard error) rather than `printf`, which, it turns out, prints to something called `stdout` (aka standard output). By default, messages printed to `stdout` and `stderr` both appear on the user's screens. But it's possible to separate them when running a program so that users can distinguish error messages from non-error messages. But more on that perhaps another time!
+
+Notice, too, how `main` returns `1` in cases of error. That, too, is a convention. To date, we've not returned any values from `main`. But, recall that, all this time, `main` _has_ had a return type, specifically `int`. It turns out, when `main` is done executing, it returns `0` by default, which, by convention, signifiies success. If something goes wrong in a program, though, it's convention to return some value other than `0` (e.g., `1`). That value is called an "exit code" and can be used to distinguish one type of error from another. In fact, if you've ever seen a cryptic error code on your Mac's or PC's screen, it might very well have been the value returned by some (buggy) program's `main` function.
+
+Notice too how this program uses a function called `sprintf` which doesn't actually print to the screen but instead stores its output in a string (hence the `s` in `sprintf`). We're using it in order to create a string from two placeholders, `%s` and `%i`. Notice how we allocate space for a (short) string by declaring an array for 4 `char`s. We then use `sprintf` to store a `NOTES[i]` (a `string`, ergo the `%s`) in that memory followed by `octave` (an `int`, ergo the `%i`). That way, we can take values like `"A"` and `4` and, effectively, concatenate them (i.e., append the latter to the former) in order to create a new `string`, the value of which is, for instance, `A4`.
+
+Along the way in this program do we call some (presumably) unfamilar functions called `song_open`, `frequency`, `note_write`, and `song_close`. It turns out those functions are implemented in other files in this problem's distribution. Keep an eye out for them!
+
 ==== `synthesize.c`
+
+In this file is a program (soon to be called `synthesize`) that sythesizes (i.e., generates) a song from a sequence of notes. Notice how it gets those notes from a user one at a time using `get_string`. It first checks, though, whether the user's input is a rest, as would happen if the user simply hits Enter. Else it proceeds to "tokenize" the user's input into two tokens: a note, which can be found to the left of the `@` in the user's input, and a fraction, which can be found to the right of the `@` in the user's input. The program uses a function called `strtok` to facilitate such. It then writes that note (or rest) to a file.
+
+==== `wav.h`
+
+Next open up `wav.h`, a header file used by both `notes.c` and `synthesize.c`. This file, together with `wav.c`, represents not a program but a "library," a set of functions that other programs can use as building blocks, much like `cs50` and `stdio` are libraries. This library's code just so happens to live in your work workspace now.
+
+In `wav.h` too are definitions of two new data types, one called `note` and one called `song`. But more on those (and keywords like `typedef` and `struct` another time). For now, just notice how this file declares four functions (`note_write`, `rest_write`, `song_close`, and `song_open`), which `notes` and `synthesize` use.
+
+==== `wav.c`
+
+In `wav.c`, meanwhile, are the actual implementations of those functions plus a few others. Indeed, this file contains functions that implement support for WAV files, a popular (if dated) file format for audio. Those functions allow `notes` and `synthesize` to save notes to disk in files ending in `.wav`. To play those `.wav` files, simply open them via CS50 IDE's file browser. Or download them to your Mac or PC to play them locally.
+
+No need to understand all of the code in `wav.c`, but you're welcome to read through it if you'd like!
 
 ==== `helpers.h`
 
 ==== `helpers.c`
-
-==== `wav.h`
-
-==== `wav.c`
 
 ==== `Makefile`
 
