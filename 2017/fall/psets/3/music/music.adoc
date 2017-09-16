@@ -240,7 +240,7 @@ In implementing this function, you might find https://reference.cs50.net/math/po
 
 == Walkthrough
 
-video::yTNp6wiU1ZI[youtube,list=PLhQjrBD2T380boRF-5b7Dow2opWBbZhLH]
+video::PwrtaYvm1K0[youtube,list=PLhQjrBD2T380boRF-5b7Dow2opWBbZhLH]
 
 == Testing
 
