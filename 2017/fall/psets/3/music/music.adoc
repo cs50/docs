@@ -1,4 +1,5 @@
 ---
+layout: 2017/fall
 ---
 
 = Music
@@ -53,17 +54,18 @@ image::notes_octaves.png[]
 
 The duration of a note, meanwhile, is implied by its shape. For instance,
 
-* image:Eighth_note.gif[] is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la &#9835;;
-* image:15px-Figure_rythmique_noire_hampe_haut.svg.png[] is a quarter note, the duration of which is twice that of an eighth note;
-* image:15px-Figure_rythmique_blanche_hampe_haut.svg.png[] is a half note, the duration of which is four times that of an eighth note; and
-* image:20px-Figure_rythmique_ronde.svg.png[] is a whole note, the duration of which is eight times that of an eighth note.
+* [music]#&#xE1D7;# is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la &#9835;;
+* [music]#&#xE1D5;# is a quarter note, the duration of which is twice that of an eighth note;
+* [music]#&#xE1D3;# is a half note, the duration of which is four times that of an eighth note;
+* [music]#&#xE1D3; &#xE1E7;# is a dotted half note, the duration of which is three times that of an eighth note; and
+* [music]#&#xE1D2;# is a whole note, the duration of which is eight times that of an eighth note.
 
 An absence of a note (i.e., silence) is considered a rest, the duration of which is also implied by its shape. For instance,
 
-* image:88px-Rests_on_stave_07_Quaver.svg.png[] is an eighth rest, the duration of which is identical to that of an eighth note;
-* image:160px-Crochet2.svg.png[] is a quarter rest, the duration of which is twice that of an eighth rest;
-* image:88px-Rests_on_stave_05_Minim.svg.png[] is a half rest, the duration of which is four times that of an eighth rest; and
-* image:88px-Rests_on_stave_04_Semibreve.svg.png[] is a whole rest, the duration of which is eight times that of an eighth rest.
+* [music]#&#xE4E6;# is an eighth rest, the duration of which is identical to that of an eighth note;
+* [music]#&#xE4E5;# is a quarter rest, the duration of which is twice that of an eighth rest;
+* [music]#&#xE4F5;# is a half rest, the duration of which is four times that of an eighth rest; and
+* [music]#&#xE4F4;# is a whole rest, the duration of which is eight times that of an eighth rest.
 
 With these building blocks can you represent a song like the below.
 

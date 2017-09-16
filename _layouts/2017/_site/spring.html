@@ -30,10 +30,12 @@
                 }
             });
         </script>
+        <script>
 
-        <!-- mathjax -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+            /* https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML */
+            {% include MathJax.js %}
 
+        </script>
         <script>
 
             $(function() {
@@ -68,34 +70,7 @@
             {% include asciidoc-pygments.css %}
 
         </style>
-
         <style>
-
-            /* wget http://www.smufl.org/files/bravura-1.204.zip */
-            /* unzip bravura-1.204.zip */
-            /* base64 -w0 woff/BravuraText.woff > _includes/BravuraText.woff.b64 /*
-            /* https://w3c.github.io/smufl/gitbook/tables/individual-notes.html */
-            /* https://w3c.github.io/smufl/gitbook/tables/rests.html */
-            .music
-            {
-                font-family: "Bravura Text";
-                font-size: 2em;
-                line-height: 0.5em;
-                position: relative;
-                top: 0.25em;
-            }
-            @font-face
-            {
-                font-family: "Bravura Text";
-                src: url("data:application/x-font-woff;base64,{% include BravuraText.woff.b64 %}") format("woff");
-            }
-
-        </style>
-        <style>
-
-            audio {
-                width: 100%;
-            }
 
             /* http://stackoverflow.com/a/30195325 */
             ol > li:before {
@@ -111,7 +86,7 @@
             *:not(pre) > code {
                 white-space: pre-wrap;
             }
-
+            
             /* don't wrap code blocks */
             pre, pre code {
                 overflow: auto;
