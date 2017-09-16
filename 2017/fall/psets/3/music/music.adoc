@@ -56,8 +56,8 @@ The duration of a note, meanwhile, is implied by its shape. For instance,
 
 * [music]#&#xE1D7;# is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la &#9835;;
 * [music]#&#xE1D5;# is a quarter note, the duration of which is twice that of an eighth note;
-* [music]#&#xE1D3;# is a half note, the duration of which is four times that of an eighth note;
-* [music]#&#xE1D3; &#xE1E7;# is a dotted half note, the duration of which is three times that of an eighth note; and
+* [music]#&#xE1D5; &#xE1E7;# is a dotted quarter note, the duration of which is three times that of an eighth note;
+* [music]#&#xE1D3;# is a half note, the duration of which is four times that of an eighth note; and
 * [music]#&#xE1D2;# is a whole note, the duration of which is eight times that of an eighth note.
 
 An absence of a note (i.e., silence) is considered a rest, the duration of which is also implied by its shape. For instance,
