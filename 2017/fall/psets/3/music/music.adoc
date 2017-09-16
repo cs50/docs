@@ -54,22 +54,27 @@ image:keys_accidentals.png[Keys]
 
 Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
 
-Now, all of those keys, when pressed, generate sound waves like the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves has some height, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. 
+Now, all of those keys, when pressed, waves of air molecules (i.e., alternations of high and low air pressure), otherwise known as sound waves, per the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves has some height, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. 
 
-TODO: image of sound wave here
+////
+https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
+////
+image::MathematicsOfMusic.png[]
 
 Pianos, meanwhile, typically have as many as 88 keys, 52 of which are white. With only seven letters (A through G) with which to identify them, those letters necessarily identify multiple keys. And so notes are divided into octaves, groups of contiguous keys, each of which is numbered, per the below.
 
 ////
 https://en.wikipedia.org/wiki/A440_(pitch_standard)#/media/File:Piano_Frequencies.svg
 ////
-image::520px-Piano_Frequencies.svg.png[]
+image::520px-Piano_Frequencies.svg.png[width="100%"]
 
 Not only are notes identified by letters (and accidentals), then, but also by octaves, per the below.
 
 image::octaves.png[]
 
-Among the most popular notes is Middle C, highlighted in cyan, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another popular note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz, which means that they oscilate up and down 440 times per second. If you consider a note just an abstraction for a sound wave, then, it's fair to say that the note itself has a frequency.
+Among the most popular notes is Middle C, highlighted in cyan, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another popular note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz, which means that they oscilate up and down 440 times per second. If you consider a note just an abstraction for a sound wave, then, it's fair to say that the note itself has a frequency. Here's what 440 Hz sounds like:
+
+video::teb64y-D2sA[youtube]
 
 The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^^(n/12)^^ × 440, where _n_ is the number of half steps from that note to A4.
 
