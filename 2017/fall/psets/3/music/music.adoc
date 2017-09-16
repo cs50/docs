@@ -8,12 +8,12 @@
 . Learn to read sheet music.
 . Learn to read code.
 . Convert musical notes to frequencies.
-. synthesize songs.
+. Synthesize songs.
 
 == Background
 
 A song is essentially a sequence of sounds, otherwise known as notes, each of which has some duration. In Western music, each of those notes is known by a letter, A through G. Those letters happen to correspond to the white keys on a piano, otherwise known as "natural keys," per the below.
-  
+
 image:keys.png[Keys]
 
 Among all of those white keys are black keys, each of which is identified by its proximity to a white key, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as `pass:[#]`), otherwise known as a sharp; a black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as `b`), otherwise known as a flat. Every key on a piano, meanwhile, is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black. The effect of `#` and `b`, otherwise known as accidentals, is to raise or lower, respectively, the pitch of a note by one semitone.
@@ -43,7 +43,7 @@ https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
 [caption=""]
 image::MathematicsOfMusic.png[]
 
-Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan above, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second. 
+Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan above, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second.
 
 The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^_n_/12^ × 440, where _n_ is the number of semitones from that note to A4.
 
@@ -236,7 +236,7 @@ What does it mean for a line to be blank? To answer that question, start by look
 
 https://github.com/cs50/libcs50/blob/develop/src/cs50.h
 
-What do the comments atop `get_string` say that the function returns if a user simply hits Enter, thereby inputting only a "line ending" (i.e., `\n`)? 
+What do the comments atop `get_string` say that the function returns if a user simply hits Enter, thereby inputting only a "line ending" (i.e., `\n`)?
 
 When `is_rest` is subsequently passed such a `string`, `s`, how should it (nay, you!) recognize as much?
 
@@ -267,7 +267,7 @@ To compile both `notes` and `synthesize`, execute
 [source]
 make
 
-which should compile both at the same time, provided that `helpers.c` has no syntax errors. 
+which should compile both at the same time, provided that `helpers.c` has no syntax errors.
 
 To test your implementation of `frequency` in `helpers.c`, execute `notes`, which calls precisely that function, as via:
 
