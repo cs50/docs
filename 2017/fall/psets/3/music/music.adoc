@@ -71,32 +71,6 @@ If unfamiliar, here's what that song sounds like (when its notes sound waves rea
 
 audio::flat-happy-birthday.wav[]
 
-== Specification
-
-=== `song.txt`
-
-In `song.txt`, type the ASCII representation of _Happy Birthday_, translating its sheet music to the machine-readable representation prescribed herein. You should find that the song begins with:
-
-[source]
-----
-D4@1/8
-D4@1/8
-E4@1/4
-D4@1/4
-G4@1/4
-F4@1/2
-----
-
-Implement a program called `music` that generates MIDI files from a sequence of notes.
-
-* Implement your program in a file called `music.c` in a directory called `music`.
-* Your program should accept exactly one command-line argument, the name of the MIDI file which your program will eventually generate.
-** If your program is not executed with exactly one command-line argument, it should remind the user of correct usage, as with `fprintf` (to `stderr`), and `main` should return `1`.
-* Your program should first get (via `stdin`) a string from the user, which is the ASCII representation of the song you should generate, formatted according to the above specification.
-** This means that you can also pass in the contents of a file as the notes to generate via file redirection (remember how?)
-* Your program should then output a playable MIDI audio file based on those notes.
-* If your program is passed an invalid representation of a song, it should display an error message, and `main` should return `2`.
-
 == Distribution
 
 Included with this problem is a "distribution," some files that we've written that you'll first need to read (and understand!) before contributing improvements of your own. Unlike `cs50.h` and `stdio.h` and other header files you've been using for some time, which live somewhere in CS50 IDE, these files will live alongside your own code, where you can see them more easily.
@@ -220,7 +194,23 @@ And in this file there _should_ be implementations of those three functions, but
 
 == Specification
 
-=== `is_rest`
+=== `bday.txt`
+
+In `bday.txt`, type the ASCII representation of _Happy Birthday_, translating its sheet music, above, to the machine-readable representation prescribed herein. You should find that the song begins with:
+
+[source]
+----
+D4@1/8
+D4@1/8
+E4@1/4
+D4@1/4
+G4@1/4
+F4@1/2
+----
+
+=== `helpers.c`
+
+==== `is_rest`
 
 Complete the implementation of `is_rest` in `helpers.c`. Recall that blank lines represent rests in our machine-readable format. And recall that `synthesize` will call this function in order to determine if one of the lines a user has typed in is indeed blank.
 
@@ -232,11 +222,11 @@ What do the comments atop `get_string` say that the function returns if a user s
 
 When `is_rest` is subsequently passed such a `string`, `s`, how should it (nay, you!) recognize as much?
 
-=== `duration`
+==== `duration`
 
 Complete the implementation of `duration` in `helpers.c`. Recall that this function should take as input as a `string` a fraction and convert it into some integral number of eighths. You may assume that `duration` will only be passed a `string` formatted as `X/Y`, whereby each of `X` and `Y` is a positive decimal digit, and `Y` is, moreover, a power of 2.
 
-=== `frequency`
+==== `frequency`
 
 Finally, complete the implementation of `frequency` in `helpers.c`. Recall that this function should take as input as a `string` a note (e.g., `A4`) and return its corresponding frequency in hertz as an `int`.
 
@@ -307,9 +297,9 @@ style50 helpers.c
 
 == Hints
 
-As always, when writing code, take baby steps, only implementing enough lines to make progress before testing (and, if need be, debugging) your code. Only once that first step is succesful (i.e., debugged!) should you take another.
+As always, when writing code, take baby steps, only implementing enough lines to make progress before testing (and, if need be, debugging) your code. Only once that first step is succesful (i.e., debugged!) should you take another. Plan each of your steps by writing pseudocode before code.
 
-In the context of `frequency`, taking baby steps might mean:
+In the context of `frequency` specifically, taking baby steps might mean:
 
 . Only implement support initially for `A0` through `A8`, no other notes. Ensure that `frequency` returns the expected values for those notes, as by running `notes` or using `debug50` or `eprintf`. Compare your function's output against your own calculations on paper or on a calculator.
 . Then add support for `#` and `b` but still only for `A0` through `A8` (i.e., `A#0` through `A#8` and `Ab0` through `Ab8`).
