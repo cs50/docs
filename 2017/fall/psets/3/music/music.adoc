@@ -48,21 +48,11 @@ A song is essentially a sequence of sounds, otherwise known as notes, each of wh
   
 image:keys.png[Keys]
 
-Among all of those white keys are black keys, otherwise known as accidentals. (Though white keys can be accidentals too.) Those black keys are identified by their relation to white keys, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as #), otherwise known as a sharp; a white black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as a lowercase b), otherwise known as a flat.
+Among all of those white keys are black keys, otherwise known as accidentals. (Though white keys can be accidentals too.) Those black keys are identified by their relation to white keys, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as #), otherwise known as a sharp; a white black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as a lowercase b), otherwise known as a flat. Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
 
 image:keys_accidentals.png[Keys]
 
-Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
-
-Now, all of those keys, when pressed, generate waves of air molecules (i.e., alternations of high and low air pressure), otherwise known as sound waves, per the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves has some height, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. If curious as to why some air molecules sound better than others, you might like https://plus.maths.org/content/magical-mathematics-music[the magical mathematics of music].
-
-////
-https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
-////
-. Chronological sequence of pictures of the compression of air molecules for a sound wave moving in the rightward direction.
-image::MathematicsOfMusic.png[]
-
-Pianos, meanwhile, typically have as many as 88 keys, 52 of which are white. With only seven letters (A through G) with which to identify them, those letters necessarily identify multiple keys. And so notes are divided into octaves, groups of contiguous keys, each of which is numbered, per the below.
+Pianos typically have as many as 88 keys, 52 of which are white. With only seven letters (A through G) with which to identify them, those letters necessarily identify multiple keys. And so notes are divided into octaves, groups of contiguous keys, each of which is numbered, per the below.
 
 ////
 https://en.wikipedia.org/wiki/A440_(pitch_standard)#/media/File:Piano_Frequencies.svg
@@ -73,13 +63,21 @@ Not only are notes identified by letters (and accidentals), then, but also by oc
 
 image::octaves.png[]
 
-Among the most popular notes is Middle C, highlighted in cyan, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another popular note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz, which means that they oscilate up and down 440 times per second. If you consider a note just an abstraction for a sound wave, then, it's fair to say that the note itself has a frequency. Here's what 440 Hz sounds like:
+Now, all of those keys, when pressed, generate waves of air molecules (i.e., alternations of high and low air pressure), otherwise known as sound waves, per the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves travels at some rate, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. If curious as to why some air molecules sound better than others, you might like https://plus.maths.org/content/magical-mathematics-music[the magical mathematics of music].
 
-video::teb64y-D2sA[youtube]
+////
+https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
+////
 
-The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^^(n/12)^^ × 440, where _n_ is the number of half steps from that note to A4.
+.Chronological sequence of pictures of the compression of air molecules for a sound wave moving in the rightward direction. Source: https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf.
+[caption=""]
+image::MathematicsOfMusic.png[]
 
-Musicians, though, tend to write music not with letters or frequencies but with visual notations, otherwise known as sheet music, whereby notes are written on or between lines, otherwise known as a staff. The lines on or between which notes are written imply the notes' letters, per the below.
+Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second. If you consider a note just an abstraction for a sound wave, then, it's fair to say that the note itself has a frequency.
+
+The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^(_n_/12)^ × 440, where _n_ is the number of half steps from that note to A4.
+
+Musicians, though, tend to write music not with letters or frequencies but with visual notations, otherwise known as sheet music, whereby notes are written on or between lines, otherwise known as a staff. The lines on or between which notes are written imply the notes' letters and octaves, per the below.
 
 image::notes_octaves.png[]
 
