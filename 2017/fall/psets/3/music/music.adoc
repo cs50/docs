@@ -44,27 +44,59 @@ Makefile  helpers.c  helpers.h  notes.c  synthesize.c  songs/  wav.c  wav.h
 
 == Background
 
-Odds are you're familiar with this song or some variant thereof:
+A song is essentially a sequence of sounds, otherwise known as notes, each of which has some duration. In Western music, each of those notes is known by a letter, A through G. Those letters happen to correspond to the white keys on a piano, otherwise known as "natural keys," per the below.
+  
+image:keys.png[Keys]
 
-[quote]
-____
-Happy birthday to you,
+Among all of those white keys are black keys, otherwise known as accidentals. (Though white keys can be accidentals too.) Those black keys are identified by their relation to white keys, per the below. A black key immediately above (i.e., to the right of) a white key is identified by the same letter but with a suffix of &#9839; (often typed as #), otherwise known as a sharp; a white black key immediately below (i.e., to the left of) a white key is also identified by the same letter but with a suffix of &#9837; (often typed as a lowercase b), otherwise known as a flat.
 
-Happy birthday to you,
+image:keys_accidentals.png[Keys]
 
-Happy birthday dear someone,
+Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
 
-Happy birthday to you.
-____
+Now, all of those keys, when pressed, generate sound waves like the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves has some height, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. 
 
-Moreover, you likely associate these lyrics with particular sounds, otherwise known as "notes." And you might have even read those words at a particular rate, otherwise known as "tempo."
+TODO: image of sound wave here
+
+Pianos, meanwhile, typically have as many as 88 keys, 52 of which are white. With only seven letters (A through G) with which to identify them, those letters necessarily identify multiple keys. And so notes are divided into octaves, groups of contiguous keys, each of which is numbered, per the below.
+
+////
+https://en.wikipedia.org/wiki/A440_(pitch_standard)#/media/File:Piano_Frequencies.svg
+////
+image::520px-Piano_Frequencies.svg.png[]
+
+Not only are notes identified by letters (and accidentals), then, but also by octaves, per the below.
+
+image::octaves.png[]
+
+Among the most popular notes is Middle C, highlighted in cyan, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another popular note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz, which means that they oscilate up and down 440 times per second. If you consider a note just an abstraction for a sound wave, then, it's fair to say that the note itself has a frequency.
+
+The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^^(n/12)^^ × 440, where _n_ is the number of half steps from that note to A4.
+
+Musicians, though, tend to write music not with letters or frequencies but with visual notations, otherwise known as sheet music, whereby notes are written on or between lines, otherwise known as a staff. The lines on or between which notes are written imply the notes' letters, per the below.
+
+image::notes_octaves.png[]
+
+The duration of a note, meanwhile, is implied by its shape. For instance,
+
+* &#9834; is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la &#9835;;
+* &#9833; is a quarter note, the duration of which is twice that of an eighth note;
+* &#1D15E; is a half note, the duration of which is four times that of an eighth note; and
+* &#1D15D; is a whole note, the duration of which is eight times that of an eighth note.
+
+An absence of a note (i.e., silence) is considered a rest, the duration of which is also implied by its shape. For instance,
+
+* &#1D13E; is an eighth rest, the duration of which is identical to that of an eighth note;
+* &#1D13D; is a quarter rest, the duration of which is twice that of an eighth rest;
+* &#1D13C; is a half rest, the duration of which is four times that of an eighth rest; and
+* &#1D13B; is a whole rest, the duration of which is eight times that of an eighth rest.
+
+With these building blocks can you represent any song, like the below.
 
 image::bday.png[]
 ////
 audio::flat-happy-birthday.wav[]
 ////
-
-Odds are you've heard or sung some variant of this song on someone's birthday. 
 
 === Notes 
 
