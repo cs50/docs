@@ -91,79 +91,13 @@ An absence of a note (i.e., silence) is considered a rest, the duration of which
 * &#1D13C; is a half rest, the duration of which is four times that of an eighth rest; and
 * &#1D13B; is a whole rest, the duration of which is eight times that of an eighth rest.
 
-With these building blocks can you represent any song, like the below.
+With these building blocks can you represent a song like the below.
 
 image::bday.png[]
-////
+
+If unfamiliar, here's what that song sounds like (when its notes sound waves reach your ear).
+
 audio::flat-happy-birthday.wav[]
-////
-
-=== Notes 
-
-Think of a song as a sequence of sounds, otherwise known as notes, each of which is known by a letter, A through G. These notes happen to correspond to the white keys on a piano, otherwise known as "natural keys," per the image below.
-
-image:keys.png[Keys]
-
-Notice how each letter is assigned to multiple keys and, thus, notes. For instance, C appears at the beginning of this sequence of keys as well as just after the first B. In music theory, we say that these notes that have the same letter but represent different keys are members of the same "pitch class" but are in different "octaves." "Oct" implies eight, and indeed between identical letters is a sequence inclusive of eight keys (e.g., C, D, E, F, G, A, B, and C). Keys with identical letters will sound similar in quality, but the rightmost one will have a higher pitch!
-
-What about the black keys on a piano? To identify those, we need to use two "accidentals," symbols that indicate that a note should be moved to the immediate next or immediate prior note. Appending a letter with the "sharp" accidental (&#9839;), often represented in ASCII using the `#` symbol, means the note should be moved up one semitone (i.e., a single piano key), while appending a letter with the "flat" accidental (&#9837;), often represented in ASCII with `b`, means the note should be moved down one semitone.
-
-This gives us the picture below.
-
-image:keys_accidentals.png[Keys with Accidentals]
-
-Notice how the leftmost black key is called C&#9839; (i.e., "C sharp"), since it's one semitone up from C. But that same black key can also be called D&#9837; (i.e., "D flat"), since it's one semitone down from D. Similarly do other keys have multiple identities.
-
-=== Sheet Music
-
-Sheet music is a visual representation of the notes that compose a song. On sheet music, a song is divided into "measures," separated by vertical bars, as in the below. A measure is rather like a sentence, not of words but of notes.
-
-image:notes.png[Notes]
-
-The above piece of music has three measures, per the vertical bars separating the twelve notes into three groups of four. The `4/4` at the beginning of the piece is just a convention that means that each measure is divided into enough time for four "quarter notes" (i.e., a note that lasts a quarter of a measure.) Which note should be played depends upon the line or space between lines the note is drawn on. Each line or space between lines represents one of the natural keys on the piano, with notes on higher lines representing higher pitched notes. The letters correspond to each note are included here, though typically the letters themselves are omitted from the sheet music in practice.
-
-Notice again how there can be notes represented by the same letter, but in different octaves: each of C, D, E, F, and G appear twice in different octaves in the sheet music above. To be more precise about which note we wish to refer to, sometimes musicians will place an octave number after the letter to represent the note's octave as well as pitch.
-
-image:notes_octaves.png[Notes with Octaves]
-
-Sheet music also needs a way to represent accidentals, like the &#9839; and &#9837; symbols. For instance, to indicate the note G&#9839; in sheet music, musicians place a note on the line assigned to G, and then add a &#9839; symbol before it. The same can be done for &#9837;.
-
-What about representing a pause between notes? In music, a pause between notes is called a "rest." There are different symbols for different rests, depending on how long they are.
-
-Here's what some accidentals and rests might look like in a measure of sheet music:
-
-image:accidentals.png[Accidentals]
-
-Since the `4/4` time signature means that there should be four quarter notes in the measure, and since we can see that there are only three quarter notes in this measure, we can determine that the rest symbol in this measure of music must have a length equal to that of a quarter note.
-
-But what if we don't want all of our notes to have the same length? Well, just as a quarter note is a note which lasts a quarter of the measure, an eighth note is a note which lasts an eighth of a measure (assuming `4/4` time). Two eighth notes are typically represented as two notes connected by a bar atop both of them, like the below.
-
-image:eighth_notes.png[Eighth Notes]
-
-In this example, the first two notes (both C4) are eighth notes which each take up an eighth of the measure. The next four notes (two G4s followed by two A4s) are also eighth notes. That's a total of six eighth notes, which together take up 6/8 = 3/4 of the time in this measure. The remaining 1/4 of the time in this measure is taken by the final G4, a quarter note, which lasts twice as long as the other notes in this measure.
-
-=== Representing Notes
-
-Now, how do we represent sheet music using just ASCII symbols? Let's have every three characters stand for an eighth note. To represent the note G&#9839; in the fourth octave as an eighth note, we would thus write `G#4`. We could likewise represent the same note but flat as `Gb4`, and the natural version of the note as `G4_` (notice that we add an `_` at the end of the note to maintain a three-character representation of eighth notes.)
-
-What about notes that last more than an eighth of a measure? We can let the sequence `pass:[...]` indicate that a note should continue for an extra eighth note. So the notation `G5_pass:[...]` would represent the key G (natural) in the fifth octave, lasting one quarter note (two eighth notes). And the notation `D#4pass:[.........]` would represent the key D&#9839; in the fourth octave, lasting four eighth notes (half a measure).
-
-Finally, we can represent a rest lasting one eighth of a measure as a sequence of three spaces `pass:[   ]`. You can see some examples of representing notes and this rests in this way in the `songs/` directory. Each file represents a song, with all of the notes and rests represented in ASCII on a single line.
-
-Now, take a look at the sheet music below from a familiar children's song.
-
-image:twinkle.png[Twinkle]
-
-Using our ASCII representation of notes, we could represent the first measure as:
-
-[source]
-----
-C4_C4_G4_G4_A4_A4_G4_...
-----
-
-Now it's your turn to figure out the rest! Write out the ASCII representation for this song in a single line, and save it in the file `songs/twinkle.txt`.
-
-Finally, it's time to write a program that can take notes written out in this ASCII format, and convert them into a MIDI file that you can listen to.
 
 == Specification
 
