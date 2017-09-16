@@ -71,7 +71,7 @@ image::bday.png[]
 
 If unfamiliar, here's what that song sounds like (when its notes sound waves reach your ear).
 
-audio::flat-happy-birthday.wav[]
+audio::bday.wav[]
 
 == Distribution
 
