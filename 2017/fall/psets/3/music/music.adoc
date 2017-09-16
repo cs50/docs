@@ -54,11 +54,12 @@ image:keys_accidentals.png[Keys]
 
 Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
 
-Now, all of those keys, when pressed, waves of air molecules (i.e., alternations of high and low air pressure), otherwise known as sound waves, per the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves has some height, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. If curious as to why some air molecules sound better than others, you might like https://plus.maths.org/content/magical-mathematics-music[the magical mathematics of music].
+Now, all of those keys, when pressed, generate waves of air molecules (i.e., alternations of high and low air pressure), otherwise known as sound waves, per the below. If those sound waves reach your ear, you'll hear sounds. Each of those sound waves has some height, otherwise known as its frequency. The higher a sound wave's frequency, the higher the pitch of sound you'll hear; the lower a sound wave's frequency, the lower the pitch of sound you'll hear. If curious as to why some air molecules sound better than others, you might like https://plus.maths.org/content/magical-mathematics-music[the magical mathematics of music].
 
 ////
 https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
 ////
+. Chronological sequence of pictures of the compression of air molecules for a sound wave moving in the rightward direction.
 image::MathematicsOfMusic.png[]
 
 Pianos, meanwhile, typically have as many as 88 keys, 52 of which are white. With only seven letters (A through G) with which to identify them, those letters necessarily identify multiple keys. And so notes are divided into octaves, groups of contiguous keys, each of which is numbered, per the below.
