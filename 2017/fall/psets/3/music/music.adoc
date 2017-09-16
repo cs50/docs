@@ -44,7 +44,7 @@ https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
 [caption=""]
 image::MathematicsOfMusic.png[]
 
-Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan above, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second.
+Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan earlier, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, highlighted in yellow earlier, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second.
 
 The frequencies of one octave's notes differ from those of adjacent octaves' notes by a factor of two. For instance, the frequency of A3 is 220 Hz (i.e., half that of A4), while the frequency of A5 is 880 Hz (i.e., twice that of A4). More generally, the frequency, _f_, of some note is 2^_n_/12^ × 440, where _n_ is the number of semitones from that note to A4, where _n_ is negative if that note is below (i.e., to the left of) A4 and positive if that note is above (i.e., to the right of) A4.
 
