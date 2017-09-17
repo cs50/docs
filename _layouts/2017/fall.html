@@ -76,16 +76,14 @@
             /* base64 -w0 woff/BravuraText.woff > _includes/BravuraText.woff.b64 /*
             /* https://w3c.github.io/smufl/gitbook/tables/individual-notes.html */
             /* https://w3c.github.io/smufl/gitbook/tables/rests.html */
-            .music
-            {
+            .music {
                 font-family: "Bravura Text";
                 font-size: 2em;
                 line-height: 0.5em;
                 position: relative;
                 top: 0.25em;
             }
-            @font-face
-            {
+            @font-face {
                 font-family: "Bravura Text";
                 src: url("data:application/x-font-woff;base64,{% include BravuraText.woff.b64 %}") format("woff");
             }
@@ -93,6 +91,12 @@
         </style>
         <style>
 
+            /* wrap long URLs */
+            * {
+                word-break: break-word;
+            }
+
+            /* expand horizontally */
             audio {
                 width: 100%;
             }
