@@ -31,8 +31,17 @@
             });
         </script>
 
-        <!-- mathjax -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+        <script>
+        
+            {% raw %}
+            /* wget https://raw.githubusercontent.com/pkra/MathJax-single-file/master/dist/TeXCommonHTMLTeX/MathJax.min.js */
+            /* sed -i '1s/^/{% raw %}/' MathJax.min.js */
+            /* sed -i '1s/$/{% endraw %}/' MathJax.min.js */
+            /* https://github.com/pkra/MathJax-single-file */
+            {% endraw %}
+            {% include MathJax.min.js %}
+
+        </script>
 
         <script>
 
