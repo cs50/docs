@@ -102,7 +102,7 @@ else:
 ----
 ** `elif` is the keyword in Python that means "else if".
 
-= Writing Code
+== Writing Code
 
 * We can use the [CS50 IDE](http://cs50.io), an integrated development environment that allows us to edit and run code in a standardized setting.
 * CS50's IDE is a customized version of a third-party service, Cloud9, and since it runs in the cloud, we can continue our work anywhere in the world.

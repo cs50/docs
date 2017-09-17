@@ -152,4 +152,4 @@ Style::
 
 All students, whether or not taking the course for a letter grade, must ordinarily submit this final project to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-include::../honesty.adoc[]
+include::../../honesty.adoc[]
