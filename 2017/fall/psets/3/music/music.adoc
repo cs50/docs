@@ -250,7 +250,7 @@ Complete the implementation of `duration` in `helpers.c`. Recall that this funct
 
 Finally, complete the implementation of `frequency` in `helpers.c`. Recall that this function should take as input as a `string` a note (e.g., `A4`) and return its corresponding frequency in hertz as an `int`.
 
-Recall that:
+And recall that:
 
 . The frequency, _f_, of some note is 2^_n_/12^ × 440, where _n_ is the number of semitones from that note to `A4`.
 . Each key on a piano is said to be one semitone, otherwise known as a half step, away from its adjacent neighbor, whether white or black.
@@ -260,6 +260,7 @@ In implementing this function, you might find `pow` and `round`, both declared i
 
 == Walkthrough
 
+[role=embed-responsive-21by9]
 video::PwrtaYvm1K0[youtube,list=PLhQjrBD2T380boRF-5b7Dow2opWBbZhLH]
 
 == Testing
