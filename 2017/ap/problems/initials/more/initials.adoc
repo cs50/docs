@@ -162,7 +162,7 @@ Execute `update50` again to ensure that your IDE is up-to-date.
 === Step 2 of 3
 
 * Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
-** Be sure that `initials.c` is in `~/workspace/pset2/initials/`, as with:
+** Be sure that `initials.c` is in `~/workspace/chapter2/initials/`, as with:
 +
 [source]
 ----
