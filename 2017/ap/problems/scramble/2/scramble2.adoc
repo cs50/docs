@@ -34,7 +34,7 @@ Time:  30
 
 * This problem requires that you have completed http://docs.cs50.net/2017/ap/problems/scramble/1/scramble1.html[Scramble (Part 1)]. Unfortunately we are not able to provide a partial staff solution as the basis for this particular problem.
 
-include::../../honesty.adoc[]
+include::../../../honesty.adoc[]
 
 == Assessment
 
