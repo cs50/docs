@@ -19,7 +19,7 @@ Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], h
 * http://www.w3schools.com/tags/ref_httpmethods.asp
 * http://www.w3schools.com/tags/tag_form.asp
 
-include::../../honesty.adoc[]
+include::../../../honesty.adoc[]
 
 == Assessment
 
