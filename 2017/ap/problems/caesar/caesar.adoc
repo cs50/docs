@@ -248,7 +248,7 @@ ls
 
 === Step 3 of 3
 
-* To submit `caesar` (if you implemented it), execute:
+* To submit `caesar`, execute:
 +
 [source]
 ----

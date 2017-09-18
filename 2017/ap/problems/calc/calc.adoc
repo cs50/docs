@@ -224,7 +224,7 @@ ls
 
 === Step 3 of 3
 
-* To submit the less-comfortable version of `initials` (if you implemented it), execute
+* To submit `calc`, execute
 +
 [source]
 ----
