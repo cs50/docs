@@ -451,3 +451,37 @@ Ultimately, you are welcome to implement `search` iteratively (with a loop) or r
 For `sort`, odds are you'll want to implement bubble sort, selection sort, or insertion sort! Just realize that there's no one "right" way to implement any of those algorithms; variations abound. In fact, you're welcome to improve upon them as you see fit, so long as your implementation remains in _O_(_n_^2^). Although you may not alter our declaration of `sort`, you're welcome to define your own function(s) in `helpers.c` that `sort` itself may then call.
 
 We leave it to you to determine how best to test your implementation of `search` and `sort`. But don't forget that `eprintf` is your friend while debugging! And don't forget that you can generate the same sequence of pseudorandom numbers again and again by explicitly specifying ``generate``'s seed.
+
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `find.c` is in `~/workspace/chapter3/find`, as with:
+
+[source]
+----
+cd ~/workspace/chapter3/find
+ls
+----
+
+If `find.c` is not in `~/workspace/chapter3/find`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `find`, execute
++
+[source]
+----
+cd ~/workspace/chapter3/find
+submit50 cs50/2017/ap/find/less
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
+
+This was Find.
+
