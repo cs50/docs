@@ -232,3 +232,51 @@ check50 cs50/2017/ap/fifteen
 ----
 ~cs50/chapter3/fifteen
 ----
+
+== How to Submit
+
+=== Step 1 of 3
+
+* Update your IDE:
++
+[source]
+----
+update50
+----
+=== Step 2 of 3
+
+Ensure you have all of the files below:
+
+* fifteen.c
+* Makefile
+* questions.txt
+
+Be sure that each of your files are in `~/workspace/chapter3/fifteen`, as with:
+
+[source]
+----
+cd ~/workspace/chapter3/fifteen
+ls
+----
+
+If any file is not in `~/workspace/chapter3/fifteen`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+* Submit `fifteen`:
++
+[source]
+----
+cd ~/workspace/chapter3/fifteen/
+submit50 cs50/2017/ap/fifteen
+----
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Fifteen.
+

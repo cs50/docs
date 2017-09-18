@@ -299,7 +299,7 @@ cd ~/workspace/chapter2/friends
 ls
 ----
 
-If any file is not in `~/workspace/chapter2/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/workspace/chapter2/friends`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
