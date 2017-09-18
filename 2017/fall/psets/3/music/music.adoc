@@ -54,7 +54,7 @@ image::notes_octaves.png[]
 
 The duration of a note, meanwhile, is implied by its shape. For instance,
 
-* [music]#&#xE1D7;# is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la &#9835;;
+* [music]#&#xE1D7;# is an eighth note, though when adjacent to one or more other eighth notes, they're often beamed, a la [music]#&#xE1F1;&#xE1F8;&#xE1F3;#;
 * [music]#&#xE1D5;# is a quarter note, the duration of which is twice that of an eighth note;
 * [music]#&#xE1D5; &#xE1E7;# is a dotted quarter note, the duration of which is three times that of an eighth note;
 * [music]#&#xE1D3;# is a half note, the duration of which is four times that of an eighth note; and
