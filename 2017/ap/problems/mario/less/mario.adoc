@@ -146,7 +146,7 @@ cd ~/workspace/chapter1/mario
 ls
 ----
 
-If `mario.c` is not in `~/workspace/chapter1/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `mario.c` is not in `~/workspace/chapter1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
