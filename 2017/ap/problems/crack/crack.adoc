@@ -144,7 +144,7 @@ ls
 ----
 cd ~/workspace/chapter2/crack/
 submit50 cs50/2017/ap/crack
-——
+----
 +
 inputting your GitHub username and GitHub password as prompted.
 
