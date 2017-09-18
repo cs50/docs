@@ -30,7 +30,7 @@ Time:  30
 * Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
 * Chapters 13, 15, and 18 of _Programming in C_.
 
-include::../../honesty.adoc[]
+include::../../../honesty.adoc[]
 
 == Assessment
 
