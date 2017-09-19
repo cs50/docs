@@ -64,7 +64,7 @@ How many times did you change the text, or font, or image size? Imagine if each 
 
 == Your Turn
 
-Now that we've identified a couple of simulations and their uses, it's your turn! In this writing problem, we'd like you to research a computer simulation of your choice. Feel free to choose any sort of program, from something esoteric (like flight simulators) to common (like t-shirt designing software). Just make sure that you can explain how the simulation is a computer program, and the benefits of using it.
+Now that we've identified a couple of simulations and their uses, it's your turn! In this writing problem, we'd like you to research a computer simulation of your choice. Feel free to choose any sort of program, from something esoteric (like flight simulators) to common (like t-shirt designing software). Just make sure that you can explain how the simulation is a computer program, and the benefits of using it. First open a text editor and create a file called ‘simulate’ (be sure that the file extension is either .doc, .docx, .pdf, or .txt)
 
 Identify the users of the simulation, and the situations in which it is used.
 
@@ -94,5 +94,24 @@ Ponder that. Was someone programming you to write this problem?
   <img src="http://media4.giphy.com/media/xT0GqtcVR0jOXzmmPK/giphy.gif" width="960"/>
 ++++
 
+== How to Submit
+
+=== Step 1 of 3
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/simulate` and click "Create branch".
+
+=== Step 2 of 3
+
+Click the button that says "Upload files". Drag your `simulate.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 3 of 3
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Simulate!
