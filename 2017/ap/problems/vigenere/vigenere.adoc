@@ -191,7 +191,7 @@ ls
 
 === Step 3 of 3
 
-* To submit `vigenere` (if you implemented it), execute:
+* To submit `vigenere`, execute:
 +
 [source]
 ----

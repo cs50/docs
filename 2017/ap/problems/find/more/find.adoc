@@ -451,6 +451,39 @@ Ultimately, you are welcome to implement `search` iteratively (with a loop) or r
 
 We leave it to you to determine how best to test your implementation of `search` and `sort`. But don't forget that `eprintf` is your friend while debugging! And don't forget that you can generate the same sequence of pseudorandom numbers again and again by explicitly specifying ``generate``'s seed.
 
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `find.c` is in `~/workspace/chapter3/find`, as with:
+
+[source]
+----
+cd ~/workspace/chapter3/find
+ls
+----
+
+If `find.c` is not in `~/workspace/chapter3/find`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `find`, execute
++
+[source]
+----
+cd ~/workspace/chapter3/find
+submit50 cs50/2017/ap/find/more
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
+
+This was Find.
+
 == FAQs
 
 _None so far! Reload this page periodically to check if any arise!_

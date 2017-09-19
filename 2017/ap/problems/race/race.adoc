@@ -292,4 +292,37 @@ passing in appropriate command-line arguments.
 
 In no part of this problem are you expected to optimize your runtimes for any of these algorithms (beyond, of course, implementing them correctly). Rather, after you get them implemented you should test different arrays of different sizes and different configurations to see under which circumstances each algorithm "shines". So you can see actual differences between these algorithms, we recommend that your `size` argument be at least `1000`, as that way they'll tend to take at least a few thousandths of a second to sort.
 
+== How to Submit
+
+=== Step 1 of 2
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 2
+
+* Recall that you were asked to implement the `sort race`. 
+** Be sure that the following files exist in `~/workspace/chapter3/race/`:
+* `Makefile`  
+* `helpers.c`  
+* `helpers.h`
+* `race.o` 
+as with:
+
++
+[source]
+----
+cd ~/workspace/chapter3/race/
+ls
+----
+
+
+Since there is no way to automatically check for correctness here this project is graded on completion.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+
 This was Sort Race.

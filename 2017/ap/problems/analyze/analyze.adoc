@@ -38,7 +38,7 @@ Odds are, particularly if you find yourself among those less comfortable and thi
 
 In this writing problem, we want to provide you with a structured opportunity to perform some of this self-reflection. There are no wrong or right answers to any portion of this problem; rather, the most important thing is that you analyze your own experiences in CS50 AP over the last several weeks or months with a critical eye.
 
-In 500-1,000 words, prepare an essay on your experience, expectations, growths, triumphs, and struggles up through this point in the course. You can spend as much time as you feel is appropriate on each of these questions, but over the course of your writing you should touch on at least the following topics:
+Open a text editor and create a file called ‘analyze’ (be sure that the file extension is either .doc, .docx, .pdf, or .txt). In 500-1,000 words, prepare an essay on your experience, expectations, growths, triumphs, and struggles up through this point in the course. You can spend as much time as you feel is appropriate on each of these questions, but over the course of your writing you should touch on at least the following topics:
 
 * Discuss your initial expectations of this course, and about how the course has either aligned with or deviated from these expectations.
 * Write about at least one programming problem and at least one writing problem that you enjoyed or did not enjoy. What specifically about that problem did you enjoy or not enjoy, and why do you feel that way?
@@ -49,5 +49,25 @@ In 500-1,000 words, prepare an essay on your experience, expectations, growths, 
 * Talk about each of these with a classmate, and compare notes. How have your experiences differed and how have they aligned?
 
 This metacognitive assessment is but one step in not necessarily becoming a better programmer or a better computer scientist, but really becoming a better learner. The better you understand your thought process, the easier it becomes to determine how to best understand something that may initially confound you. Once you've figured that out, your horizons can expand infinitely.
+
+== How to Submit
+
+=== Step 1 of 3
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/analyze` and click "Create branch".
+
+=== Step 2 of 3
+
+Click the button that says "Upload files". Drag your `analyze.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 3 of 3
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Analyze This.
