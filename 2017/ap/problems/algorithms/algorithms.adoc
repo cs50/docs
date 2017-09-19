@@ -160,7 +160,7 @@ See what we did there?
 
 This process may actually be more challenging than it first appears, and that's okay. We promise though, once you start writing source code you'll have access to a new (but limited!) toolkit of keywords and commands that will make precise algorithm-writing substantially easier!
 
-==How to Submit
+== How to Submit
 
 === Step 1 of 3
 
