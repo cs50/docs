@@ -8,7 +8,7 @@ layout: 2016/fall
 == tl;dr
  
 [start=0]
-. Watch Week 3's lecture.
+. Watch Week 2's lecture.
 . Make beautiful music. 
 . Submit your code.
 . Submit a form.
