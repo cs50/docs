@@ -107,7 +107,7 @@ A schedule of sections, subject to change, appears below. Recordings of the sect
 
 | https://www.youtube.com/watch?v=RJabe6tN3_c[C] | Fri 9/8*
 | https://vault.cs50.net/2017/fall/e50/section/2[C, continued] | week of Sun 9/10
-| Algorithms | week of Sun 9/17
+| https://vault.cs50.net/2017/fall/e50/section/3[Algorithms] | week of Sun 9/17
 | File I/O | week of Sun 9/24
 | Data Structures | week of Sun 10/1
 | Review for Test | week of Sun 10/8
