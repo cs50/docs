@@ -8,7 +8,7 @@ layout: 2016/fall
 == tl;dr
  
 [start=0]
-. Watch https://video.cs50.net/2017/fall/lectures/2[Week 2's lecture].
+. Watch Week 1's second lecture.
 . Choose two out of three adventures:
 +
 --
