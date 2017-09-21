@@ -21,6 +21,6 @@ exclude:
 - Gemfile
 - Makefile
 - README.md
-gems:
+plugins:
 - jekyll-asciidoc
 - jekyll-redirect-from
