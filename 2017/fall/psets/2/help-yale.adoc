@@ -4,8 +4,6 @@ published: false
 
 == Help
 
-For help with Week 2 and Problem Set 2:
- 
 * Attend the *walkthrough* on Thu 9/14, 4pm – 5:15pm, in SSS 114.
 * Watch Zamyla's *walkthroughs* herein.
 * Attend your TA's *section* (or another if you have an unavoidable conflict).

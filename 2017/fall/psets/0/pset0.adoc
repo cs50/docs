@@ -14,8 +14,6 @@ layout: 2016/fall
 
 == Help
   
-For help with Week 0 and Problem Set 0:
-    
 * Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
 * Attend office hours, per the schedule on the course's website.
 
