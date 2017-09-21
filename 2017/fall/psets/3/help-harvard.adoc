@@ -4,8 +4,6 @@ published: false
 
 == Help
 
-For help with Week 3 and Problem Set 3:
- 
 * Watch Brian's *walkthroughs* herein.
 * Attend your TF's *section* (or another if you have an unavoidable conflict).
 * Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
