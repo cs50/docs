@@ -296,24 +296,6 @@ Alright, ready to go?
 
 video::u9-1U1Rgo1o,okH8f9xl0uY,hsruECgJJVQ,O3tErLhuEmY[youtube]
 
-**In the walkthrough for `load`, at https://www.youtube.com/watch?time_continue=373&v=0x9rSfV85g8[00:06:13], note that:**
-
-[source,c]
-----
-strcpy(node1->word = "Hello");
-strcpy(node2->word = "Wello");
-----
-
-**should be:**
-
-[source,c]
-----
-strcpy(node1->word, "Hello");
-strcpy(node2->word, "Wello");
-----
-
-**Video will be fixed shortly!**
-
 == Hints
 
 Be sure to `free` in `unload` any memory that you allocated in `load`! Recall that `valgrind` is your newest best friend. Know that `valgrind` watches for leaks while your program is actually running, so be sure to provide command-line arguments if you want `valgrind` to analyze `speller` while you use a particular `dictionary` and/or text, as in the below. Best to use a small text, though, else `valgrind` could take quite a while to run.
