@@ -302,6 +302,8 @@ open test.wav
 
 or by double-clicking `test.wav` in CS50 IDE's file browser. Listen to the song to see (well, hear) if it sounds like (you think) it should!
 
+*Be sure to choose a different file name for each WAV file you synthesize, else your browser might cache (i.e., remember) and play an old version of a newly synthesized WAV file.*
+
 Typing notes into `synthesize`, though, will quickly become tedious. So you can instead leverage "input redirection" in order to pass whole files into `synthesize` as input. For instance, to pass all of the notes in `jeopardy.txt` into `synthesize` at once, execute:
 
 [source]
