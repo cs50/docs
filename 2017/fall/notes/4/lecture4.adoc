@@ -186,7 +186,8 @@ s [    ]
 ----
 * Assuming that these bytes are numbered something like the above, `s` will contain the value `100`, essentially pointing to the first character. And recall that we know where the string ends, thanks to the use of our NUL character, `\0`.
 * Now, we understand why comparing `s` and `t` will always show that they're different, since they're two different addresses. Each time we call `get_string`, it stores the input from the user in a different location in memory. So `s` might have a value like `100`, while `t` has a value like `300`, or wherever the second string was stored.
-* So, to come full circle, `s` is not actually a `string`, but a ``char *``, the address of a specific character. And in C, we call variables that store addresses of other variables *pointers*. (The `*` symbol indicates that a variable is a pointer to some other variable type, so we could have `int *` in addition to `char *` and others.)
+* So, to come full circle, `s` is not actually a `string`, but a ``char *``, the address of a specific character.
+* And in C, we call variables that store addresses of other variables *pointers*. (The `*` symbol indicates that a variable is a pointer to some other variable type, so we could have `int *` in addition to `char *` and others.)
 * `strcmp`, we can now infer, must be comparing strings character by character, by going to the addresses that `s` and `t` point to.
 * And in `copy0`, when we created our variable `t` and set it to what `s` was, we were just creating another pointer that pointed to the same string in memory. So when we tried to capitalize `t`, we were capitalizing the one string that both `s` and `t` pointed to.
 
@@ -282,7 +283,8 @@ for (int i = 0, n = strlen(s); i < n; i++)
 }
 ...
 ----
-** Here, at each index `i`, we are adding that number to `s`, to create an address with a higher value than `s`, so we can get to each character in the string directly with those values. And we have to use the ` * ` notation around that address to get the value stored at that address. (` * ` is also used, confusingly, when declaring a variable that the variable should be a pointer. But in this case, and other cases, it is used to go to some address and read the value there.)
+** Here, at each index `i`, we are adding that number to `s`, to create an address with a higher value than `s`, so we can get to each character in the string directly with those values. And we have to use the `*` notation around that address to get the value stored at that address.
+** (`*` is also used, confusingly, when declaring a variable that the variable should be a pointer. But in this case, and other cases, it is used to go to some address and read the value there.)
 * We can now start to slowly take away our training wheels of `get_int` by writing something like this:
 +
 [source, c]
