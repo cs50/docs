@@ -23,7 +23,7 @@ $ unzip whodunit.zip
 $ rm whodunit.zip
 $ cd whodunit
 $ ls
-bmp.h  clue.bmp  copy.c  large.bmp  small.bmp  smiley.bmp
+README.md  bmp.h  clue.bmp  copy.c  large.bmp  small.bmp  smiley.bmp
 ----
 
 == Background
