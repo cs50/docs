@@ -80,7 +80,7 @@ Okay, let's transition from theory to practice. Within CS50 IDE's file browser, 
 
 image:smiley.png[smiley.png]
 
-Okay, let's now look at the underlying bytes that compose `smiley.bmp`. Within CS50 IDE's file browser, right- or control-click *smiley.bmp* and select *Open hex* in order to view the file's bytes in hexadecimal (i.e., base-16). In the tab that appears, change *Bytes per row* to *24*, change *Bytes per column* to *3*, and change *Bytes per offset* to *54*. Then click *Set*. You should see the below, byte 54 onward of `smiley.bmp`. (Recall that a 24-bit BMP's first 14 + 40 = 54 bytes are filled with metadata, so we're simply ignoring that for now.) As before, we've highlighted in red all instances of `0000ff`.
+Okay, let's now look at the underlying bytes that compose `smiley.bmp`. Within CS50 IDE's file browser, right- or control-click *smiley.bmp* and select *Open hex* in order to view the file's bytes in hexadecimal (i.e., base-16). In the tab that appears, change *Bytes per row* to *24*, change *Bytes per column* to *3*, and change *Bytes per offset* to *54*. Then click *Set*. **If unable to change these values, try clicking View > Night Mode and try again**. You should see the below, byte 54 onward of `smiley.bmp`. (Recall that a 24-bit BMP's first 14 + 40 = 54 bytes are filled with metadata, so we're simply ignoring that for now.) As before, we've highlighted in red all instances of `0000ff`.
 
 [source,subs=quotes]
 ----
