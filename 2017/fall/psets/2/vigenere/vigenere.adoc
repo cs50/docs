@@ -1,5 +1,5 @@
 ---
-title: Vigenère
+layout: 2017/fall
 ---
 
 = Vigenère
