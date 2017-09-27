@@ -1,0 +1,10 @@
+
+MISSPELLED WORDS
+
+street's
+Amennnn
+street's
+
+WORDS MISSPELLED:     3
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        298
