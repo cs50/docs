@@ -177,7 +177,7 @@ To evaluate the style of your code, execute the below from inside `~/workspace/p
 style50 hello.c
 ----
 
-If there's room for improvement in your code's style, highlighted in red will be any characters you should delete, and highlighted in red will be any characters you should add.
+If there's room for improvement in your code's style, highlighted in red will be any characters you should delete, and highlighted in green will be any characters you should add.
 
 == Staff Solution
 
