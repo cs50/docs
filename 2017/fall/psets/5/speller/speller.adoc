@@ -13,13 +13,13 @@ $ [underline]#./speller texts/lalaland.txt#
 MISSPELLED WORDS
 
 [...]
-Bigglesworth
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHT
 [...]
-Virtucon
+Shangri
 [...]
-friggin'
+fianc
 [...]
-trippy
+Sebastian's
 [...]
 
 WORDS MISSPELLED:
