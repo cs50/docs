@@ -2,14 +2,14 @@
 ---
 
 = Speller
- 
+
 == tl;dr
 
 Implement a program that spell-checks a file, per the below.
 
 [source,subs=quotes]
 ----
-$ [underline]#./speller texts/austinpowers.txt#
+$ [underline]#./speller texts/lalaland.txt#
 MISSPELLED WORDS
 
 [...]
@@ -182,7 +182,7 @@ where `dictionary` is assumed to be a file containing a list of lowercase words,
 ./speller text
 ----
 
-will be equivalent to running 
+will be equivalent to running
 
 [source]
 ----
@@ -204,36 +204,36 @@ Odds are, you didn't spend enough time looking over `speller.c`. Go back one squ
 
 ==== `texts/`
 
-So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _Austin Powers: International Man of Mystery_, a sound bite from Ralph Wiggum, three million bytes from Tolstoy, some excerpts from Machiavelli and Shakespeare, the entirety of the King James V Bible, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `pset5` directory.
+So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _La La Land_, a sound bite from Ralph Wiggum, three million bytes from Tolstoy, some excerpts from Machiavelli and Shakespeare, the entirety of the King James V Bible, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `pset5` directory.
 
 Now, as you should know from having read over `speller.c` carefully, the output of `speller`, if executed with, say,
 
 [source]
 ----
-./speller texts/austinpowers.txt
+./speller texts/lalaland.txt
 ----
 
 will eventually resemble the below. For now, try executing the staff's solution (using the default dictionary) with the below.
 
 [source]
 ----
-~cs50/pset5/speller texts/austinpowers.txt
+~cs50/pset5/speller texts/lalaland.txt
 ----
 
-Below's some of the output you'll see. For amusement's sake, we've excerpted some of our favorite "misspellings." And lest we spoil the fun, we've omitted our own statistics for now.
+Below's some of the output you'll see. For information's sake, we've excerpted some examples of "misspellings." And lest we spoil the fun, we've omitted our own statistics for now.
 
 [source]
 ----
 MISSPELLED WORDS
 
 [...]
-Bigglesworth
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHT
 [...]
-Virtucon
+Shangri
 [...]
-friggin'
+fianc
 [...]
-trippy
+Sebastian's
 [...]
 
 WORDS MISSPELLED:
@@ -274,7 +274,7 @@ Alright, the challenge now before you is to implement `load`, `check`, `size`, a
 * You may search for (good) hash functions online, so long as you cite the origin of any hash function you integrate into your own code.
 
 Alright, ready to go?
- 
+
 . Implement `load`.
 . Implement `check`.
 . Implement `size`.
@@ -304,28 +304,28 @@ help50 valgrind ./speller texts/ralph.txt
 
 == Testing
 
-How to check whether your program is outting the right misspelled words? Well, you're welcome to consult the "answer keys" that are inside of the `keys` directory that's inside of your `speller` directory. For instance, inside of `keys/austinpowers.txt` are all of the words that your program _should_ think are misspelled. 
+How to check whether your program is outting the right misspelled words? Well, you're welcome to consult the "answer keys" that are inside of the `keys` directory that's inside of your `speller` directory. For instance, inside of `keys/lalaland.txt` are all of the words that your program _should_ think are misspelled.
 
 You could therefore run your program on some text in one window, as with the below.
 
 [source]
 ----
-./speller texts/austinpowers.txt
+./speller texts/lalaland.txt
 ----
 
 And you could then run the staff's solution on the same text in another window, as with the below.
 
 [source]
 ----
-~cs50/pset5/speller texts/austinpowers.txt
+~cs50/pset5/speller texts/lalaland.txt
 ----
 
 And you could then compare the windows visually side by side. That could get tedious quickly, though. So you might instead want to "redirect" your program's output to a file (just like you may have done with `generate` in Problem Set 3), as with the below.
 
 [source]
 ----
-./speller texts/austinpowers.txt > student.txt
-~cs50/pset5/speller texts/austinpowers.txt > staff.txt
+./speller texts/lalaland.txt > student.txt
+~cs50/pset5/speller texts/lalaland.txt > staff.txt
 ----
 
 You can then compare both files side by side in the same window with a program like `diff`, as with the below.
@@ -339,7 +339,7 @@ Alternatively, to save time, you could just compare your program's output (assum
 
 [source]
 ----
-diff -y student.txt keys/austinpowers.txt
+diff -y student.txt keys/lalaland.txt
 ----
 
 If your program's output matches the staff's, `diff` will output two columns that should be identical except for, perhaps, the running times at the bottom. If the columns differ, though, you'll see a `>` or `|` where they differ. For instance, if you see
@@ -348,15 +348,15 @@ If your program's output matches the staff's, `diff` will output two columns tha
 ----
 MISSPELLED WORDS                                                MISSPELLED WORDS
 
-FOTTAGE                                                         FOTTAGE
-INT                                                             INT
-                                                              > EVIL'S
-s                                                               s
-                                                              > EVIL'S
-Farbissina                                                      Farbissina
+TECHNO                                                          TECHNO
+L                                                               L
+                                                              > Thelonious
+Prius                                                           Prius
+                                                              > MIA
+L                                                               L
 ----
 
-that means your program (whose output is on the left) does not think that `EVIL's` is misspelled, even though the staff's output (on the right) does, as is implied by the absence of `EVIL's` in the lefthand column and the presence of `EVIL's` in the righthand column.
+that means your program (whose output is on the left) does not think that `Thelonious` or `MIA` is misspelled, even though the staff's output (on the right) does, as is implied by the absence of, say, `Thelonious` in the lefthand column and the presence of `Thelonious` in the righthand column.
 
 === `check50`
 
@@ -375,5 +375,5 @@ How to assess just how fast (and correct) your code is? Well, as always, feel fr
 
 [source]
 ----
-~cs50/pset5/speller texts/austinpowers.txt
+~cs50/pset5/speller texts/lalaland.txt
 ----
