@@ -7,7 +7,7 @@
 [t=0m0s]
 == Structs
 
-* In Problem Set 5, we will implement a program to filter out red from an image, so we can see a different image underneath.
+* In Problem Set 4, we will implement a program to filter out red from an image, so we can see a different image underneath.
 * To do that, we had to understand the file headers of a bitmap file, and use a `struct`, or a structure, where we can create our own data type, composed of other data types:
 +
 [source, c]
