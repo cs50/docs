@@ -179,17 +179,17 @@ int main(void)
 ----
 * Then, when we run valgrind, we would see output like the following:
 +
-image::valgrind_1.png[alt="Valgrind output", width=500]
+image::valgrind_1.png[alt="Valgrind output", width=800]
 +
-image::valgrind_2.png[alt="Valgrind output", width=500]
+image::valgrind_2.png[alt="Valgrind output", width=800]
 ** Most of the output we can ignore, but we notice that there is an `Invalid write of size 4` somewhere. An `int` is 4 bytes, and we are indeed writing somewhere that we shouldn't.
 * In fact, we can run `help50 valgrind ./memory`, and see highlights and explanations:
 +
-image::help50.png[alt="help50 valgrind output", width=500]
+image::help50.png[alt="help50 valgrind output", width=800]
 ** We change the line `x[10] = 0;` to read `x[9] = 0;`, correcting setting the last element of the array.
 * Once we've fixed that error, we see there are still other errors, so we run `help50 valgrind ./memory` again:
 +
-image::help50_2.png[alt="help50 valgrind output", width=500]
+image::help50_2.png[alt="help50 valgrind output", width=800]
 ** On line 7, we used `malloc` to allocate memory. When we finish using it, it's best to call `free` (in this case we would have the line `free(x)`), to mark that chunk of memory as free.
 * Finally, if we looked back to the original `valgrind` output, we see lines like `at 0x42D50F: f` and `by 0x42D533: main`, and those hexadecimal numbers are the memory addresses where those functions are.
 * Another idea for debugging is to have a rubber duck on your desk, to which you explain your own code, and often that process is enough to help you notice bugs or think of a better solution to a problem.
