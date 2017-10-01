@@ -320,7 +320,7 @@ And you could then run the staff's solution on the same text in another window, 
 ~cs50/pset5/speller texts/lalaland.txt
 ----
 
-And you could then compare the windows visually side by side. That could get tedious quickly, though. So you might instead want to "redirect" your program's output to a file (just like you may have done with `generate` in Problem Set 3), as with the below.
+And you could then compare the windows visually side by side. That could get tedious quickly, though. So you might instead want to "redirect" your program's output to a file, as with the below.
 
 [source]
 ----
