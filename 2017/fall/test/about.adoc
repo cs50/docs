@@ -8,7 +8,7 @@ Released at noon on Fri 10/13 and due by noon on Mon 10/16 is a take-home test t
 
 The test will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 72!) hours on the test.
 
-The course's heads will hold a course-wide review session for the test on Wed 10/11 at 6:00pm in Science Center B; it will be streamed live via the course's website and will be available on demand immediately afterward via the same. Sections on Mon 10/9, Tue 10/10, and Wed 10/11 will also be opportunities for review. Office hours on Wed 10/11 and Thu 10/12 will be additional opportunities for Q&A.
+The course's heads will hold a course-wide review session for the test on Wed 10/11, 6pm–8pm, in Science Center B; it will be streamed live via the course's website and will be available on demand immediately afterward via the same. Sections on Mon 10/9, Tue 10/10, and Wed 10/11 will also be opportunities for review. Office hours on Wed 10/11 and Thu 10/12 will be additional opportunities for Q&A.
 
 Among the test's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. The test's format will resemble that of http://cdn.cs50.net/2016/fall/test/test.html[Fall 2016's test], with short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE). Expect to spend an average of thirty minutes per question.
 
