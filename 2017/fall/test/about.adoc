@@ -4,13 +4,13 @@ toc: false
 
 = About Test
 
-Released at noon on Fri 10/13 and due by noon on Mon 10/16 is a take-home test that will cover Weeks 0 through 4 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course’s heads.
+Released at noon on Fri 10/13 and due by noon on Mon 10/16 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
 
 The test will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 72!) hours on the test.
 
-The teaching fellows will hold a course-wide review session for the test on Wed 10/12 from 1:00pm until 2:30pm in Sanders Theatre; it will be streamed live via the course's website and will be available on demand immediately afterward via the same. Sections on Mon 10/9, Tue 10/10, and Wed 10/11 will also be opportunities for review. Office hours on Wed 10/11 and Thu 10/12 will be additional opportunities for Q&A.
+The course's heads will hold a course-wide review session for the test on Wed 10/11 at 6:00pm in Science Center B; it will be streamed live via the course's website and will be available on demand immediately afterward via the same. Sections on Mon 10/9, Tue 10/10, and Wed 10/11 will also be opportunities for review. Office hours on Wed 10/11 and Thu 10/12 will be additional opportunities for Q&A.
 
-Among the test's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. Unlike past years' quizzes, the test will not have multiple-choice or true-false questions. But it will have short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE).
+Among the test's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. The test's format will resemble that of http://cdn.cs50.net/2016/fall/test/test.html[Fall 2016's test], with short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE). Expect to spend an average of thirty minutes per question.
 
 == How to Prepare
 
@@ -19,10 +19,9 @@ Ultimately, how best to prepare depends on how you learn best. But allow us to r
 . Review each lecture's *notes*.
 . Review each lecture's *source code*, if any.
 . Review each lecture's *slides*.
-. Review each lecture's *video*.
-. Take past *quizzes*. Realize, though, that some topics covered in past terms might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Attend or watch the *review session*.
+. Review each lecture's *video*, using its table of contents to focus on topics with which you're less comfortable.
+. Take http://cdn.cs50.net/2016/fall/test/test.html[*last year's test*] and, only after you've attempted each of its questions, review its http://cdn.cs50.net/2016/fall/test/key/[sample solutions]. Realize, though, that some topics covered last year might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
 . Review problem sets' *specifications*, *sample solutions*, and, if any, *distribution code*.
 
-////
-TODO: add last year's test
-////
+And, as always, ask questions at https://cs50.harvard.edu/hours[office hours] or via https://discourse.cs50.net/c/cs50-2017[CS50 Discourse]!
