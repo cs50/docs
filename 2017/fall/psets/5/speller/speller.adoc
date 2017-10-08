@@ -5,7 +5,8 @@
 
 == tl;dr
 
-Implement a program that spell-checks a file, per the below.
+. Answer some questions.
+. Implement a program that spell-checks a file, per the below.
 
 [source,subs=quotes]
 ----
