@@ -75,23 +75,23 @@ Location: http://www.harvard.edu/
 ** Indeed, if we tried to visit just `harvard.edu` in our browser, it would automatically take us to `https://www.harvard.edu/`.
 * We can see this ourselves by running the `curl` command in the CS50 IDE. The `-I` flag indicates that we want to see just the headers we get back:
 +
-image::curl.png[alt="curl headers", width=300]
+image::curl.png[alt="curl headers", width=400]
 ** First, `http://harvard.edu/` redirects us to `http://www.harvard.edu/`, which in turn redirects us to `https://www.harvard.edu/`
 ** There are also some additional headers sent back, which we don't need to worry about.
 * To see the HTML that actually comprise the webpage, we could use `curl`, or the Developer Tools feature in Google Chrome:
 +
-image::developer_tools.png[alt="Developer Tools", width=400]
+image::developer_tools.png[alt="Developer Tools", width=600]
 * We'll see lots of features, and first we'll use the Network tab to see the requests our browser makes when we visit Harvard's website:
 +
-image::network.png[alt="Network tab", width=400]
+image::network.png[alt="Network tab", width=600]
 ** We see a total of 90 requests made for the homepage, and that might include images or other files needed for the page.
 ** The first and second requests had a 301 status code as we already saw with `curl`, and the rest came back with 200s.
 * But Yale's web servers are configured slightly better, redirecting us in one step rather than two:
 +
-image::curl_yale.png[alt="curl headers", width=300]
+image::curl_yale.png[alt="curl headers", width=400]
 * And if we visit `http://safetyschool.org/`, someone had actually set up that domain to redirect to Yale's homepage as well!
 +
-image::curl_safetyschool.png[alt="curl headers", width=300]
+image::curl_safetyschool.png[alt="curl headers", width=400]
 ** A few years later, Yale's students pranked Harvard back, convincing the audience on Harvard's side at a football game to http://www.harvardsucks.org/[hold up some less than ideal signs].
 * So far, we've discovered that HTTP requires clients and servers to send messages back and forth. That happens over IP, Internet Protocol, which specifies that all devices connected to the Internet has some address, known as an IP address.
 * Just like "33 Oxford Street, Cambridge, MA" helps us identify a building, IP addresses identify computers and phones in the format ``#.#.#.#``.
@@ -105,19 +105,19 @@ image::curl_safetyschool.png[alt="curl headers", width=300]
 image::nslookup.png[alt="nslookup", width=300]
 ** Google has many many servers able to serve its website, so looking up its domain name returns a few of those nearby. And we can visit one of those IP addresses directly, and see what happens using the Network tab as before:
 +
-image::network_google.png[alt="Network tab for visiting Google IP", width=400]
+image::network_google.png[alt="Network tab for visiting Google IP", width=600]
 ** If we clicked on the first request there, we'll see the header that indicates the new location:
 +
-image::headers_google.png[alt="Network tab headers for visiting Google IP", width=200]
+image::headers_google.png[alt="Network tab headers for visiting Google IP", width=400]
 * So now we can use those IP addresses, to indicate on our virtual envelopes, the destination of where we would like them to go. We also write our own IP address on those envelopes, so we can get a response back.
 * We send those envelopes, or packets, to routers, computer servers, that are in datacenters around the world, that only route information based on the destination IP. By passing our packets from router to router, we can get them to our destination.
 * We can run a command in the CS50 IDE, `traceroute`, that tells us the intermediate routers between us and some destination:
 +
-image::traceroute.png[alt="traceroute", width=400]
+image::traceroute.png[alt="traceroute", width=600]
 ** It turns out, there are 5 steps before we can reach Yale's web servers. And we can see that it only takes about 10 milliseconds to do that.
 * We can do the same for a website perhaps further away:
 +
-image::traceroute_jp.png[alt="traceroute .jp", width=400]
+image::traceroute_jp.png[alt="traceroute .jp", width=600]
 ** We see a jump from about 38 ms to 121 ms between steps 3 and 4, implying that there might be a much longer distance between the two servers, that our packet has to travel across. Indeed, across oceans, there are long cables that transmit information, forming the global Internet.
 * A server can respond to multiple types of requests, and TCP is a standard that tells us we need to add another number on the outside of the envelope we send, to specify the service we want from the server. This number is a port number that corresponds to some service. For example, standard ports and protocols include:
 ** 22 SSH, secure shell, to run commands on another computer
@@ -128,7 +128,7 @@ image::traceroute_jp.png[alt="traceroute .jp", width=400]
 ...
 * For example, if we tried to send an HTTPS request to port 80, we'd see an error, but the same request works through port 443 as we'd expect:
 +
-image::curl_port.png[alt="curl with port numbers", width=400]
+image::curl_port.png[alt="curl with port numbers", width=600]
 * And on the outside of each envelope, our browser also adds a specific port number to our own, return IP address. Then we can have multiple applications communicating with the outside world, and each of them getting the right responses back.
 * It turns out that our browsers also commonly use one more feature provided by TCP and IP. When we want to send or receive a larger amount of data, such as an image or video, the binary data is divided into many smaller pieces. Then, on the outside of the envelope, we specify something like 1/4, 2/4, 3/4, and 4/4, so the recipient can verify that they were able to get all the pieces. (And if any are missing, they can make a request to the server to send missing pieces again.)
 * And each envelope can take a different path to the final address, since some routers might become busy.
@@ -177,7 +177,6 @@ image::http-server.png[alt="http-server in the CS50 IDE", width=400]
 +
 [source, html]
 ----
-+
 <!DOCTYPE html>
 
 <html>
