@@ -94,10 +94,10 @@ image::curl_yale.png[alt="curl headers", width=300]
 image::curl_safetyschool.png[alt="curl headers", width=300]
 ** A few years later, Yale's students pranked Harvard back, convincing the audience on Harvard's side at a football game to http://www.harvardsucks.org/[hold up some less than ideal signs].
 * So far, we've discovered that HTTP requires clients and servers to send messages back and forth. That happens over IP, Internet Protocol, which specifies that all devices connected to the Internet has some address, known as an IP address.
-* Just like "33 Oxford Street, Cambridge, MA" helps us identify a building, IP addresses identify computers and phones in the format `#.#.#.#`.
+* Just like "33 Oxford Street, Cambridge, MA" helps us identify a building, IP addresses identify computers and phones in the format ``#.#.#.#``.
 * Each of the numbers can be in the range `0` to `255`, which means that exactly 8 bits, or one byte, is needed to store each number. So an IP address with 4 of these numbers has 32 bits, and from there we can deduce that a total of about 2 billion unique IP addresses exist.
-* And there is a system for allocating these addresses, by provider or organization. For example, Harvard's IPs include the ones in the range of `140.247.#.#` or `128.103.#.#`.
-* There are also reserved IPs, known as private addresses, with the ranges `10.#.#.#` and `172.16.#.# - 172.31.#.#` and `192.168.#.#` that are used within a particular network, but not with the outside world. This way, one IP address can be used for, say, one household, with many devices that share the same internet connection.
+* And there is a system for allocating these addresses, by provider or organization. For example, Harvard's IPs include the ones in the range of ``140.247.#.#`` or ``128.103.#.#``.
+* There are also reserved IPs, known as private addresses, with the ranges ``10.#.#.#`` and ``172.16.#.# - 172.31.#.#`` and ``192.168.#.#`` that are used within a particular network, but not with the outside world. This way, one IP address can be used for, say, one household, with many devices that share the same internet connection.
 * On a PC or Mac, we can see our own IP address in a Network settings panel.
 * DHCP, Dynamic Host Configuration Protocol, is the technology used for computers to automatically acquire an IP address from a DHCP server on the network it is connected to.
 * There is another technology called DNS, Domain Name System, that maps IP addresses to domain names, and vice versa. So a domain name like `www.google.com` is translated to an IP address behind the scenes. With the `nslookup` command in the CS50 IDE, we can perform such a lookup:
