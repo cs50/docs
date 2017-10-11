@@ -81,7 +81,7 @@ A schedule of lectures, subject to change, appears below.
 | Week 3 | Memory | Fri 9/22, 10am – 12pm
 | Week 4 | Data Structures | Fri 9/29, 10am – 12pm
 | Week 5 | HTTP | Fri 10/6, 10am – 12pm
-.2+| Week 6 | TBD | Thu 10/12, 4pm – 5:15pm, streamed from Yale
+.2+| Week 6 | Dynamic Programming | Thu 10/12, 4pm – 5:15pm, streamed from Yale
 | Python | Fri 10/13, 10am – 12pm
 | Week 7 | Python, continued | Fri 10/20, 10am – 12pm
 | Week 8 | SQL | Fri 10/27, 10am – 12pm
