@@ -264,6 +264,7 @@ def get_positive_int(prompt):
 * We can observe integer overflow in Python as well:
 +
 [source, c]
+----
 from time import sleep
 
 # Iteratively double i
