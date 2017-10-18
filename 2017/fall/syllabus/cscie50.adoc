@@ -111,7 +111,7 @@ A schedule of sections, subject to change, appears below. Recordings of the sect
 | https://vault.cs50.net/2017/fall/e50/section/4[File I/O] | week of Sun 9/24
 | Data Structures (https://vault.cs50.net/2017/fall/e50/section/5a[Part 1]), (https://vault.cs50.net/2017/fall/e50/section/5b[Part 2])| week of Sun 10/1
 | https://vault.cs50.net/2017/fall/e50/section/6[Review for Test] | week of Sun 10/8
-| TF's Choice | week of Sun 10/15
+| https://valut.cs50.net/2017/fall/e50/section/7[TF's Choice / Coding Contest] | week of Sun 10/15
 | Python | week of Sun 10/22
 | SQL | week of Sun 10/29
 | JavaScript | week of Sun 11/5
