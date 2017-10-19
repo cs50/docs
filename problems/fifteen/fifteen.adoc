@@ -110,7 +110,7 @@ Incidentally, recall that the positions of tiles numbered 1 and 2 should only st
 
 Feel free to tweak the appropriate argument to `usleep` to speed up animation. In fact, you're welcome to alter the aesthetics of the game. For (optional) fun with "ANSI escape sequences," including color, take a look at our implementation of `clear` and check out http://isthe.com/chongo/tech/comp/ansi_escapes.html for more tricks.
     
-You're welcome to write your own functions and even change the prototypes of functions we wrote. But you may not alter the flow of logic in `main` itself so that we can automate some tests of your program once submitted. In particular, `main` must only return `0` if and when the user has actually won the game; non-zero values should be returned in any cases of error, as implied by our distribution code. 
+You're welcome to write your own functions and even change the prototypes of functions we wrote (with the exception of `draw` (see `check50` below). But you may not alter the flow of logic in `main` itself so that we can automate some tests of your program once submitted. In particular, `main` must only return `0` if and when the user has actually won the game; non-zero values should be returned in any cases of error, as implied by our distribution code. 
 
 == Testing
 
@@ -124,6 +124,8 @@ To test your implementation of `fifteen`, you can certainly try playing it. (Kno
 === `check50`
 
 Note that `check50` assumes that your board's blank space is implemented in `board` as `0`; if you've chosen some other value, best to change to `0` for ``check50``'s sake. Also note that `check50` assumes that you're indexing into `board` a la `board[row][column]`, not `board[column][row]`.
+
+Further, note that `check50` will replace your `draw` function with a simpler version.  Please don't change the function declaration for draw, nor update any variables in that function that are used elsewhere in the program, as they will not be used by `check50`.
 
 [source]
 ----
