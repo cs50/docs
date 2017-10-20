@@ -125,14 +125,14 @@ video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
 
 == Testing
 
-To test your implementation of `lines`, `sentences`, and/or `substrings`, execute `compare` as follows, where `A` and `B` are any two text files:
+To test your implementation of `lines`, `sentences`, and/or `substrings`, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files:
 
 [source]
 ----
-./compare --lines A B
-./compare --sentences A B
-./compare --substrings 1 A B
-./compare --substrings 2 A B
+./compare --lines FILE1 FILE2
+./compare --sentences FILE1 FILE2
+./compare --substrings 1 FILE1 FILE2
+./compare --substrings 2 FILE1 FILE2
 ...
 ----
 
