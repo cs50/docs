@@ -4,7 +4,7 @@ published: false
 
 == Help
 
-* Watch Brian's *walkthrough* (of Similarities) herein (coming Fri 10/20 eve).
+* Watch Zamyla's and Brian's *walkthroughs* herein.
 * Attend your TF's *section* (or another if you have an unavoidable conflict).
 * Post questions and search answers in https://discourse.cs50.net/c/cs50-2017[*CS50 Discourse*].
 * Attend https://cs50.harvard.edu/hours[*office hours*].

@@ -77,7 +77,7 @@ style50 vigenere.py
 * You're welcome to use the CS50 Library for Python, which includes `get_float`, `get_int`, and `get_string`. Just remember to include any of
 +
 [source]
----
+----
 from cs50 import get_float
 from cs50 import get_int
 from cs50 import get_string
