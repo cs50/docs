@@ -49,19 +49,17 @@ video::5ueXMnDE-y8[youtube,list=PLhQjrBD2T381raeNI8WdI4D7GMu0XFGTh]
 
 === Correctness
 
-_Coming Sat 10/21 eve_
-
 ```
-check50 cs50/2017/fall/hello/python
-check50 cs50/2017/fall/mario/less/python
-check50 cs50/2017/fall/mario/more/python
-check50 cs50/2017/fall/cash/python
-check50 cs50/2017/fall/credit/python
-check50 cs50/2017/fall/caesar/python
-check50 cs50/2017/fall/vigenere/python
+check50 cs50/2017/fall/sentiments/hello
+check50 cs50/2017/fall/sentiments/mario/less
+check50 cs50/2017/fall/sentiments/mario/more
+check50 cs50/2017/fall/sentiments/cash
+check50 cs50/2017/fall/sentiments/credit
+check50 cs50/2017/fall/sentiments/caesar
+check50 cs50/2017/fall/sentiments/vigenere
 ```
 
-Recall that there is no `check50` for Crack.
+As before, afraid there's no `check50` for Crack, lest it spoil the fun!
 
 === Style
 
@@ -69,10 +67,10 @@ Recall that there is no `check50` for Crack.
 style50 hello.py
 style50 mario.py
 style50 cash.py
-style50 crack.py
 style50 credit.py
 style50 caesar.py
 style50 vigenere.py
+style50 crack.py
 ```
 
 == Hints
