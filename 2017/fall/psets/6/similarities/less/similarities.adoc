@@ -140,6 +140,8 @@ To test your implementation of `lines`, `sentences`, and/or `substrings`, execut
 ...
 ----
 
+_Sample files coming Fri 10/20 eve_
+
 == Staff's Solution
 
 === CLI
