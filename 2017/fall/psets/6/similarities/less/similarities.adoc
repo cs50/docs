@@ -125,4 +125,4 @@ video::yTNp6wiU1ZI[youtube,list=PLhQjrBD2T381evKksbwphwMyBIP40rgEX]
 
 === Web
 
-http://similarities.cs50.net/
+http://similarities.cs50.net/less
