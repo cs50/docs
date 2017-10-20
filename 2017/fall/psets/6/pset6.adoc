@@ -25,7 +25,12 @@ cd ~/workspace/pset6/
 == Problems
 
 . Implement link:sentimental/sentimental[Sentimental].
-. Implement link:similarities/similarities.html[Similarities].
+. Implement either of:
++
+--
+* link:similarities/less/similarities.html[Similarities], less comfortable
+* link:similarities/more/similarities.html[Similarities], more comfortable
+--
 
 == How to Submit
 
