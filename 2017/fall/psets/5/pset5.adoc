@@ -48,14 +48,12 @@ Then visit the URL that `check50` outputs to see where you rank!
 
 === Step 1 of 2
 
-////
 * Update your IDE:
 +
 [source]
 ----
 update50
 ----
-////
 
 * Submit `speller`:
 +

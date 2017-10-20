@@ -1,0 +1,97 @@
+---
+---
+:skip-front-matter:
+
+= Sentimental
+
+== tl;dr
+ 
+. Port `hello.c` to `hello.py`.
+. Port `mario.c` to `mario.py`.
+. Port `cash.c` to `cash.py` or `credit.c` to `credit.py`.
+. Port `caesar.c` to `cash.py`, `vigenere.c` to `vigenere.py`, or `crack.c` to `crack.py`.
+
+== Problems
+
+. Implement the below exactly as specified but in Python:
++
+--
+* link:../../../../../problems/hello/hello.html[Hello], in `pset6/hello/hello.py`
+--
+. Implement either of the below exactly as specified but in Python:
++
+--
+* link:../../../../../problems/mario/less/mario.html[Mario], less comfortable, in `pset6/mario/mario.py`
+* link:../../../../../problems/mario/more/mario.html[Mario], more comfortable, in `pset6/mario/mario.py`
+--
++
+. Implement either of the below exactly as specified but in Python:
++
+--
+* link:../../../../../problems/cash/cash.html[Cash], less comfortable, in `pset6/cash/cash.py`
+* link:../../../../../problems/credit/credit.html[Credit], more comfortable, in `pset6/credit/credit.py`
+--
+. Implement any (one) of the below exactly as specified but in Python:
++
+--
+* link:../../2/caesar/caesar.html[Caesar], less comfortable, in `pset6/caesar/caesar.py`
+* link:../../2/vigenere/vigenere.html[Vigenère], less comfortable, in `pset6/vigenere/vigenere.py`
+* link:../../2/crack/crack.html[Crack], more comfortable, in `pset6/crack/crack.py`
+--
+
+== Testing
+
+=== Correctness
+
+```
+check50 cs50/2017/fall/hello/python
+check50 cs50/2017/fall/mario/less/python
+check50 cs50/2017/fall/mario/more/python
+check50 cs50/2017/fall/cash/python
+check50 cs50/2017/fall/credit/python
+check50 cs50/2017/fall/caesar/python
+check50 cs50/2017/fall/vigenere/python
+```
+
+=== Style
+
+```
+style50 hello.py
+style50 mario.py
+style50 cash.py
+style50 credit.py
+style50 caesar.py
+style50 vigenere.py
+```
+
+== Hints
+
+* Be sure to use Python 3, not Python 2.
+* If a program is in a file called, say, `foo.py`, you can run that program with `python foo.py`.
+* For Mario, Greedy, Credit, Caesar, Vigenère, and Crack, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python.
+* Consider this problem set an opportunity not only to port your own prior work from C to Python but to improve upon your earlier designs using lessons learned since!
+* When porting code from C to Python in CS50 IDE, you might want to select *View > Layout > Horizontal Split* so that you can see both side by side.
+* Insofar as a goal of these problems is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
+** Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
+** Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.
+* You're welcome to use the CS50 Library for Python, which includes `get_float`, `get_int`, and `get_string`. Just remember to include any of
++
+[source]
+---
+from cs50 import get_float
+from cs50 import get_int
+from cs50 import get_string
+----
++
+atop your code. Or you can use https://docs.python.org/3/library/functions.html#input[`input`] and validate users' input yourself.
+* You might find https://docs.python.org/3/library/functions.html#chr[`chr`] and/or https://docs.python.org/3/library/functions.html#ord[`ord`] of help.
+* You might find these references of interest:
+** https://docs.python.org/3/reference/index.html[The Python Language Reference]
+** https://docs.python.org/3/library/[The Python Standard Library]
+** https://docs.python.org/3/tutorial/index.html[The Python Tutorial]
+
+== Walkthroughs
+
+Note that, among these walkthroughs, Cash was previously called Greedy.
+
+video::5ueXMnDE-y8[youtube,list=PLhQjrBD2T381raeNI8WdI4D7GMu0XFGTh]
