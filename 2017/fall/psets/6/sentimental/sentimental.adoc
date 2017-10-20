@@ -39,6 +39,12 @@
 * link:../../2/crack/crack.html[Crack], more comfortable, in `pset6/crack/crack.py`
 --
 
+== Walkthroughs
+
+Note that, among these walkthroughs, Cash was previously called Greedy.
+
+video::5ueXMnDE-y8[youtube,list=PLhQjrBD2T381raeNI8WdI4D7GMu0XFGTh]
+
 == Testing
 
 === Correctness
@@ -89,9 +95,3 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 ** https://docs.python.org/3/reference/index.html[The Python Language Reference]
 ** https://docs.python.org/3/library/[The Python Standard Library]
 ** https://docs.python.org/3/tutorial/index.html[The Python Tutorial]
-
-== Walkthroughs
-
-Note that, among these walkthroughs, Cash was previously called Greedy.
-
-video::5ueXMnDE-y8[youtube,list=PLhQjrBD2T381raeNI8WdI4D7GMu0XFGTh]
