@@ -5,11 +5,11 @@
 = Sentimental
 
 == tl;dr
- 
+
 . Port `hello.c` to `hello.py`.
 . Port `mario.c` to `mario.py`.
 . Port `cash.c` to `cash.py` or `credit.c` to `credit.py`.
-. Port `caesar.c` to `cash.py`, `vigenere.c` to `vigenere.py`, or `crack.c` to `crack.py`.
+. Port `caesar.c` to `caesar.py`, `vigenere.c` to `vigenere.py`, or `crack.c` to `crack.py`.
 
 == Problems
 
@@ -65,6 +65,7 @@ check50 cs50/2017/fall/vigenere/python
 style50 hello.py
 style50 mario.py
 style50 cash.py
+style50 crack.py
 style50 credit.py
 style50 caesar.py
 style50 vigenere.py
