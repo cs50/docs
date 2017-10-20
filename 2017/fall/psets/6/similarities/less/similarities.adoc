@@ -1,0 +1,128 @@
+---
+toclevels: 1
+---
+
+= Similarities
+
+== tl;dr
+ 
+. Implement a program that compares two files for similarities.
+. Implement a website that highlights similarities across files.
+
+== Background
+
+Determining whether two files are identical is (relatively!) trivial: iterate over the characters in each, checking whether each and every one is identical. But determining whether two files are similar is non-trivial. After all, what does it mean to be similar? Perhaps the files have lines in common. Perhaps the files have sentences in common. Perhaps the files have only substrings in common.
+
+Suffice it to say, the challenge ahead is to determine if two files are similar!
+
+== Distribution
+
+=== Downloading
+
+[source,subs="macros"]
+----
+$ wget http://cdn.cs50.net/2017/fall/psets/6/similarities/less/similarities.zip
+$ unzip sentiments.zip
+$ rm sentiments.zip
+$ cd sentiments
+$ chmod a+x compare
+$ ls
+application.py  compare* helpers.py  requirements.txt  static/  templates/
+----
+
+=== Understanding
+
+==== `compare`
+
+Open up `compare`. Suffice it to say that file's name doesn't end in `.py`, even though the file contains a program written in Python. But that's okay! Notice the "shebang" atop the file:
+
+[source]
+----
+#!/usr/bin/env python3
+----
+
+That line tells a computer to interpret (i.e., run) the program using `python3` (aka `python` on CS50 IDE), an interpreter that understands Python 3.
+
+Notice how the file defines a function called `main` and calls that function toward the bottom of the file. Defining `main` isn't strictly necessary in Python, but it is necessary to define functions before you call them. Accordingly, because `main` calls a function called `positive`, and because we wanted to keep the "main" part of this program atop the file, it made sense to implement `main` as a function as well. That way, `main` doesn't get called until the bottom of the file (after `positive` has been implemented), even though `main` is implemented atop the file.
+
+No need to understand each of the lines in `compare`, but notice, per its comments, what it does overall: it parses its command-line arguments, reads two files into variables as strings, and compares those strings, and then prints a list of similarities. The strings themselves are compared in one of three ways, as specified by a command-line argument: line by line, sentence by sentence, or substring by substring.
+
+=== `helpers.py`
+
+TODO
+
+=== `application.py`
+
+TODO
+
+=== `templates/layout.html`
+
+TODO
+
+=== `templates/index.html`
+
+TODO
+
+=== `templates/compare.html`
+
+TODO
+
+=== `templates/error.html`
+
+TODO
+
+=== `static/styles.css`
+
+TODO
+
+==== `requirements.txt`
+
+Open up `requirements.txt` (without changing it, though you can later if you'd like). This file specifies the libraries, one per line, on which all of this functionality depends.
+
+== Specification
+
+=== `helpers.py`
+
+==== `lines`
+
+TODO
+
+==== `sentences`
+
+TODO
+
+==== `substrings`
+
+TODO
+
+=== `templates/index.html`
+
+Complete the implementation of `main` in `tweets` in such a way that program
+
+* accepts one and only one command-line argument, the screen name for a user on Twitter,
+* queries Twitter's API for a user's most recent 50 tweets,
+* analyzes the sentiment of each of those tweets, and
+* outputs each tweet's score and text, colored in green if positive, red if negative, and yellow otherwise.
+
+== Walkthroughs
+
+_Coming Fri 10/20 eve_
+
+////
+video::yTNp6wiU1ZI[youtube,list=PLhQjrBD2T381evKksbwphwMyBIP40rgEX]
+////
+
+== Testing
+
+== Staff's Solution
+
+=== CLI
+
+[source]
+----
+~cs50/pset6/compare
+----
+
+=== Web
+
+http://similarities.cs50.net/
