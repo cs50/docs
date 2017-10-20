@@ -54,6 +54,7 @@ Then visit the URL that `check50` outputs to see where you rank!
 ----
 update50
 ----
+
 * Submit `speller`:
 +
 [source]
