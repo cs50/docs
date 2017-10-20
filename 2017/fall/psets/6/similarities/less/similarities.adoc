@@ -22,9 +22,9 @@ Suffice it to say, the challenge ahead is to determine if two files are similar!
 [source,subs="macros"]
 ----
 $ wget http://cdn.cs50.net/2017/fall/psets/6/similarities/less/similarities.zip
-$ unzip sentiments.zip
-$ rm sentiments.zip
-$ cd sentiments
+$ unzip similarities.zip
+$ rm similarities.zip
+$ cd similarities
 $ chmod a+x compare
 $ ls
 application.py  compare* helpers.py  requirements.txt  static/  templates/
