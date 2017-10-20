@@ -21,7 +21,6 @@ Suffice it to say, the challenge ahead is to determine if two files are similar!
 
 [source,subs="macros"]
 ----
-$ sudo python -c "import nltk; nltk.download('punkt', '/usr/share/nltk_data/')"
 $ wget http://cdn.cs50.net/2017/fall/psets/6/similarities/less/similarities.zip
 $ unzip similarities.zip
 $ rm similarities.zip
