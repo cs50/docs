@@ -1,0 +1,14 @@
+---
+published: false
+---
+
+== Help
+
+* Watch Brian's *walkthrough* (of Similarities) herein (coming Fri 10/20 eve).
+* Attend your TF's *section* (or another if you have an unavoidable conflict).
+* Post questions and search answers in https://discourse.cs50.net/c/cs50-2017[*CS50 Discourse*].
+* Attend https://cs50.harvard.edu/hours[*office hours*].
+
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2017/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
