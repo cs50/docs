@@ -136,7 +136,7 @@ To test your implementation of `lines`, `sentences`, and/or `substrings`, execut
 ...
 ----
 
-_Sample files coming Fri 10/20 eve_
+See http://cdn.cs50.net/2017/fall/psets/6/similarities/less/inputs/ for some similar inputs, though be sure to test with some of your own!
 
 == Staff's Solution
 
