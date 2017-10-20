@@ -1,0 +1,49 @@
+---
+---
+:skip-front-matter:
+
+= Problem Set 6: Déjà vu
+
+== tl;dr
+ 
+. Watch https://video.cs50.net/2017/fall/lectures/9[Lecture 9] (and https://video.cs50.net/2017/fall/lectures/8[Lecture 8] and https://video.cs50.net/2017/fall/lectures/7[Lecture 7], if you haven't already).
+. Port some programs from C to Python.
+. Detect some similarities.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset6/
+cd ~/workspace/pset6/
+----
+
+== Problems
+
+. Implement link:sentimental/sentimental[Sentimental].
+. Implement link:similarities/similarities.html[Similarities].
+
+== How to Submit
+
+=== Step 1 of 2
+
+. Execute `update50`
+. Execute `cd ~/workspace/pset6/hello/ && submit50 cs50/2017/fall/hello/python`
+. Execute either of:
++
+--
+* `cd ~/workspace/pset6/mario/less/ && submit50 cs50/2017/fall/mario/less/python`
+* `cd ~/workspace/pset6/mario/more/ && submit50 cs50/2017/fall/mario/more/python`
+--
+. Execute one of:
++
+--
+* `cd ~/workspace/pset6/cash/ && submit50 cs50/2017/fall/cash/python`
+* `cd ~/workspace/pset6/credit/ && submit50 cs50/2017/fall/credit/python`
+* `cd ~/workspace/pset6/crack/ && submit50 cs50/2017/fall/crack/python`
+--
+. Execute `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/python`
