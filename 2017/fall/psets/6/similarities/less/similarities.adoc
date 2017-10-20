@@ -121,6 +121,8 @@ You're welcome to look at the HTML of the staff's solution as needed, but do try
 
 == Walkthroughs
 
+A walkthrough for `sentences` is also forthcoming!
+
 video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
 
 == Testing
