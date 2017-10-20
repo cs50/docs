@@ -5,7 +5,7 @@ toclevels: 1
 = Similarities
 
 == tl;dr
- 
+
 . Implement a program that compares two files for similarities.
 . Implement a website that highlights similarities across files.
 
@@ -53,7 +53,7 @@ Open up `helpers.py`. Ah, the familiar `TODO`. Declared in this file are three f
 
 === `application.py`
 
-Open up `application.py`. This file implements a web application that, ultimately, will allow you to run any of those three algorithms on any two text files. No need to understand the entirety of this file, particularly `highlight` and `errorhandler`. But know that the former, given a string, `s`, and a list of other strings, `strings`, highlights (by wrapping them in HTML `span` tags) all instancs of the latter in the former. And the latter ensures that any HTTP errors are displayed on a page of their own.
+Open up `application.py`. This file implements a web application that, ultimately, will allow you to run any of those three algorithms on any two text files. No need to understand the entirety of this file, particularly `highlight` and `errorhandler`. But know that `highlight, given a string, `s`, and a list of other strings, `strings`, highlights (by wrapping them in HTML `span` tags) all instancs of the latter in the former. And `errorhandler` ensures that any HTTP errors are displayed on a page of their own.
 
 But do read through `index` and `compare`, the latter of which handles form submissions.
 
