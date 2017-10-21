@@ -192,7 +192,7 @@ Notice how CS50 IDE adds "syntax highlighting" (i.e., color) as you type, though
 
 Do be sure that you type this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/chapter1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/chapter1/hello/` and then Enter.) Your prompt should be:
+When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/chapter1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd ~/workspace/chapter1/hello/` and then Enter.) Your prompt should be:
 
 [source,text]
 ----
