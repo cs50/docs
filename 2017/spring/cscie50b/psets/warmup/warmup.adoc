@@ -32,7 +32,7 @@ Head to https://cs50.io/[cs50.io] and log into CS50 IDE. Toward the bottom of CS
 
 == What to Do
 
-. Complete the implementation of link:../../../../../problems/scramble/scramble.html[Scramble]
+. Complete the implementation of link:scramble/scramble.html[Scramble]
 
 == How to Submit
 

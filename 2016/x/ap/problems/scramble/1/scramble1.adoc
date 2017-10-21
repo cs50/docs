@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: 2016/x/ap
 ---
 
 :skip-front-matter:

@@ -1,3 +1,7 @@
+---
+layout: 2016/x/ap
+---
+
 = What's new?
 
 Happen to take CS50x in 2013, 2014, or 2015 (even if you didn't finish)? Here's what's new in CS50x 2016:

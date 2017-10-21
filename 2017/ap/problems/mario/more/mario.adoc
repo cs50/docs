@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: 2017/ap
 ---
 :skip-front-matter:
 
@@ -48,7 +48,7 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 Toward the beginning of World 1-1 in Nintendo's Super Mario Brothers, Mario must hop over two "half-pyramids" of blocks as he heads toward a flag pole.  Below is a screenshot.
 
-image:pyramid.png[Super Mario Brothers, width="50%"]
+image:pyramids.png[Super Mario Brothers, width="50%"]
 
 == Specification
 

@@ -1,3 +1,7 @@
+---
+layout: 2016/fall
+---
+
 === Human `help50` (sample solution)
 
 Other answers are possible.

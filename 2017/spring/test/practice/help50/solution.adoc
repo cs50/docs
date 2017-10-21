@@ -1,3 +1,7 @@
+---
+layout: 2017/spring
+---
+
 === Human `help50` (sample solution)
 
 Other answers are possible.

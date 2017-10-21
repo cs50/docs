@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: 2017/ap
 toclevels: 1
 ---
 :skip-front-matter:

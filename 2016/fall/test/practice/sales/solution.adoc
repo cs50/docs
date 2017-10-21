@@ -1,3 +1,7 @@
+---
+layout: 2016/fall
+---
+
 === Sales Force (sample solution)
 
 Other answers are possible.
