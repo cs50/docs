@@ -125,7 +125,6 @@ To test your implementation of `distances`, execute `compare` as follows, where 
 [source]
 ----
 ./score FILE1 FILE2
-...
 ----
 
 See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for some similar inputs, though be sure to test with some of your own!
@@ -134,15 +133,11 @@ See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for some similar 
 
 === CLI
 
-_Coming Fri 10/20 eve_
-
-////
 [source]
 ----
-~cs50/pset6/compare
+~cs50/pset6/score
 ----
-////
 
 === Web
 
-http://similarities.cs50.net/less
+http://similarities.cs50.net/more
