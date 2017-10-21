@@ -29,7 +29,7 @@ cd ~/workspace/pset6/
 +
 --
 * link:similarities/less/similarities.html[Similarities], less comfortable
-* Similarities, more comfortable, *coming Fri 10/20 eve*
+* link:similarities/more/similarities.html[Similarities], more comfortable
 --
 
 == How to Submit
