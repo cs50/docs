@@ -142,14 +142,10 @@ See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for some similar 
 
 === CLI
 
-_Coming Fri 10/20 eve_
-
-////
 [source]
 ----
 ~cs50/pset6/compare
 ----
-////
 
 === Web
 
