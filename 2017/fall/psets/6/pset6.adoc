@@ -44,16 +44,22 @@ cd ~/workspace/pset6/
 * `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/less`
 * `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/more`
 --
-. Execute one of:
+. Execute either of:
 +
 --
 * `cd ~/workspace/pset6/cash/ && submit50 cs50/2017/fall/sentimental/cash`
 * `cd ~/workspace/pset6/credit/ && submit50 cs50/2017/fall/sentimental/credit`
-* `cd ~/workspace/pset6/crack/ && submit50 cs50/2017/fall/sentimental/crack`
 --
 . Execute one of:
 +
 --
-. `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/less`
-. `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/more`
+* `cd ~/workspace/pset6/caesar/ && submit50 cs50/2017/fall/sentimental/caesar`
+* `cd ~/workspace/pset6/vigenere/ && submit50 cs50/2017/fall/sentimental/vigenere`
+* `cd ~/workspace/pset6/crack/ && submit50 cs50/2017/fall/sentimental/crack`
+--
+. Execute either of:
++
+--
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/less`
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/more`
 --
