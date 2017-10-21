@@ -8,7 +8,9 @@ toclevels: 1
 == tl;dr
 
 . Implement a program that measures the edit distance between two strings.
-. Implement a web app that depicts the costs of transforming one string into another.
+. Implement a web app that depicts the costs of transforming one string into another, a la the below.
++
+image::more.png[]
 
 == Background
 

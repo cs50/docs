@@ -8,7 +8,9 @@ toclevels: 1
 == tl;dr
 
 . Implement a program that compares two files for similarities.
-. Implement a website that highlights similarities across files.
+. Implement a website that highlights similarities across files, a la the below.
++
+image::less.png[]
 
 == Background
 
