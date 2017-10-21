@@ -135,7 +135,7 @@ See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for some similar 
 
 [source]
 ----
-~cs50/pset6/score
+~cs50/pset6/more/score
 ----
 
 === Web
