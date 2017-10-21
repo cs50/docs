@@ -9,7 +9,7 @@ script: make docs
 deploy:
   # deploy to GitHub Pages
   provider: pages
-  local_dir: docs
+  local_dir: _site
   name: bot50
   email: bot@cs50.harvard.edu
   fqdn: docs.cs50.net

@@ -16,7 +16,10 @@ asciidoctor:
   - toclevels=3
   base_dir: :docdir
   safe: 0
-destination: docs
+collections:
+  pages:
+    output: true
+    permalink: /:path
 exclude:
 - Gemfile
 - Makefile

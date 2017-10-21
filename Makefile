@@ -9,4 +9,4 @@ docs:
 	bundle exec jekyll build -V --incremental
 
 clean:
-	rm -rf css docs
+	rm -rf _site

@@ -524,5 +524,5 @@ If you see this message upon running `.import` in `sqlite3`, odds are you haven'
 
 == How to Submit
 
-1. First, `cd` to your `project4` directory. Then run `submit50 cscip14300/2017/summer/project4`.
-1. Also submit https://docs.google.com/forms/d/e/1FAIpQLSc0j9IOD6Yl9cDaQFfvsNBc18pANtX9oV1eagW8GPTuBOahlQ/viewform[this form].
+. First, `cd` to your `project4` directory. Then run `submit50 cscip14300/2017/summer/project4`.
+. Also submit https://docs.google.com/forms/d/e/1FAIpQLSc0j9IOD6Yl9cDaQFfvsNBc18pANtX9oV1eagW8GPTuBOahlQ/viewform[this form].
