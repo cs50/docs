@@ -10,7 +10,7 @@ toclevels: 1
 . Implement a program that measures the edit distance between two strings.
 . Implement a web app that depicts the costs of transforming one string into another, a la the below.
 +
-image::more.png[]
+image::more.png[Similarities, role="related thumb"]
 
 == Background
 

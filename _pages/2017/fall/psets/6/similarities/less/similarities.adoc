@@ -10,7 +10,7 @@ toclevels: 1
 . Implement a program that compares two files for similarities.
 . Implement a website that highlights similarities across files, a la the below.
 +
-image::less.png[]
+image::less.png[Similarities, role="related thumb"]
 
 == Background
 
