@@ -39,26 +39,26 @@ cd ~/workspace/pset6/
 
 . Execute `update50`
 . Execute `cd ~/workspace/pset6/hello/ && submit50 cs50/2017/fall/sentimental/hello`
-. Execute either of:
+. Execute at least one of:
 +
 --
 * `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/less`
 * `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/more`
 --
-. Execute either of:
+. Execute at least one of:
 +
 --
 * `cd ~/workspace/pset6/cash/ && submit50 cs50/2017/fall/sentimental/cash`
 * `cd ~/workspace/pset6/credit/ && submit50 cs50/2017/fall/sentimental/credit`
 --
-. Execute one of:
+. Execute at least one of:
 +
 --
 * `cd ~/workspace/pset6/caesar/ && submit50 cs50/2017/fall/sentimental/caesar`
 * `cd ~/workspace/pset6/vigenere/ && submit50 cs50/2017/fall/sentimental/vigenere`
 * `cd ~/workspace/pset6/crack/ && submit50 cs50/2017/fall/sentimental/crack`
 --
-. Execute either of:
+. Execute at least one of:
 +
 --
 * `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/less`
