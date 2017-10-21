@@ -41,8 +41,8 @@ cd ~/workspace/pset6/
 . Execute either of:
 +
 --
-* `cd ~/workspace/pset6/mario/less/ && submit50 cs50/2017/fall/sentimental/mario/less`
-* `cd ~/workspace/pset6/mario/more/ && submit50 cs50/2017/fall/sentimental/mario/more`
+* `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/less`
+* `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/more`
 --
 . Execute one of:
 +
