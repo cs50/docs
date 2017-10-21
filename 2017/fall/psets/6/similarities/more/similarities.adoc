@@ -116,7 +116,7 @@ Implement `templates/matrix.html` in such a way that it generates, using http://
 
 == Walkthroughs
 
-video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
+video::-yC8tN4WJk4[youtube,list=PLhQjrBD2T381-bOArPXzvlXpovpdBhrZ3]
 
 == Testing
 
