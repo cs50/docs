@@ -75,9 +75,9 @@ style50 crack.py
 
 == Hints
 
-* Be sure to use Python 3, not Python 2.
+* Be sure to use Python 3, not Python 2. The former is installed by default on CS50 IDE, but if Google leads you to Python's official documentation, be sure the URLs begin with https://docs.python.org/3/, not https://docs.python.org/2/.
 * If a program is in a file called, say, `foo.py`, you can run that program with `python foo.py`.
-* For Mario, Greedy, Credit, Caesar, Vigenère, and Crack, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python.
+* For Hello, Mario, Greedy, Credit, Caesar, Vigenère, and Crack, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python.
 * Consider this problem set an opportunity not only to port your own prior work from C to Python but to improve upon your earlier designs using lessons learned since!
 * When porting code from C to Python in CS50 IDE, you might want to select *View > Layout > Horizontal Split* so that you can see both side by side.
 * Insofar as a goal of these problems is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
