@@ -22,7 +22,8 @@ collections:
     permalink: /:path
 exclude:
 - Gemfile
+- Gemfile.lock
 - Makefile
 - README.md
-gems:
+plugins:
 - jekyll-asciidoc
