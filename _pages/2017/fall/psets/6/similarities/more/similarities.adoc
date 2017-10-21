@@ -130,6 +130,18 @@ To test your implementation of `distances`, execute `compare` as follows, where 
 
 See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for some similar inputs, though be sure to test with some of your own!
 
+=== `check50`
+
+```
+check50 cs50/2017/fall/similarities/more
+```
+
+=== `style50`
+
+```
+style50 helpers.py
+```
+
 == Staff's Solution
 
 === CLI
