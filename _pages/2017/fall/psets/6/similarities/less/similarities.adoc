@@ -128,7 +128,7 @@ video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
 
 == Testing
 
-To test your implementation of `lines`, `sentences`, and/or `substrings`, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files:
+To test your implementation of `lines`, `sentences`, and/or `substrings` via the command line, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files:
 
 [source]
 ----
@@ -139,7 +139,16 @@ To test your implementation of `lines`, `sentences`, and/or `substrings`, execut
 ...
 ----
 
-See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for some similar inputs, though be sure to test with some of your own!
+To test your implementations via a web app, execute
+
+[source]
+----
+flask run
+----
+
+and then visit the outputted URL.
+
+See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
 
 === `check50`
 

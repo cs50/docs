@@ -123,14 +123,23 @@ video::-yC8tN4WJk4[youtube,list=PLhQjrBD2T381-bOArPXzvlXpovpdBhrZ3]
 
 == Testing
 
-To test your implementation of `distances`, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files:
+To test your implementation of `distances` via the command line, execute `score` as follows, where `FILE1` and `FILE2` are any two text files:
 
 [source]
 ----
 ./score FILE1 FILE2
 ----
 
-See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for some similar inputs, though be sure to test with some of your own!
+To test your implementations via a web app, execute
+
+[source]
+----
+flask run
+----
+
+and then visit the outputted URL.
+
+See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
 
 === `check50`
 
