@@ -28,7 +28,7 @@ $ wget http://cdn.cs50.net/2017/fall/psets/6/similarities/more/similarities.zip
 $ unzip similarities.zip
 $ rm similarities.zip
 $ cd similarities
-$ chmod a+x compare
+$ chmod a+x score
 $ ls
 application.py  helpers.py  requirements.txt  score*  static/  templates/
 ----
