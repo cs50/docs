@@ -2,4 +2,3 @@
 !.gitignore
 !.travis.yml
 _site/
-css/

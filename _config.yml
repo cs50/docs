@@ -25,5 +25,5 @@ exclude:
 - Gemfile.lock
 - Makefile
 - README.md
-plugins:
-- jekyll-asciidoc
+titles_from_headings:
+  collections: true
