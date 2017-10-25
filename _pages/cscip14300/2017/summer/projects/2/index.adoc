@@ -171,7 +171,7 @@ video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
 
-http://pset7.cs50.net/
+http://finance.cs50.net/
 
 Feel free to register for an account and play around. Do *not* use a password that you use on other sites.
 
