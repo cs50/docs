@@ -1,13 +1,8 @@
 language: ruby
-
 rvm: 2.2
-
-install: make depends
-
+cache: bundler
 script: make docs
-
 deploy:
-  # deploy to GitHub Pages
   provider: pages
   local_dir: _site
   name: bot50
