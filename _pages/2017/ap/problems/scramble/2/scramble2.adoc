@@ -1,5 +1,5 @@
 ---
-layout: 2017/ap
+layout: default
 ---
 :skip-front-matter:
 

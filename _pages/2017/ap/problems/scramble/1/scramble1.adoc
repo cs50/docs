@@ -1,5 +1,5 @@
 ---
-layout: 2017/ap
+layout: default
 ---
 :skip-front-matter:
 
@@ -69,7 +69,7 @@ at your prompt to ensure that you're inside of `chapter3` (which is inside of `w
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/scramble/1/scramble.zip
+wget http://docs.cs50.net/2017/ap/problems/scramble/scramble.zip
 ----
 
 to download this problem's distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `chapter3` directory. Navigate into your newly-created `scramble` directory (remember how?) and type:
@@ -177,5 +177,55 @@ Suffice it to say we need your help finishing this implementation of `scramble`!
 type `FOO` or `foo` (or even `FoO` or any other capitalization thereof) in order to score.
 
 Now you can play (well, maybe after some debugging) your own version of `scramble`!
+
+
+=== `check50`
+
+[source]
+----
+check50 cs50/2017/ap/scramble/1
+----
+
+== How to Submit
+
+=== Step 1 of 3
+
+* Update your IDE:
++
+[source]
+----
+update50
+----
+=== Step 2 of 3
+
+Ensure `scramble.c` is in your chapter 3 directory
+
+
+Be sure that each of your files are in `~/workspace/chapter3/scramble`, as with:
+
+[source]
+----
+cd ~/workspace/chapter3/scramble
+ls
+----
+
+If `scramble.c` is not in `~/workspace/chapter3/scramble`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+* Submit `scramble`:
++
+[source]
+----
+cd ~/workspace/chapter3/scramble/
+submit50 cs50/2017/ap/scramble/1
+----
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Scramble (Part 1).
