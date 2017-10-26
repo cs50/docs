@@ -1,0 +1,50 @@
+---
+layout: 2016/fall
+---
+:skip-front-matter:
+
+= Problem Set 7: C$50 Finance
+
+== tl;dr
+ 
+. Implement a stock-trading website.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset7/
+cd ~/workspace/pset7/
+----
+
+== Problems
+
+Implement link:finance/finance.html[C$50 Finance] in `pset7/finance/`.
+
+== Hints
+
+* Be sure to use Python 3, not Python 2. The former is installed by default on CS50 IDE, but if Google leads you to Python's official        documentation, be sure the URLs begin with https://docs.python.org/3/, not https://docs.python.org/2/.
+* Insofar as a goal of this problem set is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
+** Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
+** Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.
+
+== How to Submit
+
+=== Step 1 of 2
+
+[source]
+----
+update50
+cd ~/workspace/pset7/finance/
+submit50 pset7
+----
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.net/2017/fall/psets/7[]!
+ 
+This was Problem Set 7.
