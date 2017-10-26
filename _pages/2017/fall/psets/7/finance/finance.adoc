@@ -91,7 +91,7 @@ Glance too at `static/`, inside of which is `styles.css`. That's where some init
 
 ==== `templates/`
 
-Now look in `templates/`. In `login.html` is, essentially, just an HTML form, stylized with http://getbootstrap.com/[Bootstrap]. In `apology.html`, meanwhile, is a template for an apology. Recall that `apology` in `helpers.py` took two arguments: `top` and `bottom`. Here they are again! And https://github.com/jacebrowning/memegen[here's why]. 0:-)
+Now look in `templates/`. In `login.html` is, essentially, just an HTML form, stylized with http://getbootstrap.com/[Bootstrap]. In `apology.html`, meanwhile, is a template for an apology. Recall that `apology` in `helpers.py` took two arguments: `message`, which was passed to `render_template` as the value of `bottom`, and, optionally, `code`, which was passed to `render_template` as the value of `top`. Notice in `apology.html` how those values are ultimately used! And https://github.com/jacebrowning/memegen[here's why]. 0:-)
 
 Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.12/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
