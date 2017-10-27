@@ -101,8 +101,9 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 Complete the implementation of `register` in such a way that it allows a user to register for an account.
 
-* Require that a user input a username, implemented as a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists.
+* Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists. 
 * Require that a user input a password, implemented as a text field whose `name` is `password`, and then that same password again, implemented as a text field whose `name` is `confirmation`. Render an apology if either input is blank or the passwords do not match.
+* Submit the user's input via `POST` to `/register`.
 * `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.12/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
 * Odds are you'll want to create a new template (e.g., `register.html`) that's quite similar to `login.html`.
 
@@ -113,6 +114,7 @@ Once you've implemented `register` correctly, you should be able to register for
 Complete the implementation of `quote` in such a way that it allows a user to look up a stock's current price.
 
 * Require that a user input a stock's symbol, implemented as a text field whose `name` is `symbol`.
+* Submit the user's input via `POST` to `/quote`.
 * Odds are you'll want to create two new templates (e.g., `quote.html` and `quoted.html`). When a user visits `/quote` via GET, render one of those templates, inside of which should be an HTML form that submits to `/quote` via POST. In response to a POST, `quote` can render that second template, embedding within it one or more values from `lookup`.
 
 === `buy`
@@ -121,6 +123,7 @@ Complete the implementation of `buy` in such a way that it enables a user to buy
 
 * Require that a user input a stock's symbol, implemented as a text field whose `name` is `symbol`. Render an apology if the input is blank or the symbol does not exist (as per the return value of `lookup`).
 * Require that a user input a number of shares, implemented as a text field whose `name` is `shares`. Render an apology if the input is not a positive integer.
+* Submit the user's input via `POST` to `/buy`.
 * Odds are you'll want to call `lookup` to look up a stock's current price.
 * Odds are you'll want to `SELECT` how much cash the user currently has in `users`.
 * Add one or more new tables to `finance.db` via which to keep track of the purchase. Store enough information so that you know who bought what at what price and when.
@@ -143,8 +146,9 @@ Complete the implementation of `index` in such a way that it displays an HTML ta
 
 Complete the implementation of `sell` in such a way that it enables a user to sell shares of a stock (that he or she owns).
 
-* The user interface is entirely up to you. You may allow the user to sell one or more shares, or you may require the user to sell all shares of a stock at once.
-* You must check for and render apologies for any possible errors.
+* Require that a user input a stock's symbol, implemented as a `select` menu whose `name` is `symbol`. Render an apology if the user fails to select a stock or if (somehow, once submitted) the user does not own any shares of that stock.
+* Require that a user input a number of shares, implemented as a text field whose `name` is `shares`. Render an apology if the input is not a positive integer or if the user does not own that many shares of the stock.
+* Submit the user's input via `POST` to `/sell`.
 * You don't need to worry about race conditions (or use transactions).
 
 === `history`
