@@ -174,7 +174,7 @@ video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 == Testing
 
-No `check50` for this one, but be sure to try to "break" your own site, as by
+Be sure to test your web app manually too, as by
 
 * inputting alpabetical strings into forms when only numbers are expected,
 * inputting zero or negative numbers into forms when only positive numbers are expected,
@@ -183,6 +183,20 @@ No `check50` for this one, but be sure to try to "break" your own site, as by
 * trying to sell more shares than a user has,
 * inputting an invalid stock symbol, and
 * including potentially dangerous characters like `'` and `;` in SQL queries.
+
+=== Correctness
+
+[source]
+----
+check50 cs50/2017/fall/finance
+----
+
+=== Style
+
+[source]
+----
+style50 application.py
+----
 
 == Staff's Solution
 
