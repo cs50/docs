@@ -160,16 +160,11 @@ Complete the implementation of `history` in such a way that it displays an HTML 
 
 === personal touch
 
-Implement any two (2) personal touches of your choice:
+Implement at least one personal touch of your choice:
 
 * Allow users to change their passwords.
 * Allow users to add additional cash to their account.
 * Allow users to buy more shares or sell shares of stocks they already own via `index` itself, without having to type stocks' symbols manually.
-* Alter the aesthetics of the sites, as via
-** https://bootswatch.com/4-alpha/,
-** https://getbootstrap.com/docs/4.0/content/,
-** https://getbootstrap.com/docs/4.0/components/, and/or
-** https://memegen.link/api/templates.
 * Require users' passwords to have some number of letters, numbers, and/or symbols.
 * Implement some other feature of comparable scope.
 
@@ -216,6 +211,11 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 * You're welcome to add additional static files to `static/`.
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
 * It is *reasonable* to ask others to try out (and try to trigger errors in) your site. Via *Share* in CS50 IDE's top-right corner can you share your *Application* by making it *Public*. Take care not to share your *Editor*, which would provide access to your Python code and SQLite database.
+* You're welcome to alter the aesthetics of the sites, as via
+** https://bootswatch.com/4-alpha/,
+** https://getbootstrap.com/docs/4.0/content/,
+** https://getbootstrap.com/docs/4.0/components/, and/or
+** https://memegen.link/api/templates.
 
 == FAQs
 
