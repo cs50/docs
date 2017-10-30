@@ -170,6 +170,8 @@ Implement at least one personal touch of your choice:
 
 == Walkthroughs
 
+*Instead of `pwd_context.encrypt`, which Zamyla mentions, be sure to use `generate_password_hash` instead.*
+
 video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 == Testing
