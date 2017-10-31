@@ -53,7 +53,7 @@ If you'd like to borrow something for a project, email heads@cs50.yale.edu, and 
 
 === Community-Based Learning Track
 
-Want to create something that positively impacts the New Haven community? CBL has local partnerships with http://en.seeclickfix.com/new-haven[SeeClickFix New Haven] as well http://www.ctdatahaven.org/[DataHaven], two organizations that use technology and data to improve the community and would love your help to create even more tools to do so. There are also a variety of civic-minded tech opportunities through https://www.codeforamerica.org/[Code for America], which has brigades across the country (i.e., in http://brigade.codeforamerica.org/brigade/Beta-NYC/[New York City]), and through many open data portals, such as https://www.data.gov/open-gov/[Data.gov]. For more information on the CBL Track and potential projects, please email emon.datta@yale.edu. 
+Want to create something that positively impacts the New Haven community? CBL has local partnerships with http://en.seeclickfix.com/new-haven[SeeClickFix New Haven] as well http://www.ctdatahaven.org/[DataHaven], two organizations that use technology and data to improve the community and would love your help to create even more tools to do so. There are also a variety of civic-minded tech opportunities through https://www.codeforamerica.org/[Code for America], which has brigades across the country (i.e., in http://brigade.codeforamerica.org/brigade/Beta-NYC/[New York City]), and through many open data portals, such as https://www.data.gov/open-gov/[Data.gov]. For more information on the CBL Track and potential projects, please email code4good@yale.edu. 
 
 == Schedule
 
