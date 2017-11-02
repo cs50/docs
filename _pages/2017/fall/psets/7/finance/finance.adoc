@@ -45,15 +45,8 @@ finance.db      requirements.txt  templates/
 flask run
 ----
 +
-Visit the URL outputted by `flask`. If a directory called `flask_session/` appears in `finance/`, not to worry; that's where Flask stores your session(s).
-. In another terminal window, start phpLiteAdmin (within `finance/`):
-+
-[source]
-----
-phpliteadmin finance.db
-----
-+
-And open the URL that `phpliteadmin` outputs in a new tab. Notice how `finance.db` comes with a table called `users`. Take a look at its structure (i.e., schema). Notice how, by default, new users will receive $10,000 in cash. But there aren't (yet!) any users (i.e., rows) therein to browse.
+Visit the URL outputted by `flask` to see the distribution code in action. You won't be able to log in or register, though, just yet!
+. Via CS50's file browser, double-click *finance.db* in order to open it with phpLiteAdmin. Notice how `finance.db` comes with a table called `users`. Take a look at its structure (i.e., schema). Notice how, by default, new users will receive $10,000 in cash. But there aren't (yet!) any users (i.e., rows) therein to browse.
 +
 Here on out, if you'd prefer a command line, you're welcome to use `sqlite3` instead of phpLiteAdmin.
 
