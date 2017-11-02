@@ -3,27 +3,27 @@ layout: 2017/fall
 ---
 :skip-front-matter:
 
-= Problem Set 7: C$50 Finance
+= Problem Set 8: Mashup
 
 == tl;dr
-
-. Implement a stock-trading website.
+ 
+. Implement a news map.
 . Submit a form.
 
-include::help-harvard.adoc[]
+include::help-yale.adoc[]
 
 == Getting Started
 
 [source]
 ----
 update50
-mkdir ~/workspace/pset7/
-cd ~/workspace/pset7/
+mkdir ~/workspace/pset8/
+cd ~/workspace/pset8/
 ----
 
 == Problems
 
-Implement link:finance/finance.html[C$50 Finance] in `pset7/finance/`.
+Implement link:mashup/mashup.html[Mashup] in `pset8/mashup/`.
 
 == Hints
 
@@ -39,12 +39,12 @@ Implement link:finance/finance.html[C$50 Finance] in `pset7/finance/`.
 [source]
 ----
 update50
-cd ~/workspace/pset7/finance/
-submit50 cs50/2017/fall/finance
+cd ~/workspace/pset8/mashup/
+submit50 mashup
 ----
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2017/fall/psets/7[]!
-
-This was Problem Set 7.
+Submit https://forms.cs50.net/2017/fall/psets/8[]!
+ 
+This was Problem Set 8, your last!
