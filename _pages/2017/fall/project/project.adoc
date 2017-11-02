@@ -44,6 +44,7 @@ Like to integrate hardware into your project? Know that CS50 has the following h
 * some https://www.arduino.cc/en/Main/arduinoBoardUno[Arduino Uno] boards, for which there's an https://www.arduino.cc/en/Reference/HomePage[API],
 * some https://www.google.com/get/cardboard/[Google Cardboards], for which there's an developers.google.com/cardboard[API],
 * an https://www.vive.com/us/[HTC Vive], for which there's an https://developer.viveport.com/us/develop_portal/[SDK]
+* some https://docs.particle.io/datasheets/photon-datasheet/[Internet of Things hardware development kits] and https://docs.particle.io/guide/tools-and-features/button/core/[Internet Buttons], for which there's an https://docs.particle.io/guide/tools-and-features/dev/[IDE] and https://docs.particle.io/guide/getting-started/examples/photon/[API], 
 * some https://www.leapmotion.com/[Leap Motion Controllers], for which there's an https://developer.leapmotion.com/[API],
 * a https://www.microsoft.com/microsoft-hololens/en-us[Microsoft HoloLens], for which there's an https://www.microsoft.com/microsoft-hololens/en-us/developers[SDK]
 * an https://www.oculus.com/[Oculus Rift] and an https://www3.oculus.com/en-us/dk2/[Oculus DK2], for which there's an https://developer.oculus.com/[SDK]

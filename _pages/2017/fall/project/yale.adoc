@@ -43,6 +43,7 @@ Like to integrate hardware into your project? Know that CS50 has the following h
 * an https://developer.apple.com/programs/[iOS Developer Program], which allows you to install homemade apps on your own iOS device,
 * some https://www.arduino.cc/en/Main/arduinoBoardUno[Arduino Uno] boards, for which there's an https://www.arduino.cc/en/Reference/HomePage[API],
 * some https://www.google.com/get/cardboard/[Google Cardboards], for which there's an developers.google.com/cardboard[API],
+* some https://docs.particle.io/datasheets/photon-datasheet/[Internet of Things hardware development kits] and https://docs.particle.io/     guide/tools-and-features/button/core/[Internet Buttons], for which there's an https://docs.particle.io/guide/tools-and-features/dev/[IDE]    and https://docs.particle.io/guide/getting-started/examples/photon/[API],
 * some https://www.leapmotion.com/[Leap Motion Controllers], for which there's an https://developer.leapmotion.com/[API],
 * some http://www2.meethue.com/en-us/productdetail/philips-hue-white-and-color-ambiance-starter-kit-a19[Philips hue bulbs], for which there's an http://www.developers.meethue.com/[API],
 * some http://www2.meethue.com/en-us/productdetail/philips-hue-lightstrip[Philips hue lightstrips], for which there's an http://www.developers.meethue.com/[API],
