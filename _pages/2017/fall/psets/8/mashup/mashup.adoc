@@ -268,7 +268,7 @@ This function is called by the typeahead plugin every time the user changes the 
 
 Notice that we're using ``getJSON``'s "Promise" interface, per http://api.jquery.com/jquery.getjson/. Rather than pass an anonymous function directly to `getJSON` (to be called upon success), we're instead "chaining" together calls to `getJSON`, `done` (whose argument, an anonymous function, will be called upon success), and `fail` (whose argument, another anonymous function, will be called upoon failure). See http://api.jquery.com/jquery.ajax/ for some additional details. And see https://davidwalsh.name/write-javascript-promises for an explanation of promises themselves.
 
-Notice, too, that we're using `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console.log for tips.
+Notice, too, that we're using `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console/log for tips.
 
 ===== showInfo
 
