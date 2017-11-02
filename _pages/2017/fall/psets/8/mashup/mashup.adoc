@@ -470,16 +470,14 @@ video::LGOXIN87giE[youtube,list=PLhQjrBD2T383MDO-WBcfAq5SIsoEfoW07]
 
 == Testing
 
-Be sure to test your web app manually too, as by
+=== Correctness
+
+No `check50` anymore! Be sure to try to "break" your own site, as by
 
 * searching for cities that don't exist,
 * clicking markers for cities that don't have any articles,
 * dragging and zooming in and out to update your map's markers, and
 * searching with potentially dangerous characters like `'` and `;`.
-
-=== Correctness
-
-_Coming Sat 11/4 eve_
 
 === Style
 
