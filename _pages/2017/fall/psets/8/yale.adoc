@@ -40,7 +40,7 @@ Implement link:mashup/mashup.html[Mashup] in `pset8/mashup/`.
 ----
 update50
 cd ~/workspace/pset8/mashup/
-submit50 mashup
+submit50 cs50/2017/fall/mashup
 ----
 
 === Step 2 of 2
