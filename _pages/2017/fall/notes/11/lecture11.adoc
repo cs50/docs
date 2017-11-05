@@ -345,7 +345,7 @@ document.getElementById('demo').onsubmit = greet;
 ...
 ----
 ** The syntax is a bit different now, but the first line of our new script is `$(document).ready(function() {`. The `$` is now a global variable that's defined by the jQuery library, which we linked to in the line above. `$(document)` selects the entire page from the browser and wraps it with additional functionality. `ready` is one such feature, which allows us to call another function as soon as the page is ready, since a page might need to load lots of different pieces.
-** Below that, we use syntax like `$("\#registration")` to select elements on the page based on their ID, and use `.submit` to attach a function to be called when the form is submitted. The `\#` syntax comes from CSS, and we can use more complex selectors like `$("#registration input[name=email]")`, to select the element with a name of `email`, of type `input`, within the `registration` element.
+** Below that, we use syntax like `$("\#registration")` to select elements on the page based on their ID, and use `.submit` to attach a function to be called when the form is submitted. The ``#`` syntax comes from CSS, and we can use more complex selectors like `$("#registration input[name=email]")`, to select the element with a name of `email`, of type `input`, within the `registration` element.
 
 [t=1h6m53s]
 == AJAX
