@@ -345,7 +345,7 @@ document.getElementById('demo').onsubmit = greet;
 ...
 ----
 ** The syntax is a bit different now, but the first line of our new script is `$(document).ready(function() {`. The `$` is now a global variable that's defined by the jQuery library, which we linked to in the line above. `$(document)` selects the entire page from the browser and wraps it with additional functionality. `ready` is one such feature, which allows us to call another function as soon as the page is ready, since a page might need to load lots of different pieces.
-** Below that, we use syntax like `$("#registration")` to select elements on the page based on their ID, and use `.submit` to attach a function to be called when the form is submitted. The `#` syntax comes from CSS, and we can use more complex selectors like `$("#registration input[name=email]")`, to select the element with a name of `email`, of type `input`, within the `registration` element.
+** Below that, we use syntax like `$("\#registration")` to select elements on the page based on their ID, and use `.submit` to attach a function to be called when the form is submitted. The `\#` syntax comes from CSS, and we can use more complex selectors like `$("#registration input[name=email]")`, to select the element with a name of `email`, of type `input`, within the `registration` element.
 
 [t=1h6m53s]
 == AJAX
@@ -388,7 +388,7 @@ image::google_maps.png[alt="Network requests for Google Maps", width=600]
 image::ajax0.png[alt="Network requests for ajax0.html", width=600]
 ** And we can click on the request itself to see that it is an object in JSON, JavaScript Object Notation, like a dictionary in Python.
 ** To get this feature, we have a simple HTML form where we can input a symbol, and we use the `onsubmit` attribute of the form to call the `quote` function. `quote`, in turn, uses the jQuery library's `getJSON` function.
-** The first argument we pass to `getJSON` is `"/quote", which means that the browser will use that URL to get data from our server.
+** The first argument we pass to `getJSON` is `"/quote"`, which means that the browser will use that URL to get data from our server.
 ** The second argument is a JSON object that we want to give to the server as part of our request. In this case, we are passing it an object with a key of `symbol`, the value of which is the value the user typed into the text box. The `getJSON` function of the jQuery library adds this to the GET request it sends to the server.
 ** And the last argument is an anonymous function. This time, the anonymous function takes an argument of `data`. Furthermore, it is a callback function because it will only be called when the data comes back from the server. And that function, when it does get called with the data, simply alerts us to the `price` attribute of that object.
 * In `ajax1.html`, we implement the same functionality a bit more cleanly, by factoring out our JavaScript code:
