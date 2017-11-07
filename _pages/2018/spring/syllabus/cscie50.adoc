@@ -82,7 +82,7 @@ This semester's lectures were filmed in Fall 2017. All are available on video vi
 | Lecture 4 | Memory | Fri 2/16
 | Lecture 5 | Data Structures | Fri 2/23
 | Lecture 6 | HTTP | Fri 3/2
-| Lecture 7 | Dynamic Programming | Mon 3/12
+| Lecture 7 | Dynamic Programming | Fri 3/9
 | Lecture 8 | Python | Mon 3/12
 | Lecture 9 | Python, continued | Fri 3/16
 | Lecture 10 | SQL | Fri 3/23
