@@ -1,0 +1,185 @@
+---
+layout: 2018/spring
+---
+:skip-front-matter:
+
+= CSCI E-50 Syllabus
+
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience. 68% of CS50 students have never taken CS before.
+
+This course has pre-recordede lectures which are released on Fridays, and mandatory sections as described below.
+
+== Expectations
+
+You are expected to:
+
+* attend or watch all lectures,
+* attend all sections until the test,
+* submit nine problem sets,
+* take one test and one quiz, and
+* submit a final project.
+
+== Website
+
+https://cs50.harvard.edu/
+
+== Grades
+
+If taking the course for a letter grade, you must ordinarily submit all nine problem sets, take one test and one quiz, and submit a final project in order to be eligible for a satisfactory grade unless granted an exception in writing by the course’s heads.
+
+Final grades are determined using the following weights:
+
+|===
+| Problem Sets | 45%
+| Test | 25%
+| Quiz | 15%
+| Final Project| 10%
+| Engagement | 5%
+|===
+
+Problem sets and the final project are evaluated along axes of correctness, design, and style, with scores ordinarily computed as 3 × correctness + 2 × design + 1 × style. Engagement takes into account participation in sections, office hours, and/or the course's online discussion forum. Scores are normalized across teaching fellows and comfort levels at term's end, so mid-semester comparisons among students of scores are not reliable indicators of standing.
+
+Know that CS50 draws quite the spectrum of students, including "those less comfortable," "those more comfortable," and those somewhere in between. However, what ultimately matters in this course is not so much where you end up relative to your classmates but where you, in the course's final week, end up relative to yourself in the first week.
+
+Each student's final grade is individually determined at term's end. Remarkable effort and upward trending are considered, as is input from the teaching fellows. The course does not have pre-determined cutoffs for final grades. The course is not graded on a curve. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable.
+
+== Books
+
+No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, resources can be found on the course's website.
+
+_C Programming Absolute Beginner's Guide_, Third Edition +
+Greg Perry, Dean Miller +
+Pearson Education, 2014 +
+ISBN 0-789-75198-4
+
+_Hacker's Delight_, Second Edition +
+Henry S. Warren Jr. +
+Pearson Education, 2013 +
+ISBN 0-321-84268-5
+
+_How Computers Work_, Tenth Edition +
+Ron White +
+Que Publishing, 2014 +
+ISBN 0-7897-4984-X
+
+_Programming in C_, Fourth Edition +
+Stephen G. Kochan +
+Pearson Education, 2015 +
+ISBN 0-321-77641-0
+
+== Lectures
+
+This semester's lectures were filmed in Fall 2017. All are available on video via the course's website. Below are dates on which (or close to which) we recommend that each week's lecture be viewed, to best prepare you for that week's problem set.
+|===
+3+| Lecture
+
+| Lecture 0 | Scratch | Wed 1/24
+| Lecture 1 | C | Fri 1/26
+| Lecture 2 | C, continued | Fri 2/2
+| Lecture 3 | Algorithms | Fri 2/9
+| Lecture 4 | Memory | Fri 2/16
+| Lecture 5 | Data Structures | Fri 2/23
+| Lecture 6 | HTTP | Fri 3/2
+| Lecture 7 | Dynamic Programming | Mon 3/12
+| Lecture 8 | Python | Mon 3/12
+| Lecture 9 | Python, continued | Fri 3/16
+| Lecture 10 | SQL | Fri 3/23
+| Lecture 11 | JavaScript | Fri 3/30
+| Lecture 12 | JavaScript, continued | Fri 4/6
+| Lecture 13 | The End | Fri 4/27
+|===
+
+== Sections
+
+Lectures are supplemented by weekly, 2-hour sections led by the teaching fellows. You will be assigned to a section (and teaching fellow) shortly thereafter the course begins; he or she will grade your assignments throughout the term.
+
+Attendance at section is required up until the test; attendance will be taken. Sections for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] at any of the times to be determined and listed below. Students are welcome to attend any of these online sessions week to week, so long as they fully attend one of them.
+
+A schedule of sections, subject to change, appears below. Recordings of the sections, where available, are linked below as well.
+
+|===
+2+| Section
+
+| C | Fri 2/2*
+| C, continued | week of Sun 2/4
+| Algorithms | week of Sun 2/11
+| File I/O | week of Sun 2/18
+| Data Structures | week of Sun 2/25
+| Review for Test | week of Sun 3/4
+| Python | week of Sun 3/18
+| SQL | week of Sun 3/25
+| JavaScript | week of Sun 4/4
+| Review for Quiz | week of Sun 4/11
+|===
+
+pass:[*] Course-wide and filmed in advance.
+
+== Office Hours
+
+Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants. Office hours for CSCI E-50 are held online, times to be determined.
+
+== Problem Sets
+
+Nine problem sets are assigned during the semester. Late work is not ordinarily accepted, except in cases of emergency.
+
+A schedule of problem sets appears below.
+
+|===
+| Problem Set | Language | Released | Due
+
+| Problem Set 0 | Scratch | Wed 1/24 | Mon 1/29, noon
+| Problem Set 1 | C | Fri 1/26 | Mon 2/5, noon
+| Problem Set 2 | C | Fri 2/2 | Mon 2/12, noon
+| Problem Set 3 | C | Fri 2/9 | Mon 2/19, noon
+| Problem Set 4 | C | Fri 2/16 | Mon 2/26, noon
+| Problem Set 5 | C | Fri 2/23 | Mon 3/5, noon
+| Problem Set 6 | Python | Fri 3/16 | Mon 3/26, noon
+| Problem Set 7 | Python, SQL | Fri 3/23 | Mon 4/2, noon
+| Problem Set 8 | JavaScript | Fri 3/30 | Mon 4/9, noon
+|===
+
+== Test
+
+|===
+| Released        | Due
+
+| Fri 3/9, noon | Mon 3/12, noon
+|===
+
+Due by noon on Mon 3/12 is a take-home test that will cover Weeks 0 through 5 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+
+== Quiz
+
+|===
+| Released       | Due
+
+| Sat 4/21, noon | Mon 4/23, noon
+|===
+
+Due by noon on Mon 4/23 is a take-home quiz that will cover Weeks 0 through 10 (and Problem Sets 0 through 8), with emphasis on Week 6 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+
+== Final Project
+
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
+
+Extensions on the final project are not ordinarily granted, except in cases of emergency. Lateness of submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to not submitting at all.
+
+|===
+| Milestone | Date
+
+| Pre-Proposal | Fri 3/30, noon
+| Proposal | Fri 4/13, noon
+| Status Report | Mon 4/30, noon
+| Implementation | Thu 5/10, noon
+| Project Fair | Fri 5/11, 5:30pm – 7pm
+|===
+
+== Project Fair
+
+From 5:30pm until 7pm on Fri 5/8 is the Project Fair, an epic display of final projects in both CSCI E-50 as well as the other courses taught by the course's staff, including CSCI E-23a, CSCI E-33a, and CSCI E-39b. Not only is the Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is optional. Snacks will be provided. Family and friends are welcome to join.
+
+include::../honesty.adoc[]
+
+include::../acknowledgement.adoc[]
