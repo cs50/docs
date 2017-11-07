@@ -118,7 +118,6 @@ helpers.py      readme.txt  static/           US.txt
 
 === Configuring
 
-to install this problem's dependencies.
 . If you don't already have a Google account (e.g., Gmail), sign up at https://accounts.google.com/SignUp[accounts.google.com/SignUp].
 . Visit https://developers.google.com/maps/web/[developers.google.com/maps/web/], logging in if prompted, and click **GET A KEY** at top-right.
 . Click *Select or create project*, click *+Create a new project*, and input *pset8* (or anything else) under *Enter new project name*.
