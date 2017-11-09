@@ -294,11 +294,11 @@ In no part of this problem are you expected to optimize your runtimes for any of
 
 == How to Submit
 
-=== Step 1 of 2
+=== Step 1 of 3
 
 Execute `update50` again to ensure that your IDE is up-to-date.
 
-=== Step 2 of 2
+=== Step 2 of 3
 
 * Recall that you were asked to implement the `sort race`. 
 ** Be sure that the following files exist in `~/workspace/chapter3/race/`:
@@ -315,8 +315,17 @@ cd ~/workspace/chapter3/race/
 ls
 ----
 
-
 Since there is no way to automatically check for correctness here this project is graded on completion.
+
+=== Step 3 of 3
+
+Submit `Sort Race`:
+
+[source]
+----
+cd ~/workspace/chapter3/race/
+submit50 cs50/2017/ap/race
+----
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
