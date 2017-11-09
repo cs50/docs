@@ -190,18 +190,17 @@ check50 cs50/2017/ap/scramble/1
 
 === Step 1 of 3
 
-* Update your IDE:
-+
+Update your IDE:
+
 [source]
 ----
 update50
 ----
+
 === Step 2 of 3
 
-Ensure `scramble.c` is in your chapter 3 directory
 
-
-Be sure that each of your files are in `~/workspace/chapter3/scramble`, as with:
+Be sure that `scramble.c` is in `~/workspace/chapter3/scramble`, as with:
 
 [source]
 ----
@@ -213,13 +212,14 @@ If `scramble.c` is not in `~/workspace/chapter3/scramble`, move it into that dir
 
 === Step 3 of 3
 
-* Submit `scramble`:
-+
+Submit `scramble`:
+
 [source]
 ----
 cd ~/workspace/chapter3/scramble/
 submit50 cs50/2017/ap/scramble/1
 ----
+
 inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
