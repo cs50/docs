@@ -76,8 +76,7 @@ ISBN 0-321-77641-0
 
 == Lectures
 
-CS50 officially meets on Thursdays, from 4pm until 5:15pm in Sheffield-Sterling-Strathcona Hall (SSS) Room 114, but students are only        expected to attend in person the course's first lecture on Thursday 8/31, mid-semester lecture on Thursday 10/12, and final lecture on Thursday 11/16. If you've a conflict, though, you're welcome to watch those lectures online.
-
+CS50 officially meets on Thursdays, from 4pm until 5:15pm in Sheffield-Sterling-Strathcona Hall (SSS) Room 114, but students are only expected to attend in person the course's first lecture on Thursday 8/31, mid-semester lecture on Thursday 10/12, and final lecture on Thursday 11/16. If you've a conflict, though, you're welcome to watch those lectures online.
 
 Other lectures are live-streamed from Harvard on Fridays, though you're welcome to watch on demand anytime thereafter. On Thursdays, CS50 holds "enrichment" in SSS 114 for students who would like additional context and depth on some of the topics covered in class.  Attendance is optional, but encouraged if you do not have a conflict.  Because these will not be "review" or "help" sessions, you will not be at any disadvantage if you are unable to attend.
 
@@ -93,12 +92,11 @@ A schedule of lectures, subject to change, appears below.
 | Week 3 | Memory | Fri 9/22, 10am – 12pm
 | Week 4 | Data Structures | Fri 9/29, 10am – 12pm
 | Week 5 | HTTP | Fri 10/6, 10am – 12pm
-.2+| Week 6 | TBD | Thu 10/12, 4pm – 5:15pm, live at Yale
+.2+| Week 6 | Dynamic Programming | Thu 10/12, 4pm – 5:15pm, live at Yale
 | Python | Fri 10/13, 10am – 12pm
 | Week 7 | Python, continued | Fri 10/20, 10am – 12pm
 | Week 8 | SQL | Fri 10/27, 10am – 12pm
 | Week 9 | JavaScript | Fri 11/3, 10am – 12pm
-| Week 10 | JavaScript, continued | Fri 11/10, 10am – 12pm
 | Week 11 | The End | Thu 11/16, 4pm – 5:15pm, live at Yale
 |===
 
