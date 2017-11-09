@@ -237,12 +237,13 @@ check50 cs50/2017/ap/fifteen
 
 === Step 1 of 3
 
-* Update your IDE:
-+
+Update your IDE:
+
 [source]
 ----
 update50
 ----
+
 === Step 2 of 3
 
 Ensure you have all of the files below:
@@ -263,13 +264,14 @@ If any file is not in `~/workspace/chapter3/fifteen`, move it into that director
 
 === Step 3 of 3
 
-* Submit `fifteen`:
-+
+Submit `fifteen`:
+
 [source]
 ----
 cd ~/workspace/chapter3/fifteen/
 submit50 cs50/2017/ap/fifteen
 ----
+
 inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
