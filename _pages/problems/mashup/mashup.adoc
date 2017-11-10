@@ -463,7 +463,7 @@ and other such variants, where `username` is your own username, to see if you ge
 
 Feel free to tinker with the staff's solution at http://mashup.cs50.net/, inspecting its HTTP requests via Chrome's Network tab as needed, if unsure how your own code should work!
 
-==== `scripts.js`
+=== `scripts.js`
 
 First, toward the top of `scripts.js`, you'll see an anonymous function, inside of which is a definition of `options`, an object, one of whose keys is `center`, the value of which is an object with two keys of its own, `lat`, and `lng`. Per the comment alongside that object, your mashup's map is currently centered on Stanford, California. (D'oh.) Change the coordinates of your map's center to Cambridge (42.3770, -71.1256) or New Haven (41.3184, -72.9318) or anywhere else! (Though be sure to choose coordinates in the US if you downloaded `US.txt`!) Once you save your changes and reload your map, you should find yourself there! Zoom out as needed to confirm visually.
 
