@@ -62,14 +62,14 @@ Next, navigate to your `~/workspace/chapter4` directory.  For the first time in 
 wget http://docs.cs50.net/2017/ap/problems/recover/recover.zip
 ----
 
-This file's somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created `recover` directory. If you list the contents of your directory, you should find two files therein:
+This file's somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created `recover` directory. If you list the contents of your directory, you should find one file therein:
 
 [source,bash]
 ----
-camera.raw  recover.c
+card.raw
 ----
 
-You'll be doing all your work for this problem inside of this `recover.c` file. Open it up and... darn, it's totally empty!
+You'll be doing all your work for this problem inside of a new file called `recover.c`. 
 
 == Genius Bar
 
@@ -172,6 +172,51 @@ rm -f *.jpg
 ----
 
 Just be careful with that `-f` switch, as it "forces" deletion without prompting you.
+
+== How to Submit
+
+
+=== Step 1 of 3
+
+Update your IDE:
+
+[source]
+----
+update50
+----
+
+=== Step 2 of 3
+
+Be sure that `recover.c` is in `~/workspace/chapter4/recover`, as with:
+
+[source]
+----
+cd ~/workspace/chapter4/recover
+ls
+----
+
+If any file is not in `~/workspace/chapter4/recover`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+Submit `recover`:
+
+[source]
+----
+cd ~/workspace/chapter4/recover/
+submit50 cs50/2017/ap/recover
+----
+
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Recover.
+
 
 == FAQs
 
