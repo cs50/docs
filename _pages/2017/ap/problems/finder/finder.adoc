@@ -242,6 +242,14 @@ Phew, we made it. If unsure of how to start, review the shorts above! And as alw
 
 You should also feel free to test your code by creating new directories and files containing any strings your heart desires, and searching for those strings to see if your program can find them correctly.
 
+=== `check50`
+
+[source]
+----
+check50 cs50/2017/ap/finder
+----
+
+
 If you'd like to play around with the staff's solution, execute
 
 [source, bash]
@@ -250,5 +258,46 @@ If you'd like to play around with the staff's solution, execute
 ----
 
 That program will generate a file in the same directory as `finder.c` entitled `staff_found.txt`. If you open the file and look at it, you'll see the names of all the files (with file paths relative to the directory `finder.c` is in) that contain the search string you sought out.
+
+== How to Submit
+
+=== Step 1 of 3
+
+Update your IDE:
+
+[source]
+----
+update50
+----
+
+=== Step 2 of 3
+
+Be sure that each of your files are in `~/workspace/chapter4/finder`, as with:
+
+[source]
+----
+cd ~/workspace/chapter4/finder
+ls
+----
+
+If any file is not in `~/workspace/chapter4/finder`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+Submit `finder`:
+
+[source]
+----
+cd ~/workspace/chapter4/finder
+submit50 cs50/2017/ap/finder
+----
+
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Finder.
