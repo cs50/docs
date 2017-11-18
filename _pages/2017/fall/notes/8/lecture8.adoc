@@ -106,7 +106,7 @@ hello, world
 ----
 from cs50 import get_string
 
-s = cs50.get_string()
+s = get_string("name: ")
 print(f"hello, {s}")
 ----
 ** The syntax for including a library or a function is to use `import`, and we are importing `get_string` from the `cs50` library, which was pre-installed on the CS50 IDE.
