@@ -184,7 +184,7 @@ image::dom.png[alt="DOM of simple page", width=600]
 </html>
 ----
 ** In the body of the page, we create a simple form with a text input with an ID of `name`. Then, we specify that the `onsubmit` event handler for the form will call `greet()`, and we use `return false;` to prevent the browser from trying to submit the form by default. We also use `autocomplete="off"` to turn off the autocomplete dropdown in the form's input, and `autofocus` to automatically bring the cursor into the form field, so we don't need to click into the box before we can type in it.
-** In the head of the page, we use the `<script>` tag to write JavaScript code. We declare the function `greet` and call the `alert` function with the name from the form when `greet` is called. To get the name in the form, we use `document`, a global variable that contains the entire page, and the built-in `getElementById` function of it, to select the element with ID of `name`. That element, an input text box, has a `value` attribute, which is the value inside it. And finally, we substitute that into our string with backticks, `\``, as shown.
+** In the head of the page, we use the `<script>` tag to write JavaScript code. We declare the function `greet` and call the `alert` function with the name from the form when `greet` is called. To get the name in the form, we use `document`, a global variable that contains the entire page, and the built-in `getElementById` function of it, to select the element with ID of `name`. That element, an input text box, has a `value` attribute, which is the value inside it. And finally, we substitute that into our string with backticks, `````, as shown.
 * Instead of having code mixed in our HTML form, we can do the following:
 +
 [source, html]
@@ -202,8 +202,8 @@ image::dom.png[alt="DOM of simple page", width=600]
         </form>
         <script>
 
-            document.getElementById('demo').onsubmit = function() {
-                alert('hello, ' + document.getElementById('name').value + '!');
+            document.getElementById("demo").onsubmit = function() {
+                alert("hello, " + document.getElementById("name").value + "!"");
                 return false;
             };
 
@@ -224,7 +224,7 @@ function greet()
     alert("hello, world");
 }
 
-document.getElementById('demo').onsubmit = greet;
+document.getElementById("demo").onsubmit = greet;
 ...
 ----
 *** Notice that we didn't set it to `greet()`, which would call the function immediately. Instead, we only want to point `onsubmit` to `greet`, so it can be called when the form is actually submitted.
@@ -348,12 +348,12 @@ document.getElementById('demo').onsubmit = greet;
 ** Below that, we use syntax like `$("\#registration")` to select elements on the page based on their ID, and use `.submit` to attach a function to be called when the form is submitted. The ``#`` syntax comes from CSS, and we can use more complex selectors like `$("#registration input[name=email]")`, to select the element with a name of `email`, of type `input`, within the `registration` element.
 
 [t=1h6m53s]
-== AJAX
+== Ajax
 
 * When we visit https://www.google.com/maps, we see a section of a map near where we are. But our browser hasn't downloaded all map areas of the world. Instead, when we drag around the map, we will see a delay where we might see areas that are just gray, until that piece has been loaded. We can see this with the Network tab of the Developer Tools:
 +
 image::google_maps.png[alt="Network requests for Google Maps", width=600]
-* The technology that a browser uses to make requests dynamically is called AJAX, and it allows our browser to make additional special HTTP requests, after the initial one, to get more data from a server.
+* The technology that a browser uses to make requests dynamically is called Ajax, and it allows our browser to make additional special HTTP requests, after the initial one, to get more data from a server.
 * Let's look at http://cdn.cs50.net/2017/fall/lectures/11/src11/ajax0.html.src[`ajax0.html`]:
 +
 [source, html]
@@ -404,7 +404,7 @@ image::ajax0.png[alt="Network requests for ajax0.html", width=600]
 
             $(document).ready(function() {
 
-                $('#quote').submit(function() {
+                $("#quote").submit(function() {
 
                     $.getJSON("/quote", {symbol: $("#symbol").val()}, function(data) {
                         alert(data.price);
@@ -426,7 +426,7 @@ image::ajax0.png[alt="Network requests for ajax0.html", width=600]
     </body>
 </html>
 ----
-* Thus far, the code we've written in C have been synchronous, meaning that our code executed top to bottom, waiting for each function call to return before proceeding. With callbacks in JavaScript, we're able to write asynchronous code, meaning that our program can do many things while waiting for some function, like an AJAX request, to return.
+* Thus far, the code we've written in C have been synchronous, meaning that our code executed top to bottom, waiting for each function call to return before proceeding. With callbacks in JavaScript, we're able to write asynchronous code, meaning that our program can do many things while waiting for some function, like an Ajax request, to return.
 * We can also use a built-in feature of our browser to get the user's location in http://cdn.cs50.net/2017/fall/lectures/11/src11/geolocation.html.src[`geolocation.html`]:
 +
 [source, html]
@@ -441,7 +441,7 @@ image::ajax0.png[alt="Network requests for ajax0.html", width=600]
         <script>
 
             navigator.geolocation.getCurrentPosition(function(position) {
-                document.write(position.coords.latitude + ', ' + position.coords.longitude);
+                document.write(position.coords.latitude + ", " + position.coords.longitude);
             });
 
         </script>
