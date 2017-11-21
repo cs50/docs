@@ -132,7 +132,7 @@ image::spreadsheet.png[alt="spreadsheet in Google Sheets", width=400]
 ** `INSERT INTO "registrants" ("id", "name", "dorm") VALUES(1, 'David', 'Matthews')`
 *** Now we specify the columns of data we want to provide for a new row, and the values for each column.
 ** `SELECT * FROM "registrants"`
-*** `*` allows us to select all rows, since `*` matches all values.
+*** `pass:[*]` allows us to select all rows, since `*` matches all values.
 ** `UPDATE "registrants" SET "name" = 'David Malan' where id = 1`
 *** We can also change values for rows, but ensure that we only set it for the row we want to change with `where id = 1`.
 ** `DELETE FROM "registrants" WHERE id = 1`
