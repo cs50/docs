@@ -123,7 +123,7 @@ hello, world
 
 === `check50`
 
-To evaluate the correcntess of your code, execute the below from inside `~/workspace/pset1/hello/`.
+To evaluate the correctness of your code, execute the below from inside `~/workspace/pset1/hello/`.
 
 [source]
 ----
