@@ -144,13 +144,13 @@ submit50 cs50/2017/fall/project
 
 Submit https://forms.cs50.net/2017/fall/project/implementation[]!
 
+**This last form is on the longer side, so no worries if you start it before the deadline but finish a bit after.**
+
 == CS50 Fair
 
 The CS50 Fair is an epic display of final projects, your opportunity to showcase your work not only to us but also to others on campus.  You will be expected to bring to the CS50 Fair a laptop with which to demonstrate your project.  Plan to tell attendees what you have done and why you have done it.  And perhaps have in mind a few anecdotes about lessons you learned, roadblocks you hit, or the like.
 
-////
-The CS50 Fair will take place in Commons.
-////
+The CS50 Fair will take place in the Yale Peabody Museum of Natural History.
 
 Additional details on the CS50 Fair's logistics will be announced via email and the course's home page the week before the CS50 Fair.
 

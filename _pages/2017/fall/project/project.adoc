@@ -139,6 +139,8 @@ submit50 cs50/2017/fall/project
 
 Submit https://forms.cs50.net/2017/fall/project/implementation[]!
 
+**This last form is on the longer side, so no worries if you start it before the deadline but finish a bit after.**
+
 == CS50 Fair
 
 The CS50 Fair is an epic display of final projects, your opportunity to showcase your work not only to us but also to others on campus.  You will be expected to bring to the CS50 Fair a laptop with which to demonstrate your project.  Plan to tell attendees what you have done and why you have done it.  And perhaps have in mind a few anecdotes about lessons you learned, roadblocks you hit, or the like.
