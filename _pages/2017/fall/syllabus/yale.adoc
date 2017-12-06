@@ -194,7 +194,7 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 | Status Report | Mon 11/27, noon
 | CS50 Hackathon | Thu 11/30, 7pm – Fri 12/1, 7am
 | Implementation | Sun 12/10, noon
-| CS50 Fair | Mon 12/11, 12pm – 3pm
+| CS50 Fair | Mon 12/11, 12pm – 2pm
 |===
 
 == CS50 Hackathon
@@ -207,7 +207,7 @@ Transportation to and from the CS50 Hackathon will be provided.
 
 == CS50 Fair
 
-From 12pm until 3pm on Mon 12/11 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
+From 12pm until 2pm on Mon 12/11 is the CS50 Fair, an epic display of final projects. Not only is the CS50 Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is expected of all students.
 
 Also in attendance are popcorn, candy, and a raffle with (fabulous) prizes. Family and friends are welcome to join.
 
