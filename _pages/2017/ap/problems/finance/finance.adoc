@@ -3,7 +3,7 @@ layout: 2017/ap
 ---
 :skip-front-matter:
 
-= Problem: C$50 Finance
+= C$50 Finance
 
 == tl;dr
 
@@ -11,65 +11,7 @@ Implement a website via which users can "buy" and "sell" stocks, a la the below.
 
 image::finance.png["C$50 Finance",role="related thumb"]
 
-== Recommended Reading
-
-* http://diveintohtml5.info/
-* http://flask.pocoo.org/docs/0.12/
-
-== Recommended Viewing
-
-Beyond introducing you to web programming, the overarching goal of this problem is to teach you--nay, empower you--to teach yourself new languages so that you can stand on your own after term's end.  We'll guide you through each, but if you nonetheless find yourself Googling and asking lots of questions of classmates and staff, rest assured you're doing it right!
-
-But first, a (soon-to-be-relevant) clip from a classic film.
-
-video::nXFyyZzNevM[youtube]
-
-Now consider joining Daven for a tour of HTML again.
-
-video::dM5V1epAbSs[youtube]
-
-And consider reviewing some of these examples.
-
-video::1TgTA4o_AM8[youtube,playlist="dW4giTKrgzo,GgpyVgkW_xk,whYnf7PFZ74,s1_kxTs5GfI,qyJXI2v7N8k,DQLbgo7Rzpg"]
-
-Next consider joining Joseph again for a tour of CSS, the language with which web pages can be stylized.
-
-video::kg0ZOmUREwc[youtube]
-
-And consider reviewing some of these examples.
-
-video::TKZlfZDF8Y4[youtube,playlist="VwCSw2ts388,-7wiXVMh4XY"]
-
-You are now a web programmer!  Okay, not quite.  Neither HTML nor CSS are programming languages, but PHP is.  Here's David with a Python refresher, if you need!
-
-video::5aP9Bl9hcqI[youtube,height=540,playlist="WSKc1a25R6oYxOAJ3ekqH4",width=960]
-
-Now let's look at a common "design pattern" for websites called MVC (Model-View-Controller) that we'll ultimately use for this problem set.  Take another look at *mvc-0* through *mvc-5*.
-
-video::3Jy0OIaHviI[youtube,height=540,playlist="OwY_kl87bxY,-6FRpI6V788,5juddGp7D9g,CsmWCvlbXMQ,IbfPIpPAbf4",width=960]
-
-Finally, let's hear about SQL (Structured Query Language).  Here's Christopher and cupcakes.
-
-video::G58ujNjWEJY[youtube]
-
-Phew, bit of a fire hydrant, no?  Not to worry, some fun and more comfort await!
-
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this problem set will be evaluated along four axes primarily.
-
-Scope::
-  To what extent does your code implement the features required by our specification?
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-All students, whether or not taking the course for a letter grade, must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 == Background
 
@@ -79,113 +21,36 @@ You're about to implement C$50 Finance, a web app via which you can manage portf
 
 Indeed, Yahoo lets you download stock quotes in CSV format via URLs like http://download.finance.yahoo.com/d/quotes.csv?s=NFLX&f=sl1d1t1c1ohgv&e=.csv. Notice how Netflix's symbol (NFLX) is embedded in this URL (as the value of the HTTP parameter called `s`); that's how Yahoo knows whose data to return. Notice also the value of the HTTP parameter called `f`; it’s a bit cryptic (and officially undocumented), but the value of that parameter tells Yahoo which fields of data to return to you. If curious as to what they mean, here’s a https://web.archive.org/web/20040816081607/http://www.gummy-stuff.org/Yahoo-data.htm[handy reference]. Incidentally, Yahoo sometimes returns prices in currencies other than US dollars (USD) without telling you which, but we'll assume everything's in US dollars for simplicity.
 
-== Set it Up
+Let's turn our attention now to the app's distribution code!
 
-Log into https://cs50.io/[CS50 IDE] and, in a terminal window, execute
+== Distribution
 
-[source,bash]
+=== Downloading
+
+In your `chapter6` directory, execute the following: 
+
+[source,subs="macros"]
 ----
-update50
+$ wget http://docs.cs50.net/2017/ap/problems/finance/finance.zip
+$ unzip finance.zip
+$ rm finance.zip
+$ cd finance
+$ ls
+application.py  helpers.py        static/
+finance.db      requirements.txt  templates/
 ----
-
-to ensure that your workspace is up-to-date!
-
-Like many previous problems, this problem set comes with some distribution code that you'll need to download before getting started. Go ahead and execute
-
-[source,bash]
-----
-cd ~/workspace/chapter6
-----
-
-in order to navigate to your `chapter6` directory.  Then execute
-
-[source,bash]
-----
-wget https://github.com/cs50/problems/archive/finance.zip
-----
-
-in order to download a ZIP (i.e., compressed version) of this problem set's distro as well as a database file.  If you then execute
-
-[source,bash]
-----
-ls
-----
-
-you should see that you now have a file called `finance.zip` in your `~/workspace` directory.  Unzip it by executing the below.
-
-[source,bash]
-----
-unzip finance.zip
-----
-
-If you again execute
-
-[source,bash]
-----
-ls
-----
-
-you should see that you now also have a directory called `problems-finance`.  You're now welcome to delete the ZIP file with the below.
-
-[source,bash]
-----
-rm -f finance.zip
-----
-
-If you next execute
-
-[source,bash]
-----
-mv problems-finance finance
-----
-
-followed by
-
-[source,bash]
-----
-cd finance
-----
-
-and finally
-
-[source,bash]
-----
-ls
-----
-
-you should see that `finance` contains:
-
-[source,bash]
-----
-application.py  finance.db  helpers.py  requirements.txt  static/  templates/
-----
-
-But more on those soon.
 
 === Running
 
-. Install this problem's dependencies (within `finance/`):
-+
-[source,bash]
-----
-pip3 install --user -r requirements.txt
-----
 . Start Flask's built-in web server (within `finance/`):
 +
-[source,bash]
+[source]
 ----
 flask run
 ----
 +
-Select *CS50 IDE > Web Server* to see the distribution code in action. You won't be able to log in or register, though, just yet!
-. In another terminal window, start phpLiteAdmin (within `finance/`):
-+
-[source]
-----
-phpliteadmin finance.db
-----
-+
-And open the URL that `phpliteadmin` outputs in a new tab. Notice how `finance.db` comes with a table called `users`. Take a look at its structure (i.e., schema). Notice how, by default, new users will receive $10,000 in cash. But there aren't (yet!) any users (i.e., rows) therein to browse.
+Visit the URL outputted by `flask` to see the distribution code in action. You won't be able to log in or register, though, just yet!
+. Via CS50's file browser, double-click *finance.db* in order to open it with phpLiteAdmin. Notice how `finance.db` comes with a table called `users`. Take a look at its structure (i.e., schema). Notice how, by default, new users will receive $10,000 in cash. But there aren't (yet!) any users (i.e., rows) therein to browse.
 +
 Here on out, if you'd prefer a command line, you're welcome to use `sqlite3` instead of phpLiteAdmin.
 
@@ -195,9 +60,9 @@ Here on out, if you'd prefer a command line, you're welcome to use `sqlite3` ins
 
 Open up `application.py`. Atop the file are a bunch of imports, among them CS50's SQL module and a few helper functions. More on those soon.
 
-After configuring http://flask.pocoo.org/[Flask], notice how this file disables caching of responses (provided you're in debugging mode, which you are by default on CS50 IDE), lest you make a change to some file but your browser not notice. Notice next how it configures http://jinja.pocoo.org/[Jinja] with a custom "filter," `usd`, a function (defined in `helpers.py`) that will make it easier to format values as US dollars (USD). It then further configures Flask to store http://flask.pocoo.org/docs/0.11/quickstart/#sessions[sessions] on the local filesystem (i.e., disk) as opposed to storing them inside of (digitally signed) cookies, which is Flask's default. The file then configures CS50's SQL module to use `finance.db`, a SQLite database whose contents we'll soon see!
+After configuring http://flask.pocoo.org/[Flask], notice how this file disables caching of responses (provided you're in debugging mode, which you are by default on CS50 IDE), lest you make a change to some file but your browser not notice. Notice next how it configures http://jinja.pocoo.org/[Jinja] with a custom "filter," `usd`, a function (defined in `helpers.py`) that will make it easier to format values as US dollars (USD). It then further configures Flask to store http://flask.pocoo.org/docs/0.12/quickstart/#sessions[sessions] on the local filesystem (i.e., disk) as opposed to storing them inside of (digitally signed) cookies, which is Flask's default. The file then configures CS50's SQL module to use `finance.db`, a SQLite database whose contents we'll soon see!
 
-Thereafter are a whole bunch of routes, only two of which are fully implemented: `login` and `logout`. Read through the implementation of `login` first. Notice how it uses `db.execute` (from CS50's library) to query `finance.db`. And notice how it uses `pwd_context.verify` to compare hashes of users' passwords. Finally, notice how `login` "remembers" that a user is logged in by storing his or her `user_id`, an INTEGER, in `session`. That way, any of this file's routes can check which user, if any, is logged in. Meanwhile, notice how `logout` simply clears `session`, effectively logging a user out.
+Thereafter are a whole bunch of routes, only two of which are fully implemented: `login` and `logout`. Read through the implementation of `login` first. Notice how it uses `db.execute` (from CS50's library) to query `finance.db`. And notice how it uses `check_password_hash` to compare hashes of users' passwords. Finally, notice how `login` "remembers" that a user is logged in by storing his or her `user_id`, an INTEGER, in `session`. That way, any of this file's routes can check which user, if any, is logged in. Meanwhile, notice how `logout` simply clears `session`, effectively logging a user out.
 
 Notice how most routes are "decorated" with `@login_required` (a function defined in `helpers.py` too). That decorator ensures that, if a user tries to visit any of those routes, he or she will first be redirected to `login` so as to log in.
 
@@ -223,9 +88,9 @@ Glance too at `static/`, inside of which is `styles.css`. That's where some init
 
 ==== `templates/`
 
-Now look in `templates/`. In `login.html` is, essentially, just an HTML form, stylized with http://getbootstrap.com/[Bootstrap]. In `apology.html`, meanwhile, is a template for an apology. Recall that `apology` in `helpers.py` took two arguments: `top` and `bottom`. Here they are again! And https://github.com/jacebrowning/memegen[here's why]. 0:-)
+Now look in `templates/`. In `login.html` is, essentially, just an HTML form, stylized with http://getbootstrap.com/[Bootstrap]. In `apology.html`, meanwhile, is a template for an apology. Recall that `apology` in `helpers.py` took two arguments: `message`, which was passed to `render_template` as the value of `bottom`, and, optionally, `code`, which was passed to `render_template` as the value of `top`. Notice in `apology.html` how those values are ultimately used! And https://github.com/jacebrowning/memegen[here's why]. 0:-)
 
-Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.11/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
+Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.12/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
 == Specification
 
@@ -233,9 +98,10 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 Complete the implementation of `register` in such a way that it allows a user to register for an account.
 
-* Require that a user input a username. Render an apology if the user's input is blank or the username already exists.
-* Require that a user input a password and then that same password again. Render an apology if either input is blank or the passwords do not match.
-* `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Odds are you'll find https://pythonhosted.org/passlib/new_app_quickstart.html[`pwd_context.encrypt`] of interest.
+* Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists. 
+* Require that a user input a password, implemented as a text field whose `name` is `password`, and then that same password again, implemented as a text field whose `name` is `confirmation`. Render an apology if either input is blank or the passwords do not match.
+* Submit the user's input via `POST` to `/register`.
+* `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.12/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
 * Odds are you'll want to create a new template (e.g., `register.html`) that's quite similar to `login.html`.
 
 Once you've implemented `register` correctly, you should be able to register for an account and log in (since `login` and `logout` already work)! And you should be able to see your rows via phpLiteAdmin or `sqlite3`.
@@ -244,15 +110,17 @@ Once you've implemented `register` correctly, you should be able to register for
 
 Complete the implementation of `quote` in such a way that it allows a user to look up a stock's current price.
 
-* Require that a user input a stock's symbol.
+* Require that a user input a stock's symbol, implemented as a text field whose `name` is `symbol`.
+* Submit the user's input via `POST` to `/quote`.
 * Odds are you'll want to create two new templates (e.g., `quote.html` and `quoted.html`). When a user visits `/quote` via GET, render one of those templates, inside of which should be an HTML form that submits to `/quote` via POST. In response to a POST, `quote` can render that second template, embedding within it one or more values from `lookup`.
 
 === `buy`
 
 Complete the implementation of `buy` in such a way that it enables a user to buy stocks.
 
-* Require that a user input a stock's symbol. Render an apology if the input is blank or the symbol does not exist (as per the return value of `lookup`).
-* Require that a user input a number of shares. Render an apology if the input is not a positive integer.
+* Require that a user input a stock's symbol, implemented as a text field whose `name` is `symbol`. Render an apology if the input is blank or the symbol does not exist (as per the return value of `lookup`).
+* Require that a user input a number of shares, implemented as a text field whose `name` is `shares`. Render an apology if the input is not a positive integer.
+* Submit the user's input via `POST` to `/buy`.
 * Odds are you'll want to call `lookup` to look up a stock's current price.
 * Odds are you'll want to `SELECT` how much cash the user currently has in `users`.
 * Add one or more new tables to `finance.db` via which to keep track of the purchase. Store enough information so that you know who bought what at what price and when.
@@ -275,8 +143,9 @@ Complete the implementation of `index` in such a way that it displays an HTML ta
 
 Complete the implementation of `sell` in such a way that it enables a user to sell shares of a stock (that he or she owns).
 
-* The user interface is entirely up to you. You may allow the user to sell one or more shares, or you may require the user to sell all shares of a stock at once.
-* You must check for and render apologies for any possible errors.
+* Require that a user input a stock's symbol, implemented as a `select` menu whose `name` is `symbol`. Render an apology if the user fails to select a stock or if (somehow, once submitted) the user does not own any shares of that stock.
+* Require that a user input a number of shares, implemented as a text field whose `name` is `shares`. Render an apology if the input is not a positive integer or if the user does not own that many shares of the stock.
+* Submit the user's input via `POST` to `/sell`.
 * You don't need to worry about race conditions (or use transactions).
 
 === `history`
@@ -286,22 +155,25 @@ Complete the implementation of `history` in such a way that it displays an HTML 
 * For each row, make clear whether a stock was bought or sold and include the stock's symbol, the (purchase or sale) price, the number of shares bought or sold, and the date and time at which the transaction occurred.
 * You might need to alter the table you created for `buy` or supplement it with an additional table. Try to minimize redundancies.
 
-=== Personal touch
+=== personal touch
 
-Implement one (1) additional feature, a personal touch of your choice:
+Implement at least one personal touch of your choice:
 
-* Empower users to change their passwords.
-* Empower users to add additional cash to their account.
-* Empower users to buy more shares or sell shares of stocks they already own via `index` itself, without having to type stocks' symbols manually.
-* Empower users with some other feature of comparable scope.
+* Allow users to change their passwords.
+* Allow users to add additional cash to their account.
+* Allow users to buy more shares or sell shares of stocks they already own via `index` itself, without having to type stocks' symbols manually.
+* Require users' passwords to have some number of letters, numbers, and/or symbols.
+* Implement some other feature of comparable scope.
 
 == Walkthroughs
+
+*Instead of `pwd_context.encrypt`, which Zamyla mentions, be sure to use `generate_password_hash` instead.*
 
 video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 == Testing
 
-No `check50` for this one, but be sure to try to "break" your own site, as by
+Be sure to test your web app manually too, as by
 
 * inputting alpabetical strings into forms when only numbers are expected,
 * inputting zero or negative numbers into forms when only positive numbers are expected,
@@ -311,7 +183,21 @@ No `check50` for this one, but be sure to try to "break" your own site, as by
 * inputting an invalid stock symbol, and
 * including potentially dangerous characters like `'` and `;` in SQL queries.
 
-== Staff Solution
+=== Correctness
+
+[source]
+----
+check50 cs50/2017/ap/finance
+----
+
+=== Style
+
+[source]
+----
+style50 application.py
+----
+
+== Staff's Solution
 
 You're welcome to stylize your own app differently, but here's what the staff's solution looks like!
 
@@ -332,12 +218,32 @@ It is *reasonable* to look at the staff's HTML and CSS.
 --
 +
 If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index), then `execute` returns `None`. In cases of error, `execute` raises a `RuntimeError`.
-* Be sure to use named bind parameters (i.e., a https://www.python.org/dev/peps/pep-0249/#paramstyle[paramstyle] of `named`) when calling CS50's `execute` method, a la `WHERE name=:name`. Do *not* use https://docs.python.org/3.1/library/functions.html#format[`format`] or `+` (i.e., concatenation), lest you risk a SQL injection attack.
+* Recall that `cs50.SQL` will log to your terminal window any queries that you execute via `execute` (so that you can confirm whether they're as intended).
+* Be sure to use named bind parameters (i.e., a https://www.python.org/dev/peps/pep-0249/#paramstyle[paramstyle] of `named`) when calling CS50's `execute` method, a la `WHERE name=:name`. Do *not* use f-strings, https://docs.python.org/3.1/library/functions.html#format[`format`], or `+` (i.e., concatenation), lest you risk a SQL injection attack.
 * If (and only if) already comfortable with SQL, you're welcome to use http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy Core] or http://flask-sqlalchemy.pocoo.org/[Flask-SQLAlchemy] (i.e., http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy ORM]) instead of `cs50.SQL`.
 * You're welcome to add additional static files to `static/`.
-* You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site as well as change the site's aesthetics more generally, including https://memegen.link/api/templates/[apologies].
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
 * It is *reasonable* to ask others to try out (and try to trigger errors in) your site. Via *Share* in CS50 IDE's top-right corner can you share your *Application* by making it *Public*. Take care not to share your *Editor*, which would provide access to your Python code and SQLite database.
+* You're welcome to alter the aesthetics of the sites, as via
+** https://bootswatch.com/4-alpha/,
+** https://getbootstrap.com/docs/4.0/content/,
+** https://getbootstrap.com/docs/4.0/components/, and/or
+** https://memegen.link/api/templates.
+
+== How to Submit
+
+=== Step 1 of 2
+
+Run `update50`
+
+=== Step 2 of 2
+
+[source]
+----
+cd ~/workspace/chapter6/finance/
+submit50 cs50/2017/ap/finance
+----
+
 
 == FAQs
 
@@ -348,5 +254,9 @@ By default, `flask` looks for a file called `application.py` in your current wor
 === OSError: [Errno 98] Address already in use
 
 If, upon running `flask`, you see this error, odds are you (still) have `flask` running in another tab. Be sure to kill that other process, as with ctrl-c, before starting `flask` again. If you haven't any such other tab, execute `fuser -k 8080/tcp` to kill any processes that are (still) listening on TCP port 8080.
+
+=== check50 ran into an error while running checks!
+
+If, upon running `check50`, you see this error, odds are you have a bug in your code somewhere! Open up the CS50.me produced by `check50` to see a detailed traceback to help you debug!
 
 This was C$50 Finance.
