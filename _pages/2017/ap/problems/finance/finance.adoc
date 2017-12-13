@@ -27,6 +27,8 @@ Let's turn our attention now to the app's distribution code!
 
 === Downloading
 
+In your `chapter6` directory, execute the following: 
+
 [source,subs="macros"]
 ----
 $ wget http://docs.cs50.net/2017/ap/problems/finance/finance.zip
@@ -227,6 +229,21 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 ** https://getbootstrap.com/docs/4.0/content/,
 ** https://getbootstrap.com/docs/4.0/components/, and/or
 ** https://memegen.link/api/templates.
+
+== How to Submit
+
+=== Step 1 of 2
+
+Run `update50`
+
+=== Step 2 of 2
+
+[source]
+----
+cd ~/workspace/chapter6/finance/
+submit50 cs50/2017/ap/finance
+----
+
 
 == FAQs
 
