@@ -283,7 +283,8 @@ Alright, ready to go?
 
 == Walkthrough
 
-video::u9-1U1Rgo1o,okH8f9xl0uY,hsruECgJJVQ,O3tErLhuEmY[youtube]
+[role=embed-responsive-21by9]
+video::u9-1U1Rgo1o[youtube,list=PLhQjrBD2T382vvokQIExRCKZq-q8PzSVz]
 
 == Hints
 
