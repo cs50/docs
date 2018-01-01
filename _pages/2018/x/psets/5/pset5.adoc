@@ -1,0 +1,71 @@
+---
+layout: 2018/x
+---
+:skip-front-matter:
+
+= Problem Set 5: Mispellings
+
+== tl;dr
+ 
+. Watch Week 4's lecture.
+. Answer some questions about a spell checker.
+. Implement a spell checker.
+. Submit a form.
+
+== Getting Started
+
+Log into https://cs50.io/[cs50.io] and execute the below in a terminal window.
+
+[source]
+----
+update50
+mkdir ~/workspace/pset5/
+cd ~/workspace/pset5/
+----
+
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2018/x/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
+
+== Problems
+
+* Implement link:speller/speller.html[Speller]
+
+=== Big Board
+
+If you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit.
+
+[source]
+----
+check50 cs50/2018/x/challenges/speller
+----
+
+Then visit the URL that `check50` outputs to see where you rank!
+
+== How to Submit
+
+=== Step 1 of 2
+
+* Update your IDE:
++
+[source]
+----
+update50
+----
+* Submit `speller`:
++
+[source]
+----
+cd ~/workspace/pset5/speller/
+submit50 cs50/2018/x/speller
+----
+
+=== Step 2 of 2
+
+_Coming 2 January 2018._
+
+////
+Submit https://forms.cs50.net/2018/x/psets/5[]!
+ 
+This was Problem Set 5.
+////

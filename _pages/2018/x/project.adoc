@@ -1,0 +1,36 @@
+---
+layout: 2018/x
+---
+
+= Final Project
+
+== Overview
+
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this course's lessons, the nature of your project is entirely up to you. You may implement your project in any language(s). You are welcome to utilize infrastructure other than the CS50 Appliance. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact your community, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets.
+
+If at a loss for ideas, turn to Week 11's seminars for inspiration!
+
+== How to Submit
+
+=== Step 1 of 2
+
+[source]
+----
+update50
+cd ~/workspace/project/
+submit50 cs50/2018/x/project
+----
+
+=== Step 2 of 2
+
+Submit a short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action. Your video should somehow include your project's title, your name, your city and country, and any other details that you'd like to convey to viewers. See http://www.cs171.org/2015/screencast/ for tips from another class at Harvard on how to make a "screencast," though you're welcome to use an actual camera. Upload your video to YouTube (or, if blocked in your country, a similar site) and take note of its URL; it's fine to flag it as "unlisted," but don't flag it as "private."
+
+When ready to submit your video, submit https://forms.cs50.net/2018/x/project[this form]!
+
+== CS50 Fair
+
+The CS50 Fair is an epic display of final projects online, your opportunity to showcase your work not only to us but also to others throughout the world.
+
+Shortly after 31 December 2018, we'll create a website where you'll be able to explore classmates' projects anytime, anywhere. We'll let you know when the epic display is ready!
