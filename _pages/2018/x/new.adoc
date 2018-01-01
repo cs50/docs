@@ -1,0 +1,52 @@
+---
+layout: 2017/x
+---
+
+= What's new?
+
+Here's what's new in CS50x 2018 vis-à-vis CS50x 2017!
+
+== Lectures
+
+Whereas CS50x 2017's lectures were largely shot without a live audience, CS50x 2018's lectures were shot with a live audience, among them some of CS50x's own students from around the world!
+
+CS50x now introduces https://en.wikipedia.org/wiki/Dynamic_programming[dynamic programming] (in Week 6, continued), thanks to Benedict Brown at Yale.
+
+And CS50's lectures are now professionally subtitled not only in English but also in Spanish!
+
+== Seminars
+
+New to CS50x are seminars on:
+
+* 3D World
+* A Tale of Two Pizzas: Accelerating Software Delivery with AWS Developer Tools
+* Building Products at Uber: How We Bridge the Physical and Digital Worlds
+* Computer Vision and Machine Learning
+* Create Your Own Virtual Reality
+* Drawing React Apps with Pagedraw
+* Falling in LÖVE with Lua
+* Frontend Development with React
+* Fruit Street Telehealth: Technology Changing Healthcare
+* Google Apps Script and G Suite APIs
+* GUI with Python's Tkinter
+* Java SE 8 Programming Basics
+* Microsoft's MakeCode and Micro:bit
+* Publishing Your Flask App to the Web
+* Ship Continuously
+* Tools and Techniques for Collaborative Coding
+
+== Problem Sets
+
+Whereas Problem Set 3 used to be about the Game of Fifteen, it's now about music! You'll learn to read sheet music, learn to read code, convert musical notes to frequencies, and synthesize songs.
+
+Whereas Problem Set 6 used to introduce sentiment analysis, it now introduces document similarity. In the less-comfortable version, you'll implement a program that compares two files for similarities and implement a website that highlights similarities across files; in the more-comfortable version, you'll implement a program that measures the edit distance between two strings and implement a web app that depicts the costs of transforming one string into another.
+
+== Software
+
+=== CS50 IDE
+
+New and improved this year are
+
+* `check50`, via which you can improve your code's correctness,
+* `debug50`, via which you can debug your C code, and
+* `style50`, via which you can improve your code's syle!
