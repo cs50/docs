@@ -1,5 +1,5 @@
 ---
-layout: 2017/x
+layout: 2018/x
 ---
 
 = What's new?
@@ -12,7 +12,11 @@ Whereas CS50x 2017's lectures were largely shot without a live audience, CS50x 2
 
 CS50x now introduces https://en.wikipedia.org/wiki/Dynamic_programming[dynamic programming] (in Week 6, continued), thanks to Benedict Brown at Yale.
 
-And CS50's lectures are now professionally subtitled not only in English but also in Spanish!
+CS50's lectures are now professionally subtitled not only in English but also in Spanish!
+
+== Problem Sets
+
+Whereas problem sets used to be graded only on the basis of correctness, they will now be graded on the basis of style as well!
 
 == Seminars
 
@@ -50,3 +54,7 @@ New and improved this year are
 * `check50`, via which you can improve your code's correctness,
 * `debug50`, via which you can debug your C code, and
 * `style50`, via which you can improve your code's syle!
+
+== Videos
+
+All videos are now playable and downloadable in https://www.edx.org/mobile[edX's mobile app]!
