@@ -28,7 +28,7 @@ Be sure you're familiar with the structure of 24-bit uncompressed BMPs, as intro
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/4/resize.zip
+$ wget http://cdn.cs50.net/2018/x/psets/4/resize.zip
 $ unzip resize.zip
 $ rm resize.zip
 $ cd resize
@@ -116,7 +116,7 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 
 [source]
 ----
-check50 cs50/2017/fall/resize/more
+check50 cs50/2018/x/resize/more
 ----
 
 == Staff's Solution

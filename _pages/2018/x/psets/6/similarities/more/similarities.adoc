@@ -24,7 +24,7 @@ The challenge ahead is to measure the "edit distance" between two strings, the m
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/6/similarities/more/similarities.zip
+$ wget http://cdn.cs50.net/2018/x/psets/6/similarities/more/similarities.zip
 $ unzip similarities.zip
 $ rm similarities.zip
 $ cd similarities
@@ -139,12 +139,12 @@ flask run
 
 and then visit the outputted URL.
 
-See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
+See http://cdn.cs50.net/2018/x/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
 
 === `check50`
 
 ```
-check50 cs50/2017/fall/similarities/more
+check50 cs50/2018/x/similarities/more
 ```
 
 === `style50`

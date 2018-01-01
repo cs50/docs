@@ -78,19 +78,19 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == What to Do
 
-. Implement link:../../../../problems/hello/hello.html[Hello]
+. Implement link:hello/hello.html[Hello]
 . Implement either of:
 +
 --
-* link:../../../../problems/mario/less/mario.html[Mario], less comfortable
-* link:../../../../problems/mario/more/mario.html[Mario], more comfortable
+* link:mario/less/mario.html[Mario], less comfortable
+* link:mario/more/mario.html[Mario], more comfortable
 --
 +
 . Implement either of:
 +
 --
-* link:../../../../problems/cash/cash.html[Cash], less comfortable
-* link:../../../../problems/credit/credit.html[Credit], more comfortable
+* link:cash/cash.html[Cash], less comfortable
+* link:credit/credit.html[Credit], more comfortable
 --
 
 == How to Submit

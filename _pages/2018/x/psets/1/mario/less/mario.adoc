@@ -1,0 +1,116 @@
+---
+layout: 2016/fall
+---
+
+= Mario
+
+== tl;dr
+
+Implement a program that prints out a half-pyramid of a specified height, per the below.
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#5#
+    pass:[##]
+   pass:[###]
+  pass:[####]
+ pass:[#####]
+pass:[######]
+
+$ [underline]#./mario#
+Height: [underline]#3#
+  pass:[##]
+ pass:[###]
+pass:[####]
+----
+
+== Background
+
+Toward the end of World 1-1 in Nintendo's Super Mario Brothers, Mario must ascend a "half-pyramid" of blocks before leaping (if he wants to maximize his score) toward a flag pole. Below is a screenshot.
+
+image:pyramid.png[Super Mario Brothers, width="50%"]
+
+== Specification
+
+* Write, in a file called `mario.c` in `~/workspace/pset1/mario/less/`, a program that recreates this half-pyramid using hashes (`#`) for blocks.
+* To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
+* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
+* Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
+* Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
+
+== Walkthrough
+
+video::EGWRG5e1O2s[youtube]
+
+== Usage
+
+Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#4#
+   pass:[##]
+  pass:[###]
+ pass:[####]
+pass:[#####]
+----
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#0#
+----
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#-5#
+Height: [underline]#4#
+   pass:[##]
+  pass:[###]
+ pass:[####]
+pass:[#####]
+----
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#-5#
+Height: [underline]#five#
+Height: [underline]#40#
+Height: [underline]#24#
+Height: [underline]#4#
+   pass:[##]
+  pass:[###]
+ pass:[####]
+pass:[#####]
+----
+
+== Testing
+
+=== Correctness
+
+[source]
+----
+check50 cs50/2018/x/mario/less
+----
+
+=== Style
+
+[source]
+----
+style50 mario.c
+----
+
+== Staff Solution
+
+[source]
+----
+~cs50/pset1/mario
+----
+
+== Hints
+
+Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to C!

@@ -44,7 +44,7 @@ Now, I only have one memory card, but there are a lot of you! And so I've gone a
 ----
 $ mkdir recover
 $ cd recover
-$ wget http://cdn.cs50.net/2017/fall/psets/4/recover/card.raw
+$ wget http://cdn.cs50.net/2018/x/psets/4/recover/card.raw
 $ ls
 card.raw
 ----
@@ -88,7 +88,7 @@ $ [underline]#echo $?#
 
 [source]
 ----
-check50 cs50/2017/fall/recover
+check50 cs50/2018/x/recover
 ----
 
 == Staff's Solution

@@ -39,7 +39,7 @@ TIME IN TOTAL:
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/5/speller.zip
+$ wget http://cdn.cs50.net/2018/x/psets/5/speller.zip
 $ unzip speller.zip
 $ rm speller.zip
 $ cd speller
@@ -366,7 +366,7 @@ To test your code less manually (though still not exhaustively), you may also ex
 
 [source]
 ----
-check50 cs50/2017/fall/speller
+check50 cs50/2018/x/speller
 ----
 
 Note that `check50` will also check for memory leaks, so be sure you've run `valgrind` as well.

@@ -1,0 +1,194 @@
+---
+layout: 2016/fall
+---
+
+= Hello
+
+== tl;dr
+
+Implement a program that prints out a simple greeting to the user, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#./hello#
+hello, world
+----
+
+== Specification
+
+Shall we have you write your first program? Inside of your *pset1* folder, create a new folder called *hello*. Then create a new file and immediately save it as *hello.c* inside of your *hello* folder (which should be inside of your *pset1* folder). Be sure to name the file just as we have, in all lowercase; files' and folders' names in Linux are "case-sensitive." Proceed to write your first program by typing precisely these lines into the file:
+
+[source,c]
+----
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+}
+----
+
+Notice how CS50 IDE adds "syntax highlighting" (i.e., color) as you type, though CS50 IDE's choice of colors might differ from this problem set's. Those colors aren't actually saved inside of the file itself; they're just added by CS50 IDE to make certain syntax stand out. Had you not saved the file as `hello.c` from the start, CS50 IDE wouldn't know (per the filename's extension) that you're writing C code, in which case those colors would be absent.
+
+Do be sure that you type this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
+
+When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/pset1/hello/`. (Remember how? If not, type `cd` and then Enter, followed by `cd pset1/hello/` and then Enter.) Your prompt should be:
+
+[source]
+----
+~/workspace/pset1/hello/ $
+----
+
+Let's confirm that `hello.c` is indeed where it should be. Type
+
+[source]
+----
+ls
+----
+
+followed by Enter, and you should see `hello.c`? If not, no worries; you probably just missed a small step. Best to restart these past several steps or ask for help!
+
+Assuming you indeed see `hello.c`, let's try to compile! Cross your fingers and then type
+
+[source]
+----
+make hello
+----
+
+at the prompt, followed by Enter. (Well, maybe don't cross your fingers whilst typing.) To be clear, type only `hello` here, not `hello.c`. If all that you see is another, identical prompt, that means it worked! Your source code has been translated to machine code (0s and 1s) that you can now execute. Type
+
+[source]
+----
+./hello
+----
+
+at your prompt, followed by Enter, and you should see the below:
+
+[source]
+----
+hello, world
+----
+
+And if you type
+
+[source]
+----
+ls
+----
+
+followed by Enter, you should see a new file, `hello`, alongside `hello.c`. The first of those files, `hello`, should have an asterisk after its name that, in this context, means it's "executable," a program that you can execute (i.e., run).
+
+If, though, upon running `make`, you instead see some error(s), it's time to debug! (If the terminal window's too small to see everything, click and drag its top border upward to increase its height.) If you see an error like "expected declaration" or something just as mysterious, odds are you made a syntax error (i.e., typo) by omitting some character or adding something in the wrong place. Scour your code for any differences vis-à-vis the template above. It's easy to miss the slightest of things when learning to program, so do compare your code against ours character by character; odds are the mistake(s) will jump out! Anytime you make changes to your own code, just remember to re-save via *File > Save* (or command- or control-s), then re-click inside of the terminal window, and then re-type
+
+[source]
+----
+make hello
+----
+
+at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/pset1/hello/` within your terminal window, as your prompt will confirm or deny.) If still seeing errors, try "prepending" `help50` to your command like this:
+
+[source]
+----
+help50 make hello
+----
+
+That'll pass the output of `make hello` to a program called `help50`, which CS50's staff wrote. If `help50` recognizes your error message, it'll offer some suggestions (in yellow). Just realize `help50` is new this year, so odds are it won't recognize all error messages just yet!
+
+Once you see no more errors, try "executing" (i.e., running) your program by typing
+
+[source]
+----
+./hello
+----
+
+at your prompt, followed by Enter! Hopefully you now see whatever you told `printf` to print?
+
+If not, reach out for help!  Incidentally, if you find the terminal window too small for your tastes, know that you can open one in a bigger tab by clicking the circled plus (+) icon to the right of your `hello.c` tab.
+
+== Walkthrough
+
+video::vbkTzOytISY[youtube]
+
+== Usage
+
+Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#./hello#
+hello, world
+----
+
+== Testing
+
+=== `check50`
+
+To evaluate the correctness of your code, execute the below from inside `~/workspace/pset1/hello/`.
+
+[source]
+----
+check50 cs50/2018/x/hello
+----
+
+Assuming your program is correct, you should then see output like
+
+[source,subs=quotes]
+----
+[green]#:) hello.c exists#
+[green]#:) hello.c compiles#
+[green]#:) prints "hello, world\n"#
+----
+
+where each green smiley means your program passed a check (i.e., test). You may also see a URL at the bottom of ``check50``'s output, but that's just for staff (though you're welcome to visit it).
+
+If you instead see yellow or red smileys, it means your code isn't correct! For instance, suppose you instead see the below.
+
+[source,subs=quotes]
+----
+[red]#:( hello.c exists#
+  \ expected hello.c to exist
+[yellow]#:| hello.c compiles#
+  \ can't check until a frown turns upside down
+[yellow]#:| prints "Hello, world!\n"#
+  \ can't check until a frown turns upside down
+----
+
+Because `check50` doesn't think `hello.c` exists, as per the red smiley, odds are you uploaded the wrong file or misnamed your file. The other smileys, meanwhile, are yellow because those checks are dependent on `hello.c` existing, and so they weren't even run.
+
+Suppose instead you see the below.
+
+[source,subs=quotes]
+----
+[green]#:) hello.c exists#
+[green]#:) hello.c compiles#
+[red]#:( prints "Hello, world!\n"#
+  \ expected output, but not "Hello, world!"
+----
+
+Odds are, in this case, you printed something other than `Hello, world!\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `Hello, world!`, without a trailing newline (`\n`).
+
+Know that `check50` won't actually record your scores in CS50's gradebook. Rather, it lets you check your work's correctness _before_ you submit your work. Once you actually submit your work (per the directions at this spec's end), CS50's staff will use `check50` to evaluate your work's correctness officially.
+
+=== `style50`
+
+To evaluate the style of your code, execute the below from inside `~/workspace/pset1/hello/`.
+
+[source]
+----
+style50 hello.c
+----
+
+If there's room for improvement in your code's style, highlighted in red will be any characters you should delete, and highlighted in green will be any characters you should add.
+
+== Staff Solution
+
+To run the staff's implementation of `hello`, execute the below.
+
+[source]
+----
+~cs50/pset1/hello
+----
+
+== Hints
+
+Be sure to re-type (and not just copy and paste!) the code we've provided you above to get this program running. It'll be good to develop this muscle memory starting now!

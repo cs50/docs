@@ -96,7 +96,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 cs50/2017/fall/vigenere
+check50 cs50/2018/x/vigenere
 ----
 
 === Style

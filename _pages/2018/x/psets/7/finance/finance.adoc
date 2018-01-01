@@ -27,7 +27,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/7/finance/finance.zip
+$ wget http://cdn.cs50.net/2018/x/psets/7/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance
@@ -183,7 +183,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/2017/fall/finance
+check50 cs50/2018/x/finance
 ----
 
 === Style
