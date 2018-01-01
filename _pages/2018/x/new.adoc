@@ -20,6 +20,8 @@ Whereas problem sets used to be graded only on the basis of correctness, they wi
 
 Problem Set 3 used to be about the Game of Fifteen, but it's now about music! You'll learn to read sheet music, learn to read code, convert musical notes to frequencies, and synthesize songs.
 
+Problem Set 5 now has a leaderboard via which you can compare your code's utilization of time and space against classmates'!
+
 Problem Set 6 used to introduce sentiment analysis, but it now introduces document similarity. In the less-comfortable version, you'll implement a program that compares two files for similarities and implement a website that highlights similarities across files; in the more-comfortable version, you'll implement a program that measures the edit distance between two strings and implement a web app that depicts the costs of transforming one string into another.
 
 And `greedy` has been renamed to `cash` so that Problem Set 1 now offers a choice between `cash` and `credit`. Ha!
