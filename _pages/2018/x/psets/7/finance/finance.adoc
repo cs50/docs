@@ -27,7 +27,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2018/x/psets/7/finance/finance.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/7/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance

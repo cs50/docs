@@ -24,7 +24,7 @@ The challenge ahead is to measure the "edit distance" between two strings, the m
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2018/x/psets/6/similarities/more/similarities.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/6/similarities/more/similarities.zip
 $ unzip similarities.zip
 $ rm similarities.zip
 $ cd similarities

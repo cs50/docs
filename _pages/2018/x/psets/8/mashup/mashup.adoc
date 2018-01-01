@@ -101,14 +101,14 @@ Note that Twitter hasn't updated their own version of the library for quite some
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2018/x/psets/8/mashup/mashup.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/8/mashup/mashup.zip
 $ unzip mashup.zip
 $ rm mashup.zip
 $ cd mashup
 $ ls
 application.py  mashup.db         static/
 helpers.py      requirements.txt  templates/
-$ wget http://cdn.cs50.net/2018/x/psets/8/mashup/US.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/8/mashup/US.zip
 $ unzip US.zip
 $ rm US.zip
 $ ls

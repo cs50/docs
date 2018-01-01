@@ -39,7 +39,7 @@ TIME IN TOTAL:
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2018/x/psets/5/speller.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/5/speller.zip
 $ unzip speller.zip
 $ rm speller.zip
 $ cd speller
