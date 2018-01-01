@@ -77,7 +77,7 @@ Integrated into problem sets are "walkthroughs," videos that offer direction on 
 
 == Problem Sets
 
-A summary of problem sets appears below. CS50x does not have deadlines for problem sets. You are welcome to work on and submit them at your own pace. To be eligible for a verified certificate from edX, however, you must submit (and receive a score of at least 70% on) all problem sets by 31 December 2017.
+A summary of problem sets appears below. CS50x does not have deadlines for problem sets. You are welcome to work on and submit them at your own pace. To be eligible for a verified certificate from edX, however, you must submit (and receive a score of at least 70% on) all problem sets by 31 December 2018.
 
 |===
 2+| Problem Set | Language
