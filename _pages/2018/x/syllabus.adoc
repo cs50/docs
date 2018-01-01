@@ -54,7 +54,7 @@ The course's lectures were filmed in Fall 2016 at Harvard University and Yale Un
 A summary of lectures appears below. 
 
 |===
-3+| Lecture
+2+| Lecture
 
 | Week 0 | https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/bdc606f10e7347f6a61a341c4544bbf7/179cbcd8dbbb4ac39d922c40d5c06ced/[Scratch]
 .2+| Week 1 | https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/bdc606f10e7347f6a61a341c4544bbf7/179cbcd8dbbb4ac39d922c40d5c06ced/[C]
