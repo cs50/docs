@@ -18,6 +18,8 @@ CS50's lectures are now professionally subtitled not only in English but also in
 
 Whereas problem sets used to be graded only on the basis of correctness, they will now be graded on the basis of style as well!
 
+And `greedy` has been renamed to `cash` so that Problem Set 1 now offers a choice between `cash` and `credit`. Ha!
+
 == Seminars
 
 New to CS50x are seminars on:
