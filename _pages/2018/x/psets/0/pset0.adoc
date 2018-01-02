@@ -8,7 +8,7 @@ layout: 2018/x
 
 [start=0]
 . Attend or watch Week 0's lecture.
-. Program in Scratch.
+. Program in Scratch.0
 . Upload a file.
 . Submit a form. 
 
@@ -80,13 +80,13 @@ Oh, and if you'd like to exhibit your project in Fall 2017's studio, head to htt
 3. On your Scratch editor page (e.g. https://scratch.mit.edu/projects/123456789/#editor), go to the "File" menu and click "Download to your computer". Make sure to save your file with a `.sb2` extension!
 4. Go to https://github.com/submit50/USERNAME, replacing `USERNAME` in the URL with your own GitHub username.
 5. On the left side of the screen, click on "Branch: master".
-6. In the field that says "Find or create a branch...", copy/paste the following branch name exactly: `cs50/2017/fall/scratch`, and click "Create branch".
+6. In the field that says "Find or create a branch...", copy/paste the following branch name exactly: `cs50/2018/x/scratch`, and click "Create branch".
 7. Click the button that says "Upload files".
 8. Drag your `project.sb2` Scratch file into the box that says "Drag files here".
 9. Click the green "Commit changes" button.
 10. You're done (with step 1)! If you go back to https://cs50.me[CS50.me], you should see your Scratch submission. If you click on the **check50** link next to the submission, you should see (after a minute or two) whether your project met all of the requirements. You are welcome to resubmit as many times as you'd like (before the deadline)!
 
-If you don't see results on CS50.me, make sure that your branch is named `cs50/2017/fall/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 5 and 6), making sure to name it `cs50/2017/fall/scratch`!
+If you don't see results on CS50.me, make sure that your branch is named `cs50/2018/x/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 5 and 6), making sure to name it `cs50/2018/x/scratch`!
 
 === Step 2 of 2
 
