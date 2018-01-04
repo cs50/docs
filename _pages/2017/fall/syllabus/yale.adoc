@@ -50,6 +50,50 @@ Know that CS50 draws quite the spectrum of students, including "those less comfo
 
 Each student's final grade is individually determined at term's end. Remarkable effort and upward trending are considered, as is input from the teaching assistants. The course does not have pre-determined cutoffs for final grades. The course is not graded on a curve. Those less comfortable and somewhere in between are not at a disadvantage vis-à-vis those more comfortable.
 
+== Mid-Semester Grade Projections
+
+Shortly before the drop deadline, we will e-mail you your projected
+grade range (A-range, B-range, etc.) based on your psets and test
+score.  This is a very rough estimate to help you guage how you are
+doing, so please keep the following points in mind:
+
+* If our comments below your projection suggest that you meet with us,
+  please do so promptly so we can work with you to stay on track or
+  get back on track for the remainder of the semester.  We've
+  generally only given individual comments to students with projected
+  D or F grades.
+
+* If your projected grade is in the D or F range and you are an
+  undergraduate, we have also sent a copy of this e-mail to your dean,
+  and we encourage you to talk with your dean.  This estimate is
+  intentionally calibrated to err on the low side.  Don't interpret
+  that as cause for complacency: your course grade could still be
+  lower, higher, or exactly in line with the current estimate.  But we
+  hope that most of you will be pleasantly surprised by your final
+  course grades, rather than a little disappointed.
+
+* We have not factored in your starting point and progress over the
+  course of the semester, although we will at the end of the semester.
+  We also have not factored in engagement in the class.  We expect
+  these will both tend to lift course grades relative to our
+  projections, especially for the large majority of you who have no
+  previous computer science background and are working very hard.
+
+* Our projection is based 50% on your average pset score (all psets
+  weighted equally; if you submitted both less comfy and more comfy
+  versions of any problem, we used the version where you did better),
+  and 50% on your curved test score.  We are not publishing the curved
+  test scores because this is a very approximate curve in order to
+  produce grade projections.
+
+* We can't give you meaningful guidance as to where you fall within a
+  letter-grade range at this point.  That level of precision will
+  require equalizing grading between sections as necessary, and the
+  individualized performance assessment that we do with the TAs at the
+  end of semester.  How you do in the rest of the semester can also
+  affect your grade by more than a single step up or down.
+
+
 == Books 
 
 No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, resources can be found on the course's website.
