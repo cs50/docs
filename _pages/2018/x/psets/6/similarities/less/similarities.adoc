@@ -148,7 +148,7 @@ flask run
 
 and then visit the outputted URL.
 
-See http://cdn.cs50.net/2018/x/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
+See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
 
 === `check50`
 
