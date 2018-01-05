@@ -23,6 +23,14 @@ If you'd like to learn a bit more about others who've come before you, take a lo
 
 video::0S7isdzIBU4[youtube,list=PLhQjrBD2T383RLDItqbDRs-4gWy8Wgec2]
 
+== Hello, World
+
+Suffice it to say it's a bit harder to meet classmates when taking a course online. But, thanks to technology, everyone can at least say hello!
+
+If you have a phone (or digital camera) and would like to say hello to classmates, record a 1- to 2-minute video of yourself saying hello, perhaps stating where in the world you are, why you're taking CS50x, and something interesting about you! Try to begin your video by saying "hello, world" and end it with "my name is ...., and this is CS50." But, ultimately, it's totally up to you. 
+
+If you do record a video, upload it to YouTube (unless blocked in your country, in which case you’re welcome to upload it elsewhere) so that you can provide us with its URL when you submit!
+
 == Itching to Program?
 
 Head to https://scratch.mit.edu/ and sign up for an account on MIT's website by clicking **Join Scratch** atop the page. Any username (that's available) is fine, but take care to remember it and your choice of password.
@@ -91,7 +99,5 @@ If you don't see results on cs50.me[https://cs50.me/], make sure that your branc
 === Step 2 of 2
 
 Submit https://forms.cs50.net/2017/fall/psets/0.
-
-CS50 collects some start-of-course data via Problem Set 0's form, so expect the form to take 15 minutes or so. Subsequent problem sets' forms will be shorter.
 
 This was Problem Set 0.

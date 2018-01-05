@@ -85,8 +85,6 @@ You're welcome but not expected to implement all three; if you submit all three,
 
 == How to Submit
 
-=== Step 1 of 2
-
 . Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
 . Ensure your workspace is up-to-date by executing:
 +
@@ -119,13 +117,3 @@ cd ~/workspace/pset2/crack/
 submit50 cs50/2018/x/crack
 ----
 --
-
-=== Step 2 of 2
- 
-_Coming 2 January 2018._
-
-//// 
-Submit https://forms.cs50.net/2018/x/psets/2[]!
- 
-This was Problem Set 2.
-////

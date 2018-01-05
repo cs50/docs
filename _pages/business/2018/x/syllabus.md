@@ -1,0 +1,84 @@
+---
+layout: 2018/x
+---
+
+# Syllabus
+
+This is CS50's introduction to computer science for business professionals, designed for managers, product managers, founders, and decision-makers more generally. Whereas CS50 itself takes a bottom-up approach, emphasizing mastery of low-level concepts and implementation details thereof, this course takes a top-down approach, emphasizing mastery of high-level concepts and design decisions related thereto. Through lectures on computational thinking, programming languages, internet technologies, web development, technology stacks, and cloud computing, this course empowers you to make technological decisions even if not a technologist yourself. You'll emerge from this course with first-hand appreciation of how it all works and all the more confident in the factors that should guide your decision-making.
+
+## Instructor
+
+http://cs.harvard.edu/malan[David J. Malan]
+mailto:malan@harvard.edu[malan@harvard.edu]
+
+## Expectations
+
+You are expected to
+
+* watch six lectures online and
+* submit six assignments online.
+
+## Website
+
+https://cs50.edx.org/business
+
+## Certificates
+
+To be eligible for a verified certificate from edX, you must receive a satisfactory score (at least 70%) on each of the course's six assignments.
+
+## Lectures
+
+The course's lectures were filmed at Harvard University.
+
+A summary of lectures appears below.
+
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/34240fb871ea4a0a8a03f8c6ed7ac5f1/[Computational Thinking]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/324cdc0736ef41b397ec2934282175e0/[Programming Languages]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/7191ecf03f544c7da59df1f0eb7004df/[Internet Technologies]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/62839ae31a3f48279337b16c83290eed/[Web Development]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/f090fe95f0574725a928f2d05caa6286/[Technology Stacks]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/77ab1d9f13d64a128b6942295be435d2/[Cloud Computing]
+
+## Assignments
+
+A summary of assignments appears below.
+
+. https://forms.cs50.net/business/2018/x/assignments/computational_thinking[Computational Thinking]
+. https://forms.cs50.net/business/2018/x/assignments/programming_languages[Programming Languages]
+. https://forms.cs50.net/business/2018/x/assignments/internet_technologies[Internet Technologies]
+. https://forms.cs50.net/business/2018/x/assignments/web_development[Web Development]
+. https://forms.cs50.net/business/2018/x/assignments/technology_stacks[Technology Stacks]
+. https://forms.cs50.net/business/2018/x/assignments/cloud_computing[Cloud Computing]
+
+## Academic Honesty
+
+This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
+
+The essence of all work that you submit to this course must be your own. Collaboration on assignments is not permitted except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your work to classmates and others, but you may not view theirs, so long as you and they respect this policy's other constraints.
+
+Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it. If the course determines that you have commited an act that is not reasonable, you may be deemed ineligible for a certificate. If you commit some act that is not reasonable but bring it to the attention of the course’s instructor within 72 hours, the course may reconsider that outcome.
+
+### Reasonable
+
+* Communicating with classmates about assignments in English (or some other spoken language).
+* Discussing the course's material with others in order to understand it better.
+* Helping a classmate identify a bug in his or her code at office hours, elsewhere, or even online, as by viewing or running his or her code, even on your own computer.
+* Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those snippets are not themselves solutions to assigned problems and that you cite the snippets' origins.
+* Sending or showing an answer or code that you've written to someone, possibly a classmate, so that he or she might help you identify and fix a mistake.
+* Sharing snippets of your own answers or code online so that others might help you identify and fix a mistake.
+* Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to assignments.
+* Whiteboarding solutions to assignments with others outside of your team using diagrams or pseudocode but not actual code.
+* Working with (and even paying) a tutor to help you with the course, provided the tutor does not do your work for you.
+
+### Not Reasonable
+
+* Asking a classmate to see his or her answer or code before (re-)submitting your own.
+* Failing to cite (as with comments) the origins of code or techniques that you discover outside of the course's own lessons and integrate into your own work, even while respecting this policy's other constraints.
+* Giving or showing to a classmate an answer or code when it is he or she, and not you, who is struggling with their own.
+* Paying or offering to pay an individual for work that you may submit as (part of) your own.
+* Providing or making available answers or code to individuals who might take this course in the future.
+* Searching for or soliciting outright solutions to assignments online or elsewhere.
+* Submitting (after possibly modifying) another's words without attribution for some assignment.
+* Submitting the same or similar work to this course that you have submitted or will submit to another.
+* Submitting work to this course that you intend to use outside of the course (e.g., for a job) without prior approval from the course's instructor.
+* Viewing another's solution to an assignment and basing your own solution on it.

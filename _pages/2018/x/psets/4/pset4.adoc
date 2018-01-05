@@ -40,8 +40,6 @@ cd ~/workspace/pset4/
 
 == How to Submit
 
-=== Step 1 of 2
-
 . Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
 . Ensure your workspace is up-to-date by executing:
 +
@@ -81,13 +79,3 @@ submit50 cs50/2018/x/resize/more
 cd ~/workspace/pset4/recover
 submit50 cs50/2018/x/recover
 ----
-
-=== Step 2 of 2
- 
-_Coming 2 January 2018._
-
-////
-Submit https://forms.cs50.net/2018/x/psets/4[]!
- 
-This was Problem Set 4.
-////

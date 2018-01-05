@@ -44,8 +44,6 @@ Then visit the URL that `check50` outputs to see where you rank!
 
 == How to Submit
 
-=== Step 1 of 2
-
 * Update your IDE:
 +
 [source]
@@ -59,13 +57,3 @@ update50
 cd ~/workspace/pset5/speller/
 submit50 cs50/2018/x/speller
 ----
-
-=== Step 2 of 2
-
-_Coming 2 January 2018._
-
-////
-Submit https://forms.cs50.net/2018/x/psets/5[]!
- 
-This was Problem Set 5.
-////
