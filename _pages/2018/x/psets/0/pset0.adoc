@@ -31,6 +31,10 @@ If you have a phone (or digital camera) and would like to say hello to classmate
 
 If you do record a video, upload it to YouTube (unless blocked in your country, in which case you’re welcome to upload it elsewhere) so that you can provide us with its URL when you submit!
 
+== GitHub
+
+In order to submit problem sets, you'll need an account on https://github.com/[GitHub], a popular service with which to store code and collaborate with others. If you don't already have one, visit https://github.com/join and create an account (for free). Take care to remember your username and password! If you'd prefer not to provide GitHub with a personally identifiable username and email address (i.e., one that includes your name), you're welcome to create an account using an anonymous username and some other email address (e.g., that you only use for GitHub). If you choose to provide a personally identifiable username or email address, material you submit for the course to GitHub and our feedback on it also will be personally identifiable by GitHub. See GitHub's https://help.github.com/articles/github-privacy-statement/[Privacy Statement].
+
 == Itching to Program?
 
 Head to https://scratch.mit.edu/ and sign up for an account on MIT's website by clicking **Join Scratch** atop the page. Any username (that's available) is fine, but take care to remember it and your choice of password.
