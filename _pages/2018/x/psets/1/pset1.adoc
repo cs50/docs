@@ -9,12 +9,11 @@ toc: false
 == tl;dr
 
 [start=0]
-. Watch Week 1's first lecture.
+. Watch https://video.cs50.net/2018/x/lectures/1[Week 1's first lecture].
 . Get your CS50 IDE set up with `hello.c`.
 . Recreate one of Mario's pyramids, in `mario.c`.
 . Accept some cash in `cash.c` or credit in `credit.c`.
 . Submit your code.
-. Submit a form.
 
 == Getting Started
 

@@ -7,15 +7,10 @@ layout: 2018/x
 == tl;dr
 
 [start=0]
-. Attend or watch Week 0's lecture.
-. Program in Scratch.0
+. Watch https://video.cs50.net/2018/x/lectures/0[Week 0's lecture].
+. Program in Scratch.
 . Upload a file.
 . Submit a form. 
-
-== Help
-  
-* Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
-* Attend office hours, per the schedule on the course's website.
 
 == Project 5050
 

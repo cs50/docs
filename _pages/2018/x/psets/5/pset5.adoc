@@ -6,11 +6,12 @@ layout: 2018/x
 = Problem Set 5: Mispellings
 
 == tl;dr
- 
-. Watch Week 4's lecture.
+
+[start=0]
+. Watch https://video.cs50.net/2018/x/lectures/5[Week 4's lecture].
 . Answer some questions about a spell checker.
 . Implement a spell checker.
-. Submit a form.
+. Submit your code.
 
 == Getting Started
 

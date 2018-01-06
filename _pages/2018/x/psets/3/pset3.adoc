@@ -8,10 +8,9 @@ layout: 2018/x
 == tl;dr
  
 [start=0]
-. Watch Week 2's lecture.
+. Watch https://video.cs50.net/2018/x/lectures/3[Week 2's lecture].
 . Make beautiful music. 
 . Submit your code.
-. Submit a form.
 
 == Getting Started
 

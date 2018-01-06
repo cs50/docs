@@ -8,7 +8,7 @@ layout: 2018/x
 == tl;dr
  
 [start=0]
-. Watch Week 1's second lecture.
+. Watch https://video.cs50.net/2018/x/lectures/2[Week 1's second lecture].
 . Choose two out of three adventures:
 +
 --
@@ -18,7 +18,6 @@ layout: 2018/x
 --
 +
 . Submit your code.
-. Submit a form.
 
 == Reminders
 

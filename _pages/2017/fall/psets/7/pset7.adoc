@@ -7,7 +7,10 @@ layout: 2017/fall
 
 == tl;dr
 
+[start=0]
+. Attend or watch https://video.cs50.net/2018/x/lectures/10[Week 8's lecture].
 . Implement a stock-trading website.
+. Submit your code.
 . Submit a form.
 
 include::help-harvard.adoc[]

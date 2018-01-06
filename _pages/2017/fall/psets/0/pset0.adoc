@@ -7,7 +7,7 @@ layout: 2017/fall
 == tl;dr
 
 [start=0]
-. Attend or watch Week 0's lecture.
+. Attend or watch https://video.cs50.net/2018/x/lectures/0[Week 0's lecture].
 . Program in Scratch.
 . Upload a file.
 . Submit a form. 
