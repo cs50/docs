@@ -7,7 +7,7 @@ layout: 2018/x
 
 == tl;dr
 
-. Watch https://video.cs50.net/2018/x/lectures/9[Lecture 9] (and https://video.cs50.net/2018/x/lectures/8[Lecture 8] and https://video.cs50.net/2018/x/lectures/7[Lecture 7], if you haven't already).
+. Watch https://video.cs50.net/2018/x/lectures/9[Week 7's lecture] (and https://video.cs50.net/2018/x/lectures/8[Week 6 Continued's] and https://video.cs50.net/2018/x/lectures/7[Week 6's], if you haven't already).
 . Port some programs from C to Python.
 . Detect some similarities.
 . Submit a form.
