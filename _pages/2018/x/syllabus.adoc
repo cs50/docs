@@ -23,6 +23,8 @@ https://cs50.edx.org/
 
 CS50x is free to take, and you are welcome to submit the course's nine problem sets and final project for automated feedback. To be eligible for a https://www.edx.org/verified-certificate[verified certificate] from edX, however, you must receive a satisfactory score (at least 70%) on each problem you submit as part of one of the course's nine problem sets as well as on the course's final project.
 
+Problems are evaluated along axes of correctness (as determined by a program called `check50`) and style (as determined by a program called `style50`), with scores ordinarily computed as 3 × correctness + 1 × style. 
+
 == Books 
 
 No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, resources can be found on the course's website.
