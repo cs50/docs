@@ -92,6 +92,16 @@ at the prompt to see your last several commands in chronological order if you'd 
 * link:credit/credit.html[Credit], more comfortable
 --
 
+== Testing
+
+=== Correctness
+
+Be sure to assess the correctness of your code with `check50`, per each problem's spec.
+
+=== Style
+
+Be sure to assess the style of your code with `style50`, which compares your code against https://manual.cs50.net/style[CS50's style guide], per each problem's spec.
+
 == How to Submit
 
 . Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
