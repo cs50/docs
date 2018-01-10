@@ -8,7 +8,7 @@ layout: 2018/x
 == tl;dr
  
 [start=0]
-. Watch https://video.cs50.net/2018/x/lectures/4[Week 3's lecture].
+. Watch https://video.cs50.net/2017/fall/lectures/4[Week 3's lecture].
 . Figure out whodunit.
 . Resize some images.
 . Recover some photos

@@ -8,7 +8,7 @@ layout: 2018/x
 == tl;dr
 
 [start=0]
-. Watch https://video.cs50.net/2018/x/lectures/5[Week 4's lecture].
+. Watch https://video.cs50.net/2017/fall/lectures/5[Week 4's lecture].
 . Answer some questions about a spell checker.
 . Implement a spell checker.
 . Submit your code.

@@ -7,7 +7,7 @@ layout: 2018/x
 == tl;dr
 
 [start=0]
-. Watch https://video.cs50.net/2018/x/lectures/0[Week 0's lecture].
+. Watch https://video.cs50.net/2017/fall/lectures/0[Week 0's lecture].
 . Program in Scratch.
 . Upload a file.
 . Submit a form. 
