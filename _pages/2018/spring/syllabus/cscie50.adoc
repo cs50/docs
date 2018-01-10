@@ -180,7 +180,7 @@ Extensions on the final project are not ordinarily granted, except in cases of e
 
 == Project Fair
 
-From 5:30pm until 7pm on Fri 5/8 is the Project Fair, an epic display of final projects in both CSCI E-50 as well as the other courses taught by the course's staff, including CSCI E-23a, CSCI E-33a, and CSCI E-39b. Not only is the Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is optional. Snacks will be provided. Family and friends are welcome to join.
+From 5:30pm until 7pm on Fri 5/11 is the Project Fair, an epic display of final projects in both CSCI E-50 as well as the other courses taught by the course's staff, including CSCI E-23a, CSCI E-33a, and CSCI E-39b. Not only is the Fair a venue at which to see classmates' projects and demo your own, it is an opportunity to mingle with students, faculty, and staff from across campus as well as recruiters from industry. Attendance is optional. Snacks will be provided. Family and friends are welcome to join.
 
 include::../honesty.adoc[]
 
