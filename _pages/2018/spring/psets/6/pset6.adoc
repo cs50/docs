@@ -1,0 +1,74 @@
+---
+layout: 2017/fall
+---
+:skip-front-matter:
+
+= Problem Set 6: Déjà vu
+
+== tl;dr
+
+[start=0]
+. Attend or watch https://video.cs50.net/2018/x/lectures/6[Week 5's lecture], https://video.cs50.net/2018/x/lectures/7[Week 6's first lecture], https://video.cs50.net/2018/x/lectures/8[Week 6's second lecture], and https://video.cs50.net/2018/x/lectures/9[Week 7's lecture].
+. Port some programs from C to Python.
+. Detect some similarities.
+. Submit your code.
+. Submit a form.
+
+include::help-harvard.adoc[]
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset6/
+cd ~/workspace/pset6/
+----
+
+== Problems
+
+. Implement link:sentimental/sentimental[Sentimental].
+. Implement either of:
++
+--
+* link:similarities/less/similarities.html[Similarities], less comfortable
+* link:similarities/more/similarities.html[Similarities], more comfortable
+--
+
+== How to Submit
+
+=== Step 1 of 2
+
+. Execute `update50`
+. Execute `cd ~/workspace/pset6/hello/ && submit50 cs50/2017/fall/sentimental/hello`
+. Execute at least one of:
++
+--
+* `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/less`
+* `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/more`
+--
+. Execute at least one of:
++
+--
+* `cd ~/workspace/pset6/cash/ && submit50 cs50/2017/fall/sentimental/cash`
+* `cd ~/workspace/pset6/credit/ && submit50 cs50/2017/fall/sentimental/credit`
+--
+. Execute at least one of:
++
+--
+* `cd ~/workspace/pset6/caesar/ && submit50 cs50/2017/fall/sentimental/caesar`
+* `cd ~/workspace/pset6/vigenere/ && submit50 cs50/2017/fall/sentimental/vigenere`
+* `cd ~/workspace/pset6/crack/ && submit50 cs50/2017/fall/sentimental/crack`
+--
+. Execute at least one of:
++
+--
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/less`
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/more`
+--
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.net/2017/fall/psets/6[]!
+
+This was Problem Set 6.
