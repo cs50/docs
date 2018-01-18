@@ -8,7 +8,7 @@ This is https://cs50.edx.org/[CS50]'s introduction to computer science for busin
 
 == Instructor
 
-http://cs.harvard.edu/malan[David J. Malan]
+http://cs.harvard.edu/malan[David J. Malan] +
 mailto:malan@harvard.edu[malan@harvard.edu]
 
 == Expectations
