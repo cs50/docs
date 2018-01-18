@@ -1,56 +1,56 @@
 ---
-layout: 2018/x
+layout: technology/2018/x
 ---
 
-# Syllabus
+= Syllabus
 
-This is CS50's introduction to computer science for business professionals, designed for managers, product managers, founders, and decision-makers more generally. Whereas CS50 itself takes a bottom-up approach, emphasizing mastery of low-level concepts and implementation details thereof, this course takes a top-down approach, emphasizing mastery of high-level concepts and design decisions related thereto. Through lectures on computational thinking, programming languages, internet technologies, web development, technology stacks, and cloud computing, this course empowers you to make technological decisions even if not a technologist yourself. You'll emerge from this course with first-hand appreciation of how it all works and all the more confident in the factors that should guide your decision-making.
+This is https://cs50.edx.org/[CS50]'s introduction to technology for students who don't (yet) consider themselves computer persons. Designed for those who work with technology every day but don't necessarily understand how it all works underneath the hood or how to solve problems when something goes wrong, this course fills in the gaps, empowering you to use and troubleshoot technology more effectively. Through lectures on hardware, the Internet, multimedia, security, programming, and web development, this course equips you for today's technology and prepares you for tomorrow's as well.
 
-## Instructor
+== Instructor
 
 http://cs.harvard.edu/malan[David J. Malan]
 mailto:malan@harvard.edu[malan@harvard.edu]
 
-## Expectations
+== Expectations
 
 You are expected to
 
 * watch six lectures online and
 * submit six assignments online.
 
-## Website
+== Website
 
-https://cs50.edx.org/business
+https://cs50.edx.org/technology
 
-## Certificates
+== Certificates
 
 To be eligible for a verified certificate from edX, you must receive a satisfactory score (at least 70%) on each of the course's six assignments.
 
-## Lectures
+== Lectures
 
 The course's lectures were filmed at Harvard University.
 
 A summary of lectures appears below.
 
-. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/34240fb871ea4a0a8a03f8c6ed7ac5f1/[Computational Thinking]
-. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/324cdc0736ef41b397ec2934282175e0/[Programming Languages]
-. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/7191ecf03f544c7da59df1f0eb7004df/[Internet Technologies]
-. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/62839ae31a3f48279337b16c83290eed/[Web Development]
-. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/f090fe95f0574725a928f2d05caa6286/[Technology Stacks]
-. https://courses.edx.org/courses/course-v1:HarvardX+CS50B+Business/courseware/39be82f04b5a4f21ba8949da30a697a8/77ab1d9f13d64a128b6942295be435d2/[Cloud Computing]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50T+Technology/courseware/4ad09a91577d49fbb0f66556995951f5/aca65fa8a0b7423e8ff04f225a48c822/[Hardware]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50T+Technology/courseware/4ad09a91577d49fbb0f66556995951f5/360fb4cca26f4c78a0b348cce5024876/[Internet]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50T+Technology/courseware/4ad09a91577d49fbb0f66556995951f5/6e5e3dbcb7074ced8fe5ceccd55b3732/[Multimedia]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50T+Technology/courseware/4ad09a91577d49fbb0f66556995951f5/cd95a0ed79a24e6d9e627ce34904f5f8/[Security]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50T+Technology/courseware/4ad09a91577d49fbb0f66556995951f5/7609121881e94b9eb5f3a962f9d18206/[Web Development]
+. https://courses.edx.org/courses/course-v1:HarvardX+CS50T+Technology/courseware/4ad09a91577d49fbb0f66556995951f5/43b3d8ab510c432c9d1bad75e9dbae2d/[Programming]
 
-## Assignments
+== Assignments
 
 A summary of assignments appears below.
 
-. https://forms.cs50.net/business/2018/x/assignments/computational_thinking[Computational Thinking]
-. https://forms.cs50.net/business/2018/x/assignments/programming_languages[Programming Languages]
-. https://forms.cs50.net/business/2018/x/assignments/internet_technologies[Internet Technologies]
-. https://forms.cs50.net/business/2018/x/assignments/web_development[Web Development]
-. https://forms.cs50.net/business/2018/x/assignments/technology_stacks[Technology Stacks]
-. https://forms.cs50.net/business/2018/x/assignments/cloud_computing[Cloud Computing]
+. https://forms.cs50.net/technology/2018/x/assignments/hardware[Hardware]
+. https://forms.cs50.net/technology/2018/x/assignments/internet[Internet]
+. https://forms.cs50.net/technology/2018/x/assignments/multimedia[Multimedia]
+. https://forms.cs50.net/technology/2018/x/assignments/security[Security]
+. https://forms.cs50.net/technology/2018/x/assignments/web_development[Web Development]
+. https://forms.cs50.net/technology/2018/x/assignments/programming[Programming]
 
-## Academic Honesty
+== Academic Honesty
 
 This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
 
@@ -58,7 +58,7 @@ The essence of all work that you submit to this course must be your own. Collabo
 
 Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it. If the course determines that you have commited an act that is not reasonable, you may be deemed ineligible for a certificate. If you commit some act that is not reasonable but bring it to the attention of the course’s instructor within 72 hours, the course may reconsider that outcome.
 
-### Reasonable
+=== Reasonable
 
 * Communicating with classmates about assignments in English (or some other spoken language).
 * Discussing the course's material with others in order to understand it better.
@@ -70,7 +70,7 @@ Below are rules of thumb that (inexhaustively) characterize acts that the course
 * Whiteboarding solutions to assignments with others outside of your team using diagrams or pseudocode but not actual code.
 * Working with (and even paying) a tutor to help you with the course, provided the tutor does not do your work for you.
 
-### Not Reasonable
+=== Not Reasonable
 
 * Asking a classmate to see his or her answer or code before (re-)submitting your own.
 * Failing to cite (as with comments) the origins of code or techniques that you discover outside of the course's own lessons and integrate into your own work, even while respecting this policy's other constraints.
