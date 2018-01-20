@@ -3,8 +3,8 @@ all: docs
 
 .PHONY: depends
 depends:
-	gem install bundler
-	bundle install
+	gem install --user-install bundler
+	bundle install --path ~/.gem
 
 .PHONY: docs
 docs: clean depends
