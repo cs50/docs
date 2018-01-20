@@ -26,7 +26,7 @@ cd ~/workspace/pset5/
 
 == Academic Honesty
 
-Do keep in mind the course's policy on http://docs.cs50.net/2018/x/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
+Do keep in mind the course's policy on https://docs.cs50.net/2018/x/syllabus.html#academic-honesty[academic honesty], particularly its "regret clause."
 
 == Problems
 
