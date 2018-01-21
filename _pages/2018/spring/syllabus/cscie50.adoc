@@ -95,7 +95,7 @@ This semester's lectures were filmed in Fall 2017. All are available on video vi
 
 Lectures are supplemented by weekly, 2-hour sections led by the teaching fellows. You will be assigned to a section (and teaching fellow) shortly thereafter the course begins; he or she will grade your assignments throughout the term.
 
-Attendance at section is required up until the test; attendance will be taken. Sections for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] at any of the times to be determined and listed below. Students are welcome to attend any of these online sessions week to week, so long as they fully attend one of them.
+Attendance at section is required up until the test; attendance will be taken. Sections for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] at any of the times to be determined and listed below. Some sections are targeted towards students of a certain comfort level coming into the course, but students are welcome to attend any of these online sessions week to week, not just the section held by their assigned teaching fellow, so long as they fully attend one of them.
 
 A schedule of sections, subject to change, appears below. Recordings of the sections, where available, are linked below as well.
 
