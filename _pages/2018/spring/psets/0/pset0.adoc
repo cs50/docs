@@ -15,7 +15,6 @@ layout: 2018/spring
 == Help
 
 * Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
-* Use CS50 Discourse.
 
 == Project 5050
 
