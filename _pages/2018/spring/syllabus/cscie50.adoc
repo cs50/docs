@@ -127,7 +127,7 @@ A schedule of problem sets appears below.
 |===
 | Problem Set | Language | Released | Due
 
-| Problem Set 0 | Scratch | Wed 1/24 | Mon 1/29, noon
+| Problem Set 0 | Scratch | Mon 1/22 | Mon 1/29, noon
 | Problem Set 1 | C | Fri 1/26 | Mon 2/5, noon
 | Problem Set 2 | C | Fri 2/2 | Mon 2/12, noon
 | Problem Set 3 | C | Fri 2/9 | Mon 2/19, noon
