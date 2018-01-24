@@ -1,5 +1,5 @@
 ---
-layout: 2018/hbs
+layout: hbs/2018/q3
 ---
 :author: Cheng Gong
 
