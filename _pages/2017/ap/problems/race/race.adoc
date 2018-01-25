@@ -14,9 +14,9 @@ Implement several __O(n^2^)__ sorting algorithms so that they can be compared un
 [source]
 ----
 $ ./race -r 30000
-bubble sort benchmark:         4.516 seconds
-selection sort benchmark:      1.308 seconds
-insertion sort benchmark:      0.992 seconds
+bubble sort benchmark:         11.820 seconds
+selection sort benchmark:      2.696 seconds
+insertion sort benchmark:      2.496 seconds
 ----
 
 == Recommended Reading
@@ -132,11 +132,11 @@ But we're getting a bit ahead of ourselves. First we need to deal with the conte
 
 [source]
 ----
-race: race.o helpers.c helpers.h
-	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o race race.o helpers.c -lcs50 -lm
+HDRS = helpers.h
+SRCS = race.o helpers.c
 ----
 
-Per the dependencies implied above (after the colon), any changes to either `race.o`, `helpers.c`, or `helpers.h` will compel `make` to rebuild `race` the next time it's invoked for this target. In other words, this means that `race` is not simply comprised of a single source file, but rather of **three** separate files. `helpers.c` and `helpers.h` you probably can figure out. But what the heck is `race.o`? A refresher on the compilation process might be in order here, first. Take it away, Rob:
+Per the dependencies implied above, any changes to either `race.o`, `helpers.c`, or `helpers.h` will compel `make` to rebuild `race` the next time it's invoked for this target. In other words, this means that `race` is not simply comprised of a single source file, but rather of **three** separate files. `helpers.c` and `helpers.h` you probably can figure out. But what the heck is `race.o`? A refresher on the compilation process might be in order here, first. Take it away, Rob:
 
 video::CSZLNYF4Klo[youtube]
 
@@ -166,13 +166,6 @@ So do be sure that whenever you try to compile this program, you do so with
 [source]
 ----
 make race
-----
-
-or, in fact, because of the `all` target specified in `Makefile`, you could also just
-
-[source]
-----
-make all
 ----
 
 **or**, in fact, because `race` is the first target listed in `Makefile` and absent any other command-line arguments supplied to `make` it will simply default to compiling the first target listed in the `Makefile`, you can even say just
@@ -250,9 +243,9 @@ Theoretically, as __n__ gets larger and larger, yes, these three algorithms will
 [source,subs=quotes]
 ----
 ~/workspace/chapter3/race/ $ [underline]#./race -b 2000#
-bubble sort benchmark:         0.012 seconds
-selection sort benchmark:      0.008 seconds
-insertion sort benchmark:      0.004 seconds
+bubble sort benchmark:         0.056 seconds
+selection sort benchmark:      0.012 seconds
+insertion sort benchmark:      0.020 seconds
 ----
 
 Not too much of a difference. But what about
@@ -260,9 +253,9 @@ Not too much of a difference. But what about
 [source,subs=quotes]
 ----
 ~/workspace/chapter3/race/ $ [underline]#./race -r 100000#
-bubble sort benchmark:         52.032 seconds
-selection sort benchmark:      28.944 seconds
-insertion sort benchmark:      8.808 seconds
+bubble sort benchmark:         129.968 seconds
+selection sort benchmark:      31.312 seconds
+insertion sort benchmark:      27.468 seconds
 ----
 
 Ouch! Or lastly
@@ -271,7 +264,7 @@ Ouch! Or lastly
 ----
 ~/workspace/chapter3/race/ $ [underline]#./race -s 20000#
 bubble sort benchmark:         0.000 seconds
-selection sort benchmark:      0.592 seconds
+selection sort benchmark:      1.420 seconds
 insertion sort benchmark:      0.000 seconds
 ----
 
