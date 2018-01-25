@@ -244,7 +244,7 @@ bool search(int value, int values[], int n);
 
 === `sort`
 
-* Your implemenation must sort, from smallest to largest, the array of numbers that it's passed.
+* Your implementation must sort, from smallest to largest, the array of numbers that it's passed.
 * Assume that each of the array's numbers will be non-negative and less than 65,536. But the array might contain duplicates.
 * The running time of your implementation must be in _O_(_n_), where _n_ is the array's size. Yes, linear! Keep in mind that 65,536 is a constant.
 * You may not alter the function's declaration. Its prototype must remain:
