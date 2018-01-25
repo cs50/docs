@@ -149,7 +149,7 @@ image::debugger.png[alt="debugger", width=500]
 ** `%f`
 ** `%i`
 ** `%lld`
-** %s`
+** `%s`
 ** ...
 * To look up the documentation for these functions and format codes, among other information, we can use the built-in manual in the terminal.
 * For example, we can type `man get_string` and see the following:
