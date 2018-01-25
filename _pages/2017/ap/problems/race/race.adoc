@@ -253,9 +253,9 @@ Not too much of a difference. But what about
 [source,subs=quotes]
 ----
 ~/workspace/chapter3/race/ $ [underline]#./race -r 100000#
-bubble sort benchmark:         52.032 seconds
-selection sort benchmark:      28.944 seconds
-insertion sort benchmark:      8.808 seconds
+bubble sort benchmark:         129.968 seconds
+selection sort benchmark:      31.312 seconds
+insertion sort benchmark:      27.468 seconds
 ----
 
 Ouch! Or lastly
