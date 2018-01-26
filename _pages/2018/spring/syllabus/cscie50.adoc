@@ -108,8 +108,8 @@ A weekly overview of sections, subject to change, appears below. Each teaching f
 | Review for Test | week of Sun 3/4
 | Python | week of Sun 3/18
 | SQL | week of Sun 3/25
-| JavaScript | week of Sun 4/4
-| Review for Quiz | week of Sun 4/11
+| JavaScript | week of Sun 4/1
+| Review for Quiz | week of Sun 4/8
 |===
 
 pass:[*] Course-wide and filmed in advance.
