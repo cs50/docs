@@ -5,13 +5,6 @@ published: false
 == Help
 
 * Watch Zamyla's walkthroughs herein.
-* Attend one of Week 1's course-wide sections (aka supersections):
-+
---
-** Fri 9/8, 3pm – 4pm, in Science Center C for those less comfortable (and somewhere in between)
-** Fri 9/8, 4:15pm – 5:15pm, in Science Center C for those more comfortable (and somewhere in between)
---
-+
-Or https://cs50.harvard.edu/sections[watch afterward].
-* Post questions and search answers in https://discourse.cs50.net/[CS50 Discourse]. When you register, make sure your username is the same as your GitHub username! Email heads@cs50.harvard.edu if you don't see any topics after logging in (and thus might not yet have access).
-* Attend https://cs50.harvard.edu/hours[office hours].
+* Watch Week 1's course-wide section video, linked at https://cs50.harvard.edu/weeks[].
+* Post questions and search answers in https://discourse.cs50.net/[CS50 Discourse]. When you register, make sure your username is the same as your GitHub username! Email heads@cs50.harvard.edu if you don't see any topics after logging in (and thus might not yet have access). If you haven't turned in the Problem Set 0 form yet, we don't know your GitHub username, and thus you won't have access.
+* Attend https://cs50.harvard.edu/hours[office hours] beginning Thu 2/1.

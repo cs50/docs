@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 toc: false
 ---
 :skip-front-matter:
@@ -9,7 +9,7 @@ toc: false
 == tl;dr
 
 [start=0]
-. Attend or watch https://video.cs50.net/2018/x/lectures/1[Week 1's first lecture].
+. Attend or watch https://video.cs50.net/2018/spring/lectures/1[Week 1's first lecture].
 . Get your CS50 IDE set up with `hello.c`.
 . Recreate one of Mario's pyramids, in `mario.c`.
 . Accept some cash in `cash.c` or credit in `credit.c`.
@@ -105,7 +105,7 @@ at the prompt to see your last several commands in chronological order if you'd 
 [source]
 ----
 cd ~/workspace/pset1/hello
-submit50 cs50/2017/fall/hello
+submit50 cs50/2018/spring/hello
 ----
 . Submit either or both of:
 +
@@ -115,14 +115,14 @@ submit50 cs50/2017/fall/hello
 [source]
 ----
 cd ~/workspace/pset1/mario/less
-submit50 cs50/2017/fall/mario/less
+submit50 cs50/2018/spring/mario/less
 ----
 * Mario, more comfortable, by executing:
 +
 [source]
 ----
 cd ~/workspace/pset1/mario/more
-submit50 cs50/2017/fall/mario/more
+submit50 cs50/2018/spring/mario/more
 ----
 --
 . Submit either or both of:
@@ -133,19 +133,19 @@ submit50 cs50/2017/fall/mario/more
 [source]
 ----
 cd ~/workspace/pset1/cash
-submit50 cs50/2017/fall/cash
+submit50 cs50/2018/spring/cash
 ----
 * Credit, by executing:
 +
 [source]
 ----
 cd ~/workspace/pset1/credit
-submit50 cs50/2017/fall/credit
+submit50 cs50/2018/spring/credit
 ----
 --
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2017/fall/psets/1. Once you have submitted that form (as well as your source code), you are done! If you end up resubmitting your files (per step 1 of 2), no need to resubmit the form.
+Submit https://forms.cs50.net/2018/spring/psets/1 on or after Mon 1/29. Once you have submitted that form (as well as your source code), you are done! If you end up resubmitting your files (per step 1 of 2), no need to resubmit the form.
 
 This was Problem Set 1.
