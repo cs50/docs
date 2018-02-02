@@ -1,14 +1,14 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 :skip-front-matter:
 
 = Problem Set 2: Crypto
 
 == tl;dr
- 
+
 [start=0]
-. Attend or watch https://video.cs50.net/2018/x/lectures/2[Week 1's second lecture].
+. Watch https://video.cs50.net/2017/fall/lectures/2[Lecture 2].
 . Choose two out of three adventures:
 +
 --
@@ -24,7 +24,7 @@ include::help-harvard.adoc[]
 
 == Reminders
 
-Per https://video.cs50.net/2017/fall/lectures/2[Week 2's lecture]:
+Per https://video.cs50.net/2017/fall/lectures/2[Lecture 2]:
 
 * Use `help50` as needed.
 * Use `eprintf` as needed.
@@ -73,7 +73,7 @@ If not, retrace your steps and see if you can determine where you went wrong. Yo
 history
 ----
 
-at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. 
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like.
 
 == What to Do
 
@@ -104,26 +104,26 @@ update50
 [source]
 ----
 cd ~/workspace/pset2/caesar/
-submit50 cs50/2017/fall/caesar
+submit50 cs50/2018/spring/caesar
 ----
 * Vigenère, by executing:
 +
 [source]
 ----
 cd ~/workspace/pset2/vigenere/
-submit50 cs50/2017/fall/vigenere
+submit50 cs50/2018/spring/vigenere
 ----
 * Crack, by executing:
 +
 [source]
 ----
 cd ~/workspace/pset2/crack/
-submit50 cs50/2017/fall/crack
+submit50 cs50/2018/spring/crack
 ----
 --
 
 === Step 2 of 2
-  
-Submit https://forms.cs50.net/2017/fall/psets/2[]!
- 
+
+Submit https://forms.cs50.net/2018/spring/psets/2[] (starting on or after Mon 2/5)!
+
 This was Problem Set 2.
