@@ -69,9 +69,9 @@ image::facebook_404.png[alt="404 from facebook.com", width=600]
 * A VPN, virtual private network, connects you to some other server, through which all your traffic goes. So the outside world will only see the VPN's IP address, and not be able to track you as easily.
 * IP, Internet Protocol, is the procedure by which computers on the internet communicate with each other. Every computer on the internet has an IP address, in the format `pass:[###.###.###.###]`. Each number must have a value between 0 and 255, so to represent 256 values we need 8 bits for each number, and thus a total size of 32 bits, or 4 bytes, for an IP address. That also implies a total of only 4 billion IP addresses, and there's actually a replacement version, IPv6, which assigns addresses with 128 bits, allowing for a lot more addresses.
 ** There are also private IP addresses, where everyone on the same local network has different private IP addresses, but the router hardware presents the same public IP address for everyone, and redirects traffic in some clever way. These addresses are set to be in these ranges:
-*** 10.#.#.#
-*** 172.16.#.# - 172.31.#.#
-*** 192.168.#.#
+*** `pass:[10.#.#.#]`
+*** `pass:[172.16.#.# - 172.31.#.#]`
+*** `pass:[192.168.#.#]`
 ** The network panel in the settings panels of most systems include this.
 * DHCP, Dynamic Host Configuration Protocol, is the procedure by which a device gets an IP address when it first connects to the internet. It first connects to the local network with a temporary address, and then asks the local DHCP server for an address that it can use.
 ** The DHCP server also tells us the router, or gateway, that we should use to send any messages to the internet. We'll send all of our messages to that server, which will then forward them in the right directions.
