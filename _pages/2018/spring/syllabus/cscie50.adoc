@@ -106,10 +106,12 @@ A weekly overview of sections, subject to change, appears below. Each teaching f
 | File I/O | week of Sun 2/18
 | Data Structures | week of Sun 2/25
 | Review for Test | week of Sun 3/4
+| TF's Choice (Optional) | week of Sun 3/11
 | Python | week of Sun 3/18
 | SQL | week of Sun 3/25
 | JavaScript | week of Sun 4/1
-| Review for Quiz | week of Sun 4/8
+| TF's Choice (Optional) | week of Sun 4/8
+| Review for Quiz | week of Sun 4/15
 |===
 
 pass:[*] Course-wide and filmed in advance.
