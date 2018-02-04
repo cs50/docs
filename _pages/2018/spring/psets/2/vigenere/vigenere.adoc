@@ -17,7 +17,7 @@ ciphertext: HFNLP
 
 == Background
 
-Vigenère's cipher improves upon link:../caesar/caesar.html[Caesar's cipher] by encrypting messages using a sequence of keys (or, put another way, a keyword). In other words, if _p_ is some plaintext and _k_ is a keyword (i.e., an alphbetical string, whereby A represents 0, B represents 1, C represents 2, ..., and Z represents 25), then each letter, _c~i~_, in the ciphertext, _c_, is computed as:
+Vigenère's cipher improves upon link:../caesar/caesar.html[Caesar's cipher] by encrypting messages using a sequence of keys (or, put another way, a keyword). In other words, if _p_ is some plaintext and _k_ is a keyword (i.e., an alphabetical string, whereby A represents 0, B represents 1, C represents 2, ..., and Z represents 25), then each letter, _c~i~_, in the ciphertext, _c_, is computed as:
 
 [latexmath]
 ++++
@@ -92,7 +92,7 @@ To help you test `vigenere`, we've written a program called `devigenere` for you
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
 
-=== Correctness 
+=== Correctness
 
 [source]
 ----
