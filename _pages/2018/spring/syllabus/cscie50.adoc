@@ -95,7 +95,7 @@ Lectures are supplemented by weekly, 2-hour sections led by the teaching fellows
 
 Attendance at section is required up until the test; attendance will be taken. Sections for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] at any of the times to be determined and posted to the course website, beginning Sun 2/4. Some sections are targeted towards students of a certain comfort level coming into the course, but students are welcome to attend any of these online sessions week to week, not just the section held by their assigned teaching fellow, so long as they fully attend one of them.
 
-A weekly overview of sections, subject to change, appears below. Each teaching fellow's section times are linked on the course's website. Recordings of the sections, where available, are linked below as well.
+A weekly overview of sections, subject to change, appears below. Each teaching fellow's section times are linked on the course's website. Recordings of all past sections (except in cases of technical error with the Zoom recordings), are available by http://vault.cs50.net/2018/spring/sections[clicking here].
 
 |===
 2+| Section
