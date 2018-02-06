@@ -93,7 +93,7 @@ This semester's lectures were filmed in Fall 2017. All are available on video vi
 
 Lectures are supplemented by weekly, 2-hour sections led by the teaching fellows on Sundays, Mondays, Tuesdays, or Wednesdays, beginning Sun 2/4. You will be assigned to a section (and teaching fellow) shortly thereafter the course begins; he or she will grade your assignments throughout the term.
 
-Attendance at section is required up until the test; attendance will be taken. Sections for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] at any of the times to be determined and posted to the course website, beginning Sun 2/4. Some sections are targeted towards students of a certain comfort level coming into the course, but students are welcome to attend any of these online sessions week to week, not just the section held by their assigned teaching fellow, so long as they fully attend one of them.
+Attendance at section is required up until the test; attendance will be taken. Sections for CSCI E-50 are held online, by visiting http://cs50.ly/e50-sections[cs50.ly/e50-sections] at any of the times to be determined and posted to the course website, beginning Sun 2/4. Some sections are targeted towards students of a certain comfort level coming into the course, but students are welcome to attend any of these online sessions week to week, not just the section held by their assigned teaching fellow, so long as they fully attend one of them.
 
 A weekly overview of sections, subject to change, appears below. Each teaching fellow's section times are linked on the course's website. Recordings of all past sections (except in cases of technical error with the Zoom recordings), are available by http://vault.cs50.net/2018/spring/sections[clicking here].
 
@@ -118,7 +118,7 @@ pass:[*] Course-wide and filmed in advance.
 
 == Office Hours
 
-Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants. Office hours for CSCI E-50 are held online, by visiting http://cs50.ly/cscie50[cs50.ly/cscie50] on Thursdays, Fridays, and Saturdays beginning on Thu 2/1; a link to the calendar of office hours times is available on the course's website.
+Office hours are opportunities for help with problem sets alongside the course's teaching fellows and course assistants. Office hours for CSCI E-50 are held online, by visiting http://cs50.ly/e50-oh[cs50.ly/e50-oh] on Thursdays, Fridays, and Saturdays beginning on Thu 2/1; a link to the calendar of office hours times is available on the course's website.
 
 == Problem Sets
 
