@@ -1,5 +1,5 @@
 ---
-layout: 2016/fall
+layout: 2018/spring
 ---
 
 = Credit
@@ -97,7 +97,7 @@ INVALID
 
 [source]
 ----
-check50 cs50/2017/fall/credit
+check50 cs50/2018/spring/credit
 ----
 
 === Style

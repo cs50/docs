@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 
 = Cash
@@ -67,7 +67,7 @@ Change owed: [underline]#0.41#
 
 [source]
 ----
-check50 cs50/2017/fall/cash
+check50 cs50/2018/spring/cash
 ----
 
 === Style

@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 
 = Vigenère
@@ -96,7 +96,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 cs50/2017/fall/vigenere
+check50 cs50/2018/spring/vigenere
 ----
 
 === Style

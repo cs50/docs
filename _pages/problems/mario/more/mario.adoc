@@ -1,5 +1,5 @@
 ---
-layout: 2016/fall
+layout: 2018/spring
 ---
 
 = Mario
@@ -87,7 +87,7 @@ pass:[####  ####]
 
 [source]
 ----
-check50 cs50/2017/fall/mario/more
+check50 cs50/2018/spring/mario/more
 ----
 
 === Style
