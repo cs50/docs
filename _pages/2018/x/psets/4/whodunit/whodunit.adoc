@@ -41,7 +41,7 @@ image::clue.png[clue.bmp]
 ////
 https://s-media-cache-ak0.pinimg.com/564x/a6/10/0c/a6100c96163cd9ec3e6df3621d5db6d5.jpg
 ////
-You long ago threw away a6100c96163cd9ec3e6df3621d5db6d5.jpg[that piece of red plastic from childhood] that would solve this mystery for you, and so you must attack it as a computer scientist instead.
+You long ago threw away link:a6100c96163cd9ec3e6df3621d5db6d5.jpg[that piece of red plastic from childhood] that would solve this mystery for you, and so you must attack it as a computer scientist instead.
 
 But, first, some background.
 
