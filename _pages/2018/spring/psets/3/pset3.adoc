@@ -1,14 +1,14 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 :skip-front-matter:
 
 = Problem Set 3: Music
 
 == tl;dr
- 
+
 [start=0]
-. Attend or watch https://video.cs50.net/2018/x/lectures/3[Week 2's lecture].
+. Attend or watch https://video.cs50.net/2017/fall/lectures/3[Lecture 3].
 . Make beautiful music.
 . Submit your code.
 . Submit a form.
@@ -48,11 +48,11 @@ update50
 [source]
 ----
 cd ~/workspace/pset3/music/
-submit50 cs50/2017/fall/music
+submit50 cs50/2018/spring/music
 ----
 
 === Step 2 of 2
-  
-Submit https://forms.cs50.net/2017/fall/psets/3[]!
- 
+
+Submit https://forms.cs50.net/2018/spring/psets/3[]!
+
 This was Problem Set 3.

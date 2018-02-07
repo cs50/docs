@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 
 = Music
@@ -97,7 +97,7 @@ to ensure you're in `~/workspace/pset3/`. Then, execute
 wget http://cdn.cs50.net/2017/fall/psets/3/music.zip
 ----
 
-to download the distribution code as a ZIP (i.e., compressed file). If you then execute `ls`, you should see `music.zip` inside of your `pset3` directory. To unzip (i.e., uncompress) that file, execut
+(This use of `/2017/fall` instead of `/2018/spring` is intentional, as it just happens that's where the distribution code lives!) to download the distribution code as a ZIP (i.e., compressed file). If you then execute `ls`, you should see `music.zip` inside of your `pset3` directory. To unzip (i.e., uncompress) that file, execut
 
 [source]
 ----
@@ -324,7 +324,7 @@ or simply double-click `jeopardy.wav` in CS50 IDE's file browser to open and (as
 
 [source]
 ----
-check50 cs50/2017/fall/music
+check50 cs50/2018/spring/music
 ----
 
 === Style
