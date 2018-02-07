@@ -100,18 +100,18 @@ A weekly overview of sections, subject to change, appears below. Each teaching f
 |===
 3+| Section
 
-| pass:[*] | C | Fri 2/2*
-| 1 | C, continued | week of Sun 2/4
-| 2 | Algorithms | week of Sun 2/11
-| 3 | File I/O | week of Sun 2/18
-| 4 | Data Structures | week of Sun 2/25
-| 5 | Review for Test | week of Sun 3/4
-| 6 | TF's Choice (Optional) | week of Sun 3/11
-| 7 | Python | week of Sun 3/18
-| 8 | SQL | week of Sun 3/25
-| 9 | JavaScript | week of Sun 4/1
-| 10 | TF's Choice (Optional) | week of Sun 4/8
-| 11 | Review for Quiz | week of Sun 4/15
+| Section 0 | C | Fri 2/2*
+| Section 1 | C, continued | week of Sun 2/4
+| Section 2 | Algorithms | week of Sun 2/11
+| Section 3 | File I/O | week of Sun 2/18
+| Section 4 | Data Structures | week of Sun 2/25
+| Section 5 | Review for Test | week of Sun 3/4
+| Section 6 | TF's Choice (Optional) | week of Sun 3/11
+| Section 7 | Python | week of Sun 3/18
+| Section 8 | SQL | week of Sun 3/25
+| Section 9 | JavaScript | week of Sun 4/1
+| Section 10 | TF's Choice (Optional) | week of Sun 4/8
+| Section  11 | Review for Quiz | week of Sun 4/15
 |===
 
 pass:[*] Course-wide and filmed in advance.
