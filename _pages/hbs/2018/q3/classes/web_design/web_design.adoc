@@ -1,0 +1,229 @@
+---
+layout: hbs/2018/q3
+---
+:author: Cheng Gong
+
+= Web Design
+
+== Last Time
+
+* We learned about how the internet works at a foundational level, and so now we can talk about how websites, built to be delivered on top of the internet, are created.
+* We talked about lots of acronyms, like DHCP, DNS, HTTP, HTTPS, IP, and TCP. Each of these systems and protocols are critical for the internet to function.
+
+== Web Design
+
+* First, if we wanted to make a new website, we would have to register a domain name. We'd have to make sure our domain name, like `example.com`, isn't already taken, and then pay a small amount to a registrar, a company authorized to register domain names for individuals or companies.
+* If we visit one such registrar's website, like Namecheap, we'll notice that there are many options to the ending of a domain name, besides just `.com`.
+** The last piece of a domain name, like `.com` or `.net`, is called a top level domain, and there are hundreds of them now available, like `.clothing`. Every country, too, has a geographic TLD like `.us` or `.jp`.
+* We try to visit a domain name that's already taken, `kateandjordan.com`, and get an error in Chrome: "kateandjordan.com's server IP address could not be found." So someone paid to register this domain, but never set it up to point to their web server.
+* Lots of companies offer web hosting services, whereby you can rent web servers from them, and configure your new domain name to point to their servers. When you register a new domain name, the registrar will allow you to set the DNS servers for that name, and the web hosting company will usually provide them.
+* Now, when we put in our domain name in the address bar, it will resolve to the DNS servers of our web host, which will then point to the web servers that our website is on.
+* Now we can find out how we can actually make a webpage. Last time, we used the envelope analogy to discuss how requests and responses are sent between two computers on the internet, with IP addresses and port numbers on the outside, and something like `HTTP/1.1 GET` on the inside.
+* The response, in addition to an HTTP status code like `200 OK`, will usually include HTML.
+* HTML, Hypertext Markup Language, has no functions or variables like a true programming language, but is used to describe, or markup, content.
+* To get started, let's look at a simple webpage:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        hello, world
+    </body>
+</html>
+----
+** It has opening tags like `<title>` and closing tags like `</title>` that tell a browser how to display portions of the page.
+** The first tag, `<!DOCTYPE html>`, indicates that this page is written in HTML.
+** `<html>` and `</html>` indicates that everything inside is part of the HTML page.
+** A webpage has two major parts, a `<head>` and a `<body>`, and we see both of those sets of tags inside. The `<head>` has information for the title bar and metadata, data describing the page but not necessarily displayed, and the `<body>` contains what should be displayed on the page itself.
+** We see a `<title>` tag tells the browser what the title of the page is, and a closing tag to end the title.
+** In the `<body>` tag we just have some plain text that reads `hello, world`.
+* We notice symmetry and nesting in the page, almost like a horizontal tree structure where `<html>` is the root of the tree, and each indentation level is a branch, inside of which are smaller subtrees.
+* We can open a program like TextEdit or Notepad, paste the code above into a file, save it to a file like `hello.html`, and be able to open it in a browser:
++
+image::hello.png[alt="hello.html", width=600]
+** We notice that the URL is a bit different, starting with `file`, indicating that it's a file on our own computer and not on the internet.
+* Now we can add links:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        hello, <a href="https://www.disney.com">Disney World</a>
+    </body>
+</html>
+----
+** `<a>` is an anchor tag, a building block that we can use to create a link. The `href` is an attribute that we can configure. In this case, we put the URL of where we want our link to go.
+** And `<a>` by itself is a tag, but `<a href="https://www.disney.com">Disney World</a>` is an element.
+* We can also save an image to our computer, perhaps `cat.jpeg`, and include it on our page:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        hello, <img src="cat.jpg">
+    </body>
+</html>
+----
+** We only needed `cat.jpg` since we saved it to the same folder on our computer as `hello.html`, but we might need a longer URL if it were somewhere else.
+** And it's not a good practice to include images from other websites, since they might remove it or replace it anytime. But CDNs, Content Delivery Networks, are companies that we can store images and other files with, and they will allow you to include them on your page, sending them to your users quickly.
+* We can even have the image of the cat link to a page, by nesting it inside an `<a>` tag:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        hello, <a href="https://www.google.com/search?q=cats"><img src="cat.jpg"></a>
+    </body>
+</html>
+----
+* Now, we can hover over our cat, and see that it's a link:
++
+image::cat.png[alt="hello.html with cat", width=400]
+* We can create some paragraphs with generic text:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>paragraphs</title>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in tincidunt augue. Duis imperdiet, justo ac iaculis rhoncus, erat elit dignissim mi, eu interdum velit sapien nec risus. Praesent ullamcorper nibh at volutpat aliquam. Nam sed aliquam risus. Nulla rutrum nunc augue, in varius lacus commodo in. Ut tincidunt nisi a convallis consequat. Fusce sed pulvinar nulla.
+        </p>
+        <p>
+            Ut tempus rutrum arcu eget condimentum. Morbi elit ipsum, gravida faucibus sodales quis, varius at mi. Suspendisse id viverra lectus. Etiam dignissim interdum felis quis faucibus. Integer et vestibulum eros, non malesuada felis. Pellentesque porttitor eleifend laoreet. Duis sit amet pellentesque nisi. Aenean ligula mauris, volutpat sed luctus in, consectetur id turpis. Phasellus mattis dui ac metus blandit volutpat. Donec lorem arcu, sollicitudin in risus a, imperdiet condimentum augue. Ut at facilisis mauris. Curabitur sagittis augue in dictum gravida. Integer sed sem sed justo tempus ultrices eu non magna. Phasellus semper eros erat, a posuere nisi auctor et. Praesent dignissim orci aliquam laoreet scelerisque.
+        </p>
+        <p>
+            Mauris eget erat arcu. Maecenas ac ante vel ipsum bibendum varius. Nunc tristique nulla eget tincidunt molestie. Morbi sed mauris eu lectus vehicula iaculis ac id lacus. Etiam sit amet magna massa. In pulvinar sapien ac mi ultrices, quis consequat nisl hendrerit. Aliquam pharetra nec sem non vehicula. In et risus leo. Ut tristique ornare nisl et lacinia.
+        </p>
+    </body>
+</html>
+----
+** The `<p>` tags indicate paragraphs in HTML.
+* In our http://cdn.cs50.net/hbs/2018/q3/classes/web_design/web_design/[source code online], we have more examples of features like headings, lists, and tables.
+* HTML tags provide important additional metadata, or data that indicates the semantics, or meaning, of text displayed on the page.
+* In Chrome, we can use the View > Developer > View Source menu option to see the HTML source code of a page:
++
+image::table_source.png[alt="source of table.html", width=400]
+** `<tr>` is for a row in a table, and `<td>` is for table data, or one cell in a table.
+* Many websites today are actually not written by hand in HTML, but rather generated by a higher-level programming language that we'll discuss later on. And the fact that pages are likely to be generated dynamically, from changing data, is why simply copying the source of a page isn't a terribly big concern. For example, if we copy Google's search page, we don't have access to the server that returns the results for every possible search.
+* A link to search for `cats` on Google looks like `https://www.google.com/search?q=cats` after we type `cats` into the search box. The base page is `https://www.google.com/search`, and the `?` allows us to pass in some inputs to web servers via the URL. `q` probably stands for "query", and what we typed into the search box was indeed `cats`, so we see that in the URL of the page we go to.
+** And on a side note, Google (and other search engines) create their results by starting on a list of known websites (or registered domain names), and having a program download all pages linked by the website's main pages. It does that recursively, in a loop, and gathers related data to help rank results. The "dark web" just refers to pages on the web that might be password-protected, like most of Facebook or Canvas, and not indexed by search engines. And search engines can show different results for the same query, depending on whether you're logged into your own account, or searching from different locations where certain results are more or less popular.
+* We can probably replace the `cats` portion of the URL with anything we want to look for, and we can create a form in HTML that does that for us:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My Google</title>
+    </head>
+    <body>
+        <h1>My Google</h1>
+        <form action="https://www.google.com/search" method="get">
+            <input name="q" type="text">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+----
+** The `action` in the `form` is the URL that our browser will take us to, and it will automatically add `q=` with what we typed in, into the URL as well.
+** We can add other attributes to `input`, adding placeholder text or turning off autocomplete. While minor, these small improvements add up to a better experience for the user.
+* CSS is another language used to style webpages. We can see an example of CSS:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+
+            body {
+                text-align: center;
+            }
+
+        </style>
+        <title>My Google</title>
+    </head>
+    <body>
+        <h1>My Google</h1>
+        <form action="https://www.google.com/search" method="get">
+            <input name="q" type="text">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+----
+** With the new syntax and element, `<style>`, in the `<head>` element, we can apply styles to elements in the body of our page. Here, we specify that for the entire `<body>` element, we want our text to be aligned in the center. And we would know these attributes (keys, like `text-align`) and values (like `center`) by reading documentation or doing a quick Google search.
+* And we can take this one step further, embedding a file of CSS rules in our HTML page:
++
+[source, html]
+----
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="hello.css">
+        <title>My Google</title>
+    </head>
+    <body>
+        <h1>My Google</h1>
+        <form action="https://www.google.com/search" method="get">
+            <input name="q" type="text">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+----
+** Now, all we need to do is to have a `hello.css` file with the styles we already wrote, and we can include it on all the HTML pages we would like. Then, we can work on them separately, or change them once to have the changes across all the pages on our site.
+* A popular library, http://getbootstrap.com[Bootstrap], is an open source collection of CSS rules already written by others, that we can include in our own websites for free. Forms and buttons, for example, are styled to look more modern.
+* Our own CSS file might look like this:
++
+[source, css]
+----
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #00ff00;
+}
+----
+** `body` and `h1` are selectors, and they refer to the elements on the page that should be affected by the rules inside the braces.
+** We can have more specific selectors by adding attributes like `class="medium"` to our elements, where we define our own keywords that can then be changed with:
++
+[source, css]
+----
+.medium {
+    font-size: medium;
+}
+----
+* In this week's assignment, we'll use the CS50 IDE to experiment with creating our own webpages.
