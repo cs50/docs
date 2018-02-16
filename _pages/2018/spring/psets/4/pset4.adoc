@@ -86,6 +86,6 @@ submit50 cs50/2018/spring/recover
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2018/spring/psets/4[]!
+Submit https://forms.cs50.net/2018/spring/psets/4[]! Note that this form has a few questions related to mid-semester feedback for the course's staff, and so will take a little bit longer than the last few forms.
 
 This was Problem Set 4.
