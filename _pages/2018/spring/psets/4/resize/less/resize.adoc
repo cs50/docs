@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 
 = Resize
@@ -104,7 +104,7 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 
 [source]
 ----
-check50 cs50/2017/fall/resize/less
+check50 cs50/2018/spring/resize/less
 ----
 
 == Staff's Solution

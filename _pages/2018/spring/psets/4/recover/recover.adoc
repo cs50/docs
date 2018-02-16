@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 
 = Recover
@@ -88,7 +88,7 @@ $ [underline]#echo $?#
 
 [source]
 ----
-check50 cs50/2017/fall/recover
+check50 cs50/2018/spring/recover
 ----
 
 == Staff's Solution

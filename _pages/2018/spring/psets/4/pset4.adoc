@@ -1,12 +1,12 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 :skip-front-matter:
 
 = Problem Set 4: Forensics
 
 == tl;dr
- 
+
 [start=0]
 . Attend or watch https://video.cs50.net/2018/x/lectures/4[Week 3's lecture].
 . Figure out whodunit.
@@ -56,7 +56,7 @@ update50
 [source]
 ----
 cd ~/workspace/pset4/whodunit/
-submit50 cs50/2017/fall/whodunit
+submit50 cs50/2018/spring/whodunit
 ----
 . Submit either or both of:
 +
@@ -66,14 +66,14 @@ submit50 cs50/2017/fall/whodunit
 [source]
 ----
 cd ~/workspace/pset4/resize/less
-submit50 cs50/2017/fall/resize/less
+submit50 cs50/2018/spring/resize/less
 ----
 * Resize, more comfortable:
 +
 [source]
 ----
 cd ~/workspace/pset4/resize/more
-submit50 cs50/2017/fall/resize/more
+submit50 cs50/2018/spring/resize/more
 ----
 --
 . Submit Recover:
@@ -81,11 +81,11 @@ submit50 cs50/2017/fall/resize/more
 [source]
 ----
 cd ~/workspace/pset4/recover
-submit50 cs50/2017/fall/recover
+submit50 cs50/2018/spring/recover
 ----
 
 === Step 2 of 2
-  
-Submit https://forms.cs50.net/2017/fall/psets/4[]!
- 
+
+Submit https://forms.cs50.net/2018/spring/psets/4[]!
+
 This was Problem Set 4.
