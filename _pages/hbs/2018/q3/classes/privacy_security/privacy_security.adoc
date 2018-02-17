@@ -1,0 +1,45 @@
+---
+layout: hbs/2018/q3
+---
+:author: Cheng Gong
+
+= Privacy, Security
+
+== Last Time
+
+* Databases are like web servers, except that they are meant to serve only raw data. Similarly, there are scaling concerns, as well as how we might want to design a database, choosing the tables, columns and their types in each table, as well as how the data in our tables are linked. We can also choose to index columns, or have our database program create another data structure based on our data, such that we can search it much more quickly. But the cost of an index is additional storage space, as well as slightly slower time for changing our data since the index will also need to be changed.
+
+== Encryption
+
+* In the mobile app world, for example, Apple's App Store is generally more stringent about which apps can be published there, for greater security, while Google's Play Store allows for more developers to easily publish their apps.
+* There is also a tradeoff between privacy, security, performance, price, among other characteristics of products and systems.
+* In the movie "A Christmas Story," the main character Ralphie has a decoder ring that he uses to encrypt and decrypt messages.
+* He uses that ring to decode the message "Be sure to drink your Ovaltine.", which originally looked like "Or fher gb qevax lbhe Binygvar."
+* A cipher is an algorithm to convert letters from one to another, like using the number 2 to convert "a" to "c" and "b" to "d," shifting all the letters forward by 2.
+* With a stronger code, letters are randomly converted from one to another with some mapping, like "b" to "q" and "c" to "z". This is more secure because there are more combinations, and the pattern is less obvious.
+* But these ciphers and codes are still easy to crack, since we can guess what the most frequent letters are, and what two-letter words are.
+* We can also try every rotation number until we have a message, if the algorithm used to encrypt the message was a cipher. With 26 possible values for rotation, the average tries we might need is 26/2, or 13, since we might get lucky sometimes.
+* A more complex cipher, a Vigenère cipher, uses different values for each character. For example, a passphrase like "abc" might mean that the first letter in our message is rotated by 1, the second one by 2, the third one by 3, and then return to 1 rotation, 2 rotations, and so on, until our message is encrypted. With a keyphrase of length _n_, and 26 possible values for each one, a passphrase of length 3 would require 26^3 = 17576 guesses. And with even longer passphrases, the cost of the adversary to decrypt a message grows exponentially.
+* With a passphrase requirement that's too long, people might take shortcuts and use simple passwords or write them down, where they can easily be stolen.
+* We can also prevent the same person (or IP address) from guessing passwords multiple times in a row, but that also prevents someone who is forgetful or allows for a denial of service attack. Our phones, too, might have a feature where it can wipe its data after enough incorrect attempts, but that might be too risky for us if we forget or someone erases our phone on purpose.
+
+== Public-key encryption
+
+* Thinking back to encrypting a message with a key, establishing a secure way to send someone a key is sort of a catch-22 situation. Having just one shared key that is used to encrypt and decrypt a message is called secret-key cryptography, and poses this issue where we need a secure way to share that key.
+* Public-key cryptography is a system where two keys, one "public" key and one "private" key, has some mathematical properties such that data encrypted with the public key can only be decrypted with the private key, and there is no easy way to derive the private key from the public key. These keys are just really large numbers, with relations to prime numbers, that have these useful properties.
+* For example, Alice and Bob each generate a public key and private key. Bob uses Alice's public key (which she can share with everyone) to encrypt a message. Then, only Alice's private key can decrypt that message.
+* These mathematical algorithms tend to rely on computationally difficult operations, such as factoring large numbers, to prevent the private key from being derived from the public key. But if these operations are more efficiently solved by new technologies, such as quantum computing, or even a mathematical way to reduce the time taken, then these encryption algorithms can be weakened.
+
+== Files
+
+* We might use a cloud storage service like Dropbox or Google Drive, and they might say our files are kept secure by encryption.
+* We might ask about physical security of their servers, in datacenters that are protected.
+* Our accounts might be digitally protected with two-factor authentication, where in additional to a password, it's also something else that someone has and changes (like a code sent to a phone).
+* We know that files in computers are represented in binary as 0s and 1s, so we can manipulate them as numbers to encrypt them.
+* But even if we have an algorithm to encrypt binary data, we need to provide it some key, like the number 13 in our cipher earlier (and hopefully much larger). And Dropbox might create a key to encrypt our data for us. It could use the same key for all of its users, or it can use each user's passwords to encrypt the files in each account. But in the second case, users would lose access to their files if they forgot their passwords, so by maintaining everyone's encryption keys, Dropbox allows for resetting a password, at a cost of security.
+* Dropbox might want to use deduplication, or store each file that a user uploads only once. For example, everyone might have a copy of the same movie and upload it to Dropbox, but they don't want to store one copy for each person who uploads it. That way, they can minimize costs.
+* The implication there, though, is that Dropbox has to know the key that encrypts all the users' files, to check that the same file isn't stored multiple times.
+* To reduce costs of storage, we have the tradeoff of lower user privacy.
+* One way to get around this is to use some other software that encrypts your data on your computer, before it's uploaded to Dropbox. But then we'd have to trust the software we used to encrypt our data ourselves.
+* About a year ago, Apple had a legal battle with the FBI, who wanted Apple to modify a device to allow multiple attempts at guessing the passcode without destroying the data.
+* The Volkswagen emissions scandal, where they wrote software to emit less fumes when the car was being tested, demonstrates that software could act differently while being tested, so malware might not be easily detectable.
