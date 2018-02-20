@@ -44,7 +44,7 @@ $ unzip speller.zip
 $ rm speller.zip
 $ cd speller
 $ ls
-dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  questions.txt  speller.c  texts/
+dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  README.md  speller.c  texts/
 ----
 
 === Understanding
