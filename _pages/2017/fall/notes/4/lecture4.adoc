@@ -407,7 +407,7 @@ image::smiley.png[alt="Black and white smiley", width=400]
 * With many dots, and many more bits to represent different colors, we can store entire images.
 * A JPEG file is a particular type of image file, based on a standard the world once agreed upon, that stores images in a particular format. Every JPEG file starts with the same three bytes to identify its format, the values `255 216 255`.
 * Those values are stored in binary, but we can also easily represent them in *hexadecimal*, a numbering system which uses 16 symbols instead of 10. In addition to the symbols `0-9`, we use `a`, `b`, `c`, `d`, `e`, and `f`, for the higher values of 10, 11, 12, 13, 14, and 15.
-* `255` in decimal is `1111 1111`, and `216` is `1101 1000`. Each of those four bits, since they can hold 16 values, map perfectly to hexadecimal. `1111` is 15 in decimal, or `f` in hexadecimal, `1101` is 13, or `d`, and `1000` is 8, also `8`. So `255` maps to `ff`, and `216` to `d8`. And it's convention to write hexadecimal as `0xff` and `0xd8`.
+* The number `255`, in binary, is `1111 1111`; and `216` is `1101 1000`. Each of those four bits, since they can hold 16 values, map perfectly to hexadecimal. `1111` is 15 in decimal, or `f` in hexadecimal, `1101` is 13, or `d`, and `1000` is 8, also `8`. So `255` maps to `ff`, and `216` to `d8`. And it's convention to write hexadecimal as `0xff` and `0xd8`.
 * So the first three bytes of a JPEG file are `0xff 0xd8 0xff`.
 * Our problem set this week will involve recovering images from a file of binary data, so knowing that those bytes start a JPEG file will come in useful.
 * Bitmap files, with the extension BMP, maps bits directly to pixels.
