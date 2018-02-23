@@ -1,14 +1,14 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 :skip-front-matter:
 
 = Problem Set 5: Mispellings
 
 == tl;dr
- 
+
 [start=0]
-. Attend or watch https://video.cs50.net/2018/x/lectures/5[Week 4's lecture].
+. Watch https://video.cs50.net/2017/fall/lectures/5[Lecture 5].
 . Answer some questions about a spell checker.
 . Implement a spell checker.
 . Submit your code.
@@ -37,11 +37,11 @@ Do keep in mind the course's policy on http://docs.cs50.net/2017/fall/syllabus/c
 
 === Big Board
 
-If you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit.
+If you'd like to put your code to the test against classmates' code (just for fun), execute the command below (beginning Mon 2/26) to challenge the Big Board before or after you submit.
 
 [source]
 ----
-check50 cs50/2017/fall/challenges/speller
+check50 cs50/2018/spring/challenges/speller
 ----
 
 Then visit the URL that `check50` outputs to see where you rank!
@@ -61,11 +61,11 @@ update50
 [source]
 ----
 cd ~/workspace/pset5/speller/
-submit50 cs50/2017/fall/speller
+submit50 cs50/2018/spring/speller
 ----
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2017/fall/psets/5[]!
- 
+Submit https://forms.cs50.net/2018/spring/psets/5[], beginning Mon 2/26!
+
 This was Problem Set 5.
