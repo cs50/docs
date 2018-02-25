@@ -37,14 +37,14 @@ Do keep in mind the course's policy on http://docs.cs50.net/2017/fall/syllabus/c
 
 === Big Board
 
-If you'd like to put your code to the test against classmates' code (just for fun), execute the command below (beginning Mon 2/26) to challenge the Big Board before or after you submit.
+If you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit.
 
 [source]
 ----
 check50 cs50/2018/spring/challenges/speller
 ----
 
-Then visit the URL that `check50` outputs to see where you rank!
+Then visit https://speller.cs50.net/cs50/2018/spring/challenges/speller[] to see where you rank!
 
 == How to Submit
 
