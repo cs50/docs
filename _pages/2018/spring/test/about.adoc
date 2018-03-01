@@ -1,0 +1,28 @@
+---
+layout: 2018/spring
+toc: false
+---
+
+= About Test
+
+Released at noon on Fri 3/9 and due by noon on Mon 3/12 is a take-home test that will cover Lectures 0 through 6 (and Problem Sets 0 through 5). The test is open-book: you may use any and all non-human resources during the test, but the *only* humans to whom you may turn for help or from whom you may receive help are the course's heads.
+
+The test will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 72!) hours on the test.
+
+The course's heads held a course-wide review session for the test in Fall 2017, a recording of which is available on the https://cs50.harvard.edu/weeks[Weeks] page of the course's website. Sections on Sun 3/4, Mon 3/5, Tue 3/6, and Wed 3/7 will also be opportunities for review. Office hours on Tue 3/6, Wed 3/7 and Thu 3/8 will be additional opportunities for Q&A. There will be no office hours during the Test, nor will CS50 Discourse be open for posting, though you may review questions that were asked before the Test began.
+
+Among the test's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. The test's format will resemble that of http://cdn.cs50.net/2017/spring/test/test.html[Spring 2017's test], with short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE). Expect to spend at least thirty minutes per question.
+
+== How to Prepare
+
+Ultimately, how best to prepare depends on how you learn best. But allow us to recommend that you prioritize your studies per the ordering below.
+
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any.
+. Review each lecture's *slides*.
+. Watch the *review session*.
+. Review each lecture's *video*, using its table of contents to focus on topics with which you're less comfortable.
+. Take http://cdn.cs50.net/2017/spring/test/test.html[*last year's test*] and, only after you've attempted each of its questions, review its https://cdn.cs50.net/2016/fall/test/key/[sample solutions]. Realize, though, that some topics covered last year might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Review problem sets' *specifications*, *sample solutions*, and, if any, *distribution code*.
+
+And, as always, ask questions at https://cs50.harvard.edu/hours[office hours] or via https://discourse.cs50.net/c/cs50-2017[CS50 Discourse]!
