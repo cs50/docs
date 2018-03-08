@@ -1,0 +1,121 @@
+---
+layout: hbs/2018/q3
+---
+:author: Cheng Gong
+
+= Technology Stacks
+
+== Last Times
+
+* We considered how we might take three different high-level strategies to implementing a mobile app: native, hybrid, or web, each with their pros and cons.
+* We also looked at web programming with JavaScript, which is primarily used on the client-side, but can be used on servers as well.
+
+== Stack Components
+
+* To build a product or solve a problem, we usually need to use many technologies which stack on top of one another:
+** development environment
+** language
+** web host
+** back-end framework
+** database
+** front-end framework
+** monitoring
+** cachine
+** queuing
+** scaling
+** testing
+** security
+** ...
+* These are some of the components where we can make a choice about the technology or technologies we want to use.
+* A development environment includes the hardware and software a developer uses to write software, such as a laptop, a terminal, and code editor program. macOS, for example, comes with a program called Terminal, though there are others with different features. Some code editors include Atom or Sublime Text, and have similar features to the code editor in the CS50 IDE.
+* We've heard about many languages through this course, such as:
+** Python
+** HTML
+** CSS
+** Ruby
+** Scratch
+** Swift
+** Objective-C
+** SQL
+** JavaScript
+* And others we might have heard of outside this course:
+** Fortran
+** PHP
+** VBA
+** R
+** Matlab
+** COBOL
+** Pacal
+** Assembly
+** BASIC
+** Stata
+** Go
+* There are indeed hundreds of languages out there, dozens of which we might consider to still be active. We'd look for languages relevant to what we want to build, such as Swift or Java for a native mobile app.
+* A web-based application would necessarily use HTML, CSS, and JavaScript, with perhaps PHP, Java, Python, or Ruby. Newer languages, or popular languages with bigger communities, tend to have more online support and documentation, as well as developers who can join the team and contribute effectively. But a language too new has its risks, so a language that the team is already comfortable with, is usually a good choice. Completing a task while learning a new language might take twice or three times longer, or more.
+* In the very beginning, computers were programmed in binary, which was really tedious. So assembly, a primitive language that moves values in memory and operates on raw bytes, was invented. That too became tedious, so C was created after, with functions like `for` and variables. But C is still low-level, without built-in data structures like hash tables. So higher level languages, like Python and Ruby, were created. And these languages are often built on top of past languages. For example, the first compiler for C was probably built in assembly. And an interpreter for running Python might be written in C, implementing all the features of Python. The code we write might ultimately be more inefficient and run slightly more slowly, but we might have been able to write it many many times faster. And worrying about that might be premature optimization, where we try to improve performance before we actually reach any limitations.
+* Once we have a language, we might choose to use a framework, some collection of code that others wrote. A framework usually has basic features like a login system or styles that save us time and effort.
+* Some front-end frameworks include:
+** Angular
+** Ember
+** Meteor
+** React
+** Vue
+** Bootstrap
+** Foundation
+** Semantic UI
+* And some back-end frameworks include:
+** Django
+** Flask
+** Laravel
+** .NET
+** Node.js
+** Rails
+* These frameworks might impose conventions like file organization or code patterns that our application has to follow, which can help us write better-designed and more maintainable code, or could be limiting.
+* An API, Application Programming Interface, is how we can interact with some other software, whereby we make a request in some format, and get back data as a result.
+* Back-end frameworks are also written in a particular language, so they might be chosen simply becausse the language is already known.
+* The back-end server can also have different operating systems, though Linux is popular because it has no licensing fee like Windows.
+* There are many cloud computing providers, like Amazon, Google, Microsoft, Firebase, and Heroku, many of which support similar features. But remember that some of these provide infrastructure as a service, while others provide a platform as a service, which might have a higher cost but less configuration for us to do to get our code running. The larger providers also tend to be available in more geographic areas, and have greater reliability and security due to scale, compared to smaller companies.
+* A password manager such as 1Password will also help with security, since you can securely store a long, complex password that's hard to guess.
+* Amazon Web Services has dozens of services it provides, from virtual servers, to storage, to a content delivery network, and more.
+* We also have various database technologies, including a newer type called NoSQL, where the data we store is no longer formatted in relational tables, but rather objects with some hierarchy.
+* Database software options include:
+** MariaDB
+** MySQL
+** Oracle
+** PostgreSQL
+** SQL Server
+* Other technologies related to databases include:
+** Bigtable
+*** This software combines data from various servers into the appearance of one big table with lots of data.
+** Cassandra
+** HBase
+** MongoDB
+*** A NoSQL database.
+** Redis
+* Mobile technologies are fairly fixed for operating system and languages, but there are various frameworks:
+** Cordova
+** Ionic
+** Meteor
+** React Native
+** Supersonic
+** Xamarin
+* And these might be chosen similarly to how a web framework is chosen, based on popularity and developer familiarity.
+* The demographics of our target customers will help decide what platform we focus on.
+
+== Other concepts
+
+* There are also other conventions for back-end development workflow. CI/CD, which stands for continuous integration/continuous development, means that new versions of the software are being tested and released as they are ready. Traditionally, new versions of software was released on some long cycle. But now, since we are able to deploy new code for a web application and have users see those changes, we want to release more often. This way, we can find problems more quickly, and only have to update the parts that have changed.
+* A code review is the process of having someone else review your code, and that's one of the protections against bad code being shipped.
+* Testing software involves writing code that checks our software works as intended. For example, if we had a Scratch program that was supposed to say "hello world", we can write a corresponding test to click the green flag and check whether "hello world" appeared on the screen. So our software might have an entire suite of tests, for various features, and they would be run continuously against every version of our code.
+* We might divide our back-end servers into a few different environments, too:
+** development
+*** A developer's laptop, or perhaps a shared server that only developers use to write and run code that isn't ready yet.
+** testing
+*** This might also be a shared server that only developers use, specifically for testing features.
+** staging
+*** This server should have code that's ready to be used in production.
+** production
+*** This is the environment with servers that real users are interacting with.
+* The number of stages are determined by how important reliability and cost are, to the business.
+* Services that help us store code include BitBucket, GitHub, and GitLab, but they too might be a single point of failure if they keep the latest version of our code and is the source of where our servers get updated from. And they or hackers might have access to our intellectual property, so eventually we might want to keep our code only within our servers.
+* Some testing services include Circle CI, Codeship, Jenkins, and Travis CI, where our tests can be run in the cloud.

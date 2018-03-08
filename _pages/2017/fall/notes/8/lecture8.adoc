@@ -110,9 +110,9 @@ s = get_string("name: ")
 print(f"hello, {s}")
 ----
 ** The syntax for including a library or a function is to use `import`, and we are importing `get_string` from the `cs50` library, which was pre-installed on the CS50 IDE.
-** Then we declare a variable called `s`, and not need to specify the type, and we call `cs50.get_string()` and store the return result into `s`.
+** Then we declare a variable called `s`, and not need to specify the type, and we call `get_string()` and store the return result into `s`.
 ** Then we include `s` in what we print. Strings, or more generally objects, have built-in functions. We can call those functions with the syntax shown, like `f"hello, {s}"`, and by passing in the correct arguments, we can substitute variables the way we want. We also start the string oddly with an `f`, to indicate that it should be formatted.
-* We can also use `print("hello, {}".format(s))` to indicate that we want to format a string. In Python, `"hello, {}"` is a string, ``str``, which is actually an object that has built-in functions and features. `format` is one such function, which we can use to substitute variables into the string.
+* We can also use `print("hello, {}".format(s))` to indicate that we want to format a string. In Python, `"hello, {}"` is a string, `str`, which is actually an object that has built-in functions and features. `format` is one such function, which we can use to substitute variables into the string.
 * We also wrote a program in C to get an integer from the user, and in Python `int.py` would look like:
 +
 [source, python]
@@ -264,7 +264,7 @@ def get_positive_int(prompt):
 
 * We can observe integer overflow in Python as well:
 +
-[source, c]
+[source, python]
 ----
 from time import sleep
 
@@ -496,7 +496,7 @@ class Student:
         self.name = name
         self.dorm = dorm
 ----
-** We declare a `class` of objects called `Student`, which will only have one method, or built-in function, `__init__`, which we won't call directly but gets called when we create a `Student` as we did above with `Student(name, dorm)`.
+** We declare a `class` of objects called `Student`, which will only have one method, or built-in function, `\__init__`, which we won't call directly but gets called when we create a `Student` as we did above with `Student(name, dorm)`.
 ** This function gets the object itself as an argument and the other arguments we want to be passed in when the object is created, in this case `name` and `dorm`. Then inside the function, we store the arguments to the object that's just been created.
 
 * We can see another convenient feature, storing our `students` to a file in http://cdn.cs50.net/2017/fall/lectures/8/src8/weeks/5/struct1.py[`struct1.py`]:
@@ -558,5 +558,5 @@ class Dictionary:
 ----
 ** Here, we create a `words` property when each `Dictionary` is initialized, and set it to an empty `set`. In Python, sets are abstracted away (so we don't know anything about how it's implemented in memory anymore, or whether it's a hash table, or trie, or something else entirely) but we can easily operate with it. This is an important tradeoff compared to C, where we were able to control implementation details and perhaps better tune performance for the needs of our program, at the cost of our own human time to develop it.
 ** We can add items to `self.words` with `self.words.add()`, check if a word is in it with `word in self.words()`, and get the size with `len(self.words)`.
-** And since Python mananges our memory for us, we don't even need to worry about unloading it or freeing it.
+** And since Python mananges the memory for us, we don't even need to worry about unloading it or freeing it.
 * Ultimately, a higher-level language like Python, which has implemented many lower-level features that would take dozens of lines in C, allows us to write more and more sophisticated programs without having to worry about all of the details.
