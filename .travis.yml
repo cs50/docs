@@ -3,6 +3,8 @@ rvm: 2.2
 cache: bundler
 script: make docs
 deploy:
+  edge:
+    branch: v1.8.47
   provider: pages
   local_dir: _site
   name: bot50
