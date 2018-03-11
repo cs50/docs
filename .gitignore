@@ -1,5 +1,6 @@
 .*
 !.gitignore
 !.travis.yml
+!.error-linkchecker
 _site/
 css/

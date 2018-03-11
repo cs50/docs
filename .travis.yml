@@ -1,7 +1,7 @@
 language: ruby
 rvm: 2.2
 cache: bundler
-script: make docs
+script: make docs && find _site -type f -name *.html -exec ./.error-linkchecker {} \;
 deploy:
   edge:
     branch: v1.8.47
