@@ -42,7 +42,7 @@ layout: 2017/fall
 
 == Walkthroughs
 
-Note that, among these walkthroughs, Cash was previously called Greedy.
+Note that, among these walkthroughs, Cash was previously called Greedy. Also, for Crack, passwords can be up to 5 chars long (not 4 as shown).
 
 video::5ueXMnDE-y8[youtube,list=PLhQjrBD2T381raeNI8WdI4D7GMu0XFGTh]
 
