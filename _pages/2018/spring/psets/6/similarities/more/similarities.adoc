@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 toclevels: 1
 ---
 
@@ -144,7 +144,7 @@ See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs
 === `check50`
 
 ```
-check50 cs50/2017/fall/similarities/more
+check50 cs50/2018/spring/similarities/more
 ```
 
 === `style50`

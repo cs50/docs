@@ -44,8 +44,8 @@ cd ~/workspace/pset6/
 . Execute at least one of:
 +
 --
-* `cd ~/workspace/pset6/mario/ && submit50 cs50/2018/spring/sentimental/mario/less`
-* `cd ~/workspace/pset6/mario/ && submit50 cs50/2018/spring/sentimental/mario/more`
+* `cd ~/workspace/pset6/mario && submit50 cs50/2018/spring/sentimental/mario/less`
+* `cd ~/workspace/pset6/mario && submit50 cs50/2018/spring/sentimental/mario/more`
 --
 . Execute at least one of:
 +

@@ -1,5 +1,5 @@
 ---
-layout: 2018/spring
+layout: 2017/fall
 ---
 :skip-front-matter:
 
@@ -22,8 +22,8 @@ layout: 2018/spring
 . Implement either of the below exactly as specified but in Python:
 +
 --
-* link:../../../../../problems/mario/less/mario.html[Mario], less comfortable, in `pset6/mario/less/mario.py`
-* link:../../../../../problems/mario/more/mario.html[Mario], more comfortable, in `pset6/mario/more/mario.py`
+* link:../../../../../problems/mario/less/mario.html[Mario], less comfortable, in `pset6/mario/mario.py`
+* link:../../../../../problems/mario/more/mario.html[Mario], more comfortable, in `pset6/mario/mario.py`
 --
 +
 . Implement either of the below exactly as specified but in Python:
@@ -51,13 +51,13 @@ video::5ueXMnDE-y8[youtube,list=PLhQjrBD2T381raeNI8WdI4D7GMu0XFGTh]
 === Correctness
 
 ```
-check50 cs50/2018/spring/sentimental/hello
-check50 cs50/2018/spring/sentimental/mario/less
-check50 cs50/2018/spring/sentimental/mario/more
-check50 cs50/2018/spring/sentimental/cash
-check50 cs50/2018/spring/sentimental/credit
-check50 cs50/2018/spring/sentimental/caesar
-check50 cs50/2018/spring/sentimental/vigenere
+check50 cs50/2018/x/sentimental/hello
+check50 cs50/2018/x/sentimental/mario/less
+check50 cs50/2018/x/sentimental/mario/more
+check50 cs50/2018/x/sentimental/cash
+check50 cs50/2018/x/sentimental/credit
+check50 cs50/2018/x/sentimental/caesar
+check50 cs50/2018/x/sentimental/vigenere
 ```
 
 As before, afraid there's no `check50` for Crack, lest it spoil the fun!
