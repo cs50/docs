@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 :skip-front-matter:
 
@@ -8,7 +8,7 @@ layout: 2017/fall
 == tl;dr
 
 [start=0]
-. Attend or watch https://video.cs50.net/2018/x/lectures/6[Week 5's lecture], https://video.cs50.net/2018/x/lectures/7[Week 6's first lecture], https://video.cs50.net/2018/x/lectures/8[Week 6's second lecture], and https://video.cs50.net/2018/x/lectures/9[Week 7's lecture].
+. Watch https://video.cs50.net/2017/fall/lectures/6[Lecture 6], https://video.cs50.net/2017/fall/lectures/7[Lecture 7], https://video.cs50.net/2017/fall/lectures/8[Lecture 8], and https://video.cs50.net/2017/fall/lectures/9[Lecture 9], if you haven't already.
 . Port some programs from C to Python.
 . Detect some similarities.
 . Submit your code.
@@ -40,35 +40,35 @@ cd ~/workspace/pset6/
 === Step 1 of 2
 
 . Execute `update50`
-. Execute `cd ~/workspace/pset6/hello/ && submit50 cs50/2017/fall/sentimental/hello`
+. Execute `cd ~/workspace/pset6/hello/ && submit50 cs50/2018/spring/sentimental/hello`
 . Execute at least one of:
 +
 --
-* `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/less`
-* `cd ~/workspace/pset6/mario/ && submit50 cs50/2017/fall/sentimental/mario/more`
---
-. Execute at least one of:
-+
---
-* `cd ~/workspace/pset6/cash/ && submit50 cs50/2017/fall/sentimental/cash`
-* `cd ~/workspace/pset6/credit/ && submit50 cs50/2017/fall/sentimental/credit`
+* `cd ~/workspace/pset6/mario/ && submit50 cs50/2018/spring/sentimental/mario/less`
+* `cd ~/workspace/pset6/mario/ && submit50 cs50/2018/spring/sentimental/mario/more`
 --
 . Execute at least one of:
 +
 --
-* `cd ~/workspace/pset6/caesar/ && submit50 cs50/2017/fall/sentimental/caesar`
-* `cd ~/workspace/pset6/vigenere/ && submit50 cs50/2017/fall/sentimental/vigenere`
-* `cd ~/workspace/pset6/crack/ && submit50 cs50/2017/fall/sentimental/crack`
+* `cd ~/workspace/pset6/cash/ && submit50 cs50/2018/spring/sentimental/cash`
+* `cd ~/workspace/pset6/credit/ && submit50 cs50/2018/spring/sentimental/credit`
 --
 . Execute at least one of:
 +
 --
-* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/less`
-* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2017/fall/similarities/more`
+* `cd ~/workspace/pset6/caesar/ && submit50 cs50/2018/spring/sentimental/caesar`
+* `cd ~/workspace/pset6/vigenere/ && submit50 cs50/2018/spring/sentimental/vigenere`
+* `cd ~/workspace/pset6/crack/ && submit50 cs50/2018/spring/sentimental/crack`
+--
+. Execute at least one of:
++
+--
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2018/spring/similarities/less`
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2018/spring/similarities/more`
 --
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2017/fall/psets/6[]!
+Submit https://forms.cs50.net/2018/spring/psets/6[]!
 
 This was Problem Set 6.
