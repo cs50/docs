@@ -27,7 +27,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/7/finance/finance.zip
+$ wget http://cdn.cs50.net/2018/spring/psets/7/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance
@@ -70,7 +70,7 @@ Next take a look at `helpers.py`. Ah, there's the implementation of `apology`. N
 
 Next in the file is `login_required`. No worries if this one's a bit cryptic, but if you've ever wondered how a function can return another function, here's an example!
 
-Thereafter is `lookup`, a function that, given a `symbol` (e.g., MSFT), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. For backwards compatibility with prior versions of this problem set, you'll notice that `lookup` actually tries to query Yahoo! Finance initially, then uses AlphaVantage as a second attempt. Yahoo! officially deprecated their API in November 2017, so all of our queries will ultimately run through AlphaVantage. Also note ultimately that AlphaVantage returns the same data for both `symbol` and `name`; this is indeed the expected behavior and you need not alter it.
+Thereafter is `lookup`, a function that, given a `symbol` (e.g., MSFT), returns a stock quote for that symbol in the form of a `dict` with two keys: `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. There's a cryptic Python-looking call embedded in the URL to `os.getenv('API_KEY')`. We'll ultimately need to set some value on our system called `API_KEY`, but instructions for that are below!
 
 Last in the file is `usd`, a short function that simply formats a `float` as USD (e.g., `1234.56` is formatted as `$1,234.56`).
 
@@ -89,6 +89,23 @@ Now look in `templates/`. In `login.html` is, essentially, just an HTML form, st
 Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.12/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
 == Specification
+
+=== Configuring
+
+Before getting started on this assignment, we'll need to register for an API key in order to be able to query AlphaVantage's data. To do so, follow these steps:
+
+. Visit https://www.alphavantage.co/support/#api-key[https://www.alphavantage.co/support/#api-key].
+. Enter your name and email address. When asked to describe yourself, choose *Student* from the drop-down.
+. Click *Get Free API Key*.
+. A text field should appear below. Copy the value after "Your dedicated access key is: " up to, but excluding, the period.
+. In a terminal window within CS50 IDE, execute:
++
+[source]
+----
+export API_KEY=value
+----
++
+where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
 
 === `register`
 
@@ -130,7 +147,7 @@ Once you've implemented `buy` correctly, you should be able to see users' purcha
 
 === `index`
 
-Complete the implementation of `index` in such a way that it displays an HTML table summarizing, for the user currently logged in, which stocks the user owns, the numbers of shares owned, the current price of each stock, and the total value of each holding (i.e., shares times price). Also display the user's current cash balance along with a grand total (i.e., stocks' total value plus cash).
+Complete the implementation of `index` in such a way that it displays an HTML table summarizing, for the user currently logged in, which stocks the user owns (as by displaying ticker symbols), the numbers of shares owned, the current price of each stock, and the total value of each holding (i.e., shares times price). Also display the user's current cash balance along with a grand total (i.e., stocks' total value plus cash).
 
 * Odds are you'll want to execute multiple ``SELECT``s. Depending on how you implement your table(s), you might find https://www.google.com/search?q=SQLite+GROUP+BY[GROUP BY], https://www.google.com/search?q=SQLite+HAVING[HAVING], https://www.google.com/search?q=SQLite+SUM[SUM], and/or https://www.google.com/search?q=SQLite+WHERE[WHERE] of interest.
 * Odds are you'll want to call `lookup` for each stock.
