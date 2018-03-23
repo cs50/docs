@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 toclevels: 1
 ---
 
@@ -15,9 +15,9 @@ image::finance.png["C$50 Finance",role="related thumb"]
 
 If you're not quite sure what it means to buy and sell stocks (i.e., shares of a company), head to http://www.investopedia.com/university/stocks/ for a tutorial.
 
-You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying http://finance.yahoo.com/[Yahoo Finance] for stocks' prices.
+You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying https://www.alphavantage.co/[AlphaVantage] for stocks' prices.
 
-Indeed, Yahoo lets you download stock quotes in CSV format via URLs like http://download.finance.yahoo.com/d/quotes.csv?s=NFLX&f=sl1d1t1c1ohgv&e=.csv. Notice how Netflix's symbol (NFLX) is embedded in this URL (as the value of the HTTP parameter called `s`); that's how Yahoo knows whose data to return. Notice also the value of the HTTP parameter called `f`; it’s a bit cryptic (and officially undocumented), but the value of that parameter tells Yahoo which fields of data to return to you. If curious as to what they mean, here’s a https://web.archive.org/web/20040816081607/http://www.gummy-stuff.org/Yahoo-data.htm[handy reference]. Incidentally, Yahoo sometimes returns prices in currencies other than US dollars (USD) without telling you which, but we'll assume everything's in US dollars for simplicity.
+Indeed, AlphaVantage lets you download stock quotes in CSV format via URLs like https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo&datatype=csv. Notice how Microsoft's symbol (MSFT) is embedded in this URL (as the value of the HTTP parameter called `symbol`); that's how AlphaVantage knows whose data to return. Notice also the value of the HTTP parameter called `function`. The value of that parameter tells AlphaVantage which fields of data to return to you. Incidentally, the API might sometimes returns prices in currencies other than US dollars (USD) without telling you which, but we'll assume everything's in US dollars for simplicity.
 
 Let's turn our attention now to the app's distribution code!
 
@@ -70,17 +70,17 @@ Next take a look at `helpers.py`. Ah, there's the implementation of `apology`. N
 
 Next in the file is `login_required`. No worries if this one's a bit cryptic, but if you've ever wondered how a function can return another function, here's an example!
 
-Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`.
+Thereafter is `lookup`, a function that, given a `symbol` (e.g., MSFT), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. For backwards compatibility with prior versions of this problem set, you'll notice that `lookup` actually tries to query Yahoo! Finance initially, then uses AlphaVantage as a second attempt. Yahoo! officially deprecated their API in November 2017, so all of our queries will ultimately run through AlphaVantage. Also note ultimately that AlphaVantage returns the same data for both `symbol` and `name`; this is indeed the expected behavior and you need not alter it.
 
 Last in the file is `usd`, a short function that simply formats a `float` as USD (e.g., `1234.56` is formatted as `$1,234.56`).
 
 ==== `requirements.txt`
 
-Next take a quick look at `requirements.txt`. That file simply prescribes the packages on which this app will depend.
+Next take a quick look at `requirements.txt`. That file simply prescribes the packages on which this app will depend. You should not need to modify this file at all.
 
 ==== `static/`
 
-Glance too at `static/`, inside of which is `styles.css`. That's where some initial CSS lives. You're welcome to alter it as you see fit.
+Glance too at `static/`, inside of which is `styles.css`. That's where some initial CSS lives. You're welcome to alter it as you see fit to get some additional practice with CSS.
 
 ==== `templates/`
 
@@ -94,7 +94,7 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 Complete the implementation of `register` in such a way that it allows a user to register for an account.
 
-* Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists. 
+* Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists.
 * Require that a user input a password, implemented as a text field whose `name` is `password`, and then that same password again, implemented as a text field whose `name` is `confirmation`. Render an apology if either input is blank or the passwords do not match.
 * Submit the user's input via `POST` to `/register`.
 * `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.12/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
@@ -163,7 +163,7 @@ Implement at least one personal touch of your choice:
 
 == Walkthroughs
 
-*Instead of `pwd_context.encrypt`, which Zamyla mentions, be sure to use `generate_password_hash` instead.*
+*Instead of `pwd_context.encrypt`, which Zamyla mentions in this video, be sure to use `generate_password_hash` instead, per the above.*
 
 video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
@@ -183,7 +183,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/2017/fall/finance
+check50 cs50/2018/spring/finance
 ----
 
 === Style
@@ -201,7 +201,7 @@ http://finance.cs50.net/
 
 Feel free to register for an account and play around. Do *not* use a password that you use on other sites.
 
-It is *reasonable* to look at the staff's HTML and CSS.
+It is *reasonable* to look at the staff's HTML and CSS as you work on this problem.
 
 == Hints
 

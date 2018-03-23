@@ -1,5 +1,5 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 :skip-front-matter:
 
@@ -8,7 +8,7 @@ layout: 2017/fall
 == tl;dr
 
 [start=0]
-. Attend or watch https://video.cs50.net/2018/x/lectures/10[Week 8's lecture].
+. Watch https://video.cs50.net/2017/fall/lectures/10[Lecture 10].
 . Implement a stock-trading website.
 . Submit your code.
 . Submit a form.
@@ -43,11 +43,11 @@ Implement link:finance/finance.html[C$50 Finance] in `pset7/finance/`.
 ----
 update50
 cd ~/workspace/pset7/finance/
-submit50 cs50/2017/fall/finance
+submit50 cs50/2018/spring/finance
 ----
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2017/fall/psets/7[]!
+Submit https://forms.cs50.net/2018/spring/psets/7[]!
 
 This was Problem Set 7.
