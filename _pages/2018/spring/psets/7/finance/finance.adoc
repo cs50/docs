@@ -106,7 +106,7 @@ export API_KEY=value
 ----
 +
 where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
-. *If you downloaded the problem set distribution code before Sun 3/25, you will also need to edit `application.py` by adding the line:
+. *If you downloaded the problem set distribution code before Sun 3/25*, you will also need to edit `application.py` by adding the line:
 +
 [source]
 ----
