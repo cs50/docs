@@ -36,6 +36,31 @@ application.py  helpers.py        static/
 finance.db      requirements.txt  templates/
 ----
 
+=== Configuring
+
+Before getting started on this assignment, or indeed even tinkering with the distribution code, we'll need to register for an API key in order to be able to query AlphaVantage's data. To do so, follow these steps:
+
+. Visit https://www.alphavantage.co/support/#api-key[https://www.alphavantage.co/support/#api-key].
+. Enter your name and email address. When asked to describe yourself, choose *Student* from the drop-down.
+. Click *Get Free API Key*.
+. A text field should appear below. Copy the value after "Your dedicated access key is: " up to, but excluding, the period.
+. In a terminal window within CS50 IDE, execute:
++
+[source]
+----
+export API_KEY=value
+----
++
+where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
+. *If you downloaded the problem set distribution code before Sun 3/25*, you will also need to edit `application.py` by adding the line:
++
+[source]
+----
+import os
+----
++
+above the line `from cs50 import SQL` atop that file.
+
 === Running
 
 . Start Flask's built-in web server (within `finance/`):
@@ -89,31 +114,6 @@ Now look in `templates/`. In `login.html` is, essentially, just an HTML form, st
 Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.12/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
 == Specification
-
-=== Configuring
-
-Before getting started on this assignment, we'll need to register for an API key in order to be able to query AlphaVantage's data. To do so, follow these steps:
-
-. Visit https://www.alphavantage.co/support/#api-key[https://www.alphavantage.co/support/#api-key].
-. Enter your name and email address. When asked to describe yourself, choose *Student* from the drop-down.
-. Click *Get Free API Key*.
-. A text field should appear below. Copy the value after "Your dedicated access key is: " up to, but excluding, the period.
-. In a terminal window within CS50 IDE, execute:
-+
-[source]
-----
-export API_KEY=value
-----
-+
-where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
-. *If you downloaded the problem set distribution code before Sun 3/25*, you will also need to edit `application.py` by adding the line:
-+
-[source]
-----
-import os
-----
-+
-above the line `from cs50 import SQL` atop that file.
 
 === `register`
 
