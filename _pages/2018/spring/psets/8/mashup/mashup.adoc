@@ -1,12 +1,12 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 toclevels: 2
 ---
 
 = Mashup
 
 == tl;dr
- 
+
 Implement a website that lets users search for articles atop a map, a la the below.
 
 image::mashup.png["Mashup",role="related thumb"]
@@ -150,7 +150,7 @@ Visit the URL outputted by `flask` to see the distribution code in action. You w
 
 ==== index.html
 
-Open up `templates/index.html`, which will be your app's one and only HTML page. If you look at the page's `head`, you'll see all those CSS and JavaScript libraries we'll be using (plus some others). Included in HTML comments are URLs for each library's documentation if curious. 
+Open up `templates/index.html`, which will be your app's one and only HTML page. If you look at the page's `head`, you'll see all those CSS and JavaScript libraries we'll be using (plus some others). Included in HTML comments are URLs for each library's documentation if curious.
 
 Next take a look at the page's `body`, inside of which is `div` with a unique `id` of `map-canvas`. It's into that `div` that we'll be injecting a map. Below that `div`, meanwhile, is a `form`, inside of which is an `input` of type `text` with a unique `id` of `q` that we'll use to take input from users.
 
@@ -176,7 +176,7 @@ Below `styles` is `options`, another collection of keys and values that will ult
 
 Next we define `canvas`, by using a bit of jQuery to get the DOM node whose unique `id` is `map-canvas`. Whereas `$("#map-canvas")` returns a jQuery object (that has a whole bunch of functionality built-in), `$("#map-canvas").get(0)` returns the actual, underlying DOM node that jQuery is just wrapping.
 
-Perhaps the most powerful line yet is the next one in which we assign `map` (that global variable) a value. With 
+Perhaps the most powerful line yet is the next one in which we assign `map` (that global variable) a value. With
 
 [source,js]
 ----
@@ -202,7 +202,7 @@ google.maps.event.addListener(map, "dragend", function() {
 });
 ----
 
-indicates that we want to listen for a `dragend` event on the map, calling the anonymous function provided when we hear it. That anonymous function, meanwhile, simply calls `update` (another function we'll soon see). Per https://developers.google.com/maps/documentation/javascript/3.exp/reference#Map, `dragend` is "fired" (i.e., broadcasted) "when the user stops dragging the map." 
+indicates that we want to listen for a `dragend` event on the map, calling the anonymous function provided when we hear it. That anonymous function, meanwhile, simply calls `update` (another function we'll soon see). Per https://developers.google.com/maps/documentation/javascript/3.exp/reference#Map, `dragend` is "fired" (i.e., broadcasted) "when the user stops dragging the map."
 
 Similarly do we listen for `zoom_changed`, which is fired "when the map zoom property changes" (i.e., the user zooms in or out).
 
@@ -213,7 +213,7 @@ Below those listeners is our configuration of that typeahead plugin. Take anothe
 <div>{{place_name}}, {{admin_name1}}, {{postal_code}}</div>
 ----
 
-so that the plugin dynamically inserts those values (`place_name`, `admin_name1`, and `postal_code`) or some others for you. 
+so that the plugin dynamically inserts those values (`place_name`, `admin_name1`, and `postal_code`) or some others for you.
 
 Next notice these lines, which are admittedly a bit cryptic at first glance:
 
@@ -227,7 +227,7 @@ $("#q").on("typeahead:selected", function(eventObject, suggestion, name) {
 });
 ----
 
-These lines are saying that if the HTML element whose unique `id` is `q` fires an event called `typeahead:selected`, as will happen when the user selects an entry from the plugin's dropdown menu, we want jQuery to call an anonymous function whose second argument, `suggestion`, will be an object that represents the entry selected. Within that object must be at least two properties: `latitude` and `longitude`. We'll then call `setCenter` in order to re-center the map at those coordinates, after which we'll call `update` to update any markers. 
+These lines are saying that if the HTML element whose unique `id` is `q` fires an event called `typeahead:selected`, as will happen when the user selects an entry from the plugin's dropdown menu, we want jQuery to call an anonymous function whose second argument, `suggestion`, will be an object that represents the entry selected. Within that object must be at least two properties: `latitude` and `longitude`. We'll then call `setCenter` in order to re-center the map at those coordinates, after which we'll call `update` to update any markers.
 
 Below those lines, meanwhile, are these:
 
@@ -306,7 +306,7 @@ Not much in this route yet either, just another `TODO`!
 
 ===== `update`
 
-Ah, okay, here's the "back end" that outputs a JSON array of up to 10 places (i.e., cities) that fall within the specified bounds (i.e., within the rectangle defined by those corners). You won't need to make changes to this route, but do read through it line by line, Googling any function with which you're not familiar. 
+Ah, okay, here's the "back end" that outputs a JSON array of up to 10 places (i.e., cities) that fall within the specified bounds (i.e., within the rectangle defined by those corners). You won't need to make changes to this route, but do read through it line by line, Googling any function with which you're not familiar.
 
 And yes, this file's SQL queries assume that the world is flat for simplicity.
 
@@ -366,7 +366,7 @@ in `sqlite3` or phpLiteAdmin. The counts should match!
 
 ==== `articles`
 
-Complete the implementation of `/articles` in such a way that it outputs a JSON array of objects, each of which represents an article for `geo`, whereby `geo` is passed into `/articles` as a GET parameter, as in the staff solution, below. 
+Complete the implementation of `/articles` in such a way that it outputs a JSON array of objects, each of which represents an article for `geo`, whereby `geo` is passed into `/articles` as a GET parameter, as in the staff solution, below.
 
 * http://mashup.cs50.net/articles?geo=02138
 * http://mashup.cs50.net/articles?geo=06511
@@ -382,7 +382,7 @@ and other such variants, where `username` is your own username, to see if you ge
 
 ==== `search`
 
-Complete the implementation of `/search` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `q`, as in the staff solution below. 
+Complete the implementation of `/search` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `q`, as in the staff solution below.
 
 * http://mashup.cs50.net/search?q=02138
 * http://mashup.cs50.net/search?q=Cambridge
@@ -469,7 +469,7 @@ video::LGOXIN87giE[youtube,list=PLhQjrBD2T383MDO-WBcfAq5SIsoEfoW07]
 
 === Correctness
 
-No `check50` anymore! Be sure to try to "break" your own site, as by
+No `check50` for this one, time to test on your own! Be sure to try to "break" your own site, as by
 
 * searching for cities that don't exist,
 * clicking markers for cities that don't have any articles,

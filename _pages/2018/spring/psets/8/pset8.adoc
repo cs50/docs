@@ -1,14 +1,14 @@
 ---
-layout: 2017/fall
+layout: 2018/spring
 ---
 :skip-front-matter:
 
 = Problem Set 8: Mashup
 
 == tl;dr
- 
+
 [start=0]
-. Attend or watch https://video.cs50.net/2018/x/lectures/11[Week 9's lecture].
+. Attend or watch https://video.cs50.net/2017/fall/lectures/11[Lecture 11].
 . Implement a news map.
 . Submit your code.
 . Submit a form.
@@ -43,11 +43,11 @@ Implement link:mashup/mashup.html[Mashup] in `pset8/mashup/`.
 ----
 update50
 cd ~/workspace/pset8/mashup/
-submit50 cs50/2017/fall/mashup
+submit50 cs50/2018/spring/mashup
 ----
 
 === Step 2 of 2
 
-Submit https://forms.cs50.net/2017/fall/psets/8[]!
- 
+Submit https://forms.cs50.net/2018/spring/psets/8[]!
+
 This was Problem Set 8, your last!
