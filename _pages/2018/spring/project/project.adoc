@@ -90,7 +90,7 @@ If, incidentally, you have an idea for a final project that you think someone sh
 
 === Proposal
 
-The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at TBA. If working with one or two other classmates, it suffices for just one of you to submit the proposal.
+The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal by filling out https://forms.cs50.io/2018/spring/proposal[the proposal form]. Even if working with one or two other classmates, **each of you** must submit the proposal form.
 
 Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
 
