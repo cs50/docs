@@ -1,0 +1,28 @@
+---
+layout: 2018/spring
+toc: false
+---
+
+= About Quiz
+
+Released at noon on Sat 4/21 and due by noon on Mon 4/23 is a take-home quiz that will cover Lectures 0 through 11 (and Problem Sets 0 through 8), with emphasis on Lecture 7 (and Problem Set 6) onward. The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+
+The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several (but not 48!) hours on the quiz.
+
+The course's heads held a course-wide review session for the test in Spring 2018, a recording of which will be made available on the https://cs50.harvard.edu/weeks[Weeks] page of the course's website . Sections on Mon 4/9, Sun 4/15, Mon 4/16, Tue 4/17, and Wed 4/18 will also be opportunities for review. Office hours from Tue 4/10 through Fri 4/20 will be additional opportunities for Q&A. There will be no office hours during the quiz, nor will CS50 Discourse be open for posting, though you may review questions that were asked before the quiz began.
+
+Among the quiz's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. The quiz's format will resemble that of http://cdn.cs50.net/2017/spring/quiz/quiz.html[Spring 2017's quiz], with short-answer questions as well as longer-answer questions. Some questions may involve code (for which you're welcome to use CS50 IDE). Expect to spend at least thirty minutes per question.
+
+== How to Prepare
+
+Ultimately, how best to prepare depends on how you learn best. But allow us to recommend that you prioritize your studies per the ordering below.
+
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any.
+. Review each lecture's *slides*.
+. Attend or watch the *review session*.
+. Review each lecture's *video*, using its table of contents to focus on topics with which you're less comfortable.
+. Take http://cdn.cs50.net/2017/spring/quiz/quiz.html[*last year's quiz*] and, only after you've attempted each of its questions, review its http://cdn.cs50.net/2016/fall/quiz/key/[sample solutions]. Realize, though, that some topics covered last year might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Review problem sets' *specifications*, *sample solutions*, and, if any, *distribution code*.
+
+And, as always, ask questions at https://cs50.harvard.edu/hours[office hours] or via https://discourse.cs50.net/c/cs50-2017[CS50 Discourse]!

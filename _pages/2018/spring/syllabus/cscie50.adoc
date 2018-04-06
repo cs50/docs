@@ -85,8 +85,7 @@ This semester's lectures were filmed in Fall 2017. All are available on video vi
 | Lecture 9 | Python, continued | Fri 3/16
 | Lecture 10 | SQL | Fri 3/23
 | Lecture 11 | JavaScript | Fri 3/30
-| Lecture 12 | JavaScript, continued | Fri 4/6
-| Lecture 13 | The End | Fri 4/27
+| Lecture 12 | The End | Fri 4/27
 |===
 
 == Sections
@@ -111,7 +110,7 @@ A weekly overview of sections, subject to change, appears below. Each teaching f
 | Section 8 | SQL | week of Sun 3/25
 | Section 9 | JavaScript | week of Sun 4/1
 | Section 10 | TF's Choice (Optional) | week of Sun 4/8
-| Section  11 | Review for Quiz | week of Sun 4/15
+| Section 11 | Review for Quiz | week of Sun 4/15
 |===
 
 pass:[*] Course-wide and filmed in advance.
