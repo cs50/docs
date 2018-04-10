@@ -15,9 +15,9 @@ image::finance.png["C$50 Finance",role="related thumb"]
 
 If you're not quite sure what it means to buy and sell stocks (i.e., shares of a company), head to http://www.investopedia.com/university/stocks/ for a tutorial.
 
-You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying http://finance.yahoo.com/[Yahoo Finance] for stocks' prices.
+You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying https://www.alphavantage.co/[AlphaVantage] for stocks' prices.
 
-Indeed, Yahoo lets you download stock quotes in CSV format via URLs like http://download.finance.yahoo.com/d/quotes.csv?s=NFLX&f=sl1d1t1c1ohgv&e=.csv. Notice how Netflix's symbol (NFLX) is embedded in this URL (as the value of the HTTP parameter called `s`); that's how Yahoo knows whose data to return. Notice also the value of the HTTP parameter called `f`; it’s a bit cryptic (and officially undocumented), but the value of that parameter tells Yahoo which fields of data to return to you. If curious as to what they mean, here’s a https://web.archive.org/web/20040816081607/http://www.gummy-stuff.org/Yahoo-data.htm[handy reference]. Incidentally, Yahoo sometimes returns prices in currencies other than US dollars (USD) without telling you which, but we'll assume everything's in US dollars for simplicity.
+Indeed, AlphaVantage lets you download stock quotes in CSV format via URLs like https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo&datatype=csv. Notice how Microsoft's symbol (MSFT) is embedded in this URL (as the value of the HTTP parameter called `symbol`); that's how AlphaVantage knows whose data to return. Notice also the value of the HTTP parameter called `function`. The value of that parameter tells AlphaVantage which fields of data to return to you. Incidentally, the API might sometimes returns prices in currencies other than US dollars (USD) without telling you which, but we'll assume everything's in US dollars for simplicity.
 
 Let's turn our attention now to the app's distribution code!
 
@@ -27,7 +27,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/7/finance/finance.zip
+$ wget http://cdn.cs50.net/2018/spring/psets/7/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance
@@ -35,6 +35,23 @@ $ ls
 application.py  helpers.py        static/
 finance.db      requirements.txt  templates/
 ----
+
+=== Configuring
+
+Before getting started on this assignment, or indeed even tinkering with the distribution code, we'll need to register for an API key in order to be able to query AlphaVantage's data. To do so, follow these steps:
+
+. Visit https://www.alphavantage.co/support/#api-key[https://www.alphavantage.co/support/#api-key].
+. Enter your name and email address. When asked to describe yourself, choose *Student* from the drop-down.
+. Click *Get Free API Key*.
+. A text field should appear below. Copy the value after "Your dedicated access key is: " up to, but excluding, the period.
+. In a terminal window within CS50 IDE, execute:
++
+[source]
+----
+export API_KEY=value
+----
++
+where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
 
 === Running
 
@@ -94,7 +111,7 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 Complete the implementation of `register` in such a way that it allows a user to register for an account.
 
-* Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists. 
+* Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists.
 * Require that a user input a password, implemented as a text field whose `name` is `password`, and then that same password again, implemented as a text field whose `name` is `confirmation`. Render an apology if either input is blank or the passwords do not match.
 * Submit the user's input via `POST` to `/register`.
 * `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.12/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
