@@ -29,7 +29,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/ap/problems/finance/finance.zip
+$ wget http://docs.cs50.net/2017/ap/problems/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance
