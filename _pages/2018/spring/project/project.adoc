@@ -98,7 +98,7 @@ After submitting your proposal, a teaching fellow other than your own may be app
 
 === Status Report
 
-Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report at TBA.
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report https://forms.cs50.io/2018/spring/status[by filling out this form].
 
 === Implementation
 
