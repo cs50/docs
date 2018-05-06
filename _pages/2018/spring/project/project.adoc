@@ -115,11 +115,12 @@ Ultimately due are implementation and documentation of your final project.  Your
 
 **If you have collaborated with one or two other students, each of you should submit via this same process. If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project’s needs.**
 
----
+[source]
+----
 update50
 cd ~/workspace/project/    # or wherever you've stored your project
 submit50 cs50/2018/spring/project
----
+----
 
 ==== Step 2 of 2
 
