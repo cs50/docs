@@ -116,24 +116,6 @@ application.py  mashup.db   requirements.txt  templates/
 helpers.py      readme.txt  static/           US.txt
 ----
 
-=== Configuring
-
-. If you don't already have a Google account (e.g., Gmail), sign up at https://accounts.google.com/SignUp[accounts.google.com/SignUp].
-. Visit https://developers.google.com/maps/web/[developers.google.com/maps/web/], logging in if prompted, and click **GET A KEY** at top-right.
-. Click *Select or create project*, click *+Create a new project*, and input *pset8* (or anything else) under *Enter new project name*.
-. Click *CREATE AND ENABLE API*.
-. Highlight and copy the value below *YOUR API KEY*.
-. In a terminal window, execute
-+
-[source]
-----
-export API_KEY=value
-----
-+
-where `value` is that (pasted) value, without any space immediately before or after the `=`.
-
-If you need to find that value later (to copy and paste it again), visit https://console.developers.google.com/[console.developers.google.com] and click *Credentials* at top-left.
-
 === Running
 
 . Start Flask's built-in web server (within `mashup/`):
@@ -294,7 +276,7 @@ Now open up `application.py`, which contains four routes!
 
 ===== `index`
 
-Notice how this first route checks for an `API_KEY`, which Google Maps' JavaScript API requires. Ultimately, all this route does is pass that key to `index.html`, the app's sole template.
+All this route does is render `index.html`, the app's sole template.
 
 ===== `articles`
 
