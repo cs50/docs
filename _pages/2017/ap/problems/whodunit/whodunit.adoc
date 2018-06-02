@@ -327,7 +327,7 @@ In `questions.txt`, answer each of the following questions in a sentence or more
 . What's the difference between `bfSize` and `biSize`?
 . What does it mean if `biHeight` is negative?
 . What field in `BITMAPINFOHEADER` specifies the BMP's color depth (i.e., bits per pixel)?
-. Why might `fopen` return `NULL` in lines 24 and 32 of `copy.c`?
+. Why might `fopen` return `NULL` in lines 29 and 37 of `copy.c`?
 . Why is the third argument to `fread` always `1` in our code?
 . What value does line 65 of `copy.c` assign to `padding` if `bi.biWidth` is `3`?
 . What does `fseek` do?
