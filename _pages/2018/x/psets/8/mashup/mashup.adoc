@@ -101,7 +101,7 @@ Note that Twitter hasn't updated their own version of the library for quite some
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/8/mashup/mashup.zip
+$ wget http://cdn.cs50.net/2018/x/psets/8/mashup/mashup.zip
 $ unzip mashup.zip
 $ rm mashup.zip
 $ cd mashup
@@ -243,11 +243,7 @@ Hm, a `TODO`. Ultimately, this function will need to remove any and all markers 
 
 ===== search
 
-This function is called by the typeahead plugin every time the user changes the mashup's text box, as by typing or deleting a character. The value of the text box (i.e., whatever the user has typed in total) is passed to `search` as `query`. And the plugin also passes to `search` two additional arguments, the last of which (`asyncResults`) is a "callback" function that `search` should call as soon as it's done searching for matches. In other words, this passing in of `asyncResults` empowers `search` to be "asynchronous," whereby it will only call `asyncResults` as soon as it's ready, without blocking any of the mashup's other functionality. Accordingly, `search` uses jQuery's `getJSON` method to contact `/search` asynchronously, passing in one parameter, `geo`, the value of which is `query`. Once `/search` responds (however many milliseconds or seconds later), the anonymous function passed to `done` will be called and passed `data`, whose value will be whatever JSON that `/search` has emitted. (Though if something goes wrong, `fail` is instead called.) Finally called is `asyncResults`, to which `search` passes that same `data` so that the plugin can iterate over the places therein (assuming `/search` found matches) in order to update the plugin's drop-down. Phew.
-
-Notice that we're using ``getJSON``'s "Promise" interface, per http://api.jquery.com/jquery.getjson/. Rather than pass an anonymous function directly to `getJSON` (to be called upon success), we're instead "chaining" together calls to `getJSON`, `done` (whose argument, an anonymous function, will be called upon success), and `fail` (whose argument, another anonymous function, will be called upoon failure). See http://api.jquery.com/jquery.ajax/ for some additional details. And see https://davidwalsh.name/write-javascript-promises for an explanation of promises themselves.
-
-Notice, too, that we're using `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console/log for tips.
+This function is called by the typeahead plugin every time the user changes the mashup's text box, as by typing or deleting a character. The value of the text box (i.e., whatever the user has typed in total) is passed to `search` as `query`. And the plugin also passes to `search` two additional arguments, the last of which (`asyncResults`) is a "callback" function that `search` should call as soon as it's done searching for matches. In other words, this passing in of `asyncResults` empowers `search` to be "asynchronous," whereby it will only call `asyncResults` as soon as it's ready, without blocking any of the mashup's other functionality. Accordingly, `search` uses jQuery's `getJSON` method to contact `/search` asynchronously, passing in one parameter, `q`, the value of which is `query`. Once `/search` responds (however many milliseconds or seconds later), `asyncResults` will be called and passed `data`, whose value will be whatever JSON that `/search` has emitted. The plugin can then iterate over the places therein (assuming `/search` found matches) in order to update the plugin's drop-down. Phew.
 
 ===== showInfo
 
@@ -477,6 +473,8 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 
 * You're welcome center your map on some country other than the United States, downloading http://download.geonames.org/export/zip/[some other ZIP file] instead of `US.zip`. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements[Wikipedia] if unfamiliar with ISO 3166-1 alpha-2 codes.
 
+* Know that you can use `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console.log for tips.
+
 == FAQs
 
 === CREATE TABLE places(...) failed: duplicate column name
@@ -490,3 +488,8 @@ By default, `flask` looks for a file called `application.py` in your current wor
 === OSError: [Errno 98] Address already in use
 
 If, upon running `flask`, you see this error, odds are you (still) have `flask` running in another tab. Be sure to kill that other process, as with ctrl-c, before starting `flask` again. If you haven't any such other tab, execute `fuser -k 8080/tcp` to kill any processes that are (still) listening on TCP port 8080.
+
+== CHANGELOG
+ 
+* 2018-06-03
+** Updated the distribution code, updated the Search function, removed the need for student to have own API key and added another Hint about console.log
