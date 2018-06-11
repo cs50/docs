@@ -62,7 +62,7 @@ Okay, now we need us some news. Fortunately, Google News offers just that! In fa
 * https://news.google.com/search?q=Cambridge,+Massachusetts
 * https://news.google.com/search?q=New+Haven,+Connecticut
 
-Notice that the URLs above have some additional information appended to them once the page loads (e.g., `&hl=en-US&gl=US&ceid=US:en`). Not to worry about manually including these extra parameters yourself; you'll find that Google still returns news for Cambridge or New Haven even with the simple URLs above.  Notice, too, that you can query for news by postal code:
+Notice that the URLs above have some additional parameters appended to them once the page loads (e.g., `&hl=en-US`, `&gl=US`, and `&ceid=US:en`). Not to worry about manually including these extra parameters yourself; you'll find that Google still returns news for Cambridge or New Haven even with the simple URLs above.  Notice, too, that you can query for news by postal code:
 
 * https://news.google.com/search?q=02138
 * https://news.google.com/search?q=06511
