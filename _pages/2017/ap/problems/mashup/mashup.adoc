@@ -67,7 +67,7 @@ Notice that the URLs above have some additional parameters appended to them once
 * https://news.google.com/search?q=02138
 * https://news.google.com/search?q=06511
 
-The pages you're seeing are, of course, written in HTML. But all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Fortunately, Google News offers a solution that allows developers to more easily grab news headlines and incorporate them into their programs. Check out the links below!
+The pages you're seeing are, of course, written in HTML. But all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Fortunately, Google News offers a solution that allows developers to more easily grab news headlines and incorporate them into their programs. Check out the links below! (If having trouble, do try opening them in Google Chrome).
 
 * https://news.google.com/news/rss/local/section/q/02138
 * https://news.google.com/news/rss/local/section/q/06511
