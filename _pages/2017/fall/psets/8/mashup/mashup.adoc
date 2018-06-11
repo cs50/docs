@@ -32,18 +32,18 @@ It turns out that Google Maps offers an API that allows you to embed Google's ma
 
 Okay, now we need us some news. Fortunately, Google News offers just that! In fact, if you visit the URLs below, you should see stories pertaining to Cambridge, Massachusetts and New Haven, Connecticut, respectively:
 
-* https://news.google.com/news/local/section/geo/Cambridge,%20Massachusetts
-* https://news.google.com/news/local/section/geo/New%20Haven,%20Connecticut
+* https://news.google.com/search?q=Cambridge,+Massachusetts
+* https://news.google.com/search?q=New+Haven,+Connecticut
 
-Notice how the spaces in those towns' names have been "URL-encoded" (i.e., escaped) as `%20`. Notice, too, that you can query for news by postal code:
+Notice that the URLs above have some additional parameters appended to them once the page loads (e.g., `&hl=en-US`, `&gl=US`, and `&ceid=US:en`). Not to worry about manually including these extra parameters yourself; you'll find that Google still returns news for Cambridge or New Haven even with the simple URLs above.  Notice, too, that you can query for news by postal code:
 
-* https://news.google.com/news/local/section/geo/02138
-* https://news.google.com/news/local/section/geo/06511
+* https://news.google.com/search?q=02138
+* https://news.google.com/search?q=06511
 
-The pages you're seeing are, of course, written in HTML. But all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Scroll down to the page's bottom and look for *RSS*. Click that link, and you should find yourself at URLs like the below, perhaps with some HTTP parameters after a question mark?
+The pages you're seeing are, of course, written in HTML. But all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Fortunately, Google News offers a solution that allows developers to more easily grab news headlines and incorporate them into their programs. Check out the links below! (If having trouble, do try opening them in Google Chrome).
 
-* https://news.google.com/news/rss/local/section/geo/02138
-* https://news.google.com/news/rss/local/section/geo/06511
+* https://news.google.com/news/rss/local/section/q/02138
+* https://news.google.com/news/rss/local/section/q/06511
 
 Now, what's all this markup that's now on your screen? It looks a bit like HTML, but you're actually looking at an "RSS feed," a flavor of XML (a tag-based markup language). For quite some time, RSS was all the rage insofar as it enabled websites to "syndicate" articles in a standard format that "RSS readers" could read. RSS isn't quite as hip anymore these days, but it's still a terrific find for us because it's "machine-readable". Because it adheres to a standard format, we can parse it (pretty easily!) with software. Here's what an RSS feed generally looks like (sans actual data):
 
@@ -312,7 +312,7 @@ And yes, this file's SQL queries assume that the world is flat for simplicity.
 
 ==== `helpers.py`
 
-Finally, take a look at `helpers.py`. In this file we've defined just one function, `lookup`, which queries Google News for articles for a particular geography, falling back on The Onion if none are available.
+Finally, take a look at `helpers.py`. In this file we've defined just one function, `lookup`, which queries Google News for articles for a particular geography, falling back on The Onion if none are available. You'll notice that we've replaced the `q` parameter in our search URL with the `geo` parameter, in order to search for news articles from specific geographic locations. The `q` parameter, while useful for querying articles given specific keywords, does not enforce that the results be from a specific geographic location. So, searching for `90210` with the `q` parameter might produce news articles about the TV show, "90210", whereas searching with the `geo` parameter would produce only articles relevant to the Beverly Hills area in California.
 
 == Specification
 
