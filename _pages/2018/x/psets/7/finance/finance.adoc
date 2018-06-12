@@ -87,7 +87,7 @@ Next take a look at `helpers.py`. Ah, there's the implementation of `apology`. N
 
 Next in the file is `login_required`. No worries if this one's a bit cryptic, but if you've ever wondered how a function can return another function, here's an example!
 
-Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`.
+Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for that symbol in the form of a `dict` with two keys:  `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`.
 
 Last in the file is `usd`, a short function that simply formats a `float` as USD (e.g., `1234.56` is formatted as `$1,234.56`).
 
