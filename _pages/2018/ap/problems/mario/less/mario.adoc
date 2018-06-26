@@ -1,0 +1,168 @@
+---
+layout: 2017/ap
+---
+:skip-front-matter:
+
+= Problem: Mario
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== tl;dr
+
+Implement a program that prints out a half-pyramid of a specified height, per the below.
+
+[source, subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#5#
+    pass:[##]
+   pass:[###]
+  pass:[####]
+ pass:[#####]
+pass:[######]
+
+$ [underline]#./mario#
+Height: [underline]#3#
+  pass:[##]
+ pass:[###]
+pass:[####]
+----
+
+== Recommended Reading
+
+* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
+* Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
+* Chapters 1 – 6 of _Programming in C_.
+
+include::../../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Background
+
+Toward the end of World 1-1 in Nintendo's Super Mario Brothers, Mario must ascend a "half-pyramid" of blocks before leaping (if he wants to maximize his score) toward a flag pole. Below is a screenshot.
+
+image:pyramid.png[Super Mario Brothers, width="50%"]
+
+== Specification
+
+* Write, in a file called `mario.c` in your `~/workspace/chapter1/mario/` directory, a program that recreates this half-pyramid using hashes (`#`) for blocks.
+* To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
+* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
+* Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
+* Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
+
+== Walkthrough
+
+video::EGWRG5e1O2s[youtube]
+
+== Usage
+
+Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#4#
+   pass:[##]
+  pass:[###]
+ pass:[####]
+pass:[#####]
+----
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#0#
+----
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#-5#
+Height: [underline]#4#
+   pass:[##]
+  pass:[###]
+ pass:[####]
+pass:[#####]
+----
+
+[source,subs="macros,quotes"]
+----
+$ [underline]#./mario#
+Height: [underline]#-5#
+Height: [underline]#five#
+Retry: [underline]#40#
+Height: [underline]#24#
+Height: [underline]#4#
+   pass:[##]
+  pass:[###]
+ pass:[####]
+pass:[#####]
+----
+
+== Testing
+
+=== `check50`
+
+[source,text]
+----
+check50 cs50/2017/ap/mario/less
+----
+
+== Staff Solution
+
+[source]
+----
+~cs50/chapter1/mario/less
+----
+
+== Hints
+
+Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to C!
+
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `mario.c` is in `~/workspace/chapter1/mario`, as with:
+
+[source]
+----
+cd ~/workspace/chapter1/mario
+ls
+----
+
+If `mario.c` is not in `~/workspace/chapter1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `mario`, execute
++
+[source]
+----
+cd ~/workspace/chapter1/mario
+submit50 cs50/2017/ap/mario/less
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
+
+This was Mario.

@@ -1,0 +1,105 @@
+---
+layout: 2017/ap
+---
+:skip-front-matter:
+
+= Problem: Leaky
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+==  tl;dr
+
+Fix memory leaks in various contexts.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along four axes primarily.
+
+Scope::
+ To what extent does your code implement the features required by our specification?
+Correctness::
+ To what extent is your code consistent with our specifications and free of bugs?
+Design::
+ To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+ To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Started
+
+Start off by opening up CS50 IDE and then type
+
+[source,bash]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date.
+
+Next, navigate to your `workspace/chapterA` directory. Once there, execute the following:
+
+[source,bash]
+----
+wget http://docs.cs50.net/2017/ap/problems/leaky/leaky.zip
+----
+
+Unzip that file and navigate to the newly created directory. Inside, you should see four files:
+
+[source,bash]
+----
+Makefile  leak0.c  leak1.c  leak2.c
+----
+
+You can compile each individual `.c` file into a program in the usual way. Or, if you peek inside of `Makefile`, you can see how to compile all three at once!
+
+Finally, take a few minutes to watch Nate's video on Valgrind, a command-line utility that can be used to root out and give you clues on how to fix memory leaks!
+
+video::fvTsFjDuag8[youtube]
+
+== Leaks
+
+Leaks are bad. In real life, we don't want to get wet, so we fix leaks in our roof. As programmers, we are more concerned with __memory leaks__. Not properly allocating and freeing memory can cause programs to suffer segmentation faults, crash your computer, or worse. So in general, they are something to avoid!
+
+In this problem, you'll be tasked with tracking down the leaks in three programs we've written: `leak0`, `leak1` and `leak2`. After making sure the code functions properly (more on that in a second) you'll be expected to make sure that each has a clean bill of health via `valgrind`. That means no leaks, **and** no errors (such as improperly dereferencing a pointer), all of which `valgrind` will tell you about.
+
+You can run your programs with `valgrind` by typing, e.g.:
+
+[source,bash]
+----
+valgrind ./leak0
+----
+
+which provides a nice summary of what leaks your program is suffered but doesn't particularly provide any decent information on where those errors might live. To do that, we need to explicitly ask `valgrind` to give us more information. More __verbose__ output, as it were. To do so, we can change the command we wish to run slightly:
+
+[source,bash]
+----
+valgrind -v --leak-check=full ./leak0
+----
+
+Notice there are two dash marks before `leak-check=full`, but only a single dash mark before `v`. That's deliberate! Okay, so we know we have to clean these programs up, but what are they actually supposed to do? Compile and run each to test, but you should find that:
+
+* `leak0` generates 50 random numbers and prints them, one per line, to the terminal window.
+* `leak1` generates random numbers like `leak0`, but reads them out twice.
+* `leak2` seems to print the message `(nil)` 50 times, once per linefootnote:[Hmmm, seems like that's working in the wrong order...], then seems to generate 50 random numbers and prints those out as well, one per line.
+
+Opening up `leak0.c`, `leak1.c`, and `leak2.c` will allow you to confirm or detect what the intended behavior of these programs actually is. And of course, it seems that we've neglected to include comments in any of those files and have not exactly given our functions the most intuitive names!footnote:[See how important it is to do these things in your programs?]
+
+Just by running the programs, nothing seems to be amiss. There are no segmentation faults or other obvious crashes. Just to be safe, we should run each through `valgrind` too.
+
+Darn! Well, looks like there's work to be done. And that's where we'll turn to you. Plug these memory leaks for us so that the programs have the behavior their source code intends, in particular making sure that `leak2` does what it should do!footnote:[Remember those weird `nil` statements from before? Make them print something useful!]
+
+You are generally free to plug the leaks in any way you wish, bearing in mind the requirement that if the program originally dealt with memory by dynamically allocating it, your fixed version must also use dynamically allocated memory, and cannot thus rely solely on memory from the stack to solve the problem. Once you have a clean bill of health from Valgrind, you're good to go!
+
+To compare your program against the staff solution to see what exactly a clean bill of health looks like (sometimes with the verbose output of `valgrind` it can be difficult to tell!), you may execute the below:
+
+[source,bash]
+----
+~cs50/chapterA/leakX
+----
+
+again, where `X` is replaced by either `0`, `1`, or `2`.
+
+This was Leaky (but hopefully not for long).

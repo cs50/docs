@@ -1,0 +1,330 @@
+---
+layout: 2017/ap
+---
+:skip-front-matter:
+
+= Problem: Sort Race
+
+Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+
+== tl;dr
+
+Implement several __O(n^2^)__ sorting algorithms so that they can be compared under various conditions.
+
+[source]
+----
+$ ./race -r 30000
+bubble sort benchmark:         11.820 seconds
+selection sort benchmark:      2.696 seconds
+insertion sort benchmark:      2.496 seconds
+----
+
+== Recommended Reading
+
+* Page 17 of http://www.howstuffworks.com/c.htm.
+* Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
+* Chapters 13, 15, and 18 of _Programming in C_.
+
+include::../../honesty.adoc[]
+
+== Getting Ready
+
+First, refresh your memory on the __O(n^2^)__ sorting algorithms we've learned about so far in the course. Here are Jackson and Tommy to explain:
+
+video::8Kp-8OGwphY[youtube]
+
+video::f8hXR_Hvybo[youtube]
+
+video::DFG-XuyPYUQ[youtube]
+
+Before moving on, be sure you're comfortable answering the following questions:
+
+** Why is bubble sort in _O_(_n_^2^)?
+** Why is insertion sort in Ω(_n_)?
+** How does selection sort work?
+
+== Getting Started
+
+As always, first log into your CS50 IDE at https://cs50.io/[cs50.io] and execute
+
+[source,bash]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date. Next, execute
+
+[source,bash]
+----
+cd ~/workspace/chapter3
+----
+
+at your prompt to ensure that you're inside of the `chapter3` directory within your `workspace` directory. Then execute
+
+[source,bash]
+----
+wget http://docs.cs50.net/2017/ap/problems/race/race.zip
+----
+
+to download a ZIP of this problem's distro into your workspace. You should see a bunch of output followed by:
+
+[source,bash]
+----
+'race.zip' saved
+----
+
+Confirm that you've indeed downloaded `race.zip` by executing
+
+[source,bash]
+----
+ls
+----
+
+and then run
+
+[source,bash]
+----
+unzip race.zip
+----
+
+to unzip the file.  If you then run `ls` again, you should see that you have a newly unzipped directory called `race` as well. You can now delete the ZIP, with:
+
+[source,bash]
+----
+rm -f race.zip
+----
+
+Careful! We've added the `-f` flag this time, so `rm` will not confirm that you want to delete the file. If you like the comfort of having the system double-check with you, just omit `-f` from your command. Lastly, execute
+
+[source,bash]
+----
+cd race
+----
+
+followed by
+
+[source,bash]
+----
+ls
+----
+
+and you should see that the directory contains four files:
+
+[source,bash]
+----
+Makefile  helpers.c  helpers.h  race.o
+----
+
+Off we go!
+
+== Object Orienting
+
+In this problem, you'll be racing the three __O(n^2^)__ sorting algorithms we've seen under a few different test conditions, to see how they perform against one another. Those test conditions will be:
+
+* arrays that are almost sorted, with two elements out of place,
+* arrays in reverse order,
+* arrays in completely random order, and
+* arrays that are already sorted.
+
+The good news is that you don't have to implement anything involving populating the arrays! You only have to do a tiny amount of command-line validation and implement the three sorting algorithms themselves.
+
+But we're getting a bit ahead of ourselves. First we need to deal with the contents of the directory you just unzipped. Have a peek at the `Makefile` we've prepared for you. In particular, focus on this portion.
+
+[source]
+----
+HDRS = helpers.h
+SRCS = race.o helpers.c
+----
+
+Per the dependencies implied above, any changes to either `race.o`, `helpers.c`, or `helpers.h` will compel `make` to rebuild `race` the next time it's invoked for this target. In other words, this means that `race` is not simply comprised of a single source file, but rather of **three** separate files. `helpers.c` and `helpers.h` you probably can figure out. But what the heck is `race.o`? A refresher on the compilation process might be in order here, first. Take it away, Rob:
+
+video::CSZLNYF4Klo[youtube]
+
+Interesting... so it turns out that `race.o` contains the __object code__ that was generated from a source file (presumably called `race.c`) that we wrote and partially compiled, but then chose not to include in the distro. We made this choice on the one hand because the code therein is a bit complicated at this stage of the course (thus allowing us to **abstract** some of the complex detail), but further because it provides you with an opportunity to write code that simply __must__ conform to a precise specification, or it won't work!
+
+It turns out that `race.o` contains the object code for, among other things, `main`. And if you can't change `main` then you can't change the way that `main` calls any functions, including the functions you'll be tasked with writing in this problem. Bummer!
+
+If this seems unfair, know that it's also a really good indicator of what you'll experience in the real world if you continue with programming as a career. Often times large groups of people collaborate on a single project, and there are standards and specifications that must be adhered to so that everyone's components interoperate smoothly. Veering from those standards will mean your code is incompatible with the project at large, which will mean you will have wasted some of your valuable time (and probably irritated your colleagues, too)!
+
+Incidentally, because it is not a so-called "target" specified in the `Makefile`, if when working on this problem you (inadvertently or intentionally) try to
+
+[source]
+----
+make helpers
+----
+
+you'll actually default to using the standard `Makefile` included with CS50 IDEfootnote:[The existence of this file is why your previous programs compiled with no trouble despite not having a `Makefile` in the directory.] which will just try to compile the `helpers.c` file alone into its own program. Problem is, if you open up `helpers.c`, there's no `main` function, so you'll probably get a whole bunch of cryptic error messages concluding with one along these lines:
+
+[source,bash]
+----
+/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+----
+
+So do be sure that whenever you try to compile this program, you do so with
+
+[source]
+----
+make race
+----
+
+**or**, in fact, because `race` is the first target listed in `Makefile` and absent any other command-line arguments supplied to `make` it will simply default to compiling the first target listed in the `Makefile`, you can even say just
+
+[source]
+----
+make
+----
+
+Convenient, eh?
+
+== The Race Begins
+
+All of the work you'll be doing in this problem will be confined to `helpers.c` and possibly `helpers.h`. In particular, you have to implement the four functions prototyped therein: `check_flag`, `bubble`, `selection`, and `insertion`.
+
+=== `check_flag`
+
+If you try to compile `race` from the distro and run it without any command line arguments, you're immediately notified of the proper usage of the program.
+
+[source]
+----
+Usage: ./race array-type size
+----
+
+And then, if you supply it with three command line arguments, regardless of what those arguments are, you'll see the following:
+
+[source]
+----
+Invalid array-type. Must be -a, -b, -r, or -s
+----
+
+Why? Because right now if you have a look at `check_flag` in `helpers.c`, you'll see that it always returns `false`. But eventually what `check_flag` should do, per the comment atop its prototype, is return `true` if the argument passed in (which happens to be `argv[1]`) is `-a`, `-b`, `-r`, or `-s`, and return `false` if the argument passed in is anything other than that.
+
+Does the format of those strings remind you of anything you've seen recently? Recall the command we recommended you use to get rid of `race.zip` above:
+
+[source,bash]
+----
+rm -f race.zip
+----
+
+In this case, we would term `-f` a **flag**, which is just another way of describing a command-line argument to a particular program or Linux command (in this case, `rm`) that modifies the behavior of that program. In the case of `-f` and `rm`, that flag tells `rm` to not confirm with you whether you intend to delete the file(s) in question; it just deletes them right away.
+
+So all `check_flag` is doing is confirming whether `argv[1]` is one of those four things. If doesn't report out which one it is, just that it's one of them. Odds are there's https://reference.cs50.net/string.h/strcmp[a function] that might help with checking that.
+
+Incidentally, what do these four flags represent? They determine what type of array will be the test case for the various sorting algorithms:
+
+** `-a` for __almost sorted__ arrays. These arrays are already sorted except for two elements which have been randomly switched.
+** `-b` for __backwards__ arrays. These arrays are sorted, but in reverse order: left-to-right, largest-to-smallest.
+** `-r` for __random__ arrays. These arrays have no particular order.
+** `-s` for __sorted__ arrays. These arrays are already properly sorted in order from left-to-right, smallest-to-largest.
+
+Again, you needn't worry about implementing the functionality of populating the arrays. That was done by us, and the object code resulting from that implementation lives in `race.o`.
+
+=== `bubble`, `selection`, and `insertion`
+
+In the functions `bubble`, `selection`, and `insertion` you will be implementing, respectively, bubble sort, selection sort, and insertion sort. Remember that you are not allowed to modify the prototypes of `bubble`, `selection`, or `insertion`, but you are welcome to create any additional "helper" functions that you wish, placing their prototypes in `helpers.h` and their definitions in `helpers.c`.
+
+We're not going to give you much more than that! But do make sure to implement all three algorithms which, per the shorts atop this specification, behave quite differently even though all three have the same ultimate result. As a tip, you may want to start with fairly small `size` (aka `argv[2]`) arguments, and you may want to do some debugging to ensure that your sorting algorithms are actually sorting the array properly.
+
+== Showcase
+
+Once you've implemented `check_flag`, if you try to run your program you'll see that when it runs you get output like the following:
+
+[source,bash]
+----
+bubble sort benchmark:         0.000 seconds
+selection sort benchmark:      0.000 seconds
+insertion sort benchmark:      0.000 seconds
+----
+
+So this is where the "race" really happens. Time to see which of these algorithms is the fastest. But... wait? Aren't they all __O(n^2^)__ algorithms? Shouldn't they all run at exactly the same speed? Well, not exactly.
+
+Theoretically, as __n__ gets larger and larger, yes, these three algorithms will tend to run at closer and closer speeds. But theoretical runtime is not the same as real-world runtime, and so under average and varying test conditions, the performance of these three algorithms will differ, sometimes substantially. For example, see the below wherein underlined text represents user input to the program.
+
+[source,subs=quotes]
+----
+~/workspace/chapter3/race/ $ [underline]#./race -b 2000#
+bubble sort benchmark:         0.056 seconds
+selection sort benchmark:      0.012 seconds
+insertion sort benchmark:      0.020 seconds
+----
+
+Not too much of a difference. But what about
+
+[source,subs=quotes]
+----
+~/workspace/chapter3/race/ $ [underline]#./race -r 100000#
+bubble sort benchmark:         129.968 seconds
+selection sort benchmark:      31.312 seconds
+insertion sort benchmark:      27.468 seconds
+----
+
+Ouch! Or lastly
+
+[source,subs=quotes]
+----
+~/workspace/chapter3/race/ $ [underline]#./race -s 20000#
+bubble sort benchmark:         0.000 seconds
+selection sort benchmark:      1.420 seconds
+insertion sort benchmark:      0.000 seconds
+----
+
+Hmm... selection sort still took that much time to "sort" an already-sorted array? Is the difference between __Ω(n^2^)__ and __Ω(n)__ now a bit more clear?
+
+And know that because of varying processor performance and system load, under otherwise-identical conditions from run-to-run the running time of these algorithms may vary somewhat.
+
+`check50` is not capable of detecting whether you are implementing bubble, selection, or insertion sort correctly. It is only capable of determining whether your output is indeed sorted. Because the crux of this problem lies in implementing these sorts correctly, we leave it to you (and GDB!) to ensure that your three functions are implemented properly.
+
+To run the staff solution, simply execute:
+
+[source,bash]
+----
+~cs50/chapter3/race
+----
+
+passing in appropriate command-line arguments.
+
+In no part of this problem are you expected to optimize your runtimes for any of these algorithms (beyond, of course, implementing them correctly). Rather, after you get them implemented you should test different arrays of different sizes and different configurations to see under which circumstances each algorithm "shines". So you can see actual differences between these algorithms, we recommend that your `size` argument be at least `1000`, as that way they'll tend to take at least a few thousandths of a second to sort.
+
+== How to Submit
+
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the `sort race`. 
+** Be sure that the following files exist in `~/workspace/chapter3/race/`:
+* `Makefile`  
+* `helpers.c`  
+* `helpers.h`
+* `race.o` 
+as with:
+
++
+[source]
+----
+cd ~/workspace/chapter3/race/
+ls
+----
+
+Since there is no way to automatically check for correctness here this project is graded on completion.
+
+=== Step 3 of 3
+
+Submit `Sort Race`:
+
+[source]
+----
+cd ~/workspace/chapter3/race/
+submit50 cs50/2017/ap/race
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+
+This was Sort Race.
