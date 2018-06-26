@@ -1,0 +1,117 @@
+---
+layout: 2017/ap
+---
+:skip-front-matter:
+
+= Writing Problem: Simulate!
+
+== tl;dr
+
+Explore a computer simulation's functionality, uses, and impact.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this writing problem will be evaluated along three axes primarily.
+
+Scope::
+    To what extent does your submission align with the requirements of the specification?
+Correctness::
+    To what extent is your submission correct and free of factual errors?
+Style::
+    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
+
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Pi in the Sky
+
+What comes to mind when you think of the word "simulation"? Maybe you thought of a video game called __The Sims__, in which you create virtual people and control their moods and actions. Or maybe you thought of a scene in some action movie, where the characters have huge floating screens they use to control reality.
+
+video::YRcIFwFZeU8[youtube, height=540,width=960,start=40,end=55]
+
+A simulation is defined by Webster's Dictionary as "something that is made to look, feel, or behave like something else especially so that it can be studied or used to train people". So a bank might create a simulation in which someone pretends to be a robber, to train their tellers on proper procedure.
+
+A computer simulation is simply a computer program that attempts to simulate something. For instance, that same bank might create a computer program that models how long it would take everyone in the bank to evacuate the building in an emergency. They could test the accuracy of the model by comparing the results of the program with actual evacuation times they've recorded.
+
+A bank may seem like a pretty complicated thing to model, with a lot of factors to account for. So let's start with a simpler simulation: Finding the value of pi(&pi;).
+
+You know that you need &pi; to calculate the area of a circle (&pi; r^2^). Let's pretend that we don't know what the value of &pi; is. Can we find it? We know how to find the area of a square (which we do: just square the length of a side!), and how to define the boundaries of a circle (which we do: all points equidistant from a center point). What if we placed points randomly within the square, and then calculated whether they were in the square (by determining if the distance from the point to the center is less than the radius of the circle)? We could get a ratio of points within the circle to points outside the circle, and find the value of &pi; that way. Play around with the graphical program below. What happens when you add the points yourself? What happens when you hit run?
+
+++++
+<script src="https://www.khanacademy.org/computer-programming/monte-carlo-finding-the-value-of-pi/6530004791197696/embed.js?editor=no&amp;buttons=no&amp;author=yes&amp;embed=yes&amp;width=610&amp;height=420" type="text/javascript">
+</script>
+++++
+
+How close could you get to the *actual* value of &pi;? Did the simulation get more accurate the longer you ran it (or the more data points you had)?
+
+== Fly in the Sky
+
+In the above example, we found an approximate value of &pi;. That's a pretty cool thing for a program to find! But we already __knew__ what the value of &pi; was! Can we use simulations to find something that we don't already know? Perhaps to test military jets!
+
+In the video below, professional test pilots explain the advantages of using simulation software before constructing planes.
+
+video::P2XpjLtnPsY[youtube]
+
+*BAE Systems* uses their simulator to save money and time in production. If there's a mistake in a design, they can find it using the simulator, and fix it before they spend time, money, and materials building the physical plane. The simulator also allows them to prepare their pilots for worst-case situations without actually putting the pilots in those situations.
+
+== Try in the Sky
+
+So maybe you don't use flight simulators to build planes every day. Models and simulations can be used in everyday situations as well. For instance, have you ever wanted to design a custom t-shirt, perhaps one that says "I took CS50 AP"? T-shirt companies like CustomInk use software to model what your design might look like. Head over to http://www.customink.com/lab[CustomInk's Design Lab], and try your hand at designing a t-shirt.
+
+How many times did you change the text, or font, or image size? Imagine if each time, you had to make and print an entire physical t-shirt, just to see what a small change might look like. You may not be creating military jets, but you still benefit from the rapid prototyping that computer models and simulations allow.
+
+== Your Turn
+
+Now that we've identified a couple of simulations and their uses, it's your turn! In this writing problem, we'd like you to research a computer simulation of your choice. Feel free to choose any sort of program, from something esoteric (like flight simulators) to common (like t-shirt designing software). Just make sure that you can explain how the simulation is a computer program, and the benefits of using it. First open a text editor and create a file called ‘simulate’ (be sure that the file extension is either .doc, .docx, .pdf, or .txt)
+
+Identify the users of the simulation, and the situations in which it is used.
+
+Then, show your lower level understanding by finding what inputs the program takes, and what data it outputs (if any). Does the program account for all the features it is trying to model? Does the model rely on any assumptions? Are there downsides to using a program instead of testing in the real-world? What are those downsides?
+
+You should aim to write about 300 to 400 words in this part of the problem.
+
+Need some ideas? Check out:
+
+* https://www.youtube.com/watch?v=OfHF46Ck-ps[Honda's crash test simulation]
+* https://www.youtube.com/watch?v=ZXY_VtEhTNI[Loma Linda University's Medical Simulation Center]
+* https://www.youtube.com/watch?v=pf-ZPwiVdWs[3D Home Remodeling visualization software]
+* https://www.youtube.com/watch?v=ZTq8pmWmzZw[Baylor's Dental Simulation Lab]
+* https://www.youtube.com/watch?v=rsvxFkGqxZA[Physics Simulations of towers falling over]
+
+== More Thoughts
+
+Once you've finished your writing problem, go ahead and watch the video below, in which Elon Musk (of SpaceX and Tesla) discusses a theory of his.
+
+video::2KK_kzrJPS8[youtube]
+
+
+Ponder that. Was someone programming you to write this problem?
+
+++++
+<br/>
+  <img src="http://media4.giphy.com/media/xT0GqtcVR0jOXzmmPK/giphy.gif" width="960"/>
+++++
+
+== How to Submit
+
+=== Step 1 of 3
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/simulate` and click "Create branch".
+
+=== Step 2 of 3
+
+Click the button that says "Upload files". Drag your `simulate.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 3 of 3
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Simulate!
