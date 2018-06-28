@@ -141,7 +141,7 @@ int main(void)
     printf("hello, %s\n", s);
 }
 ----
-** On line 5, we are declaring, or creating, a new variable called `s`, of type `string`. And the value it will store is whatever `get_string` returns. Some functions like `printf` might not return any value, but other functions like `get_string` can. `When we call `get_string`, we pass in `"Name: "` as an argument, so it knows what to prompt the user.
+** On line 5, we are declaring, or creating, a new variable called `s`, of type `string`. And the value it will store is whatever `get_string` returns. Some functions like `printf` might not return any value, but other functions like `get_string` can. When we call `get_string`, we pass in `"Name: "` as an argument, so it knows what to prompt the user.
 ** Next, we want to print out what was stored in our string `s`, so we use the `%s` syntax to include a string inside `printf`. And the string in question is `s`.
 * Going back to our list of functions that collect input, we notice that there are other types of data built into C: `double`, `float`, and `long long`.
 * Let's start with getting an integer:
