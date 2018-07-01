@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <meta property="og:title" content="{{ page.title }}"/>
+
+        <style>
+
+            /* https://cdnjs.cloudflare.com/ajax/libs/Primer/10.6.1/build.css */
+            {% include build.css %}
+
+        </script>
+
+        <style>
+
+            /* https://cdn.jsdelivr.net/npm/pygments-rouge-css@0.1.0/github.css */
+            {% include github.css %}
+
+        </style>
+
+        <title>{{ page.title }}</title>
+
+    </head>
+
+    <body>
+        <div id="container-lg px-3 my-3 markdown-body">
+            {{ content }}
+        </div>
+    </body>
+
+</html>
