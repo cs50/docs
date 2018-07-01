@@ -1,5 +1,5 @@
 ---
-layout: 2018/g
+layout: games/2018/g
 ---
 
 # Assignment 0: "Pong, The AI Update"
