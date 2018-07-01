@@ -9,23 +9,6 @@ layout: games/2018/g
 * Read and understand all of the Pong source code from Lecture 0.
 * Implement a basic AI for either Player 1 or 2 (or both!).
 
-## Getting Started
-
-### `git` and GitHub
-
-First of all, welcome to GD50!
-
-If you don't already have a GitHub account, head over to
-[https://github.com/join](https://github.com/join) and create an account.
-You'll use this account throughout the course to work on assignments, submit
-your work, and receive feedback.
-
-You'll also need to make sure you have `git` installed on your computer.  Go to
-GitHub's [instructions](https://help.github.com/articles/set-up-git/) for
-setting up and configuring `git` on your machine, and follow the steps there to
-install `git` (if you didn't already have it installed) and configure `git`
-with your GitHub username and email address.
-
 ### Your First Game
 
 Download the distro code for your first game from <https://cdn.cs50.net/games/2018/spring/assignments/0/assignment0.zip> and unzip `assignment0.zip`, which should yield a directory called `assignment0`.
