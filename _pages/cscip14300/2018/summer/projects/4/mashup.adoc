@@ -1,9 +1,9 @@
 ---
-layout: 2017/summer
+layout: 2017/fall
 toclevels: 2
 ---
 
-= Project 4
+= Mashup
 
 == tl;dr
  
@@ -30,32 +30,20 @@ It turns out that Google Maps offers an API that allows you to embed Google's ma
 
 === Google News
 
-Okay, now we need us some news. If you happen to have a Google Account (e.g., Gmail), head to https://news.google.com/ and click the Personalize button at top-right. Below the icon should appear *Personalize Google News*, down below which is *Add Any News Topic*. Input, say, *Cambridge, Massachusetts* or *New Haven, Connecticut* into that box, then click *+*. When you refresh your page you should see the new section added to your side bar. Additionally, you can search for location based news by modifying parameters in the URL, similar to the ones below. For a full list of parameters you can check out http://i-tweak.blogspot.com/2013/10/google-news-search-parameters-missing.html[this guide].
+Okay, now we need us some news. Fortunately, Google News offers just that! In fact, if you visit the URLs below, you should see stories pertaining to Cambridge, Massachusetts and New Haven, Connecticut, respectively:
 
-* https://news.google.com/news/section?cf=all&pz=1&geo=Cambridge,+Massachusetts&ned=us&redirect=true
-* https://news.google.com/news/section?cf=all&pz=1&geo=New+Haven,+Connecticut&ned=us&redirect=true
+* https://news.google.com/news/local/section/geo/Cambridge,%20Massachusetts
+* https://news.google.com/news/local/section/geo/New%20Haven,%20Connecticut
 
-Not to worry if you don't have a Google Account. Just head straight to either URL.  You should find that Google still returns news for Cambridge or New Haven even when the URL is either of the below too.
+Notice how the spaces in those towns' names have been "URL-encoded" (i.e., escaped) as `%20`. Notice, too, that you can query for news by postal code:
 
-* https://news.google.com/news/section?geo=Cambridge,+Massachusetts
-* https://news.google.com/news/section?geo=New+Haven,+Connecticut
+* https://news.google.com/news/local/section/geo/02138
+* https://news.google.com/news/local/section/geo/06511
 
-Nice. Never fear a bit of trial and error! Now try changing the value of `geo` to, say, `02138` or `06511` and then hit Enter again. You should find yourself at the URL below? The articles might change (since Cambridge and New Haven have more than one postal code each), but the news should still be about Cambridge or New Haven?
+The pages you're seeing are, of course, written in HTML. But all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Scroll down to the page's bottom and look for *RSS*. Click that link, and you should find yourself at URLs like the below, perhaps with some HTTP parameters after a question mark?
 
-* https://news.google.com/news/section?geo=02138
-* https://news.google.com/news/section?geo=06511
-
-Very nice. Though the page you're looking at, of course, is written in HTML. And all we want, if the staff's solution is any indication, is a bulleted list of articles' titles and links. How to get those without "scraping" this page's (surely complicated) HTML? Scroll down to the page's bottom and look for *RSS*. Click that link, and you should find yourself at one of the URLs below?
-
-* https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&geo=02138&output=rss
-* https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&geo=06511&output=rss
-
-As before, delete any parameters that don't feel core to the mission at hand, leaving only, say, `geo` and, now, `output`. You should find yourself at one of the (still fully functional) URLs below.
-
-* https://news.google.com/news/feeds?geo=02138&output=rss
-* https://news.google.com/news/feeds?geo=06511&output=rss
-
-Deleting those parameters probably isn't necessary (and, who knows, their absence might break things eventually), but whittling a URL down to its essence does feel like better design, so let's stick with simple.
+* https://news.google.com/news/rss/local/section/geo/02138
+* https://news.google.com/news/rss/local/section/geo/06511
 
 Now, what's all this markup that's now on your screen? It looks a bit like HTML, but you're actually looking at an "RSS feed," a flavor of XML (a tag-based markup language). For quite some time, RSS was all the rage insofar as it enabled websites to "syndicate" articles in a standard format that "RSS readers" could read. RSS isn't quite as hip anymore these days, but it's still a terrific find for us because it's "machine-readable". Because it adheres to a standard format, we can parse it (pretty easily!) with software. Here's what an RSS feed generally looks like (sans actual data):
 
@@ -81,6 +69,7 @@ Now, what's all this markup that's now on your screen? It looks a bit like HTML,
 
 In other words, an RSS feed contains a root element called `rss`, the child of which is an element called `channel`.  Inside of `channel` are elements called `title`, `description`, and `link`, followed by one or more elements called `item`, each of which represents an article (or blog post or the like). Each `item`, meanwhile, contains elements called `guid`, `title`, `link`, `description`, `category`, and `pubDate`. Of course, between most of these start tags and end tags should be actual data (e.g., an article's actual title). For more details, see https://cyber.law.harvard.edu/rss/rss.html.
 
+Ultimately, we'll parse RSS feeds from Google News using Python and then return articles' titles and links to our web app via Ajax as JSON. But more on that in a bit.
 
 === jQuery
 
@@ -112,15 +101,14 @@ Note that Twitter hasn't updated their own version of the library for quite some
 
 [source,subs="macros"]
 ----
-$ wget https://github.com/cs50/problems/archive/mashup.zip
+$ wget http://cdn.cs50.net/2018/x/psets/8/mashup/mashup.zip
 $ unzip mashup.zip
 $ rm mashup.zip
-$ mv problems-mashup mashup
 $ cd mashup
 $ ls
 application.py  mashup.db         static/
 helpers.py      requirements.txt  templates/
-$ wget http://cdn.cs50.net/2016/fall/psets/8/US.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/8/mashup/US.zip
 $ unzip US.zip
 $ rm US.zip
 $ ls
@@ -128,57 +116,23 @@ application.py  mashup.db   requirements.txt  templates/
 helpers.py      readme.txt  static/           US.txt
 ----
 
-=== Configuring
-
-. In a terminal window, within `mashup/`, execute
-+
-[source]
-----
-pip install --user -r requirements.txt
-----
-+
-to install this problem's dependencies.
-. If you don't already have a Google account (e.g., Gmail), sign up at https://accounts.google.com/SignUp[accounts.google.com/SignUp].
-. Visit https://developers.google.com/maps/web/[developers.google.com/maps/web/], logging in if prompted, and click **GET A KEY** at top-right.
-. Click *Select or create project*, click *+Create a new project*, and input *pset8* (or anything else) under *Enter new project name*.
-. Click *CREATE AND ENABLE API*.
-. Highlight and copy the value below *YOUR API KEY*.
-. In a terminal window, execute
-+
-[source]
-----
-export API_KEY=value
-----
-+
-where `value` is that (pasted) value, without any space immediately before or after the `=`.
-
-If you need to find that value later (to copy and paste it again), visit https://console.developers.google.com/[console.developers.google.com] and click *Credentials* at top-left.
-
 === Running
 
 . Start Flask's built-in web server (within `mashup/`):
-    +
++
 [source]
 ----
 flask run
 ----
 +
-Select *CS50 IDE > Web Server* to see the distribution code in action. You won't be able to search for news, though, just yet!
-. In another terminal window, start phpLiteAdmin (within `mashup/`):
-+
-[source]
-----
-phpliteadmin mashup.db
-----
-+
-And open the URL that `phpliteadmin` outputs in a new tab. No tables yet! Here on out, if you'd prefer a command line, you're welcome to use `sqlite3` instead of phpLiteAdmin.
+Visit the URL outputted by `flask` to see the distribution code in action. You won't be able to search for news, though, just yet!
+. Via CS50's file browser, double-click *mashup.db* in order to open it with phpLiteAdmin. Notice that it doesn't have any tables yet! (That's where you come in.) Here on out, though, if you'd prefer a command line, you're welcome to use `sqlite3` instead of phpLiteAdmin.
 
 === Understanding
 
 ==== index.html
 
-Open up `templates/index.html`, which will be your app's one and only HTML page. If you look at the page's `head`, you'll see 
-all those CSS and JavaScript libraries we'll be using (plus some others). Included in HTML comments are URLs for each library's documentation if curious. 
+Open up `templates/index.html`, which will be your app's one and only HTML page. If you look at the page's `head`, you'll see all those CSS and JavaScript libraries we'll be using (plus some others). Included in HTML comments are URLs for each library's documentation if curious. 
 
 Next take a look at the page's `body`, inside of which is `div` with a unique `id` of `map-canvas`. It's into that `div` that we'll be injecting a map. Below that `div`, meanwhile, is a `form`, inside of which is an `input` of type `text` with a unique `id` of `q` that we'll use to take input from users.
 
@@ -233,8 +187,6 @@ google.maps.event.addListener(map, "dragend", function() {
 indicates that we want to listen for a `dragend` event on the map, calling the anonymous function provided when we hear it. That anonymous function, meanwhile, simply calls `update` (another function we'll soon see). Per https://developers.google.com/maps/documentation/javascript/3.exp/reference#Map, `dragend` is "fired" (i.e., broadcasted) "when the user stops dragging the map." 
 
 Similarly do we listen for `zoom_changed`, which is fired "when the map zoom property changes" (i.e., the user zooms in or out).
-
-On the other hand, upon hearing `dragstart`, we ultimately call `removeMarkers` so that all markers disappear temporarily as a user drags the map, thereby avoiding the appearance of a flicker that might otherwise happen as markers are removed and then re-added after the maps bounds (i.e., corners) have changed.
 
 Below those listeners is our configuration of that typeahead plugin. Take another look at https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md if unsure what `highlight` and `minLength` do here. Most importantly, though, know that the value of `source` (i.e., `search`) is the function that the plugin will call as soon as the user starts typing so that the function can respond with an array of search results based on the user's input. For instance, if the user types `foo` into that text box, the function should ultimately return an array of all places in your database that somehow match `foo`. How to perform those matches will ultimately be left to you! The value of `templates`, meanwhile, is an object with one key, `suggestion`, whose value is a "template" that will be used to format each entry in the plugin's dropdown menu. That template is created by a call to `Handlebars.compile`, a method that comes with http://handlebarsjs.com/[Handlebars], a templating language for JavaScript similar in spirit to Jinja for Python. Right now, that template is simply `<div>TODO</div>`, which means that every entry in that dropdown will literally say `TODO`. Ultimately, you'll want to change that value to something like
 
@@ -291,11 +243,7 @@ Hm, a `TODO`. Ultimately, this function will need to remove any and all markers 
 
 ===== search
 
-This function is called by the typeahead plugin every time the user changes the mashup's text box, as by typing or deleting a character. The value of the text box (i.e., whatever the user has typed in total) is passed to `search` as `query`. And the plugin also passes to `search` two additional arguments, the last of which (`asyncResults`) is a "callback" function that `search` should call as soon as it's done searching for matches. In other words, this passing in of `asyncResults` empowers `search` to be "asynchronous," whereby it will only call `asyncResults` as soon as it's ready, without blocking any of the mashup's other functionality. Accordingly, `search` uses jQuery's `getJSON` method to contact `/search` asynchronously, passing in one parameter, `geo`, the value of which is `query`. Once `/search` responds (however many milliseconds or seconds later), the anonymous function passed to `done` will be called and passed `data`, whose value will be whatever JSON that `/search` has emitted. (Though if something goes wrong, `fail` is instead called.) Finally called is `asyncResults`, to which `search` passes that same `data` so that the plugin can iterate over the places therein (assuming `/search` found matches) in order to update the plugin's drop-down. Phew.
-
-Notice that we're using ``getJSON``'s "Promise" interface, per http://api.jquery.com/jquery.getjson/. Rather than pass an anonymous function directly to `getJSON` (to be called upon success), we're instead "chaining" together calls to `getJSON`, `done` (whose argument, an anonymous function, will be called upon success), and `fail` (whose argument, another anonymous function, will be called upoon failure). See http://api.jquery.com/jquery.ajax/ for some additional details. And see https://davidwalsh.name/write-javascript-promises for an explanation of promises themselves.
-
-Notice, too, that we're using `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console.log for tips.
+This function is called by the typeahead plugin every time the user changes the mashup's text box, as by typing or deleting a character. The value of the text box (i.e., whatever the user has typed in total) is passed to `search` as `query`. And the plugin also passes to `search` two additional arguments, the last of which (`asyncResults`) is a "callback" function that `search` should call as soon as it's done searching for matches. In other words, this passing in of `asyncResults` empowers `search` to be "asynchronous," whereby it will only call `asyncResults` as soon as it's ready, without blocking any of the mashup's other functionality. Accordingly, `search` uses jQuery's `getJSON` method to contact `/search` asynchronously, passing in one parameter, `q`, the value of which is `query`. Once `/search` responds (however many milliseconds or seconds later), `asyncResults` will be called and passed `data`, whose value will be whatever JSON that `/search` has emitted. The plugin can then iterate over the places therein (assuming `/search` found matches) in order to update the plugin's drop-down. Phew.
 
 ===== showInfo
 
@@ -324,7 +272,7 @@ Now open up `application.py`, which contains four routes!
 
 ===== `index`
 
-Notice how this first route checks for an `API_KEY`, which Google Maps' JavaScript API requires. Ultimately, all this route does is pass that key to `index.html`, the app's sole template.
+All this route does is render `index.html`, the app's sole template.
 
 ===== `articles`
 
@@ -417,7 +365,7 @@ Complete the implementation of `/search` in such a way that it outputs a JSON ar
 * http://mashup.cs50.net/search?q=02138
 * http://mashup.cs50.net/search?q=Cambridge
 * http://mashup.cs50.net/search?q=06511
-* http://mashup.cs50.net/search?q=New+Haven
+* http://mashup.cs50.net/search?q=New%20Haven
 
 The value of `q`, passed into `/search` as a GET parameter, might be a city, state, and/or postal code. We leave it to you to decide what constitutes a match and, therefore, which rows to `SELECT`. It suffices to support searching by postal codes only, but try to support searching by city and/or state as well. Odds are you'll find SQL's `LIKE` keyword helpful. If feeling adventurous, you might like (but are not required) to experiment with SQLite's support for https://www.sqlite.org/fts3.html[full-text searches].
 
@@ -451,16 +399,16 @@ To test `/search`, even before your text box is operational, simply visit URLs l
 or
 
 * `pass:[https://ide50-username.cs50.io/search?q=06511]`
-* `pass:[https://ide50-username.cs50.io/search?q=New+Haven+CT]`
-* `pass:[https://ide50-username.cs50.io/search?q=New+Haven,+CT]`
-* `pass:[https://ide50-username.cs50.io/search?q=New+Haven,+Connecticut]`
+* `pass:[https://ide50-username.cs50.io/search?q=New%20Haven+CT]`
+* `pass:[https://ide50-username.cs50.io/search?q=New%20Haven,+CT]`
+* `pass:[https://ide50-username.cs50.io/search?q=New%20Haven,+Connecticut]`
 * `pass:[https://ide50-username.cs50.io/search?q=New+Haven,+Connecticut,+US]`
 
 and other such variants, where `username` is your own username, to see if you get back the JSON you expect. Again, though, we leave it to you to decide just how supportive `/search` will be of such variants. The more flexible, though, the better! Try to implement features that you yourself would expect as a user!
 
 Feel free to tinker with the staff's solution at http://mashup.cs50.net/, inspecting its HTTP requests via Chrome's Network tab as needed, if unsure how your own code should work!
 
-==== `scripts.js`
+=== `scripts.js`
 
 First, toward the top of `scripts.js`, you'll see an anonymous function, inside of which is a definition of `options`, an object, one of whose keys is `center`, the value of which is an object with two keys of its own, `lat`, and `lng`. Per the comment alongside that object, your mashup's map is currently centered on Stanford, California. (D'oh.) Change the coordinates of your map's center to Cambridge (42.3770, -71.1256) or New Haven (41.3184, -72.9318) or anywhere else! (Though be sure to choose coordinates in the US if you downloaded `US.txt`!) Once you save your changes and reload your map, you should find yourself there! Zoom out as needed to confirm visually.
 
@@ -497,12 +445,21 @@ video::LGOXIN87giE[youtube,list=PLhQjrBD2T383MDO-WBcfAq5SIsoEfoW07]
 
 == Testing
 
-Be sure to try to "break" your own site, as by
+=== Correctness
+
+No `check50` anymore! Be sure to try to "break" your own site, as by
 
 * searching for cities that don't exist,
 * clicking markers for cities that don't have any articles,
 * dragging and zooming in and out to update your map's markers, and
 * searching with potentially dangerous characters like `'` and `;`.
+
+=== Style
+
+[source]
+----
+style50 application.py
+----
 
 == Staff's Solution
 
@@ -516,13 +473,18 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 
 * You're welcome center your map on some country other than the United States, downloading http://download.geonames.org/export/zip/[some other ZIP file] instead of `US.zip`. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements[Wikipedia] if unfamiliar with ISO 3166-1 alpha-2 codes.
 
+* Know that you can use `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console.log for tips.
+
 == FAQs
 
 === CREATE TABLE places(...) failed: duplicate column name
 
 If you see this message upon running `.import` in `sqlite3`, odds are you haven't run `sqlite3` in the same directory as `mashup.db`. If so, exit `sqlite3` with `.exit`, `cd` to your `mashup` directory, and then re-run `sqlite3 mashup.db`.
 
-== How to Submit
+=== ImportError: No module named 'application'
 
-. First, `cd` to your `project4` directory. Then run `submit50 cscip14300/2017/summer/project4`.
-. Also submit https://docs.google.com/forms/d/e/1FAIpQLSc0j9IOD6Yl9cDaQFfvsNBc18pANtX9oV1eagW8GPTuBOahlQ/viewform[this form].
+By default, `flask` looks for a file called `application.py` in your current working directory (because we've configured the value of `FLASK_APP`, an environment variable, to be `application.py`). If seeing this error, odds are you've run `flask` in the wrong directory!
+
+=== OSError: [Errno 98] Address already in use
+
+If, upon running `flask`, you see this error, odds are you (still) have `flask` running in another tab. Be sure to kill that other process, as with ctrl-c, before starting `flask` again. If you haven't any such other tab, execute `fuser -k 8080/tcp` to kill any processes that are (still) listening on TCP port 8080.
