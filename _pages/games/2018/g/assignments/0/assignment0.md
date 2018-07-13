@@ -33,7 +33,7 @@ them so that you'll get plenty of experience interacting with fully implemented 
 use these projects as templates and jumping boards for your own games!
 
 Of course, the code won't run if you don't have LÖVE2D installed, so we'll have to tackle that in addition to
-grabbing the code; the course uses version 0.10.2 for its source code, so do just choose appropriate distribution of that version for your system here:
+grabbing the code; the course uses version 0.10.2 for its source code, so do just choose the appropriate distribution of that version for your system here:
 
 [https://bitbucket.org/rude/love/downloads/](https://bitbucket.org/rude/love/downloads/)
 
