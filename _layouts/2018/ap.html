@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        {% if page.description %}
+            <meta property="og:description" content="{{ page.description }}"/>
+        {% else %}
+            <meta property="og:description" content="Demanding, but definitely doable. Social, but educational. A focused topic, but broadly applicable skills. CS50 is the quintessential Harvard (and Yale!) course."/>
+        {% endif %}
+        <meta property="og:title" content="{{ page.title }}"/>
+
+        <script>
+
+            /* https://code.jquery.com/jquery-3.2.1.min.js */
+            {% include jquery-3.2.1.min.js %}
+
+        </script>
+
+        <script>
+
+            /* https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js */
+            {% include bootstrap.min.js %}
+
+        </script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    displayMath: [["\\[", "\\]"]],
+                    ignoreClass: "nostem|nostem|nolatexmath",
+                    inlineMath: [['\\$','\\$'], ['\\(','\\)']],
+                    processEscapes: true
+                },
+                asciimath2jax: {
+                    delimiters: [["\\$", "\\$"]],
+                    ignoreClass: "nostem|nostem|noasciimath",
+                    processEnvironments: true
+                }
+            });
+        </script>
+
+        <script>
+
+            /* https://github.com/pkra/MathJax-single-file */
+            {% comment %}
+            /* wget https://raw.githubusercontent.com/pkra/MathJax-single-file/master/dist/TeXCommonHTMLTeX/MathJax.min.js */
+            /* sed -i '1s/^/{% raw %}/' MathJax.min.js */
+            /* sed -i '1s/$/{% endraw %}/' MathJax.min.js */
+            {% endcomment %}
+            {% include MathJax.min.js %}
+
+        </script>
+
+        <script>
+
+            $(function() {
+
+                // responsive embed
+                // http://getbootstrap.com/components/#responsive-embed
+                $('div.videoblock div.content').addClass('embed-responsive embed-responsive-16by9');
+                $('div.videoblock div.content iframe').addClass('embed-responsive-item');
+
+            });
+
+        </script>
+        <style>
+
+            /* https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css */
+            {% include bootstrap.min.css %}
+
+        </style>
+        <style>
+
+            /* asciidoctor -a linkcss -b html5 -D . /dev/null */
+            /* remove a:focus for accessibility */
+            {% capture css %}{% include asciidoctor.css %}{% endcapture %}
+            {% capture none %}{% raw %}a:focus { outline: none; }{% endraw %}{% endcapture %}
+            {% capture dotted %}{% raw %}a:focus { outline: thin dotted; }{% endraw %}{% endcapture %}
+            {{ css | replace: none, '' | replace: dotted, '' }}
+
+        </style>
+        <style>
+
+            /* https://github.com/asciidoctor/jekyll-asciidoc#adding-supplemental-assets */
+            {% include asciidoc-pygments.css %}
+
+        </style>
+
+        <style>
+
+            /* https://www.npmjs.com/package/font-awesome-base64 */
+            {% include font-awesome-base64 %}
+
+        </style>
+
+        <style>
+
+            /* http://www.smufl.org/ */
+            /* https://w3c.github.io/smufl/gitbook/tables/individual-notes.html */
+            /* https://w3c.github.io/smufl/gitbook/tables/rests.html */
+            {% comment %}
+            /* wget http://www.smufl.org/files/bravura-1.204.zip */
+            /* unzip bravura-1.204.zip */
+            /* base64 -w0 woff/BravuraText.woff > _includes/BravuraText.woff.b64 /*
+            {% endcomment %}
+            .music {
+                font-family: "Bravura Text";
+                font-size: 2em;
+                line-height: 0.5em;
+                position: relative;
+                top: 0.25em;
+            }
+            @font-face {
+                font-family: "Bravura Text";
+                src: url("data:application/x-font-woff;base64,{% include BravuraText.woff.b64 %}") format("woff");
+            }
+
+        </style>
+        <style>
+
+            /* deliberate misnomer for videos at 4096x1728 */
+            .embed-responsive-21by9 .embed-responsive-16by9 {
+                padding-bottom: 42.1875%;
+            }
+
+            /* wrap long URLs */
+            * {
+                overflow-wrap: break-word;
+            }
+
+            /* expand horizontally */
+            audio {
+                width: 100%;
+            }
+
+            /* http://stackoverflow.com/a/30195325 */
+            ol > li:before {
+                content: "";
+                display: block;
+                height: 1em;
+            }
+            ol > li > p:first-child {
+                margin-top: -1em;
+            }
+
+            /* wrap inline code */
+            *:not(pre) > code {
+                white-space: pre-wrap;
+            }
+
+            /* don't wrap code blocks */
+            pre, pre code {
+                overflow: auto;
+                white-space: pre;
+                word-wrap: normal;
+            }
+
+            /* match margin-bottom of div.paragraph */
+            div.stemblock div.content {
+                margin-bottom: 1.25em;
+            }
+
+            /* fill page */
+            table {
+                width: 100%;
+            }
+
+            /* allow captions to wrap */
+            .tableblock > caption {
+                max-width: inherit;
+                white-space: inherit;
+            }
+
+        </style>
+
+        <title>{{ page.title }}</title>
+
+    </head>
+
+    {% if page.toc != false %}
+        <body class="toc2 toc-left">
+            <div id="header">
+                <div class="toc2" id="toc">
+                    <div id="toctitle">Table of Contents</div>
+                    {{ page.document | tocify_asciidoc: page.toclevels }}
+                </div>
+            </div>
+            <div id="content">
+                {{ content }}
+            </div>
+        </body>
+    {% else %}
+        <body>
+            <div id="content">
+                {{ content }}
+            </div>
+        </body>
+    {% endif %}
+
+</html>
