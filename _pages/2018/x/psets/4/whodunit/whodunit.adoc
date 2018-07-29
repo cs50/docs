@@ -19,7 +19,7 @@ $ [underline]#./whodunit clue.bmp verdict.bmp#
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/4/whodunit.zip
+$ wget http://cdn.cs50.net/2018/x/psets/4/whodunit.zip
 $ unzip whodunit.zip
 $ rm whodunit.zip
 $ cd whodunit
@@ -187,7 +187,7 @@ fprintf(stderr, "Usage: ./whodunit infile outfile\n");
 
 Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`. Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works.
 
-Open up `README.md` and replace each `TODO` therein with your answer to the question above it. That file happens to be written in Markdown, a lightweight format for text files that makes it easy to stylize text. For instance, we've prefixed each question with `##` so that, when viewed on GitHub, it renders in a larger, bold font. And we've surrounded code-related keywords with backticks (\`) so that they render on GitHub in a monospaced (i.e., code-like) font.
+Open up `README.md` and replace every `TODO` therein (except the last) with your answer to the question above it. That file happens to be written in Markdown, a lightweight format for text files that makes it easy to stylize text. For instance, we've prefixed each question with `##` so that, when viewed on GitHub, it renders in a larger, bold font. And we've surrounded code-related keywords with backticks (\`) so that they render on GitHub in a monospaced (i.e., code-like) font.
 
 No need to write your answers in Markdown; plaintext suffices. But if you'd like to format your answers somehow, see https://guides.github.com/features/mastering-markdown/ for a tutorial.
 
@@ -202,6 +202,10 @@ Implement a program called `whodunit` that reveals Mr. Boddy's drawing in such a
 * If the output file cannot be opened for writing, your program should inform the user as much, as with `fprintf` (to `stderr`), and `main` should return `3`.
 * If the input file is not a 24-bit uncompressed BMP 4.0, your program should inform the user as much, as with `fprintf` (to `stderr`), and `main` should return `4`.
 * Upon success, `main` should `0`.
+
+== Questions, continued
+
+Alright, whodunit? Replace the last `TODO` in `README.md` with your answer!
 
 == Walkthrough
 
@@ -247,8 +251,6 @@ Then add and/or change just a few lines of code.
 There's nothing hidden in `smiley.bmp`, but feel free to test your program out on its pixels nonetheless, if only because that BMP is small and you can thus compare it and your own program's output with CS50 IDE's hex viewer during development.
 
 Rest assured that more than one solution is possible. So long as Mr. Boddy's drawing is identifiable (by you), no matter its legibility, Mr. Boddy will rest in peace.
-
-When submitting this problem, you'll be asked whodunit!
 
 == Testing
 
