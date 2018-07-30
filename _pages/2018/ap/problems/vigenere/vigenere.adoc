@@ -5,8 +5,6 @@ layout: 2017/ap
 
 = Problem: Vigenère
 
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
-
 == tl;dr
 
 Implement a program that encrypts messages using Vigenère's cipher, per the below.
@@ -18,26 +16,20 @@ plaintext:  [underline]#HELLO#
 ciphertext: HFNLP
 ----
 
-== Recommended Reading
-
-* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
-* Chapters 6, 7, 10, 17, 19, 21, 22, 30, and 32 of _Absolute Beginner's Guide to C_.
-* Chapters 7, 8, and 10 of _Programming in C_.
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -58,20 +50,11 @@ Be sure you're reasonably comfortable answering the below questions before movin
 * What makes Vigenère's cipher more secure than Caesar's?
 * What does `undeclared identifier` usually indicate if outputted by `make` (or, really, `clang`)?
 
-Log into your CS50 IDE workspace and execute
-
-[source,bash]
-----
-update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
-
 Now execute
 
 [source,bash]
 ----
-cd ~/workspace/chapter2
+cd ~/workspace/unit2
 ----
 
 to move yourself into (i.e., open) that directory. Make a new directory called `vigenere`, and you're good to go!
@@ -148,24 +131,32 @@ To help you test `vigenere`, we've written a program called `devigenere` for you
 
 [source]
 ----
-~cs50/chapter2/devigenere k
+~cs50/unit2/devigenere k
 ----
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
 
-=== `check50`
+=== Correctness 
 
 [source]
 ----
-check50 cs50/2017/ap/vigenere
+check50 cs50/2018/ap/vigenere
 ----
 
-== Staff Solution
+=== Style
 
 [source]
 ----
-~cs50/chapter2/vigenere
+style50 vigenere.c
 ----
+
+== Staff's Solution
+
+[source]
+----
+~cs50/unit2/vigenere
+----
+
 
 == Hints
 
@@ -173,37 +164,7 @@ Not sure where to begin? As luck would have it, this program's pretty similar to
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
-
-* Recall that you were asked to implement `vigenere`
-
-** Be sure that `vigenere.c` is in `~/workspace/chapter2/vigenere/`, as with:
-+
-[source]
-----
-cd ~/workspace/chapter2/vigenere/
-ls
-----
-
-=== Step 3 of 3
-
-* To submit `vigenere`, execute:
-+
-[source]
-----
-cd ~/workspace/chapter2/vigenere/
-submit50 cs50/2017/ap/vigenere
-----
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Vigenère.
 

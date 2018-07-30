@@ -1,5 +1,5 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -15,10 +15,12 @@ include::../../honesty.adoc[]
 
 Your work on this writing problem will be evaluated along three axes primarily.
 
-Scope::
-    To what extent does your submission align with the requirements of the specification?
 Correctness::
-    To what extent is your submission correct and free of factual errors?
+    To what extent does your submission align with the requirements of the specification?
+
+Design::
+    To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+	
 Style::
     To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
 
@@ -96,22 +98,6 @@ Ponder that. Was someone programming you to write this problem?
 
 == How to Submit
 
-=== Step 1 of 3
-
-Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2017/ap/simulate` and click "Create branch".
-
-=== Step 2 of 3
-
-Click the button that says "Upload files". Drag your `simulate.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
-
-=== Step 3 of 3
-
-Click the green "Commit changes" button and you're done!
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Simulate!

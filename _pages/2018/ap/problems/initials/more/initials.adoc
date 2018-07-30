@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Initials
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
  
@@ -18,26 +16,20 @@ Regulus Arcturus Black
 RAB
 ----
 
-== Recommended Reading
-
-* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
-* Chapters 6, 7, 10, 17, 19, 21, 22, 30, and 32 of _Absolute Beginner's Guide to C_.
-* Chapters 7, 8, and 10 of _Programming in C_.
-
 include::../../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -68,32 +60,32 @@ update50
 
 within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
 
-If you have not done so already, create a new `chapter2` directory, as with
+If you have not done so already, create a new `unit2` directory, as with
 
 [source,bash]
 ----
-~/workspace/ $ mkdir chapter2
+~/workspace/ $ mkdir unit2
 ----
 
-Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/chapter2` denotes a directory called `chapter2` within `~/workspace`. After `cd`-ing into `chapter2` (remember how?), your prompt should resemble the below.
-
-[source,bash]
-----
-~/workspace/chapter2 $
-----
-
-Inside of `chapter2`, create a new `initials` directory, as with
+Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/unit2` denotes a directory called `unit2` within `~/workspace`. After `cd`-ing into `unit2` (remember how?), your prompt should resemble the below.
 
 [source,bash]
 ----
-~/workspace/chapter2/ $ mkdir initials
+~/workspace/unit2 $
+----
+
+Inside of `unit2`, create a new `initials` directory, as with
+
+[source,bash]
+----
+~/workspace/unit2/ $ mkdir initials
 ----
 
 Now `cd` into the initials directory. If your prompt resembles the below, you're all set!
 
 [source,bash]
 ----
-~/workspace/chapter2/initials/ $
+~/workspace/unit2/initials/ $
 ----
 
 If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
@@ -139,53 +131,29 @@ RTB
 
 == Testing
 
-=== `check50`
+=== Correctness
+
+[source,text]
+----
+check50 cs50/2018/ap/initials/more
+----
+
+=== Style
 
 [source]
 ----
-check50 cs50/2017/ap/initials/more
+style50 initials.c
 ----
 
-== Staff's Solution
+== Staff Solution
 
 [source]
 ----
-~cs50/chapter2/initials/more
+~cs50/unit2/initials/more
 ----
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
-
-* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
-** Be sure that `initials.c` is in `~/workspace/chapter2/initials/`, as with:
-+
-[source]
-----
-cd ~/workspace/chapter2/initials/
-ls
-----
-
-=== Step 3 of 3
-
-* To submit the more-comfortable version of `initials` (if you implemented it), execute
-+
-[source]
-----
-cd ~/workspace/chapter2/initials/
-submit50 cs50/2017/ap/initials/more
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Initials.

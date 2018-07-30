@@ -1,21 +1,13 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Reverse Engineer
 
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
-
 == tl;dr
 
 Learn the compilation process and reverse engineer a piece of software.
-
-== Recommended Reading
-
-* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
-* Chapters 6, 7, 10, 17, 19, 21, 22, 30, and 32 of _Absolute Beginner's Guide to C_.
-* Chapters 7, 8, and 10 of _Programming in C_.
 
 include::../../honesty.adoc[]
 
@@ -23,7 +15,8 @@ include::../../honesty.adoc[]
 
 Your work on this problem set will be evaluated along just one axis.
 
-Scope::
+Correctness::
+
  To what extent does your implementation attempt to replicate the features of our mystery program?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
@@ -71,14 +64,14 @@ Log into your CS50 IDE workspace and execute
 update50
 ----
 
-then create a new `chapter2` directory as with
+then create a new `unit2` directory as with
 
 [source,bash]
 ----
-~/workspace/ $ mkdir chapter2
+~/workspace/ $ mkdir unit2
 ----
 
-Finally, make a subdirectory inside of `chapter2` called `reverse` (how?). Here's the assembly code you'll be trying to reverse engineer in a file called `mystery.c`.
+Finally, make a subdirectory inside of `unit2` called `reverse` (how?). Here's the assembly code you'll be trying to reverse engineer in a file called `mystery.c`.
 
 [source,bash]
 ----
@@ -133,33 +126,6 @@ There's no `check50` or staff solution for this problem. After all, where would 
 
 == How to Submit
 
-=== Step 1 of 2
-
-Ensure that `mystery.c` is in `~/workspace/chapter2/reverse`, as with:
-
-[source]
-----
-cd ~/workspace/chapter2/reverse
-ls
-----
-
-If `mystery.c` is not in `~/workspace/chapter2/reverse`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 2 of 2
-
-* To submit `reverse`, execute
-+
-[source]
-----
-cd ~/workspace/chapter2/reverse
-submit50 cs50/2017/ap/reverse
-----
-+
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for completion within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Reverse Engineer.

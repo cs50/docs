@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Crack
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -17,25 +15,20 @@ $ [underline]#./crack 50fkUxYHbnXGw#
 rofl
 ----
 
-== Recommended Reading
-
-* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
-* Chapters 7, 8, and 10 of _Programming in C_.
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -63,7 +56,7 @@ zamyla:50i2t3sOSAZtk
 
 Design and implement a program, `crack`, that cracks passwords.
 
-* Implement your program in a file called `crack.c` in a directory called `crack` (inside `chapter2`).
+* Implement your program in a file called `crack.c` in a directory called `crack` (inside `unit2`).
 * Your program should accept a single command-line argument: a hashed password.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
 * Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`.
@@ -72,6 +65,8 @@ Design and implement a program, `crack`, that cracks passwords.
 * Assume that each password is composed entirely of alphabetical characters (uppercase and/or lowercase).
 
 == Walkthrough
+
+**Note: The walkthrough video incorrectly states that passwords are no longer than four (4) characters. Instead, per the specification, make sure to handle passwords that are up to five (5) characters.**
 
 video::w78QYcmpA8o[youtube]
 
@@ -88,12 +83,21 @@ Usage: ./crack hash
 [source,subs=quotes]
 ----
 $ [underline]#./crack 50fkUxYHbnXGw#
-rofl
+ROFL
 ----
 
 == Testing
 
+=== Correctness
+
 No `check50` for this one! But odds are, if you can crack all ten passwords above, you're in good shape!
+
+=== Style
+
+[source]
+----
+style50 crack.c
+----
 
 == Hints
 
@@ -121,37 +125,6 @@ clang -ggdb3 -O0 -std=c11 -Wall -Werror -Wshadow crack.c -lcrypt -lcs50 -lm -o c
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
-
-* Recall that you were asked to implement `crack`. 
-** Be sure that all relevant files for this problem are in `~/workspace/pset2/crack/`, as with:
-+
-[source]
-----
-cd ~/workspace/chapter2/crack/
-ls
-----
-
-=== Step 3 of 3
-
-* To submit `crack`, execute
-+
-[source]
-----
-cd ~/workspace/chapter2/crack/
-submit50 cs50/2017/ap/crack
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Crack.

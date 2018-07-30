@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Calc
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -17,26 +15,20 @@ $ [underline]#./calc 50 x 28#
 1400.000000
 ----
 
-== Recommended Reading
-
-* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
-* Chapters 6, 7, 10, 17, 19, 21, 22, 30, and 32 of _Absolute Beginner's Guide to C_.
-* Chapters 7, 8, and 10 of _Programming in C_.
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -51,14 +43,14 @@ update50
 
 within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
 
-Next, navigate to your `chapter2` directory, as with
+Next, navigate to your `unit2` directory, as with
 
 [source,bash]
 ----
-cd ~/workspace/chapter2
+cd ~/workspace/unit2
 ----
 
-Create a new `calc` directory inside `chapter2` (remember how?). Next create a new file entitled `calc.c` in your `calc` directory.
+Create a new `calc` directory inside `unit2` (remember how?). Next create a new file entitled `calc.c` in your `calc` directory.
 
 Though we'll remind you of the existence of this video many times throughout the problems in this chapter, be sure to have a look at Christopher's short video on command-line arguments.
 
@@ -79,7 +71,7 @@ In this problem, you will be tasked with implementing a very simple command-line
 
 [source,subs=quotes]
 ----
-~/workspace/chapter2/ $ [underline]#./calc 4 + 5#
+~/workspace/unit2/ $ [underline]#./calc 4 + 5#
 9.000000
 ----
 
@@ -87,15 +79,15 @@ or, indeed like this (allowing the user to perform some basic floating-point ari
 
 [source,subs=quotes]
 ----
-~/workspace/chapter2/ $ [underline]#./calc 8.38 - 5.12#
+~/workspace/unit2/ $ [underline]#./calc 8.38 - 5.12#
 3.260000
 ----
 
 such that the user can perform all five of the basic math operations that C permits -- addition, subtraction, multiplication, division, and modulo.
 
-Notice that unlike many other programs you've likely written up to this point, and just like http://docs.cs50.net/2017/ap/problems/friends/friends.html[Old Friends], users are not entering any information **after** the program has started running. Rather, they are providing all of their input to the program at the command line, before the program has begun.
+Notice that unlike many other programs you've likely written up to this point, and just like http://docs.cs50.net/2018/ap/problems/friends/friends.html[Old Friends], users are not entering any information **after** the program has started running. Rather, they are providing all of their input to the program at the command line, before the program has begun.
 
-Recall from Christopher's short that if we collect information from the user at the command line, we can use two special parameters passed into `main` (conventionally called `argc` and `argv`) which represent the number of arguments the user provided and the actual data the user provided, respectively. Given the example use case above, how many command line arguments is the user expected to provide?
+Recall from Christopher's short that if we collect information from the user at the command line, we can use two special parameters passed into `main` (conventionally called `argc` and `argv`) which represent the number of arguments the user provided and the actual data the user provided, respectively. Given the example use case above, how many command-line arguments is the user expected to provide?
 
 If they fail to provide the correct number, your program should exit (possibly printing out an error message that tells them how they should have run the program) and `return 1;` so that we can automate testing of your code.
 
@@ -192,52 +184,35 @@ To be clear, you may make the following assumptions with respect to your calcula
 * `argv[3]`, should it be present, is guaranteed to consist only of digit characters, possibly a decimal point, and possibly a negative sign. You do not need to check otherwise.
 * You needn't worry about floating-point imprecision with your calculator, and you needn't print out the correct answer to more than six decimal places.
 
-If you'd like to check the correctness of your calculator with `check50`, you may execute the below.
+== Testing
+
+=== Correctness
+
+If you'd like to check the correctness of your program with `check50`, you may execute the below.
 
 [source,bash]
 ----
-check50 cs50/2017/ap/calc
+check50 cs50/2018/ap/calc
 ----
+
+=== Style
+
+[source]
+----
+style50 calc.c
+----
+
+== Staff Solution
 
 If you'd like to play with the staff's own implementation of `calc`, you may execute the below.
 
 [source,bash]
 ----
-~cs50/chapter2/calc
+~cs50/unit2/calc
 ----
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
-
-** Be sure that `calc.c` is in `~/workspace/pset2/calc/`, as with:
-+
-[source]
-----
-cd ~/workspace/chapter2/calc/
-ls
-----
-
-=== Step 3 of 3
-
-* To submit `calc`, execute
-+
-[source]
-----
-cd ~/workspace/chapter2/calc/
-submit50 cs50/2017/ap/calc
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Calc.
