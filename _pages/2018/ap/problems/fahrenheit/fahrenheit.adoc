@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Fahrenheit
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -18,26 +16,20 @@ C: [underline]#0#
 F: 32.0
 ----
 
-== Recommended Reading
-
-* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-* Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
-* Chapters 1 – 6 of _Programming in C_.
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -66,9 +58,9 @@ Let's do a quick test to make sure things work as expected. Worldwide, the commo
 
 == A Cool Look Back
 
-Log into your CS50 IDE account (remember how?) and be sure before doing anything to run `update50` in your terminal window, waiting until any updates finish processing before moving further. We'll remind you of this as much as possible, but do note that before each problem you should remember to run that command to be sure your IDE workspace is fully up-to-date.
+Log into your CS50 IDE account (remember how?) and be sure before doing anything to run `update50` in your terminal window, waiting until any updates finish processing before moving further. We'll remind you of this as much as possible, but do note that the IDE too will remind you to run that command via a yellow banner atop your workspace when there is a new update available.
 
-If you have it from http://docs.cs50.net/2017/ap/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be in your `chapter1/hello/` directory. (If you don't have it, create it now.) The contents should look probably like this:
+If you have it from http://docs.cs50.net/2018/ap/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be in your `unit1/hello/` directory. (If you don't have it, create it now.) The contents should look probably like this:
 
 [source,c]
 ----
@@ -76,11 +68,11 @@ If you have it from http://docs.cs50.net/2017/ap/problems/hello/hello.html[Hello
 
 int main(void)
 {
-    printf(“Hello, world!\n”);
+    printf(“hello, world\n”);
 }
 ----
 
-To make our program more adaptable, instead of having it always print the same simple message (`Hello, world!\n`) each time, we can modify this program to prompt a user to provide their name and then print out their name instead:
+To make our program more adaptable, instead of having it always print the same simple message (`hello, world\n`) each time, we can modify this program to prompt a user to provide their name and then print out their name instead:
 
 [source,c]
 ----
@@ -106,22 +98,22 @@ What `string` will we print? Well, that'd be `name`! After we specify what we wa
 
 [source,bash,subs=quotes]
 ----
-~/workspace/chapter1/hello/ $ [underline]#./hello#
+~/workspace/unit1/hello/ $ [underline]#./hello#
 Enter your name: [underline]#Alice#
 Hello, Alice!
 ----
 
-There's not just `get_string` in `cs50.h` though. There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long_long`, `get_char`.
+There's not just `get_string` in `cs50.h` though. There are functions to get user input of nearly all types: `get_int`, `get_float`, `get_double`, `get_long`, `get_char`.
 
 == Getting Warmer ==
 
-Now, create a file called `fahrenheit.c` (remember how?), ensuring that it is inside of a subdirectory called `fahrenheit` inside of your `chapter1` directory, and then double-click on that file in the file tree to the left. You should now have an open window in Ace with the tab name `fahrenheit.c`, and you're ready to write your first utility program--a program that can be used by others to do something meaningful for them. (Not to knock the value of saying `Hello, world!`… but we can do so much more!)
+Now, create a file called `fahrenheit.c` (remember how?), ensuring that it is inside of a subdirectory called `fahrenheit` inside of your `unit1` directory, and then double-click on that file in the file tree to the left. You should now have an open window in your text editor with the tab name `fahrenheit.c`, and you're ready to write your first utility program--a program that can be used by others to do something meaningful for them. (Not to knock the value of saying `hello, world`… but we can do so much more!)
 
 Write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein underlined text represents some user's inputfootnote:[Incidentally, while spelling Fahrenheit correctly is a little tricky, do be careful to do so lest you be told that your program doesn't exist!].
 
 [source,bash,subs=quotes]
 ----
-~/workspace/chapter1/fahrenheit/ $ [underline]#./fahrenheit#
+~/workspace/unit1/fahrenheit/ $ [underline]#./fahrenheit#
 C: [underline]#100#
 F: 212.0
 ----
@@ -151,56 +143,37 @@ int main(void)
 
 When executed (by first compiling with `make truncate` and then executing with `./truncate`), this program will output the value of the variable `pi` to exactly 2 decimal places: `3.14`. Can you see why? Perhaps you can adapt that to display the converted temperature to just one decimal place?
 
+== Testing
+
+=== Correctness
+
 Before turning in your solution, be sure to test the correctness of your program with `check50`, by executing the below.
 
 [source,bash]
 ----
-check50 cs50/2017/ap/fahrenheit
+check50 cs50/2018/ap/fahrenheit
 ----
 
-If you pass all the `check50` test cases, and get a green smiley face when you run things through `style50`, congratulations! If not, don't worry: it's just time for a little bit of debugging and/or cleaning up your code.
+=== Style
+
+If you pass all the `check50` test cases, and get a green smiley face when you run things through `style50`, as with:
+
+[source,bash]
+----
+style50 fahrenheit.c
+----
+
+If not, don't worry: it's just time for a little bit of debugging and/or cleaning up your code.
 
 If you'd like to play with our own implementation of `fahrenheit` in the IDE, you may execute the below:
 
 [source,bash]
 ----
-~cs50/chapter1/fahrenheit
+~cs50/unit1/fahrenheit
 ----
 
 == How to Submit
 
-=== Step 1 of 3
-
-Make sure your IDE is up-to-date by executing `update50`
-
-=== Step 2 of 3
-
-Ensure that `fahrenheit.c` is in `~/workspace/chapter1/fahrenheit`, as with:
-
-[source]
-----
-cd ~/workspace/chapter1/fahrenheit
-ls
-----
-
-If `fahrenheit.c` is not in `~/workspace/chapter1/fahrenheit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-* To submit `fahrenheit`, execute
-+
-[source]
-----
-cd ~/workspace/chapter1/fahrenheit
-submit50 cs50/2017/ap/fahrenheit
-----
-+
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
-
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Fahrenheit.

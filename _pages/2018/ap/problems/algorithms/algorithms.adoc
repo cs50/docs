@@ -148,7 +148,7 @@ Just do your best to avoid any infinite loops (a loop that's impossible to ever 
 
 == Step 4: Do This.
 
-Now for a little bit of fun. Before you actually turn in your algorithms, you probably should have someone test them out. Here's what happened in a recent iteration of CS50 making a peanut butter and jelly sandwich using an algorithm supplied by students.
+Now for a little bit of fun. Before you actually turn in your algorithms, you probably should have someone test them out. Here's what happened in a recent iteration of CS50 when making a peanut butter and jelly sandwich using an algorithm supplied by students.
 
 video::y62zj9ozPOM[youtube,start=966,end=1305]
 

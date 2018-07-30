@@ -1,47 +1,37 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
-= Problem: Greedy
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
+= Problem: Cash
 
 == tl;dr
 
 Implement a program that calculates the minimum number of coins required to give a user change.
 
-[source, subs=quotes]
+[source,subs="macros,quotes"]
 ----
-$ [underline]#./greedy#
-O hai! How much change is owed?
-[underline]#0.41#
+$ [underline]#./cash#
+Change owed: [underline]#0.41#
 4
 ----
-
-== Recommended Reading
-
-* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-* Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
-* Chapters 1 – 6 of _Programming in C_.
 
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
 
 == Background
 
@@ -57,7 +47,7 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 == Specification
 
-* Write, in a file called `greedy.c` in `~/workspace/chapter1/greedy/`, a program that first asks the user how much change is owed and then spits out the minimum number of coins with which said change can be made.
+* Write, in a file called `cash.c` in `~/workspace/unit1/cash/`, a program that first asks the user how much change is owed and then spits out the minimum number of coins with which said change can be made.
 * Use `get_float` from the CS50 Library to get the user's input and `printf` from the Standard I/O library to output your answer. Assume that the only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
 ** We ask that you use `get_float` so that you can handle dollars and cents, albeit sans dollar sign. In other words, if some customer is owed $9.75 (as in the case where a newspaper costs 25¢ but the customer pays with a $10 bill), assume that your program's input will be `9.75` and not `$9.75` or `975`. However, if some customer is owed $9 exactly, assume that your program's input will be `9.00` or just `9` but, again, not `$9` or `900`. Of course, by nature of floating-point values, your program will likely work with inputs like `9.0` and `9.000` as well; you need not worry about checking whether the user's input is "formatted" like money should be.
 * You need not try to check whether a user's input is too large to fit in a `float`. Using `get_float` alone will ensure that the user's input is indeed a floating-point (or integral) value but not that it is non-negative.
@@ -74,39 +64,42 @@ Your program should behave per the example below. Assumed that the underlined te
 
 [source,subs=quotes]
 ----
-$ [underline]#./greedy#
-O hai! How much change is owed?
-[underline]#0.41#
+$ [underline]#./cash#
+Change owed: [underline]#0.41#
 4
 ----
 
 [source,subs=quotes]
 ----
-$ [underline]#./greedy#
-O hai! How much change is owed?
-[underline]#-0.41#
-How much change is owed?
-[underline]#-0.41#
-How much change is owed?
-[underline]#foo#
-Retry: [underline]#0.41#
+$ [underline]#./cash#
+Change owed: [underline]#-0.41#
+Change owed: [underline]#-0.41#
+Change owed: [underline]#foo#
+Change owed: [underline]#0.41#
 4
 ----
 
 == Testing
 
-=== `check50`
+=== Correctness
 
 [source,text]
 ----
-check50 cs50/2017/ap/greedy
+check50 cs50/2018/ap/cash
+----
+
+=== Style
+
+[source]
+----
+style50 cash.c
 ----
 
 == Staff Solution
 
 [source]
 ----
-~cs50/chapter1/greedy
+~cs50/unit1/cash
 ----
 
 == Hints
@@ -125,36 +118,6 @@ And so, before making change, you'll probably want to convert the user's input e
 
 == How to Submit
 
-=== Step 1 of 2
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
-Ensure that `greedy.c` is in `~/workspace/chapter1/greedy`, as with:
-
-[source]
-----
-cd ~/workspace/chapter1/greedy
-ls
-----
-
-If `greedy.c` is not in `~/workspace/chapter1/greedy`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-
-=== Step 2 of 2
-
-* To submit `greedy` (if you implemented it), execute
-+
-[source]
-----
-cd ~/workspace/chapter1/greedy
-submit50 cs50/2017/ap/greedy
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
-
-This was Greedy.
+This was Cash.
