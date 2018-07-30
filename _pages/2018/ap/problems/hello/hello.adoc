@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Hello
-
-Questions?  Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50x.slack.com[the CS50x Slack page], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 Don't be alarmed by the length of this problem's specification. Most of it is just instructions for getting your programming environment set up and learning how to navigate within it. Once these steps are completed, you'll be good to go for the rest of the year in CS50 AP!
 
@@ -16,27 +14,21 @@ Implement a program that prints out a simple greeting to the user, per the below
 [source,subs=quotes]
 ----
 $ [underline]#./hello#
-Hello, world!
+hello, world
 ----
-
-== Recommended Reading
-
-* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-* Chapters 1 – 5, 9, and 11 – 17 of _Absolute Beginner's Guide to C_.
-* Chapters 1 – 6 of _Programming in C_.
 
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
-  To what extent does your code implement the features required by our specification?
 Correctness::
   To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
   To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
   To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
@@ -54,22 +46,9 @@ After all, wouldn't you like to get programming right away, without having to do
 
 === Logging In
 
-Head to https://cs50.io/[cs50.io] and log into CS50 IDE, selecting *edX* from the drop-down menu when prompted.
+Head to https://cs50.io/[cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then choose *Harvard's CS50* under *Choose a template*, and click *Create workspace*.
 
-[IMPORTANT]
-====
-If you typically sign into https://courses.edx.org/login[edX] via Facebook, Google, or Microsoft, you'll first need to create a password for your edX account as follows:
-
-. Sign into your edX account at https://courses.edx.org/login[courses.edx.org/login] (via Facebook, Google, or Microsoft).
-. Visit https://courses.edx.org/account/settings[courses.edx.org/account/settings].
-. Click *Reset Your Password* (even though you don't yet have one) under *Password*.
-. Check your email for a message from edX. (If it hasn't arrived after a few minutes, do check your spam folder.) Click the link in that message to reset (i.e., create) your password.
-. Log into https://cs50.io/[cs50.io]!
-====
-
-Upon logging into CS50 IDE for the first time, you may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then click *Create workspace*.
-
-You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble mine from Week 1. If not, do just email the course's heads to inquire!
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble David's from Week 1. If not, do just email the course's heads to inquire!
 
 === Updating
 
@@ -91,9 +70,9 @@ followed by Enter to ensure that your workspace is up-to-date. It might take a f
 
 === Navigating CS50 IDE
 
-Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/workspace/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `chapter1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it. Inside `chapter1`, add another new folder named `hello`.
+Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/workspace/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `unit1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it. Inside `unit1`, add another new folder named `hello`.
 
-Front and center in the CS50 IDE workspace is a window wherein you'll be able to write your code, using Ace, a web-based text editor. Right now, assuming you haven't played around with the tabs, that window is blank.
+Front and center in the CS50 IDE workspace is a window wherein you'll be able to write your code. Right now, assuming you haven't played around with the tabs, that window is blank.
 
 Let's create a new file to play around with. Right-click on your newly-created `hello` folder and choose *New File* from the context menu. Then, double-click on this new file (which should hopefully be called `Untitled` and which should be nested beneath `hello` in the file tree), and a blank window should open up in Ace with the tab for `Untitled` as the active one.
 
@@ -108,7 +87,7 @@ Okay, with `hello.txt` still open in your workspace, notice that beneath your do
 ~/workspace/ $
 ----
 
-(where `~/workspace/`—i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be both a `chapter1` and a `hello` directory somewhere inside, since we created them just a few moments ago. Let's confirm as much.
+(where `~/workspace/`—i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be both a `unit1` and a `hello` directory somewhere inside, since we created them just a few moments ago. Let's confirm as much.
 
 Click somewhere inside of that terminal window and type
 
@@ -117,28 +96,28 @@ Click somewhere inside of that terminal window and type
 ls
 ----
 
-and then Enter. That's a lowercase `L` and a lowercase `S`, which is shorthand notation for "list." Indeed, you should then see a list of the folders inside of your workspace directory, among which is `chapter1`! Let's open that folder! Type
+and then Enter. That's a lowercase `L` and a lowercase `S`, which is shorthand notation for "list." Indeed, you should then see a list of the folders inside of your workspace directory, among which is `unit1`! Let's open that folder! Type
 
 [source]
 ----
-cd chapter1
+cd unit1
 ----
 
 or even
 
 [source]
 ----
-cd ~/workspace/chapter1/
+cd ~/workspace/unit1/
 ----
 
-followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/workspace/chapter1/` (ergo, `cd`). You should find that your prompt changes to
+followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/workspace/unit1/` (ergo, `cd`). You should find that your prompt changes to
 
 [source]
 ----
-~/workspace/chapter1/ $
+~/workspace/unit1/ $
 ----
 
-confirming that you are indeed now inside of `~/workspace/chapter1/` (i.e., a directory called `chapter1` inside of a directory called `workspace` inside of your home directory). Then type
+confirming that you are indeed now inside of `~/workspace/unit1/` (i.e., a directory called `unit1` inside of a directory called `workspace` inside of your home directory). Then type
 
 [source]
 ----
@@ -184,7 +163,7 @@ Shall we have you write your first program? Inside of your *hello* folder, creat
 
 int main(void)
 {
-    printf("Hello, world!\n");
+    printf("hello, world\n");
 }
 ----
 
@@ -192,11 +171,11 @@ Notice how CS50 IDE adds "syntax highlighting" (i.e., color) as you type, though
 
 Do be sure that you type this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/chapter1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/chapter1/hello/` and then Enter.) Your prompt should be:
+When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/unit1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/unit1/hello/` and then Enter.) Your prompt should be:
 
 [source,text]
 ----
-~/workspace/chapter1/hello/ $
+~/workspace/unit1/hello/ $
 ----
 
 Let's confirm that `hello.c` is indeed where it should be. Type
@@ -226,7 +205,7 @@ at your prompt, followed by Enter, and you should see the below:
 
 [source,text]
 ----
-Hello, world!
+hello, world
 ----
 
 And if you type
@@ -245,7 +224,7 @@ If, though, upon running `make`, you instead see some error(s), it's time to deb
 make hello
 ----
 
-at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/chapter1/hello/` within your terminal window, as your prompt will confirm or deny.) If still seeing errors, try "prepending" `help50` to your command like this:
+at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/unit1/hello/` within your terminal window, as your prompt will confirm or deny.) If still seeing errors, try "prepending" `help50` to your command like this:
 
 [source,text]
 ----
@@ -276,7 +255,7 @@ Your program should behave per the example below. Assumed that the underlined te
 [source,subs=quotes]
 ----
 $ [underline]#./hello#
-Hello, world!
+hello, world
 ----
 
 == Testing
@@ -285,7 +264,7 @@ Hello, world!
 
 [source,text]
 ----
-check50 cs50/2017/ap/hello
+check50 cs50/2018/ap/hello
 ----
 
 Assuming your program is correct, you should then see output like
@@ -294,7 +273,7 @@ Assuming your program is correct, you should then see output like
 ----
 [green]#:) hello.c exists#
 [green]#:) hello.c compiles#
-[green]#:) prints "Hello, world!\n"#
+[green]#:) prints "hello, world\n"#
 ----
 
 where each green smiley means your program passed a check (i.e., test). You may also see a URL at the bottom of ``check50``'s output, but that's just for staff (though you're welcome to visit it).
@@ -307,7 +286,7 @@ If you instead see yellow or red smileys, it means your code isn't correct! For 
   \ expected hello.c to exist
 [yellow]#:| hello.c compiles#
   \ can't check until a frown turns upside down
-[yellow]#:| prints "Hello, world!\n"#
+[yellow]#:| prints "hello, world\n"#
   \ can't check until a frown turns upside down
 ----
 
@@ -319,11 +298,11 @@ Suppose instead you see the below.
 ----
 [green]#:) hello.c exists#
 [green]#:) hello.c compiles#
-[red]#:( prints "Hello, world!\n"#
-  \ expected output, but not "Hello, world!"
+[red]#:( prints "hello, world\n"#
+  \ expected output, but not "hello, world"
 ----
 
-Odds are, in this case, you printed something other than `Hello, world!\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `Hello, world!`, without a trailing newline (`\n`).
+Odds are, in this case, you printed something other than `hello, world\n` verbatim, per the spec's expectations. In particular, the above suggests you printed `hello, world`, without a trailing newline (`\n`).
 
 Know that `check50` won't actually record your scores in CS50's gradebook. Rather, it lets you check your work's correctness _before_ you submit your work. Once you actually submit your work (per the directions at this spec's end), CS50's staff will use `check50` to evaluate your work's correctness officially.
 
@@ -331,43 +310,12 @@ Know that `check50` won't actually record your scores in CS50's gradebook. Rathe
 
 [source]
 ----
-~cs50/chapter1/hello
+~cs50/unit1/hello
 ----
 
 == How to Submit
 
-=== Step 1 of 3
-
-Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
-
-=== Step 2 of 3
-
-Head back to the https://cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/workspace/chapter1/hello`, as with:
-
-[source]
-----
-cd ~/workspace/chapter1/hello
-ls
-----
-
-If `hello.c` is not in `~/workspace/chapter1/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-* To submit `hello`, execute
-+
-[source]
-----
-cd ~/workspace/chapter1/hello
-submit50 cs50/2017/ap/hello
-----
-+
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 == Hints
 

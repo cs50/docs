@@ -1,5 +1,5 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -16,27 +16,22 @@ Number: [underline]#378282246310005#
 AMEX
 ----
 
-== Recommended Reading
-
-* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-* Chapters 1 – 6 of *Programming in C*.
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
-  To what extent does your code implement the features required by our specification?
 Correctness::
   To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
   To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
   To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
-All students, whether or not taking the course for a letter grade, must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Background
 
@@ -78,10 +73,10 @@ So, validating credit card numbers isn't hard, but it does get a bit tedious by 
 
 == Specification
 
-* In `~workspace/chapter1/credit`, create a file called `credit.c`. In `credit.c`, implement a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
+* In `credit.c` in `~workspace/unit1/credit`, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
 * So that we can automate some tests of your code, we ask that your program's last line of output be `AMEX\n` or `MASTERCARD\n` or `VISA\n` or `INVALID\n`, nothing more, nothing less, and that `main` always return `0`.
 * For simplicity, you may assume that the user's input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
-* Do not assume that the user's input will fit in an `int`! Best to use `get_long_long` from CS50's library to get users' input. (Why?)
+* Do not assume that the user's input will fit in an `int`! Best to use `get_long` from CS50's library to get users' input. (Why?)
 
 == Walkthrough
 
@@ -116,11 +111,24 @@ INVALID
 
 == Testing
 
-=== `check50`
+Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) Here are a few card numbers that PayPal recommends for testing:
+
+https://developer.paypal.com/docs/classic/payflow/payflow-pro/payflow-pro-testing/#credit-card-numbers-for-testing
+
+Google (or perhaps a roommate's wallet) should turn up more. (If your roommate asks what you're doing, don't mention us.) If your program behaves incorrectly on some inputs (or doesn't compile at all), time to debug!
+
+=== Correctness
 
 [source,text]
 ----
-check50 cs50/2017/ap/credit
+check50 cs50/2018/ap/credit
+----
+
+=== Style
+
+[source]
+----
+style50 credit.c
 ----
 
 == Staff Solution
@@ -132,41 +140,6 @@ check50 cs50/2017/ap/credit
 
 == How to Submit
 
-=== Step 1 of 2
-
-Ensure that `credit.c` is in `~/workspace/chapter1/credit`, as with:
-
-[source]
-----
-cd ~/workspace/chapter1/credit
-ls
-----
-
-If `credit.c` is not in `~/workspace/chapter1/credit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 2 of 2
-
-* To submit `credit`, execute
-+
-[source]
-----
-cd ~/workspace/chapter1/credit
-submit50 cs50/2017/ap/credit
-----
-+
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Credit.
-
-== Hints
-
-Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) Here are a few card numbers that PayPal recommends for testing:
-
-https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm
-
-Google (or perhaps a roommate's wallet) should turn up more. (If your roommate asks what you're doing, don't mention us.) If your program behaves incorrectly on some inputs (or doesn't compile at all), time to debug!

@@ -21,10 +21,6 @@ layout: 2018/ap
 +
 . Submit your essay.
 
-== Objectives
-
-Write 400 words making a case for why a device in your home is a computer.
-
 include::../../honesty.adoc[]
 
 == Assessment

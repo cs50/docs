@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Mario
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -28,26 +26,20 @@ Height: [underline]#3#
 pass:[####]
 ----
 
-== Recommended Reading
-
-* Pages 1 – 7, 9, and 10 of http://www.howstuffworks.com/c.htm.
-* Chapters 1 – 5, 9, and 11 &#8211; 17 of _Absolute Beginner's Guide to C_.
-* Chapters 1 – 6 of _Programming in C_.
-
 include::../../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -59,7 +51,7 @@ image:pyramid.png[Super Mario Brothers, width="50%"]
 
 == Specification
 
-* Write, in a file called `mario.c` in your `~/workspace/chapter1/mario/` directory, a program that recreates this half-pyramid using hashes (`#`) for blocks.
+* Write, in a file called `mario.c` in your `~/workspace/unit1/mario/` directory, a program that recreates this half-pyramid using hashes (`#`) for blocks.
 * To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
 * If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
@@ -116,18 +108,25 @@ pass:[#####]
 
 == Testing
 
-=== `check50`
+=== Correctness
 
 [source,text]
 ----
-check50 cs50/2017/ap/mario/less
+check50 cs50/2018/ap/mario/less
+----
+
+=== Style
+
+[source]
+----
+style50 mario.c
 ----
 
 == Staff Solution
 
 [source]
 ----
-~cs50/chapter1/mario/less
+~cs50/unit1/mario/less
 ----
 
 == Hints
@@ -136,33 +135,6 @@ Try to establish a relationship between (a) the height the user would like the p
 
 == How to Submit
 
-=== Step 1 of 2
-
-Ensure that `mario.c` is in `~/workspace/chapter1/mario`, as with:
-
-[source]
-----
-cd ~/workspace/chapter1/mario
-ls
-----
-
-If `mario.c` is not in `~/workspace/chapter1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 2 of 2
-
-* To submit `mario`, execute
-+
-[source]
-----
-cd ~/workspace/chapter1/mario
-submit50 cs50/2017/ap/mario/less
-----
-+
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Mario.
