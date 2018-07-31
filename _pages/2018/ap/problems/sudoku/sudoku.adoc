@@ -41,7 +41,7 @@ First, log into https://cs50.io/[cs50.io]. Then, create a new directory inside o
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2018/ap/problems/sudoku/sudoku.zip
+wget https://cdn.cs50.net/ap/2018/problems/sudoku/sudoku.zip
 ----
 
 Unzip the ZIP file (remember how?) and then delete the ZIP file from your `unit4` directory. Navigate into your newly-created `sudoku` directory and type:
