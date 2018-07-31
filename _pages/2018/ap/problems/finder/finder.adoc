@@ -63,7 +63,7 @@ at your prompt to ensure that you're inside of `unit4` (which is inside of `work
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2018/ap/problems/finder/finder.zip
+wget https://cdn.cs50.net/ap/2018/problems/finder/finder.zip
 ----
 
 Then,
