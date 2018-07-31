@@ -1,5 +1,5 @@
 ---
-layout: 2018/fall
+layout: 2018/ap
 ---
 
 = Problem: Similarities
