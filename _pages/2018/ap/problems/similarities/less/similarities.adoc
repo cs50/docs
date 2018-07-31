@@ -41,7 +41,7 @@ Suffice it to say, the challenge ahead is to determine if two files are similar!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2017/fall/psets/6/similarities/less/similarities.zip
+$ wget https://cdn.cs50.net/ap/2018/problems/similarities/less/similarities.zip
 $ unzip similarities.zip
 $ rm similarities.zip
 $ cd similarities
