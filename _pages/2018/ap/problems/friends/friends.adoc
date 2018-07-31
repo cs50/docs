@@ -65,14 +65,14 @@ Keep in mind that `~` denotes your home directory, `~/workspace` denotes a direc
 ~/workspace/unit2 $
 ----
 
-Now, at the prompt, type:
+To download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`), type:
 
 [source,bash]
 ----
 wget https://cdn.cs50.net/ap/2018/problems/friends/friends.zip
 ----
 
-to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see some output followed by:
+You should see some output followed by:
 
 [source,bash]
 ----
