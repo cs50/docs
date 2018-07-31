@@ -125,7 +125,7 @@ Of course, `get_long(“ISBN: “)` itself will reject an ISBN-10's hyphens (and
 
 [source,subs=quotes]
 ----
-~/workspace/chapter1/isbn/ $ [underline]#./isbn#
+~/workspace/unit1/isbn/ $ [underline]#./isbn#
 ISBN: [underline]#0-789-75198-4#
 Retry: [underline]#foo#
 Retry: [underline]#0789751984#

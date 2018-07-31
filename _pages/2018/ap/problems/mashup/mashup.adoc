@@ -128,7 +128,7 @@ Note that Twitter hasn't updated their own version of the library for quite some
 
 === Downloading
 
-In your `chapter6` execute the following:
+In your `unit6` execute the following:
 
 [source,subs="macros"]
 ----

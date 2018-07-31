@@ -42,7 +42,7 @@ Open a text editor and create a file called ‘analyze’ (be sure that the file
 
 * Discuss your initial expectations of this course, and about how the course has either aligned with or deviated from these expectations.
 * Write about at least one programming problem and at least one writing problem that you enjoyed or did not enjoy. What specifically about that problem did you enjoy or not enjoy, and why do you feel that way?
-* Explain how your habits as a computer scientist have evolved. How do you do things differently at this point in the course from how you did the same things in Chapter 1? For instance, has your debugging strategy changed? Do you find yourself more intuitively counting from 0 instead of 1? Do you find that some of what you've learned in this course has extended to other domains of interest to you? How?
+* Explain how your habits as a computer scientist have evolved. How do you do things differently at this point in the course from how you did the same things in Unit 1? For instance, has your debugging strategy changed? Do you find yourself more intuitively counting from 0 instead of 1? Do you find that some of what you've learned in this course has extended to other domains of interest to you? How?
 * Do you feel you learn the most from watching videos, reading excerpts, reviewing slides, hearing audio, or some amalgam of these? Why do you think that is?
 * Explain how you expect your habits as a computer scientist and programmer to evolve further as you proceed through the course.
 * Touch on an "a-ha!" moment that you encountered in the course; a moment when suddenly a concept that you struggled with made sense. If you have yet to encounter or experience such a moment, discuss why.

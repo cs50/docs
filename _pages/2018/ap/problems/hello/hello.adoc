@@ -260,7 +260,7 @@ hello, world
 
 == Testing
 
-=== `check50`
+=== Correctness
 
 [source,text]
 ----

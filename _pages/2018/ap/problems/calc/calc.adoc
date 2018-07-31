@@ -52,7 +52,7 @@ cd ~/workspace/unit2
 
 Create a new `calc` directory inside `unit2` (remember how?). Next create a new file entitled `calc.c` in your `calc` directory.
 
-Though we'll remind you of the existence of this video many times throughout the problems in this chapter, be sure to have a look at Christopher's short video on command-line arguments.
+Though we'll remind you of the existence of this video many times throughout the problems in this unit, be sure to have a look at Christopher's short video on command-line arguments.
 
 video::X8PmYwnbLKM[youtube]
 

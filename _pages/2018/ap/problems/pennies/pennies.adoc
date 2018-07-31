@@ -59,7 +59,7 @@ For instance, your program might behave as follows, whereby underlined text repr
 
 [source,subs=quotes]
 ----
-~/workspace/chapter1/pennies/ $ [underline]#./pennies#
+~/workspace/unit1/pennies/ $ [underline]#./pennies#
 Days in month: [underline]#32#
 Days in month: [underline]#31#
 Pennies on first day: [underline]#1#
