@@ -72,7 +72,7 @@ at your prompt to ensure that you're inside of `unit3` (which is inside of `work
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2018/ap/problems/find/find.zip
+wget https://cdn.cs50.net/ap/2018/problems/find/find.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see a bunch of output followed by:
