@@ -37,7 +37,7 @@ Navigate to your `~/workspace/unit4` directory.  For the first time in a while, 
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2018/ap/problems/recover/recover.zip
+wget https://cdn.cs50.net/ap/2018/problems/recover/recover.zip
 ----
 
 This file's somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created `recover` directory. If you list the contents of your directory, you should find one file therein:
