@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Scramble (Part 1)
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -24,55 +22,40 @@ Score: 0
 Time:  30
 ----
 
-== Recommended Reading
-
-* Page 17 of http://www.howstuffworks.com/c.htm.
-* Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
-* Chapters 13, 15, and 18 of _Programming in C_.
-
 include::../../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Getting Started
 
-First, log into https://cs50.io/[cs50.io] and execute
+First, log into https://cs50.io/[cs50.io]. Then, execute
 
 [source,bash]
 ----
-update50
+cd ~/workspace/unit3
 ----
 
-within a terminal window to make sure your workspace is up-to-date.
-
-Then, execute
+at your prompt to ensure that you're inside of `unit3` (which is inside of `workspace` which is inside of your home directory). Then execute
 
 [source,bash]
 ----
-cd ~/workspace/chapter3
+wget http://docs.cs50.net/2018/ap/problems/scramble/scramble.zip
 ----
 
-at your prompt to ensure that you're inside of `chapter3` (which is inside of `workspace` which is inside of your home directory). Then execute
-
-[source,bash]
-----
-wget http://docs.cs50.net/2017/ap/problems/scramble/scramble.zip
-----
-
-to download this problem's distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `chapter3` directory. Navigate into your newly-created `scramble` directory (remember how?) and type:
+to download this problem's distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `unit3` directory. Navigate into your newly-created `scramble` directory (remember how?) and type:
 
 [source,bash]
 ----
@@ -98,7 +81,7 @@ In your terminal prompt, execute:
 
 [source,bash]
 ----
-~cs50/chapter3/scramble
+~cs50/unit3/scramble
 ----
 
 in order to try out the staff's implementation of `scramble`. You should see a 4x4 grid filled with letters. As soon as you spot a word, type it and hit Enter. If it's indeed a word in the grid (and in a dictionary of English words), your score will increase 1 point for each letter in the word. (Good job!) By default, you'll have 30 seconds to find as many words as you can. You won't see the clock ticking, but each time you input a word, you'll see how many seconds you have left. As soon as time's run out, you'll be allowed to type one last word. (To quit the game early, hit ctrl-c.)
@@ -107,21 +90,21 @@ Now execute again:
 
 [source,bash]
 ----
-~cs50/chapter3/scramble
+~cs50/unit3/scramble
 ----
 
 Odds are the grid of letters changed? That's because the distribution code uses `rand`. But what if you don't want the grid's letters to change each time you run `scramble`, particularly while debugging? No problem, simply execute
 
 [source,bash]
 ----
-~cs50/chapter3/scramble 1
+~cs50/unit3/scramble 1
 ----
 
 to play grid #1, or
 
 [source,bash]
 ----
-~cs50/chapter3/scramble 2
+~cs50/unit3/scramble 2
 ----
 
 to play grid #2, etc. That otherwise optional command-line arguments will be used as a "seed" for `rand` in order to perturb its output.
@@ -179,53 +162,26 @@ type `FOO` or `foo` (or even `FoO` or any other capitalization thereof) in order
 Now you can play (well, maybe after some debugging) your own version of `scramble`!
 
 
-=== `check50`
+== Testing
+
+=== Correctness
+
+If you'd like to check the correctness of your program with `check50`, you may execute the below.
 
 [source]
 ----
-check50 cs50/2017/ap/scramble/1
+check50 cs50/2018/ap/scramble/1
+----
+
+=== Style
+
+[source]
+----
+style50 scramble.c
 ----
 
 == How to Submit
 
-=== Step 1 of 3
-
-Update your IDE:
-
-[source]
-----
-update50
-----
-
-=== Step 2 of 3
-
-
-Be sure that `scramble.c` is in `~/workspace/chapter3/scramble`, as with:
-
-[source]
-----
-cd ~/workspace/chapter3/scramble
-ls
-----
-
-If `scramble.c` is not in `~/workspace/chapter3/scramble`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-Submit `scramble`:
-
-[source]
-----
-cd ~/workspace/chapter3/scramble/
-submit50 cs50/2017/ap/scramble/1
-----
-
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Scramble (Part 1).

@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Sort Race
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -18,12 +16,6 @@ bubble sort benchmark:         11.820 seconds
 selection sort benchmark:      2.696 seconds
 insertion sort benchmark:      2.496 seconds
 ----
-
-== Recommended Reading
-
-* Page 17 of http://www.howstuffworks.com/c.htm.
-* Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
-* Chapters 13, 15, and 18 of _Programming in C_.
 
 include::../../honesty.adoc[]
 
@@ -45,25 +37,18 @@ Before moving on, be sure you're comfortable answering the following questions:
 
 == Getting Started
 
-As always, first log into your CS50 IDE at https://cs50.io/[cs50.io] and execute
+As always, first log into your CS50 IDE at https://cs50.io/[cs50.io]. Next, execute
 
 [source,bash]
 ----
-update50
+cd ~/workspace/unit3
 ----
 
-within a terminal window to make sure your workspace is up-to-date. Next, execute
-
-[source,bash]
-----
-cd ~/workspace/chapter3
-----
-
-at your prompt to ensure that you're inside of the `chapter3` directory within your `workspace` directory. Then execute
+at your prompt to ensure that you're inside of the `unit3` directory within your `workspace` directory. Then execute
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/race/race.zip
+wget http://docs.cs50.net/2018/ap/problems/race/race.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace. You should see a bunch of output followed by:
@@ -242,7 +227,7 @@ Theoretically, as __n__ gets larger and larger, yes, these three algorithms will
 
 [source,subs=quotes]
 ----
-~/workspace/chapter3/race/ $ [underline]#./race -b 2000#
+~/workspace/unit3/race/ $ [underline]#./race -b 2000#
 bubble sort benchmark:         0.056 seconds
 selection sort benchmark:      0.012 seconds
 insertion sort benchmark:      0.020 seconds
@@ -252,7 +237,7 @@ Not too much of a difference. But what about
 
 [source,subs=quotes]
 ----
-~/workspace/chapter3/race/ $ [underline]#./race -r 100000#
+~/workspace/unit3/race/ $ [underline]#./race -r 100000#
 bubble sort benchmark:         129.968 seconds
 selection sort benchmark:      31.312 seconds
 insertion sort benchmark:      27.468 seconds
@@ -262,7 +247,7 @@ Ouch! Or lastly
 
 [source,subs=quotes]
 ----
-~/workspace/chapter3/race/ $ [underline]#./race -s 20000#
+~/workspace/unit3/race/ $ [underline]#./race -s 20000#
 bubble sort benchmark:         0.000 seconds
 selection sort benchmark:      1.420 seconds
 insertion sort benchmark:      0.000 seconds
@@ -272,13 +257,24 @@ Hmm... selection sort still took that much time to "sort" an already-sorted arra
 
 And know that because of varying processor performance and system load, under otherwise-identical conditions from run-to-run the running time of these algorithms may vary somewhat.
 
+== Testing
+
+=== Correctness
+
 `check50` is not capable of detecting whether you are implementing bubble, selection, or insertion sort correctly. It is only capable of determining whether your output is indeed sorted. Because the crux of this problem lies in implementing these sorts correctly, we leave it to you (and GDB!) to ensure that your three functions are implemented properly.
 
-To run the staff solution, simply execute:
+=== Style
 
-[source,bash]
+[source]
 ----
-~cs50/chapter3/race
+style50 helpers.c
+----
+
+== Staff Solution
+
+[source]
+----
+~cs50/unit3/race
 ----
 
 passing in appropriate command-line arguments.
@@ -287,44 +283,6 @@ In no part of this problem are you expected to optimize your runtimes for any of
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
-
-* Recall that you were asked to implement the `sort race`. 
-** Be sure that the following files exist in `~/workspace/chapter3/race/`:
-* `Makefile`  
-* `helpers.c`  
-* `helpers.h`
-* `race.o` 
-as with:
-
-+
-[source]
-----
-cd ~/workspace/chapter3/race/
-ls
-----
-
-Since there is no way to automatically check for correctness here this project is graded on completion.
-
-=== Step 3 of 3
-
-Submit `Sort Race`:
-
-[source]
-----
-cd ~/workspace/chapter3/race/
-submit50 cs50/2017/ap/race
-----
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
-
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Sort Race.

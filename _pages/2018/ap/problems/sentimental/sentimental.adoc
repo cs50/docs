@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Sentimental
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -15,24 +13,24 @@ include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 [source]
 ----
 update50
-mkdir ~/workspace/chapter6/
-cd ~/workspace/chapter6/
+mkdir ~/workspace/unit6/
+cd ~/workspace/unit6/
 mkdir sentimental
 ----
 

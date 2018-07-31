@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Recover
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -16,50 +14,30 @@ Implement a program that recovers JPEGs from a forensic image, per the below.
 $ [underline]#./recover card.raw#
 ----
 
-== Recommended Reading*
-
-* Chapters 18, 24, 25, 27, and 28 of _Absolute Beginner's Guide to C_
-* Chapters 9, 11, 14, and 16 of _Programming in C_
-* http://www.cprogramming.com/tutorial/cfileio.html
-* http://en.wikipedia.org/wiki/BMP_file_format
-* http://en.wikipedia.org/wiki/Hexadecimal
-* http://en.wikipedia.org/wiki/Jpg
-
-pass:[*] The Wikipedia articles are a bit dense; feel free to skim or skip!
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 ==  Getting Started
 
-To start, open a terminal window and execute
+Navigate to your `~/workspace/unit4` directory.  For the first time in a while, no big code distro this time, but there is one important file to download. Execute
 
 [source,bash]
 ----
-update50
-----
-
-to make sure your workspace is up-to-date.
-
-Next, navigate to your `~/workspace/chapter4` directory.  For the first time in a while, no big code distro this time, but there is one important file to download. Execute
-
-[source,bash]
-----
-wget http://docs.cs50.net/2017/ap/problems/recover/recover.zip
+wget http://docs.cs50.net/2018/ap/problems/recover/recover.zip
 ----
 
 This file's somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created `recover` directory. If you list the contents of your directory, you should find one file therein:
@@ -71,13 +49,9 @@ card.raw
 
 You'll be doing all your work for this problem inside of a new file called `recover.c`. 
 
-== Genius Bar
-
-Alright, now let's put all your new skills to the test.
-
 == Background
 
-In anticipation of this problem, David spent the past several days taking photos of people I know, all of which were saved by my digital camera as JPEGs on a memory card. (Okay, it's possible he actually spent the past several days on Facebook instead.) Unfortunately, he somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." His computer insists that the card is now blank, but something tells us that's not quite true. Your task is to write a program that recovers the photos for David!
+In anticipation of this problem, we spent the past several days taking photos of people we know, all of which were saved by my digital camera as JPEGs on a memory card. (Okay, it's possible we actually spent the past several days on Facebook instead.) Unfortunately, we somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." Even though the camera insists that the card is now blank, we're pretty sure that's not quite true. Indeed, we're hoping (er, expecting!) you can write a program that recovers the photos for us!
 
 Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patterns of bytes that can distinguish them from other file formats. Specifically, the first three bytes of JPEGs are
 
@@ -133,11 +107,18 @@ $ [underline]#echo $?#
 
 == Testing
 
-=== `check50`
+=== Correctness
 
 [source]
 ----
-check50 cs50/2017/ap/recover
+check50 cs50/2018/ap/recover
+----
+
+=== Style
+
+[source]
+----
+style50 recover.c
 ----
 
 == Staff Solution
@@ -175,48 +156,9 @@ Just be careful with that `-f` switch, as it "forces" deletion without prompting
 
 == How to Submit
 
-
-=== Step 1 of 3
-
-Update your IDE:
-
-[source]
-----
-update50
-----
-
-=== Step 2 of 3
-
-Be sure that `recover.c` is in `~/workspace/chapter4/recover`, as with:
-
-[source]
-----
-cd ~/workspace/chapter4/recover
-ls
-----
-
-If any file is not in `~/workspace/chapter4/recover`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-Submit `recover`:
-
-[source]
-----
-cd ~/workspace/chapter4/recover/
-submit50 cs50/2017/ap/recover
-----
-
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Recover.
-
 
 == FAQs
 

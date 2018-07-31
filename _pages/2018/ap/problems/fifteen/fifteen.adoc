@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Fifteen
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -25,26 +23,20 @@ WELCOME TO GAME OF FIFTEEN
 Tile to move:
 ----
 
-== Recommended Reading
-
-* Page 17 of http://www.howstuffworks.com/c.htm.
-* Chapters 20 and 23 of _Absolute Beginner's Guide to C_.
-* Chapters 13, 15, and 18 of _Programming in C_.
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -58,27 +50,20 @@ video::-G_klBQLgdc[youtube]
 
 Recall that, for almost all of Chapters 1 and 2, you started writing programs from scratch, creating your own `chapter1` and `chapter2` directories with `mkdir`. For this problem, you'll instead download some "distribution code" (otherwise known as a "distro"), written by us, and add your own lines of code to it.  You'll first need to read and understand our code, though, so this problem set is as much about learning to read someone else's code as it is about writing your own!
 
-Let's get you started. Log into https://cs50.io/[cs50.io] and execute
-
-[source,bash]
-----
-update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*.
+Let's get you started. Log into https://cs50.io/[cs50.io] 
 
 Next, execute
 
 [source,bash]
 ----
-cd ~/workspace/chapter3
+cd ~/workspace/unit3
 ----
 
-at your prompt to ensure that you're inside of `chapter3` (which is inside of `workspace` which is inside of your home directory). Then execute
+at your prompt to ensure that you're inside of `unit3` (which is inside of `workspace` which is inside of your home directory). Then execute
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/fifteen/fifteen.zip
+wget http://docs.cs50.net/2018/ap/problems/fifteen/fifteen.zip
 ----
 
 to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see a bunch of output followed by:
@@ -214,71 +199,35 @@ To test your implementation of `fifteen`, you can certainly try playing it. (Kno
 
 [source]
 ----
-./fifteen 3 < ~cs50/chapter3/3x3.txt
+./fifteen 3 < ~cs50/unit3/3x3.txt
 ----
 
-=== `check50`
+=== Correctness
 
 Note that `check50` assumes that your board's blank space is implemented in `board` as `0`; if you've chosen some other value, best to change to `0` for ``check50``'s sake. Also note that `check50` assumes that you're indexing into `board` a la `board[row][column]`, not `board[column][row]`.
 
 [source]
 ----
-check50 cs50/2017/ap/fifteen
+check50 cs50/2018/ap/fifteen
+----
+
+=== Style
+
+[source]
+----
+style50 fifteen.c
 ----
 
 == Staff Solution
 
 [source]
 ----
-~cs50/chapter3/fifteen
+~cs50/unit3/fifteen
 ----
 
 == How to Submit
 
-=== Step 1 of 3
-
-Update your IDE:
-
-[source]
-----
-update50
-----
-
-=== Step 2 of 3
-
-Ensure you have all of the files below:
-
-* fifteen.c
-* Makefile
-* questions.txt
-
-Be sure that each of your files are in `~/workspace/chapter3/fifteen`, as with:
-
-[source]
-----
-cd ~/workspace/chapter3/fifteen
-ls
-----
-
-If any file is not in `~/workspace/chapter3/fifteen`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-Submit `fifteen`:
-
-[source]
-----
-cd ~/workspace/chapter3/fifteen/
-submit50 cs50/2017/ap/fifteen
-----
-
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Fifteen.
 

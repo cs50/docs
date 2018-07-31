@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Whodunit
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -16,31 +14,20 @@ Answer some questions and then implement a program that reveals a reveals a hidd
 $ [underline]#./whodunit clue.bmp verdict.bmp#
 ----
 
-== Recommended Reading*
-
-* Chapters 18, 24, 25, 27, and 28 of _Absolute Beginner's Guide to C_
-* Chapters 9, 11, 14, and 16 of _Programming in C_
-* http://www.cprogramming.com/tutorial/cfileio.html
-* http://en.wikipedia.org/wiki/BMP_file_format
-* http://en.wikipedia.org/wiki/Hexadecimal
-* http://en.wikipedia.org/wiki/Jpg
-
-pass:[*] The Wikipedia articles are a bit dense; feel free to skim or skip!
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -54,28 +41,22 @@ Next, join Nate on a tour of `valgrind`, a command-line tool that will help you 
 
 video::fvTsFjDuag8[youtube]
 
-Finally, remind yourself how GDB works if you've forgotten or not yet used! (It's worth it!)
+Finally, remind yourself how debug50 works if you've forgotten or not yet used! (It's worth it!)
 
-video::-G_klBQLgdc[youtube]
+[source,bash]
+----
+debug50 ./whodunit clue.bmp verdict.bmp
+----
 
 ==  Getting Started
 
 Welcome back!
 
-As always, first open a terminal window and execute
+Next, navigate to your `~/workspace/unit4` directory.  Then execute
 
 [source,bash]
 ----
-update50
-----
-
-to make sure your workspace is up-to-date.
-
-Next, navigate to your `~/workspace/chapter4` directory.  Then execute
-
-[source,bash]
-----
-wget http://docs.cs50.net/2017/ap/problems/whodunit/whodunit.zip
+wget http://docs.cs50.net/2018/ap/problems/whodunit/whodunit.zip
 ----
 
 in order to download a ZIP (i.e., compressed version) of this problem set's distro.  If you then execute
@@ -85,7 +66,7 @@ in order to download a ZIP (i.e., compressed version) of this problem set's dist
 ls
 ----
 
-you should see that you now have a file called `whodunit.zip` in your `~/workspace/chapter4` directory.  Unzip it by executing the below.
+you should see that you now have a file called `whodunit.zip` in your `~/workspace/unit4` directory.  Unzip it by executing the below.
 
 [source,bash]
 ----
@@ -314,24 +295,11 @@ fprintf(stderr, "Usage: ./whodunit infile outfile\n");
 
 == Questions
 
-Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.
+Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works. 
 
-Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works. As always, `man` is your friend, and so, now, is Microsoft Developer Network (aka MSDN). If not sure on first glance how to answer some question, do some quick research and figure it out! You might want to turn to https://reference.cs50.net/stdio as well.
+Open up `README.md` and replace every `TODO` therein (except the last) with your answer to the question above it. That file happens to be written in Markdown, a lightweight format for text files that makes it easy to stylize text. For instance, we've prefixed each question with `##` so that, when viewed on GitHub, it renders in a larger, bold font. And we've surrounded code-related keywords with backticks (\`) so that they render on GitHub in a monospaced (i.e., code-like) font.
 
-In `questions.txt`, answer each of the following questions in a sentence or more.
-
-. What's `stdint.h`?
-. What's the point of using `uint8_t`, `uint32_t`, `int32_t`, and `uint16_t` in a program?
-. How many bytes is a `BYTE`, a `DWORD`, a `LONG`, and a `WORD`, respectively?
-. What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? Leading bytes used to identify file formats (with high probability) are generally called "magic numbers."
-. What's the difference between `bfSize` and `biSize`?
-. What does it mean if `biHeight` is negative?
-. What field in `BITMAPINFOHEADER` specifies the BMP's color depth (i.e., bits per pixel)?
-. Why might `fopen` return `NULL` in lines 29 and 37 of `copy.c`?
-. Why is the third argument to `fread` always `1` in our code?
-. What value does line 65 of `copy.c` assign to `padding` if `bi.biWidth` is `3`?
-. What does `fseek` do?
-. What is `SEEK_CUR`?
+No need to write your answers in Markdown; plaintext suffices. But if you'd like to format your answers somehow, see https://guides.github.com/features/mastering-markdown/ for a tutorial.
 
 == Specification
 
@@ -344,6 +312,10 @@ Implement a program called `whodunit` that reveals Mr. Boddy's drawing in such a
 * If the output file cannot be opened for writing, your program should inform the user as much, as with `fprintf` (to `stderr`), and `main` should return `3`.
 * If the input file is not a 24-bit uncompressed BMP 4.0, your program should inform the user as much, as with `fprintf` (to `stderr`), and `main` should return `4`.
 * Upon success, `main` should `0`.
+
+== Questions, continued
+
+Alright, whodunit? Replace the last `TODO` in `README.md` with your answer!
 
 == Walkthrough
 
@@ -390,14 +362,9 @@ There's nothing hidden in `smiley.bmp`, but feel free to test your program out o
 
 Rest assured that more than one solution is possible. So long as Mr. Boddy's drawing is identifiable (by you), no matter its legibility, Mr. Boddy will rest in peace.
 
-When submitting this problem, you'll be asked whodunit!
+== Testing
 
-== `check50`
-
-[source]
-----
-check50 cs50/2017/ap/whodunit
-----
+Because `whodunit` can be implemented in several ways, afraid you can't check your implementation's correctness with `check50`!
 
 == Staff Solution
 
@@ -406,51 +373,6 @@ No solution from the staff, lest it spoil your fun!
 
 == How to Submit
 
-
-=== Step 1 of 3
-
-Update your IDE:
-
-[source]
-----
-update50
-----
-
-=== Step 2 of 3
-
-Ensure you have all of the files below:
-
-* whodunit.c
-* Makefile
-* questions.txt
-* bmp.h
-
-Be sure that each of your files are in `~/workspace/chapter4/whodunit`, as with:
-
-[source]
-----
-cd ~/workspace/chapter4/whodunit
-ls
-----
-
-If any file is not in `~/workspace/chapter4/whodunit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-Submit `whodunit`:
-
-[source]
-----
-cd ~/workspace/chapter4/whodunit/
-submit50 cs50/2017/ap/whodunit
-----
-
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Whodunit.

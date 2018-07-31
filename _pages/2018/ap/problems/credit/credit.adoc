@@ -135,7 +135,7 @@ style50 credit.c
 
 [source]
 ----
-~cs50/chapter1/credit
+~cs50/unit1/credit
 ----
 
 == How to Submit

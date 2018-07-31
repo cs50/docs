@@ -1,8 +1,8 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 
-= Resize
+= Problem: Resize
 
 == tl;dr
 
@@ -21,6 +21,21 @@ $ [underline]#./resize 4 small.bmp large.bmp#
 == Background
 
 Be sure you're familiar with the structure of 24-bit uncompressed BMPs, as introduced in link:../../whodunit/whodunit[Whodunit].
+
+== Assessment
+
+Your work on this problem set will be evaluated along three axes primarily.
+
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Distribution
 
@@ -113,75 +128,29 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 ~cs50/hacker4/peek student.bmp staff.bmp
 ----
 
-=== `check50`
+=== Correctness
 
 [source]
 ----
-check50 cs50/2017/ap/resize/more
+check50 cs50/2018/ap/resize/more
+----
+
+=== Style
+
+[source]
+----
+style50 resize.c
 ----
 
 == Staff's Solution
 
 [source]
 ----
-~cs50/hacker4/resize
+~cs50/unit4/resize/more
 ----
 
 == How to Submit
 
-=== Step 1 of 3
-
-Update your IDE:
-
-[source]
-----
-update50
-----
-
-=== Step 2 of 3
-
-Ensure you have all of the files below:
-
-* resize.c
-* Makefile
-
-Be sure that each of your files are in `~/workspace/chapter4/resize`, as with:
-
-[source]
-----
-cd ~/workspace/chapter4/resize
-ls
-----
-
-If any file is not in `~/workspace/chapter4/resize`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-Submit `resize`:
-
-[source]
-----
-cd ~/workspace/chapter4/resize/
-submit50 cs50/2017/ap/resize/more
-----
-
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Resize.
-
-== FAQs
-
-_None so far! Reload this page periodically to check if any arise!_
-
-== Changelog
-
-* 2016-09-27
-** Added a clarification regarding which file pointer to use for `fprintf`.
-* 2016-09-23
-** Initial release.
