@@ -1,6 +1,7 @@
 ---
 layout: 2018/ap
 ---
+:skip-front-matter:
 
 = Problem: Resize
 
