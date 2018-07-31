@@ -5,8 +5,6 @@ layout: 2017/ap
 
 = Problem: Sudoku
 
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
-
 == tl;dr
 
 Implement the game of Sudoku, per the below:
@@ -24,38 +22,29 @@ include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Getting Started
 
-First, log into https://cs50.io/[cs50.io] and execute
+First, log into https://cs50.io/[cs50.io]. Then, create a new directory inside of your `workspace` called `unit4` (Remember how?) and navigate inside. Once there, obtain a copy of this problem's distro by typing:
 
 [source,bash]
 ----
-update50
+wget http://docs.cs50.net/2018/ap/problems/sudoku/sudoku.zip
 ----
 
-within a terminal window to make sure your workspace is up-to-date.
-
-Then, create a new directory inside of your `workspace` called `chapter4` (Remember how?) and navigate inside. Once there, obtain a copy of this problem's distro by typing:
-
-[source,bash]
-----
-wget http://docs.cs50.net/2017/ap/problems/sudoku/sudoku.zip
-----
-
-Unzip the ZIP file (remember how?) and then delete the ZIP file from your `chapter4` directory. Navigate into your newly-created `sudoku` directory and type:
+Unzip the ZIP file (remember how?) and then delete the ZIP file from your `unit4` directory. Navigate into your newly-created `sudoku` directory and type:
 
 [source,bash]
 ----
@@ -132,7 +121,7 @@ Now, let's talk about that skeleton. Basically, we've implemented the aesthetics
 
 Because this game is meant to be more sophisticated (and fun) than previous ones, you'll also find that we've given you quite a bit more code this time. Don't freak out, but it's just over 600 lines. But know now that none of it is all that complex. In fact, if you look at each of the functions in isolation, you'll likely find each pretty straightforward. What's neat is that when you combine so many building blocks, you get some pretty compelling results. In fact, let's take a look.
 
-Navigate to your `~/workspace/chapter4/sudoku` directory and execute the increasingly familiar command below:
+Navigate to your `~/workspace/unit4/sudoku` directory and execute the increasingly familiar command below:
 
 [source,bash]
 ----
@@ -246,7 +235,7 @@ So that's everything. Not bad for about 600 lines.
 
 The funny thing is that none of the 600 or so lines actually implements Sudoku. But that's where you come in! Your challenge is to implement a few features, among them support for actual game play.
 
-Before you do, though, a few questions for you. Create a file called `questions.txt` in `~/workspace/chapter4/sudoku` and record in it your answers to the below:
+Before you do, though, a few questions for you. Create a file called `questions.txt` in `~/workspace/unit4/sudoku` and record in it your answers to the below:
 
 . Notice that `main` calls `strcmp`. What does it mean if `strcmp`, when passed two strings as arguments, returns `0`?
 . How would you rewrite the line below, excerpted from `main`, using only `if` and `else`?
@@ -298,51 +287,24 @@ video::AXwGVXD7qEQ[youtube]
 
 And you might wish that your Sudoku game was more like http://xkcd.com/74/[this]. But you'll have created a pretty darn impressive game, that hopefully your family and friends will enjoy.
 
-To play with the staff's own implementation of Sudoku, you may execute the below.
+== Testing
+
+=== Style
+
+[source]
+----
+style50 sudoku.c
+----
+
+== Staff Solution
 
 [source,bash]
 ----
-~cs50/chapter4/sudoku
+~cs50/unit4/sudoku
 ----
-
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
-
-* Recall that you were asked to implement the `sudoku`. 
-** Be sure that the following files exist in `~/workspace/chapter4/sudoku/`:
-* `Makefile`  
-* `sudoku.c`  
-* `sudoku.h` 
-as with:
-
-+
-[source]
-----
-cd ~/workspace/chapter4/sudoku/
-ls
-----
-
-
-=== Step 3 of 3
-
-Submit `Sort Race`:
-
-[source]
-----
-cd ~/workspace/chapter4/sudoku/
-submit50 cs50/2017/ap/sudoku
-----
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Sudoku.

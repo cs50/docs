@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Finder
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -21,26 +19,20 @@ $ [underline]#cat staff_found.txt#
 /home/ubuntu/.nvm/versions/node/v4.7.3/include/node/openssl/ssl.h
 ----
 
-== Recommended Reading
-
-* Chapters 28-29 of _Programming in C_.
-* http://www.cprogramming.com/tutorial/cfileio.html
-* http://www.cprogramming.com/tutorial/c/lesson16.html
-
 include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
- To what extent is your code consistent with our specifications and free of bugs?
+  To what extent is your code consistent with our specifications and free of bugs?
+
 Design::
- To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
 Style::
- To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
@@ -60,27 +52,18 @@ These two concepts are the basis of this problem, so make sure you understand ho
 
 == Getting Started
 
-As usual, after logging into https://cs50.io[cs50.io], execute
+As usual, after logging into https://cs50.io[cs50.io].Next, execute
 
 [source,bash]
 ----
-update50
+cd ~/workspace/unit4
 ----
 
-within a terminal window to make sure your workspace is up-to-date.
-
-Next, execute
+at your prompt to ensure that you're inside of `unit4` (which is inside of `workspace` which is inside of your home directory). Then execute
 
 [source,bash]
 ----
-cd ~/workspace/chapter4
-----
-
-at your prompt to ensure that you're inside of `chapter4` (which is inside of `workspace` which is inside of your home directory). Then execute
-
-[source,bash]
-----
-wget http://docs.cs50.net/2017/ap/problems/finder/finder.zip
+wget http://docs.cs50.net/2018/ap/problems/finder/finder.zip
 ----
 
 Then,
@@ -115,7 +98,7 @@ as needed, to "move up" one level back to the `finder` directory, or go there di
 
 [source, bash]
 ----
-cd ~/workspace/chapter4/finder
+cd ~/workspace/unit4/finder
 ----
 
 and you're ready to start.
@@ -242,62 +225,35 @@ Phew, we made it. If unsure of how to start, review the shorts above! And as alw
 
 You should also feel free to test your code by creating new directories and files containing any strings your heart desires, and searching for those strings to see if your program can find them correctly.
 
-=== `check50`
+== Testing
+
+=== Correctness
 
 [source]
 ----
-check50 cs50/2017/ap/finder
+check50 cs50/2018/ap/finder
 ----
 
+=== Style
+
+[source]
+----
+style50 finder.c
+----
+
+== Staff Solution
 
 If you'd like to play around with the staff's solution, execute
 
 [source, bash]
 ----
-~cs50/chapter4/finder
+~cs50/unit4/finder
 ----
 
 That program will generate a file in the same directory as `finder.c` entitled `staff_found.txt`. If you open the file and look at it, you'll see the names of all the files (with file paths relative to the directory `finder.c` is in) that contain the search string you sought out.
 
 == How to Submit
 
-=== Step 1 of 3
-
-Update your IDE:
-
-[source]
-----
-update50
-----
-
-=== Step 2 of 3
-
-Be sure that each of your files are in `~/workspace/chapter4/finder`, as with:
-
-[source]
-----
-cd ~/workspace/chapter4/finder
-ls
-----
-
-If any file is not in `~/workspace/chapter4/finder`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 3 of 3
-
-Submit `finder`:
-
-[source]
-----
-cd ~/workspace/chapter4/finder
-submit50 cs50/2017/ap/finder
-----
-
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Finder.
