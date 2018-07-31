@@ -1,9 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
-= C$50 Finance
+= Problem: C$50 Finance
 
 == tl;dr
 
@@ -12,6 +12,21 @@ Implement a website via which users can "buy" and "sell" stocks, a la the below.
 image::finance.png["C$50 Finance",role="related thumb"]
 
 include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along three axes primarily.
+
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Background
 
@@ -29,7 +44,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://docs.cs50.net/2017/ap/problems/finance/finance.zip
+$ wget http://docs.cs50.net/2018/ap/problems/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance
@@ -190,7 +205,7 @@ video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 Be sure to test your web app manually too, as by
 
-* inputting alpabetical strings into forms when only numbers are expected,
+* inputting alphabetical strings into forms when only numbers are expected,
 * inputting zero or negative numbers into forms when only positive numbers are expected,
 * inputting floating-point values into forms when only integers are expected,
 * trying to spend more cash than a user has,
@@ -202,7 +217,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/2018/spring/finance
+check50 cs50/2018/ap/finance
 ----
 
 === Style
@@ -247,18 +262,9 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 
 == How to Submit
 
-=== Step 1 of 2
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
-Run `update50`
-
-=== Step 2 of 2
-
-[source]
-----
-cd ~/workspace/chapter6/finance/
-submit50 cs50/2017/ap/finance
-----
-
+This was C$50 Finance.
 
 == FAQs
 
@@ -273,5 +279,3 @@ If, upon running `flask`, you see this error, odds are you (still) have `flask` 
 === check50 ran into an error while running checks!
 
 If, upon running `check50`, you see this error, odds are you have a bug in your code somewhere! Open up the CS50.me produced by `check50` to see a detailed traceback to help you debug!
-
-This was C$50 Finance.

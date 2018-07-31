@@ -26,6 +26,10 @@ Style::
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
+== Getting Started
+
+Login to your CS50 IDE and execute the following:
+
 [source]
 ----
 update50
@@ -45,8 +49,8 @@ All code that you write should be consistent with https://www.python.org/dev/pep
 . Implement either of the below exactly as specified but in Python:
 +
 --
-* link:../mario/less/mario.html[Mario], less comfortable, in a file called `mario.py` in `chapter6/`.
-* link:../mario/more/mario.html[Mario], more comfortable, in a file called `mario.py` in `chapter6/`.
+* link:../mario/less/mario.html[Mario], less comfortable, in a file called `mario.py` in `unit6/`.
+* link:../mario/more/mario.html[Mario], more comfortable, in a file called `mario.py` in `unit6/`.
 --
 +
 
@@ -58,8 +62,8 @@ video::gqS876f0lk0[youtube]
 . Implement the problems below exactly as specified but in Python:
 +
 --
-* link:../greedy/greedy.html[Greedy], in a file called `greedy.py` in `chapter6/`.
-* link:../caesar/caesar.html[Caesar], in a file called `caesar.py` in `chapter6/`.
+* link:../cash/cash.html[Cash], in a file called `cash.py` in `unit6/`.
+* link:../caesar/caesar.html[Caesar], in a file called `caesar.py` in `unit6/`.
 --
 
 == Walkthroughs
@@ -72,17 +76,17 @@ video::5I7QqTTolHE[youtube]
 === Correctness
 
 ```
-check50 cs50/2017/ap/sentimental/mario/less
-check50 cs50/2017/ap/sentimental/mario/more
-check50 cs50/2017/ap/sentimental/greedy
-check50 cs50/2017/ap/sentimental/caesar
+check50 cs50/2018/ap/sentimental/mario/less
+check50 cs50/2018/ap/sentimental/mario/more
+check50 cs50/2018/ap/sentimental/cash
+check50 cs50/2018/ap/sentimental/caesar
 ```
 
 === Style
 
 ```
 style50 mario.py
-style50 greedy.py
+style50 cash.py
 style50 caesar.py
 ```
 
@@ -90,7 +94,7 @@ style50 caesar.py
 
 * Be sure to use Python 3, not Python 2. The former is installed by default on CS50 IDE, but if Google leads you to Python's official documentation, be sure the URLs begin with https://docs.python.org/3/, not https://docs.python.org/2/.
 * If a program is in a file called, say, `foo.py`, you can run that program with `python foo.py`.
-* For Mario, Greedy, and Caesar, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python.
+* For Mario, Cash, and Caesar, it is *reasonable* to look at your own implementations thereof in C and others' implementations thereof in C, including the staff's implementations thereof (and postmortems) in C. It is *not reasonable* to look at others' implementations of the same in Python.
 * Consider this problem set an opportunity not only to port your own prior work from C to Python but to improve upon your earlier designs using lessons learned since!
 * When porting code from C to Python in CS50 IDE, you might want to select *View > Layout > Horizontal Split* so that you can see both side by side.
 * Insofar as a goal of these problems is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
@@ -114,67 +118,6 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 
 == How to Submit
 
-=== Step 1 of 2
-
-Recall that you were asked to create the files below:
-
-* `mario.py`
-* `greedy.py`
-* `caesar.py`
-
-Be sure that each of your files is in `~/workspace/chapter6/sentimental/`, as with:
-
-[source]
-----
-cd ~/workspace/chapter6/sentimental/
-ls
-----
-
-If any file is not in `~/workspace/chapter6/sentimental/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 2 of 2
-
-* To submit `mario` (less comfy), execute
-+
-[source]
-----
-cd ~/workspace/chapter6/sentimental/
-submit50 cs50/2017/ap/sentimental/mario/less
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-* To submit `mario` (more comfy), execute
-+
-[source]
-----
-cd ~/workspace/chapter6/sentimental/
-submit50 cs50/2017/ap/sentimental/mario/more
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-* To submit `greedy`, execute
-+
-[source]
-----
-cd ~/workspace/chapter6/sentimental/
-submit50 cs50/2017/ap/sentimental/greedy
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-* To submit `caesar`, execute
-+
-[source]
-----
-cd ~/workspace/chapter6/sentimental/
-submit50 cs50/2017/ap/sentimental/caesar
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like before the deadline.
-
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Sentimental.

@@ -1,5 +1,5 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -10,6 +10,23 @@ layout: 2017/ap
 Implement a website that lets users search for articles atop a map, a la the below.
 
 image::mashup.png["Mashup",role="related thumb"]
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along three axes primarily.
+
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Recommended Reading
 
@@ -22,21 +39,6 @@ image::mashup.png["Mashup",role="related thumb"]
 video::ZyXuwTTKKM0[youtube]
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this problem set will be evaluated along four axes primarily.
-
-Scope::
-  To what extent does your code implement the features required by our specification?
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-All students, whether or not taking the course for a letter grade, must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 == Background
 
@@ -130,7 +132,7 @@ In your `chapter6` execute the following:
 
 [source,subs="macros"]
 ----
-$ wget http://docs.cs50.net/2017/ap/problems/mashup/mashup.zip
+$ wget http://docs.cs50.net/2018/ap/problems/mashup/mashup.zip
 $ unzip mashup.zip
 $ rm mashup.zip
 $ cd mashup
@@ -508,19 +510,9 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 
 == How to Submit
 
-=== Step 1 of 2
+We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
-
-Run `update50`
-
-=== Step 2 of 2
-
-[source]
-----
-update50
-cd ~/workspace/chapter6/mashup/
-submit50 cs50/2017/ap/mashup
-----
+This was Mashup.
 
 == FAQs
 
@@ -535,5 +527,3 @@ By default, `flask` looks for a file called `application.py` in your current wor
 === OSError: [Errno 98] Address already in use
 
 If, upon running `flask`, you see this error, odds are you (still) have `flask` running in another tab. Be sure to kill that other process, as with ctrl-c, before starting `flask` again. If you haven't any such other tab, execute `fuser -k 8080/tcp` to kill any processes that are (still) listening on TCP port 8080.
-
-This was Mashup.
