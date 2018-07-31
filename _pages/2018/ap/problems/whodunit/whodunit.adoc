@@ -56,7 +56,7 @@ Next, navigate to your `~/workspace/unit4` directory.  Then execute
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2018/ap/problems/whodunit/whodunit.zip
+wget https://cdn.cs50.net/ap/2018/problems/whodunit/whodunit.zip
 ----
 
 in order to download a ZIP (i.e., compressed version) of this problem set's distro.  If you then execute
