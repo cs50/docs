@@ -128,7 +128,7 @@ In http://docs.cs50.net/2018/ap/problems/hello/hello.html[Hello] you were asked 
 
 [source,subs=quotes]
 ----
-~/workspace/chapter2/friends $ [underline]#./hello#
+~/workspace/unit2/friends $ [underline]#./hello#
 Your name: [underline]#Zamyla#
 hello, Zamyla
 ----
