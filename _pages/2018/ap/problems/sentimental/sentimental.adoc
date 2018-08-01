@@ -76,10 +76,10 @@ video::5I7QqTTolHE[youtube]
 === Correctness
 
 ```
-check50 cs50/2018/ap/sentimental/mario/less
-check50 cs50/2018/ap/sentimental/mario/more
-check50 cs50/2018/ap/sentimental/cash
-check50 cs50/2018/ap/sentimental/caesar
+check50 cs50/problems/2018/ap/sentimental/mario/less
+check50 cs50/problems/2018/ap/sentimental/mario/more
+check50 cs50/problems/2018/ap/sentimental/cash
+check50 cs50/problems/2018/ap/sentimental/caesar
 ```
 
 === Style
