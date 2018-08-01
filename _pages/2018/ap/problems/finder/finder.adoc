@@ -11,12 +11,18 @@ Implement a program to recursively search for files, per the below:
 
 [source, subs=quotes]
 ----
-$ [underline]#./finder hello ~/#
-$ [underline]#cat staff_found.txt#
-/nix/.node-gyp/4.3.1/include/node/openssl/symhacks.h
-/nix/.node-gyp/4.3.1/include/node/openssl/ssl.h
-[...]
-/home/ubuntu/.nvm/versions/node/v4.7.3/include/node/openssl/ssl.h
+$ [underline]#./finder cat ~/#
+----
+
+whereby your output is printed to a file called found.txt in the following way:
+
+[source, subs=quotes]
+----
+./cats.txt
+./001.txt
+./cats.txt
+./staff_found.txt
+./001.txt
 ----
 
 include::../../honesty.adoc[]
