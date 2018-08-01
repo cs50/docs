@@ -237,7 +237,7 @@ You should also feel free to test your code by creating new directories and file
 
 [source]
 ----
-check50 cs50/2018/ap/finder
+check50 cs50/problems/2018/ap/finder
 ----
 
 === Style

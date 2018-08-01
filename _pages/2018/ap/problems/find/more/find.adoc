@@ -430,7 +430,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2018/ap/find/more
+check50 cs50/problems/2018/ap/find/more
 ----
 
 === Style

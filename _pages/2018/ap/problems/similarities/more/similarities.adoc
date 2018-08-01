@@ -160,7 +160,7 @@ See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs
 === Correctness
 
 ```
-check50 cs50/2018/ap/similarities/more
+check50 cs50/problems/2018/ap/similarities/more
 ```
 
 === Style
