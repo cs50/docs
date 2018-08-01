@@ -112,7 +112,7 @@ pass:[#####]
 
 [source,text]
 ----
-check50 cs50/2018/ap/mario/less
+check50 cs50/problems/2018/ap/mario/less
 ----
 
 === Style

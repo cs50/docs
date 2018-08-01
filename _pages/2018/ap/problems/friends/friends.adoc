@@ -182,7 +182,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2018/ap/friends/hello
+check50 cs50/problems/2018/ap/friends/hello
 ----
 
 === Style
@@ -241,7 +241,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2018/ap/friends/fahrenheit
+check50 cs50/problems/2018/ap/friends/fahrenheit
 ----
 
 === Style
@@ -292,7 +292,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2018/ap/friends/pennies
+check50 cs50/problems/2018/ap/friends/pennies
 ----
 
 === Style

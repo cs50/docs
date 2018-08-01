@@ -105,7 +105,7 @@ pass:[####  ####]
 
 [source,text]
 ----
-check50 cs50/2018/ap/mario/more
+check50 cs50/problems/2018/ap/mario/more
 ----
 
 === Style

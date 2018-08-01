@@ -111,7 +111,7 @@ To test the correctness of your program, you may execute the below at the termin
 
 [source,bash]
 ----
-check50 cs50/2018/ap/pennies
+check50 cs50/problems/2018/ap/pennies
 ----
 
 === Style

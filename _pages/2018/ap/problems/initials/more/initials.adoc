@@ -6,7 +6,7 @@ layout: 2018/ap
 = Problem: Initials
 
 == tl;dr
- 
+
 Implement a program that, given a person's name, prints a person's initials, per the below.
 
 [source]
@@ -135,7 +135,7 @@ RTB
 
 [source,text]
 ----
-check50 cs50/2018/ap/initials/more
+check50 cs50/problems/2018/ap/initials/more
 ----
 
 === Style

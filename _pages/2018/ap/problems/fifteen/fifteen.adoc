@@ -50,7 +50,7 @@ video::-G_klBQLgdc[youtube]
 
 Recall that, for almost all of Unit 1 and 2, you started writing programs from scratch, creating your own `unit1` and `unit2` directories with `mkdir`. For this problem, you'll instead download some "distribution code" (otherwise known as a "distro"), written by us, and add your own lines of code to it.  You'll first need to read and understand our code, though, so this problem set is as much about learning to read someone else's code as it is about writing your own!
 
-Let's get you started. Log into https://cs50.io/[cs50.io] 
+Let's get you started. Log into https://cs50.io/[cs50.io]
 
 Next, execute
 
@@ -208,7 +208,7 @@ Note that `check50` assumes that your board's blank space is implemented in `boa
 
 [source]
 ----
-check50 cs50/2018/ap/fifteen
+check50 cs50/problems/2018/ap/fifteen
 ----
 
 === Style
@@ -230,4 +230,3 @@ style50 fifteen.c
 We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Fifteen.
-
