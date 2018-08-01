@@ -136,11 +136,11 @@ To help you test `vigenere`, we've written a program called `devigenere` for you
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
 
-=== Correctness 
+=== Correctness
 
 [source]
 ----
-check50 cs50/2018/ap/vigenere
+check50 cs50/problems/2018/ap/vigenere
 ----
 
 === Style
@@ -167,4 +167,3 @@ Not sure where to begin? As luck would have it, this program's pretty similar to
 We are not currently accepting submissions. Check back September 1, 2018 for more information.
 
 This was Vigenère.
-

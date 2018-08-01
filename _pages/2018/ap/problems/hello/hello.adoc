@@ -66,7 +66,7 @@ Click inside of that terminal window and then type
 update50
 ----
 
-followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!). 
+followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!).
 
 === Navigating CS50 IDE
 
@@ -264,7 +264,7 @@ hello, world
 
 [source,text]
 ----
-check50 cs50/2018/ap/hello
+check50 cs50/problems/2018/ap/hello
 ----
 
 Assuming your program is correct, you should then see output like

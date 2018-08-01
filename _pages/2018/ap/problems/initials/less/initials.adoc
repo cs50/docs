@@ -134,7 +134,7 @@ RTB
 
 [source,text]
 ----
-check50 cs50/2018/ap/initials/less
+check50 cs50/problems/2018/ap/initials/less
 ----
 
 === Style

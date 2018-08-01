@@ -121,7 +121,7 @@ Google (or perhaps a roommate's wallet) should turn up more. (If your roommate a
 
 [source,text]
 ----
-check50 cs50/2018/ap/credit
+check50 cs50/problems/2018/ap/credit
 ----
 
 === Style
