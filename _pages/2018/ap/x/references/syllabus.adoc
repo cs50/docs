@@ -3,7 +3,7 @@ layout: 2018/ap
 ---
 :skip-front-matter:
 
-=Syllabus
+= Syllabus
 
 == Instructor
 
@@ -93,31 +93,31 @@ And the six computational thinking practices are:
 * P6. Collaborating
 
 
-=== Unit 0 - Computers and Computing
+=== Unit 0 
 
 Computers and Computing. How Computers Work. Binary and ASCII. Logic and Processors. Memory. Algorithms.
 
-=== Unit 1 - Building Blocks of Programming
+=== Unit 1 
 
 Pseudocode. Scratch. Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops.
 
-=== Unit 2 - Putting the Blocks Together
+=== Unit 2 
 
 Compiling. Functions. Arrays and Strings. Command-Line Interaction. Exit Codes. Libraries. Typecasting. Bugs and Debugging.
 
-=== Unit 3 - Thinking Computationally
+=== Unit 3 
 
 Linear Search. Bubble Sort. Selection Sort. Insertion Sort. Binary Search. Computational Complexity. Unsolvable Problems. Models and Simulation.
 
-=== Unit 4 - Design, Elegance, and Efficiency
+=== Unit 4 
 
 Principles of Good Design. Ncurses. Structures and Encapsulation. Recursion. Merge Sort. Hexadecimal. File I/O. Images. Version Control and Collaboration.
 
-=== Unit 5 - Networking and the Internet
+=== Unit 5 
 
 Internet Basics. IP Addresses. DNS and DHCP. Routers. TCP and IP. HTTP. Trust Models. Cybersecurity. HTML. CSS.
 
-=== Unit 6 - Problem Solving in an Interconnected World
+=== Unit 6 
 
 Python. Python for Web Programming. SQL. MVC. JavaScript. Ajax. Artificial Intelligence and Machine Learning. Virtual and Augmented Reality.
 
