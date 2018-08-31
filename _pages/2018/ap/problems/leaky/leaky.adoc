@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Leaky
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 ==  tl;dr
 
@@ -15,10 +13,8 @@ include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
  To what extent is your code consistent with our specifications and free of bugs?
 Design::
@@ -39,11 +35,11 @@ update50
 
 within a terminal window to make sure your workspace is up-to-date.
 
-Next, navigate to your `workspace/chapterA` directory. Once there, execute the following:
+Next, navigate to your `workspace/unitA` directory. Once there, execute the following:
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/leaky/leaky.zip
+wget http://docs.cs50.net/2018/ap/problems/leaky/leaky.zip
 ----
 
 Unzip that file and navigate to the newly created directory. Inside, you should see four files:
@@ -97,7 +93,7 @@ To compare your program against the staff solution to see what exactly a clean b
 
 [source,bash]
 ----
-~cs50/chapterA/leakX
+~cs50/unitA/leakX
 ----
 
 again, where `X` is replaced by either `0`, `1`, or `2`.
