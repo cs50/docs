@@ -1,5 +1,5 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -17,20 +17,12 @@ $ [underline]#./calc2 + - / 4 2 24 x 8 9#
 50.000000
 ----
 
-== Recommended Reading
-
-* Pages 11 – 14 and 39 of http://www.howstuffworks.com/c.htm.
-* Chapters 6, 7, 10, 17, 19, 21, 22, 30, and 32 of _Absolute Beginner's Guide to C_.
-* Chapters 7, 8, and 10 of _Programming in C_.
-
 include::../../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
  To what extent is your code consistent with our specifications and free of bugs?
 Design::
@@ -51,7 +43,7 @@ update50
 
 within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
 
-Next, navigate to your `workspace` directory and create a new subdirectory inside of it called `chapterA` (Remember how?) Then navigate inside that directory. (Remember how?)
+Next, navigate to your `workspace` directory and create a new subdirectory inside of it called `unitA` (Remember how?) Then navigate inside that directory. (Remember how?)
 
 Finally, take a few minutes to watch Doug's video on stacks.
 
@@ -59,11 +51,11 @@ video::9Tp8wHD66lw[youtube]
 
 == Divide and Conquer, again
 
-In this problem, you will be tasked with implementing a not so simple command-line based calculator program. (Hmm... http://docs.cs50.net/2017/ap/problems/calc/calc.html[that sounds familiar].) Your program will accept inputs like this (wherein underlined text represents user input):
+In this problem, you will be tasked with implementing a not so simple command-line based calculator program. (Hmm... http://docs.cs50.net/2018/ap/problems/calc/calc.html[that sounds familiar].) Your program will accept inputs like this (wherein underlined text represents user input):
 
 [source,subs=quotes]
 ----
-username@ide50:~/workspace/chapterA/ $ [underline]#./calc2 + - 3 4 5#
+~/workspace/unitA/ $ [underline]#./calc2 + - 3 4 5#
 4.000000
 ----
 
@@ -71,7 +63,7 @@ or, indeed like this (allowing the user to perform some basic floating-point ari
 
 [source,subs=quotes]
 ----
-username@ide50:~/workspace/chapterA/ $ [underline]#./calc2 x - 3.4 5.6 7.9#
+username@ide50:~/workspace/unitA/ $ [underline]#./calc2 x - 3.4 5.6 7.9#
 -17.3799999
 ----
 
@@ -157,19 +149,5 @@ stack;
 And `#define MAXNUMS 20` somewhere above.
 
 That's all you'll have for this one though. No distro, just this specification and a definition of a stack datatype to include in your file!
-
-To test the correctness of your prefix calculator, you can run `check50` with:
-
-[source,bash]
-----
-check50 cs50/2017/ap/calc2
-----
-
-And of course feel free to play with the staff solution to perform extra tests beyond those articulated in `check50`:
-
-[source,bash]
-----
-~cs50/chapterA/calc2
-----
 
 This was Calc 2.0.
