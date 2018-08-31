@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Writing Problem: Degrees of Scalability
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -17,12 +15,12 @@ include::../../honesty.adoc[]
 
 Your work on this writing problem will be evaluated along three axes primarily.
 
-Scope::
-  To what extent does your submission align with the requirements of the specification?
 Correctness::
-  To what extent is your submission correct and free of factual errors?
+    To what extent does your submission align with the requirements of the specification?
+Design::
+    To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
 Style::
-  To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
+    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
 
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.

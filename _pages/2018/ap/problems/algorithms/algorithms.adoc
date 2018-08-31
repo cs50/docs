@@ -17,10 +17,8 @@ Your work on this writing problem will be evaluated along three axes primarily.
 
 Correctness::
     To what extent does your submission align with the requirements of the specification?
-
 Design::
     To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-	
 Style::
     To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
 
