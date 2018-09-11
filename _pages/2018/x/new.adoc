@@ -55,7 +55,7 @@ New and improved this year are
 
 * `check50`, via which you can improve your code's correctness,
 * `debug50`, via which you can debug your C code, and
-* `style50`, via which you can improve your code's syle!
+* `style50`, via which you can improve your code's style!
 
 == Videos
 
