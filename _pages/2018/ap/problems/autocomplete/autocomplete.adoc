@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Autocomplete
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -24,10 +22,8 @@ include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
  To what extent is your code consistent with our specifications and free of bugs?
 Design::
@@ -46,11 +42,11 @@ Start off by opening up CS50 IDE and then type
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. Next, navigate to your `workspace/chapterA` directory and execute the following:
+within a terminal window to make sure your workspace is up-to-date. Next, navigate to your `workspace/unitA` directory and execute the following:
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/autocomplete/autocomplete.zip
+wget http://docs.cs50.net/2018/ap/problems/autocomplete/autocomplete.zip
 ----
 
 Unzip that directory and navigate inside your newly created `autocomplete` directory. If you list the contents of your directory, you should see the following:
@@ -102,7 +98,7 @@ For example, if we run our finished `autocomplete` using the dictionary file cal
 
 [source,bash,subs=quotes]
 ----
-~/workspace/chapterA/autocomplete/ $ [underline]#./autocomplete large.txt help#
+~/workspace/unitA/autocomplete/ $ [underline]#./autocomplete large.txt help#
 help
 helped
 helper
@@ -157,19 +153,5 @@ When all is said and done, your program should:
 * Have no memory leaks and no memory usage errors when run through `valgrind`.
 
 Be certain that at no point in your work on this problem that you modify either `trie.c` or `trie.h` (though you are welcome and indeed encouraged to look through those two files!). All of your work should be on making changes to either `autocomplete.c` and/or `autocomplete.h`.
-
-To test your code, you can use
-
-[source]
-----
-check50 cs50/2017/ap/autocomplete
-----
-
-And if you want to play with the staff's solution, it's available at
-
-[source,bash]
-----
-~cs50/chapterA/autocomplete
-----
 
 This was Autocomplete.

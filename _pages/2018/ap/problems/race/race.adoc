@@ -283,6 +283,43 @@ In no part of this problem are you expected to optimize your runtimes for any of
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the `sort race`. 
+** Be sure that the following files exist in `~/workspace/unit3/race/`:
+* `Makefile`  
+* `helpers.c`  
+* `helpers.h`
+* `race.o` 
+as with:
+
++
+[source]
+----
+cd ~/workspace/unit3/race/
+ls
+----
+
+Since there is no way to automatically check for correctness here this project is graded on completion.
+
+=== Step 3 of 3
+
+Submit `Sort Race`:
+
+[source]
+----
+cd ~/workspace/unit3/race/
+submit50 cs50/2018/ap/race
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!unit
 
 This was Sort Race.

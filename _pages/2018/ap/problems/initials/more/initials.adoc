@@ -135,7 +135,7 @@ RTB
 
 [source,text]
 ----
-check50 cs50/problems/2018/ap/initials/more
+check50 cs50/2018/ap/initials/more
 ----
 
 === Style
@@ -154,6 +154,37 @@ style50 initials.c
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
+** Be sure that `initials.c` is in `~/workspace/unit2/initials/`, as with:
++
+[source]
+----
+cd ~/workspace/unit2/initials/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit the more-comfortable version of `initials` (if you implemented it), execute
++
+[source]
+----
+cd ~/workspace/unit2/initials/
+submit50 cs50/2018/ap/initials/more
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Initials.

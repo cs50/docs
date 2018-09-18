@@ -125,6 +125,37 @@ clang -ggdb3 -O0 -std=c11 -Wall -Werror -Wshadow crack.c -lcrypt -lcs50 -lm -o c
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement `crack`. 
+** Be sure that all relevant files for this problem are in `~/workspace/unit2/crack/`, as with:
++
+[source]
+----
+cd ~/workspace/unit2/crack/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `crack`, execute
++
+[source]
+----
+cd ~/workspace/unit2/crack/
+submit50 cs50/2018/ap/crack
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Crack.

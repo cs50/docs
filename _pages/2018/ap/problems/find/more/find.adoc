@@ -430,7 +430,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/problems/2018/ap/find/more
+check50 cs50/2018/ap/find/more
 ----
 
 === Style
@@ -459,6 +459,33 @@ We leave it to you to determine how best to test your implementation of `search`
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 2
+
+Ensure that `find.c` is in `~/workspace/unit3/find`, as with:
+
+[source]
+----
+cd ~/workspace/unit3/find
+ls
+----
+
+If `find.c` is not in `~/workspace/unit3/find`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `find`, execute
++
+[source]
+----
+cd ~/workspace/unit3/find
+submit50 cs50/2018/ap/find/more
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me].
 
 This was Find.

@@ -111,7 +111,7 @@ To test the correctness of your program, you may execute the below at the termin
 
 [source,bash]
 ----
-check50 cs50/problems/2018/ap/pennies
+check50 cs50/2018/ap/pennies
 ----
 
 === Style
@@ -132,6 +132,37 @@ And if you'd like to play with the staff's own implementation of `pennies` in CS
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Make sure your IDE is up-to-date by executing `update50`
+
+=== Step 2 of 3
+
+Head back to the cs50.io[CS50 IDE] and ensure that `pennies.c` is in `~/workspace/unit1/pennies`, as with:
+
+[source]
+----
+cd ~/workspace/unit1/pennies
+ls
+----
+
+If `pennies.c` is not in `~/workspace/unit1/pennies`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+* To submit `pennies`, execute
++
+[source]
+----
+cd ~/workspace/unit1/pennies
+submit50 cs50/2018/ap/pennies
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Pennies.

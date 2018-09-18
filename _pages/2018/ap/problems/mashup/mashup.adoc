@@ -510,7 +510,18 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 2
+
+Run `update50`
+
+=== Step 2 of 2
+
+[source]
+----
+update50
+cd ~/workspace/unit6/mashup/
+submit50 cs50/2018/ap/mashup
+----
 
 This was Mashup.
 

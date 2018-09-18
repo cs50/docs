@@ -264,7 +264,7 @@ hello, world
 
 [source,text]
 ----
-check50 cs50/problems/2018/ap/hello
+check50 cs50/2018/ap/hello
 ----
 
 Assuming your program is correct, you should then see output like
@@ -315,7 +315,38 @@ Know that `check50` won't actually record your scores in CS50's gradebook. Rathe
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
+
+=== Step 2 of 3
+
+Head back to the https://cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/workspace/unit1/hello`, as with:
+
+[source]
+----
+cd ~/workspace/unit1/hello
+ls
+----
+
+If `hello.c` is not in `~/workspace/unit1/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+* To submit `hello`, execute
++
+[source]
+----
+cd ~/workspace/unit1/hello
+submit50 cs50/2018/ap/hello
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 == Hints
 

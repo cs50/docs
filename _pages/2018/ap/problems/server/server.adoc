@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Server
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -15,10 +13,8 @@ include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
  To what extent is your code consistent with our specifications and free of bugs?
 Design::
@@ -69,17 +65,17 @@ Then execute
 
 [source,bash]
 ----
-cd ~/workspace/chapterB
+cd ~/workspace/unitB
 ----
 
-at your prompt to ensure that you’re inside of `chapterB` (which is inside of `workspace` which is inside of your home directory). Then execute
+at your prompt to ensure that you’re inside of `unitB` (which is inside of `workspace` which is inside of your home directory). Then execute
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/server/server.zip
+wget http://docs.cs50.net/2018/ap/problems/server/server.zip
 ----
 
-to download this problem’s distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `chapterB` directory. Navigate into your newly-created `server` directory (remember how?) and type:
+to download this problem’s distro. Unzip the ZIP file (remember how?) and then delete the ZIP file from your `unitB` directory. Navigate into your newly-created `server` directory (remember how?) and type:
 
 [source,bash]
 ----
@@ -143,15 +139,15 @@ Want to try out the staff’s solution before we dive into distribution code? Ex
 
 [source,bash]
 ----
-sudo wget –O ~cs50/chapterB/server http://docs.cs50.net/2016/ap/problems/server/server
-sudo chmod a+x ~cs50/chapterB/server
+sudo wget –O ~cs50/unitB/server http://docs.cs50.net/2016/ap/problems/server/server
+sudo chmod a+x ~cs50/unitB/server
 ----
 
 Then execute the below to run the staff’s implementation of `server`.
 
 [source,bash]
 ----
-~cs50/chapterB/server
+~cs50/unitB/server
 ----
 
 You should see these instructions:
@@ -167,18 +163,18 @@ Looks a bit complex, but that’s just a conventional way of saying:
 * To specify a (TCP) port number on which `server` should listen for HTTP requests, include `-p` as a command-line argument, followed by (presumably) a number. The brackets imply that specifying a port is optional. (If you don’t specify, the program will default to port 8080, which is required by CS50 IDE.)
 * The last command-line argument to `server` should be the path to your server’s “root” (the directory from which files will be served).
 
-Let’s try it out. Execute the below within your own `~/workspace/chapterB` directory so that the staff’s solution uses your own copy of `public` as its root.
+Let’s try it out. Execute the below within your own `~/workspace/unitB` directory so that the staff’s solution uses your own copy of `public` as its root.
 
 [source,bash]
 ----
-~cs50/chapterB/server public
+~cs50/unitB/server public
 ----
 
 You should see output like the below.
 
 [source,bash,subs=quotes]
 ----
-[yellow]#Using /home/Ubuntu/workspace/chapterB/public for server’s root#
+[yellow]#Using /home/Ubuntu/workspace/unitB/public for server’s root#
 [yellow]#Listening on port 8080#
 ----
 
@@ -236,10 +232,10 @@ Open up a second terminal window and position it alongside your first. In the fi
 
 [source,bash]
 ----
-~cs50/chapterB/server public
+~cs50/unitB/server public
 ----
 
-from within your `~/workspace/chapterB` directory, if the server isn’t already running. Then, in the second terminal window, execute the below. (Note the `http://` this time instead of `https://`.)
+from within your `~/workspace/unitB` directory, if the server isn’t already running. Then, in the second terminal window, execute the below. (Note the `http://` this time instead of `https://`.)
 
 [source,bash]
 ----
@@ -407,7 +403,7 @@ In your terminal window, execute
 
 [source,bash]
 ----
-cd ~/workspace/chapterB
+cd ~/workspace/unitB
 ----
 
 Then execute
@@ -612,7 +608,7 @@ Recall that if you'd like to play with the staff's implementation of server, exe
 
 [source,bash]
 ----
-~cs50/chapterB/server public
+~cs50/unitB/server public
 ----
 
 and if you'd like to test out your server with curl, execute

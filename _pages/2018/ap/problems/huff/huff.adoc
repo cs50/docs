@@ -1,12 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Huff
-
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -21,10 +18,8 @@ include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
  To what extent is your code consistent with our specifications and free of bugs?
 Design::
@@ -112,18 +107,18 @@ First, log into cs50.io if not already logged in and execute
 update50
 ----
 
-within a terminal window to make sure your workspace is up-to-date. Then navigate your way to the chapterB directory by executing
+within a terminal window to make sure your workspace is up-to-date. Then navigate your way to the unitB directory by executing
 
 [source,bash]
 ----
-cd ~/workspace/chapterB
+cd ~/workspace/unitB
 ----
 
 Then execute
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/huff/huff.zip
+wget http://docs.cs50.net/2018/ap/problems/huff/huff.zip
 ----
 
 to download a ZIP of this problem's distro. Let's unzip the ZIP file by executing
@@ -299,7 +294,7 @@ Take a look now at `hth.txt`, but take care not to make any changes. In that fil
 
 [source,bash]
 ----
-~cs50/chapterB/huff hth.txt hth.bin
+~cs50/unitB/huff hth.txt hth.bin
 ----
 
 Let's take a look at the huffed file's size. Run the below.
@@ -410,19 +405,13 @@ Implement in a file called `huff.c` a program called `huff` that compresses file
 * You may not leak any memory. Before quitting, even upon error, your program must free any memory allocated on its heap, either with `free` or, if allocated by our APIs, with `hfclose`, `rmtree`, and/or `rmforest`.
 * You must update `Makefile` (however you see fit) with a target for `huff`. Recall, though, that a target's second line must begin with a tab. Recall, though, that when you hit Tab in the IDE, you do not get `\t` but instead four spaces instead by default. To insert a true tab using the IDE, Go to the view tab on the top left of the IDE and uncheck *Less Comfortable*, if checked. Then in the lower right hand of your C file, you should see something like *Spaces: 4*. Click on that tab, and uncheck *Soft Tabs (spaces)*. Then you can hit Tab to insert `\t`. You may want to recheck the soft tabs option afterwards.
 
-How to determine if your code is correct? Well, certainly play with the staff's solutions to both `huff` and `puff` in `~cs50/chapterB`, comparing our output to yours. Also use `ls` with its `-l` switch to compare files' sizes. And, rather than compare outputs visually, (e.g., with a text editor, `xxd`, `cat`, `more`, or `less`), you can use a popular tool called `diff`. For instance, suppose that you've already run the below.
+How to determine if your code is correct? Well, certainly play with the staff's solutions to both `huff` and `puff` in `~cs50/unitB`, comparing our output to yours. Also use `ls` with its `-l` switch to compare files' sizes. And, rather than compare outputs visually, (e.g., with a text editor, `xxd`, `cat`, `more`, or `less`), you can use a popular tool called `diff`. For instance, suppose that you've already run the below.
 
 [source,bash]
 ----
 ./huff hth.txt hth.bin
 ----
 
-And now you'll like to try puffing `hth.bin` with the staff's version of `puff`, and so you run a command like the below.
-
-[source,bash]
-----
-~cs50/chapterB/puff hth.bin puffed.txt
-----
 
 You can now compare `hth.txt` and `puffed.txt` for differences by executing the below.
 
@@ -451,7 +440,14 @@ Admittedly, the output from `valgrind` is a bit cryptic, but keep an eye out for
 valgrind -v --leak-check=full ./huff hth.bin puffed.txt
 ----
 
-And don't forget to use `gdb` when debugging!
+You can also use help50 to help parse the `valgrind` output.
+
+[source,bash]
+----
+help50 valgrind ./huff hth.bin puffed.txt
+----
+
+And don't forget to use `debug50` when debugging!
 
 Alright, off you go. HTH!
 

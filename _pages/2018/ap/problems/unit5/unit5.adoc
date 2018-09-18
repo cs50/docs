@@ -111,4 +111,38 @@ Because this assignment will result in something different for each person, ther
 
 == How to Submit
 
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the `</unit 5>`. 
+** Be sure that all of the files for your website exist in `~/workspace/unit5/unit5/`
+
++
+[source]
+----
+cd ~/workspace/unit5/unit5/
+ls
+----
+
+Since there is no way to automatically check for correctness here this project is graded on completion.
+
+=== Step 3 of 3
+
+Submit `unit 5`:
+
+[source]
+----
+cd ~/workspace/unit5/unit5/
+submit50 cs50/2018/ap/unit5
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
 This was </Unit 5>.

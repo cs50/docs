@@ -1,11 +1,9 @@
 ---
-layout: 2017/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
 = Problem: Blockdude
-
-Questions? Feel free to head to https://www.reddit.com/r/cs50[CS50 on Reddit], http://cs50.stackexchange.com[CS50 on StackExchange], the `#cs50ap` channel on https://cs50x.slack.com[CS50x Slack] (after signing up), or the https://www.facebook.com/groups/cs50[CS50 Facebook group].
 
 == tl;dr
 
@@ -36,10 +34,8 @@ include::../../honesty.adoc[]
 
 == Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along three axes primarily.
 
-Scope::
- To what extent does your code implement the features required by our specification?
 Correctness::
  To what extent is your code consistent with our specifications and free of bugs?
 Design::
@@ -60,14 +56,14 @@ update50
 
 within a terminal window to make sure your workspace is up-to-date.
 
-Then, create a new directory inside of your `workspace` called `chapterB` (Remember how?) and navigate inside. Once there, obtain a copy of this problem's distro by typing:
+Then, create a new directory inside of your `workspace` called `unitB` (Remember how?) and navigate inside. Once there, obtain a copy of this problem's distro by typing:
 
 [source,bash]
 ----
-wget http://docs.cs50.net/2017/ap/problems/blockdude/blockdude.zip
+wget http://docs.cs50.net/2018/ap/problems/blockdude/blockdude.zip
 ----
 
-Unzip the ZIP file and then delete the ZIP file from your `chapterB` directory (remember how?). Rename newly-created `blockdude` folder and execute
+Unzip the ZIP file and then delete the ZIP file from your `unitB` directory (remember how?). Rename newly-created `blockdude` folder and execute
 
 [source,bash]
 ----
@@ -112,7 +108,7 @@ Open up `blockdude.c` and you'll see that an old friend has revisited us: `ncurs
 
 Now about that skeleton. Odds are you'll read through the code and not understand most of the code. Basically, we've implemented the aesthetics for the game as well as the left and right movements so that you can focus on other parts of the game. But know that none of it is all that complex. In fact, if you look at each of the functions in isolation, you'll likely find each pretty straightforward.
 
-Navigate to your `~/workspace/chapterB/distro` directory and execute the increasingly familiar command below:
+Navigate to your `~/workspace/unitB/distro` directory and execute the increasingly familiar command below:
 
 [source,bash]
 ----
@@ -142,7 +138,7 @@ To test the staff's solution, and ultimately how your solution should work, exec
 
 [source,bash]
 ----
-~cs50/chapterB/blockdude
+~cs50/unitB/blockdude
 ----
 
 Now open up `blockdude.h`. Here, you'll see a lot of `#define`pass:[s] that we use in `blockdude.c`. Of interest to you will be `DISPLACE`, `SPACE`, `BRICK`, `BLOCK`, `PRIGHT`, and `PLEFT`.

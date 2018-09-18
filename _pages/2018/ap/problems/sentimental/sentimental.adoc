@@ -76,10 +76,10 @@ video::5I7QqTTolHE[youtube]
 === Correctness
 
 ```
-check50 cs50/problems/2018/ap/sentimental/mario/less
-check50 cs50/problems/2018/ap/sentimental/mario/more
-check50 cs50/problems/2018/ap/sentimental/cash
-check50 cs50/problems/2018/ap/sentimental/caesar
+check50 cs50/2018/ap/sentimental/mario/less
+check50 cs50/2018/ap/sentimental/mario/more
+check50 cs50/2018/ap/sentimental/cash
+check50 cs50/2018/ap/sentimental/caesar
 ```
 
 === Style
@@ -118,6 +118,67 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 2
+
+Recall that you were asked to create the files below:
+
+* `mario.py`
+* `greedy.py`
+* `caesar.py`
+
+Be sure that each of your files is in `~/workspace/unit6/sentimental/`, as with:
+
+[source]
+----
+cd ~/workspace/unit6/sentimental/
+ls
+----
+
+If any file is not in `~/workspace/unit6/sentimental/`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `mario` (less comfy), execute
++
+[source]
+----
+cd ~/workspace/unit6/sentimental/
+submit50 cs50/2018/ap/sentimental/mario/less
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `mario` (more comfy), execute
++
+[source]
+----
+cd ~/workspace/unit6/sentimental/
+submit50 cs50/2018/ap/sentimental/mario/more
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `greedy`, execute
++
+[source]
+----
+cd ~/workspace/unit6/sentimental/
+submit50 cs50/2018/ap/sentimental/greedy
+----
++
+inputting your GitHub username and GitHub password as prompted.
+* To submit `caesar`, execute
++
+[source]
+----
+cd ~/workspace/unit6/sentimental/
+submit50 cs50/2018/ap/sentimental/caesar
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Sentimental.
