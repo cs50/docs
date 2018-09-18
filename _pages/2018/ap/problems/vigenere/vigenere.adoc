@@ -140,7 +140,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 cs50/problems/2018/ap/vigenere
+check50 cs50/2018/ap/vigenere
 ----
 
 === Style
@@ -164,6 +164,36 @@ Not sure where to begin? As luck would have it, this program's pretty similar to
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement `vigenere`
+
+** Be sure that `vigenere.c` is in `~/workspace/unit2/vigenere/`, as with:
++
+[source]
+----
+cd ~/workspace/unit2/vigenere/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `vigenere`, execute:
++
+[source]
+----
+cd ~/workspace/unit2/vigenere/
+submit50 cs50/2018/ap/vigenere
+----
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Vigenère.

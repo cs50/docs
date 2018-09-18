@@ -170,7 +170,7 @@ See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs
 === Correctness
 
 ```
-check50 cs50/problems/2018/ap/similarities/less
+check50 cs50/2018/ap/similarities/less
 ```
 
 === Style
@@ -194,6 +194,31 @@ http://similarities.cs50.net/less
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the `similarities`. 
+** Be sure that `caesar.c` is in `~/workspace/unit6/similarities/`, as with:
++
+[source]
+----
+cd ~/workspace/unit6/similarities/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `similarities`, execute:
++
+[source]
+----
+cd ~/workspace/unit6/similarities/
+submit50 cs50/2018/ap/similarities/less
+----
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Similarities.

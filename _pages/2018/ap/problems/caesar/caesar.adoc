@@ -160,7 +160,7 @@ Usage: ./caesar k
 
 [source]
 ----
-check50 cs50/problems/2018/ap/caesar
+check50 cs50/2018/ap/caesar
 ----
 
 === Style
@@ -229,6 +229,31 @@ And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forge
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+* Recall that you were asked to implement the `caesar`. 
+** Be sure that `caesar.c` is in `~/workspace/unit2/caesar/`, as with:
++
+[source]
+----
+cd ~/workspace/unit2/caesar/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `caesar`, execute:
++
+[source]
+----
+cd ~/workspace/unit2/caesar/
+submit50 cs50/2018/ap/caesar
+----
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Caesar.

@@ -78,6 +78,22 @@ To be clear, you're not standing in the role of a salesperson. Make sure to spea
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2018/ap/tech` and click "Create branch".
+
+=== Step 2 of 3
+
+Click the button that says "Upload files". Drag your `tech.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 3 of 3
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Tech Spotlight. And unfortunately, the Nyan Cat song is still stuck in our heads. :\

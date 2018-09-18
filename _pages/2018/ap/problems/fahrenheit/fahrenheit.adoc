@@ -151,7 +151,7 @@ Before turning in your solution, be sure to test the correctness of your program
 
 [source,bash]
 ----
-check50 cs50/problems/2018/ap/fahrenheit
+check50 cs50/2018/ap/fahrenheit
 ----
 
 === Style
@@ -174,6 +174,37 @@ If you'd like to play with our own implementation of `fahrenheit` in the IDE, yo
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Make sure your IDE is up-to-date by executing `update50`
+
+=== Step 2 of 3
+
+Ensure that `fahrenheit.c` is in `~/workspace/unit1/fahrenheit`, as with:
+
+[source]
+----
+cd ~/workspace/unit1/fahrenheit
+ls
+----
+
+If `fahrenheit.c` is not in `~/workspace/unit1/fahrenheit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+* To submit `fahrenheit`, execute
++
+[source]
+----
+cd ~/workspace/unit1/fahrenheit
+submit50 cs50/2018/ap/fahrenheit
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Fahrenheit.

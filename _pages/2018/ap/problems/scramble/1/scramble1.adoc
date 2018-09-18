@@ -129,7 +129,7 @@ Incidentally, take care not to change any code related to `logfile`, which we us
 Next read through `main`, focusing first on the comments and then on the code. If unsure at first glance what some line does, take some time to figure it out. It'll be a lot easier to write new
 code if you understand the code that's already there! If unfamiliar with some function, try to find it on CS50 Reference, else consult its "man page."
 
-For instance, to pull up the manual for `atoi`, execute the below.footnote:[On occasion, you may need to execute `man 2 function` or `man 3 function`, where `function` is some function's name, lest you pull up the manual for a Linux command as opposed to a C function. For instance, the `man` page for C's `printf` is in (chapter) 3 and not 1, which is the default if you don't specify a chapter explicitly.]
+For instance, to pull up the manual for `atoi`, execute the below.footnote:[On occasion, you may need to execute `man 2 function` or `man 3 function`, where `function` is some function's name, lest you pull up the manual for a Linux command as opposed to a C function. For instance, the `man` page for C's `printf` is in (unit) 3 and not 1, which is the default if you don't specify a unit explicitly.]
 
 [source,bash]
 ----
@@ -170,7 +170,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source]
 ----
-check50 cs50/problems/2018/ap/scramble
+check50 cs50/2018/ap/scramble/1
 ----
 
 === Style
@@ -182,6 +182,43 @@ style50 scramble.c
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Update your IDE:
+
+[source]
+----
+update50
+----
+
+=== Step 2 of 3
+
+Be sure that `scramble.c` is in `~/workspace/unit3/scramble`, as with:
+
+[source]
+----
+cd ~/workspace/unit3/scramble
+ls
+----
+
+If `scramble.c` is not in `~/workspace/unit3/scramble`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+Submit `scramble`:
+
+[source]
+----
+cd ~/workspace/unit3/scramble/
+submit50 cs50/2018/ap/scramble/1
+----
+
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Scramble (Part 1).

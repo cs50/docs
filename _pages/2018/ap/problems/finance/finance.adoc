@@ -217,7 +217,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/problems/2018/ap/finance
+check50 cs50/2018/ap/finance
 ----
 
 === Style
@@ -262,7 +262,17 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 2
+
+Run `update50`
+
+=== Step 2 of 2
+
+[source]
+----
+cd ~/workspace/unit6/finance/
+submit50 cs50/2018/ap/finance
+----
 
 This was C$50 Finance.
 

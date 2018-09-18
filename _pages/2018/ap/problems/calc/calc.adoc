@@ -192,7 +192,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/problems/2018/ap/calc
+check50 cs50/2018/ap/calc
 ----
 
 === Style
@@ -213,6 +213,36 @@ If you'd like to play with the staff's own implementation of `calc`, you may exe
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+** Be sure that `calc.c` is in `~/workspace/unit2/calc/`, as with:
++
+[source]
+----
+cd ~/workspace/unit2/calc/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `calc`, execute
++
+[source]
+----
+cd ~/workspace/unit2/calc/
+submit50 cs50/2018/ap/calc
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Calc.

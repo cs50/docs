@@ -237,7 +237,7 @@ You should also feel free to test your code by creating new directories and file
 
 [source]
 ----
-check50 cs50/problems/2018/ap/finder
+check50 cs50/2018/ap/finder
 ----
 
 === Style
@@ -260,6 +260,43 @@ That program will generate a file in the same directory as `finder.c` entitled `
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 3
+
+Update your IDE:
+
+[source]
+----
+update50
+----
+
+=== Step 2 of 3
+
+Be sure that each of your files are in `~/workspace/unit4/finder`, as with:
+
+[source]
+----
+cd ~/workspace/unit4/finder
+ls
+----
+
+If any file is not in `~/workspace/unit4/finder`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 3 of 3
+
+Submit `finder`:
+
+[source]
+----
+cd ~/workspace/unit4/finder
+submit50 cs50/2018/ap/finder
+----
+
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Finder.

@@ -105,7 +105,7 @@ pass:[####  ####]
 
 [source,text]
 ----
-check50 cs50/problems/2018/ap/mario/more
+check50 cs50/2018/ap/mario/more
 ----
 
 === Style
@@ -128,6 +128,33 @@ Try to establish a relationship between (a) the height the user would like the p
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 2
+
+Ensure that `mario.c` is in `~/workspace/unit1/mario`, as with:
+
+[source]
+----
+cd ~/workspace/unit1/mario
+ls
+----
+
+If `mario.c` is not in `~/workspace/unit1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `mario`, execute
++
+[source]
+----
+cd ~/workspace/unit1/mario
+submit50 cs50/2018/ap/mario/more
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
 
 This was Mario.

@@ -149,7 +149,7 @@ Test out your program with a whole bunch of inputs, both valid and invalid. (We 
 
 [source,bash]
 ----
-check50 cs50/problems/2018/ap/isbn
+check50 cs50/2018/ap/isbn
 ----
 
 === Style
@@ -170,6 +170,33 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 
 == How to Submit
 
-We are not currently accepting submissions. Check back September 1, 2018 for more information.
+=== Step 1 of 2
+
+Ensure that `isbn.c` is in `~/workspace/unit1/isbn`, as with:
+
+[source]
+----
+cd ~/workspace/unit1/isbn
+ls
+----
+
+If `isbn.c` is not in `~/workspace/unit1/isbn`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `isbn`, execute
++
+[source]
+----
+cd ~/workspace/unit1/isbn
+submit50 cs50/2018/ap/isbn
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was ISBN.
