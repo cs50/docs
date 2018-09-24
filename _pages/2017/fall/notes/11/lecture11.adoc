@@ -97,7 +97,7 @@ for (let value of array)
     ...
 }
 
-for (let key in array)
+for (let key in object)
 {
     ...
 }
