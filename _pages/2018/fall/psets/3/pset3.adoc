@@ -14,7 +14,12 @@ layout: 2018/fall
 . Submit your code.
 . Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+* Attend your TF's *section* (or another if you have an unavoidable conflict).
+* Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+* Post questions and search answers in https://discourse.cs50.net/c/cs50-2018[*CS50 Discourse*].
+* Attend *office hours*.
 
 == Getting Started
 
