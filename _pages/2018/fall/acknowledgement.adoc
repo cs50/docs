@@ -1,0 +1,24 @@
+---
+published: false
+---
+
+== Acknowledgement and Authorization
+
+Harvard plans to record audio, photos, and video of Computer Science 50 (CS50) lectures, sections, office hours, seminars, and other events and activities related to CS50 (the "Recordings"), with the aims of making the content of the course more widely available and contributing to public understanding of innovative learning (the "Projects"). The Recordings, or edited versions of them, may be made available to other Harvard students, to students at other educational institutions, and to the broader public via edX, the Internet, television, theatrical distribution, digital media, or other means. It is also possible that the Recordings may be used to make other derivative works in the future. Students may elect not to appear in photos and video used in the Projects and may still participate fully in CS50.
+
+When you submit Problem Set 0, you will need to sign online an Acknowledgement and Authorization in the following form:
+
+[quote]
+____
+I understand that, if I do not wish any photos or video of me to be used as part of the Projects, I should so inform the course's instructor by emailing recordings@cs50.harvard.edu within one week of enrolling in CS50. In that event, I understand that I should sit in the designated "no-film" zone of CS50 classrooms and should not walk in the field of view of the cameras. I understand that Harvard will take reasonable steps, with my cooperation, to avoid including identifiable images of me in the Projects' photos and video shot in classrooms and other course locations after I opt out as just described. I understand that I am free to opt out of the Projects' photos and video in this way, and that doing so will not affect my grade or my ability to participate in course activities.
+
+Unless I opt out of the Projects' photos and video as described above and take the steps that will be outlined by the instructor to avoid being filmed, I authorize Harvard and its designees to record and use photos and video of my participation in CS50 and activities related to CS50 (the "Recordings"). I understand and agree that the Recordings may include my image, name, and voice. I also understand and agree that, even if I opt out of the Projects' photos and video, my spoken name and voice may be picked up by microphones outside the "no-film" zone and may be included in the Recordings.
+
+I understand and agree that Harvard and its designees will have the irrevocable, worldwide right to make, edit, modify, copy, publish, transmit, distribute, sell, publicly display, publicly perform, and otherwise use and make available its respective Recordings and any other works that may be derived from those Recordings, in any manner or medium now known or later invented, and to authorize others to do so as well. I hereby transfer to Harvard any rights, including copyrights, I may have in the Recordings that Harvard makes. I will remain free to use and disseminate any ideas, remarks, or other material that I may contribute to course discussions.
+
+I acknowledge and agree that I will not be entitled to any payment, now or in the future, in connection with the Recordings or any works derived from them. This Acknowledgment and Authorization is a binding agreement, and is signed as a document under seal governed by the laws of the Commonwealth of Massachusetts.
+____
+
+*Unless you opt out as described in the Acknowledgment and Authorization, you are agreeing, by attending CS50, that your participation in CS50 and related activities may be recorded and used by Harvard in connection with the Projects without further obligation or liability to you, even if you do not sign any authorization.*
+
+*If you have any questions about the above, contact recordings@cs50.harvard.edu.*
