@@ -19,7 +19,7 @@ video::HmBtQJDiVm8[youtube]
 
 == Background
 
-First, be sure you're familiar with the structure of 24-bit uncompressed BMPs, as introduced in link:../../whodunit/whodunit[Whodunit].
+First, be sure you're familiar with the structure of 24-bit uncompressed BMPs, as introduced in link:https://lab.cs50.io/cs50/labs/2018/fall/whodunit[Whodunit].
 
 To reiterate a bit from that lab, recall that a file is just a sequence of bits, arranged in some fashion. A 24-bit BMP file, then, is essentially just a sequence of bits, (almost) every 24 of which happen to represent some pixel's color. But a BMP file also contains some "metadata," information like an image's height and width. That metadata is stored at the beginning of the file in the form of two data structures generally referred to as "headers," not to be confused with C's header files. (Incidentally, these headers have evolved over time. This problem only expects that you support the latest version of Microsoft's BMP format, 4.0, which debuted with Windows 95.) The first of these headers, called `BITMAPFILEHEADER`, is 14 bytes long. (Recall that 1 byte equals 8 bits.) The second of these headers, called `BITMAPINFOHEADER`, is 40 bytes long. Immediately following these headers is the actual bitmap: an array of bytes, triples of which represent a pixel's color. (In 1-, 4-, and 16-bit BMPs, but not 24- or 32-, there's an additional header right after `BITMAPINFOHEADER` called `RGBQUAD`, an array that defines "intensity values" for each of the colors in a device's palette.) However, BMP stores these triples backwards (i.e., as BGR), with 8 bits for blue, followed by 8 bits for green, followed by 8 bits for red. (Some BMPs also store the entire bitmap backwards, with an image's top row at the end of the BMP file. But we've stored this problem set's BMPs as described herein, with each bitmap's top row first and bottom row last.) In other words, were we to convert the 1-bit smiley above to a 24-bit smiley, substituting red for black, a 24-bit BMP would store this bitmap as follows, where `0000ff` signifies red and `ffffff` signifies white; we've highlighted in red all instances of `0000ff`.
 
@@ -38,8 +38,6 @@ ffffff  ffffff  [red]#0000ff#  [red]#0000ff#  [red]#0000ff#  [red]#0000ff#  ffff
 Because we've presented these bits from left to right, top to bottom, in 8 columns, you can actually see the red smiley if you take a step back.
 
 To be clear, recall that a hexadecimal digit represents 4 bits. Accordingly, `ffffff` in hexadecimal actually signifies `111111111111111111111111` in binary.
-
-WARNING: Okay, stop! Don't proceed further until you're sure you understand why `0000ff` represents a red pixel in a 24-bit BMP file.
 
 Now look at the underlying bytes that compose `smiley.bmp`. Within CS50 IDE's file browser, right- or control-click *smiley.bmp* and select *Open as hexadecimal* in order to view the file's bytes in hexadecimal (i.e., base-16). In the tab that appears, change *Start with byte* to *54*, change *Bytes per row* to *24*, change *Bytes per column* to *3*. Then click *Set*. **If unable to change these values, try clicking View > Night Mode and try again**. You should see the below, byte 54 onward of `smiley.bmp`. (Recall that a 24-bit BMP's first 14 + 40 = 54 bytes are filled with metadata, so we're simply ignoring that for now.) As before, we've highlighted in red all instances of `0000ff`.
 
@@ -178,6 +176,13 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 [source]
 ----
 check50 cs50/2018/fall/resize/less
+----
+
+=== `style50`
+
+[source]
+----
+style50 resize.c
 ----
 
 == Staff's Solution
