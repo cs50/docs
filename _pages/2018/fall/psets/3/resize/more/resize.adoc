@@ -185,6 +185,13 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 check50 cs50/2018/fall/resize/more
 ----
 
+=== `style50`
+
+[source]
+----
+style50 resize.c
+----
+
 == Staff's Solution
 
 [source]
