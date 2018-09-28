@@ -96,21 +96,25 @@ Knowing all this has got to be useful!
 
 === Downloading
 
-[source,subs="macros"]
-----
-$ wget http://cdn.cs50.net/2018/fall/psets/3/resize.zip
-$ unzip resize.zip
-$ rm resize.zip
-$ cd resize
-$ ls
-bmp.h  copy.c  large.bmp  small.bmp  smiley.bmp
-----
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE.
+
+1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
+1. Execute `mkdir pset3` to make (i.e., create) a directory called `pset3` in your home directory.
+1. Execute `cd pset3` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/2018/fall/psets/3/resize.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip resize.zip` to uncompress that file. 
+1. Execute `rm resize.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `resize`, which was inside of that ZIP file.
+1. Execute `cd resize` to change into that directory.
+1. Execute `ls`. You should see a directory called `more`.
+1. Execute `cd more` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution, including `bmp.h`, `copy.c`, `large.bmp`, `small.bmp`, and `smiley.bmp`.
 
 == Specification
 
 Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-bit uncompressed BMPs by a factor of `f`.
 
-* Implement your program in a file called `resize.c` in a directory called `resize`.
+* Implement your program in a file called `resize.c` inside of `~/workspace/pset3/more/`.
 * Your program should accept exactly three command-line arguments, whereby
 +
 --
@@ -118,7 +122,7 @@ Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-
 ** the second must be the name of a BMP to be resized, and
 ** the third must be the name of the resized version to be written.
 --
-+ If your program is not executed with such, it should remind the user of correct usage, as with `fprintf` (to `stderr`), and `main` should return `1`.
++ If your program is not executed with such, it should remind the user of correct usage, as with `printf`, and `main` should return `1`.
 * Your program, if it uses `malloc`, must not leak any memory.
 
 == Usage
@@ -166,7 +170,7 @@ If you'd like to peek at, e.g., ``large.bmp``'s headers (in a more user-friendly
 
 [source]
 ----
-~cs50/hacker3/peek large.bmp
+~cs50/pset3/peek large.bmp
 ----
 
 Better yet, if you'd like to compare your outfile's headers against those from the <<staffs-solution,staff's solution>>, you might want to execute commands like the below. (Think about what each is doing.)
@@ -180,12 +184,16 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 
 === `check50`
 
+Here's how to check the correctness of your code using `check50`. But be sure to compile and test it yourself as well!
+
 [source]
 ----
 check50 cs50/2018/fall/resize/more
 ----
 
 === `style50`
+
+Here's how to evaluate the style of your code using `style50`.
 
 [source]
 ----
@@ -200,7 +208,7 @@ To try out the staff's own implementation of `resize`, execute
 ./resize
 ```
 
-within [this sandbox](TODO).
+within [this sandbox](https://sandbox.cs50.io/cf791495-d296-437d-bc60-cf27e43c7622).
 
 == How to Submit
 
