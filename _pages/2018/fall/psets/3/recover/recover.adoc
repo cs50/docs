@@ -90,12 +90,16 @@ $ [underline]#echo $?#
 
 === `check50`
 
+Here's how to evaluate the correctness of your code using `check50`. But be sure to compile and test it yourself as well!
+
 [source]
 ----
 check50 cs50/2018/fall/recover
 ----
 
 === `style50`
+
+Here's how to evaluate the style of your code using `style50`.
 
 [source]
 ----
