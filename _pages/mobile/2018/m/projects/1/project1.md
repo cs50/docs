@@ -34,4 +34,12 @@ To get started, follow the directions in your project README.
 
 ## How to Submit
 
-__Coming Soon__
+1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/mobile/2018/x/projects/1` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
+
+   ```
+   submit50 cs50/mobile/2018/x/projects/1
+   ```
+
+   instead.
+1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
+1. [Submit this form](https://forms.cs50.io/cb9c5991-d3e6-4d84-a9b1-3af4f4ac3ad1).
