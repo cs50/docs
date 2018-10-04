@@ -130,7 +130,7 @@ Odds are, you didn't spend enough time looking over `speller.c`. Go back one squ
 
 ==== `texts/`
 
-So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _La La Land_, the text of the Affordable Care Act, three million bytes from Tolstoy, some excerpts from _The Federalist Papers_ and Shakespeare, the entirety of the King James V Bible and the Koran, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `pset5` directory.
+So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _La La Land_, the text of the Affordable Care Act, three million bytes from Tolstoy, some excerpts from _The Federalist Papers_ and Shakespeare, the entirety of the King James V Bible and the Koran, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `pset4` directory.
 
 Now, as you should know from having read over `speller.c` carefully, the output of `speller`, if executed with, say,
 
@@ -143,7 +143,7 @@ will eventually resemble the below. For now, try executing the staff's solution 
 
 [source]
 ----
-~cs50/pset5/speller texts/lalaland.txt
+~cs50/pset4/speller texts/lalaland.txt
 ----
 
 Below's some of the output you'll see. For information's sake, we've excerpted some examples of "misspellings." And lest we spoil the fun, we've omitted our own statistics for now.
@@ -254,7 +254,7 @@ And you could then run the staff's solution on the same text in another window, 
 
 [source]
 ----
-~cs50/pset5/speller texts/lalaland.txt
+~cs50/pset4/speller texts/lalaland.txt
 ----
 
 And you could then compare the windows visually side by side. That could get tedious quickly, though. So you might instead want to "redirect" your program's output to a file, as with the below.
@@ -262,7 +262,7 @@ And you could then compare the windows visually side by side. That could get ted
 [source]
 ----
 ./speller texts/lalaland.txt > student.txt
-~cs50/pset5/speller texts/lalaland.txt > staff.txt
+~cs50/pset4/speller texts/lalaland.txt > staff.txt
 ----
 
 You can then compare both files side by side in the same window with a program like `diff`, as with the below.
