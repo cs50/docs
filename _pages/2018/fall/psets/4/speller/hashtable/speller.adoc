@@ -8,7 +8,7 @@ layout: 2018/fall
 
 == tl;dr
 
-Implement a program that spell-checks a file, a la the below.
+Implement a program that spell-checks a file, a la the below, using a hash table.
 
 [source,subs=quotes]
 ----
@@ -90,11 +90,13 @@ And `const`, meanwhile, just says that those strings, when passed in as argument
 
 ==== `dictionary.c`
 
-Now open up `dictionary.c`. Notice how, atop the file, we've defined a `struct` called `node` that represents a node in a hash table. And we've declared a global array, `hashtable`, with enough room for `N` pointers to nodes, where `N` is initialized (arbitrary) above that array to `50`.
+Now open up `dictionary.c`. Notice how, atop the file, we've defined a `struct` called `node` that represents a node in a hash table. And we've declared a global array, `hashtable`, with enough room for `N` pointers to nodes, where `N` is initialized above that array to `26`, one bucket for each letter in the (English) alphabet.
 
-A bit below those lines have we implemented part of a function called `load` that will soon (thanks to you!) load a dictionary of words into memory. We've written some code that initializes all of the buckets (i.e., pointers) in `hashtable` to `NULL`. And we've written some code that opens `dictionary`, which is the file name of a dictionary to load. And we've also written some code that iterates over that dictionary and reads the words therein, one at a time, into a buffer (i.e., `string`) called `word`. But we stop short of inserting those words into `hashtable`. Thereafter, we do close the file, though, and then return `true` to indicate (we hope!) success.
+A bit below those lines have we implemented a function called `hash` that hashes a word, returning `0` for any word that starts with an `a` (or `A`), `1` for any word that starts with a `b` (or `B`), `25` for any word that starts with a `z` (or `Z`), and so on for every letter in between. 
 
-As for `check`, `size`, and `unload`, as well as another function called `hash`, well, we've only just barely implemented those, enough for the file to compile.
+Below that have we written part of a function called `load` that will soon (thanks to you!) load a dictionary of words into the hash table. We've written some code that initializes all of the buckets (i.e., pointers) in `hashtable` to `NULL`. And we've written some code that opens `dictionary`, which is the file name of a dictionary to load. And we've also written some code that iterates over that dictionary and reads the words therein, one at a time, into a buffer (i.e., `string`) called `word`. But we stop short of inserting those words into `hashtable`. Thereafter, we do close the file, though, and then return `true` to indicate (we hope!) success.
+
+As for `check`, `size`, and `unload`, well, we've only just barely implemented those, enough for the file to compile.
 
 ==== `speller.c`
 
@@ -195,10 +197,10 @@ And, lastly, recall that `make` automates compilation of your code so that you d
 
 == Specification
 
-Alright, the challenge now before you is to implement, in order, `load`, `check`, `size`, and `unload` as efficiently as possible, in such a way that `TIME IN load`, `TIME IN check`, `TIME IN size`, and `TIME IN unload` are all minimized. To be sure, it's not obvious what it even means to be minimized, inasmuch as these benchmarks will certainly vary as you feed `speller` different values for `dictionary` and for `text`. But therein lies the challenge, if not the fun, of this problem. This problem is your chance to design. Although we invite you to minimize space, your ultimate enemy is time. But before you dive in, some specifications from us.
+Alright, the challenge now before you is to implement, in order, `load`, `check`, `size`, and `unload` as efficiently as possible using a hash table in such a way that `TIME IN load`, `TIME IN check`, `TIME IN size`, and `TIME IN unload` are all minimized. To be sure, it's not obvious what it even means to be minimized, inasmuch as these benchmarks will certainly vary as you feed `speller` different values for `dictionary` and for `text`. But therein lies the challenge, if not the fun, of this problem. This problem is your chance to design. Although we invite you to minimize space, your ultimate enemy is time. But before you dive in, some specifications from us.
 
 * You may not alter `speller.c` or `Makefile`.
-* You may alter `dictionary.c` (and, in fact, must in order to complete the implementations of `load`, `hash`, `check`, `size`, and `unload`), but you may not alter the declarations (i.e., prototypes) of `load`, `check`, `size`, or `unload`. You may, though, add new functions to `dictionary.c`.
+* You may alter `dictionary.c` (and, in fact, must in order to complete the implementations of `load`, `check`, `size`, and `unload`), but you may not alter the declarations (i.e., prototypes) of `load`, `check`, `size`, or `unload`. You may, though, add new functions to `dictionary.c`.
 * You may alter `dictionary.h`, but you may not alter the declarations of `load`, `check`, `size`, or `unload`.
 * Your implementation of `check` must be case-insensitive. In other words, if `foo` is in dictionary, then `check` should return true given any capitalization thereof; none of `foo`, `foO`, `fOo`, `fOO`, `fOO`, `Foo`, `FoO`, `FOo`, and `FOO` should be considered misspelled.
 * Capitalization aside, your implementation of `check` should only return `true` for words actually in `dictionary`. Beware hard-coding common words (e.g., `the`), lest we pass your implementation a `dictionary` without those same words. Moreover, the only possessives allowed are those actually in `dictionary`. In other words, even if `foo` is in `dictionary`, `check` should return `false` given `foo's` if `foo's` is not also in `dictionary`.
@@ -215,14 +217,14 @@ Alright, ready to go?
 . Implement `size`.
 . Implement `unload`.
 
-== Walkthrough
+== Walkthroughs
+
+_In these walkthroughs, Zamyla discusses not only hash tables but tries as well._
 
 [role=embed-responsive-21by9]
 video::u9-1U1Rgo1o[youtube,list=PLhQjrBD2T382vvokQIExRCKZq-q8PzSVz]
 
 == Hints
-
-Recall that a hash table can be implemented as an array of linked lists. And recall that we looked at code for a linked list in `list2.c` in Week 4, albeit for integers.
 
 Ultimately, be sure to `free` in `unload` any memory that you allocated in `load`! Recall that `valgrind` is your newest best friend. Know that `valgrind` watches for leaks while your program is actually running, so be sure to provide command-line arguments if you want `valgrind` to analyze `speller` while you use a particular `dictionary` and/or text, as in the below. Best to use a small text, though, else `valgrind` could take quite a while to run.
 
