@@ -53,7 +53,7 @@ Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute
 1. Execute `ls`. You should see this problem's distribution:
 
 ```
-dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  README.md  speller.c  texts/
+dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  speller.c  texts/
 ```
 
 === Understanding
