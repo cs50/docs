@@ -51,10 +51,10 @@ Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute
 1. Execute `ls`. You should see a directory called `speller`, which was inside of that ZIP file.
 1. Execute `cd speller` to change into that directory.
 1. Execute `ls`. You should see this problem's distribution:
-   
-   ```
-   dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  README.md  speller.c  texts/
-   ```
+
+```
+dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  README.md  speller.c  texts/
+```
 
 === Understanding
 
