@@ -228,7 +228,7 @@ Ultimately, be sure to `free` in `unload` any memory that you allocated in `load
 
 [source]
 ----
-valgrind ./speller texts/ralph.txt
+valgrind ./speller texts/cat.txt
 ----
 
 If you run `valgrind` without specifying a `text` for `speller`, your implementations of `load` and `unload` won't actually get called (and thus analyzed).
@@ -237,7 +237,7 @@ If unsure how to interpret the output of `valgrind`, do just ask `help50` for he
 
 [source]
 ----
-help50 valgrind ./speller texts/ralph.txt
+help50 valgrind ./speller texts/cat.txt
 ----
 
 == Testing
