@@ -326,3 +326,11 @@ check50 cs50/2018/fall/challenges/speller
 ----
 
 Then visit the URL that `check50` outputs to see where you rank!
+
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2018/fall/speller
+```
