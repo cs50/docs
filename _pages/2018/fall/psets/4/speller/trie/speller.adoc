@@ -186,12 +186,14 @@ Incidentally, to be clear, by "misspelled" we simply mean that some word is not 
 
 ==== `Makefile`
 
-And, lastly, recall that `make` automates compilation of your code so that you don't have to execute `clang` manually along with a whole bunch of switches. However, as your programs grow in size, make won't be able to infer from context anymore how to compile your code; you'll need to start telling make how to compile your program, particularly when they involve multiple source (i.e., `.c`) files, as in the case of this problem. And so we'll utilize a `Makefile`, a configuration file that tells make exactly what to do. Open up `Makefile`, and you should see four lines:
+And, lastly, recall that `make` automates compilation of your code so that you don't have to execute `clang` manually along with a whole bunch of switches. However, as your programs grow in size, `make` won't be able to infer from context anymore how to compile your code; you'll need to start telling `make` how to compile your program, particularly when they involve multiple source (i.e., `.c`) files, as in the case of this problem. And so we'll utilize a `Makefile`, a configuration file that tells `make` exactly what to do. Open up `Makefile`, and you should see four lines:
 
-1. The first line tells `make` to execute the subsequent lines by default.
+1. The first line tells `make` to execute the subsequent lines whenever you yourself execute `make speller` (or just `make`).
 1. The second line tells `make` how to compile `speller.c` into machine code (i.e., `speller.o`).
 1. The third line tells `make` how to compile `dictionary.c` into machine code (i.e., `dictionary.o`).
 1. The fourth line tells `make` to link `speller.o` and `dictionary.o` in a file called `speller`.
+
+*Be sure to compile `speller` by executing `make speller` (or just `make`). Executing `make dictionary` won't work!*
 
 == Specification
 
