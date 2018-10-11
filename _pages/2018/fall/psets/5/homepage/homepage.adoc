@@ -1,0 +1,69 @@
+---
+layout: 2018/fall
+---
+
+= Homepage
+
+== tl;dr
+
+Build a simple homepage using HTML and CSS.
+
+== Getting Started
+
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
+
+1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
+1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
+1. Execute `mkdir pset5` to make (i.e., create) a directory called `pset5` in your home directory.
+1. Execute `cd pset5` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/2018/fall/psets/5/homepage/homepage.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip homepage.zip` to uncompress that file.
+1. Execute `rm homepage.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `homepage`, which was inside of that ZIP file.
+1. Execute `cd homepage` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution, including `index.html` and `styles.css`.
+
+== Specification
+
+Implement in your `homepage` directory a small website that introduces yourself, your favorite hobby, or anything else that interests you. From a programming perspective, your website must:
+
+* Contain at least four different `.html` pages, at least one of which is `index.html` (the main page of your website), and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
+* Use at least eight (8) different HTML tags besides `<html>`, `<head>`, `<body>`, and `<title>`.
+* Integrate Bootstrap's CSS styling by way of including at least one Bootstrap component and using at least two Bootstrap columns for layout purposes using Bootstrap's grid model.
+* Have at least one stylesheet file of your own creation, which:
+  ** uses at least five (5) different types of CSS selectors (tag, class, or ID), and within which you use at least five (5) different CSS properties, such as `font-size`, or `margin`; and
+  ** includes at least one mobile-responsive @media query, such that something about the styling changes for smaller screens.
+* In `README.md`, include a short writeup describing your site, what’s contained in each file, and (optionally) any other additional information your TF should know about your site.
+
+== Testing
+
+=== `check50`
+
+Afraid there's no `check50` for this assignment!
+
+=== `style50`
+
+Here's how to evaluate the style of your code using `style50`.
+
+[source]
+----
+style50 index.html
+----
+
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2018/fall/homepage
+```
+
+== How to Publish
+
+In addition, you can optionally publish your site publicly so that your classmates, friends, and anyone who knows your GitHub username can visit your page on the web. To do so, execute the below:
+
+```
+submit50 cs50/2018/fall/publish
+```
+
+This will, after about a minute or so, publish your site to `submit50.github.com/USERNAME`, where `USERNAME` is your own GitHub username. Be sure to check out your own site to make sure it looks right, as well as visiting those of your friends!
