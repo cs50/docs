@@ -32,10 +32,12 @@ Implement in your `homepage` directory a small website that introduces yourself,
 * Integrate Bootstrap's CSS styling by way of including at least one Bootstrap component and using at least two Bootstrap columns for layout purposes using Bootstrap's grid model.
 * Have at least one stylesheet file of your own creation, which:
   ** uses at least five (5) different types of CSS selectors (tag, class, or ID), and within which you use at least five (5) different CSS properties, such as `font-size`, or `margin`; and
-  ** includes at least one mobile-responsive @media query, such that something about the styling changes for smaller screens.
+  ** includes at least one mobile-responsive `@media` query, such that something about the styling changes for smaller screens.
 * In `README.md`, include a short writeup describing your site, what’s contained in each file, and (optionally) any other additional information your TF should know about your site.
 
 == Testing
+
+If you want to view how your site looks while you work on it: Within CS50 IDE, right-click (or Ctrl+click, on a Mac) on the `homepage` directory in the file tree at left. From the options that appear, select **Serve**, which should open a new tab in your browser (it may take a second or two) with your site therein. You'll see a listing of all of the files in your `homepage` directory, and from there can navigate to any HTML page you've designed.
 
 === `check50`
 
