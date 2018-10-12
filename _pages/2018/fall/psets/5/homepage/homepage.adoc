@@ -81,7 +81,7 @@ Recall also that by opening Developer Tools in Google Chrome, you can _simulate_
 
 === Correctness
 
-Afraid there's no `check50` for this assignment, but your site's correctness will be assessed based on whether you meet the requirements of the specification as outlined above, and whether your HTML is well-formed and valid. To ensure that your pages are, you can use link:https://validator.w3.org/#validate_by_input[the W3Schools HTML Validator] service, copying and pasting your HTML directly into the provided text box. Take care to eliminate any warnings or errors suggested by the validator before submitting!
+Afraid there's no `check50` for this assignment. Instead, your site's correctness will be assessed based on whether you meet the requirements of the specification as outlined above, and whether your HTML is well-formed and valid. To ensure that your pages are, you can use link:https://validator.w3.org/#validate_by_input[the W3Schools HTML Validator] service, copying and pasting your HTML directly into the provided text box. Take care to eliminate any warnings or errors suggested by the validator before submitting!
 
 === Design
 
