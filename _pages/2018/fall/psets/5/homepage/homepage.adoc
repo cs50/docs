@@ -38,7 +38,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 http-server
 ```
 +
-in the terminal window and clicking on the link you see, which should look something like `http://ide50-USERNAME.cs50.io:8080`.
+in the terminal window and clicking on the link that appears, which should be of the form `http://ide50-USERNAME.cs50.io:8080`, substituting of course your actual username on CS50 IDE in place of `USERNAME`.
 
 == Specification
 
@@ -46,7 +46,7 @@ Implement in your `homepage` directory a website which must:
 
 * Contain at least four different `.html` pages, at least one of which is `index.html` (the main page of your website), and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
 * Use at least ten (10) different HTML tags besides `<html>`, `<head>`, `<body>`, and `<title>`.
-* Integrate Bootstrap's CSS styling to your site, and incorporate some of Bootstrap's styling options, examples of which exist in link:https://getbootstrap.com/docs/4.1/getting-started/introduction/[Bootstrap's documentation]. Recall that, per that documentation, you can use their stylesheet by adding the following line between your `<head>` tags:
+* Integrate Bootstrap's CSS styling to your site, and incorporate some of Bootstrap's styling options, examples of which exist in link:https://getbootstrap.com/docs/4.1/getting-started/introduction/[Bootstrap's documentation]. Per that documentation, you can use their stylesheet by adding the following line between your `<head>` tags:
 +
 ```
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
