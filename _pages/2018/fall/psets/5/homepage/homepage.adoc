@@ -16,7 +16,7 @@ The internet has enabled incredible things; we can use a search engine to resear
   * CSS, _Cascading Style Sheets_, which is used to describe the aesthetics of websites; and
   * JavaScript, which is used to make websites interactive and dynamic.
 
-Focusing on just the first of those two languages for now, create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else of interest to you.
+Focusing on just the first two of those three languages for now, create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else of interest to you.
 
 == Getting Started
 
