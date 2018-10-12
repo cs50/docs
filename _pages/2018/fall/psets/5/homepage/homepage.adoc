@@ -38,7 +38,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 Implement in your `homepage` directory a website which must:
 
 * Contain at least four different `.html` pages, at least one of which is `index.html` (the main page of your website), and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
-* Use at least eight (8) different HTML tags besides `<html>`, `<head>`, `<body>`, and `<title>`.
+* Use at least ten (10) different HTML tags besides `<html>`, `<head>`, `<body>`, and `<title>`.
 * Integrate Bootstrap's CSS styling to your site, and incorporate some of Bootstrap's styling options, examples of which exist in link:https://getbootstrap.com/docs/4.1/getting-started/introduction/[Bootstrap's documentation]. Recall that, per that documentation, you can use their stylesheet by adding the following line between your `<head>` tags:
 +
 ```
