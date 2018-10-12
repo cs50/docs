@@ -10,7 +10,13 @@ Build a simple homepage using HTML and CSS.
 
 == Background
 
+The internet has empowered us to do incredible things; we can use a search engine to research anything we can imagine, communicate with friends and family members around the globe, play games, take courses, and so much more. But it turns out that nearly all sites we may visit are built on three core languages, each of which serves a slightly different purpose:
 
+  * HTML, or _HyperText Markup Language_, which is used to describe the content of websites;
+  * CSS, _Cascading Style Sheets_, which is used to describe the aesthetics of websites; and
+  * JavaScript, which is used to make websites interactive and dynamic.
+
+Focusing on just the first of those two languages for now, let's create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else that interests you.
 
 == Getting Started
 
@@ -29,7 +35,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 
 == Specification
 
-Implement in your `homepage` directory a small website that introduces yourself, your favorite hobby, or anything else that interests you. From a programming perspective, your website must:
+Implement in your `homepage` directory a website which must:
 
 * Contain at least four different `.html` pages, at least one of which is `index.html` (the main page of your website), and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
 * Use at least eight (8) different HTML tags besides `<html>`, `<head>`, `<body>`, and `<title>`.
@@ -61,6 +67,8 @@ http://ide50-USERNAME.cs50.io:8080
 
 Where `USERNAME` is your username on CS50 IDE, and the `8080` at the end refers to the _port number_ on which your web server is listening for requests (instead of the default `80` or `443` for HTTP and HTTPS requests, respectively). At that location, you'll see a listing of all of the files in your `homepage` directory, and from there can navigate to any HTML page you've designed.
 
+Recall also that by opening Developer Tools, you can _simulate_ visiting your page on a mobile device by clicking the phone-shaped icon to the left of *Elements* in the developer tools window, or, once the Developer Tools tab has already been opened, by typing `Ctrl`+`Shift`+`M` on a PC or `Cmd`+`Shift`+`M` on a Mac, rather than needing to visit your site on a mobile device separately!
+
 === `check50`
 
 Afraid there's no `check50` for this assignment, but your site's correctness will be assessed based on whether you meet the requirements of the specification as outlined above.
@@ -72,12 +80,20 @@ To ensure that your HTML is well-designed and valid, you can use link:https://va
 === `style50`
 
 Afraid `style50` does not support HTML files, and so it is incumbent upon you to indent and align your HTML tags cleanly. Know also that you can create an HTML comment with:
-+
+
 ```
 <!-- comment goes here -->
 ```
-+
+
 but commenting your HTML code is not as imperative as it is when commenting code in, say, C or Python.
+
+== Hints
+
+For fairly comprehensive guides on the languages introduced in this problem, check out the documentation for each on W3Schools.
+
+* link:https://www.w3schools.com/html[HTML]
+* link:https://www.w3schools.com/css[CSS]
+* link:https://www.w3schools.com/js[JavaScript]
 
 == How to Submit
 
@@ -89,7 +105,7 @@ submit50 cs50/2018/fall/homepage
 
 == How to Publish
 
-In addition, you can optionally publish your site publicly so that your classmates, friends, and anyone who knows your GitHub username can visit your page on the web. To do so, execute the below:
+And if you'd like to publish your site publicly so that your classmates, friends, and anyone who knows your GitHub username can visit your page on the web. To do so, execute the below:
 
 ```
 submit50 cs50/2018/fall/publish
