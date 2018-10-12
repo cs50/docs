@@ -45,8 +45,9 @@ Implement in your `homepage` directory a website which must:
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 ```
 
-* Have at least one stylesheet file of your own creation, which uses at least five (5) different CSS selectors (e.g. tag (`body`), class (`.example`), or ID (`#example`)), and within which you use a total of at least five (5) different CSS properties, such as `font-size`, or `margin`; and
+* Have at least one stylesheet file of your own creation, which uses at least five (5) different CSS selectors (e.g. tag (`example`), class (`.example`), or ID (`#example`)), and within which you use a total of at least five (5) different CSS properties, such as `font-size`, or `margin`; and
 * Ensure that your site looks nice on browsers both on mobile devices as well as laptops and desktops.
+* No need to include any JavaScript on your site for this problem set, unless so inclined!
 
 == Testing
 
