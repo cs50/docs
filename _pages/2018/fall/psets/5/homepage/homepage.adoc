@@ -87,8 +87,9 @@ Afraid there's no `check50` for this assignment, but your site's correctness wil
 
 In considering the overall design of your site, the staff will take into account the following, among potentially other things as well:
 
-* Whether your CSS has been factored out into a separate CSS file(s);
-* Whether you have avoided repetition and redundancy by "cascading" style properties from parent tags.
+* whether the aesthetics of your site are such that it is intuitive and straightforward for a user to navigate;
+* whether your CSS has been factored out into a separate CSS file(s); and
+* whether you have avoided repetition and redundancy by "cascading" style properties from parent tags.
 
 === Style
 
