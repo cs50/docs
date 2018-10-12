@@ -106,7 +106,7 @@ submit50 cs50/2018/fall/homepage
 
 == How to Publish
 
-And if you'd like to publish your site publicly so that your classmates, friends, and anyone who knows your GitHub username can visit your page on the web. To do so, execute the below:
+And if you'd like to publish your site publicly so that your classmates, friends, and anyone who knows your GitHub username can visit your page on the web, execute the below:
 
 ```
 submit50 cs50/2018/fall/publish
