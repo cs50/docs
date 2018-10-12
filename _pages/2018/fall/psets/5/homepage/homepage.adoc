@@ -8,6 +8,10 @@ layout: 2018/fall
 
 Build a simple homepage using HTML and CSS.
 
+== Background
+
+
+
 == Getting Started
 
 Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
@@ -29,28 +33,51 @@ Implement in your `homepage` directory a small website that introduces yourself,
 
 * Contain at least four different `.html` pages, at least one of which is `index.html` (the main page of your website), and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
 * Use at least eight (8) different HTML tags besides `<html>`, `<head>`, `<body>`, and `<title>`.
-* Integrate Bootstrap's CSS styling by way of including at least one Bootstrap component and using at least two Bootstrap columns for layout purposes using Bootstrap's grid model.
-* Have at least one stylesheet file of your own creation, which:
-  ** uses at least five (5) different types of CSS selectors (tag, class, or ID), and within which you use at least five (5) different CSS properties, such as `font-size`, or `margin`; and
-  ** includes at least one mobile-responsive `@media` query, such that something about the styling changes for smaller screens.
-* In `README.md`, include a short writeup describing your site, what’s contained in each file, and (optionally) any other additional information your TF should know about your site.
+* Integrate Bootstrap's CSS styling to your site, and incorporate some of Bootstrap's styling options, examples of which exist in link:https://getbootstrap.com/docs/4.1/getting-started/introduction/[Bootstrap's documentation]. Recall that, per that documentation, you can use their stylesheet by adding the following line between your `<head>` tags:
++
+```
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+```
+
+* Have at least one stylesheet file of your own creation, which uses at least five (5) different CSS selectors (e.g. tag (`body`), class (`.example`), or ID (`#example`)), and within which you use a total of at least five (5) different CSS properties, such as `font-size`, or `margin`; and
+* Ensure that your site looks nice on browsers both on mobile devices as well as laptops and desktops.
 
 == Testing
 
-If you want to view how your site looks while you work on it: Within CS50 IDE, right-click (or Ctrl+click, on a Mac) on the `homepage` directory in the file tree at left. From the options that appear, select **Serve**, which should open a new tab in your browser (it may take a second or two) with your site therein. You'll see a listing of all of the files in your `homepage` directory, and from there can navigate to any HTML page you've designed.
+If you want to view how your site looks while you work on it, there are two options:
+
+1. Within CS50 IDE, navigate to your `homepage` directory (remember how?) and then execute
++
+```
+http-server
+```
+1. Within CS50 IDE, right-click (or Ctrl+click, on a Mac) on the `homepage` directory in the file tree at left. From the options that appear, select **Serve**, which should open a new tab in your browser (it may take a second or two) with your site therein.
+
+In either case, you'll be brought to a URL of the form
+
+```
+http://ide50-USERNAME.cs50.io:8080
+```
+
+Where `USERNAME` is your username on CS50 IDE, and the `8080` at the end refers to the _port number_ on which your web server is listening for requests (instead of the default `80` or `443` for HTTP and HTTPS requests, respectively). At that location, you'll see a listing of all of the files in your `homepage` directory, and from there can navigate to any HTML page you've designed.
 
 === `check50`
 
-Afraid there's no `check50` for this assignment!
+Afraid there's no `check50` for this assignment, but your site's correctness will be assessed based on whether you meet the requirements of the specification as outlined above.
+
+=== HTML Validator
+
+To ensure that your HTML is well-designed and valid, you can use link:https://validator.w3.org/#validate_by_input[the W3Schools HTML Validator] service, copying and pasting your HTML directly into the provided text box. Take care to eliminate any warnings or errors suggested by the validator before submitting!
 
 === `style50`
 
-Here's how to evaluate the style of your code using `style50`.
-
-[source]
-----
-style50 index.html
-----
+Afraid `style50` does not support HTML files, and so it is incumbent upon you to indent and align your HTML tags cleanly. Know also that you can create an HTML comment with:
++
+```
+<!-- comment goes here -->
+```
++
+but commenting your HTML code is not as imperative as it is when commenting code in, say, C or Python.
 
 == How to Submit
 
