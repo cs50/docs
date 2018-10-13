@@ -10,11 +10,11 @@ Build a simple homepage using HTML and CSS.
 
 == Background
 
-The internet has enabled incredible things; we can use a search engine to research anything imaginable, communicate with friends and family members around the globe, play games, take courses, and so much more. But it turns out that nearly all pages we may visit are built on three core languages, each of which serves a slightly different purpose:
+The internet has enabled incredible things: we can use a search engine to research anything imaginable, communicate with friends and family members around the globe, play games, take courses, and so much more. But it turns out that nearly all pages we may visit are built on three core languages, each of which serves a slightly different purpose:
 
-  * HTML, or _HyperText Markup Language_, which is used to describe the content of websites;
-  * CSS, _Cascading Style Sheets_, which is used to describe the aesthetics of websites; and
-  * JavaScript, which is used to make websites interactive and dynamic.
+1. HTML, or _HyperText Markup Language_, which is used to describe the content of websites;
+1. CSS, _Cascading Style Sheets_, which is used to describe the aesthetics of websites; and
+1. JavaScript, which is used to make websites interactive and dynamic.
 
 Focusing on just the first two of those three languages for now, create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else of interest to you.
 
@@ -38,7 +38,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 http-server
 ```
 +
-in the terminal window and clicking on the link that appears, which should be of the form `http://ide50-USERNAME.cs50.io:8080`, substituting of course your actual username on CS50 IDE in place of `USERNAME`.
+in the terminal window and clicking on the link that appears, which should be of the form `http://ide50-USERNAME.cs50.io:8080`, substituting, of course, your actual username on CS50 IDE in place of `USERNAME`.
 
 == Specification
 
@@ -96,13 +96,13 @@ In considering the overall design of your site, the staff will take into account
 Afraid `style50` does not support HTML files, and so it is incumbent upon you to indent and align your HTML tags cleanly, as the per the examples shown in Week 5's lecture. Know also that you can create an HTML comment with:
 
 ```
-<!-- comment goes here -->
+<!-- Comment goes here -->
 ```
 
 but commenting your HTML code is not as imperative as it is when commenting code in, say, C or Python. You can also comment your CSS, in CSS files, with:
 
 ```
-/* comment goes here */
+/* Comment goes here */
 ```
 
 == Hints
@@ -120,3 +120,15 @@ Execute the below, logging in with your GitHub username and password when prompt
 ```
 submit50 cs50/2018/fall/homepage
 ```
+
+== Deploying Your Homepage
+
+If you would like to deploy your homepage publicly, so that anyone on the internet can visit it, you can optionally run:
+
+```
+check50 cs50/2018/fall/challenges/site
+```
+
+Then visit `https://USERNAME.cs50.site/`, where `USERNAME` is your GitHub username (not your IDE username). Best to wait a few minutes, else you might see *404 Not Found*.
+
+If you make changes to your homepage in CS50 IDE, you can re-deploy those changes as many times as you'd like by running the above command again. As before, it might take a few minutes for the changes to appear.
