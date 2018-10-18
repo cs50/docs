@@ -1,0 +1,103 @@
+---
+layout: 2018/fall
+---
+
+= Mario
+
+== tl;dr
+
+Implement a program that prints out a double half-pyramid of a specified height, per the below.
+
+[source,subs="macros,quotes"]
+---
+$ [underline]#python mario.py#
+Height: [underline]#4#
+   pass:[#  #]
+  pass:[##  ##]
+ pass:[###  ###]
+pass:[####  ####]
+---
+
+== Specification
+
+* Write, in a file called `mario.py` in `~/workspace/pset6/mario/more/`, a program that recreates these half-pyramids using hashes (`#`) for blocks, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/mario/more/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+* To make things more interesting, first prompt the user for the half-pyramids' heights, a non-negative integer no greater than `8`. (The height of the half-pyramids pictured above happens to be `4`, the width of each half-pyramid `4`, with an a gap of size `2` separating them.)
+* If the user fails to provide a non-negative integer no greater than `8`, you should re-prompt for the same again.
+* Then, generate (with the help of `printf` and one or more loops) the desired half-pyramids.
+* Take care to left-align the bottom-left corner of the left-hand half-pyramid with the left-hand edge of your terminal window.
+
+== Walkthrough
+
+video::xX7DQGkEG48[youtube]
+
+== Usage
+
+Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+
+[source,subs="macros,quotes"]
+---
+$ [underline]#python mario.py#
+Height: [underline]#4#
+   pass:[#  #]
+  pass:[##  ##]
+ pass:[###  ###]
+pass:[####  ####]
+---
+
+[source,subs="macros,quotes"]
+---
+$ [underline]#python mario.py#
+Height: [underline]#0#
+---
+
+[source,subs="macros,quotes"]
+---
+$ [underline]#python mario.py#
+Height: [underline]#-5#
+Height: [underline]#4#
+   pass:[#  #]
+  pass:[##  ##]
+ pass:[###  ###]
+pass:[####  ####]
+---
+
+[source,subs="macros,quotes"]
+---
+$ [underline]#python mario.py#
+Height: [underline]#-5#
+Height: [underline]#five#
+Height: [underline]#40#
+Height: [underline]#24#
+Height: [underline]#4#
+   pass:[#  #]
+  pass:[##  ##]
+ pass:[###  ###]
+pass:[####  ####]
+---
+
+== Testing
+
+=== Correctness
+
+[source]
+---
+check50 cs50/2018/fall/sentimental/mario/more
+---
+
+=== Style
+
+[source]
+---
+style50 mario.py
+---
+
+== Staff Solution
+
+[source]
+---
+~cs50/hacker1/mario
+---
+
+== Hints
+
+Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to C!
