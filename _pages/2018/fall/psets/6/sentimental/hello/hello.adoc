@@ -10,7 +10,7 @@ Implement a program that prints out a simple greeting to the user, per the below
 
 [source,subs=quotes]
 ----
-$ [underline]#./hello#
+$ [underline]#python hello.py#
 [underline]#David#
 hello, David
 ----
@@ -29,7 +29,7 @@ Your program should behave per the example below. Assumed that the underlined te
 
 [source,subs=quotes]
 ----
-$ [underline]#./hello#
+$ [underline]#python hello.py#
 [underline]#Veronica#
 hello, Veronica
 ----
