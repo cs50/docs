@@ -26,7 +26,9 @@ Change owed: [underline]#0.41#
 
 == Walkthrough
 
-video::6w7Tws0seJk[youtube]
+__(Note: In the past, this problem was called Greedy)__
+
+video::f3iMmGry05Q[youtube]
 
 == Usage
 

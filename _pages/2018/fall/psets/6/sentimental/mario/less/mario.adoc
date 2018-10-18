@@ -35,7 +35,7 @@ pass:[###]
 
 == Walkthrough
 
-video::EGWRG5e1O2s[youtube]
+video::syt3NZhllwc[youtube]
 
 == Usage
 

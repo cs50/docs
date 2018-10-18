@@ -28,7 +28,7 @@ pass:[####  ####]
 
 == Walkthrough
 
-video::xX7DQGkEG48[youtube]
+video::gqS876f0lk0[youtube]
 
 == Usage
 
