@@ -111,7 +111,7 @@ assuming it's actually there! And assuming you've imported the `sys` module, as 
 import sys
 ----
 
-Once you have both `k` and some plaintext, `p`, it's time to encrypt the latter with the former. Recall that you can iterate over the characters in a `string`, printing each one at a time, with code like the below:
+Once you have both `k` and some plaintext, `p`, it's time to encrypt the latter with the former. Recall that you can iterate over the characters in a string, printing each one at a time, with code like the below:
 
 [source,python]
 ----
