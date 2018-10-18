@@ -9,11 +9,11 @@ layout: 2018/fall
 Implement a program that encrypts messages using Vigenère's cipher, per the below.
 
 [source,subs=quotes]
----
+----
 $ [underline]#python vigenere.py ABC#
 plaintext:  [underline]#HELLO#
 ciphertext: HFNLP
----
+----
 
 == Specification
 
@@ -36,61 +36,61 @@ video::iE6jiKRfrEQ[youtube]
 Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes]
----
+----
 $ [underline]#python vigenere.py 13#
 Usage: python vigenere.py k
----
+----
 
 [source,subs=quotes]
----
+----
 $ [underline]#python vigenere.py#
 Usage: python vigenere.py k
----
+----
 
 [source,subs=quotes]
----
+----
 $ [underline]#python vigenere.py bacon and eggs#
 Usage: python vigenere.py k
----
+----
 
 [source,subs=quotes]
----
+----
 $ [underline]#python vigenere.py bacon#
 plaintext: [underline]#Meet me at the park at eleven am#
 ciphertext: Negh zf av huf pcfx bt gzrwep oz
----
+----
 
 == Testing
 
 To help you test `vigenere`, we've written a program called `devigenere` for you that also takes one and only one command-line argument (a keyword) but whose job is to take ciphertext as input and produce plaintext as output. To use our program, execute
 
 [source]
----
+----
 ~cs50/pset2/devigenere k
----
+----
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
 
 === Correctness
 
 [source]
----
+----
 check50 cs50/2018/fall/sentimental/vigenere
----
+----
 
 === Style
 
 [source]
----
+----
 style50 vigenere.py
----
+----
 
 == Staff's Solution
 
 [source]
----
+----
 ~cs50/pset2/vigenere
----
+----
 
 == Hints
 

@@ -9,11 +9,11 @@ layout: 2018/fall
 Implement a program that prints out a simple greeting to the user, per the below.
 
 [source,subs=quotes]
----
+----
 $ [underline]#./hello#
 [underline]#David#
 hello, David
----
+----
 
 == Specification
 
@@ -28,33 +28,33 @@ video::vbkTzOytISY[youtube]
 Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes]
----
+----
 $ [underline]#./hello#
 [underline]#Veronica#
 hello, Veronica
----
+----
 
 == Testing
 
 === `check50`
 
 [source]
----
+----
 check50 cs50/2018/fall/sentimental/hello
----
+----
 
 === `style50`
 
 [source]
----
+----
 style50 hello.py
----
+----
 
 == Staff Solution
 
 To run the staff's implementation of `hello`, execute the below.
 
 [source]
----
+----
 ~cs50/pset1/hello
----
+----

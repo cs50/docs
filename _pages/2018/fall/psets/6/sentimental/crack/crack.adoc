@@ -9,10 +9,10 @@ layout: 2018/fall
 Implement a program that cracks passwords, per the below.
 
 [source,subs=quotes]
----
+----
 $ [underline]#python crack.py 51v3Nh6ZWGHOQ#
 ROFL
----
+----
 
 == Specification
 
@@ -29,7 +29,7 @@ Design and implement a program, `crack`, that cracks passwords, exactly as you d
 == Password List
 
 [source]
----
+----
 brian:51.xJagtPnb6s
 bjbrown:50GApilQSG3E2
 emc:502sDZxA/ybHs
@@ -42,7 +42,7 @@ rob:51v3Nh6ZWGHOQ
 veronica:61v1CDwwP95bY
 walker:508ny6Rw0aRio
 zamyla:50cI2vYkF0YU2
----
+----
 
 == Walkthrough
 
@@ -55,16 +55,16 @@ video::w78QYcmpA8o[youtube]
 Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
 
 [source,subs=quotes]
----
+----
 $ [underline]#python crack.py#
 Usage: python crack.py hash
----
+----
 
 [source,subs=quotes]
----
+----
 $ [underline]#python crack.py 51v3Nh6ZWGHOQ#
 ROFL
----
+----
 
 == Testing
 
@@ -75,6 +75,6 @@ No `check50` for this one! But odds are, if you can crack all twelve passwords a
 === Style
 
 [source]
----
+----
 style50 crack.py
----
+----
