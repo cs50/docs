@@ -78,3 +78,11 @@ No `check50` for this one! But odds are, if you can crack all twelve passwords a
 ----
 style50 crack.py
 ----
+
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2018/fall/sentimental/crack
+```

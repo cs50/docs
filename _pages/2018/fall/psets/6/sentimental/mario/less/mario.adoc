@@ -107,6 +107,14 @@ style50 mario.py
 ~cs50/pset1/mario
 ----
 
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2018/fall/sentimental/mario/less
+```
+
 == Hints
 
 Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to Python!

@@ -76,6 +76,14 @@ style50 credit.py
 ~cs50/hacker1/credit
 ----
 
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2018/fall/sentimental/credit
+```
+
 == Hints
 
 Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) Here are a few card numbers that PayPal recommends for testing:

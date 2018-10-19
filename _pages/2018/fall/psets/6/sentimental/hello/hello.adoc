@@ -58,3 +58,11 @@ To run the staff's implementation of `hello`, execute the below.
 ----
 ~cs50/pset1/hello
 ----
+
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2018/fall/sentimental/hello
+```

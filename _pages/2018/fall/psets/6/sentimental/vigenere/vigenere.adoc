@@ -92,6 +92,14 @@ style50 vigenere.py
 ~cs50/pset2/vigenere
 ----
 
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2018/fall/sentimental/vigenere
+```
+
 == Hints
 
 Not sure where to begin? As luck would have it, this program's pretty similar to link:../caesar/caesar.html[`caesar`]! Only this time, you need to decide which character in _k_ to use as you iterate from character to character in _p_.
