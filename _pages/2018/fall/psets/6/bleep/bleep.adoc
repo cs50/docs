@@ -53,6 +53,7 @@ Complete the implementation of `bleep` in such a way that it
 * Prompts the user to provide a message.
 * Tokenizes that message into its individual component words, using `nltk`, and then iterates over the list of "tokens" (words) that the `nltk` tokenizer generates, checking to see whether any of the tokens match, case-insensitively, any of the words in the banned words list.
 * Prints back the message that the user provided, except if the message contained any banned words, each of its characters is replaced by a `*`.
+  * Note: You should not censor words that merely contain a banned word as a substring. For example, **bar** is a banned word in the provided `banned.txt`, but neither __**bar**n__ nor __crow**bar**__ nor __wheel**bar**row__ should be censored.
 
 == Usage
 
