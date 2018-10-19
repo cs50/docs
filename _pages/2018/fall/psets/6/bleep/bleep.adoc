@@ -37,7 +37,7 @@ This program defines only one function, `main`, which gets called per the file's
 
 == Specification
 
-Complete the implementation of `bleep` in such a way that it
+Complete the implementation of `bleep.py` in such a way that it
 
 * Opens the text file (e.g., `banned.txt`) provided as a command line argument, reads from that file the list of words stored therein, and stores each into a Python data structure for later access. While a Python `list` will work well for this, you may also find a link:https://docs.python.org/3/tutorial/datastructures.html#sets[`set`] useful here.
 * Prompts the user to provide a message.
@@ -80,8 +80,8 @@ what the &#42;&#42;&#42;&#42;
 [source,subs=quotes]
 ----
 $ [underline]#python bleep.py banned.txt#
-[underline]#darn it, world#
-&#42;&#42;&#42;&#42; it, world
+[underline]#gosh darn it#
+&#42;&#42;&#42;&#42; &#42;&#42;&#42;&#42; it
 ----
 
 == Testing
@@ -97,19 +97,16 @@ check50 cs50/2018/fall/bleep
 
 [source]
 ----
-style50 bleep
+style50 bleep.py
 ----
 
 == Staff's Solution
 
-[source]
-----
-~cs50/pset6/bleep
-----
+COMING SOON
 
 == How to Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+Execute the below from within your `~/workspace/pset6/bleep` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
 submit50 cs50/2018/fall/bleep
