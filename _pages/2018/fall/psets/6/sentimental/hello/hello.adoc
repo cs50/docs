@@ -21,6 +21,8 @@ hello, David
 
 == Walkthrough
 
+**Note: The walkthrough video does not presuppose that you need to greet your user by name, but per this specification, your program should behave identically to that in Problem Set 1.**
+
 video::5ueXMnDE-y8[youtube]
 
 == Usage
