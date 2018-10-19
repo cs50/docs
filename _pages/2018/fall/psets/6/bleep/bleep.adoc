@@ -12,10 +12,10 @@ Implement a program that censors messages that contain words that appear on a li
 ----
 $ [underline]#./bleep banned.txt#
 [underline]#What the heck#
-What the ****
+What the pass:[****]
 $ [underline]#./bleep banned.txt#
 [underline]#gosh darn it#
-gosh **** it
+gosh pass:[****] it
 ----
 
 == Getting Started
@@ -81,14 +81,14 @@ hello world
 ----
 $ [underline]#./bleep banned.txt#
 [underline]#what the heck#
-what the ****
+what the pass:[****]
 ----
 
 [source,subs=quotes]
 ----
 $ [underline]#./bleep banned.txt#
 [underline]#darn it, world#
-**** it , world
+pass:[****] it , world
 ----
 
 Notice in that final example that the spacing gets thrown off. This is because `nltk` will tokenize punctuation as a "word", and we are simply inserting a space after every token to visually preserve the aesthetics of the sentence. Quite all right to do the same in your own solution, rather than trying to engineer a more complicated fix!
