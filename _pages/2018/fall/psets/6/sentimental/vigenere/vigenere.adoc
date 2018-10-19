@@ -19,7 +19,7 @@ ciphertext: HFNLP
 
 Design and implement a program that encrypts messages using Vigenère's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/vigenere/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 
-* Implement your program in a file called `vigenere.py` in a directory called `vigenere`.
+* Implement your program in a file called `vigenere.py` in your `~/workspace/pset6/vigenere` directory (if it doesn't already exist, create it now!).
 * Your program must accept a single command-line argument: a keyword, _k_, composed entirely of alphabetical characters.
 * If your program is executed without any command-line arguments, with more than one command-line argument, or with one command-line argument that contains any non-alphabetical character, your program should print an error (of your choice) and exit immediately.
 * Otherwise, your program must proceed to prompt the user for a string of plaintext, _p_, (as by a prompt for `plaintext:`) which it must then encrypt according to Vigenère's cipher with _k_, ultimately printing the result (prepended with `ciphertext:` and ending with a newline) and exiting.

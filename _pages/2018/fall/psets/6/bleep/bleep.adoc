@@ -10,12 +10,12 @@ Implement a program that censors messages that contain words that appear on a li
 
 [source,subs=quotes]
 ----
-$ [underline]#./bleep banned.txt#
+$ [underline]#python bleep.py banned.txt#
 [underline]#What the heck#
 What the &#42;&#42;&#42;&#42;
-$ [underline]#./bleep banned.txt#
+$ [underline]#python bleep.py banned.txt#
 [underline]#gosh darn it#
-gosh &#42;&#42;&#42;&#42; it
+&#42;&#42;&#42;&#42; &#42;&#42;&#42;&#42; it
 ----
 
 == Getting Started
@@ -29,21 +29,11 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `rm bleep.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `bleep`, which was inside of that ZIP file.
 1. Execute `cd bleep` to change into that directory.
-1. Execute `ls`. You should see this problem's distribution, including `bleep` and `banned.txt`. Despite not having a file extension, `bleep` is a Python file.
-1. Execute `chmod a+x bleep`.
+1. Execute `ls`. You should see this problem's distribution, including `bleep.py` and `banned.txt`.
 
 == Understanding
 
-Open up `bleep`. Suffice it to say that file's name doesn't end in `.py`, even though the file contains a program written in Python. But that's okay! Notice the "shebang" atop the file:
-
-[source]
-----
-#!/usr/bin/env python3
-----
-
-That line tells a computer to interpret (i.e., run) the program using `python3` (aka `python` on CS50 IDE), an interpreter that understands Python 3.
-
-This program defines only one function, `main`, which gets called per the file's last line. Within `main`, we first make sure that `sys.argv` contains the expected number of command-line arguments. We then have a `TODO` to handle! But also notice at the top that this file imports the http://www.nltk.org/[Natural Language Toolkit], among whose features is a http://www.nltk.org/api/nltk.tokenize.html[tokenizer] that you can use to split a message (such as that typed by the user upon a call to `get_string`) into a `list` of words (i.e., shorter `str` objects).
+This program defines only one function, `main`, which gets called per the file's last line. Within `main` ... ugh, looks like that's just a big TODO!
 
 == Specification
 
@@ -51,9 +41,10 @@ Complete the implementation of `bleep` in such a way that it
 
 * Opens the text file (e.g., `banned.txt`) provided as a command line argument, reads from that file the list of words stored therein, and stores each into a Python data structure for later access. While a Python `list` will work well for this, you may also find a link:https://docs.python.org/3/tutorial/datastructures.html#sets[`set`] useful here.
 * Prompts the user to provide a message.
-* Tokenizes that message into its individual component words, using `nltk`, and then iterates over the list of "tokens" (words) that the `nltk` tokenizer generates, checking to see whether any of the tokens match, case-insensitively, any of the words in the banned words list.
+* Tokenizes that message into its individual component words, using the link:https://docs.python.org/3/library/stdtypes.html#str.split[`split`] method on the provided string, and then iterates over the `list` of "tokens" (words) that is returned by calling `split`, checking to see whether any of the tokens match, case-insensitively, any of the words in the banned words list.
 * Prints back the message that the user provided, except if the message contained any banned words, each of its characters is replaced by a `*`.
-  * Note: You should not censor words that merely contain a banned word as a substring. For example, **bar** is a banned word in the provided `banned.txt`, but neither __**bar**ns__ nor __crow**bar**__ nor __wheel**bar**row__ should be censored.
+  * For example, `gosh` should be replaced with four `*` characters, while `fudge` should be replaced with five.
+* You should not censor words that merely contain a banned word as a substring. For example, **bar** is a banned word in the provided `banned.txt`, but neither __**bar**ns__ nor __crow**bar**__ nor __wheel**bar**row__ should be censored.
 
 == Usage
 
@@ -61,38 +52,36 @@ Your program should behave per the examples below. Assume that the underlined te
 
 [source,subs=quotes]
 ----
-$ [underline]#./bleep#
-Usage: ./bleep <wordlist>
+$ [underline]#python bleep.py#
+Usage: python bleep.py dictionary
 ----
 
 [source,subs=quotes]
 ----
-$ [underline]#./bleep list1.txt list2.txt list3.txt#
-Usage: ./bleep <wordlist>
+$ [underline]#python bleep.py list1.txt list2.txt list3.txt#
+Usage: python bleep.py dictionary
 ----
 
 [source,subs=quotes]
 ----
-$ [underline]#./bleep banned.txt#
+$ [underline]#python bleep.py banned.txt#
 [underline]#hello world#
 hello world
 ----
 
 [source,subs=quotes]
 ----
-$ [underline]#./bleep banned.txt#
+$ [underline]#python bleep.py banned.txt#
 [underline]#what the heck#
 what the &#42;&#42;&#42;&#42;
 ----
 
 [source,subs=quotes]
 ----
-$ [underline]#./bleep banned.txt#
+$ [underline]#python bleep.py banned.txt#
 [underline]#darn it, world#
-&#42;&#42;&#42;&#42; it , world
+&#42;&#42;&#42;&#42; it, world
 ----
-
-Notice in that final example that the spacing gets thrown off. This is because `nltk` will tokenize punctuation as a "word", and we are simply inserting a space after every token to visually preserve the aesthetics of the sentence. Quite all right to do the same in your own solution, rather than trying to engineer a more complicated fix!
 
 == Testing
 
@@ -130,6 +119,6 @@ submit50 cs50/2018/fall/bleep
 * Be sure to test with different banned words lists than the one provided by default -- we will!
 * When independently researching how to do things on this problem (which is indeed part of the expectation, as you grow in your comfort with programming overall!), be sure your Google searches and the like include "Python 3" in them, and not just "Python", lest you get code examples written in an earlier version of Python!
 * Per the above, the tokenizer treats most punctuation as separate tokens, so not to worry if your output "rags" from the original message, rather than lining up perfectly, because you are simply inserting a space after each token when printing out the "censored" version.
-* Odds are you'll find `word_tokenize` in the https://www.nltk.org/api/nltk.tokenize.html[`nltk` documentation] of interest.
+* Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.split[`str.split`] of interest.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.lower`] of interest.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.strip[`str.strip`] of interest, to chomp off any trailing newlines that may be attached to words on your "banned words" list.

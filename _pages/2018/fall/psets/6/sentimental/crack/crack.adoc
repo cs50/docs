@@ -18,7 +18,7 @@ ROFL
 
 Design and implement a program, `crack`, that cracks passwords, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/crack/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE..
 
-* Implement your program in a file called `crack.py` in a directory called `crack`.
+* Implement your program in a file called `crack.py` in your `~/workspace/pset6/crack` directory (if it doesn't already exist, create it now!).
 * Your program should accept a single command-line argument: a hashed password.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately.
 * Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less.

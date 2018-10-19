@@ -19,7 +19,7 @@ ciphertext: URYYB
 
 Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/caesar/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 
-* Implement your program in a file called `caesar.py` in a directory called `caesar`.
+* Implement your program in a file called `caesar.py` in your `~/workspace/pset6/caesar` directory (if it doesn't already exist, create it now!).
 * Your program must accept a single command-line argument, a non-negative integer. Let's call it _k_ for the sake of discussion.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error message of your choice (with `print`) and exit immediately.
 * You can assume that, if a user does provide a command-line argument, it will be a non-negative integer (e.g., `1`). No need to check that it's indeed numeric.
