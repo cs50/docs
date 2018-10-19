@@ -52,7 +52,7 @@ video::5B1tK_4y-gI[youtube]
 
 == Usage
 
-Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+Your program should behave per the examples below. Assume that the underlined text is what some user has typed.
 
 [source,subs=quotes]
 ----

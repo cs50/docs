@@ -9,11 +9,11 @@ layout: 2018/fall
 Implement a program that encrypts messages using Caesar's cipher, per the below.
 
 [source,subs=quotes]
------
+----
 $ [underline]#python caesar.py 13#
 plaintext:  [underline]#HELLO#
 ciphertext: URYYB
------
+----
 
 == Specification
 
@@ -35,63 +35,63 @@ video::5I7QqTTolHE[youtube]
 
 == Usage
 
-Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+Your program should behave per the examples below. Assume that the underlined text is what some user has typed.
 
 [source,subs=quotes]
------
+----
 $ [underline]#python caesar.py 1#
 plaintext:  [underline]#HELLO#
 ciphertext: IFMMP
------
+----
 
 [source,subs=quotes]
------
+----
 $ [underline]#python caesar.py 13#
 plaintext:  [underline]#hello, world#
 ciphertext: uryyb, jbeyq
------
+----
 
 [source,subs=quotes]
------
+----
 $ [underline]#python caesar.py 13#
 plaintext:  [underline]#be sure to drink your Ovaltine#
 ciphertext: or fher gb qevax lbhe Binygvar
------
+----
 
 [source,subs=quotes]
------
+----
 $ [underline]#python caesar.py#
 Usage: python caesar.py k
------
+----
 
 [source,subs=quotes]
------
+----
 $ [underline]#python caesar.py 1 2 3 4 5#
 Usage: python caesar.py k
------
+----
 
 == Testing
 
 === Correctness
 
 [source]
------
+----
 check50 cs50/2018/fall/sentimental/caesar
------
+----
 
 === Style
 
 [source]
------
+----
 style50 caesar.py
------
+----
 
 == Staff's Solution
 
 [source]
------
+----
 ~cs50/pset2/caesar
------
+----
 
 == Hints
 
