@@ -11,9 +11,11 @@ Implement a program that censors messages that contain words that appear on a li
 [source,subs=quotes]
 ----
 $ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
 [underline]#What the heck#
 What the &#42;&#42;&#42;&#42;
 $ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
 [underline]#gosh darn it#
 &#42;&#42;&#42;&#42; &#42;&#42;&#42;&#42; it
 ----
@@ -66,6 +68,7 @@ Usage: python bleep.py dictionary
 [source,subs=quotes]
 ----
 $ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
 [underline]#hello world#
 hello world
 ----
@@ -73,6 +76,7 @@ hello world
 [source,subs=quotes]
 ----
 $ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
 [underline]#what the heck#
 what the &#42;&#42;&#42;&#42;
 ----
@@ -80,6 +84,7 @@ what the &#42;&#42;&#42;&#42;
 [source,subs=quotes]
 ----
 $ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
 [underline]#gosh darn it#
 &#42;&#42;&#42;&#42; &#42;&#42;&#42;&#42; it
 ----
