@@ -45,6 +45,7 @@ Complete the implementation of `bleep` in such a way that it
 * Prints back the message that the user provided, except if the message contained any banned words, each of its characters is replaced by a `*`.
   * For example, `gosh` should be replaced with four `*` characters, while `fudge` should be replaced with five.
 * You should not censor words that merely contain a banned word as a substring. For example, **bar** is a banned word in the provided `banned.txt`, but neither __**bar**ns__ nor __crow**bar**__ nor __wheel**bar**row__ should be censored.
+* You explicitly **do not** need to support input strings that contain punctuation marks. You may assume we will only test your input where each word is only separated by whitespace.
 
 == Usage
 
@@ -118,7 +119,6 @@ submit50 cs50/2018/fall/bleep
 
 * Be sure to test with different banned words lists than the one provided by default -- we will!
 * When independently researching how to do things on this problem (which is indeed part of the expectation, as you grow in your comfort with programming overall!), be sure your Google searches and the like include "Python 3" in them, and not just "Python", lest you get code examples written in an earlier version of Python!
-* Per the above, the tokenizer treats most punctuation as separate tokens, so not to worry if your output "rags" from the original message, rather than lining up perfectly, because you are simply inserting a space after each token when printing out the "censored" version.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.split[`str.split`] of interest.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.lower`] of interest.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.strip[`str.strip`] of interest, to chomp off any trailing newlines that may be attached to words on your "banned words" list.
