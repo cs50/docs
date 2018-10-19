@@ -11,6 +11,7 @@ Implement a program that prints out a simple greeting to the user, per the below
 [source,subs=quotes]
 ----
 $ [underline]#python hello.py#
+What is your name?
 [underline]#David#
 hello, David
 ----
@@ -32,6 +33,7 @@ Your program should behave per the example below. Assume that the underlined tex
 [source,subs=quotes]
 ----
 $ [underline]#python hello.py#
+What is your name?
 [underline]#Veronica#
 hello, Veronica
 ----
@@ -58,7 +60,7 @@ To run the staff's implementation of `hello`, execute the below.
 
 [source]
 ----
-~cs50/pset1/hello
+~cs50/pset6/hello
 ----
 
 == How to Submit
