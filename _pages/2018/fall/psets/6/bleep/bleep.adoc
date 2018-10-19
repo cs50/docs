@@ -123,3 +123,4 @@ style50 bleep
 * Per the above, the tokenizer treats most punctuation as separate tokens, so not to worry if your output "rags" from the original message, rather than lining up perfectly, because you are simply inserting a space after each token when printing out the "censored" version.
 * Odds are you'll find `word_tokenize` in the https://www.nltk.org/api/nltk.tokenize.html[`nltk` documentation] of interest.
 * Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.lower`] of interest.
+* Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.strip`] of interest, to chomp off any trailing newlines that may be attached to words on your "banned words" list.

@@ -6,6 +6,8 @@ layout: 2018/fall
 
 == tl;dr
 
+image:pyramid.png[Super Mario Brothers, width="50%"]
+
 Implement a program that prints out a half-pyramid of a specified height, per the below.
 
 [source,subs="macros,quotes"]
