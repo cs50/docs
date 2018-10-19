@@ -33,7 +33,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 
 == Understanding
 
-This program defines only one function, `main`, which gets called per the file's last line. Within `main` ... ugh, looks like that's just a big TODO!
+This program defines only one function, `main`, which gets called per the file's last line. Within `main` ... ugh, looks like that's just a big `TODO`!
 
 == Specification
 
