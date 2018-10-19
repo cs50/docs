@@ -12,10 +12,10 @@ Implement a program that censors messages that contain words that appear on a li
 ----
 $ [underline]#./bleep banned.txt#
 [underline]#What the heck#
-What the pass:[*]pass:[*]pass:[*]pass:[*]
+What the \**\**
 $ [underline]#./bleep banned.txt#
 [underline]#gosh darn it#
-gosh pass:[*]pass:[*]pass:[*]pass:[*] it
+gosh \**\** it
 ----
 
 == Getting Started
