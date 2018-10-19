@@ -44,7 +44,7 @@ Complete the implementation of `bleep` in such a way that it
 * Tokenizes that message into its individual component words, using the link:https://docs.python.org/3/library/stdtypes.html#str.split[`split`] method on the provided string, and then iterates over the `list` of "tokens" (words) that is returned by calling `split`, checking to see whether any of the tokens match, case-insensitively, any of the words in the banned words list.
 * Prints back the message that the user provided, except if the message contained any banned words, each of its characters is replaced by a `*`.
   * For example, `gosh` should be replaced with four `*` characters, while `fudge` should be replaced with five.
-* You should not censor words that merely contain a banned word as a substring. For example, **bar** is a banned word in the provided `banned.txt`, but neither __**bar**ns__ nor __crow**bar**__ nor __wheel**bar**row__ should be censored.
+* You should not censor words that merely contain a banned word as a substring. For example, if **bar** is a banned word in the provided, then none of __**bar**ns__ nor __crow**bar**__ nor __wheel**bar**row__ should be censored.
 * You explicitly **do not** need to support input strings that contain punctuation marks. You may assume we will only test your input where each word is only separated by whitespace.
 
 == Usage
