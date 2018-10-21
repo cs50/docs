@@ -109,7 +109,7 @@ And so you can access _k_ with code like
 
 [source,c]
 ----
-k = argv[1];
+k = argv[1]
 ----
 
 assuming it's actually there! And assuming you've imported `argv`, as by:
