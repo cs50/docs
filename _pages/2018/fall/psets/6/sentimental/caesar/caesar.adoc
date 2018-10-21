@@ -103,20 +103,20 @@ submit50 cs50/2018/fall/sentimental/caesar
 
 == Hints
 
-Recall that `sys.argv` is a list of strings representing the command line arguments. Recall that we can use `len(sys.argv)` in order to figure out how many strings exist in that list; this is the equivalent idea to `argc`, from C.
+Recall that `argv` is a list of strings representing the command line arguments. Recall that we can use `len(argv)` in order to figure out how many strings exist in that list; this is the equivalent idea to `argc`, from C.
 
 And so you can access _k_ with code like
 
 [source,c]
 ----
-k = sys.argv[1];
+k = argv[1];
 ----
 
-assuming it's actually there! And assuming you've imported the `sys` module, as by:
+assuming it's actually there! And assuming you've imported `argv`, as by:
 
 [source,python]
 ----
-import sys
+from sys import argv
 ----
 
 Once you have both `k` and some plaintext, `p`, it's time to encrypt the latter with the former. Recall that you can iterate over the characters in a string, printing each one at a time, with code like the below:
