@@ -2,7 +2,7 @@
 layout: 2018/fall
 ---
 
-= CSV50
+= Survey
 
 == tl;dr
 
@@ -23,11 +23,11 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
 1. Execute `mkdir pset7` to make (i.e., create) a directory called `pset7` in your home directory, if you haven't already done so.
 1. Execute `cd pset7` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/2018/fall/psets/7/csv50/csv50.zip` to download a (compressed) ZIP file with this problem's distribution.
-1. Execute `unzip csv50.zip` to uncompress that file.
-1. Execute `rm csv50.zip` followed by `yes` or `y` to delete that ZIP file.
-1. Execute `ls`. You should see a directory called `csv50`, which was inside of that ZIP file.
-1. Execute `cd csv50` to change into that directory.
+1. Execute `wget http://cdn.cs50.net/2018/fall/psets/7/survey/survey.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip survey.zip` to uncompress that file.
+1. Execute `rm survey.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `survey`, which was inside of that ZIP file.
+1. Execute `cd survey` to change into that directory.
 1. Execute `ls`. You should see this problem's distribution inside.
 
 == Specification
@@ -82,5 +82,5 @@ but commenting your HTML code is not as imperative as it is when commenting code
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/csv
+submit50 cs50/2018/fall/survey
 ```
