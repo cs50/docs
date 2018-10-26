@@ -58,7 +58,7 @@ In this file will be any of your own CSS properties for any or all of your app's
 +
 --
 * one or more text fields of any type,
-* two or more checkboxes or radio buttons,
+* one or more checkboxes or two or more radio buttons,
 * one or more select menus, each with two or more options, and
 * zero or more other inputs of any type.
 --
