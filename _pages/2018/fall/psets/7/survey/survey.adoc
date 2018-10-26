@@ -30,37 +30,79 @@ Here's how to download this problem's distribution into your own CS50 IDE. Log i
 1. Execute `cd survey` to change into that directory.
 1. Execute `ls`. You should see this problem's distribution inside.
 
+=== Understanding
+
+==== `application.py`
+
+This file represents your web app's "controller," all of the logic that implements its functionality. Atop the file are a few imports of libraries followed by some configuration of Flask, per the comments therein. Below that are declarations of four routes, two of which are for you to do!
+
+==== `templates/layout.html`
+
+This file represents your web app's layout, an HTML structure that all of your views will share.
+
+==== `templates/form.html`
+
+In this file will live your very own form, only the skeleton of which we've written for you.
+
+==== `templates/error.html`
+
+In this file is a template for any messages you might like to display to the user in the event of some error.
+
+==== `static/styles.css`
+
+In this file will be any of your own CSS properties for any or all of your app's views.
+
 == Specification
 
-Implement in `application.py` your routing functionality and in the `templates/` directory the necessary HTML files, a website that conforms to the below:
+* Complete the implementation of `templates/form.html` in such a way that the form therein contains not only a button but also
++
+--
+* one or more text fields of any type,
+* two or more checkboxes or radio buttons,
+* one or more select menus, each with two or more options, and
+* zero or more other inputs of any type.
+--
++
+Style that form using link:http://getbootstrap.com/docs/4.1/components/forms/[Bootstrap] so that it looks nicer than it would with raw HTML alone.
++
+Add to that file some JavaScript code that prevents users from submitting the form if they have not provided values for one or more fields, alerting the user accordingly, as via link:https://www.w3schools.com/jsref/met_win_alert.asp[`alert`] or link:http://getbootstrap.com/docs/4.1/components/forms/#validation[Bootstrap].
 
-* `/` route:
-** The index page of your site, accessible by the `GET` method, should contain two links: One that brings the user to the `/form` route to fill out the form, and one that brings the user to the `/sheet` route to view form submissions.
-* `/sheet` route:
-** When accessing this page via the `GET` method, the user should be presented with an HTML table of data, gathered from reading the `results.csv` file containing all form submissions.
-* `/form` route:
-** When accessing this page via the `GET` method, the user should be presented with the form to fill out.
-*** The form must contain a minimum of three input fields, and among those three or more fields there should be a total of at least three distinct types. Per the documentation of the `<input>` tag on link:https://www.w3schools.com/tags/tag_input.asp[W3Schools], some valid options for form field types include:
-**** `text`
-**** `password`
-**** `number`
-**** `email`
-**** `radio`
-**** `checkbox`
-**** `range`
-**** and plenty of others
-*** It should not be possible for the user to fill out a form that is only partially-completed. To that end, your form must include some client-side validation with JavaScript. You may, if so inclined, use jQuery or link:http://getbootstrap.com/docs/4.1/components/forms/#validation[Bootstrap's own] JavaScript validation components, in addition to or instead of using plain JavaScript.
-** When accessing this page via the `POST` method, which should happen when the form is submitted, the form data should be validated server-side (see below) and written to `results.csv` as a new row, with any subsequent submissions being appended to that same file.
-*** Odds are you'll find the link:https://docs.python.org/3/library/csv.html[`csv` module] in Python, and in particular its methods link:https://docs.python.org/3/library/csv.html#csv.writer[`writer`] or link:https://docs.python.org/3/library/csv.html#csv.DictWriter[`DictWriter`], of interest. Be sure to escape any characters such as `,` or `'` or `"` that might interfere with CSV interpretation, though odds are that's why you'll find those methods useful!
-*** You should also have server-side validation within the route for `form` when accessed via the `POST` method such that, even if a user has disabled JavaScript which would ordinarily prevent a form submission, your site also checks to ensure all of the requested form data is present and, if not, redirects the user back to submit the form again.
+* Complete the implementation of `post_form` in such a way that it
++
+--
+* validates a form's submission, alerting users with a `message` via `error.html` if they have not provided values for one or more fields, just in case your JavaScript code let something through (or was disabled),
+* writes the form's values to a new row in `survey.csv` using `csv.writer` or `csv.DictWriter`, and
+* redirects the user to `/sheet`.
+--
 
-Overall, the UI (user interface) of your site should, as in Problem Set 5, leverage Bootstrap. You will likely find Bootstrap's CSS styling (and, optionally, JavaScript support) for link:http://getbootstrap.com/docs/4.1/content/tables/[tables] and link:http://getbootstrap.com/docs/4.1/components/forms/[forms] of particular interest.
+* Complete the implementation of `get_sheet` in such a way that it
++
+--
+* reads past submissions from `survey.csv` using `csv.reader` or `csv.DictReader` and
+* displays those submissions in an HTML `table` via a new template.
+--
++
+Style that table using link:http://getbootstrap.com/docs/4.1/content/tables/[Bootstrap] so that it looks nicer than it would with raw HTML alone.
++
+Optionally enhance the table with JavaScript, as via link:https://datatables.net/examples/styling/bootstrap4[DataTables].
+
+Provided you meet these specifications, you're welcome to alter the aesthetics of your app however you'd like, as via link:http://getbootstrap.com/docs/4.1/[Bootstrap] or your own CSS and HTML.
+
+== References
+
+* link:https://docs.python.org/3/library/csv.html[`csv`]
+** link:https://docs.python.org/3/library/csv.html#csv.writer[`csv.writer`] 
+** link:https://docs.python.org/3/library/csv.html#csv.DictWriter[`csv.DictWriter`]
+* link:https://www.w3schools.com/html/html_forms.asp[HTML Forms]
+** link:https://www.w3schools.com/html/html_form_elements.asp[HTML Form Elements]
+** link:https://www.w3schools.com/html/html_form_input_types.asp[HTML Input Types]
+** link:https://www.w3schools.com/html/html_form_attributes.asp[HTML Input Attributes]
 
 == Testing
 
 === Correctness
 
-Afraid there's no `check50` for this assignment; it is incumbent upon you to write and test your code using the testing and debugging strategies we have discussed throughout the course. As in past assignments where you have not had access to `check50`, know that your correctness score on this problem will be based on whether you meet the requirements of the specification as outlined above, whether your code is free of bugs, and whether your HTML is well-formed and valid. To ensure that your pages are, you can use link:https://validator.w3.org/#validate_by_input[the W3Schools HTML Validator] service, copying and pasting your HTML directly into the provided text box. Take care to eliminate any warnings or errors suggested by the validator before submitting!
+Afraid there's no `check50` for this problem; it's incumbent upon you to write and test your code using the testing and debugging strategies we have discussed throughout the course. As in past problems where you have not had access to `check50`, know that your correctness score on this problem will be based on whether you meet the requirements of the specification as outlined above, whether your code is free of bugs, and whether your HTML is well-formed and valid. To ensure that your pages are, you can use link:https://validator.w3.org/#validate_by_input[the W3Schools HTML Validator] service, copying and pasting your HTML directly into the provided text box. Take care to eliminate any warnings or errors suggested by the validator before submitting!
 
 === Style
 
