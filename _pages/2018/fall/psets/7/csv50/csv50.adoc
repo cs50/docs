@@ -6,7 +6,10 @@ layout: 2018/fall
 
 == tl;dr
 
-Build a website in Flask that enables a user to fill out a form, the results of which are saved to a comma-separated values (CSV) file in the server; and, separately, to visit a different page of the site to allow them to view all of the form submissions received.
+Build a website in Flask that enables a user to:
+
+* fill out a form, the results of which are saved to a comma-separated values (CSV) file in the server; and
+* visit a different page where they can view all of the form submissions received.
 
 == Background
 
@@ -29,27 +32,27 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 
 == Specification
 
-Implement in, among other files `application.py`, a website that conforms to the below:
+Implement in `application.py` your routing functionality and in the `templates/` directory the necessary HTML files, a website that conforms to the below:
 
 * `/` route:
 ** The index page of your site, accessible by the `GET` method, should contain two links: One that brings the user to the `/form` route to fill out the form, and one that brings the user to the `/sheet` route to view form submissions.
 * `/sheet` route:
-** When accessing this page via the `GET` route, the user should be presented with an HTML table of data, gathered from reading the `results.csv` file containing all form submissions,
+** When accessing this page via the `GET` method, the user should be presented with an HTML table of data, gathered from reading the `results.csv` file containing all form submissions.
 * `/form` route:
 ** When accessing this page via the `GET` method, the user should be presented with the form to fill out.
-** When accessing this page via the `POST` method, which should happen when the form is submitted, the form data should be validated server-side (see below) and written to `results.csv` as a new row, with any subsequent submissions being appended to that same file. Odds are you'll find the link:https://docs.python.org/3/library/csv.html[`csv` module] in Python, and in particular its methods link:https://docs.python.org/3/library/csv.html#csv.writer[`writer`] or link:https://docs.python.org/3/library/csv.html#csv.DictWriter[`DictWriter`], of interest.
-** The form must contain a minimum of three input fields, and among those three or more fields there should be a total of at least three distinct types. Per the documentation of the `<input>` tag on link:https://www.w3schools.com/tags/tag_input.asp[W3Schools], some valid options for form field types include:
-*** `text`
-*** `password`
-*** `number`
-*** `email`
-*** `radio`
-*** `checkbox`
-*** `range`
-*** and plenty of others
-** It should not be possible for the user to fill out a form that is only partially-completed. To that end, your form must include some client-side validation with JavaScript. You may, if so inclined, use jQuery or link:http://getbootstrap.com/docs/4.1/components/forms/#validation[Bootstrap's own] JavaScript validation components, in addition to or instead of using plain JavaScript.
-** You should also have server-side validation within the route for `form` when accessed via the `POST` method such that, even if a user has disabled JavaScript which would ordinarily prevent a form submission, your site also checks to ensure all of the requested form data is present and, if not, redirects the user back to submit the form again.
-** Assuming the form
+*** The form must contain a minimum of three input fields, and among those three or more fields there should be a total of at least three distinct types. Per the documentation of the `<input>` tag on link:https://www.w3schools.com/tags/tag_input.asp[W3Schools], some valid options for form field types include:
+**** `text`
+**** `password`
+**** `number`
+**** `email`
+**** `radio`
+**** `checkbox`
+**** `range`
+**** and plenty of others
+*** It should not be possible for the user to fill out a form that is only partially-completed. To that end, your form must include some client-side validation with JavaScript. You may, if so inclined, use jQuery or link:http://getbootstrap.com/docs/4.1/components/forms/#validation[Bootstrap's own] JavaScript validation components, in addition to or instead of using plain JavaScript.
+** When accessing this page via the `POST` method, which should happen when the form is submitted, the form data should be validated server-side (see below) and written to `results.csv` as a new row, with any subsequent submissions being appended to that same file.
+*** Odds are you'll find the link:https://docs.python.org/3/library/csv.html[`csv` module] in Python, and in particular its methods link:https://docs.python.org/3/library/csv.html#csv.writer[`writer`] or link:https://docs.python.org/3/library/csv.html#csv.DictWriter[`DictWriter`], of interest.
+*** You should also have server-side validation within the route for `form` when accessed via the `POST` method such that, even if a user has disabled JavaScript which would ordinarily prevent a form submission, your site also checks to ensure all of the requested form data is present and, if not, redirects the user back to submit the form again.
 
 Overall, the UI (user interface) of your site should, as in Problem Set 5, leverage Bootstrap. You will likely find Bootstrap's CSS styling (and, optionally, JavaScript support) for link:http://getbootstrap.com/docs/4.1/content/tables/[tables] and link:http://getbootstrap.com/docs/4.1/components/forms/[forms] of particular interest.
 
@@ -72,11 +75,7 @@ Afraid `style50` does not support HTML files, and so it is incumbent upon you to
 <!-- Comment goes here -->
 ```
 
-but commenting your HTML code is not as imperative as it is when commenting code in, say, C or Python. You can also comment your CSS, in CSS files, with:
-
-```
-/* Comment goes here */
-```
+but commenting your HTML code is not as imperative as it is when commenting code in, say, C, Python, or JavaScript.
 
 == How to Submit
 

@@ -1,6 +1,5 @@
 ---
 layout: 2018/fall
-toclevels: 1
 ---
 
 = Similarities
