@@ -119,6 +119,10 @@ Afraid `style50` does not support HTML files, and so it is incumbent upon you to
 
 but commenting your HTML code is not as imperative as it is when commenting code in, say, C, Python, or JavaScript.
 
+== Staff's Solution
+
+Coming Sat 10/27.
+
 == How to Submit
 
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
