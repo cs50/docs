@@ -90,6 +90,9 @@ Provided you meet these specifications, you're welcome to alter the aesthetics o
 
 == References
 
+* link:http://getbootstrap.com/docs/4.1/[Bootstrap]
+** link:https://getbootstrap.com/docs/4.1/components/forms/[Forms]
+** link:https://getbootstrap.com/docs/4.1/content/tables/[Tables]
 * link:https://docs.python.org/3/library/csv.html[`csv`]
 ** link:https://docs.python.org/3/library/csv.html#csv.writer[`csv.writer`] 
 ** link:https://docs.python.org/3/library/csv.html#csv.DictWriter[`csv.DictWriter`]
