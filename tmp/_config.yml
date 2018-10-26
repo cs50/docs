@@ -1,0 +1,6 @@
+exclude:
+- Gemfile
+- Gemfile.lock
+plugins:
+  - jekyll-assets
+  - jekyll-pdf

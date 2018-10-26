@@ -9,7 +9,7 @@ layout: 2018/fall
 . Implement a program that compares two files for similarities.
 . Implement a website that highlights similarities across files, a la the below.
 +
-image::less.png[Similarities, role="related thumb"]
+image::similarities.png[Similarities, role="related thumb"]
 
 == Background
 
@@ -43,10 +43,14 @@ $ rm similarities.zip
 $ cd similarities
 $ chmod a+x compare
 $ ls
-application.py  compare* helpers.py  requirements.txt  static/  templates/
+application.py  compare*  helpers.py  inputs/  requirements.txt  static/  templates/
 ----
 
 === Understanding
+
+==== `inputs/`
+
+Inside of this directory are a whole bunch of sample inputs that you can ultimately compare, among others, for similarities!
 
 ==== `compare`
 
@@ -141,7 +145,7 @@ video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
 
 == Testing
 
-To test your implementation of `lines`, `sentences`, and/or `substrings` via the command line, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files:
+To test your implementation of `lines`, `sentences`, and/or `substrings` via the command line, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files (e.g., those in `inputs/`):
 
 [source]
 ----
@@ -161,7 +165,7 @@ flask run
 
 and then visit the outputted URL.
 
-See http://cdn.cs50.net/2018/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
+Be sure to test your implementation with the files in `inputs/` (which also available link: http://cdn.cs50.net/2018/fall/psets/6/similarities/similarities/inputs/[via a browser]) as well as with some files of your own!
 
 === `check50`
 
