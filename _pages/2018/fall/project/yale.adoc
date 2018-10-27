@@ -1,0 +1,142 @@
+---
+layout: 2018/fall
+---
+:skip-front-matter:
+
+= Final Project
+
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon the course's lessons, the nature of your project is entirely up to you, albeit subject to the staff's approval. You may implement your project in any language(s) as long as the staff approves. You are welcome to utilize any infrastructure, provided the staff ultimately has access to any hardware and software that your project requires. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.
+
+Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty. Graduate and professional students are expected to produce a final project that is 50% greater in scope than what is expected of undergraduate students.
+
+Extensions on the final project are not ordinarily granted, except in cases of emergency.
+
+== Ideas
+
+Here are just some of the possibilities, organized into (non-exhaustive) "tracks". Discuss any and all with your TA!
+
+If at a loss for ideas, look here for more inspiration!
+
+* https://www.youtube.com/playlist?list=PLhQjrBD2T381wZBYZUCoFFavyHHhHQmyQ[CS50 Seminars 2017]
+* https://www.youtube.com/playlist?list=PLhQjrBD2T382IHcDBSQYC4ZG4C2aTiA6C[CS50 Seminars 2016]
+
+=== Software Track
+
+* a web-based application using JavaScript, Python, and SQL, based in part on Problem Set 8's distribution code
+* a web-based application using PHP or Ruby
+* a plugin for CS50 IDE using JavaScript
+* a Chrome extension using JavaScript
+* an iOS app using Swift (or Objective-C)
+* an Android app using Java
+* a command-line program using C
+* ...
+
+=== Cross-Course Track
+
+Like to combine two courses' projects? If taking some other course this semester that has a final project, you are welcome and encouraged to combine this course's project and that course's project into one, toward an end of applying lessons learned in CS50 to some other field, so long as the joint project satisfies this course's and that course's expectations. Before pursuing a joint project, though, you must disclose to both courses and receive approval from both courses (as from your TA in CS50).
+
+=== Hardware Track
+
+Like to integrate hardware into your project? Know that CS50 has the following hardware with which you're welcome to create something amazing:
+
+* an https://developer.apple.com/programs/[iOS Developer Program], which allows you to install homemade apps on your own iOS device,
+* some https://www.arduino.cc/en/Main/arduinoBoardUno[Arduino Uno] boards, for which there's an https://www.arduino.cc/en/Reference/HomePage[API],
+* some https://www.google.com/get/cardboard/[Google Cardboards], for which there's an developers.google.com/cardboard[API],
+* some https://docs.particle.io/datasheets/photon-datasheet/[Internet of Things hardware development kits] and https://docs.particle.io/     guide/tools-and-features/button/core/[Internet Buttons], for which there's an https://docs.particle.io/guide/tools-and-features/dev/[IDE]    and https://docs.particle.io/guide/getting-started/examples/photon/[API],
+* some https://www.leapmotion.com/[Leap Motion Controllers], for which there's an https://developer.leapmotion.com/[API],
+* some http://www2.meethue.com/en-us/productdetail/philips-hue-white-and-color-ambiance-starter-kit-a19[Philips hue bulbs], for which there's an http://www.developers.meethue.com/[API],
+* some http://www2.meethue.com/en-us/productdetail/philips-hue-lightstrip[Philips hue lightstrips], for which there's an http://www.developers.meethue.com/[API],
+* some http://www.samsung.com/global/galaxy/gear-vr/[Samsung Gear VRs], for which there's an http://developer.samsung.com/gear/[SDK], and
+* some http://www.sonos.com/en-us/shop/play1.html[Sonos PLAY:1s], for which there's an http://musicpartners.sonos.com/?q=docs[API].
+
+If you'd like to borrow something for a project, email heads@cs50.yale.edu, and we'll do our best to oblige, sharing hardware across classmates as needed. Let us know, too, if there's some other hardware or software you'd like to utilize for a project, and we'll do our best to find it.
+
+=== Community-Based Learning Track
+
+Want to create something that positively impacts the New Haven community? CBL has local partnerships with http://en.seeclickfix.com/new-haven[SeeClickFix New Haven] as well http://www.ctdatahaven.org/[DataHaven], two organizations that use technology and data to improve the community and would love your help to create even more tools to do so. There are also a variety of civic-minded tech opportunities through https://www.codeforamerica.org/[Code for America], which has brigades across the country (i.e., in http://brigade.codeforamerica.org/brigade/Beta-NYC/[New York City]), and through many open data portals, such as https://www.data.gov/open-gov/[Data.gov]. For more information on the CBL Track and potential projects, please email code4good@yale.edu.
+
+== Specifications
+
+Extensions on the final project are not granted, except in cases of emergency.
+
+=== Pre-Proposal
+
+_due by Tue 11/6, 11:59pm_
+
+Intended to promote early thought, the pre-proposal is your opportunity to bounce one or more ideas off of your teaching assistant.  Quite simply, by this pre-proposal's deadline, send an email to your teaching assistant describing one or more ideas that you have for your final project.  Short, casual emails are fine, but do explain the motivation behind each of your ideas (i.e., why it interests you).  Treat this requirement as an opportunity for counsel.  Certainly include any questions or concerns that you have in this email.
+
+The subject line of your email should be *Pre-Proposal*.
+
+If, incidentally, you have an idea for a final project that you think someone should do (if not you), post it https://discourse.cs50.net/c/cs50-2018-fall[Discourse]!  And if you'd like to solicit one or two collaborators, do post there as well.
+
+=== Proposal
+
+_due by Tue 11/13, 11:59pm_
+
+The proposal is your opportunity to receive approval and counsel from your teaching assistant before you proceed to design.  Submitting a proposal amounts to answering a few questions about your idea.  Once you have a project in mind, submit your proposal at https://forms.cs50.io/2018/fall/project/proposal[]. If working with one or two other classmates, it suffices for just one of you to submit the proposal.
+
+Your teaching assistant will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain the staff's approval for any modifications.  Projects submitted without approval may not receive credit.
+
+After submitting your proposal, a teaching assistant other than your own may be appointed your advisor and grader for the remainder of the final project, depending on your proposal's nature.
+
+=== Status Report
+
+_due by Tue 11/27, 11:59pm_
+
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  Submitting a status report amounts to answering a few questions about your project.  Your answers will also influence the setup of the CS50 Fair.  Submit your status report at https://forms.cs50.io/2018/fall/project/report[] beginning Fri 11/24..
+
+=== CS50 Hackathon
+
+_Thu 11/29, 7pm – Fri 11/30, 7am_
+
+The CS50 Hackathon is an epic all-nighter during which you can dive into your final project's implementation alongside classmates and staff.  If you choose to partake, you'll be asked to propose three milestones for yourself that evening: a "good" one that you intend to achieve no matter what; a "better" one that you think you can achieve; and a "best" one that you hope to achieve.
+
+Dinner will be served around 9pm, second dinner will be served around 1am, and those still standing around 5am will be treated to breakfast at IHOP.
+
+Transportation to and from the CS50 Hackathon in Cambridge will be provided, with buses leaving Yale by 4pm and returning to Yale by 10am.
+
+Additional details on the CS50 Hackathon's logistics will be announced via email and the course's home page the week before the CS50 Hackathon.
+
+=== Implementation
+
+_due by Tue 12/4, 11:59pm_
+
+Ultimately due are implementation and documentation of your final project.  Your submission thereof must include all of the below.
+
+. Documentation for your project in the form of a Markdown file called `README.md`. This documentation is to be a user's manual for your project.  Though the structure of your documentation is entirely up to you, it should be incredibly clear to the staff how and where, if applicable, to compile, configure, and use your project.  Your documentation should be at least several paragraphs in length.  It should not be necessary for us to contact you with questions regarding your project
+after its submission.  Hold our hand with this documentation; be sure to answer in your documentation any questions that you think we might have while testing your work.
+. A "design document" for your project in the form of a file called `DESIGN.md` that discusses, technically, how you implemented your project and why you made the design decisions you did.  Your design document should be at least several paragraphs in length.  Whereas your documentation is meant to be a user's manual, consider your design document your opportunity to give the staff a technical tour of your project underneath its hood.
+. Any and all files required to run your software (even if intended for some infrastructure other than CS50 IDE), including source code as well as, if applicable, configuration files, Makefiles, sample inputs, SQLite databases, and so forth. Needless to say, all source code should be thoroughly commented.
+. A short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action.  Your video should somehow include your project's title, your name and year, your college and major, and any other details that you'd like to convey to viewers.  See http://www.cs171.org/2015/screencast/[CS171's tips on how to make a "screencast"] though you're welcome to use an actual camera.  Upload
+your video to YouTube as "public" or "unlisted" and take note of its URL.
+
+==== How to Submit
+
+*If you have collaborated with one or two other students, each of you should submit via this same process.*
+
+*If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TA advising you is aware of and has approved your project's needs.*
+
+[source]
+----
+update50
+cd ~/workspace/project/ # or wherever you've stored your project
+submit50 cs50/2018/fall/project
+----
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.io/2018/fall/project/implementation[]!
+
+**This last form is on the longer side, so no worries if you start it before the deadline but finish a bit after.**
+
+== CS50 Fair
+
+_Wed 12/5, 12pm – 2pm_
+
+The CS50 Fair is an epic display of final projects, your opportunity to showcase your work not only to us but also to others on campus.  You will be expected to bring to the CS50 Fair a laptop with which to demonstrate your project.  Plan to tell attendees what you have done and why you have done it.  And perhaps have in mind a few anecdotes about lessons you learned, roadblocks you hit, or the like.
+
+The CS50 Fair will take place in Sterling Memorial Library and the Center for Teaching and Learning.
+
+Additional details on the CS50 Fair's logistics will be announced via email and the course's home page the week before the CS50 Fair.
+
+include::../honesty.adoc[]
