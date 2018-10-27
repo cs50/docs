@@ -124,7 +124,9 @@ but commenting your HTML code is not as imperative as it is when commenting code
 
 == Staff's Solution
 
-Coming Sat 10/27.
+link:https://survey.cs50.net/[https://survey.cs50.net/]
+
+It is reasonable to view its HTML and CSS.
 
 == How to Submit
 
