@@ -13,7 +13,9 @@ Implement a web app that enables a user to
 
 a la the below.
 
-image::survey.png[Survey, role="related thumb"]
+image::form.png[form, role="related thumb"]
+
+image::sheet.png[sheet, role="related thumb"]
 
 == Introduction
 
