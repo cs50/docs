@@ -102,6 +102,8 @@ Provided you meet these specifications, you're welcome to alter the aesthetics o
 * link:https://docs.python.org/3/library/csv.html[`csv`]
 ** link:https://docs.python.org/3/library/csv.html#csv.writer[`csv.writer`] 
 ** link:https://docs.python.org/3/library/csv.html#csv.DictWriter[`csv.DictWriter`]
+* link:https://datatables.net/examples/styling/bootstrap4[DataTables]
+** link:https://datatables.net/reference/option/[Options]
 * link:https://www.w3schools.com/html/html_forms.asp[HTML Forms]
 ** link:https://www.w3schools.com/html/html_form_elements.asp[HTML Form Elements]
 ** link:https://www.w3schools.com/html/html_form_input_types.asp[HTML Input Types]
