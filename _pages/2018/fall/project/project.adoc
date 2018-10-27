@@ -120,7 +120,7 @@ submit50 cs50/2018/fall/proposal
 
 _due by Tue 11/27, 11:59pm_
 
-Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track.  
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track. If collaborating with 1, 2, or 3 classmates, each of you should submit a proposal, even if identical.
 
 Here's how to submit your status report. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
 
