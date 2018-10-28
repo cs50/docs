@@ -170,7 +170,7 @@ Ultimately due are implementation and documentation of your final project.  Your
 
 *If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project's needs.*
 
-=== Step 1 of 2
+===== Step 1 of 2
 
 [source]
 ----
@@ -179,7 +179,7 @@ cd ~/workspace/project/ # or wherever you've stored your project
 submit50 cs50/2018/fall/implementation
 ----
 
-=== Step 2 of 2
+===== Step 2 of 2
 
 Submit https://forms.cs50.net/2018/fall/project/implementation[]!
 
