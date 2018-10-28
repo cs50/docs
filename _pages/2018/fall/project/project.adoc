@@ -170,6 +170,8 @@ Ultimately due are implementation and documentation of your final project.  Your
 
 *If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project's needs.*
 
+=== Step 1 of 2
+
 [source]
 ----
 update50

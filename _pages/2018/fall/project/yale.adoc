@@ -175,6 +175,8 @@ your video to YouTube as "public" or "unlisted" and take note of its URL.
 
 *If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TA advising you is aware of and has approved your project's needs.*
 
+=== Step 1 of 2
+
 [source]
 ----
 update50
