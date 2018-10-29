@@ -62,7 +62,7 @@ Extensions on the final project are not granted, except in cases of emergency.
 
 _due by Tue 11/6, 11:59pm_
 
-Intended to promote early thought, the preproposal is your opportunity to bounce one or more ideas off of your teaching fellow. If collaborating with 1, 2, or 3 classmates, each of you should submit a preproposal, even if identical.
+Intended to promote early thought, the preproposal is your opportunity to bounce one or more ideas off of your teaching fellow. If collaborating with one or two classmates, each of you should submit a preproposal, even if identical.
 
 Here's how to submit your preproposal. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
 
@@ -89,7 +89,7 @@ submit50 cs50/2018/fall/project/preproposal
 
 _due by Tue 11/13, 11:59pm_
 
-The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design. If collaborating with 1, 2, or 3 classmates, each of you should submit a proposal, even if identical.
+The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design. If collaborating with one or two classmates, each of you should submit a proposal, even if identical.
 
 Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain your teaching fellow's approval for any modifications.  Projects submitted without approval may not receive credit.
 
@@ -120,7 +120,7 @@ submit50 cs50/2018/fall/project/proposal
 
 _due by Tue 11/27, 11:59pm_
 
-Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track. If collaborating with 1, 2, or 3 classmates, each of you should submit a proposal, even if identical.
+Not only is the status report intended to keep the staff apprised of your progress, it is an opportunity to keep yourself on track. If collaborating with one or two classmates, each of you should submit a proposal, even if identical.
 
 Here's how to submit your status report. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
 
