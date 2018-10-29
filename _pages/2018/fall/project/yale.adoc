@@ -83,7 +83,7 @@ Edit that file in CS50 IDE, answering the questions therein.
 Then execute the below from within your `~/workspace/project/preproposal` directory, logging in with your GitHub username and password when prompted. For     security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/preproposal
+submit50 cs50/2018/fall/project/preproposal
 ```
 
 === Proposal
@@ -114,7 +114,7 @@ Edit that file in CS50 IDE, answering the questions therein.
 Then execute the below from within your `~/workspace/project/proposal` directory, logging in with your GitHub username and password when prompted. For        security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/proposal
+submit50 cs50/2018/fall/project/proposal
 ```
 
 === Status Report
@@ -141,7 +141,7 @@ Edit that file in CS50 IDE, answering the questions therein.
 Then execute the below from within your `~/workspace/project/status` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/status
+submit50 cs50/2018/fall/project/status
 ```
 
 === CS50 Hackathon
@@ -181,7 +181,7 @@ your video to YouTube as "public" or "unlisted" and take note of its URL.
 ----
 update50
 cd ~/workspace/project/ # or wherever you've stored your project
-submit50 cs50/2018/fall/implementation
+submit50 cs50/2018/fall/project/implementation
 ----
 
 ===== Step 2 of 2
