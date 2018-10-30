@@ -48,7 +48,6 @@ Like to integrate hardware into your project? Know that CS50 has the following h
 * a https://www.microsoft.com/microsoft-hololens/en-us[Microsoft HoloLens], for which there's an https://www.microsoft.com/microsoft-hololens/en-us/developers[SDK]
 * an https://www.oculus.com/[Oculus Rift] and an https://www3.oculus.com/en-us/dk2/[Oculus DK2], for which there's an https://developer.oculus.com/[SDK]
 * some http://www2.meethue.com/en-us/productdetail/philips-hue-white-and-color-ambiance-starter-kit-a19[Philips hue bulbs], for which there's an http://www.developers.meethue.com/[API],
-* some http://www2.meethue.com/en-us/productdetail/philips-hue-lightstrip[Philips hue lightstrips], for which there's an http://www.developers.meethue.com/[API],
 * some http://www.samsung.com/global/galaxy/gear-vr/[Samsung Gear VRs], for which there's an http://developer.samsung.com/gear/[SDK], and
 * some http://www.sonos.com/en-us/shop/play1.html[Sonos PLAY:1s], for which there's an http://musicpartners.sonos.com/?q=docs[API].
 
