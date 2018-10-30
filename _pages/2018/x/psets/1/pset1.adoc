@@ -10,7 +10,7 @@ toc: false
 
 [start=0]
 . Watch https://video.cs50.net/2017/fall/lectures/1[Week 1's first lecture].
-. Watch https://video.cs50.net/2017/fall/lectures/2?t=22m47s[22m47s] through https://video.cs50.net/2017/fall/lectures/2?t=50m1s[50m1s] of Week 1's second lecture (ie, Lecture 2).
+. Watch https://video.cs50.net/2017/fall/lectures/2?t=22m47s[22m47s] through https://video.cs50.net/2017/fall/lectures/2?t=50m1s[50m1s] of Week 1's second lecture (aka Lecture 2).
 . Get your CS50 IDE set up with `hello.c`.
 . Recreate one of Mario's pyramids, in `mario.c`.
 . Accept some cash in `cash.c` or credit in `credit.c`.
