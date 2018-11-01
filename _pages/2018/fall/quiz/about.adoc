@@ -14,13 +14,13 @@ The course's heads in Cambridge will hold a course-wide review session for the q
 Among the quiz's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. The quiz's format will resemble that of
 
 * http://cdn.cs50.net/2016/fall/test/test.html[Fall 2016's test],
-** http://cdn.cs50.net/2016/fall/test/key/[sample solutions]
+** http://cdn.cs50.net/2016/fall/test/key.html[sample solutions]
 * http://cdn.cs50.net/2016/fall/quiz/quiz.html[Fall 2016's quiz], 
-** http://cdn.cs50.net/2016/fall/quiz/key/[sample solutions]
+** http://cdn.cs50.net/2016/fall/quiz/key.html[sample solutions]
 * http://cdn.cs50.net/2017/fall/test/test.html[Fall 2017's test], and
-** http://cdn.cs50.net/2017/fall/test/key/[sample solutions]
+** http://cdn.cs50.net/2017/fall/test/key.html[sample solutions]
 * http://cdn.cs50.net/2017/fall/quiz/quiz.html[Fall 2017's quiz], 
-** http://cdn.cs50.net/2017/fall/quiz/key/[sample solutions]
+** http://cdn.cs50.net/2017/fall/quiz/key.html[sample solutions]
 
 with short-answer questions as well as longer-answer questions. (In prior years, the course had both a mid-semester test and end-of-semester quiz. This year has only an end-of-semester quiz.) Some questions may involve code (for which you're welcome to use CS50 IDE). Expect to spend at least thirty minutes per question.
 
