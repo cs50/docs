@@ -92,7 +92,7 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 === `check`
 
-Complete the implementation of `check` in such a way that it checks whether a username is available.
+Complete the implementation of `check` in such a way that it checks, case-insensitively, whether a username is available.
 
 * The route should accept, via GET, an HTTP parameter called `username`.
 * If the value of `username` is of length at least 1 and does not already belong to a user in the database, the route should return, in JSON format, `true`, signifying that the username is (as of that moment) available. Else it should return, in JSON format, `false`. Recall that `jsonify` in Flask can return a value in JSON format.
@@ -103,7 +103,7 @@ Complete the implementation of `register` in such a way that it allows a user to
 
 * Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists.
 * Require that a user input a password, implemented as a text field whose `name` is `password`, and then that same password again, implemented as a text field whose `name` is `confirmation`. Render an apology if either input is blank or the passwords do not match.
-* Prevent submission of the form using JavaScript if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation]. Use Ajax (e.g., jQuery's `$.get` method) to query `/check` to check whether the inputted username is available.
+* Prevent submission of the form using JavaScript if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation]. Use Ajax (e.g., jQuery's `$.get` method) to query `/check` to check whether the inputted username is available. Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
 * Submit the user's input via `POST` to `/register`.
 * `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.14/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
 * Odds are you'll want to create a new template (e.g., `register.html`) that's quite similar to `login.html`.
@@ -172,6 +172,8 @@ Implement at least one personal touch of your choice:
 == Walkthroughs
 
 *Instead of `pwd_context.encrypt`, which Zamyla mentions, be sure to use `generate_password_hash` instead.*
+
+*Note that Zamyla does not discuss `/check`, but you should still implement it!*
 
 video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
