@@ -184,7 +184,7 @@ Submit https://forms.cs50.net/2018/fall/project/implementation[]!
 
 **This last form is on the longer side, so no worries if you start it before the deadline but finish a bit after.**
 
-== CS50 Fair
+=== CS50 Fair
 
 _Fri 12/7, 12pm – 4pm_
 
