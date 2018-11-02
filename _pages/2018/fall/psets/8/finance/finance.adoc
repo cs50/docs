@@ -194,7 +194,7 @@ Be sure to test your web app manually too, as by
 [source]
 ----
 check50 cs50/2018/fall/finance
----
+----
 
 === Style
 
