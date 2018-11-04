@@ -5,7 +5,7 @@ toc: false
 
 = About Quiz
 
-Released at noon on [to be announced shortly] and due by noon on Thu 11/15 is a take-home quiz that will cover Weeks 0 through 8 (and Problem Sets 0 through 8). The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+Released at noon on Sat 11/10 and due by noon on Thu 11/15 is a take-home quiz that will cover Weeks 0 through 8 (and Problem Sets 0 through 8). The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
 
 The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several hours (not days!) on the quiz.
 
