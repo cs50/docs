@@ -92,7 +92,7 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 === `check`
 
-Complete the implementation of `check` in such a way that it checks, case-insensitively, whether a username is available.
+Complete the implementation of `check` in such a way that it checks whether a username is available.
 
 * The route should accept, via GET, an HTTP parameter called `username`.
 * If the value of `username` is of length at least 1 and does not already belong to a user in the database, the route should return, in JSON format, `true`, signifying that the username is (as of that moment) available. Else it should return, in JSON format, `false`. Recall that `jsonify` in Flask can return a value in JSON format.
