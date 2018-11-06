@@ -157,7 +157,11 @@ Complete the implementation of `check` in such a way that it checks whether a us
 
 * The route should accept, via GET, an HTTP parameter called `username`.
 * If the value of `username` is of length at least 1 and does not already belong to a user in the database, the route should return, in JSON format, `true`, signifying that the username is (as of that moment) available. Else it should return, in JSON format, `false`. Recall that `jsonify` in Flask can return a value in JSON format.
-* Enhance your template for `register` with some JavaScript in such a way that it prevents submission of your registration form if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation]. Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available. Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
+
+Finally, enhance your template for `register` with some JavaScript in such a way that it prevents submission of your registration form if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation].
+
+* Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available. 
+* Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
 
 === personal touch
 
