@@ -1,6 +1,6 @@
 ---
 layout: 2018/fall
-toclevels: 1
+toclevels: 2
 ---
 
 = C$50 Finance
