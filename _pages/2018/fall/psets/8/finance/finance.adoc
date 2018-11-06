@@ -90,13 +90,6 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 == Specification
 
-=== `check`
-
-Complete the implementation of `check` in such a way that it checks whether a username is available.
-
-* The route should accept, via GET, an HTTP parameter called `username`.
-* If the value of `username` is of length at least 1 and does not already belong to a user in the database, the route should return, in JSON format, `true`, signifying that the username is (as of that moment) available. Else it should return, in JSON format, `false`. Recall that `jsonify` in Flask can return a value in JSON format.
-
 === `register`
 
 Complete the implementation of `register` in such a way that it allows a user to register for an account via a form.
@@ -106,7 +99,6 @@ Complete the implementation of `register` in such a way that it allows a user to
 * Submit the user's input via `POST` to `/register`.
 * `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.14/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
 * Odds are you'll want to create a new template (e.g., `register.html`) that's quite similar to `login.html`.
-* Once all that's working, enhance your template to prevent submission of the form using JavaScript if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation]. Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available. Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
 
 Once you've implemented `register` correctly, you should be able to register for an account and log in (since `login` and `logout` already work)! And you should be able to see your rows via phpLiteAdmin or `sqlite3`.
 
@@ -158,6 +150,14 @@ Complete the implementation of `history` in such a way that it displays an HTML 
 
 * For each row, make clear whether a stock was bought or sold and include the stock's symbol, the (purchase or sale) price, the number of shares bought or sold, and the date and time at which the transaction occurred.
 * You might need to alter the table you created for `buy` or supplement it with an additional table. Try to minimize redundancies.
+
+=== `check`
+
+Complete the implementation of `check` in such a way that it checks whether a username is available.
+
+* The route should accept, via GET, an HTTP parameter called `username`.
+* If the value of `username` is of length at least 1 and does not already belong to a user in the database, the route should return, in JSON format, `true`, signifying that the username is (as of that moment) available. Else it should return, in JSON format, `false`. Recall that `jsonify` in Flask can return a value in JSON format.
+* Enhance your template for `register` with some JavaScript in such a way that it prevents submission of your registration form if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation]. Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available. Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
 
 === personal touch
 
