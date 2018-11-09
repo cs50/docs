@@ -94,7 +94,15 @@ Your teaching fellow will either approve your proposal or require modifications 
 
 After submitting your proposal, a teaching fellow other than your own may be appointed your advisor and grader for the remainder of the final project, depending on your proposal's nature.
 
-Here's how to submit your proposal. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
+Here's how to submit your proposal. 
+
+==== Step 1 of 2
+
+Submit https://docs.google.com/forms/d/e/1FAIpQLScwZfZrPYrEsSPvq4ocWQgU2C-spw7CtNsNOlXTL4MSprqIhQ/viewform[this form].
+
+==== Step 2 of 2
+
+Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
 
 1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
 1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
