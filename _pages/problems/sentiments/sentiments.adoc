@@ -46,7 +46,7 @@ A few years back, Dr. Minqing Hu and Prof. Bing Liu of the University of Illinoi
 
 [source,subs="macros"]
 ----
-$ wget https://github.com/cs50/problems/archive/sentiments.zip
+$ wget http://cdn.cs50.net/2016/fall/problems/sentiments/sentiments.zip
 $ unzip sentiments.zip
 $ rm sentiments.zip
 $ mv problems-sentiments sentiments
@@ -347,6 +347,8 @@ If seeing this error in a `for` loop, be sure you're indeed iterating over a `li
 
 == CHANGELOG
 
+* 2018-11-14
+** Updated distribution code location
 * 2016-10-27
 ** Clarified that `search` should classify <= 100 tweets.
 * 2016-10-26
