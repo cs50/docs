@@ -459,6 +459,7 @@ No `check50` anymore! Be sure to try to "break" your own site, as by
 [source]
 ----
 style50 application.py
+style50 scripts.js
 ----
 
 == Staff's Solution
