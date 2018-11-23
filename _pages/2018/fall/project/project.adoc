@@ -94,7 +94,7 @@ Your teaching fellow will either approve your proposal or require modifications 
 
 After submitting your proposal, a teaching fellow other than your own may be appointed your advisor and grader for the remainder of the final project, depending on your proposal's nature.
 
-Here's how to submit your proposal. 
+Here's how to submit your proposal.
 
 ==== Step 1 of 2
 
@@ -140,7 +140,7 @@ Here's how to submit your status report. Log into link:https://cs50.io/[CS50 IDE
 1. Execute `rm status.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `status`, which was inside of that ZIP file.
 1. Execute `cd status` to change into that directory.
-1. Execute `ls`. You should see a file called `README.md` therein.
+1. Execute `ls`. You should see a file called `status.md` therein.
 
 Edit that file in CS50 IDE, answering the questions therein.
 

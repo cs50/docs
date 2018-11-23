@@ -134,7 +134,7 @@ Here's how to submit your status report. Log into link:https://cs50.io/[CS50 IDE
 1. Execute `rm status.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `status`, which was inside of that ZIP file.
 1. Execute `cd status` to change into that directory.
-1. Execute `ls`. You should see a file called `README.md` therein.
+1. Execute `ls`. You should see a file called `status.md` therein.
 
 Edit that file in CS50 IDE, answering the questions therein.
 
