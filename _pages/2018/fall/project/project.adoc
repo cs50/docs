@@ -188,7 +188,7 @@ submit50 cs50/2018/fall/project/implementation
 
 ===== Step 2 of 2
 
-Submit https://forms.cs50.net/2018/fall/project/implementation[]!
+Submit https://forms.cs50.net/2018/fall/implementation/harvard[]!
 
 **This last form is on the longer side, so no worries if you start it before the deadline but finish a bit after.**
 
