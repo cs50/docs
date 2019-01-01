@@ -6,7 +6,7 @@ layout: 2019/x
 
 ## What to Do
 
-Submit, using CS50 IDE, [Finance](https://docs.cs50.net/2018/fall/psets/8/finance/finance.html)
+Submit, using CS50 IDE, [Finance](https://docs.cs50.net/2019/x/psets/8/finance/finance.html)
 
 ## Advice
 
