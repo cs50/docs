@@ -25,7 +25,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
 1. Execute `mkdir pset3` to make (i.e., create) a directory called `pset3` in your home directory.
 1. Execute `cd pset3` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/2019/x/psets/3/resize/more/resize.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `wget http://cdn.cs50.net/2018/fall/psets/3/resize/more/resize.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip resize.zip` to uncompress that file. 
 1. Execute `rm resize.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `resize`, which was inside of that ZIP file.
