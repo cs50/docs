@@ -45,6 +45,7 @@ This step assumes that you've downloaded your [Scratch](scratch.md) project as a
 1. Visit [cs50.me](https://cs50.me/), log in with your GitHub account, and click **Authorize submit50**.
 1. You should receive two emails from GitHub inviting you to join CS50's "organizations" on GitHub. Click the button in those emails to accept both of the invitations.
 1. Go to `https://github.com/submit50/USERNAME`, replacing `USERNAME` in the URL with your own GitHub username.
+1. Click the blue README link in the sentence "We recommend every repository include a README, LICENSE, and .gitignore."  On the next page, scroll down and click the Green "**Commit**" button.
 1. On the left side of the screen, click on **Branch: master**.
 1. In the field that says **Find or create a branch...**, copy and paste precisely this value, `cs50/2019/x/scratch`, then click **Create branch**. That value is just a unique identifier for this problem.
 1. Click the button that says **Upload files**.
@@ -53,4 +54,4 @@ This step assumes that you've downloaded your [Scratch](scratch.md) project as a
 
 That's it! If you visit [cs50.me](https://cs50.me/) again, you should see your submission. If you click on the **check50** link next to the submission, you should see (after a minute or two) whether your project met all of the requirements. You are welcome to resubmit as many times as you'd like (before the deadline)!
 
-If you don't see any results on [cs50.me](https://cs50.me/), make sure that your branch is named `cs50/2019/x/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 5 and 6), making sure to name it `cs50/2019/x/scratch`!
+If you don't see any results on [cs50.me](https://cs50.me/), make sure that your branch is named `cs50/2019/x/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 6 and 7), making sure to name it `cs50/2019/x/scratch`!
