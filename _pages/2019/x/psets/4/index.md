@@ -10,8 +10,8 @@ _If feeling less comfortable, odds are you'll prefer to implement a hash table._
 
 Submit, using CS50 IDE, one of:
 
-* [this version of Speller](https://docs.cs50.net/2018/fall/psets/4/speller/hashtable/speller.html), if you'd prefer to implement a hash table
-* [this version of Speller](https://docs.cs50.net/2018/fall/psets/4/speller/trie/speller.html), if you'd prefer to implement a trie
+* [this version of Speller](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html), if you'd prefer to implement a hash table
+* [this version of Speller](https://docs.cs50.net/2019/x/psets/4/speller/trie/speller.html), if you'd prefer to implement a trie
 
 ## Advice
 
