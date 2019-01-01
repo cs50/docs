@@ -18,9 +18,9 @@ Here's how to try out David's examples from lecture:
 
 ## Project 5050
 
-If you'd like to learn a bit more about others who've come before you, take a look at http://project5050.org/[Project 5050] by CS50's own Hailey James '19 et al.
+If you'd like to learn a bit more about others who've come before you, take a look at [Project 5050](http://project5050.org/) by CS50's own Hailey James '19 et al.
 
-video::0S7isdzIBU4[youtube,list=PLhQjrBD2T383RLDItqbDRs-4gWy8Wgec2]
+<iframe src="https://www.youtube.com/embed/0S7isdzIBU4?rel=0&amp;list=PLhQjrBD2T383RLDItqbDRs-4gWy8Wgec2" frameborder="0" allowfullscreen></iframe>
 
 ## Hello, World
 
