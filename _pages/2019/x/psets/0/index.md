@@ -16,6 +16,20 @@ Here's how to try out David's examples from lecture:
 1. Download [one or more of them](https://cdn.cs50.net/2018/fall/lectures/0/src0/) or a ZIP of [all of them](https://cdn.cs50.net/2018/fall/lectures/0/src0.zip), which you should then unzip.
 1. Visit [beta.scratch.mit.edu](https://beta.scratch.mit.edu/), click **Try It**, select **File > Upload from your computer**, and select the `.sb3` file that you'd like to try out.
 
+## Project 5050
+
+If you'd like to learn a bit more about others who've come before you, take a look at http://project5050.org/[Project 5050] by CS50's own Hailey James '19 et al.
+
+video::0S7isdzIBU4[youtube,list=PLhQjrBD2T383RLDItqbDRs-4gWy8Wgec2]
+
+## Hello, World
+
+Suffice it to say it's a bit harder to meet classmates when taking a course online. But, thanks to technology, everyone can at least say hello!
+
+If you have a phone (or digital camera) and would like to say hello to classmates, record a 1- to 2-minute video of yourself saying hello, perhaps stating    where in the world you are, why you're taking CS50x, and something interesting about you! Try to begin your video by saying "hello, world" and end it with    "my name is ...., and this is CS50." But, ultimately, it's totally up to you.
+
+If you do record a video, upload it to YouTube (unless blocked in your country, in which case you’re welcome to upload it elsewhere) so that you can provide  us with its URL when you submit!
+
 ## How to Submit
 
 ### Step 1 of 2
