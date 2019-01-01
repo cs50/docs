@@ -6,7 +6,7 @@ layout: 2019/x
 
 ## What to Do
 
-Submit, using CS50 IDE, [Homepage](https://docs.cs50.net/2018/fall/psets/5/homepage/homepage.html)
+Submit, using CS50 IDE, [Homepage](https://docs.cs50.net/2019/x/psets/5/homepage/homepage.html)
 
 ## Advice
 
