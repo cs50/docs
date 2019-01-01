@@ -6,8 +6,8 @@ layout: 2019/x
 
 ## What to Do
 
-1. Submit, using CS50 IDE, [Similarities](https://docs.cs50.net/2018/fall/psets/7/similarities/similarities.html)
-1. Submit, using CS50 IDE, [Survey](https://docs.cs50.net/2018/fall/psets/7/survey/survey.html)
+1. Submit, using CS50 IDE, [Similarities](https://docs.cs50.net/2019/x/psets/7/similarities/similarities.html)
+1. Submit, using CS50 IDE, [Survey](https://docs.cs50.net/2019/x/psets/7/survey/survey.html)
 
 ## Advice
 
