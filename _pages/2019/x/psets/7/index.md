@@ -1,3 +1,7 @@
+---
+layout: 2019/x
+---
+
 # Problem Set 7
 
 ## What to Do
