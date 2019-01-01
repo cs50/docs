@@ -1,0 +1,72 @@
+---
+layout: 2019/x
+---
+
+= Hello
+
+== tl;dr
+
+Implement a program that prints out a simple greeting to the user, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#python hello.py#
+What is your name?
+[underline]#David#
+hello, David
+----
+
+== Specification
+
+* Write, in a file called `hello.py` in `~/workspace/pset6/hello`, a program that prompts a user for their name and then prints `hello, so-and-so`, where `so-and-so` is their provided name, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/x/hello/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+
+== Walkthrough
+
+**Note: The walkthrough video does not presuppose that you need to greet your user by name, but per this specification, your program should behave identically to that in Problem Set 1.**
+
+video::5ueXMnDE-y8[youtube]
+
+== Usage
+
+Your program should behave per the example below. Assume that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#python hello.py#
+What is your name?
+[underline]#Veronica#
+hello, Veronica
+----
+
+== Testing
+
+=== `check50`
+
+[source]
+----
+check50 cs50/2019/x/sentimental/hello
+----
+
+=== `style50`
+
+[source]
+----
+style50 hello.py
+----
+
+== Staff Solution
+
+To run the staff's implementation of `hello`, execute the below.
+
+[source]
+----
+~cs50/pset6/hello
+----
+
+== How to Submit
+
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+
+```
+submit50 cs50/2019/x/sentimental/hello
+```
