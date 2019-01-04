@@ -52,7 +52,6 @@ All code that you write should be consistent with https://www.python.org/dev/pep
 * link:../mario/less/mario.html[Mario], less comfortable, in a file called `mario.py` in `unit6/`.
 * link:../mario/more/mario.html[Mario], more comfortable, in a file called `mario.py` in `unit6/`.
 --
-+
 
 == Walkthroughs
 
@@ -62,7 +61,7 @@ video::gqS876f0lk0[youtube]
 . Implement the problems below exactly as specified but in Python:
 +
 --
-* link:../cash/cash.html[Cash], in a file called `cash.py` in `unit6/`.
+* link:../cash/cash.html[Cash], in a file called `cash.py` in `unit6/` (The walkthrough for Cash is named Greedy (Python) as this was an older version of the same problem).
 * link:../caesar/caesar.html[Caesar], in a file called `caesar.py` in `unit6/`.
 --
 

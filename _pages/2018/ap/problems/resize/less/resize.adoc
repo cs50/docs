@@ -39,10 +39,9 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 [source,subs="macros"]
 ----
-$ wget https://github.com/cs50/problems/archive/resize.zip
+$ wget https://cdn.cs50.net/ap/2018/problems/resize/resize.zip
 $ unzip resize.zip
 $ rm resize.zip
-$ mv problems-resize resize
 $ cd resize
 $ ls
 bmp.h  copy.c  large.bmp  small.bmp  smiley.bmp
