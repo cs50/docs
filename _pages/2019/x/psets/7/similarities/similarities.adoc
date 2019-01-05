@@ -165,7 +165,7 @@ flask run
 
 and then visit the outputted URL.
 
-Be sure to test your implementation with the files in `inputs/` (which also available link: http://cdn.cs50.net/2019/x/psets/7/similarities/similarities/inputs/[via a browser]) as well as with some files of your own!
+Be sure to test your implementation with the files in `inputs/` (which are also available  http://cdn.cs50.net/2018/fall/psets/7/similarities/similarities/inputs/[via a browser]) as well as with some files of your own!
 
 === `check50`
 
