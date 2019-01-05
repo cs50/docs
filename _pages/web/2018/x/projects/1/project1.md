@@ -143,7 +143,7 @@ requirements:
 * **Logout**: Logged in users should be able to log out of the site.
 * **Import**: Provided for you in this project is a file called `books.csv`,
   which is a spreadsheet in CSV format of 5000 different books.
-  Each one has an ISBN nubmer, a title, an author, and a publication year.
+  Each one has an ISBN number, a title, an author, and a publication year.
   In a Python file called `import.py` separate from your web application,
   write a program that will
   take the books and import them into your PostgreSQL database. You will first need to
