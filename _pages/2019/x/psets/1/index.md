@@ -30,3 +30,4 @@ If you submit both Marios, we'll record the higher of your two scores. If you su
   help50 make hello
   ```
   instead!
+* Remember that your code will be graded for both correctness and style.  You should test your program with various inputs for correctness.  You should style your code per the [CS50 Style Guide](https://cs50.readthedocs.io/style/c/).
