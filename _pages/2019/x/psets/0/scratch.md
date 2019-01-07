@@ -4,19 +4,6 @@ layout: 2019/x
 
 # Scratch
 
-## Heads-Up
-
-In lecture, David demonstrated Scratch 3, a new version of Scratch that MIT hadn't quite finished, otherwise known as a "beta." It's better than Scratch 2, its predecessor, insofar as it's implemented in HTML, CSS, and JavaScript (languages that you'll soon know!) rather than Flash, an older technology that's disabled by default in most browsers these days.
-
-Even though Scratch 3's user interface looks a bit different from Scratch 2's user interface, they're functionally almost identical. So, if browsing tutorials for Scratch 2 online, odds are you'll still find them instructive.
-
-Indeed, you might find these resources helpful in learning Scratch, even though they show Scratch 2's user interface:
-
-1. [Scratch for Budding Computer Scientists](https://cs.harvard.edu/malan/scratch/)
-1. [Getting Started with Scratch](https://resources.scratch.mit.edu/www/guides/en/Getting-Started-Guide-Scratch2.pdf)
-1. [Scratch Cards](https://scratch.mit.edu/info/cards/)
-
-
 ## Itching to Program
 
 It's time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
@@ -27,9 +14,15 @@ It's time to choose your own adventure! Your assignment, quite simply, is to imp
 * Your project must use at least one sound.
 * Your project should be more complex than most of those demonstrated in lecture (many of which, though instructive, were quite short) but it can be less complex than *Ivy's Hardest Game*. As such, your project should probably use a few dozen puzzle pieces overall.
 
-Head to [the Scratch website](https://scratch.mit.edu/) and click the orange "Start Creating" button to begin. 
+Head to [the Scratch website](https://scratch.mit.edu/) and sign up for an account on MIT’s website by clicking **Join Scratch** atop the page. Any username (that’s available) is fine, but take care to remember it and your choice of password.  After registering and confirming your email address, click the orange "**Start Creating**" button to begin.
 
-Stuck for ideas? Here are your predecessors' [projects from last year](https://scratch.mit.edu/studios/4248580/). But try to think of an idea on your own, and then set out to implement it. However, don't try to implement the entirety of your project all at once: pluck off one piece at a time. In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth. And select **File > Save** every few minutes so that you don't lose any work!
+You might find these resources helpful (note that they show an earlier version of Scratch):
+
+1. [Scratch for Budding Computer Scientists](https://cs.harvard.edu/malan/scratch/)
+1. [Getting Started with Scratch](https://resources.scratch.mit.edu/www/guides/en/Getting-Started-Guide-Scratch2.pdf)
+1. [Scratch Cards](https://scratch.mit.edu/info/cards/)
+
+Stuck for ideas? Here are your predecessors' [projects from last year](https://scratch.mit.edu/studios/4248580/). But try to think of an idea on your own, and then set out to implement it. However, don't try to implement the entirety of your project all at once: pluck off one piece at a time. In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth. And select **File > Save Now** every few minutes so that you don't lose any work!
 
 If, along the way, you find it too difficult to implement some feature, try not to fret; alter your design or work around the problem. If you set out to implement an idea that you find fun, odds are you won't find it too hard to satisfy the above requirements. 
 
