@@ -14,7 +14,7 @@ layout: 2019/x
 Here's how to try out David's examples from lecture:
 
 1. Download [one or more of them](https://cdn.cs50.net/2018/fall/lectures/0/src0/) or a ZIP of [all of them](https://cdn.cs50.net/2018/fall/lectures/0/src0.zip), which you should then unzip.
-1. Visit [beta.scratch.mit.edu](https://beta.scratch.mit.edu/), click **Try It**, select **File > Upload from your computer**, and select the `.sb3` file that you'd like to try out.
+1. Visit [scratch.mit.edu](https://scratch.mit.edu/), click **Start Creating**, select **File > Load from your computer**, and select the `.sb3` file that you'd like to try out.
 
 ## Project 5050
 
