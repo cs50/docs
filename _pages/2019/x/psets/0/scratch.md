@@ -60,7 +60,7 @@ This step assumes that you've downloaded your [Scratch](scratch.md) project as a
 1. Drag your `.sb3` file into the box that says **Drag files here**.
 1. Click the green **Commit changes** button.
 
-That's it! If you visit [cs50.me](https://cs50.me/) again, you should see your submission. If you click on the **check50** link next to the submission, you should see (after a minute or two) whether your project met all of the requirements. You are welcome to resubmit as many times as you'd like (before the deadline)!
+That's it! If you visit [cs50.me](https://cs50.me/) again, you should see your submission. If you click on the **check50** link next to the submission, you should see (after a minute or two) whether your project met all of the requirements. You can see your grade by visiting your gradebook.  Click **Courses** in the left sidebar of your submissions page then choose **CS50x 2019**.  You are welcome to resubmit as many times as you'd like (before the deadline)!
 
-If you don't see any results on [cs50.me](https://cs50.me/), make sure that your branch is named `cs50/2019/x/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 6 and 7), making sure to name it `cs50/2019/x/scratch`!
+If you don't see any results in [your gradebook](https://cs50.me/gradebook), make sure that your branch is named `cs50/2019/x/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 6 and 7), making sure to name it `cs50/2019/x/scratch`!
 
