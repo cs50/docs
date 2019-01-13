@@ -124,6 +124,10 @@ Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-
 + If your program is not executed with such, it should remind the user of correct usage, as with `printf`, and `main` should return `1`.
 * Your program, if it uses `malloc`, must not leak any memory.
 
+== Walkthrough
+
+video::iv9cw-PTSnA[youtube]
+
 == Usage
 
 Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
