@@ -139,3 +139,7 @@ check50 cs50/2019/x/challenges/site
 Then visit `https://USERNAME.cs50.site/`, where `USERNAME` is your GitHub username (not your IDE username). Best to wait a few minutes, else you might see *404 Not Found*.
 
 If you make changes to your homepage in CS50 IDE, you can re-deploy those changes as many times as you'd like by running the above command again. As before, it might take a few minutes for the changes to appear.
+
+=== Troubleshooting
+
+The first time you visit your site, your browser may display a security warning.  This usually disappears after a few minutes.  If you are anxious to see your site, you can temporarily change the URL in your browser bar from `https://` to `http://`.
