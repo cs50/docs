@@ -83,7 +83,7 @@ Usage: ./crack hash
 [source,subs=quotes]
 ----
 $ [underline]#./crack 50fkUxYHbnXGw#
-ROFL
+rofl
 ----
 
 == Testing
