@@ -65,7 +65,7 @@ Usage: ./crack hash
 [source,subs=quotes]
 ----
 $ [underline]#./crack 50JGnXUgaafgc#
-ROFL
+rofl
 ----
 
 == Testing
