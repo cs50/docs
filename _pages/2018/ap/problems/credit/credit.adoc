@@ -46,30 +46,32 @@ So what's the secret formula?  Well, most cards use an algorithm invented by Han
 . Add the sum to the sum of the digits that weren't multiplied by 2.
 . If the total's last digit is 0 (or, put more formally, if the total modulo 10 is congruent to 0), the number is valid!
 
-That's kind of confusing, so let's try an example with my AmEx: 378282246310005.
+That's kind of confusing, so let's try an example with David's Visa: 4003600000000014.
 
-[start=0]
-. For the sake of discussion, let's first underline every other digit, starting with the number's second-to-last digit:
-+
-3[underline]##7##8[underline]##2##8[underline]##2##2[underline]##4##6[underline]##3##1[underline]##0##0[underline]##0##5
-+
-Okay, let's multiply each of the underlined digits by 2:
-+
-7•2 + 2•2 + 2•2 + 4•2 + 3•2 + 0•2 + 0•2
-+
-That gives us:
-+
-14 + 4 + 4 + 8 + 6 + 0 + 0
-+
-Now let's add those products' digits (i.e., not the products themselves) together:
-+
-1 + 4 + 4 + 4 + 8 + 6 + 0 + 0 = 27
-. Now let's add that sum (27) to the sum of the digits that weren't multiplied by 2:
-+
-27 + 3 + 8 + 8 + 2 + 6 + 1 + 0 + 5 = 60
-. Yup, the last digit in that sum (60) is a 0, so my card is legit!
+1. For the sake of discussion, let's first underline every other digit, starting with the number's second-to-last digit:
+   
+   <u>4</u>0<u>0</u>3<u>6</u>0<u>0</u>0<u>0</u>0<u>0</u>0<u>0</u>0<u>1</u>4
 
-So, validating credit card numbers isn't hard, but it does get a bit tedious by hand.
+   Okay, let's multiply each of the underlined digits by 2:
+
+   1•2 + 0•2 + 0•2 + 0•2 + 0•2 + 6•2 + 0•2 + 4•2
+
+   That gives us:
+
+   2 + 0 + 0 + 0 + 0 + 12 + 0 + 8
+
+   Now let's add those products' digits (i.e., not the products themselves) together:
+
+   2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13
+
+1. Now let's add that sum (13) to the sum of the digits that weren't multiplied by 2 (starting from the end):
+
+   13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
+
+1. Yup, the last digit in that sum (20) is a 0, so David's card is legit!
+
+So, validating credit card numbers isn't hard, but it does get a bit tedious by hand. Let's write a program.
+
 
 == Specification
 
