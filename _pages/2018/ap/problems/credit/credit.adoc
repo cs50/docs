@@ -48,27 +48,28 @@ So what's the secret formula?  Well, most cards use an algorithm invented by Han
 
 That's kind of confusing, so let's try an example with David's Visa: 4003600000000014.
 
-1. For the sake of discussion, let's first underline every other digit, starting with the number's second-to-last digit:
+[start=0]
+. For the sake of discussion, let's first underline every other digit, starting with the number's second-to-last digit:
 
-   [underline]##4##0[underline]##0##3[underline]##6##0[underline]##0##0[underline]##0##0[underline]##0##0[underline]##0##0[underline]##1##4  
-
-   Okay, let's multiply each of the underlined digits by 2:
-
-   1•2 + 0•2 + 0•2 + 0•2 + 0•2 + 6•2 + 0•2 + 4•2
-
-   That gives us:
-
-   2 + 0 + 0 + 0 + 0 + 12 + 0 + 8
-
-   Now let's add those products' digits (i.e., not the products themselves) together:
-
-   2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13
-
-1. Now let's add that sum (13) to the sum of the digits that weren't multiplied by 2 (starting from the end):
-
-   13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
-
-1. Yup, the last digit in that sum (20) is a 0, so David's card is legit!
+[underline]##4##0[underline]##0##3[underline]##6##0[underline]##0##0[underline]##0##0[underline]##0##0[underline]##0##0[underline]##1##4
++
+Okay, let's multiply each of the underlined digits by 2:
++
+1•2 + 0•2 + 0•2 + 0•2 + 0•2 + 6•2 + 0•2 + 4•2
++
+That gives us:
++
+2 + 0 + 0 + 0 + 0 + 12 + 0 + 8
++
+Now let's add those products' digits (i.e., not the products themselves) together:
++
+2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13
++
+. Now let's add that sum (13) to the sum of the digits that weren't multiplied by 2 (starting from the end):
++
+13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
++
+. Yup, the last digit in that sum (20) is a 0, so David's card is legit!
 
 So, validating credit card numbers isn't hard, but it does get a bit tedious by hand. Let's write a program.
 
@@ -86,23 +87,27 @@ video::06wNhN54P6k[youtube]
 
 == Usage
 
-Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+Consider the below representative of how your own program should behave when passed a valid credit card number (sans hyphens).
 
 [source,subs=quotes]
 ----
 $ [underline]#./credit#
-Number: [underline]#378282246310005#
-AMEX
+Number: [underline]#4003600000000014#
+VISA
 ----
+
+Now, `get_long` itself will reject hyphens (and more) anyway:
 
 [source,subs=quotes,text]
 ----
 $ [underline]#./credit#
-Number: [underline]#3782-822-463-10005#
+Number: [underline]#4003-6000-0000-0014#
 Retry: [underline]#foo#
-Retry: [underline]#378282246310005#
-AMEX
+Retry: [underline]#4003600000000014#
+VISA
 ----
+
+But it's up to you to catch inputs that are not credit card numbers (e.g., a phone number), even if numeric:
 
 [source,subs=quotes,text]
 ----
