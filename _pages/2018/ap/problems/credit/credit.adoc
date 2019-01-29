@@ -102,8 +102,8 @@ Now, `get_long` itself will reject hyphens (and more) anyway:
 ----
 $ [underline]#./credit#
 Number: [underline]#4003-6000-0000-0014#
-Retry: [underline]#foo#
-Retry: [underline]#4003600000000014#
+Number: [underline]#foo#
+Number: [underline]#4003600000000014#
 VISA
 ----
 
