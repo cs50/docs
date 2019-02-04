@@ -115,7 +115,7 @@ In order to declare function `crypt` for use in your solution, you'll want to pu
 #include <crypt.h>
 ----
 
-at the top of your file. 
+near the top of your file. 
 
 
 == How to Submit
