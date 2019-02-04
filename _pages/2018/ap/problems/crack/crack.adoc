@@ -108,20 +108,15 @@ Be sure to read up on `crypt`, taking particular note of its mention of "salt":
 man crypt
 ----
 
-Per that man page, you'll likely want to put
+In order to declare function `crypt` for use in your solution, you'll want to put
 
 [source,c]
 ----
-#define _XOPEN_SOURCE
-#include <unistd.h>
+#include <crypt.h>
 ----
 
-at the top of your file in order to use `crypt`. Moreover, you'll want to link with `-lcrypt`, as by compiling not with `make` but with:
+at the top of your file. 
 
-[source]
-----
-clang -ggdb3 -O0 -std=c11 -Wall -Werror -Wshadow crack.c -lcrypt -lcs50 -lm -o crack
-----
 
 == How to Submit
 
