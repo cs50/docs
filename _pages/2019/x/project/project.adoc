@@ -16,13 +16,15 @@ If at a loss for ideas, turn to Week 10's seminars for inspiration!
 
 === Step 1 of 2
 
-Create a `README.md` text file that explains your project and save it in a folder called `project` in your `~/workspace` directory.   
+Create a `README.md` text file that explains your project and save it in a new folder called `project` in your `~/workspace` directory. 
 
 Execute the below from within your `~/workspace/project` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
 submit50 cs50/2019/x/project
 ```
+Note that your project source code itself should not be submitted, so if you already have a folder called `project` for that code, feel free to create a new folder to hold your `README.md` file and run the above `submit50` command there instead.
+
 
 === Step 2 of 2
 
