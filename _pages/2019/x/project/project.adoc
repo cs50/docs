@@ -16,18 +16,20 @@ If at a loss for ideas, turn to Week 10's seminars for inspiration!
 
 === Step 1 of 2
 
-Create a `README.md` text file that explains your project and save it in a new folder called `project` in your `~/workspace` directory. 
+Create a `README.md` text file that explains your project and save it in a new folder called `project` in your `~/workspace` directory. Note that your project source code itself does not need to be submitted.
 
 Execute the below from within your `~/workspace/project` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
 submit50 cs50/2019/x/project
-```
-Note that your project source code itself should not be submitted, so if you already have a folder called `project` for that code, feel free to create a new folder to hold your `README.md` file and run the above `submit50` command there instead.
-
+``` 
 
 === Step 2 of 2
 
 Submit a short video (that's no more than 2 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action. Your video should somehow include your project's title, your name, your city and country, and any other details that you'd like to convey to viewers. See http://www.cs171.org/2015/screencast/ for tips from another class at Harvard on how to make a "screencast," though you're welcome to use an actual camera. Upload your video to YouTube (or, if blocked in your country, a similar site) and take note of its URL; it's fine to flag it as "unlisted," but don't flag it as "private."
 
 When ready to submit your video, submit https://forms.cs50.net/2019/x/project[this form]!
+
+That's it!  Your project should be graded within a few minutes.  If you don't see any results in [your gradebook](https://cs50.me/gradebook), best to resubmit (running the above `submit50` command) with only your `README.md` file this time.  No need to resubmit your form.
+
+This was CS50x!
