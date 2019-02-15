@@ -123,6 +123,10 @@ Implement a program called `resize` that resizes (i.e., enlarges) 24-bit uncompr
 + If your program is not executed with such, it should remind the user of correct usage, as with `printf`, and `main` should return `1`.
 * Your program, if it uses `malloc`, must not leak any memory. Be sure to call `free`.
 
+== Walkthrough
+
+video::zOylgRdzv_U[youtube]
+
 == Usage
 
 Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
