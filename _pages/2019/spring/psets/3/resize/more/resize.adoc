@@ -59,7 +59,7 @@ Now look at the underlying bytes that compose `smiley.bmp`. In your terminal win
 
 [source,bash]
 ----
-xxd -s 54 -g 3 -c 12 smiley.bmp
+xxd -s 54 -g 3 -c 24 smiley.bmp
 ----
 
 (No need to worry for now what all the flags and numbers represent!) You should see the below, byte 54 onward of `smiley.bmp`. (Recall that a 24-bit BMP's first 14 + 40 = 54 bytes are filled with metadata, so we're simply ignoring that for now.) As before, we've highlighted in red all instances of `0000ff`.
@@ -104,7 +104,7 @@ For contrast, let's next look at `large.bmp`, which looks identical to `small.bm
 
 [source,bash]
 ----
-xxd -s 54 -g 3 -c 12 large.bmp
+xxd -s 54 -g 3 -c 48 large.bmp
 ----
 
 You should see output like the below; we've again highlighted in green all instances of `00ff00`.
