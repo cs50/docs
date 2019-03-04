@@ -207,7 +207,7 @@ Finally, in your IDE terminal, run this command to unpack the `staff.zip` file:
 unzip ~/pset3/resize/staff.zip -d ~/pset3/resize
 ----
 
-Then, when connected to your `~/pset3/resize/less` directory in the terminal, you can run the staff's `resize` solution like this:
+Then, when connected to your `~/pset3/resize/more` directory in the terminal, you can run the staff's `resize` solution like this:
 
 [source,bash]
 ----
