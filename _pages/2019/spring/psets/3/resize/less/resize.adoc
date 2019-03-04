@@ -182,20 +182,36 @@ If you happen to use `malloc`, be sure to use `free` so as not to leak memory. T
 
 == Testing
 
-If you'd like to peek at, e.g., ``large.bmp``'s headers (in a more user-friendly way than `xxd` allows), you may execute the below.
+If you'd like to peek at, e.g., ``large.bmp``'s headers (in a more user-friendly way than `xxd` allows), you may use a program called `peek` in the staff solution sandbox. Perhaps better yet, if you'd like to compare your outfile's headers against those from the <<staffs-solution,staff's solution>>, you can copy the files from the link:https://sandbox.cs50.io/aa2c48ff-2520-408a-9951-2b9da0934399[the staff solution sandbox] by following these steps. Within **the sandbox**, you could run:
 
-[source]
+[source,bash]
 ----
-~cs50/pset3/peek large.bmp
+mkdir staff && mv peek resize staff && zip -r staff.zip staff
 ----
 
-Better yet, if you'd like to compare your outfile's headers against those from the <<staffs-solution,staff's solution>>, you might want to execute commands like the below. (Think about what each is doing.)
+to produce a file named `staff.zip`. Using the file browser in the sandbox, you could download it to your computer.
 
-[source]
+Back in the IDE, highlight `~/pset3/resize` in the file browser, then choose **Upload Local Files** from the File menu, select the `staff.zip` file on your computer, and click **Open** to upload it to your `~/pset3/resize` folder. Click **Close** in the **Upload Files** dialog box.
+
+Finally, in your IDE terminal, run this command to unpack the `staff.zip` file:
+
+[source,bash]
 ----
-./resize 4 small.bmp student.bmp
-~cs50/pset3/resize 4 small.bmp staff.bmp
-~cs50/pset3/peek student.bmp staff.bmp
+unzip ~/pset3/resize/staff.zip -d ~/pset3/resize
+----
+
+Then, when connected to your `~/pset3/resize/less` directory in the terminal, you can run the staff's `resize` solution like this:
+
+[source,bash]
+----
+../staff/resize 4 small.bmp staff.bmp
+----
+
+And you can use the peek utility like this:
+
+[source,bash]
+----
+../staff/peek student.bmp staff.bmp
 ----
 
 === `check50`
@@ -224,7 +240,7 @@ To try out the staff's own implementation of `resize`, execute
 ./resize
 ```
 
-within [this sandbox](https://sandbox.cs50.io/aa2c48ff-2520-408a-9951-2b9da0934399).
+within link:https://sandbox.cs50.io/aa2c48ff-2520-408a-9951-2b9da0934399[this sandbox].
 
 == How to Submit
 
