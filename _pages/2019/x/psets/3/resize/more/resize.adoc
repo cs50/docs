@@ -113,7 +113,7 @@ Knowing all this has got to be useful!
 
 Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-bit uncompressed BMPs by a factor of `f`.
 
-* Implement your program in a file called `resize.c` inside of `~/workspace/pset3/more/`.
+* Implement your program in a file called `resize.c` inside of `~/workspace/pset3/resize/more/`.
 * Your program should accept exactly three command-line arguments, whereby
 +
 --

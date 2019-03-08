@@ -40,7 +40,7 @@ mkdir sentimental
 
 == Well-Distributed
 
-Here's some good news for you right off the bat: you've seen almost everything we're going to talk about in this problem once before. We're going to revisit three old programs and port them to C.
+Here's some good news for you right off the bat: you've seen almost everything we're going to talk about in this problem once before. We're going to revisit three old programs and port them to Python.
 
 == Problems
 
