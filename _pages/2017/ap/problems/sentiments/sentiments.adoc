@@ -72,7 +72,7 @@ From there, move into your `chapter6` directory. Then, download the distro for t
 
 [source,bash]
 ----
-wget https://github.com/cs50/problems/archive/sentiments.zip
+wget http://cdn.cs50.net/2016/fall/problems/sentiments/sentiments.zip
 ----
 
 Then run the following commands to set up some names and permissions:
