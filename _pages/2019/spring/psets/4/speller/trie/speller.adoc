@@ -44,7 +44,7 @@ Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, exe
 1. Execute `cd` to ensure that you're in `~` (i.e., your home directory).
 1. Execute `mkdir pset4` to make (i.e., create) a directory called `pset4` in your home directory.
 1. Execute `cd pset4` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/2018/fall/psets/4/speller/hashtable/speller.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `wget http://cdn.cs50.net/2018/fall/psets/4/speller/trie/speller.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip speller.zip` to uncompress that file.
 1. Execute `rm speller.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `speller`, which was inside of that ZIP file.
@@ -206,7 +206,7 @@ Alright, the challenge now before you is to implement, in order, `load`, `size`,
 * You may assume that any `dictionary` passed to your program will be structured exactly like ours, alphabetically sorted from top to bottom with one word per line, each of which ends with `\n`. You may also assume that `dictionary` will contain at least one word, that no word will be longer than `LENGTH` (a constant defined in `dictionary.h`) characters, that no word will appear more than once, that each word will contain only lowercase alphabetical characters and possibly apostrophes, and that no word will start with an apostrophe.
 * You may assume that `check` will only be passed words that contain (uppercase or lowercase) alphabetical characters and possibly apostrophes.
 * Your spell checker may only take `text` and, optionally, `dictionary` as input. Although you might be inclined (particularly if among those more comfortable) to "pre-process" our default dictionary in order to derive an "ideal hash function" for it, you may not save the output of any such pre-processing to disk in order to load it back into memory on subsequent runs of your spell checker in order to gain an advantage.
-* You may alter the value of `N` and the implementation of `hash`.
+* You may alter the value of `N`.
 * Your spell checker must not leak any memory. Be sure to check for leaks with `valgrind`.
 
 Alright, ready to go?
