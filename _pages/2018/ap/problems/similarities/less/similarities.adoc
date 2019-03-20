@@ -201,7 +201,7 @@ Execute `update50` again to ensure that your IDE is up-to-date.
 === Step 2 of 3
 
 * Recall that you were asked to implement the `similarities`. 
-** Be sure that `caesar.c` is in `~/workspace/unit6/similarities/`, as with:
+** Be sure that `helpers.py` is in `~/workspace/unit6/similarities/`, as with:
 +
 [source]
 ----
