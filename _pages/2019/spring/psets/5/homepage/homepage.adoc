@@ -111,6 +111,8 @@ but commenting your HTML code is not as imperative as it is when commenting code
 /* Comment goes here */
 ```
 
+Indeed, because `style50` does not support HTML/CSS, your style score may end up prepopulated in CS50.me upon submitting as much lower than it will ultimately be. Humans ultimately have full discretion over style scores anyway, and the course staff knows they'll likely need to override the value there, so don't be alarmed by it!
+
 == Hints
 
 For fairly comprehensive guides on the languages introduced in this problem, check out the documentation for each on W3Schools.
