@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "jekyll", group: :jekyll_plugins
 group :jekyll_plugins do
-    gem "bootstrap-sass", "3.3.7"
+    gem "bootstrap-sass"
     gem "jekyll-asciidoc"
     gem "jekyll-bootstrap-sass"
     gem "jekyll_image_encode"
