@@ -60,7 +60,7 @@ To run the staff's implementation of `hello`, execute the below.
 
 [source]
 ----
-~cs50/pset6/hello
+~cs50/2019/spring/pset6/hello
 ----
 
 == How to Submit

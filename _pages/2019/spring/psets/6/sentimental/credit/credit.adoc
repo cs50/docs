@@ -73,7 +73,7 @@ style50 credit.py
 
 [source]
 ----
-~cs50/hacker1/credit
+~cs50/2019/spring/pset6/credit
 ----
 
 == How to Submit

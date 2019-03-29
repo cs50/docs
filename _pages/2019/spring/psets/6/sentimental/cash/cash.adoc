@@ -71,7 +71,7 @@ style50 cash.py
 
 [source]
 ----
-~cs50/pset1/cash
+~cs50/2019/spring/pset6/cash
 ----
 
 == How to Submit

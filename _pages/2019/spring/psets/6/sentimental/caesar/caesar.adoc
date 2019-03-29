@@ -90,7 +90,7 @@ style50 caesar.py
 
 [source]
 ----
-~cs50/pset2/caesar
+~cs50/2019/spring/pset6/caesar
 ----
 
 == How to Submit
