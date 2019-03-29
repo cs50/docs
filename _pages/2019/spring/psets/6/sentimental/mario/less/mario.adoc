@@ -1,5 +1,5 @@
 ---
-layout: 2018/fall
+layout: 2019/spring
 ---
 
 = Mario
@@ -29,7 +29,7 @@ pass:[###]
 
 == Specification
 
-* Write, in a file called `mario.py` in `~/workspace/pset6/mario/less/`, a program that recreates this half-pyramid using hashes (`#`) for blocks, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/mario/less/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+* Write, in a file called `mario.py` in `~/pset6/mario/less/`, a program that recreates this half-pyramid using hashes (`#`) for blocks, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/spring/mario/less/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 * To make things more interesting, first prompt the user for the half-pyramid's height, a positive integer between `1` and `8`, inclusive.
 * If the user fails to provide a positive integer no greater than `8`, you should re-prompt for the same again.
 * Then, generate (with the help of `print` and one or more loops) the desired half-pyramid.
@@ -95,7 +95,7 @@ pass:[####]
 
 [source]
 ----
-check50 cs50/2018/fall/sentimental/mario/less
+check50 cs50/2019/spring/sentimental/mario/less
 ----
 
 === Style
@@ -117,7 +117,7 @@ style50 mario.py
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/sentimental/mario/less
+submit50 cs50/2019/spring/sentimental/mario/less
 ```
 
 == Hints
