@@ -111,7 +111,7 @@ DEPENDENCIES
   jekyll-asciidoc
   jekyll-bootstrap-sass
   jekyll-optional-front-matter
-  jekyll-sitemap
+  jekyll-sitemap (= 1.3.0)
   jekyll-titles-from-headings
   jekyll_image_encode
   jemoji

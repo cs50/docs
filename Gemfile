@@ -7,7 +7,7 @@ group :jekyll_plugins do
     gem "jekyll-bootstrap-sass"
     gem "jekyll_image_encode"
     gem "jekyll-optional-front-matter"
-    gem "jekyll-sitemap"
+    gem "jekyll-sitemap", "1.3.0"
     gem "jekyll-titles-from-headings"
     gem "jemoji"
     gem "pygments.rb"
