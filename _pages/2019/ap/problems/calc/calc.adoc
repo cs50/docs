@@ -1,0 +1,248 @@
+---
+layout: 2018/ap
+---
+:skip-front-matter:
+
+= Problem: Calc
+
+== tl;dr
+
+Implement a program that implements a command line calculator.
+
+[source,subs=quotes]
+----
+$ [underline]#./calc 50 x 28#
+1400.000000
+----
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along three axes primarily.
+
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Adding any Updates
+
+Start off by opening up CS50 IDE and then type
+
+[source,bash]
+----
+update50
+----
+
+within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
+
+Next, navigate to your `unit2` directory, as with
+
+[source,bash]
+----
+cd ~/workspace/unit2
+----
+
+Create a new `calc` directory inside `unit2` (remember how?). Next create a new file entitled `calc.c` in your `calc` directory.
+
+Though we'll remind you of the existence of this video many times throughout the problems in this unit, be sure to have a look at Christopher's short video on command-line arguments.
+
+video::X8PmYwnbLKM[youtube]
+
+If you happen to see (and are confused by!) `char *` in this and other shorts, know for now that `char *` simply means `string`. But more on that soon!
+
+The shorts on arrays and strings wouldn't hurt either, if you want a refresher.
+
+video::7mOJN1c1JEo[youtube]
+
+video::z3j-gK1u6Kg[youtube]
+
+== Divide and Conquer
+
+In this problem, you will be tasked with implementing a very simple command-line based calculator program. Your program will accept inputs like this (wherein underlined text represents user input):
+
+
+[source,subs=quotes]
+----
+~/workspace/unit2/ $ [underline]#./calc 4 + 5#
+9.000000
+----
+
+or, indeed like this (allowing the user to perform some basic floating-point arithmetic)
+
+[source,subs=quotes]
+----
+~/workspace/unit2/ $ [underline]#./calc 8.38 - 5.12#
+3.260000
+----
+
+such that the user can perform all five of the basic math operations that C permits -- addition, subtraction, multiplication, division, and modulo.
+
+Notice that unlike many other programs you've likely written up to this point, and just like http://docs.cs50.net/2018/ap/problems/friends/friends.html[Old Friends], users are not entering any information **after** the program has started running. Rather, they are providing all of their input to the program at the command line, before the program has begun.
+
+Recall from Christopher's short that if we collect information from the user at the command line, we can use two special parameters passed into `main` (conventionally called `argc` and `argv`) which represent the number of arguments the user provided and the actual data the user provided, respectively. Given the example use case above, how many command-line arguments is the user expected to provide?
+
+If they fail to provide the correct number, your program should exit (possibly printing out an error message that tells them how they should have run the program) and `return 1;` so that we can automate testing of your code.
+
+Assuming we have the right number of command-line arguments, we're well on our way. There's a catch, though.
+
+Just because the user types a real number at the command line, that doesn't mean their input will be automatically stored in a `float`. Actually, it will be stored as a `string` that just so happens to look like an `float`; after all, remember the data type of `argv`? It's an array where each element is a `string`!  And so you'll need to convert that `string` to an actual `float`. As luck would have it, a function, https://reference.cs50.net/stdlib.h/atof[`atof`], exists for exactly that purpose! Here's how you might use it:
+
+[source,c]
+----
+float a = atof(argv[1]);
+----
+
+There are two values that need to be converted from a `string` to a `float` (`argv[1]` and `argv[3]`, specifically). So that just leaves dealing with the operator. Recall from the shorts on arrays and strings that a string in C is really just an array of characters. And we can access individual elements of an array by using square bracket notation to **index** into that array.
+
+[source,c]
+----
+string s = "Calculator";
+printf("%c\n", s[0]); // prints 'C'
+----
+
+Similarly, if we have another `string` which just so happens to be called `argv[2]` can we index into its first element, which will be a single character (`char`).
+
+[source,c]
+----
+printf("%c\n", argv[2][0]); // prints the first character of argv[2]
+----
+
+And that also means we can compare `argv[2][0]` against a variety of possible values (such as `+`, `-`, `x`, `/` or `%`, for example) and make certain decisions in our program based on what that character is, perhaps by making use of some Boolean expressions and conditional statements. (Of course, since there are only a small number of characters that we care about in `argv[2][0]`, you might also find this a good opportunity to use a `switch` statement for perhaps the first time.)
+
+Note above that we suggest using a lowercase `x` instead of the typical asterisk used to represent multiplication. The reason for that is that the asterisk means something special at the command line, and so ordinarily it will not be processed correctly. So just be sure when you encounter an `x` at the command line that you actually perform a multiplication!
+
+Once you've performed the arithmetic, just print out the result to the user on its own line, so we can automate testing of your code. By default, C will print out floating point values to six decimal places. Might as well leave it that way, there's plenty to do otherwise in this problem!
+
+== The Mod Squad
+
+If you're reading this section after you've already tried to implement modulo (`%`) in your calculator, you've likely noticed an error when compiling that looks something like the following:
+
+[source,bash]
+----
+error: invalid operands to binary expression ('float' and 'float')
+----
+
+Why are you seeing this? Well as it turns out, the modulo operator is not well-defined for floating point numbers. That is to say, there's no defined value for an expression like:
+
+[source,bash]
+----
+10.7 % 3.28
+----
+
+Rather, it turns out that modulo is only defined (in C, anyway) for **integers**. How, then, can we implement the operator while still allowing the user to input floating point values at the command line? Seems like we're going to have to do some extra work. After all, if modulo is really just the remainder after dividing the number on the left of the operator by the number on the right, a quick long divisionfootnote:[Bet you didn't think long division would come in handy again! And frankly, it probably didn't. Likely, you just used Google. That's thinking with portals!] will tell us that `10.7 % 3.28` should equal `0.86`, the remainder after calculating `10.7 / 3.28`.
+
+That leads to a discussion of today's Arithmetic Fun Fact&trade;footnote:[We don't actually hold a trademark on this term.]. If
+
+[source,bash]
+----
+x % y = z
+----
+
+then that means that
+
+[source,bash]
+----
+x / y = q rem z
+----
+
+or put differently
+
+[source,bash]
+----
+q = (int) (x / y);
+z = x - (y * q);
+----
+
+Perhaps best to illustrate this with an example, as the formulas are perhaps a bit on the intimidating side. Let's return to our prior example of calculating `10.7 % 3.28`.
+
+[source,bash]
+----
+q = (int) (10.7 / 3.28);
+q = (int) 3.262195;
+q = 3
+mod = 10.7 - (3.28 * 3);
+mod = 10.7 - 9.84
+mod = 0.86
+----
+
+So that is one way to implement the modulo operator by using other operators that C has defined for floats. To be sure, there are others, but this one should do the trick!
+
+== Subtract the Confusion
+
+To be clear, you may make the following assumptions with respect to your calculator.
+
+* `argv[1]`, should it be present, is guaranteed to consist only of digit characters, possibly a decimal point, and possibly a negative sign. You do not need to check otherwise.
+* `argv[2]`, should it be present, is **not** guaranteed to be `+`, `-`, `x`, `/` or `%`. Your program should respond somehow if the user provides an invalid operator and `return 1;`.
+* `argv[3]`, should it be present, is guaranteed to consist only of digit characters, possibly a decimal point, and possibly a negative sign. You do not need to check otherwise.
+* You needn't worry about floating-point imprecision with your calculator, and you needn't print out the correct answer to more than six decimal places.
+
+== Testing
+
+=== Correctness
+
+If you'd like to check the correctness of your program with `check50`, you may execute the below.
+
+[source,bash]
+----
+check50 cs50/2018/ap/calc
+----
+
+=== Style
+
+[source]
+----
+style50 calc.c
+----
+
+== Staff Solution
+
+If you'd like to play with the staff's own implementation of `calc`, you may execute the below.
+
+[source,bash]
+----
+~cs50/unit2/calc
+----
+
+== How to Submit
+
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
+
+** Be sure that `calc.c` is in `~/workspace/unit2/calc/`, as with:
++
+[source]
+----
+cd ~/workspace/unit2/calc/
+ls
+----
+
+=== Step 3 of 3
+
+* To submit `calc`, execute
++
+[source]
+----
+cd ~/workspace/unit2/calc/
+submit50 cs50/2018/ap/calc
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Calc.
