@@ -21,12 +21,12 @@ layout: 2017/hbs
 *** There are also "squatters" who buy many common domain names, hoping that they can resell some at a high price.
 ** Build website
 *** We'll talk more tomorrow about this step, but for now we can think of a website as just a file or a set of files.
-*** On http://www.hbs.edu/, we can right click the page and click `View Page Source`, which will show us the HTML of the website.
+*** On https://www.hbs.edu/, we can right click the page and click `View Page Source`, which will show us the HTML of the website.
 *** HTML, Hypertext Markup Language, is not an actual programming language, but uses tags to describe (markup) content.
 *** We can right-click a specific part of the page, click `Inspect`, and see the corresponding HTML:
 +
 image::hbs.png[alt="hbs.edu Inspect", width=600]
-*** For this link, we see `<a href="http://hbswk.hbs.edu/item/cost-cutting-leads-to-turbulence-in-the-airline-industry" id="homepage-news-articletitle" class="makeItBlack">Cost-cutting Leads to Turbulence in the Airline Industry</a>`. `<a>` indicates a tag that starts a link, with an `href`, hyper-reference, to that URL. Then there are some other attributes (`id="..."`), and there is a closing tag, `</a>`, that ends this link, with the text that actually appears as the clickable link in between.
+*** For this link, we see `<a href="https://hbswk.hbs.edu/item/cost-cutting-leads-to-turbulence-in-the-airline-industry" id="homepage-news-articletitle" class="makeItBlack">Cost-cutting Leads to Turbulence in the Airline Industry</a>`. `<a>` indicates a tag that starts a link, with an `href`, hyper-reference, to that URL. Then there are some other attributes (`id="..."`), and there is a closing tag, `</a>`, that ends this link, with the text that actually appears as the clickable link in between.
 ** Communication tools
 *** We'll come back to this, along with a deeper dive into website building, tomorrow.
 ** Hosting
@@ -72,7 +72,7 @@ Non-authoritative answer:
 Name:   www.google.com
 Address: 216.58.218.228
 ----
-** And if we went to http://216.58.218.228, we would indeed get redirected to https://www.google.com. This is done by their server, and we'll see tomorrow how we can implement that.
+** And if we went to https://216.58.218.228, we would indeed get redirected to https://www.google.com. This is done by their server, and we'll see tomorrow how we can implement that.
 * We can run `traceroute`, a command that shows us the route to a server, to `mit.edu`:
 +
 image::mit.png[alt="traceroute mit.edu", width=600]
@@ -112,7 +112,7 @@ GET / HTTP/1.1
 Host: www.hbs.edu
 
 HTTP/1.0 301 Moved Permanently
-Location: http://www.hbs.edu/Pages/default.aspx
+Location: https://www.hbs.edu/Pages/default.aspx
 Server: BigIP
 Connection: Keep-Alive
 Content-Length: 0
@@ -121,5 +121,5 @@ Content-Length: 0
 ** We got a reply that had a status code of `301`, `Moved Permanently`, which redirects us to the URL of the actual homepage of the site. You might recognize some common status codes like `404`, which means "Not Found".
 * We can use another program, `curl`, which will automatically send a request on our behalf and get the raw HTML at that URL:
 +
-image::curl.png[alt="curl http://www.hbs.edu/Pages/default.aspx", width=600]
+image::curl.png[alt="curl https://www.hbs.edu/Pages/default.aspx", width=600]
 * Until next time!
