@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta property="og:description" content="CS50 is Harvard University's introduction to the intellectual enterprises of computer science and the art of programming. Anyone may take CS50, even if not a student at Harvard. This chart compares options."/>
-        <meta property="og:image" content="https://media.www.harvard.edu/user13/harvard_shield.png"/>
+        <meta property="og:image" content="https://www.harvard.edu/user13/harvard_shield.png"/>
         <meta property="og:site_name" content="CS50"/>
         <meta property="og:title" content="CS50 Options"/>
         <script>
