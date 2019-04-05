@@ -1,0 +1,52 @@
+---
+layout: 2018/ap
+---
+:skip-front-matter:
+
+= Writing Problem: Degrees of Scalability
+
+== tl;dr
+
+Research how scalable real world applications are.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this writing problem will be evaluated along three axes primarily.
+
+Correctness::
+    To what extent does your submission align with the requirements of the specification?
+Design::
+    To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+Style::
+    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
+
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Started
+
+No need to open up the IDE for this problem, just get out some good old-fashioned paper and pencilfootnote:[Okay, or open up your IDE and answer these questions in a file called, say, `questions.txt`.].
+
+== Analyze
+
+First, take a look at how Dropbox scales.
+
+video::VECV6r9s5SE[youtube]
+
+Answer the following writing questions, giving both your answer and a justification. There is not necessarily a _correct_ answer to each question, rather the important part is your justification for the choice(s) you make.
+
+. Let's consider the popular social media site, Facebook, and see how scalable it is.
+.. Based on your knowledge of Facebook, do you think the website, its applications, and anything else it has are scalable?
+.. Do they allow for a large number of users with few bugs? Is all information accurately saved to their database? Would the server crash from overload?
+.. How do you think Facebook allows for such a large number of users? How do you think the servers divide the work (e.g., Do they scale vertically? Horizontally? Neither? Both?)?
+.. Do you think Facebook is scalable enough that they would no longer have to scale vertically to allow for more users? Remember to justify all answers.
+. Now let's look into finance. Consider any online banking service you utilize.
+.. Based on your knowledge of your banking service, do you think that it is scalable?
+.. Does your banking service allow for a large number of users? Do you think it can handle a large number of users using its service at once or would it crash?
+.. With more users, comes more bugs and security risks? Does your banking service ensure security? Does it make sure that no two people can be logged in at once, even if they both try logging in at the same exact time? Can you think of any problems with their service and/or database?
+.. Which do you think is more scalable? Facebook or your banking service? Can you think of something that's more scalable than the one you chose?
+. Last one! Choose another popular application unrelated to social media and finance and analyze its scalability like we did before.
+
+This was Degrees of Scalability.
