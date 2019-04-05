@@ -17,6 +17,7 @@ Here are just some of the possibilities, organized into (non-exhaustive) "tracks
 
 If at a loss for ideas, here are some seminars from years past for inpsiration!
 
+* https://www.youtube.com/playlist?list=PLhQjrBD2T3827WgJGDFuK2cKnPBNOdIwa[CS50 Seminars 2018]
 * https://www.youtube.com/playlist?list=PLhQjrBD2T381wZBYZUCoFFavyHHhHQmyQ[CS50 Seminars 2017]
 * https://www.youtube.com/playlist?list=PLhQjrBD2T382IHcDBSQYC4ZG4C2aTiA6C[CS50 Seminars 2016]
 
