@@ -1,5 +1,5 @@
 ---
-layout: 2018/fall
+layout: 2019/spring
 ---
 :skip-front-matter:
 
@@ -9,11 +9,11 @@ The climax of this course is its final project. The final project is your opport
 
 Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
 
-Extensions on the final project are not ordinarily granted, except in cases of emergency.
+__Extensions on the final project are not ordinarily granted, except in cases of emergency.__
 
 == Ideas
 
-Here are just some of the possibilities, organized into (non-exhaustive) "tracks". Discuss any and all with your TF! And if you'd like to solicit collaborators for an idea you have, do post to https://discourse.cs50.net/c/cs50-2018-fall[Discourse]!
+Here are just some of the possibilities, organized into (non-exhaustive) "tracks". Discuss any and all with your TF! And if you'd like to solicit collaborators for an idea you have, do post to https://discourse.cs50.net/[Discourse]!
 
 If at a loss for ideas, here are some seminars from years past for inpsiration!
 
@@ -59,15 +59,14 @@ Extensions on the final project are not granted, except in cases of emergency.
 
 === Preproposal
 
-_due by Tue 11/6, 11:59pm_
+_due by Tue 4/16, 11:59pm_
 
 Intended to promote early thought, the preproposal is your opportunity to bounce one or more ideas off of your teaching fellow. If collaborating with one or two classmates, each of you should submit a preproposal, even if identical.
 
-Here's how to submit your preproposal. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
+Here's how to submit your preproposal. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window:
 
-1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
-1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
-1. Execute `mkdir project` to make (i.e., create) a directory called `project` in your `workspace` directory.
+1. Execute `cd` to ensure that you're in `~`.
+1. Execute `mkdir project` to make (i.e., create) a directory called `project` in your `~` directory.
 1. Execute `cd project` to change into (i.e., open) that directory.
 1. Execute `wget http://cdn.cs50.net/2018/fall/project/preproposal.zip` to download a (compressed) ZIP file.
 1. Execute `unzip preproposal.zip` to uncompress that file.
@@ -78,17 +77,17 @@ Here's how to submit your preproposal. Log into link:https://cs50.io/[CS50 IDE] 
 
 Edit that file in CS50 IDE, answering the questions therein.
 
-Then execute the below from within your `~/workspace/project/preproposal` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+Then execute the below from within your `~/project/preproposal` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/project/preproposal
+submit50 cs50/2019/spring/project/preproposal
 ```
 
 === Proposal
 
-_due by Tue 11/13, 11:59pm_
+_due by Tue 4/23, 11:59pm_
 
-The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design. If collaborating with one or two classmates, each of you should submit a proposal, even if identical.
+The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design. **If collaborating with one or two classmates, each of you should submit a proposal, even if identical.**
 
 Your teaching fellow will either approve your proposal or require modifications on your part for subsequent approval.  Your proposal, even if approved, is not binding; you may alter your plan at any point, provided you obtain your teaching fellow's approval for any modifications.  Projects submitted without approval may not receive credit.
 
@@ -102,11 +101,10 @@ Submit https://docs.google.com/forms/d/e/1FAIpQLScwZfZrPYrEsSPvq4ocWQgU2C-spw7Ct
 
 ==== Step 2 of 2
 
-Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
+Here's how to submit your proposal. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window:
 
-1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
-1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
-1. Execute `mkdir project` to make (i.e., create) a directory called `project` in your `workspace` directory.
+1. Execute `cd` to ensure that you're in `~`.
+1. Execute `mkdir project` to make (i.e., create) a directory called `project` in your `~` directory.
 1. Execute `cd project` to change into (i.e., open) that directory.
 1. Execute `wget http://cdn.cs50.net/2018/fall/project/proposal.zip` to download a (compressed) ZIP file.
 1. Execute `unzip proposal.zip` to uncompress that file.
@@ -117,10 +115,10 @@ Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window:
 
 Edit that file in CS50 IDE, answering the questions therein.
 
-Then execute the below from within your `~/workspace/project/proposal` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+Then execute the below from within your `~/project/proposal` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/project/proposal
+submit50 cs50/2019/spring/project/proposal
 ```
 
 === Status Report
