@@ -172,9 +172,11 @@ style50 helpers.py
 
 === CLI
 
+Beginning on Sat 4/6, execute:
+
 [source]
 ----
-~cs50/pset6/less/compare
+~cs50/2019/spring/pset7/compare
 ----
 
 === Web
