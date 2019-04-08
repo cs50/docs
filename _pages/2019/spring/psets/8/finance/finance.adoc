@@ -1,5 +1,5 @@
 ---
-layout: 2018/fall
+layout: 2019/spring
 toclevels: 2
 ---
 
@@ -160,7 +160,7 @@ Complete the implementation of `check` in such a way that it checks whether a us
 
 Finally, enhance your template for `register` with some JavaScript in such a way that it prevents submission of your registration form if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation].
 
-* Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available. 
+* Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available.
 * Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
 
 === personal touch
@@ -197,7 +197,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/2018/fall/finance
+check50 cs50/2019/spring/finance
 ----
 
 === Style
@@ -264,5 +264,5 @@ If you see this, make sure to remove or comment out any print statements from ap
 Execute the below from within your `~/workspace/pset8/finance` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/finance
+submit50 cs50/2019/spring/finance
 ```
