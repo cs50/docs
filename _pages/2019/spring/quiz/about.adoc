@@ -5,21 +5,21 @@ toc: false
 
 = About Quiz
 
-Released at noon on Sat 11/10 and due by noon on Thu 11/15 is a take-home quiz that will cover Weeks 0 through 8 (and Problem Sets 0 through 8). The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+Released at noon on Sat 4/20 and due by 11:59pm on Thu 4/25 is a take-home quiz that will cover Weeks 0 through 8 (and Problem Sets 0 through 8). The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
 
 The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several hours (not days!) on the quiz.
 
-The course's heads in Cambridge will hold a course-wide prep session for the quiz on Fri 11/9, 9am–11:45am, in Sanders Theatre; it will be streamed live via the course's website and will be available on demand immediately afterward via the same. The course's staff will also hold office hours later that afternoon, per the schedule on the course's website.
+In Fall 2018, the course's heads held a course-wide prep session for the quiz which is available on the course's website. 
 
 Among the quiz's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. The quiz's format will resemble that of
 
 * http://cdn.cs50.net/2016/fall/test/test.html[Fall 2016's test],
 ** http://cdn.cs50.net/2016/fall/test/key.html[sample solutions]
-* http://cdn.cs50.net/2016/fall/quiz/quiz.html[Fall 2016's quiz], 
+* http://cdn.cs50.net/2016/fall/quiz/quiz.html[Fall 2016's quiz],
 ** http://cdn.cs50.net/2016/fall/quiz/key.html[sample solutions]
 * http://cdn.cs50.net/2017/fall/test/test.html[Fall 2017's test], and
 ** http://cdn.cs50.net/2017/fall/test/key.html[sample solutions]
-* http://cdn.cs50.net/2017/fall/quiz/quiz.html[Fall 2017's quiz], 
+* http://cdn.cs50.net/2017/fall/quiz/quiz.html[Fall 2017's quiz],
 ** http://cdn.cs50.net/2017/fall/quiz/key.html[sample solutions]
 
 with short-answer questions as well as longer-answer questions. (In prior years, the course had both a mid-semester test and end-of-semester quiz. This year has only an end-of-semester quiz.) Some questions may involve code (for which you're welcome to use CS50 IDE). Expect to spend at least thirty minutes per question.
