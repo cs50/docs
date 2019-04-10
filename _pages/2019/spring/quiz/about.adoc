@@ -1,0 +1,37 @@
+---
+layout: 2018/fall
+toc: false
+---
+
+= About Quiz
+
+Released at noon on Sat 4/20 and due by 11:59pm on Thu 4/25 is a take-home quiz that will cover Weeks 0 through 8 (and Problem Sets 0 through 8). The quiz is open-book: you may use any and all non-human resources during the quiz, but the only humans to whom you may turn for help or from whom you may receive help are the course's heads.
+
+The quiz will be released via the course's website and will be submitted via `submit50`. You should expect to spend several hours (not days!) on the quiz.
+
+In Fall 2018, the course's heads held a course-wide prep session for the quiz which is available on the course's website. 
+
+Among the quiz's aims is to assess your newfound comfort with the course's material and your ability to apply the course's lessons to familiar and unfamiliar problems. The quiz's format will resemble that of
+
+* http://cdn.cs50.net/2016/fall/test/test.html[Fall 2016's test],
+** http://cdn.cs50.net/2016/fall/test/key.html[sample solutions]
+* http://cdn.cs50.net/2016/fall/quiz/quiz.html[Fall 2016's quiz],
+** http://cdn.cs50.net/2016/fall/quiz/key.html[sample solutions]
+* http://cdn.cs50.net/2017/fall/test/test.html[Fall 2017's test], and
+** http://cdn.cs50.net/2017/fall/test/key.html[sample solutions]
+* http://cdn.cs50.net/2017/fall/quiz/quiz.html[Fall 2017's quiz],
+** http://cdn.cs50.net/2017/fall/quiz/key.html[sample solutions]
+
+with short-answer questions as well as longer-answer questions. (In prior years, the course had both a mid-semester test and end-of-semester quiz. This year has only an end-of-semester quiz.) Some questions may involve code (for which you're welcome to use CS50 IDE). Expect to spend at least thirty minutes per question.
+
+== How to Prepare
+
+Ultimately, how best to prepare depends on how you learn best. But allow us to recommend that you prioritize your studies per the ordering below.
+
+. Review each lecture's *notes*.
+. Review each lecture's *source code*, if any.
+. Review each lecture's *slides*.
+. Attend or watch the *review session*.
+. Review each lecture's *video*, using its table of contents to focus on topics with which you're less comfortable.
+. Take past years' tests and quizzes and, only after you've attempted each of their questions, review their sample solutions. Realize, though, that some topics covered in past years might not have been covered in this term. Rely on this year's lectures and problem sets as the official sources for this year's topics.
+. Review problem sets' *specifications*, *sample solutions*, and, if any, *distribution code*.

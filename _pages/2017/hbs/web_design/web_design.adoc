@@ -25,9 +25,9 @@ image::traceroute2.png[alt="traceroute2", width=600]
 
 == HTML, CSS
 
-* Today we'll be using http://cs50.io[http://cs50.io] to explore Web Design with some hands-on activities.
+* Today we'll be using https://cs50.io[https://cs50.io] to explore Web Design with some hands-on activities.
 * Cloud9, the underlying software for cs50.io, is an integrated development environment, a set of tools built for writing code.
-* We've added features to the standard, commercial Cloud9 that lives at http://c9.io, used by professional developers, to help simplify and assist with learning to code.
+* We've added features to the standard, commercial Cloud9 that lives at https://c9.io, used by professional developers, to help simplify and assist with learning to code.
 * Once you log in, you can create a new workspace, and you should see a screen like the below:
 +
 image::cs50io.png[alt="cs50.io", width=600]
@@ -91,7 +91,7 @@ image::preview.png[alt="preview of hello.html", width=400]
 </html>
 ----
 ** We needed to use the `<p>` tag to explicitly indicate to the browser that we want each group of text to be paragraphs, separated by whitespace. And if we were to add spaces ourselves, the browser would ignore it and normalize them all to one space.
-* In the http://cdn.cs50.net/2017/mba/classes/web_design/web_design.zip[source code ZIP file], we open and look at a few more examples, such as `headings.html`.
+* In the https://cdn.cs50.net/2017/mba/classes/web_design/web_design.zip[source code ZIP file], we open and look at a few more examples, such as `headings.html`.
 * In particular we notice:
 ** Code that starts with `<!--` and ending in `-->` are comments, or notes that programmers can leave for other humans reading the code, but not for the program or browser to actually use or display.
 ** We add `lang="en"` to the inside of our opening `<html>` tags, so browsers don't try to translate them.
@@ -127,7 +127,7 @@ image::image_link.png[alt="image in link", width=600]
         <title>PayPal</title>
     </head>
     <body>
-        Confirm your password at <a href="http://somedomainIownandiamahacker.com">paypal.com.</a>
+        Confirm your password at <a href="https://somedomainIownandiamahacker.com">paypal.com.</a>
     </body>
 </html>
 ----

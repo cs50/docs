@@ -70,14 +70,14 @@ Content-Type: text/html
 ----
 HTTP/1.1 301 Moved Permanently
 Content-Type: text/html
-Location: http://www.harvard.edu/
+Location: https://www.harvard.edu/
 ...
 ----
 ** Indeed, if we tried to visit just `harvard.edu` in our browser, it would automatically take us to `https://www.harvard.edu/`.
 * We can see this ourselves by running the `curl` command in the CS50 IDE. The `-I` flag indicates that we want to see just the headers we get back:
 +
 image::curl.png[alt="curl headers", width=400]
-** First, `http://harvard.edu/` redirects us to `http://www.harvard.edu/`, which in turn redirects us to `https://www.harvard.edu/`
+** First, `https://harvard.edu/` redirects us to `https://www.harvard.edu/`, which in turn redirects us to `https://www.harvard.edu/`
 ** There are also some additional headers sent back, which we don't need to worry about.
 * To see the HTML that actually comprise the webpage, we could use `curl`, or the Developer Tools feature in Google Chrome:
 +
@@ -90,10 +90,10 @@ image::network.png[alt="Network tab", width=600]
 * But Yale's web servers are configured slightly better, redirecting us in one step rather than two:
 +
 image::curl_yale.png[alt="curl headers", width=400]
-* And if we visit `http://safetyschool.org/`, someone had actually set up that domain to redirect to Yale's homepage as well!
+* And if we visit `https://safetyschool.org/`, someone had actually set up that domain to redirect to Yale's homepage as well!
 +
 image::curl_safetyschool.png[alt="curl headers", width=400]
-** A few years later, Yale's students pranked Harvard back, convincing the audience on Harvard's side at a football game to http://www.harvardsucks.org/[hold up some less than ideal signs].
+** A few years later, Yale's students pranked Harvard back, convincing the audience on Harvard's side at a football game to https://www.harvardsucks.org/[hold up some less than ideal signs].
 * So far, we've discovered that HTTP requires clients and servers to send messages back and forth. That happens over IP, Internet Protocol, which specifies that all devices connected to the Internet has some address, known as an IP address.
 * Just like "33 Oxford Street, Cambridge, MA" helps us identify a building, IP addresses identify computers and phones in the format `\#.#.\#.#`.
 * Each of the numbers can be in the range `0` to `255`, which means that exactly 8 bits, or one byte, is needed to store each number. So an IP address with 4 of these numbers has 32 bits, and from there we can deduce that a total of about 2 billion unique IP addresses exist.
@@ -208,7 +208,7 @@ image::http-server.png[alt="http-server in the CS50 IDE", width=400]
         <title>link</title>
     </head>
     <body>
-       Hello, world! My favorite school is <a href="http://www.stanford.edu/">stanford.edu</a>.
+       Hello, world! My favorite school is <a href="https://www.stanford.edu/">stanford.edu</a>.
     </body>
 </html>
 ----
@@ -231,12 +231,12 @@ image::http-server.png[alt="http-server in the CS50 IDE", width=400]
 ----
 *** Here, the `<img />` tag is special because it can be closed with a `/` at the end (since there's no other content that can go inside an image). We also see the `src` attribute, that indicates the source of the image, and the `alt` attribute, that the browser should display if we hover over the image or if the image needs to be read as text.
 *** We also see the `<!-- -->` syntax for indicating comments, which won't be displayed on the page but can be helpful for commenting code.
-** http://cdn.cs50.net/2017/fall/lectures/6/src6/headings.html[headings]
-** http://cdn.cs50.net/2017/fall/lectures/6/src6/list.html[lists]
+** https://cdn.cs50.net/2017/fall/lectures/6/src6/headings.html[headings]
+** https://cdn.cs50.net/2017/fall/lectures/6/src6/list.html[lists]
 *** We have a parent `<ul>` list, for an unordered, bulleted list, which we could change to `<ol>` for an ordered, numbered list.
-** http://cdn.cs50.net/2017/fall/lectures/6/src6/table.html[table]
+** https://cdn.cs50.net/2017/fall/lectures/6/src6/table.html[table]
 *** Now we have a more complicated nesting of elements, with `<tr>` elements indicating rows, and `<td>` indicating cells.
-* All of these examples, and more, are in this week's http://cdn.cs50.net/2017/fall/lectures/6/src6/[source directory], and we can discover even more features of HTML by searching online for documentation and examples.
+* All of these examples, and more, are in this week's https://cdn.cs50.net/2017/fall/lectures/6/src6/[source directory], and we can discover even more features of HTML by searching online for documentation and examples.
 * If we wanted to reimplement Google's search page, we might start by using its service and noticing that the URL contains what we want to search for. By trial and error, we discover that we can simplify the URL to the following:
 +
 image::google_cats.png[alt="Google search for cats with URL", width=600]
@@ -244,7 +244,7 @@ image::google_cats.png[alt="Google search for cats with URL", width=600]
 ** `search` is the path that we are requesting, and `?` starts a set of parameters, or inputs we will be providing.
 ** `q=` is the name of the query, and the value follows.
 ** If we were to type in something with spaces, we would see those spaces automatically replaced by `%20` by our browser, which keeps the URL one string.
-* We can write http://cdn.cs50.net/2017/fall/lectures/6/src6/search.html.src[`search.html`]:
+* We can write https://cdn.cs50.net/2017/fall/lectures/6/src6/search.html.src[`search.html`]:
 +
 [source, html]
 ----
@@ -268,7 +268,7 @@ image::google_cats.png[alt="Google search for cats with URL", width=600]
 ** Then we have an `input` which allows us to type in some value that will be passed to Google via the `q` parameter in the URL.
 * Our `search.html` is an example of a front-end, or the page that loads in the user's browser, and is the user interface. Google, on the other hand, still runs the back-end service, which involves the databases and servers that actually provide the search results. And correspondingly, there are occupations where developers focus on front-end development, back-end development, or both.
 * HTML is just a markup language, as we've seen, and we can use CSS, Cascading Style Sheets, another language, to indicate to browsers how webpages should look.
-* Let's look at http://cdn.cs50.net/2017/fall/lectures/6/src6/css0.html.src[`css0.html`]:
+* Let's look at https://cdn.cs50.net/2017/fall/lectures/6/src6/css0.html.src[`css0.html`]:
 +
 [source, html]
 ----
@@ -318,7 +318,7 @@ image::google_cats.png[alt="Google search for cats with URL", width=600]
 </html>
 ----
 ** This page is functionally the same as before, but simpler and better-designed.
-* In http://cdn.cs50.net/2017/fall/lectures/6/src6/css2.html.src[`css2.html`], we can define the `class` attribute on each HTML element, and set the CSS properties for each of them in the `<style>` tag in the `<head>` section of the page:
+* In https://cdn.cs50.net/2017/fall/lectures/6/src6/css2.html.src[`css2.html`], we can define the `class` attribute on each HTML element, and set the CSS properties for each of them in the `<style>` tag in the `<head>` section of the page:
 +
 [source, html]
 ----
@@ -365,7 +365,7 @@ image::google_cats.png[alt="Google search for cats with URL", width=600]
 </html>
 ----
 ** Notice that classes are indicated in CSS with a `.` in front of them, with curly braces to contain some properties for each of those classes.
-* In http://cdn.cs50.net/2017/fall/lectures/6/src6/css3.html.src[`css3.html`], we simply use the names of tags directly to specify properties that should apply to them. Notice that here, they do not start with a `.` because they are HTML tag types, rather than classes we've specified:
+* In https://cdn.cs50.net/2017/fall/lectures/6/src6/css3.html.src[`css3.html`], we simply use the names of tags directly to specify properties that should apply to them. Notice that here, they do not start with a `.` because they are HTML tag types, rather than classes we've specified:
 +
 [source, html]
 ----
@@ -435,9 +435,9 @@ image::google_cats.png[alt="Google search for cats with URL", width=600]
     </body>
 </html>
 ----
-* And instead of writing all of our styles from the ground up, we can use CSS libraries like http://getbootstrap.com/[Bootstrap] that come with pre-written code that we can use to make our websites more quickly.
+* And instead of writing all of our styles from the ground up, we can use CSS libraries like https://getbootstrap.com/[Bootstrap] that come with pre-written code that we can use to make our websites more quickly.
 * Indeed, the https://speller.cs50.net/[Big Board] uses Bootstrap to format its page.
-* Let's look at http://cdn.cs50.net/2017/fall/lectures/6/src6/form0.html.src[`form0.html`]:
+* Let's look at https://cdn.cs50.net/2017/fall/lectures/6/src6/form0.html.src[`form0.html`]:
 +
 [source, html]
 ----
@@ -480,7 +480,7 @@ image::google_cats.png[alt="Google search for cats with URL", width=600]
 ** We have a `form` with no `action`, so it won't do anything yet, but we use `<input>` to create a text box and `<select>` for a drop-down:
 +
 image::form0.png[alt="form0 in browser", width=300]
-* In contrast, http://cdn.cs50.net/2017/fall/lectures/6/src6/form1.html.src[`form1.html`] looks much better with just a few more lines of code, simply by including the Bootstrap library. By reading the documentation, we can experiment and discover new features and abilities.
+* In contrast, https://cdn.cs50.net/2017/fall/lectures/6/src6/form1.html.src[`form1.html`] looks much better with just a few more lines of code, simply by including the Bootstrap library. By reading the documentation, we can experiment and discover new features and abilities.
 * Finally, in our HTML examples earlier, we had lines like `Copyright &#169; John Harvard`. In particular, `&#169;` was displayed as a copyright symbol. And like escaped characters in C, HTML has special strings called HTML entities that start with `&` and end in `;` but are displayed as some symbol.
 * And emoji on your phone are also characters that can be displayed, but they are specified by the Unicode standard, as opposed to the ASCII standard in C. We can see the https://unicode.org/emoji/charts/full-emoji-list.html[full list], and use that to include emoji in our webpages:
 +

@@ -23,9 +23,9 @@ https://cs50.edx.org/
 
 CS50x is free to take, and you are welcome to submit the course's nine problem sets and final project for automated feedback. To be eligible for a https://www.edx.org/verified-certificate[verified certificate] from edX, however, you must receive a satisfactory score (at least 70%) on each problem you submit as part of one of the course's nine problem sets as well as on the course's final project.
 
-Problems are evaluated along axes of correctness (as determined by a program called `check50`) and style (as determined by a program called `style50`), with scores ordinarily computed as 3 × correctness + 1 × style. 
+Problems are evaluated along axes of correctness (as determined by a program called `check50`) and style (as determined by a program called `style50`), with scores ordinarily computed as 3 × correctness + 1 × style.
 
-== Books 
+== Books
 
 No books are required or recommended for this course. However, you might find the below books of interest. Realize that free, if not superior, resources can be found on the course's website.
 
@@ -38,7 +38,7 @@ _Hacker's Delight_, Second Edition +
 Henry S. Warren Jr. +
 Pearson Education, 2013 +
 ISBN 0-321-84268-5
- 
+
 _How Computers Work_, Tenth Edition +
 Ron White +
 Que Publishing, 2014 +
@@ -55,7 +55,7 @@ The course's lectures introduce each week's concepts.
 
 == Walkthroughs
 
-Integrated into problem sets are "walkthroughs," videos that offer direction on where to begin and how to approach problems. 
+Integrated into problem sets are "walkthroughs," videos that offer direction on where to begin and how to approach problems.
 
 == Problem Sets
 
@@ -67,7 +67,7 @@ The climax of this course is its final project. The final project is your opport
 
 Inasmuch as software development is rarely a one-person effort, you are allowed an opportunity to collaborate with one or two classmates for this final project. Needless to say, it is expected that every student in any such group contribute equally to the design and implementation of that group's project. Moreover, it is expected that the scope of a two- or three-person group's project be, respectively, twice or thrice that of a typical one-person project. A one-person project, mind you, should entail more time and effort than is required by each of the course's problem sets. Although no more than three students may design and implement a given project, you are welcome to solicit advice from others, so long as you respect the course's policy on academic honesty.
 
-CS50x does not have a deadline for the final project. You are welcome to work on and submit it at your own pace. To be eligible for a verified certificate from edX, however, you must submit (and receive a score of at least 70% on) it by 31 December 2018.
+CS50x does not have a deadline for the final project. You are welcome to work on and submit it at your own pace. To be eligible for a verified certificate from edX, however, you must submit (and receive a score of at least 70% on) it by 31 December 2019.
 
 == Academic Honesty
 

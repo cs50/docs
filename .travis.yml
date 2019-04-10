@@ -1,6 +1,7 @@
 language: ruby
-rvm: 2.2
+rvm: 2.5
 cache: bundler
+before_install: gem install bundler -v 1.17.3
 script: make docs
 deploy:
   provider: pages

@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta property="og:description" content="CS50 is Harvard University's introduction to the intellectual enterprises of computer science and the art of programming. Anyone may take CS50, even if not a student at Harvard. This chart compares options."/>
-        <meta property="og:image" content="http://media.www.harvard.edu/user13/harvard_shield.png"/>
+        <meta property="og:image" content="https://www.harvard.edu/user13/harvard_shield.png"/>
         <meta property="og:site_name" content="CS50"/>
         <meta property="og:title" content="CS50 Options"/>
         <script>
@@ -14,7 +14,7 @@
         </script>
         <script>
 
-            // adapted from http://stackoverflow.com/a/8948587
+            // adapted from https://stackoverflow.com/a/8948587
             $(function() {
                 var isVisible = false;
                 var hideAllPopovers = function() {
@@ -84,7 +84,7 @@
 
             /* table headings */
             th {
-                background-color: #a3182d !important; /* http://harvardx.harvard.edu/files/styles/os_files_small/public/harvardx/files/harvardx_rgb_nb3.png?itok=WrVkeAm1 */
+                background-color: #a3182d !important; /* https://harvardx.harvard.edu/files/styles/os_files_small/public/harvardx/files/harvardx_rgb_nb3.png?itok=WrVkeAm1 */
                 color: #fff !important;
                 font-weight: bold;
                 text-align: center;
@@ -124,9 +124,9 @@
                 </tr>
                 <tr>
                     <td><span data-content="Students may access CS50's handouts, source code, videos, and more.">Access to Content</span></td>
-                    <td>via <a href="http://cs50.tv/">cs50.tv</a>, <a href="https://itunes.apple.com/us/course/this-is-cs50-2014./id953585749">iTunes U</a>, <a href="https://www.roku.com/channels/#!details/16270/cs50">Roku</a>, or <a href="http://www.youtube.com/cs50">YouTube</a></td>
-                    <td>via <a href="http://cs50.edx.org/">cs50.edx.org</a></td>
-                    <td>via <a href="http://cs50.edx.org/">cs50.edx.org</a></td>
+                    <td>via <a href="https://cs50.tv/">cs50.tv</a>, <a href="https://itunes.apple.com/us/course/this-is-cs50-2014./id953585749">iTunes U</a>, <a href="https://www.roku.com/channels/#!details/16270/cs50">Roku</a>, or <a href="https://www.youtube.com/cs50">YouTube</a></td>
+                    <td>via <a href="https://cs50.edx.org/">cs50.edx.org</a></td>
+                    <td>via <a href="https://cs50.edx.org/">cs50.edx.org</a></td>
                     <td>via <a href="https://cs50.harvard.edu/">cs50.harvard.edu</a></td>
                     <td>via <a href="https://cs50.harvard.edu/">cs50.harvard.edu</a></td>
                 </tr>
@@ -139,7 +139,7 @@
                     <td>&#x2714;</td>
                 </tr>
                 <tr>
-                    <td><span data-content="Students may participate in CS50's (unmoderated) community forums at &lt;a href='https://cs50.stackexchange.com/'&gt;cs50.stackexchange.com&lt;/a&gt;, &lt;a href='http://reddit.com/r/cs50'&gt;reddit.com/r/cs50&lt;/a&gt;, and &lt;a href='https://www.facebook.com/groups/cs50'&gt;facebook.com/groups/cs50&lt;/a&gt;.">Community Forums</span></td>
+                    <td><span data-content="Students may participate in CS50's (unmoderated) community forums at &lt;a href='https://cs50.stackexchange.com/'&gt;cs50.stackexchange.com&lt;/a&gt;, &lt;a href='https://reddit.com/r/cs50'&gt;reddit.com/r/cs50&lt;/a&gt;, and &lt;a href='https://www.facebook.com/groups/cs50'&gt;facebook.com/groups/cs50&lt;/a&gt;.">Community Forums</span></td>
                     <td>&#x2714;</td>
                     <td>&#x2714;</td>
                     <td>&#x2714;</td>
@@ -197,10 +197,10 @@
                 <tr>
                     <td><span data-content="One-on-one help via screen-sharing and videoconferencing from Harvard undergraduates.">Tutoring</span></td>
                     <td>&nbsp;</td>
-                    <td><a href="http://cs50.hsa.net/">via HSA</a></td>
-                    <td><a href="http://cs50.hsa.net/">via HSA</a></td>
-                    <td><a href="http://cs50.hsa.net/">via HSA</a></td>
-                    <td><a href="http://cs50.hsa.net/">via HSA</a></td>
+                    <td><a href="https://cs50.hsa.net/">via HSA</a></td>
+                    <td><a href="https://cs50.hsa.net/">via HSA</a></td>
+                    <td><a href="https://cs50.hsa.net/">via HSA</a></td>
+                    <td><a href="https://cs50.hsa.net/">via HSA</a></td>
                 </tr>
                 <tr>
                     <td><span data-content="Students can ask questions of CS50's TFs (teaching fellows) via CS50 Discuss, CS50's own app for interactive discussions.">TF-Moderated Forums</span></td>
@@ -247,11 +247,11 @@
                     <td>&nbsp;</td>
                     <td><span data-content="Students who earn satisfactory scores on 9 problem sets and 1 final project by 31 December 2015 will receive a downloadable, printable &lt;a href='https://www.edx.org/about/student-faq#certificates'&gt;Honor Code Certificate&lt;/a&gt; from edX that resembles &lt;a href='https://www.edx.org/sites/default/files/honor_code_cert.png'&gt;this sample&lt;/a&gt;.">Honor Code Certificate</span></td>
                     <td><span data-content="Students who earn satisfactory scores on 9 problem sets and 1 final project by 31 December 2015 will receive a downloadable, printable &lt;a href='https://www.edx.org/verified-certificate'&gt;Verified Certificate&lt;/a&gt; from edX that resembles &lt;a href='https://www.edx.org/sites/default/files/theme/example-certificate-verified.png'&gt;this sample&lt;/a&gt;.">Verified Certificate</span></td>
-                    <td><span data-content="Students who earn satisfactory scores on 9 problem sets and 1 final project by 31 December 2015 will receive a downloadable, printable &lt;a href='https://cs50.harvard.edu/certificate'&gt;CS50 Certificate&lt;/a&gt; from &lt;a href='http://www.dce.harvard.edu/'&gt;Harvard Division of Continuing Education&lt;/a&gt;, signed by David and the school's dean, that resembles &lt;a href='CS50-Certificate-Sample.pdf'&gt;this sample&lt;/a&gt;.">CS50 Certificate</span></td>
+                    <td><span data-content="Students who earn satisfactory scores on 9 problem sets and 1 final project by 31 December 2015 will receive a downloadable, printable &lt;a href='https://cs50.harvard.edu/certificate'&gt;CS50 Certificate&lt;/a&gt; from &lt;a href='https://www.dce.harvard.edu/'&gt;Harvard Division of Continuing Education&lt;/a&gt;, signed by David and the school's dean, that resembles &lt;a href='CS50-Certificate-Sample.pdf'&gt;this sample&lt;/a&gt;.">CS50 Certificate</span></td>
                     <td>
-                        <span data-content="Students who register for undergraduate or graduate credit and earn satisfactory scores on 9 problem sets, 2 quizzes, and 1 final project by 16 May 2015 will receive (transferrable) course credit from &lt;a href='http://www.extension.harvard.edu/'&gt;Harvard Extension School&lt;/a&gt;.">course credit</span>,
-                        <span data-content="Students who register for undergraduate or graduate credit will be assigned a final letter grade from &lt;a href='http://www.extension.harvard.edu/'&gt;Harvard Extension School&lt;/a&gt;.">letter grade</span>,
-                        <span data-content="CS50 (aka CSCI E-50) will be included on all &lt;a href='http://www.extension.harvard.edu/'&gt;Harvard Extension School&lt;/a&gt; transcripts, which students can request at no charge.">transcript</a>
+                        <span data-content="Students who register for undergraduate or graduate credit and earn satisfactory scores on 9 problem sets, 2 quizzes, and 1 final project by 16 May 2015 will receive (transferrable) course credit from &lt;a href='https://www.extension.harvard.edu/'&gt;Harvard Extension School&lt;/a&gt;.">course credit</span>,
+                        <span data-content="Students who register for undergraduate or graduate credit will be assigned a final letter grade from &lt;a href='https://www.extension.harvard.edu/'&gt;Harvard Extension School&lt;/a&gt;.">letter grade</span>,
+                        <span data-content="CS50 (aka CSCI E-50) will be included on all &lt;a href='https://www.extension.harvard.edu/'&gt;Harvard Extension School&lt;/a&gt; transcripts, which students can request at no charge.">transcript</a>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +260,7 @@
                     <td><a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">register</a> by 31 December 2015</td>
                     <td><a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">register</a> by 31 December 2015</td>
                     <td><a href="https://cs50.harvard.edu/certificate">register</a> by 30 September 2015</td>
-                    <td><a href="http://www.extension.harvard.edu/courses/intensive-introduction-computer-science">register</a> by 30 August 2015</td>
+                    <td><a href="https://www.extension.harvard.edu/courses/intensive-introduction-computer-science">register</a> by 30 August 2015</td>
                 </tr>
                 <?php /*
                 <tr>

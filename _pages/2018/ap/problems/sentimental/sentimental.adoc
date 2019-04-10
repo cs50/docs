@@ -40,7 +40,7 @@ mkdir sentimental
 
 == Well-Distributed
 
-Here's some good news for you right off the bat: you've seen almost everything we're going to talk about in this problem once before. We're going to revisit three old programs and port them to C.
+Here's some good news for you right off the bat: you've seen almost everything we're going to talk about in this problem once before. We're going to revisit three old programs and port them to Python.
 
 == Problems
 
@@ -122,7 +122,7 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 Recall that you were asked to create the files below:
 
 * `mario.py`
-* `greedy.py`
+* `cash.py`
 * `caesar.py`
 
 Be sure that each of your files is in `~/workspace/unit6/sentimental/`, as with:
@@ -155,12 +155,12 @@ submit50 cs50/2018/ap/sentimental/mario/more
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
-* To submit `greedy`, execute
+* To submit `cash`, execute
 +
 [source]
 ----
 cd ~/workspace/unit6/sentimental/
-submit50 cs50/2018/ap/sentimental/greedy
+submit50 cs50/2018/ap/sentimental/cash
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
