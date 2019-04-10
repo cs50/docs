@@ -67,9 +67,9 @@ subject to the following requirements:
 * Your stylesheet(s) must include at least one mobile-responsive `@media` query,
   such that something about the styling changes for smaller screens.
 * You must use Bootstrap 4 on your website, taking advantage of at least one
-  Bootstrap [component](https://getbootstrap.com/docs/3.3/components/),
+  Bootstrap [component](https://getbootstrap.com/docs/4.3/components/),
   and using at least two Bootstrap columns for layout purposes using
-  Bootstrap's [grid model](https://getbootstrap.com/docs/4.0/layout/grid/).
+  Bootstrap's [grid model](https://getbootstrap.com/docs/4.3/layout/grid/).
 * Your stylesheets must use at least one SCSS variable, at least one example of
   SCSS nesting, and at least one use of SCSS inheritance.
 * In `README.md`, include a short writeup describing your project, what's
