@@ -29,7 +29,7 @@ The only background required for CS50 for AP Computer Science Principles is comp
 
 == Website
 
-This course lives at http://harvard.cs50.edu/ap.
+This course lives at https://cs50.harvard.edu/ap.
 
 Visit the course's website to watch videos, to get help, to download handouts and software, and to follow links to other resources.
 
