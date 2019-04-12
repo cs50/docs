@@ -66,7 +66,7 @@ the link provided in the Heroku credentials list.
 To try running your first Flask
 application:
 
-1. Download the `project1` distribution directory from https://cdn.cs50.net/web/2018/spring/projects/1/project1.zip and unzip it.
+1. Download the `project1` distribution directory from [https://cdn.cs50.net/web/2018/spring/projects/1/project1.zip](https://cdn.cs50.net/web/2018/spring/projects/1/project1.zip) and unzip it.
 2. In a terminal window, navigate into your `project1` directory.
 3. Run `pip3 install -r requirements.txt` in your terminal window to make sure
    that all of the necessary Python packages (Flask and SQLAlchemy, for
@@ -93,7 +93,7 @@ project to get access to their review data for individual books.
 2. Navigate to
    [https://www.goodreads.com/api/keys](https://www.goodreads.com/api/keys) and
    apply for an API key. For "Application name" and "Company name" feel free to
-   just write "project1," and no need to incluce an application URL, callback
+   just write "project1," and no need to include an application URL, callback
    URL, or support URL.
 3. You should then see your API key. (For this project, we'll care only about the
    "key", not the "secret".)
