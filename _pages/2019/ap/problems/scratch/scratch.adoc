@@ -1,0 +1,100 @@
+---
+layout: 2019/ap
+---
+:skip-front-matter:
+
+= Problem: Scratch
+
+== tl;dr
+
+. Program in Scratch.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem will be evaluated along one axis primarily.
+
+Correctness::
+    To what extent does your code implement the features required by our specification? To what extent is your code free of bugs?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Project 5050
+
+If you'd like to learn a bit more about others who've come before you, take a look at http://project5050.org/[Project 5050] by CS50's own Hailey James '19 et al.
+
+video::0S7isdzIBU4[youtube,list=PLhQjrBD2T383RLDItqbDRs-4gWy8Wgec2]
+
+== GitHub
+
+In order to submit problems, you'll need an account on https://github.com/[GitHub], a popular service with which to store code and collaborate with others. If you don't already have one, visit https://github.com/join and create an account (for free). Take care to remember your username and password! If you'd prefer not to provide GitHub with a personally identifiable username and email address (i.e., one that includes your name), you're welcome to create an account using an anonymous username and some other email address (e.g., that you only use for GitHub). If you choose to provide a personally identifiable username or email address, material you submit for the course to GitHub and our feedback on it also will be personally identifiable by GitHub. See GitHub's https://help.github.com/articles/github-privacy-statement/[Privacy Statement].
+
+== Help
+
+For help with Scratch:
+
+* Watch https://youtu.be/tveoFN0NHE0?list=PLhQjrBD2T383nc2LUdF5XWbyrsqiYy4nq[David's brief tour].
+* Watch https://youtu.be/52JoFF4HMA4[Allison's short].
+* Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
+
+
+Note: These resources were designed using Scratch 2.0. Scratch 3.0 includes the same types of blocks and features, albeit with an updated interface..
+
+== Itching to Program?
+
+It's time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
+
+* Your project must have at least two sprites, at least one of which must resemble something other than a cat.
+* Your project must have at least three scripts total (i.e., not necessarily three per sprite).
+* Your project must use at least one condition, one loop, and one variable.
+* Your project must use at least one sound.
+* Your project should be more complex than most of those demonstrated in lecture (many of which, though instructive, were quite short) but it can be less complex than *Ivy's Hardest Game*. As such, your project should probably use a few dozen puzzle pieces overall.
+
+Head to the https://scratch.mit.edu/[Scratch website] and sign up for an account on MIT’s website by clicking *Join Scratch* atop the page. Any username (that’s available) is fine, but take care to remember it and your choice of password.  After registering and confirming your email address, click the orange "*Start Creating*" button to begin.
+
+You might find these resources helpful (note that they show an earlier version of Scratch):
+
+* https://cs.harvard.edu/malan/scratch/[Scratch for Budding Computer Scientists]
+* https://resources.scratch.mit.edu/www/guides/en/Getting-Started-Guide-Scratch2.pdf[Getting Started with Scratch]
+* https://scratch.mit.edu/info/cards/[Scratch Cards]
+
+Stuck for ideas? Here are your predecessors' https://scratch.mit.edu/studios/5268312/[projects from last year]. But try to think of an idea on your own, and then set out to implement it. However, don't try to implement the entirety of your project all at once: pluck off one piece at a time. In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth. And select *File > Save Now* every few minutes so that you don't lose any work!
+
+If, along the way, you find it too difficult to implement some feature, try not to fret; alter your design or work around the problem. If you set out to implement an idea that you find fun, you should not find it hard to satisfy this problem set's requirements. 
+
+Alright, off you go. Make us proud! 
+
+Once finished with your project, select *File > Save to your computer* and keep that file so that you can submit it below.  (That should download a file whose name ends in `.sb3`.) 
+
+Oh, and if you'd like to exhibit your project in CS50 AP's studio for 2019-20, head to https://scratch.mit.edu/studios/<placeholder>/, then click *Add projects*, and select the project you'd like to share.
+
+== How to Submit
+
+=== Step 1 of 4
+
+In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb3`.
+
+=== Step 2 of 4
+
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2019/ap/scratch` and click "Create branch".
+
+=== Step 3 of 4
+
+Click the button that says "Upload files". Drag your `project.sb3` Scratch file into the box that says "Drag files here".
+
+=== Step 4 of 4
+
+Click the green "Commit changes" button. You're done!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
+
+== FAQs
+
+=== Can't find the "Branch: master" button.
+
+If you don't see a "Branch: master" button upon going to your submit50 page on GitHub, click the "README" button next to "We recommend every repository include a..." and then click the green "Commit new file" button. After that, the "Branch: master" button should appear!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear in https://cs50.me/gradebook[https://cs50.me/gradebook]!
+
+This was Scratch, your first programming problem in CS50 AP!
