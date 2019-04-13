@@ -237,7 +237,7 @@ If not, reach out for help!  Incidentally, if you find the terminal window too s
 
 == Walkthrough
 
-video:: vbkTzOytISY[youtube]
+video::vbkTzOytISY[youtube]
 
 == Usage
 
