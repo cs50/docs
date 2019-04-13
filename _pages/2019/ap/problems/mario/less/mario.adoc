@@ -103,14 +103,14 @@ It turns out it's a bit easier to build a left-aligned pyramid than right-, a la
 
 [source, subs="macros,quotes"]
 ----
-#
-##
-###
-####
-#####
-######
-#######
-########
+pass:[#]
+pass:[##]
+pass:[###]
+pass:[####]
+pass:[#####]
+pass:[######]
+pass:[#######]
+pass:[########]
 ----
 
 So let's build a left-aligned pyramid first and then, once that's working, right-align it instead!
@@ -123,14 +123,14 @@ Let's now right-align that pyramid by pushing its hashes to the right by prefixi
 
 [source, subs="macros,quotes"]
 ----
-.......#
-......##
-.....###
-....####
-...#####
-..######
-.#######
-########
+pass:[.......#]
+pass:[......##]
+pass:[.....###]
+pass:[....####]
+pass:[...#####]
+pass:[..######]
+pass:[.#######]
+pass:[########]
 ----
 
 Modify `mario.c` in such a way that it does exactly that!
