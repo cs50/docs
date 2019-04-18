@@ -1,0 +1,151 @@
+---
+layout: 2019/ap
+---
+:skip-front-matter:
+
+= Problem: Reverse Engineer
+
+== tl;dr
+
+Learn the compilation process and reverse engineer a piece of software.
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along just one axis.
+
+Correctness::
+
+ To what extent does your implementation attempt to replicate the features of our mystery program?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== The Pre-Process
+
+Before we begin, know that this problem involves relatively little coding. It's not really a writing problem, and there is coding involved, but it's mostly incidental to the primary goal. That goal is to understand what happens at a lower level on your system. How does a computer understand and translate the C code you write into the zeroes and ones of binary? In this problem, you're going to try to find out, by reading exactly those zeroes and onesfootnote:[Well, almost. Rather, their closest human equivalent.] and trying to recreate the C program that generated those zeroes and ones.
+
+To get started, have a look at Rob's short on compilers.
+
+video::CSZLNYF4Klo[youtube]
+
+Notice how in that video Rob not only compiles some simple programs, but actually interrupts the compilation process to show what is happening at the various steps. To compile a program, a compiler goes through a set of four steps.
+
+* Pre-processing
+* Compiling
+* Assembling
+* Linking
+
+Rob also talks about `clang`, which is the compiler that is used by default in CS50 IDE, but other compilers for C exist. One other popularly-used compiler is called `gcc`, and indeed for reasons that don't bear going into right now, the file that you will be reverse engineering in this problem was compiled by `gcc` and interrupted at the second step above, compiling. That is, we typed:
+
+[source,bash]
+----
+gcc -S mystery.c
+----
+
+to obtain the output you'll see at the bottom of this specification, which came to live in a file called `mystery.s`.
+
+== Assemble Some Knowledge
+
+Though not produced by us, there following video shows someone going through the process of comparing C code to assembly code (sometimes called "machine code") that will likely be quite helpful as you start to think about this problem.
+
+video::yOyaJXpAYZQ[youtube]
+
+Along the same lines is http://cs.lmu.edu/~ray/notes/c2asmexamples/[this webpage] which also shows a little bit of translating between source code and machine code.
+
+The other thing you'll need to do is read up on what the various assembly instructions mean. The `gcc` compiler takes C code and translates it to machine code using the https://www.dropbox.com/s/pfoodsyz65f22vz/IA32_Cheat_Sheet.pdf?dl=0[IA-32 instruction set] (of which the linked document shows a majority of the useful instructions, but not the full set). As it turns out, there's actually very few things a computer can realistically do! They can perform some extremely basic math, jump to other points in memory, and flip bits around. That's... pretty much it. All the amazing things we can do in C (and we've only **just** scratched the surface of that!) eventually boil down to just those.
+
+== Link it Together
+
+Log into your CS50 IDE and execute then create a new `unit2` directory as with
+
+[source,bash]
+----
+~/ $ mkdir unit2
+----
+
+Finally, make a subdirectory inside of `unit2` called `reverse` (how?). Here's the assembly code you'll be trying to reverse engineer in a file called `mystery.c`.
+
+[source,bash]
+----
+.LC0:
+	.string	"%i\n"
+	.text
+	.globl	main
+	.type	main, @function
+main:
+.LFB0:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$16, %rsp
+	movl	$1, -4(%rbp)
+	jmp	.L2
+.L3:
+	movl	-4(%rbp), %eax
+	movl	%eax, %esi
+	movl	$.LC0, %edi
+	movl	$0, %eax
+	call	printf
+	addl	$1, -4(%rbp)
+.L2:
+	cmpl	$50, -4(%rbp)
+	jle	.L3
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+----
+
+Again, your goal here is to create C code that, when partially compiled with:
+
+[source,bash]
+----
+gcc -S mystery.c
+----
+
+results in assembly code that is effectively identical. (Because every machine is slightly different, the numbers and names and labels may differ, but for the most part things should look fairly similar.) We've also stripped out a few lines from our actual assembly code (in particular some stuff at the top and bottom of what was actually output by `gcc`) because it would much more obviously give away what the program does.
+
+We will say this: The program is not terribly complex. Including curly braces, a `#include`, and a completely blank line, it is possible to write this program in C in just ten lines or less. It doesn't do anything particularly amazing.
+
+In the interest of full disclosure, you should know that it *is* possible to transform the above assembly code into a typical executable which you could run. We're not going to share the steps for how to do that here, but if you know the right questions to ask of Google, it won't take you too long to figure out the answer. If you do so, what this program actually does will become incredibly obvious and you'll likely be able to replicate it very quickly.
+
+But this is a more comfortable problem, and we expect you to hack. Sometimes that means being clever and finding a workaround, but since we've disclosed that such a path exists and we've intimated how to walk that path, you should try to solve this problem another (harder) way. This is an opportunity to learn about assembly code in a way that no other assignment in this course will permit, and we hope you'll take advantage of it. But that choice is yours. This problem is really not so much about getting the right answer (indeed, you are not being scored on correctness, design, or style this time around), but rather is about the process you use to arrive at your answer.
+
+There's no `check50` or staff solution for this problem. After all, where would be the fun in that?!
+
+== How to Submit
+
+=== Step 1 of 2
+
+Ensure that `mystery.c` is in `~/unit2/reverse`, as with:
+
+[source]
+----
+cd ~/unit2/reverse
+ls
+----
+
+If `mystery.c` is not in `~/unit2/reverse`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `reverse`, execute
++
+[source]
+----
+cd ~/unit2/reverse
+submit50 cs50/2019/ap/reverse
+----
++
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+   
+Your submission should be graded for completion within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Reverse Engineer.
