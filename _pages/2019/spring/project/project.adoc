@@ -85,7 +85,7 @@ submit50 cs50/2019/spring/project/preproposal
 ```
 === Proposal
 
-_due by Tue 4/23, 11:59pm_
+_due by Fri 4/26, 11:59pm_
 
 The proposal is your opportunity to receive approval and counsel from your teaching fellow before you proceed to design. **If collaborating with one or two classmates, each of you should submit a proposal, even if identical.**
 
