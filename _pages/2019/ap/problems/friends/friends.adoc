@@ -60,7 +60,7 @@ To download a ZIP of this problem's distro into your workspace (with a command-l
 
 [source,bash]
 ----
-wget https://cdn.cs50.net/ap/2018/problems/friends/friends.zip
+wget https://cdn.cs50.net/ap/2019/problems/friends/friends.zip
 ----
 
 You should see some output followed by:
