@@ -1,0 +1,293 @@
+---
+layout: 2019/ap
+---
+:skip-front-matter:
+
+= Problem: Finder
+
+== tl;dr
+
+Implement a program to recursively search for files, per the below:
+
+[source, subs=quotes]
+----
+$ [underline]#./finder cat ~/#
+----
+
+whereby your output is printed to a file called found.txt in the following way:
+
+[source, subs=quotes]
+----
+./cats.txt
+./001.txt
+./cats.txt
+./staff_found.txt
+./001.txt
+----
+
+include::../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along three axes primarily.
+
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Ready
+
+Curl up with some shorts to re-familiarize yourself with file I/O and recursion.
+
+First, here's Zamyla with recursion:
+
+video::t4MSwiqfLaY[youtube]
+
+And Jason, with file I/O:
+
+video::KwvObCA04dU[youtube]
+
+These two concepts are the basis of this problem, so make sure you understand how both work before proceeding further.
+
+== Getting Started
+
+As usual, after logging into https://ide.cs50.io[ide.cs50.io].Next, execute
+
+[source,bash]
+----
+cd ~/unit4
+----
+
+at your prompt to ensure that you're inside of `unit4`. Then execute
+
+[source,bash]
+----
+wget https://cdn.cs50.net/ap/2019/problems/finder/finder.zip
+----
+
+Then,
+
+[source,bash]
+----
+unzip finder.zip
+----
+
+to unzip the file. Remove the ZIP file (remember how?), then proceed to execute
+
+[source,bash]
+----
+cd finder
+----
+
+followed by
+
+[source,bash]
+----
+ls
+----
+
+and you should see that the directory contains a number of files as well as directories. If you `cd` into some of those directories as well, you'll see each of them contain their own files and/or directories. Feel free to open some of the files up; save for `finder.c`, you'll see that they are each text files containing some strings. Looks like we've got a lot to work with here! Return to the finder directory by using
+
+[source,bash]
+----
+cd ..
+----
+
+as needed, to "move up" one level back to the `finder` directory, or go there directly by providing an __absolute path__ as the argument to `cd`:
+
+[source, bash]
+----
+cd ~/unit4/finder
+----
+
+and you're ready to start.
+
+== (g)report
+
+We have seen a good number of terminal commmands so far in this course that have proved to be very useful. Some, like `cd`, `unzip`, `ls`, and `wget` we have used on nearly every single problem.
+
+There are a multitude of other terminal commands, however, with which you may still be unfamiliar but that, once known, can prove to be very useful as well. One of these is called `grep`.footnote:[If curious, this is an acronym for the rather cumbersome "globally search for a regular expression and print"].
+
+`grep` allows a user to search any given input files, selecting lines that match one or more string patterns given. For example, if you were to run
+
+[source, bash]
+----
+grep "foo" bar.txt
+----
+
+or, if as here you are just searching for a single word, the quotation marks could be omitted:
+
+[source, bash]
+----
+grep foo bar.txt
+----
+
+The call would print to the terminal all lines in `bar.txt` that contain the string `foo`.
+
+`grep` can also search through entire directories, rather than just individual files, searching every file in the directory for the requested string (even if the string is deeply nested several directory levels down from the starting location). This requires an extra `-r` flag in the command. Can you guess what the `-r` stands for?
+
+That's right, recursion! How fun.
+
+In any case, executing
+
+[source, bash]
+----
+grep -r foo mydirectory
+----
+
+will print to the terminal a list of lines containing the string `foo` found in all files within `mydirectory`, including those files that might exist in subdirectories thereof. Thankfully, it also prints the name of the file containing the line, so you can easily find whatever it is you're looking for.
+
+You can imagine scenarios in which `grep` comes in handy. Imagine having to look through thousands of files, and you can search through all of them for any particular string you'd like with one simple command. In fact, if a Mac OS userfootnote:[This feature exists in Windows as well, and has become more prominent in more recent versions], you may be familiar with a similar GUI tool called "Finder". In this example, we're searching our entire `Dropbox` folder for the string "I took CS50":
+
+image::finder.png[Finder]
+
+In this problem, you will be implementing your own pared-down version of `grep`. Once implemented, your program should output (in a separate file!) a list of all files containing the search string in whatever directory you've looked through.
+
+Your version, unlike the native `grep` utility, will only support searching through directories (and therefore the files contained within them); you will not be able to search only one individual file unless that file is the only one contained in the directory. We also won't worry about finding the specific line number or printing the line once the string is found. In that sense, this implementation of `grep` will behave somewhat more like the way "Finder" does.
+
+== Seek and Find
+
+Let's dive into the distribution code for the `finder` program, all found in `finder.c`. Open up `finder.c` and take a moment to scroll through it. Notice there are three functions contained in the program, one of which has been implemented for you. Let's start from the top.
+
+* Atop the file you'll see some cryptic `#define`pass:[s]. These simply give special instructions to the compiler to allow the program to work as intended, and you can ignore them.
+* Next up are some familiar header files, along with a new one we haven't yet seen. More on that later.
+* Now, onto the interesting stuff! The next part of the file is a definition for a `struct` we've called `path`. This `struct` contains two elements, `name` and `type`. The `name` field will hold the filepath to a particular file or directory, relative to the directory `finder.c` is in.
++
+For example, there is a file inside of the `finder` directory called `hello.txt`, nested within severage directories. `name` for this particular file might be `./this/is/cs50/hello.txt`. Make sure you understand why that is the case before moving on.
++
+The type field will hold one of two strings: either "file" or "directory", depending on the type of the file stored at the filepath in `name`. `hello.txt`, of course, would be a "file". Were our `name` to be `./this/is/cs50`, however, the `type` in that case would be "directory".
+* Below that you will see another `struct` definition, this one for a type called `directory`. This struct __also__ has a field called `name`, which will once again hold the relative filepath to the directory. `npaths` is an `int` that will hold the number of files (both regular files and directories) found inside the directory.
++
+At this point, we come across something new: `path&#42;`. The `&#42;` character tells us that this variable is actually something called a _pointer_ to a `path`, rather than simply a `path` itself. We will go into more detail about pointers later in the course, but for now, treat this variable as nothing more than an array of `path`pass:[s]. The number of elements in the array is equal to `npaths`, and each element of that array is itself a `path`, an entry for a file in the directory (containing that file's name and type). You can index into it as normal.
+* Finally, we see a global variable called `key` which will hold the string we'd like to search for in our files, and two function declarations that will be covered below.
+
+On to `main`!
+
+=== main
+
+Recall what the variables `argc` and `argv` represent in terms of command line arguments. All `main` will do in this program (except for a little bit of setup) is call `seek` at the bottom; but we need to make sure the inputs to the function are valid before we can call it!
+
+Your program should handle up to two command line arguments; the first, the search string, is mandatory. The second, the directory in which to search, is optional. For example, then, the following variations of command line inputs to seek for a string `foo` are acceptable:
+
+[source, bash]
+----
+./finder foo
+----
+
+and
+
+[source, bash]
+----
+./finder foo bar/
+----
+
+_Note that if the second command line argument is entered, it *must* end with a trailing slash, or the program will not work_.
+
+So before you call `seek` at the bottom of `main`, you must do the following:
+
+. Ensure you have the correct number of command line arguments, remembering that the user can input either just the string to search for or a string _and_ a specific directory. Remember how? If the correct number of arguments have not been entered, you should print a helpful message to the terminal and return `1`.
+. Set the value of the global variable `key` referenced above.
+. Set the `name` value of the directory struct `dir` that has been created for you. If the user has input a directory, you should set `name` to that string; else, the name variable should be set to your current directory, which you do by way of the string `"./"`.
+
+And that's all for `main`! Let's move on.
+
+=== populate
+
+The entirety of the populate function has been written for you and contains some complex pieces, so no need to worry about understanding everything fully in this part - though you should understand the gist of what the function does. Let's take a quick tour.
+
+* We first begin by simply initializing the values that will be used later on in the function. Note that `npaths` is set to 0, and the value of our pointer `paths` is set to `NULL`.
+* The next piece of code involves a __system call__, `opendir`, defined in the library `dirent.h` we saw at the top of the program.footnote:[You may recall that C was originally developed in the early 1970s alongside the operating system UNIX. Though its ability to directly manipulate the operating system like this is not used terribly frequently in CS50, it's a very powerful tool when used correctly!] If the filepath contained in `dir.name` is valid, this function effectively opens that directory for reading, much like files are opened with the call `fopen` (remember that from Jason's short? If not, it might be a good idea to go back and review!).
++
+The call `readdir` acts much like a call to either `fscanf` or `fgets`, and grabs each element in the directory one at a time. These directory entries contain the file names, types, and other information, as we would expect.
+* The next section of this function checks whether or not the directory entry is a file or a directory, and updates the `path` structure `newPath` accordingly. The `name` field of `newPath` is set to the relative filepath, and the `type` field is set to either "file" or "directory".
++
+Of note in this section as well are the function calls `realloc` and `calloc`, which are variations of a call named `malloc`. You will become very familiar with `malloc` later on in this course, but for now, understand that these calls explictly request and set aside for use some memory to hold the variables declared.footnote:[Incidentally, when you do allocate memory explicitly as we do here, you must later free the memory to avoid what are called _memory leaks_. For this problem, we will not require any explicit calls to `free` in your code, and therefore will be okay with your program suffering from memory leaks.] In the future, you will be expected to free all memory you have allocated. Feel free to type `man malloc`, `man realloc`, or `man free` into the terminal if curious for more information.
+* Finally, we close the directory we have opened. This is good practice and goes for files as well; in the `seek` function below, make sure to close every file you open using `fclose`.
+
+=== seek
+
+Darn! This one's just a big `TODO`. Here is where your coding skills and newfound expertise with file I/O and recursion will come into play. This function should eventually take a `directory` structure as its parameter and iterate over all files in that directory (good thing you know how many files there are in each directory!), searching for the string stored in the global variable `key`. If there exists a directory inside another, we must search everything inside that one too. Do you have a guess how? Let's break it down.
+
+. Recall that our first call to `seek` up in `main` takes in either the directory the user has input at the command line or `./`. But having merely a name for a directory does not do us much good; we need to populate it with information about what's inside it first! Wonder if there's a function that might help with that...
+. Once you have a full `directory` structure, you can begin iterating through the entries contained in it.
+.. If the entry is of type "file", you should open it up to read from (remember how?). Then you will want to begin scanning through the file searching for the string contained in `key`. You will likely find the functions `fgets` and `strstr` to be of use to you here (declaring in `stdio.h` and `string.h`, respectively). If using `fgets`, it is worth noting that the maximum length of a string in the distribution text files is 50 characters long, though you can use a larger value if you'd like.
+... If indeed you successfully found `key` inside the file, open an outfile called `found.txt` for _appending_, not writing. (This way every time you open and write to the file, you will not overwrite any file names already stored in there.)
++
+Copy the name of the file where you found the string into `found.txt`. You should additionally add a newline character at the end to ensure separation of each file name.
++
+Additionally, you will only want to write a file name into your outfile once, even if the string is found in multiple locations within that same file, so perhaps you can devise an easy way keep track of whether or notfootnote:[Hmm... only two options for this. Seems a bit like yes or no, on or off, `true` or `false` ...] you've already output that file.
+... Ensure you close every file you open, but also ensure that if you try to close a file, it has indeed been opened. Some error checking around `fopen` should help you here.
+.. If, on the other hand, the entry is of type `directory`, you should create a new `directory` structure, populate it, and set the `name` field accordingly. You then will need to iterate through this new directory you've created in the same way you've iterated through the others. Think recursively!
+. Once you've iterated through everything, you should return `0` at the end of `seek` to indicate success.
+
+Phew, we made it. If unsure of how to start, review the shorts above! And as always, it helps to break it down into pieces. Handle one case (file or directory) first, and then the other.
+
+You should also feel free to test your code by creating new directories and files containing any strings your heart desires, and searching for those strings to see if your program can find them correctly.
+
+== Testing
+
+=== Correctness
+
+[source]
+----
+check50 cs50/2019/ap/finder
+----
+
+=== Style
+
+[source]
+----
+style50 finder.c
+----
+
+== Staff Solution
+
+If you'd like to play around with the staff's solution, execute
+
+[source, bash]
+----
+~cs50/unit4/finder
+----
+
+That program will generate a file in the same directory as `finder.c` entitled `staff_found.txt`. If you open the file and look at it, you'll see the names of all the files (with file paths relative to the directory `finder.c` is in) that contain the search string you sought out.
+
+== How to Submit
+
+=== Step 1 of 2
+
+Be sure that each of your files are in `~/unit4/finder`, as with:
+
+[source]
+----
+cd ~/unit4/finder
+ls
+----
+
+If any file is not in `~/unit4/finder`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+Submit `finder`:
+
+[source]
+----
+cd ~/unit4/finder
+submit50 cs50/2019/ap/finder
+----
+
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Finder.
