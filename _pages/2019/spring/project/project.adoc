@@ -148,9 +148,33 @@ submit50 cs50/2019/spring/project/status
 
 === Implementation
 
-_due by Thu 5/16, 11:59pm_
+Ultimately due are implementation and documentation of your final project.  Your submission thereof must include all of the below.
 
-COMING SOON
+. Documentation for your project in the form of a Markdown file called `README.md`. This documentation is to be a user's manual for your project.  Though the structure of your documentation is entirely up to you, it should be incredibly clear to the staff how and where, if applicable, to compile, configure, and use your project.  Your documentation should be at least several paragraphs in length.  It should not be necessary for us to contact you with questions regarding your project after its submission.  Hold our hand with this documentation; be sure to answer in your documentation any questions that you think we might have while testing your work.
+. A "design document" for your project in the form of a Markdown file called `DESIGN.md` that discusses, technically, how you implemented your project and why you made the design decisions you did.  Your design document should be at least several paragraphs in length.  Whereas your documentation is meant to be a user's manual, consider your design document your opportunity to give the staff a technical tour of your project underneath its hood.
+. Any and all files required to run your software (even if intended for some infrastructure other than CS50 IDE), including source code as well as, if applicable, configuration files, Makefiles, sample inputs, SQLite databases, and so forth. Needless to say, all source code should be thoroughly commented.
+. A short video (that's no more than 3 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action.  Your video should somehow include your project's title, your name and year, your dorm/house and concentration, and any other details that you'd like to convey to viewers.  See http://www.cs171.org/2015/screencast/[CS171's tips on how to make a "screencast"] though you're welcome to use an actual camera.  Upload your video to YouTube as "public" or "unlisted" and take note of its URL.
+
+==== How to Submit
+
+*If you have collaborated with one or two other students, each of you should submit via this same process.*
+
+*If your project requires (for execution and testing) hardware or software other than that offered by CS50 IDE, be sure that the TF advising you is aware of and has approved your project's needs.*
+
+===== Step 1 of 2
+
+[source]
+----
+cd ~/project/ # or wherever you've stored your project
+submit50 cs50/2019/spring/project/implementation
+----
+
+===== Step 2 of 2
+
+Submit https://forms.cs50.io/1ff8fdaf-a0d6-4fc4-8394-bdffc6dbe7dd[]!
+
+**This last form is on the longer side, so no worries if you start it before the deadline but finish a bit after.**
+
 
 === App Party
 
