@@ -71,7 +71,7 @@ requirements:
   messages. Your app should only store the 100 most recent messages per channel
   in server-side memory.
 * **Sending Messages**: Once in a channel, users should be able to send text
-  messages to others the channel. When a user sends a message, their display
+  messages to others in the channel. When a user sends a message, their display
   name and the timestamp of the message should be associated with the message.
   All users in the channel should then see the new message (with display name
   and timestamp) appear on their channel page. Sending and receiving messages
