@@ -2,9 +2,9 @@
 layout: 2019/x
 ---
 
-# Scratch
+= Scratch
 
-## Itching to Program
+== Itching to Program
 
 It's time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
 
@@ -30,7 +30,7 @@ Alright, off you go. Make us proud!
 
 Once finished with your project, select **File > Save to your computer**  and keep that file so that you can submit it below.  (That should download a file whose name ends in `.sb3`.) 
 
-## Hello, World
+== Hello, World
 
 Suffice it to say it's a bit harder to meet classmates when taking a course online. But, thanks to technology, everyone can at least say hello!
 
@@ -38,15 +38,15 @@ If you have a phone (or digital camera) and would like to say hello to classmate
 
 If you do record a video, upload it to YouTube (unless blocked in your country, in which case you’re welcome to upload it elsewhere) so that you can provide  us with its URL when you submit!
 
-## How to Submit
+== How to Submit
 
-### Step 1 of 2
+=== Step 1 of 2
 
 Submit [this form](https://forms.cs50.net/2019/x/psets/0).
 
 CS50 collects some start-of-semester data for planning purposes via Problem Set 0’s form, so expect the form to take 15 minutes or so. Subsequent problem sets' forms will be much shorter!
 
-### Step 2 of 2
+=== Step 2 of 2
 
 This step assumes that you've downloaded your [Scratch](scratch.md) project as a file whose name ends in `.sb3`. And this step also assumes that you've [signed up for a GitHub account](https://github.com/join), per the above form.
 
