@@ -115,7 +115,7 @@ Complete the implementation of `quote` in such a way that it allows a user to lo
 Complete the implementation of `buy` in such a way that it enables a user to buy stocks.
 
 * Require that a user input a stock's symbol, implemented as a text field whose `name` is `symbol`. Render an apology if the input is blank or the symbol does not exist (as per the return value of `lookup`).
-* Require that a user input a number of shares, implemented as a text field whose `name` is `shares`. Render an apology if the input is not a positive integer.
+* Require that a user input a number of shares, implemented as a number field whose `name` is `shares`. Render an apology if the input is not a positive integer.
 * Submit the user's input via `POST` to `/buy`.
 * Odds are you'll want to call `lookup` to look up a stock's current price.
 * Odds are you'll want to `SELECT` how much cash the user currently has in `users`.
