@@ -19,11 +19,10 @@ Suffice it to say, the challenge ahead is to determine if two files are similar!
 
 == Getting Started
 
-Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
-1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
-1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
-1. Execute `mkdir pset7` to make (i.e., create) a directory called `pset7` in your `workspace` directory, if you haven't already done so.
+1. Execute `cd` to ensure that you're in `~/` (aka your home folder).
+1. Execute `mkdir pset7` to make (i.e., create) a directory called `pset7` in your `~/` directory, if you haven't already done so.
 1. Execute `cd pset7` to change into (i.e., open) that directory.
 1. Execute `wget http://cdn.cs50.net/2018/fall/psets/7/similarities/similarities.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip similarities.zip` to uncompress that file.
@@ -183,7 +182,7 @@ http://similarities.cs50.net/less
 
 == How to Submit
 
-Execute the below from within your `~/workspace/pset7/similarities` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+Execute the below from within your `~/pset7/similarities` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
 submit50 cs50/2019/x/similarities
