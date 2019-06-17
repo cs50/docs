@@ -27,7 +27,7 @@ Let's turn our attention now to this problem's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2019/x/psets/8/finance/finance.zip
+$ wget http://cdn.cs50.net/2019/x/psets/8/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance
