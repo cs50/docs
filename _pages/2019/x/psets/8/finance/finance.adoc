@@ -94,9 +94,9 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 Before getting started on this assignment, we'll need to register for an API key in order to be able to query IEX's data. To do so, follow these steps:
 
-. Visit https://iexcloud.io/cloud-login#/register/[https://iexcloud.io/cloud-login#/register/].
+. Visit https://iexcloud.io/cloud-login#/register/[iexcloud.io/cloud-login#/register/].
 . Enter your email address and a password, and click "Create account".
-. Once you've confirmed your account via a confirmation email, sign in to https://iexcloud.io/.
+. Once you've confirmed your account via a confirmation email, sign in to https://iexcloud.io/[iexcloud.io].
 . Click *API Tokens*.
 . Copy the key that appears under the *Token* column (it should begin with `pk_`).
 . In a terminal window within CS50 IDE, execute:
