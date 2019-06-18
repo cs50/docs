@@ -90,6 +90,24 @@ Last up is `layout.html`. It's a bit bigger than usual, but that's mostly becaus
 
 == Specification
 
+=== Configuring
+
+Before getting started on this assignment, we'll need to register for an API key in order to be able to query IEX's data. To do so, follow these steps:
+
+. Visit https://iexcloud.io/cloud-login#/register/[iexcloud.io/cloud-login#/register/].
+. Enter your email address and a password, and click "Create account".
+. Once you've confirmed your account via a confirmation email, sign in to https://iexcloud.io/[iexcloud.io].
+. Click *API Tokens*.
+. Copy the key that appears under the *Token* column (it should begin with `pk_`).
+. In a terminal window within CS50 IDE, execute:
++
+[source]
+----
+export API_KEY=value
+----
++
+where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
+
 === `register`
 
 Complete the implementation of `register` in such a way that it allows a user to register for an account via a form.
@@ -160,7 +178,7 @@ Complete the implementation of `check` in such a way that it checks whether a us
 
 Finally, enhance your template for `register` with some JavaScript in such a way that it prevents submission of your registration form if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation].
 
-* Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available. 
+* Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available.
 * Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
 
 === personal touch
