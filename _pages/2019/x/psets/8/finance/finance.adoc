@@ -36,6 +36,24 @@ application.py  helpers.py        static/
 finance.db      requirements.txt  templates/
 ----
 
+=== Configuring
+
+Before getting started on this assignment, we'll need to register for an API key in order to be able to query IEX's data. To do so, follow these steps:
+
+. Visit https://iexcloud.io/cloud-login#/register/[iexcloud.io/cloud-login#/register/].
+. Enter your email address and a password, and click "Create account".
+. Once you've confirmed your account via a confirmation email, sign in to https://iexcloud.io/[iexcloud.io].
+. Click *API Tokens*.
+. Copy the key that appears under the *Token* column (it should begin with `pk_`).
+. In a terminal window within CS50 IDE, execute:
++
+[source]
+----
+export API_KEY=value
+----
++
+where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
+
 === Running
 
 . Start Flask's built-in web server (within `finance/`):
@@ -89,24 +107,6 @@ Now look in `templates/`. In `login.html` is, essentially, just an HTML form, st
 Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/1.0/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
 == Specification
-
-=== Configuring
-
-Before getting started on this assignment, we'll need to register for an API key in order to be able to query IEX's data. To do so, follow these steps:
-
-. Visit https://iexcloud.io/cloud-login#/register/[iexcloud.io/cloud-login#/register/].
-. Enter your email address and a password, and click "Create account".
-. Once you've confirmed your account via a confirmation email, sign in to https://iexcloud.io/[iexcloud.io].
-. Click *API Tokens*.
-. Copy the key that appears under the *Token* column (it should begin with `pk_`).
-. In a terminal window within CS50 IDE, execute:
-+
-[source]
-----
-export API_KEY=value
-----
-+
-where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
 
 === `register`
 
