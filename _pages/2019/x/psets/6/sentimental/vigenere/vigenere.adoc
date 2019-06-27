@@ -89,7 +89,7 @@ style50 vigenere.py
 
 [source]
 ----
-~cs50/pset2/vigenere
+~cs50/2019/x/pset6/vigenere
 ----
 
 == How to Submit

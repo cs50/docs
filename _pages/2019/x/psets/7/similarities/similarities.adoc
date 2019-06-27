@@ -173,7 +173,7 @@ style50 helpers.py
 
 [source]
 ----
-~cs50/pset6/less/compare
+~cs50/2019/x/pset7/compare
 ----
 
 === Web

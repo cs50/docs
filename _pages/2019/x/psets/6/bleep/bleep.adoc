@@ -111,7 +111,7 @@ style50 bleep.py
 
 [source]
 ----
-~cs50/pset6/bleep
+~cs50/2019/x/pset6/bleep
 ----
 
 == How to Submit

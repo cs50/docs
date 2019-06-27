@@ -109,7 +109,7 @@ style50 mario.py
 
 [source]
 ----
-~cs50/pset6/less/mario
+~cs50/2019/x/pset6/mario/less/mario
 ----
 
 == How to Submit
