@@ -42,4 +42,4 @@ To get started, follow the directions in your project README.
 
    instead.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
-1. [Submit this form](https://forms.cs50.io/cb9c5991-d3e6-4d84-a9b1-3af4f4ac3ad1).
+1. [Submit this form](https://forms.cs50.io/b92d65c7-6dd0-40d3-93a8-75cc12cf2aed).
