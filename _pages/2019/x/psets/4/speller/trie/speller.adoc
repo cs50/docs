@@ -149,7 +149,7 @@ will eventually resemble the below. For now, try executing the staff's solution 
 
 [source]
 ----
-~cs50/pset4/speller texts/lalaland.txt
+~cs50/2019/x/pset4/speller dictionaries/large texts/lalaland.txt
 ----
 
 Below's some of the output you'll see. For information's sake, we've excerpted some examples of "misspellings." And lest we spoil the fun, we've omitted our own statistics for now.
@@ -257,7 +257,7 @@ And you could then run the staff's solution on the same text in another window, 
 
 [source]
 ----
-~cs50/pset4/speller texts/lalaland.txt
+~cs50/2019/x/pset4/speller dictionaries/large texts/lalaland.txt
 ----
 
 And you could then compare the windows visually side by side. That could get tedious quickly, though. So you might instead want to "redirect" your program's output to a file, as with the below.
@@ -265,7 +265,7 @@ And you could then compare the windows visually side by side. That could get ted
 [source]
 ----
 ./speller texts/lalaland.txt > student.txt
-~cs50/pset4/speller texts/lalaland.txt > staff.txt
+~cs50/2019/x/pset4/speller dictionaries/large texts/lalaland.txt > staff.txt
 ----
 
 You can then compare both files side by side in the same window with a program like `diff`, as with the below.
@@ -315,7 +315,7 @@ How to assess just how fast (and correct) your code is? Well, as always, feel fr
 
 [source]
 ----
-~cs50/pset4/speller texts/lalaland.txt
+~cs50/2019/x/pset4/speller dictionaries/large texts/lalaland.txt
 ----
 
 == Big Board
