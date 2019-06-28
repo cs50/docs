@@ -11,7 +11,7 @@ layout: mobile/2019/m
 
 ## Getting Started
 
-Download the distro code for your first game from <https://cdn.cs50.net/mobile/2019/spring/projects/0/project0.zip> and unzip `project0.zip`, which should yield a directory called `project0`.
+Download the distro code for your first game from <https://cdn.cs50.net/mobile/2019/x/projects/0/project0.zip> and unzip `project0.zip`, which should yield a directory called `project0`.
 
 Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
 `cmd` in the Windows task bar), move to the directory where you extracted `project0`
