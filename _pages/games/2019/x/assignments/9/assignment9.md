@@ -13,7 +13,7 @@ layout: games/2019/g
 
 ## Getting Started
 
-Download the distro code for your first game from <https://cdn.cs50.net/games/2019/spring/assignments/9/assignment9.zip> and unzip `assignment9.zip`, which should yield a directory called `assignment9`.
+Download the distro code for your first game from <https://cdn.cs50.net/games/2019/x/assignments/9/assignment9.zip> and unzip `assignment9.zip`, which should yield a directory called `assignment9`.
 
 Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
 `cmd` in the Windows task bar), move to the directory where you extracted `assignment9`
