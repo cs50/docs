@@ -91,4 +91,4 @@ be introduced in Lecture 1.
 
    instead.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
-1. [Submit this form](https://forms.cs50.io/35643afd-5a3b-4482-bcec-ddbc61af297f).
+1. [Submit this form](https://forms.cs50.io/a8a742ce-32c4-4064-b450-3518de633fec).
