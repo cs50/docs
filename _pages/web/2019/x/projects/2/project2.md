@@ -40,7 +40,7 @@ website, you likely already have `pip` installed (you can check by running
 
 To run this Flask application:
 
-1. Download the `project2` distribution code from https://cdn.cs50.net/web/2019/spring/projects/2/project2.zip and unzip it.
+1. Download the `project2` distribution code from https://cdn.cs50.net/web/2019/x/projects/2/project2.zip and unzip it.
 2. In a terminal window, navigate into your `project2` directory.
 3. Run `pip3 install -r requirements.txt` in your terminal window to make sure
    that all of the necessary Python packages (Flask and Flask-SocketIO, for

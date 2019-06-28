@@ -38,7 +38,7 @@ website, you likely already have `pip` installed (you can check by running
 
 To run this Django application:
 
-1. Download the `project3` distribution code from https://cdn.cs50.net/web/2019/spring/projects/3/project3.zip and unzip it.
+1. Download the `project3` distribution code from https://cdn.cs50.net/web/2019/x/projects/3/project3.zip and unzip it.
 2. In a terminal window, navigate into your `project3` directory. Note that this
    is the directory for a Django project called `pizza`, inside of which is an
    app already created for you called `orders`.
