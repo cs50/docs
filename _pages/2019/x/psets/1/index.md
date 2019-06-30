@@ -4,7 +4,7 @@ layout: 2019/x
 
 # Problem Set 1
 
-For this problem set, you'll use CS50 Lab, a cloud-based programming environment with interactive instructions built atop [CS50 Sandbox](https://sandbox.cs50.io/).
+For this problem set, you'll use CS50 Lab, a cloud-based programming environment with interactive instructions built atop [CS50 Sandbox](https://sandbox.cs50.io/).  Start each problem (linked below) by watching the introduction video (if there is one) and then follow the instructions step by step, pressing the green `next` button as you move through the Lab.  When you reach the end, the last step will be submitting your code.
 
 ## What to Do
 
