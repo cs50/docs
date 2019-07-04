@@ -41,7 +41,6 @@ TIME IN TOTAL:
 
 Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
-1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
 1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
 1. Execute `mkdir pset4` to make (i.e., create) a directory called `pset4` in your home directory.
 1. Execute `cd pset4` to change into (i.e., open) that directory.
