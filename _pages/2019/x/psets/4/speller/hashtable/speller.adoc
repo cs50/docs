@@ -44,7 +44,7 @@ Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, exe
 1. Execute `cd` to ensure that you're in `~/` (aka your home folder).
 1. Execute `mkdir pset4` to make (i.e., create) a directory called `pset4` in your home directory.
 1. Execute `cd pset4` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/2018/fall/psets/4/speller/hashtable/speller.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `wget https://cdn.cs50.net/2018/fall/psets/4/speller/hashtable/speller.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip speller.zip` to uncompress that file.
 1. Execute `rm speller.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `speller`, which was inside of that ZIP file.

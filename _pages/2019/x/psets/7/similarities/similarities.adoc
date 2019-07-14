@@ -24,7 +24,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd` to ensure that you're in `~/` (aka your home folder).
 1. Execute `mkdir pset7` to make (i.e., create) a directory called `pset7` in your `~/` directory, if you haven't already done so.
 1. Execute `cd pset7` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/2018/fall/psets/7/similarities/similarities.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `wget https://cdn.cs50.net/2018/fall/psets/7/similarities/similarities.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip similarities.zip` to uncompress that file.
 1. Execute `rm similarities.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `similarities`, which was inside of that ZIP file.
@@ -153,7 +153,7 @@ flask run
 
 and then visit the outputted URL.
 
-Be sure to test your implementation with the files in `inputs/` (which are also available  http://cdn.cs50.net/2018/fall/psets/7/similarities/similarities/inputs/[via a browser]) as well as with some files of your own!
+Be sure to test your implementation with the files in `inputs/` (which are also available  https://cdn.cs50.net/2018/fall/psets/7/similarities/similarities/inputs/[via a browser]) as well as with some files of your own!
 
 === `check50`
 
