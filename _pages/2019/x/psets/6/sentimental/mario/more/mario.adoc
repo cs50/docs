@@ -110,8 +110,10 @@ style50 mario.py
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2019/x/sentimental/mario/more
+submit50 cs50/problems/2019/x/sentimental/mario/more
 ```
+
+You can then go to link:https://cs50.me/cs50x[https://cs50.me/cs50x] to view your current scores!
 
 == Hints
 

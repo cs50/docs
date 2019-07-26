@@ -24,11 +24,11 @@ You might find these resources helpful (note that they show an earlier version o
 
 Stuck for ideas? Here are your predecessors' [projects from last year](https://scratch.mit.edu/studios/4248580/). But try to think of an idea on your own, and then set out to implement it. However, don't try to implement the entirety of your project all at once: pluck off one piece at a time. In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth. And select **File > Save Now** every few minutes so that you don't lose any work!
 
-If, along the way, you find it too difficult to implement some feature, try not to fret; alter your design or work around the problem. If you set out to implement an idea that you find fun, odds are you won't find it too hard to satisfy the above requirements. 
+If, along the way, you find it too difficult to implement some feature, try not to fret; alter your design or work around the problem. If you set out to implement an idea that you find fun, odds are you won't find it too hard to satisfy the above requirements.
 
-Alright, off you go. Make us proud! 
+Alright, off you go. Make us proud!
 
-Once finished with your project, select **File > Save to your computer**  and keep that file so that you can submit it below.  (That should download a file whose name ends in `.sb3`.) 
+Once finished with your project, select **File > Save to your computer**  and keep that file so that you can submit it below.  (That should download a file whose name ends in `.sb3`.)
 
 ## Hello, World
 
@@ -50,17 +50,17 @@ CS50 collects some start-of-semester data for planning purposes via Problem Set 
 
 This step assumes that you've downloaded your [Scratch](scratch.md) project as a file whose name ends in `.sb3`. And this step also assumes that you've [signed up for a GitHub account](https://github.com/join), per the above form.
 
-1. Visit [cs50.me](https://cs50.me/), log in with your GitHub account, and click **Authorize submit50**.
-1. You should receive two emails from GitHub inviting you to join CS50's "organizations" on GitHub. Click the button in those emails to accept both of the invitations.
-1. Go to `https://github.com/submit50/USERNAME`, replacing `USERNAME` in the URL with your own GitHub username.
-1. If you see the sentence "We recommend every repository include a README, LICENSE, and .gitignore.", click the blue README link in that sentence.  On the next page, scroll down and click the Green "**Commit**" button. 
+1. Visit [this link](https://submit.cs50.io/invites/9770b67479384c4d8c37790779e466d9) to enroll in CS50x on submit.cs50.io. Log in with your GitHub account, and click **Authorize cs50**.
+1. Check the box indicating that you'd like to grant course staff access to your submissions, and click **Join course**.
+1. Go to `https://github.com/me50/USERNAME`, replacing `USERNAME` in the URL with your own GitHub username.
+1. If you see the sentence "We recommend every repository include a README, LICENSE, and .gitignore.", click the blue README link in that sentence.  On the next page, scroll down and click the Green "**Commit**" button.
 1. On the left side of the screen, click on **Branch: master**.
-1. In the field that says **Find or create a branch...**, copy and paste precisely this value, `cs50/2019/x/scratch`, then click **Create branch**. That value is just a unique identifier for this problem.
+1. In the field that says **Find or create a branch...**, copy and paste precisely this value, `cs50/problems/2019/x/scratch`, then click **Create branch**. That value is just a unique identifier for this problem.
 1. Click the button that says **Upload files**.
 1. Drag your `.sb3` file into the box that says **Drag files here**.
 1. Click the green **Commit changes** button.
 
-That's it! If you visit [cs50.me](https://cs50.me/) again, you should see your submission. If you click on the **check50** link next to the submission, you should see (after a minute or two) whether your project met all of the requirements. You can see your grade by visiting your gradebook.  Click **Courses** in the left sidebar of your submissions page then choose **CS50x 2019**.  You are welcome to resubmit as many times as you'd like (before the deadline)!
+That's it! If you visit the course gradebook at [cs50.me/cs50x](https://cs50.me/cs50x), you should see your score within a few minutes. From that page, you can also click on the "View Submissions" link to see deatils about your submission. If you click on the **check50** link next to the submission, you should see which requirements your project met. You are welcome to resubmit as many times as you'd like!
 
-If you don't see any results in [your gradebook](https://cs50.me/gradebook), make sure that your branch is named `cs50/2019/x/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 6 and 7), making sure to name it `cs50/2019/x/scratch`!
+If you don't see any results in [your gradebook](https://cs50.me/cs50x) after a few minutes, make sure that your branch is named `cs50/problems/2019/x/scratch`. If you mistyped it the first time, you should create a new branch (repeating steps 6 and 7), making sure to name it `cs50/problems/2019/x/scratch`!
 

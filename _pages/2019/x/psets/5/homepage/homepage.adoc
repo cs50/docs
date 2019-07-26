@@ -124,9 +124,12 @@ For fairly comprehensive guides on the languages introduced in this problem, che
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2019/x/homepage
+submit50 cs50/problems/2019/x/homepage
 ```
 
+You can then go to link:https://cs50.me/cs50x[https://cs50.me/cs50x] to view your current scores!
+
+/////
 == Deploying Your Homepage
 
 If you would like to deploy your homepage publicly, so that anyone on the internet can visit it, you can optionally run:
@@ -142,3 +145,4 @@ If you make changes to your homepage in CS50 IDE, you can re-deploy those change
 === Troubleshooting
 
 The first time you visit your site, your browser may display a security warning.  This usually disappears after a few minutes.  If you are anxious to see your site, you can temporarily change the URL in your browser bar from `https://` to `http://`.
+/////

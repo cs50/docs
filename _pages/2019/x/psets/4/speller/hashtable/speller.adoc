@@ -65,7 +65,7 @@ In `speller.c`, we've put together a program that's designed to spell-check a fi
 
 ==== `dictionary.h`
 
-Open up `dictionary.h`, and you'll see some new syntax, including a few lines that mention `DICTIONARY_H`. No need to worry about those, but, if curious, those lines just ensure that, even though `dictionary.c` and `speller.c` (which you'll see in a moment) `#include` this file, `clang` will only compile it once. 
+Open up `dictionary.h`, and you'll see some new syntax, including a few lines that mention `DICTIONARY_H`. No need to worry about those, but, if curious, those lines just ensure that, even though `dictionary.c` and `speller.c` (which you'll see in a moment) `#include` this file, `clang` will only compile it once.
 
 Next notice how we `#include` a file called `stdbool.h`. That's the file in which `bool` itself is defined. You've not needed it before, since the CS50 Library used to `#include` that for you.
 
@@ -91,7 +91,7 @@ And `const`, meanwhile, just says that those strings, when passed in as argument
 
 Now open up `dictionary.c`. Notice how, atop the file, we've defined a `struct` called `node` that represents a node in a hash table. And we've declared a global array, `hashtable`, with enough room for `N` pointers to nodes, where `N` is initialized above that array to `26`, one bucket for each letter in the (English) alphabet.
 
-A bit below those lines have we implemented a function called `hash` that hashes a word, returning `0` for any word that starts with an `a` (or `A`), `1` for any word that starts with a `b` (or `B`), `25` for any word that starts with a `z` (or `Z`), and so on for every letter in between. 
+A bit below those lines have we implemented a function called `hash` that hashes a word, returning `0` for any word that starts with an `a` (or `A`), `1` for any word that starts with a `b` (or `B`), `25` for any word that starts with a `z` (or `Z`), and so on for every letter in between.
 
 Below that have we written part of a function called `load` that will soon (thanks to you!) load a dictionary of words into the hash table. We've written some code that initializes all of the buckets (i.e., pointers) in `hashtable` to `NULL`. And we've written some code that opens `dictionary`, which is the file name of a dictionary to load. And we've also written some code that iterates over that dictionary and reads the words therein, one at a time, into a buffer (i.e., `string`) called `word`. But we stop short of inserting those words into `hashtable`. Thereafter, we do close the file, though, and then return `true` to indicate (we hope!) success.
 
@@ -335,5 +335,7 @@ Then visit the URL that `check50` outputs to see where you rank!
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2019/x/speller
+submit50 cs50/problems/2019/x/speller
 ```
+
+You can then go to link:https://cs50.me/cs50x[https://cs50.me/cs50x] to view your current scores!
