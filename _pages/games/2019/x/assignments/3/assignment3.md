@@ -40,10 +40,10 @@ Your goals this assignment:
 
 ## How to Submit
 
-1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/games/2019/x/assignments/3` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
+1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `games50/assignments/2019/x/3` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
    ```
-   submit50 cs50/games/2019/x/assignments/3
+   submit50 games50/assignments/2019/x/3
    ```
 
    instead.
