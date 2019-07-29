@@ -83,10 +83,10 @@ be introduced in Lecture 1.
 
 1. Visit [cs50.me](https://cs50.me/), log in with your GitHub account, and click **Authorize submit50**. You should receive two emails from GitHub inviting you to join CS50’s "organizations" on GitHub. Click the button in those emails to accept both of the invitations.
 1. [Install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
-1. Using Git, push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/web/2019/x/projects/0` or, if you've installed `submit50`, execute
+1. Using Git, push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2019/x/0` or, if you've installed `submit50`, execute
 
    ```
-   submit50 cs50/web/2019/x/projects/0
+   submit50 web50/projects/2019/x/0
    ```
 
    instead.
