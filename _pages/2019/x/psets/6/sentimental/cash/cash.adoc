@@ -57,7 +57,7 @@ Change owed: [underline]#0.41#
 
 [source]
 ----
-check50 cs50/2019/x/sentimental/cash
+check50 cs50/problems/2019/x/sentimental/cash
 ----
 
 === Style

@@ -183,7 +183,7 @@ Here's how to evaluate the correctness of your code using `check50`. But be sure
 
 [source]
 ----
-check50 cs50/2019/x/resize/less
+check50 cs50/problems/2019/x/resize/less
 ----
 
 === `style50`

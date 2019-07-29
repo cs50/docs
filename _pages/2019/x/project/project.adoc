@@ -22,7 +22,7 @@ Create a `README.md` text file that explains your project and save it in a new f
 Execute the below from within your `~/workspace/project` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2019/x/project
+submit50 cs50/problems/2019/x/project
 ``` 
 
 === Step 2 of 2

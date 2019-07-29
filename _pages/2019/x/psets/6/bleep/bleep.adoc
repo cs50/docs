@@ -97,7 +97,7 @@ What message would you like to censor?
 
 [source]
 ----
-check50 cs50/2019/x/bleep
+check50 cs50/problems/2019/x/bleep
 ----
 
 === Style

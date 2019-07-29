@@ -215,7 +215,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/2019/x/finance
+check50 cs50/problems/2019/x/finance
 ----
 
 === Style
@@ -282,5 +282,5 @@ If you see this, make sure to remove or comment out any print statements from ap
 Execute the below from within your `~/workspace/pset8/finance` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2019/x/finance
+submit50 cs50/problems/2019/x/finance
 ```

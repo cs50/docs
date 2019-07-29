@@ -135,7 +135,7 @@ You can then go to link:https://cs50.me/cs50x[https://cs50.me/cs50x] to view you
 If you would like to deploy your homepage publicly, so that anyone on the internet can visit it, you can optionally run:
 
 ```
-check50 cs50/2019/x/challenges/site
+check50 cs50/problems/2019/x/challenges/site
 ```
 
 Then visit `https://USERNAME.cs50.site/`, where `USERNAME` is your GitHub username (not your IDE username). Best to wait a few minutes, else you might see *404 Not Found*.
