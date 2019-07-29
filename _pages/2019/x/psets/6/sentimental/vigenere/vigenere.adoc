@@ -75,7 +75,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 cs50/2019/x/sentimental/vigenere
+check50 cs50/problems/2019/x/sentimental/vigenere
 ----
 
 === Style
@@ -89,7 +89,7 @@ style50 vigenere.py
 
 [source]
 ----
-~cs50/2019/x/pset6/vigenere
+~cs50/problems/2019/x/pset6/vigenere
 ----
 
 == How to Submit

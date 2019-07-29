@@ -76,7 +76,7 @@ Usage: python caesar.py k
 
 [source]
 ----
-check50 cs50/2019/x/sentimental/caesar
+check50 cs50/problems/2019/x/sentimental/caesar
 ----
 
 === Style
@@ -90,7 +90,7 @@ style50 caesar.py
 
 [source]
 ----
-~cs50/2019/x/pset6/caesar
+~cs50/problems/2019/x/pset6/caesar
 ----
 
 == How to Submit

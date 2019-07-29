@@ -97,7 +97,7 @@ What message would you like to censor?
 
 [source]
 ----
-check50 cs50/2019/x/bleep
+check50 cs50/problems/2019/x/bleep
 ----
 
 === Style
@@ -111,7 +111,7 @@ style50 bleep.py
 
 [source]
 ----
-~cs50/2019/x/pset6/bleep
+~cs50/problems/2019/x/pset6/bleep
 ----
 
 == How to Submit

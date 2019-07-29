@@ -95,7 +95,7 @@ pass:[####]
 
 [source]
 ----
-check50 cs50/2019/x/sentimental/mario/less
+check50 cs50/problems/2019/x/sentimental/mario/less
 ----
 
 === Style
@@ -109,7 +109,7 @@ style50 mario.py
 
 [source]
 ----
-~cs50/2019/x/pset6/mario/less/mario
+~cs50/problems/2019/x/pset6/mario/less/mario
 ----
 
 == How to Submit
