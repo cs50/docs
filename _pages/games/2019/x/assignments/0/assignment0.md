@@ -11,7 +11,7 @@ layout: games/2019/g
 
 ### Your First Game
 
-Download the distro code for your first game from <https://cdn.cs50.net/games/2019/x/assignments/0/assignment0.zip> and unzip `assignment0.zip`, which should yield a directory called `assignment0`.
+Download the distribution code for your first game from <https://cdn.cs50.net/games/2019/x/assignments/0/assignment0.zip> and unzip `assignment0.zip`, which should yield a directory called `assignment0`.
 
 Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
 `cmd` in the Windows task bar), move to the directory where you extracted `assignment0`
