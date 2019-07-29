@@ -149,7 +149,7 @@ Test out your program with a whole bunch of inputs, both valid and invalid. (We 
 
 [source,bash]
 ----
-check50 cs50/2019/ap/isbn
+check50 cs50/problems/2019/ap/isbn
 ----
 
 === Style

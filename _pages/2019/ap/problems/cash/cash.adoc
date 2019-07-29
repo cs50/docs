@@ -96,7 +96,7 @@ Change owed: [underline]#0.41#
 
 [source,text]
 ----
-check50 cs50/2019/ap/cash
+check50 cs50/problems/2019/ap/cash
 ----
 
 === Style
@@ -149,7 +149,7 @@ If `cash.c` is not in `~/unit1/cash`, move it into that directory, as via `mv` (
 [source]
 ----
 cd ~/unit1/cash
-submit50 cs50/2019/ap/cash
+submit50 cs50/problems/2019/ap/cash
 ----
 +
 inputting your GitHub username and GitHub password as prompted.

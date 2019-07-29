@@ -111,7 +111,7 @@ To test the correctness of your program, you may execute the below at the termin
 
 [source,bash]
 ----
-check50 cs50/2019/ap/pennies
+check50 cs50/problems/2019/ap/pennies
 ----
 
 === Style
@@ -151,7 +151,7 @@ If `pennies.c` is not in `~/unit1/pennies`, move it into that directory, as via 
 [source]
 ----
 cd ~/unit1/pennies
-submit50 cs50/2019/ap/pennies
+submit50 cs50/problems/2019/ap/pennies
 ----
 +
 

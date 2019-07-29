@@ -173,7 +173,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2019/ap/friends/hello
+check50 cs50/problems/2019/ap/friends/hello
 ----
 
 === Style
@@ -232,7 +232,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2019/ap/friends/fahrenheit
+check50 cs50/problems/2019/ap/friends/fahrenheit
 ----
 
 === Style
@@ -283,7 +283,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2019/ap/friends/pennies
+check50 cs50/problems/2019/ap/friends/pennies
 ----
 
 === Style
@@ -329,7 +329,7 @@ If any file is not in `~/unit2/friends`, move it into that directory, as via `mv
 [source]
 ----
 cd ~/unit2/friends
-submit50 cs50/2019/ap/friends/hello
+submit50 cs50/problems/2019/ap/friends/hello
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -338,7 +338,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/unit2/friends
-submit50 cs50/2019/ap/friends/fahrenheit
+submit50 cs50/problems/2019/ap/friends/fahrenheit
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -347,7 +347,7 @@ inputting your GitHub username and GitHub password as prompted.
 [source]
 ----
 cd ~/unit2/friends
-submit50 cs50/2019/ap/friends/pennies
+submit50 cs50/problems/2019/ap/friends/pennies
 ----
 +
 inputting your GitHub username and GitHub password as prompted.

@@ -420,7 +420,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2019/ap/find/less
+check50 cs50/problems/2019/ap/find/less
 ----
 
 === Style
@@ -470,7 +470,7 @@ If `find.c` is not in `~/unit3/find`, move it into that directory, as via `mv` (
 [source]
 ----
 cd ~/unit3/find
-submit50 cs50/2019/ap/find/less
+submit50 cs50/problems/2019/ap/find/less
 ----
 +
 

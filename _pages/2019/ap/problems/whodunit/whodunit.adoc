@@ -398,7 +398,7 @@ Submit `whodunit`:
 [source]
 ----
 cd ~/unit4/whodunit/
-submit50 cs50/2019/ap/whodunit
+submit50 cs50/problems/2019/ap/whodunit
 ----
 
 inputting your GitHub username and GitHub password as prompted.

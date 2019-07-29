@@ -117,7 +117,7 @@ Modify `mario.c` in such a way that it implements this program as described!
 
 [source,text]
 ----
-check50 cs50/2019/ap/mario/more
+check50 cs50/problems/2019/ap/mario/more
 ----
 
 === Style
@@ -159,7 +159,7 @@ If `mario.c` is not in `~/unit1/mario`, move it into that directory, as via `mv`
 [source]
 ----
 cd ~/unit1/mario
-submit50 cs50/2019/ap/mario/more
+submit50 cs50/problems/2019/ap/mario/more
 ----
 +
 

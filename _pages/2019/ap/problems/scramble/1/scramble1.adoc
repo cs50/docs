@@ -170,7 +170,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source]
 ----
-check50 cs50/2019/ap/scramble/1
+check50 cs50/problems/2019/ap/scramble/1
 ----
 
 === Style
@@ -201,7 +201,7 @@ Submit `scramble`:
 [source]
 ----
 cd ~/unit3/scramble/
-submit50 cs50/2019/ap/scramble/1
+submit50 cs50/problems/2019/ap/scramble/1
 ----
 
 inputting your GitHub username and GitHub password as prompted.
