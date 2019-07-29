@@ -50,7 +50,7 @@ Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, exe
 1. Execute `ls`. You should see a directory called `speller`, which was inside of that ZIP file.
 1. Execute `cd speller` to change into that directory.
 1. Execute `ls`. You should see this problem's distribution:
-   
+
 ```
 dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  speller.c  texts/
 ```
@@ -65,7 +65,7 @@ In `speller.c`, we've put together a program that's designed to spell-check a fi
 
 ==== `dictionary.h`
 
-Open up `dictionary.h`, and you'll see some new syntax, including a few lines that mention `DICTIONARY_H`. No need to worry about those, but, if curious, those lines just ensure that, even though `dictionary.c` and `speller.c` (which you'll see in a moment) `#include` this file, `clang` will only compile it once. 
+Open up `dictionary.h`, and you'll see some new syntax, including a few lines that mention `DICTIONARY_H`. No need to worry about those, but, if curious, those lines just ensure that, even though `dictionary.c` and `speller.c` (which you'll see in a moment) `#include` this file, `clang` will only compile it once.
 
 Next notice how we `#include` a file called `stdbool.h`. That's the file in which `bool` itself is defined. You've not needed it before, since the CS50 Library used to `#include` that for you.
 
@@ -317,6 +317,7 @@ How to assess just how fast (and correct) your code is? Well, as always, feel fr
 ~cs50/2019/x/pset4/speller dictionaries/large texts/lalaland.txt
 ----
 
+/////
 == Big Board
 
 And if you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit.
@@ -327,11 +328,14 @@ check50 cs50/2019/x/challenges/speller
 ----
 
 Then visit the URL that `check50` outputs to see where you rank!
+/////
 
 == How to Submit
 
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2019/x/speller
+submit50 cs50/problems/2019/x/speller
 ```
+
+You can then go to link:https://cs50.me/cs50x[https://cs50.me/cs50x] to view your current scores!
