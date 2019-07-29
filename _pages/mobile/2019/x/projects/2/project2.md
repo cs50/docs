@@ -39,10 +39,10 @@ To get started, follow the directions in your project README.
 
 ## How to Submit
 
-1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `mobile50/projects/2019/x/2` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
+1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/mobile/2019/x/projects/2` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
    ```
-   submit50 mobile50/projects/2019/x/2
+   submit50 cs50/mobile/2019/x/projects/2
    ```
 
    instead.
