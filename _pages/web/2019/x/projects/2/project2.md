@@ -108,11 +108,11 @@ you meet the requirements laid out in the above specification!
 
 ## How to Submit
 
-1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/web/2019/x/projects/2` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
+1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2019/x/2` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
-   ```
-   submit50 cs50/web/2019/x/projects/2
-   ```
+  ```
+  submit50 web50/projects/2019/x/2
+  ```
 
    instead.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
