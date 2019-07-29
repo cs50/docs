@@ -183,7 +183,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/2019/ap/calc
+check50 cs50/problems/2019/ap/calc
 ----
 
 === Style
@@ -221,7 +221,7 @@ ls
 [source]
 ----
 cd ~/unit2/calc/
-submit50 cs50/2019/ap/calc
+submit50 cs50/problems/2019/ap/calc
 ----
 +
 inputting your GitHub username and GitHub password as prompted.

@@ -328,7 +328,7 @@ Submit `Sudoku`:
 [source]
 ----
 cd ~/unit4/sudoku/
-submit50 cs50/2019/ap/sudoku
+submit50 cs50/problems/2019/ap/sudoku
 ----
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!

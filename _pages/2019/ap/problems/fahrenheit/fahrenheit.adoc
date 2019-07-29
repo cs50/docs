@@ -151,7 +151,7 @@ Before turning in your solution, be sure to test the correctness of your program
 
 [source,bash]
 ----
-check50 cs50/2019/ap/fahrenheit
+check50 cs50/problems/2019/ap/fahrenheit
 ----
 
 === Style
@@ -193,7 +193,7 @@ If `fahrenheit.c` is not in `~/unit1/fahrenheit`, move it into that directory, a
 [source]
 ----
 cd ~/unit1/fahrenheit
-submit50 cs50/2019/ap/fahrenheit
+submit50 cs50/problems/2019/ap/fahrenheit
 ----
 +
 

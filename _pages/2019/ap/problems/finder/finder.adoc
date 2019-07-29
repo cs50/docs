@@ -237,7 +237,7 @@ You should also feel free to test your code by creating new directories and file
 
 [source]
 ----
-check50 cs50/2019/ap/finder
+check50 cs50/problems/2019/ap/finder
 ----
 
 === Style
@@ -279,7 +279,7 @@ Submit `finder`:
 [source]
 ----
 cd ~/unit4/finder
-submit50 cs50/2019/ap/finder
+submit50 cs50/problems/2019/ap/finder
 ----
 
 inputting your GitHub username and GitHub password as prompted.

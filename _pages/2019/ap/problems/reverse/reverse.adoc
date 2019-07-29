@@ -138,7 +138,7 @@ If `mystery.c` is not in `~/unit2/reverse`, move it into that directory, as via 
 [source]
 ----
 cd ~/unit2/reverse
-submit50 cs50/2019/ap/reverse
+submit50 cs50/problems/2019/ap/reverse
 ----
 +
 

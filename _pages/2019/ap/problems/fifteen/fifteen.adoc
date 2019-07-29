@@ -208,7 +208,7 @@ Note that `check50` assumes that your board's blank space is implemented in `boa
 
 [source]
 ----
-check50 cs50/2019/ap/fifteen
+check50 cs50/problems/2019/ap/fifteen
 ----
 
 === Style
@@ -252,7 +252,7 @@ Submit `fifteen`:
 [source]
 ----
 cd ~/unit3/fifteen/
-submit50 cs50/2019/ap/fifteen
+submit50 cs50/problems/2019/ap/fifteen
 ----
 
 inputting your GitHub username and GitHub password as prompted.

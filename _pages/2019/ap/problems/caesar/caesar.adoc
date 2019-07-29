@@ -153,7 +153,7 @@ Usage: ./caesar k
 
 [source]
 ----
-check50 cs50/2019/ap/caesar
+check50 cs50/problems/2019/ap/caesar
 ----
 
 === Style
@@ -240,7 +240,7 @@ ls
 [source]
 ----
 cd ~/unit2/caesar/
-submit50 cs50/2019/ap/caesar
+submit50 cs50/problems/2019/ap/caesar
 ----
  
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!

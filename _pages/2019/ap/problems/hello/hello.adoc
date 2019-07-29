@@ -255,7 +255,7 @@ hello, world
 
 [source,text]
 ----
-check50 cs50/2019/ap/hello
+check50 cs50/problems/2019/ap/hello
 ----
 
 Assuming your program is correct, you should then see output like
@@ -329,7 +329,7 @@ If `hello.c` is not in `~/unit1/hello`, move it into that directory, as via `mv`
 [source]
 ----
 cd ~/unit1/hello
-submit50 cs50/2019/ap/hello
+submit50 cs50/problems/2019/ap/hello
 ----
 +
 

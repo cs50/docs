@@ -342,7 +342,7 @@ or simply double-click `jeopardy.wav` in CS50 IDE's file browser to open and (as
 
 [source]
 ----
-check50 cs50/2019/ap/music
+check50 cs50/problems/2019/ap/music
 ----
 
 === Style
@@ -382,7 +382,7 @@ ls
 [source]
 ----
 cd ~/unit4/music/
-submit50 cs50/2019/ap/music
+submit50 cs50/problems/2019/ap/music
 ----
  
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!

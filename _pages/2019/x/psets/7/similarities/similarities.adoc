@@ -158,7 +158,7 @@ Be sure to test your implementation with the files in `inputs/` (which are also 
 === `check50`
 
 ```
-check50 cs50/2019/x/similarities
+check50 cs50/problems/2019/x/similarities
 ```
 
 === `style50`
@@ -185,5 +185,5 @@ http://similarities.cs50.net/less
 Execute the below from within your `~/pset7/similarities` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2019/x/similarities
+submit50 cs50/problems/2019/x/similarities
 ```

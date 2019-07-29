@@ -126,7 +126,7 @@ RTB
 
 [source,text]
 ----
-check50 cs50/2019/ap/initials/more
+check50 cs50/problems/2019/ap/initials/more
 ----
 
 === Style
@@ -163,7 +163,7 @@ ls
 [source]
 ----
 cd ~/unit2/initials/
-submit50 cs50/2019/ap/initials/more
+submit50 cs50/problems/2019/ap/initials/more
 ----
 +
 inputting your GitHub username and GitHub password as prompted.

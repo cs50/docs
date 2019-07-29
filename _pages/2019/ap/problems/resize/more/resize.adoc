@@ -175,7 +175,7 @@ Submit `resize`:
 [source]
 ----
 cd ~/unit4/resize/
-submit50 cs50/2019/ap/resize/more
+submit50 cs50/problems/2019/ap/resize/more
 ----
 
 inputting your GitHub username and GitHub password as prompted.

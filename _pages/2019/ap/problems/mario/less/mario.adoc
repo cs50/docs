@@ -161,7 +161,7 @@ A space is just a press of your space bar, just as a period is just a press of i
 
 [source,text]
 ----
-check50 cs50/2019/ap/mario/less
+check50 cs50/problems/2019/ap/mario/less
 ----
 
 === Style
@@ -203,7 +203,7 @@ If `mario.c` is not in `~/unit1/mario`, move it into that directory, as via `mv`
 [source]
 ----
 cd ~/unit1/mario
-submit50 cs50/2019/ap/mario/less
+submit50 cs50/problems/2019/ap/mario/less
 ----
 +
 
