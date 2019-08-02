@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -38,50 +38,67 @@ For help with Scratch:
 * Watch https://youtu.be/52JoFF4HMA4[Allison's short].
 * Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
 
-
-Note: These resources were designed using Scratch 2.0. Scratch 3.0 includes the same types of blocks and features, albeit with an updated interface..
-
 == Itching to Program?
 
-It's time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
+Head to https://scratch.mit.edu/ and sign up for an account on MIT's website by clicking **Join Scratch** atop the page. Any username (that's available) is fine, but take care to remember it and your choice of password.
+
+*Make sure that your web browser has Flash enabled. If you're using Google Chrome, you can go to `chrome://settings/content`, click on Advanced -> Content settings, and make sure you "allow" Flash!*
+
+Then head to https://scratch.mit.edu/help/ and take note of the resources available to you before you dive into Scratch itself. In particular, you might want to skim the link:pass:[https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/pdfs/help/Getting-Started-Guide-Scratch2.pdf][Getting Started Guide].
+
+Next try your hand at _Pikachu's Pastry Catch_ by (former student) Gabe Walker! Click the green flag and then, per Gabe's instructions, hit your keyboard's space bar, at which point the game will begin! Feel free to procrastinate a bit. 
+
+++++
+<iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26329354/?autostart=false" frameborder="0" allowfullscreen="true"></iframe>
+++++
+
+If curious, Gabe's source code can be seen at http://scratch.mit.edu/projects/26329354/. (You can also full-screen the game at that same URL, as full-screening the embedded game here might not work.)
+
+Next, be sure you know what's recyclable and compostable these days by trying out this remix of _Oscartime_ by Jordan Hayashi!
+
+++++
+<iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/71161586/?autostart=false" frameborder="0" allowfullscreen="true"></iframe>
+++++
+
+Jordan's source code can be found at https://scratch.mit.edu/projects/71161586/. (You can also full-screen that game at that same URL.)
+
+If you've no experience (or comfort) whatsoever with programming, rest assured that Gabe's and Jordan's projects are more complex than what we expect for this first problem set. (Click *See inside* in Scratch's top-right corner to look at each project's underlying "implementation details.") But they do reveal what you can do with Scratch. 
+
+In fact, for a gentler introduction to Scratch (and programming more generally), you might want to review some of the examples that we looked at in Week 0, the "source code" for which can be found at https://scratch.mit.edu/studios/3003963/. Once you can say to yourself, "Okay, I think I get this," you're ready to proceed.
+
+Now it's time to choose your own adventure! Your mission is, quite simply, to have fun with Scratch and implement a project of your choice (be it an animation, a game, interactive art, or anything else), subject only to the following requirements.
 
 * Your project must have at least two sprites, at least one of which must resemble something other than a cat.
 * Your project must have at least three scripts total (i.e., not necessarily three per sprite).
 * Your project must use at least one condition, one loop, and one variable.
 * Your project must use at least one sound.
-* Your project should be more complex than most of those demonstrated in lecture (many of which, though instructive, were quite short) but it can be less complex than *Ivy's Hardest Game*. As such, your project should probably use a few dozen puzzle pieces overall.
+* Your project should be more complex than most of those demonstrated in lecture (many of which, though instructive, were quite short) but it can be less complex than _Oscartime_. As such, your project should probably use a few dozen puzzle pieces overall.
 
-Head to the https://scratch.mit.edu/[Scratch website] and sign up for an account on MIT’s website by clicking *Join Scratch* atop the page. Any username (that’s available) is fine, but take care to remember it and your choice of password.  After registering and confirming your email address, click the orange "*Start Creating*" button to begin.
-
-You might find these resources helpful (note that they show an earlier version of Scratch):
-
-* https://cs.harvard.edu/malan/scratch/[Scratch for Budding Computer Scientists]
-* https://resources.scratch.mit.edu/www/guides/en/Getting-Started-Guide-Scratch2.pdf[Getting Started with Scratch]
-* https://scratch.mit.edu/info/cards/[Scratch Cards]
-
-Stuck for ideas? Here are your predecessors' https://scratch.mit.edu/studios/5268312/[projects from last year]. But try to think of an idea on your own, and then set out to implement it. However, don't try to implement the entirety of your project all at once: pluck off one piece at a time. In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth. And select *File > Save Now* every few minutes so that you don't lose any work!
+Feel free to peruse https://scratch.mit.edu/studios/3009443/[some of last year's projects] for inspiration, but your own project should not be terribly similar to any of them. Try to think of an idea on your own, and then set out to implement it. But don't try to implement the entirety of your project all at once: pluck off one piece at a time. Gabe, for instance, probably implemented just one pastry first, before he moved onto the game's other sprites.  In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth.
 
 If, along the way, you find it too difficult to implement some feature, try not to fret; alter your design or work around the problem. If you set out to implement an idea that you find fun, you should not find it hard to satisfy this problem set's requirements. 
 
 Alright, off you go. Make us proud! 
 
-Once finished with your project, select *File > Save to your computer* and keep that file so that you can submit it below.  (That should download a file whose name ends in `.sb3`.) 
+Incidentally, if you don't have the best Internet access, you're welcome to download Scratch's "offline editor" at https://scratch.mit.edu/scratch2download/. But when done with your project offline, be sure to upload it to your account at http://scratch.mit.edu/ via *File > Share to website* in the offline editor.
 
-Oh, and if you'd like to exhibit your project in CS50 AP's studio for 2019-20, head to https://scratch.mit.edu/studios/<placeholder>/, then click *Add projects*, and select the project you'd like to share.
+Once finished with your project, click *See project page* in Scratch's top-right corner. Ensure your project has a title (in Scratch's top-left corner), some instructions (in Scratch's top-right corner), and some notes and/or credits (in Scratch's bottom-right corner). Then click *Share* in Scratch's top-right corner so that others can see your project. Finally, take note of the URL in your browser's address bar. That's your project's URL on MIT's website, and you'll need to know it later.
+
+Oh, and if you'd like to exhibit your project in CS50 AP's studio for 2018-19, head to https://scratch.mit.edu/studios/5268312/, then click *Add projects*, and paste in your own project's URL.
 
 == How to Submit
 
 === Step 1 of 4
 
-In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb3`.
+In your Scratch project, go to the "File" menu, and click "Download to your computer". Save the file as `project.sb2`.
 
 === Step 2 of 4
 
-Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2019/ap/scratch` and click "Create branch".
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2018/ap/scratch` and click "Create branch".
 
 === Step 3 of 4
 
-Click the button that says "Upload files". Drag your `project.sb3` Scratch file into the box that says "Drag files here".
+Click the button that says "Upload files". Drag your `project.sb2` Scratch file into the box that says "Drag files here".
 
 === Step 4 of 4
 

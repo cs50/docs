@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -120,25 +120,29 @@ near the top of your file.
 
 == How to Submit
 
-=== Step 1 of 2
+=== Step 1 of 3
+
+Execute `update50` again to ensure that your IDE is up-to-date.
+
+=== Step 2 of 3
 
 * Recall that you were asked to implement `crack`. 
-** Be sure that all relevant files for this problem are in `~/unit2/crack/`, as with:
+** Be sure that all relevant files for this problem are in `~/workspace/unit2/crack/`, as with:
 +
 [source]
 ----
-cd ~/unit2/crack/
+cd ~/workspace/unit2/crack/
 ls
 ----
 
-=== Step 2 of 2
+=== Step 3 of 3
 
 * To submit `crack`, execute
 +
 [source]
 ----
-cd ~/unit2/crack/
-submit50 cs50/problems/2019/ap/crack
+cd ~/workspace/unit2/crack/
+submit50 cs50/2018/ap/crack
 ----
 +
 inputting your GitHub username and GitHub password as prompted.

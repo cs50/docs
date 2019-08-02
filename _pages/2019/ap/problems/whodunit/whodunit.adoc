@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -52,11 +52,11 @@ debug50 ./whodunit clue.bmp verdict.bmp
 
 Welcome back!
 
-Next, navigate to your `~/unit4` directory.  Then execute
+Next, navigate to your `~/workspace/unit4` directory.  Then execute
 
 [source,bash]
 ----
-wget https://cdn.cs50.net/ap/2019/problems/whodunit/whodunit.zip
+wget https://cdn.cs50.net/ap/2018/problems/whodunit/whodunit.zip
 ----
 
 in order to download a ZIP (i.e., compressed version) of this problem set's distro.  If you then execute
@@ -66,7 +66,7 @@ in order to download a ZIP (i.e., compressed version) of this problem set's dist
 ls
 ----
 
-you should see that you now have a file called `whodunit.zip` in your `~/unit4` directory.  Unzip it by executing the below.
+you should see that you now have a file called `whodunit.zip` in your `~/workspace/unit4` directory.  Unzip it by executing the below.
 
 [source,bash]
 ----
@@ -135,7 +135,7 @@ A 24-bit BMP like Mr. Boddy's uses 8 bits to signify the amount of red in a pixe
 
 If the R, G, and B values of some pixel in a BMP are, say, 0xff, 0x00, and 0x00 in hexadecimal, that pixel is purely red, as 0xff (otherwise known as 255 in decimal) implies "a lot of red," while 0x00 and 0x00 imply "no green" and "no blue," respectively. Given how red Mr. Boddy's BMP is, it clearly has a lot of pixels with those RGB values. But it also has a few with other values.
 
-Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see https://en.wikipedia.org/wiki/Web_colors for more details.
+Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 
 Now let's get more technical. Recall that a file is just a sequence of bits, arranged in some fashion. A 24-bit BMP file, then, is essentially just a sequence of bits, (almost) every 24 of which happen to represent some pixel's color. But a BMP file also contains some "metadata," information like an image's height and width. That metadata is stored at the beginning of the file in the form of two data structures generally referred to as "headers," not to be confused with C's header files. (Incidentally, these headers have evolved over time. This problem only expects that you support the latest version of Microsoft's BMP format, 4.0, which debuted with Windows 95.) The first of these headers, called `BITMAPFILEHEADER`, is 14 bytes long. (Recall that 1 byte equals 8 bits.) The second of these headers, called `BITMAPINFOHEADER`, is 40 bytes long. Immediately following these headers is the actual bitmap: an array of bytes, triples of which represent a pixel's color. (In 1-, 4-, and 16-bit BMPs, but not 24- or 32-, there's an additional header right after `BITMAPINFOHEADER` called `RGBQUAD`, an array that defines "intensity values" for each of the colors in a device's palette.) However, BMP stores these triples backwards (i.e., as BGR), with 8 bits for blue, followed by 8 bits for green, followed by 8 bits for red. (Some BMPs also store the entire bitmap backwards, with an image's top row at the end of the BMP file. But we've stored this problem set's BMPs as described herein, with each bitmap's top row first and bottom row last.) In other words, were we to convert the 1-bit smiley above to a 24-bit smiley, substituting red for black, a 24-bit BMP would store this bitmap as follows, where `0000ff` signifies red and `ffffff` signifies white; we've highlighted in red all instances of `0000ff`.
 
@@ -372,7 +372,16 @@ No solution from the staff, lest it spoil your fun!
 
 == How to Submit
 
-=== Step 1 of 2
+=== Step 1 of 3
+
+Update your IDE:
+
+[source]
+----
+update50
+----
+
+=== Step 2 of 3
 
 Ensure you have all of the files below:
 
@@ -381,15 +390,15 @@ Ensure you have all of the files below:
 * questions.txt
 * bmp.h
 
-Be sure that each of your files are in `~/unit4/whodunit`, as with:
+Be sure that each of your files are in `~/workspace/unit4/whodunit`, as with:
 
 [source]
 ----
-cd ~/unit4/whodunit
+cd ~/workspace/unit4/whodunit
 ls
 ----
 
-If any file is not in `~/unit4/whodunit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/workspace/unit4/whodunit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 3 of 3
 
@@ -397,8 +406,8 @@ Submit `whodunit`:
 
 [source]
 ----
-cd ~/unit4/whodunit/
-submit50 cs50/problems/2019/ap/whodunit
+cd ~/workspace/unit4/whodunit/
+submit50 cs50/2018/ap/whodunit
 ----
 
 inputting your GitHub username and GitHub password as prompted.

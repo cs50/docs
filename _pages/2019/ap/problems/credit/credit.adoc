@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -35,11 +35,9 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Background
 
-A credit (or debit) card, of course, is a plastic card with which you can pay for goods and services. Printed on that card is a number that's also stored in a database somewhere, so that when your card is used to buy something, the creditor knows whom to bill. There are a lot of people with credit cards in this world, so those numbers are pretty long: American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers. And those are decimal numbers (0 through 9), not binary, which means, for instance, that American Express could print as many as 10^(15) = 1,000,000,000,000,000 unique cards! (That's, uh, a quadrillion.)
+Odds are you or someone you know has a credit card. That card has a number, both printed on its face and embedded (perhaps with some other data) in the magnetic stripe on back.  That number is also stored in a database somewhere, so that when your card is used to buy something, the creditor knows whom to bill. There are a lot of people with credit cards in this world, so those numbers are pretty long: American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers.  And those are decimal numbers (0 through 9), not binary, which means, for instance, that American Express could print as many as 10^(15) = 1,000,000,000,000,000 unique cards! (That's, ahem, a quadrillion.)
 
-Actually, that's a bit of an exaggeration, because credit card numbers actually have some structure to them. All American Express numbers start with 34 or 37; most MasterCard numbers start with 51, 52, 53, 54, or 55; and all Visa numbers start with 4. But credit card numbers also have a "checksum" built into them, a mathematical relationship between at least one number and others. That checksum enables computers (or humans who like math) to detect typos (e.g., transpositions), if not fraudulent numbers, without having to query a database, which can be slow. Of course, a dishonest mathematician could certainly craft a fake number that nonetheless respects the mathematical constraint, so a database lookup is still necessary for more rigorous checks.
-
-== Luhn's Algorithm
+Now that's a bit of an exaggeration, because credit card numbers actually have some structure to them.  American Express numbers all start with 34 or 37; MasterCard numbers all start with 51, 52, 53, 54, or 55; and Visa numbers all start with 4.  But credit card numbers also have a "checksum" built into them, a mathematical relationship between at least one number and others.  That checksum enables computers (or humans who like math) to detect typos (e.g., transpositions), if not fraudulent numbers, without having to query a database, which can be slow.  (Consider the awkward silence you may have experienced at some point whilst paying by credit card at a store whose computer uses a dial-up modem to verify your card.)  Of course, a dishonest mathematician could certainly craft a fake number that nonetheless respects the mathematical constraint, so a database lookup is still necessary for more rigorous checks.
 
 So what's the secret formula?  Well, most cards use an algorithm invented by Hans Peter Luhn, a nice fellow from IBM.  According to Luhn's algorithm, you can determine if a credit card number is (syntactically) valid as follows:
 
@@ -78,7 +76,7 @@ So, validating credit card numbers isn't hard, but it does get a bit tedious by 
 
 == Specification
 
-* In `credit.c` in `~/unit1/credit`, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
+* In `credit.c` in `~workspace/unit1/credit`, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
 * So that we can automate some tests of your code, we ask that your program's last line of output be `AMEX\n` or `MASTERCARD\n` or `VISA\n` or `INVALID\n`, nothing more, nothing less, and that `main` always return `0`.
 * For simplicity, you may assume that the user's input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
 * Do not assume that the user's input will fit in an `int`! Best to use `get_long` from CS50's library to get users' input. (Why?)
@@ -130,7 +128,7 @@ Google (or perhaps a roommate's wallet) should turn up more. (If your roommate a
 
 [source,text]
 ----
-check50 cs50/problems/2019/ap/credit
+check50 cs50/2018/ap/credit
 ----
 
 === Style
@@ -151,15 +149,15 @@ style50 credit.c
 
 === Step 1 of 2
 
-Ensure that `credit.c` is in `~/unit1/credit`, as with:
+Ensure that `credit.c` is in `~/workspace/unit1/credit`, as with:
 
 [source]
 ----
-cd ~/unit1/credit
+cd ~/workspace/unit1/credit
 ls
 ----
 
-If `credit.c` is not in `~/unit1/credit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `credit.c` is not in `~/workspace/unit1/credit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -167,8 +165,8 @@ If `credit.c` is not in `~/unit1/credit`, move it into that directory, as via `m
 +
 [source]
 ----
-cd ~/unit1/credit
-submit50 cs50/problems/2019/ap/credit
+cd ~/workspace/unit1/credit
+submit50 cs50/2018/ap/credit
 ----
 +
 

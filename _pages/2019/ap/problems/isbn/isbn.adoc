@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -35,11 +35,11 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Readin' Bookz
 
-As you may know, most any book that you borrow or buy has an International Standard Book Number, otherwise known as an __ISBN__ or ISBN-10, "a 10-digit number that uniquely identifies books and book-like products published internationally."footnote:[https://www.isbn.org/standards/home/isbn/us/isbnqa.asp] Books published since 2007 might also have an ISBN-13, a 13-digit number with a similar purpose, but never mind those.
+As you may know, most any book that you borrow or buy has an International Standard Book Number, otherwise known as an __ISBN__ or ISBN-10, "a 10-digit number that uniquely identifies books and book-like products published internationally."footnote:[http://www.isbn.org/standards/home/isbn/us/isbnqa.asp] Books published since 2007 might also have an ISBN-13, a 13-digit number with a similar purpose, but never mind those.
 
 It turns out that the last of an ISBN-10's digits is a "check digit," otherwise known (in binary contexts) as a "checksum," a number related mathematically to its preceding digits. ISBN-10s' digits are supposed to adhere to a formula, not unlike credit card numbers, and this check digit allows you to check whether an ISBN-10's other nine digits are (most likely) valid without having to check, say, a database of books.
 
-Per the International ISBN Agency's ISBN Users' Manual, "The check digit is the last digit of an ISBN. It is calculated on a modulus 11 with weights 10-2, using X in lieu of 10 where ten would occur as a check digit."footnote:["[The]final character in the ISBN string which is related to all preceding characters in the string by a specified mathematical algorithm and which may be used to verify the accuracy of the ISBN string." from https://www.isbn-international.org/content/isbn-users-manual]
+Per the International ISBN Agency's ISBN Users' Manual, "The check digit is the last digit of an ISBN. It is calculated on a modulus 11 with weights 10-2, using X in lieu of 10 where ten would occur as a check digit."footnote:[http://www.isbn-international.org/en/userman/download/ISBNmanual.pdf]
 
 image:orly.jpg[Rly?]
 
@@ -68,7 +68,7 @@ Hopefully those exclamation points make the math more exciting.
 
 So, computing this check digit's not hard, but it does get a bit tedious by hand. Let's write a program.
 
-Create a file called `isbn.c` inside `~/unit1/isbn`, in which you should write a program that prompts the user for an ISBN-10 and then reports (via `printf`) whether the number's legit. So that we can automate some tests of your code, we ask that your program's last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
+Create a file called `isbn.c` inside `~/workspace/unit1/isbn`, in which you should write a program that prompts the user for an ISBN-10 and then reports (via `printf`) whether the number's legit. So that we can automate some tests of your code, we ask that your program's last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
 
 For simplicity, you may assume that the user's input will be exactly ten decimal digits (i.e., devoid of hyphens and `X`), the first of which might even be zero(es), as in the case of our recommended book. But do not assume that the user's input will fit in an `int`! Recall, after all, that the largest value that can fit in an `int` is 2^32^ - 1 = 4,294,967,295 (and, even then, only if declared as `unsigned`). True, that's a 10-digit value, but there might still be a problem. (What?) Best to be safe and use `get_long` from CS50's library to get users' input. (Why?)
 
@@ -116,7 +116,7 @@ Consider the below representative of how your own program should behave when pas
 
 [source,subs=quotes]
 ----
-~/unit1/isbn/ $ [underline]#./isbn#
+~/workspace/unit1/isbn/ $ [underline]#./isbn#
 ISBN: [underline]#0789751984#
 YES
 ----
@@ -125,7 +125,7 @@ Of course, `get_long(“ISBN: “)` itself will reject an ISBN-10's hyphens (and
 
 [source,subs=quotes]
 ----
-~/unit1/isbn/ $ [underline]#./isbn#
+~/workspace/unit1/isbn/ $ [underline]#./isbn#
 ISBN: [underline]#0-789-75198-4#
 Retry: [underline]#foo#
 Retry: [underline]#0789751984#
@@ -136,7 +136,7 @@ But it's up to you to catch inputs that are not ISBN-10s (e.g., Jenny'sfootnote:
 
 [source,subs=quotes]
 ----
-~/unit1/isbn/ $ [underline]#./isbn#
+~/workspace/unit1/isbn/ $ [underline]#./isbn#
 ISBN: [underline]#5558675309#
 NO
 ----
@@ -145,11 +145,11 @@ NO
 
 === Correctness
 
-Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) There are lots of valid ISBN-10s on https://www.amazon.com[amazon.com]. Of course, you should also test your program with `check50`:
+Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) There are lots of valid ISBN-10s on http://www.amazon.com[amazon.com]. Of course, you should also test your program with `check50`:
 
 [source,bash]
 ----
-check50 cs50/problems/2019/ap/isbn
+check50 cs50/2018/ap/isbn
 ----
 
 === Style
@@ -172,7 +172,7 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 
 === Step 1 of 2
 
-Ensure that `isbn.c` is in `~/unit1/isbn`, as with:
+Ensure that `isbn.c` is in `~/workspace/unit1/isbn`, as with:
 
 [source]
 ----
@@ -180,7 +180,7 @@ cd ~/workspace/unit1/isbn
 ls
 ----
 
-If `isbn.c` is not in `~/unit1/isbn`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `isbn.c` is not in `~/workspace/unit1/isbn`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -188,7 +188,7 @@ If `isbn.c` is not in `~/unit1/isbn`, move it into that directory, as via `mv` (
 +
 [source]
 ----
-cd ~/unit1/isbn
+cd ~/workspace/unit1/isbn
 submit50 cs50/2018/ap/isbn
 ----
 +

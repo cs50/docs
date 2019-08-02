@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -60,7 +60,7 @@ Let's do a quick test to make sure things work as expected. Worldwide, the commo
 
 Log into your CS50 IDE account (remember how?) and be sure before doing anything to run `update50` in your terminal window, waiting until any updates finish processing before moving further. We'll remind you of this as much as possible, but do note that the IDE too will remind you to run that command via a yellow banner atop your workspace when there is a new update available.
 
-If you have it from http://docs.cs50.net/2019/ap/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be in your `unit1/hello/` directory. (If you don't have it, create it now.) The contents should look probably like this:
+If you have it from http://docs.cs50.net/2018/ap/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be in your `unit1/hello/` directory. (If you don't have it, create it now.) The contents should look probably like this:
 
 [source,c]
 ----
@@ -98,7 +98,7 @@ What `string` will we print? Well, that'd be `name`! After we specify what we wa
 
 [source,bash,subs=quotes]
 ----
-~/unit1/hello/ $ [underline]#./hello#
+~/workspace/unit1/hello/ $ [underline]#./hello#
 Enter your name: [underline]#Alice#
 Hello, Alice!
 ----
@@ -113,7 +113,7 @@ Write a program that converts a temperature in Celsius to Fahrenheit, as per the
 
 [source,bash,subs=quotes]
 ----
-~/unit1/fahrenheit/ $ [underline]#./fahrenheit#
+~/workspace/unit1/fahrenheit/ $ [underline]#./fahrenheit#
 C: [underline]#100#
 F: 212.0
 ----
@@ -124,7 +124,7 @@ Do recall that if you include `<cs50.h>` atop your `fahrenheit.c` file, you will
 
 [source,bash,subs=quotes]
 ----
-~/name/ $ [underline]#./name#
+~/workspace/name/ $ [underline]#./name#
 name please:
 ----
 
@@ -151,7 +151,7 @@ Before turning in your solution, be sure to test the correctness of your program
 
 [source,bash]
 ----
-check50 cs50/problems/2019/ap/fahrenheit
+check50 cs50/2018/ap/fahrenheit
 ----
 
 === Style
@@ -174,26 +174,30 @@ If you'd like to play with our own implementation of `fahrenheit` in the IDE, yo
 
 == How to Submit
 
-=== Step 1 of 2
+=== Step 1 of 3
 
-Ensure that `fahrenheit.c` is in `~/unit1/fahrenheit`, as with:
+Make sure your IDE is up-to-date by executing `update50`
+
+=== Step 2 of 3
+
+Ensure that `fahrenheit.c` is in `~/workspace/unit1/fahrenheit`, as with:
 
 [source]
 ----
-cd ~/unit1/fahrenheit
+cd ~/workspace/unit1/fahrenheit
 ls
 ----
 
-If `fahrenheit.c` is not in `~/unit1/fahrenheit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `fahrenheit.c` is not in `~/workspace/unit1/fahrenheit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
-=== Step 2 of 2
+=== Step 3 of 3
 
 * To submit `fahrenheit`, execute
 +
 [source]
 ----
-cd ~/unit1/fahrenheit
-submit50 cs50/problems/2019/ap/fahrenheit
+cd ~/workspace/unit1/fahrenheit
+submit50 cs50/2018/ap/fahrenheit
 ----
 +
 

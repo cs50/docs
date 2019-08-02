@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -46,22 +46,31 @@ After all, wouldn't you like to get programming right away, without having to do
 
 === Logging In
 
-Head to http://ide.cs50.io[ide.cs50.io] and log into CS50 IDE. You may be prompted (again) for your GitHub credentials. 
+Head to https://cs50.io/[cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then choose *Harvard's CS50* under *Choose a template*, and click *Create workspace*.
 
-You should eventually see your workspace, which should resemble David's from Week 1. If not, do just email the course's heads to inquire!
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble David's from Week 1. If not, do just email the course's heads to inquire!
 
+=== Updating
 
 Toward the bottom of CS50 IDE's UI is a "terminal window" (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace's files and directories, compile code, run programs, and even install new software. You should find that its "prompt" resembles the below.
 
 [source,text]
 ----
-~/ $
+~/workspace/ $
 ----
 
+Click inside of that terminal window and then type
+
+[source,text]
+----
+update50
+----
+
+followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!).
 
 === Navigating CS50 IDE
 
-Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `unit1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it. Inside `unit1`, add another new folder named `hello`.
+Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/workspace/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `unit1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it. Inside `unit1`, add another new folder named `hello`.
 
 Front and center in the CS50 IDE workspace is a window wherein you'll be able to write your code. Right now, assuming you haven't played around with the tabs, that window is blank.
 
@@ -75,10 +84,10 @@ Okay, with `hello.txt` still open in your workspace, notice that beneath your do
 
 [source]
 ----
-~/ $
+~/workspace/ $
 ----
 
-(where `~/`—i.e., inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be both a `unit1` and a `hello` directory somewhere inside, since we created them just a few moments ago. Let's confirm as much.
+(where `~/workspace/`—i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be both a `unit1` and a `hello` directory somewhere inside, since we created them just a few moments ago. Let's confirm as much.
 
 Click somewhere inside of that terminal window and type
 
@@ -98,14 +107,14 @@ or even
 
 [source]
 ----
-cd ~/unit1/
+cd ~/workspace/unit1/
 ----
 
-followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/unit1/` (ergo, `cd`). You should find that your prompt changes to
+followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/workspace/unit1/` (ergo, `cd`). You should find that your prompt changes to
 
 [source]
 ----
-~/unit1/ $
+~/workspace/unit1/ $
 ----
 
 confirming that you are indeed now inside of `~/workspace/unit1/` (i.e., a directory called `unit1` inside of a directory called `workspace` inside of your home directory). Then type
@@ -131,16 +140,16 @@ Let's poke around a bit more. Go ahead and type
 cd
 ----
 
-and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to the `~/` directory by default.
+and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to the `~/workspace/` directory by default.
 
 And indeed, your prompt should now be:
 
 [source]
 ----
-~/ $
+~/workspace/ $
 ----
 
-Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/`.
+Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/workspace/`.
 
 Make sense? If not, no worries; it soon will! It's in this terminal window that you'll soon be compiling your first program! For now, though, close the tab by clicking the small "x" in the tab for `hello.txt` (if you've made additional changes, you'll be asked if you want to save your file before the tab closes).
 
@@ -162,11 +171,11 @@ Notice how CS50 IDE adds "syntax highlighting" (i.e., color) as you type, though
 
 Do be sure that you type this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/unit1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd unit1/hello/` and then Enter.) Your prompt should be:
+When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/unit1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/unit1/hello/` and then Enter.) Your prompt should be:
 
 [source,text]
 ----
-~/unit1/hello/ $
+~/workspace/unit1/hello/ $
 ----
 
 Let's confirm that `hello.c` is indeed where it should be. Type
@@ -255,7 +264,7 @@ hello, world
 
 [source,text]
 ----
-check50 cs50/problems/2019/ap/hello
+check50 cs50/2018/ap/hello
 ----
 
 Assuming your program is correct, you should then see output like
@@ -312,15 +321,15 @@ Visit https://cs50.me/account[cs50.me/account], and follow the link to connect y
 
 === Step 2 of 3
 
-Head back to the https://cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/unit1/hello`, as with:
+Head back to the https://cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/workspace/unit1/hello`, as with:
 
 [source]
 ----
-cd ~/unit1/hello
+cd ~/workspace/unit1/hello
 ls
 ----
 
-If `hello.c` is not in `~/unit1/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `hello.c` is not in `~/workspace/unit1/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 3 of 3
 
@@ -328,8 +337,8 @@ If `hello.c` is not in `~/unit1/hello`, move it into that directory, as via `mv`
 +
 [source]
 ----
-cd ~/unit1/hello
-submit50 cs50/problems/2019/ap/hello
+cd ~/workspace/unit1/hello
+submit50 cs50/2018/ap/hello
 ----
 +
 

@@ -1,9 +1,8 @@
 ---
-layout: 2019/ap
+layout: 2018/fall
 ---
-:skip-front-matter:
 
-= Problem: Recover
+= Recover
 
 == tl;dr
 
@@ -14,44 +13,13 @@ Implement a program that recovers JPEGs from a forensic image, per the below.
 $ [underline]#./recover card.raw#
 ----
 
-include::../../honesty.adoc[]
+== Introduction
 
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
-==  Getting Started
-
-Navigate to your `~/unit4` directory.  For the first time in a while, no big code distro this time, but there is one important file to download. Execute
-
-[source,bash]
-----
-wget https://cdn.cs50.net/ap/2019/problems/recover/recover.zip
-----
-
-This file's somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created `recover` directory. If you list the contents of your directory, you should find one file therein:
-
-[source,bash]
-----
-card.raw
-----
-
-You'll be doing all your work for this problem inside of a new file called `recover.c`. 
+video::vbdDZIDg-r8[youtube]
 
 == Background
 
-In anticipation of this problem, we spent the past several days taking photos of people we know, all of which were saved by my digital camera as JPEGs on a memory card. (Okay, it's possible we actually spent the past several days on Facebook instead.) Unfortunately, we somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." Even though the camera insists that the card is now blank, we're pretty sure that's not quite true. Indeed, we're hoping (er, expecting!) you can write a program that recovers the photos for us!
+In anticipation of this problem, we spent the past several days taking photos of people we know, all of which were saved on a digital camera as JPEGs on a memory card. (Okay, it's possible we actually spent the past several days on Facebook instead.) Unfortunately, we somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." Even though the camera insists that the card is now blank, we're pretty sure that's not quite true. Indeed, we're hoping (er, expecting!) you can write a program that recovers the photos for us!
 
 Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patterns of bytes that can distinguish them from other file formats. Specifically, the first three bytes of JPEGs are
 
@@ -60,7 +28,7 @@ Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patte
 0xff 0xd8 0xff
 ----
 
-from first byte to third byte, left to right. The fourth byte, meanwhile, is either `0xe0`, `0xe1`, `0xe2`, `0xe3`, `0xe4`, `0xe5`, `0xe6`, `0xe7`, `0xe8`, `0xe9`, `0xea`, `0xeb`, `0xec`, `0xed`, `0xee`, of `0xef`. Put another way, the fourth byte's first four bits are `1110`.
+from first byte to third byte, left to right. The fourth byte, meanwhile, is either `0xe0`, `0xe1`, `0xe2`, `0xe3`, `0xe4`, `0xe5`, `0xe6`, `0xe7`, `0xe8`, `0xe9`, `0xea`, `0xeb`, `0xec`, `0xed`, `0xee`, or `0xef`. Put another way, the fourth byte's first four bits are `1110`.
 
 Odds are, if you find this pattern of four bytes on media known to store photos (e.g., my memory card), they demarcate the start of a JPEG. To be fair, you might encounter these patterns on some disk purely by chance, so data recovery isn't an exact science.
 
@@ -71,6 +39,21 @@ The implication of all these details is that you, the investigator, can probably
 Realize, of course, that JPEGs can span contiguous blocks. Otherwise, no JPEG could be larger than 512 B. But the last byte of a JPEG might not fall at the very end of a block. Recall the possibility of slack space. But not to worry. Because this memory card was brand-new when I started snapping photos, odds are it'd been "zeroed" (i.e., filled with 0s) by the manufacturer, in which case any slack space will be filled with 0s. It's okay if those trailing 0s end up in the JPEGs you recover; they should still be viewable.
 
 Now, I only have one memory card, but there are a lot of you! And so I've gone ahead and created a "forensic image" of the card, storing its contents, byte after byte, in a file called `card.raw`. So that you don't waste time iterating over millions of 0s unnecessarily, I've only imaged the first few megabytes of the memory card. But you should ultimately find that the image contains 50 JPEGs.
+
+== Getting Started
+
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
+
+1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
+1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
+1. Execute `mkdir pset3` to make (i.e., create) a directory called `pset3` in your home directory.
+1. Execute `cd pset3` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/2018/fall/psets/3/recover/recover.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip recover.zip` to uncompress that file.
+1. Execute `rm recover.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `recover`, which was inside of that ZIP file.
+1. Execute `cd recover` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution, including `card.raw` and `recover.c`.
 
 == Specification
 
@@ -107,27 +90,29 @@ $ [underline]#echo $?#
 
 == Testing
 
-=== Correctness
+=== `check50`
+
+Here's how to evaluate the correctness of your code using `check50`. But be sure to compile and test it yourself as well!
 
 [source]
 ----
-check50 cs50/problems/2019/ap/recover
+check50 cs50/2018/fall/recover
 ----
 
-=== Style
+=== `style50`
+
+Here's how to evaluate the style of your code using `style50`.
 
 [source]
 ----
 style50 recover.c
 ----
 
-== Staff Solution
+== Staff's Solution
 
 Afraid having the staff's solution would spoil the challenge!
 
 == Hints
-
-Odds are you'll want to start by creating a file called `recover.c` (in the same directory as is `card.raw`). No need for the CS50 Library, but you will want to declare `main` in such a way that it supports command-line arguments. (Remember how?)
 
 Keep in mind that you can open `card.raw` programmatically with `fopen`, as with the below, provided `argv[1]` exists.
 
@@ -154,42 +139,16 @@ rm -f *.jpg
 
 Just be careful with that `-f` switch, as it "forces" deletion without prompting you.
 
+== Fabulous Prize
+
+And now a just-for-fun challenge! You are hereby challenged to find as many of the computer scientists featured in the photos that you just recovered as possible. To prove that you found someone, take a photo of yourself posing (anywhere) with the computer scientist (in such a way that they are aware of the photo and not just in the background). If a photo contains multiple computer scientists, you’re welcome to pose with each of them separately. Upload your photos (i.e., the photos you took, not the ones that you recovered) to a non-private album somewhere that supports bulk downloads (e.g., Dropbox, Google Photos, Imgur, etc.), then email your album’s URL to the course's heads by 11:59pm on Tue 10/16! We'll add your photos to a public gallery (unless you request otherwise).
+
+Whichever section finds and photographs the most computer scientists (and, in the event of a tie, submits first) shall be rewarded with a fabulous prize.
+
 == How to Submit
 
-=== Step 1 of 2
+Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
-Be sure that `recover.c` is in `~/unit4/recover`, as with:
-
-[source]
-----
-cd ~/unit4/recover
-ls
-----
-
-If any file is not in `~/unit4/recover`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
-
-=== Step 2 of 2
-
-Submit `recover`:
-
-[source]
-----
-cd ~/unit4/recover/
-submit50 cs50/problems/2019/ap/recover
-----
-
-inputting your GitHub username and GitHub password as prompted.
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
-
-This was Recover.
-
-== FAQs
-
-=== :( handles lack of forensic image
-
-If you find that when you run `check50` on your `recover.c` file you are not passing this particular check—though you are certain that you are addressing it in your code—make sure that your error message is going to `stderr` (as via `fprintf`), and not simply to `stdout` (as via `printf`).
+```
+submit50 cs50/2018/fall/recover
+```

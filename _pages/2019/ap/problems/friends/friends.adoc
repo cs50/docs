@@ -1,5 +1,5 @@
 ---
-layout: 2019/ap
+layout: 2018/ap
 ---
 :skip-front-matter:
 
@@ -42,25 +42,34 @@ Here's some good news for you right off the bat: you've seen almost everything w
 
 Even better, to ensure everyone is on a level playing field while solving this problem, you'll be downloading some "distribution code" (otherwise known as a "distro"), written by us, and make modifications to it. You're welcome of course to use the code you wrote for a prior problem (if it worked!) and re-work it for this problem, but if you struggled with the problems we'll be reimplementing this time around, know that we will otherwise be supplying you with fully-functional code. All you have to do is change the way that the user inputs data.
 
-Start off by opening up CS50 IDE. Next, navigate to your `unit2` directory, as with
+Start off by opening up CS50 IDE and then type
 
 [source,bash]
 ----
-cd ~/unit2
+update50
 ----
 
-Keep in mind that `~/` denotes your home directory, and `~/unit2` denotes a directory called `unit2` within your home directory. Your prompt should now resemble the below.
+within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
+
+Next, navigate to your `unit2` directory, as with
 
 [source,bash]
 ----
-~/unit2 $
+cd ~/workspace/unit2
+----
+
+Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/unit2` denotes a directory called `unit2` within `~/workspace`. Your prompt should now resemble the below.
+
+[source,bash]
+----
+~/workspace/unit2 $
 ----
 
 To download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`), type:
 
 [source,bash]
 ----
-wget https://cdn.cs50.net/ap/2019/problems/friends/friends.zip
+wget https://cdn.cs50.net/ap/2018/problems/friends/friends.zip
 ----
 
 You should see some output followed by:
@@ -115,11 +124,11 @@ If you happen to see (and are confused by!) `char *` in this and other shorts, k
 
 == Hello, again!
 
-In https://docs.cs50.net/2019/ap/problems/hello/hello.html[Hello] you were asked to write a program that very simply printed the message `hello, world\n` to the screen when run. It's not too much of a leap to extend this program to say hello to a specific person by asking for the user to type a name at the prompt instead, so the program behaves like this.
+In http://docs.cs50.net/2018/ap/problems/hello/hello.html[Hello] you were asked to write a program that very simply printed the message `hello, world\n` to the screen when run. It's not too much of a leap to extend this program to say hello to a specific person by asking for the user to type a name at the prompt instead, so the program behaves like this.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./hello#
+~/workspace/unit2/friends $ [underline]#./hello#
 Your name: [underline]#Zamyla#
 hello, Zamyla
 ----
@@ -128,7 +137,7 @@ In fact, the distro you downloaded contains a file, `hello.c`, with exactly this
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./hello Zamyla#
+~/workspace/unit2/friends $ [underline]#./hello Zamyla#
 hello, Zamyla
 ----
 
@@ -173,7 +182,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/problems/2019/ap/friends/hello
+check50 cs50/2018/ap/friends/hello
 ----
 
 === Style
@@ -194,11 +203,11 @@ If you'd like to play with the staff's own implementation of `hello`, you may ex
 
 == Chill Out
 
-In https://docs.cs50.net/2019/ap/problems/fahrenheit/fahrenheit.html[Fahrenheit] you were asked to write a program that asked the user for a temperature in Celsius (which they provided via `get_float`) and which then printed out the equivalent temperature on the Fahrenheit scale.
+In http://docs.cs50.net/2018/ap/problems/fahrenheit/fahrenheit.html[Fahrenheit] you were asked to write a program that asked the user for a temperature in Celsius (which they provided via `get_float`) and which then printed out the equivalent temperature on the Fahrenheit scale.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./fahrenheit#
+~/workspace/unit2/friends $ [underline]#./fahrenheit#
 C: [underline]#0#
 F: 32.0
 ----
@@ -207,7 +216,7 @@ In `fahrenheit.c` you will find a fully-functioning version of the code you were
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./fahrenheit 0#
+~/workspace/unit2/friends $ [underline]#./fahrenheit 0#
 F: 32.0
 ----
 
@@ -232,7 +241,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/problems/2019/ap/friends/fahrenheit
+check50 cs50/2018/ap/friends/fahrenheit
 ----
 
 === Style
@@ -253,11 +262,11 @@ If you'd like to play with the staff's own implementation of `fahrenheit`, you m
 
 == Makin' Bank
 
-In https://docs.cs50.net/2019/ap/problems/pennies/pennies.html[Pennies] you were asked to write a program that demonstrated the power of exponentiation by showing how much money you would have if a person gave you __x__ pennies on a particular day, and then doubled the amount they gave you every day for a period of __y__ days.
+In http://docs.cs50.net/2018/ap/problems/pennies/pennies.html[Pennies] you were asked to write a program that demonstrated the power of exponentiation by showing how much money you would have if a person gave you __x__ pennies on a particular day, and then doubled the amount they gave you every day for a period of __y__ days.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./pennies#
+~/workspace/unit2/friends $ [underline]#./pennies#
 Days in month: [underline]#31#
 Pennies on first day: [underline]#1#
 $21474836.47
@@ -267,7 +276,7 @@ As you might expect, we'd now like the program to work as follows.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./pennies 31 1#
+~/workspace/unit2/friends $ [underline]#./pennies 31 1#
 $21474836.47
 ----
 
@@ -283,7 +292,7 @@ If you'd like to check the correctness of your program with `check50`, you may e
 
 [source,bash]
 ----
-check50 cs50/problems/2019/ap/friends/pennies
+check50 cs50/2018/ap/friends/pennies
 ----
 
 === Style
@@ -312,15 +321,15 @@ Recall that you were asked to create the files below:
 * `fahrenheit.c`
 * `pennies.c`
 
-Be sure that each of your files is in `~/unit2/friends`, as with:
+Be sure that each of your files is in `~/workspace/unit2/friends`, as with:
 
 [source]
 ----
-cd ~/unit2/friends
+cd ~/workspace/unit2/friends
 ls
 ----
 
-If any file is not in `~/unit2/friends`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/workspace/unit2/friends`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -328,8 +337,8 @@ If any file is not in `~/unit2/friends`, move it into that directory, as via `mv
 +
 [source]
 ----
-cd ~/unit2/friends
-submit50 cs50/problems/2019/ap/friends/hello
+cd ~/workspace/unit2/friends
+submit50 cs50/2018/ap/friends/hello
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -337,8 +346,8 @@ inputting your GitHub username and GitHub password as prompted.
 +
 [source]
 ----
-cd ~/unit2/friends
-submit50 cs50/problems/2019/ap/friends/fahrenheit
+cd ~/workspace/unit2/friends
+submit50 cs50/2018/ap/friends/fahrenheit
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -346,8 +355,8 @@ inputting your GitHub username and GitHub password as prompted.
 +
 [source]
 ----
-cd ~/unit2/friends
-submit50 cs50/problems/2019/ap/friends/pennies
+cd ~/workspace/unit2/friends
+submit50 cs50/2018/ap/friends/pennies
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
