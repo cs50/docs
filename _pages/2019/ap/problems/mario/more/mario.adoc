@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -44,7 +44,7 @@ image:pyramids.png[Super Mario Brothers, width="50%"]
 
 == Specification
 
-* Write, in a file called `mario.c` in your `~/workspace/unit1/mario/` directory, a program that recreates these half-pyramids using hashes (`#`) for blocks.
+* Write, in a file called `mario.c` in your `~/chapter1/mario/` directory, a program that recreates these half-pyramids using hashes (`#`) for blocks.
 * To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramids pictured above happens to be `4`, the width of each half-pyramid `4`, with an a gap of size `2` separating them.)
 * If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
@@ -105,7 +105,7 @@ pass:[####  ####]
 
 [source,text]
 ----
-check50 cs50/2018/ap/mario/more
+check50 cs50/problems/2019/ap/mario/more
 ----
 
 === Style
@@ -119,7 +119,7 @@ style50 mario.c
 
 [source]
 ----
-~cs50/unit1/mario/more
+~cs50/chapter1/mario/more
 ----
 
 == Hints
@@ -130,15 +130,15 @@ Try to establish a relationship between (a) the height the user would like the p
 
 === Step 1 of 2
 
-Ensure that `mario.c` is in `~/workspace/unit1/mario`, as with:
+Ensure that `mario.c` is in `~/chapter1/mario`, as with:
 
 [source]
 ----
-cd ~/workspace/unit1/mario
+cd ~/chapter1/mario
 ls
 ----
 
-If `mario.c` is not in `~/workspace/unit1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `mario.c` is not in `~/chapter1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -146,15 +146,15 @@ If `mario.c` is not in `~/workspace/unit1/mario`, move it into that directory, a
 +
 [source]
 ----
-cd ~/workspace/unit1/mario
-submit50 cs50/2018/ap/mario/more
+cd ~/chapter1/mario
+submit50 cs50/problems/2019/ap/mario/more
 ----
 +
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
+
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
 
 This was Mario.

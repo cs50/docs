@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -76,7 +76,7 @@ So, validating credit card numbers isn't hard, but it does get a bit tedious by 
 
 == Specification
 
-* In `credit.c` in `~workspace/unit1/credit`, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
+* In `credit.c` in `~chapter1/credit`, write a program that prompts the user for a credit card number and then reports (via `printf`) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each's format herein.
 * So that we can automate some tests of your code, we ask that your program's last line of output be `AMEX\n` or `MASTERCARD\n` or `VISA\n` or `INVALID\n`, nothing more, nothing less, and that `main` always return `0`.
 * For simplicity, you may assume that the user's input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
 * Do not assume that the user's input will fit in an `int`! Best to use `get_long` from CS50's library to get users' input. (Why?)
@@ -128,7 +128,7 @@ Google (or perhaps a roommate's wallet) should turn up more. (If your roommate a
 
 [source,text]
 ----
-check50 cs50/2018/ap/credit
+check50 cs50/problems/2019/ap/credit
 ----
 
 === Style
@@ -142,22 +142,22 @@ style50 credit.c
 
 [source]
 ----
-~cs50/unit1/credit
+~cs50/chapter1/credit
 ----
 
 == How to Submit
 
 === Step 1 of 2
 
-Ensure that `credit.c` is in `~/workspace/unit1/credit`, as with:
+Ensure that `credit.c` is in `~/chapter1/credit`, as with:
 
 [source]
 ----
-cd ~/workspace/unit1/credit
+cd ~/chapter1/credit
 ls
 ----
 
-If `credit.c` is not in `~/workspace/unit1/credit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `credit.c` is not in `~/chapter1/credit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -165,16 +165,16 @@ If `credit.c` is not in `~/workspace/unit1/credit`, move it into that directory,
 +
 [source]
 ----
-cd ~/workspace/unit1/credit
-submit50 cs50/2018/ap/credit
+cd ~/chapter1/credit
+submit50 cs50/problems/2019/ap/credit
 ----
 +
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Credit.
 

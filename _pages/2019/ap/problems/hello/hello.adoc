@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -46,7 +46,7 @@ After all, wouldn't you like to get programming right away, without having to do
 
 === Logging In
 
-Head to https://cs50.io/[cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then choose *Harvard's CS50* under *Choose a template*, and click *Create workspace*.
+Head to https://ide.cs50.io/[ide.cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then choose *Harvard's CS50* under *Choose a template*, and click *Create workspace*.
 
 You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble David's from Week 1. If not, do just email the course's heads to inquire!
 
@@ -56,21 +56,12 @@ Toward the bottom of CS50 IDE's UI is a "terminal window" (light blue, by defaul
 
 [source,text]
 ----
-~/workspace/ $
+~/ $
 ----
-
-Click inside of that terminal window and then type
-
-[source,text]
-----
-update50
-----
-
-followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!).
 
 === Navigating CS50 IDE
 
-Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/workspace/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `unit1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it. Inside `unit1`, add another new folder named `hello`.
+Okay, let's create a folder (otherwise known as a *directory*) in which your code for this problem will soon live. On the left side of the screen you should see a file tree listing the current contents of your CS50 IDE workspace (right now it should simply be a folder entitled `~/`). Right-click in the blank space underneath that folder and select *New Folder* near the bottom of the context menu that pops up. This should create, as expected, a new folder for you entitled *New Folder* which you can rename now to `chapter1`. If you accidentally leave it named `New Folder`, simply right click on the folder, choose *Rename* from the context menu, and rename it. Inside `chapter1`, add another new folder named `hello`.
 
 Front and center in the CS50 IDE workspace is a window wherein you'll be able to write your code. Right now, assuming you haven't played around with the tabs, that window is blank.
 
@@ -84,10 +75,10 @@ Okay, with `hello.txt` still open in your workspace, notice that beneath your do
 
 [source]
 ----
-~/workspace/ $
+~/ $
 ----
 
-(where `~/workspace/`—i.e., inside a folder called `workspace` which is itself inside your home directory, the shorthand for which is `~`—is the directory you are currently in.) If that's the case, based on the file tree should be both a `unit1` and a `hello` directory somewhere inside, since we created them just a few moments ago. Let's confirm as much.
+(where `~/`—i.e., your home directory—is the directory you are currently in.) If that's the case, based on the file tree should be both a `chapter1` and a `hello` directory somewhere inside, since we created them just a few moments ago. Let's confirm as much.
 
 Click somewhere inside of that terminal window and type
 
@@ -96,28 +87,28 @@ Click somewhere inside of that terminal window and type
 ls
 ----
 
-and then Enter. That's a lowercase `L` and a lowercase `S`, which is shorthand notation for "list." Indeed, you should then see a list of the folders inside of your workspace directory, among which is `unit1`! Let's open that folder! Type
+and then Enter. That's a lowercase `L` and a lowercase `S`, which is shorthand notation for "list." Indeed, you should then see a list of the folders inside of your home directory, among which is `chapter1`! Let's open that folder! Type
 
 [source]
 ----
-cd unit1
+cd chapter1
 ----
 
 or even
 
 [source]
 ----
-cd ~/workspace/unit1/
+cd ~/chapter1/
 ----
 
-followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/workspace/unit1/` (ergo, `cd`). You should find that your prompt changes to
+followed by Enter to [underline]##c##hange your [underline]##d##irectory to `~/chapter1/` (ergo, `cd`). You should find that your prompt changes to
 
 [source]
 ----
-~/workspace/unit1/ $
+~/chapter1/ $
 ----
 
-confirming that you are indeed now inside of `~/workspace/unit1/` (i.e., a directory called `unit1` inside of a directory called `workspace` inside of your home directory). Then type
+confirming that you are indeed now inside of `~/chapter1/` (i.e., a directory called `chapter1` inside of your home directory). Then type
 
 [source]
 ----
@@ -140,16 +131,16 @@ Let's poke around a bit more. Go ahead and type
 cd
 ----
 
-and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to the `~/workspace/` directory by default.
+and then Enter. It turns out that if you don't provide `cd` with a "command-line argument" (i.e., a directory's name), it whisks you back to the `~/` directory by default.
 
 And indeed, your prompt should now be:
 
 [source]
 ----
-~/workspace/ $
+~/ $
 ----
 
-Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/workspace/`.
+Phew, home sweet home. Remember that everything we create in the CS50 IDE will ultimately live inside of `~/`.
 
 Make sense? If not, no worries; it soon will! It's in this terminal window that you'll soon be compiling your first program! For now, though, close the tab by clicking the small "x" in the tab for `hello.txt` (if you've made additional changes, you'll be asked if you want to save your file before the tab closes).
 
@@ -171,11 +162,11 @@ Notice how CS50 IDE adds "syntax highlighting" (i.e., color) as you type, though
 
 Do be sure that you type this program just right, else you're about to experience your first bug! In particular, capitalization matters, so don't accidentally capitalize words (unless they're between those two quotes). And don't overlook that one semicolon. C is quite nitpicky!
 
-When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/workspace/unit1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd workspace/unit1/hello/` and then Enter.) Your prompt should be:
+When done typing, select *File > Save* (or hit command- or control-s), but don't quit. Recall that the red dot atop the tab should then disappear. Click anywhere in the terminal window beneath your code, and be sure that you're inside of `~/chapter1/hello`. (Remember how? If not, type `cd` and then Enter, followed by `cd chapter1/hello/` and then Enter.) Your prompt should be:
 
 [source,text]
 ----
-~/workspace/unit1/hello/ $
+~/chapter1/hello/ $
 ----
 
 Let's confirm that `hello.c` is indeed where it should be. Type
@@ -224,7 +215,7 @@ If, though, upon running `make`, you instead see some error(s), it's time to deb
 make hello
 ----
 
-at your prompt, followed by Enter. (Just be sure that you are inside of `~/workspace/unit1/hello/` within your terminal window, as your prompt will confirm or deny.) If still seeing errors, try "prepending" `help50` to your command like this:
+at your prompt, followed by Enter. (Just be sure that you are inside of `~/chapter1/hello/` within your terminal window, as your prompt will confirm or deny.) If still seeing errors, try "prepending" `help50` to your command like this:
 
 [source,text]
 ----
@@ -264,7 +255,7 @@ hello, world
 
 [source,text]
 ----
-check50 cs50/2018/ap/hello
+check50 cs50/problems/2019/ap/hello
 ----
 
 Assuming your program is correct, you should then see output like
@@ -310,43 +301,43 @@ Know that `check50` won't actually record your scores in CS50's gradebook. Rathe
 
 [source]
 ----
-~cs50/unit1/hello
+~cs50/chapter1/hello
 ----
 
 == How to Submit
 
 === Step 1 of 3
 
-Visit https://cs50.me/account[cs50.me/account], and follow the link to connect your edX account to your GitHub account.
-
-=== Step 2 of 3
-
-Head back to the https://cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/workspace/unit1/hello`, as with:
+Head to the https://ide.cs50.io[CS50 IDE] and ensure that `hello.c` is in `~/chapter1/hello`, as with:
 
 [source]
 ----
-cd ~/workspace/unit1/hello
+cd ~/chapter1/hello
 ls
 ----
 
-If `hello.c` is not in `~/workspace/unit1/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `hello.c` is not in `~/chapter1/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 3
+
+Visit https://submit.cs50.io[submit.cs50.io], and login with your GitHub credentials. Then, head over to the email account you used to sign up for GitHub and accept the invitation link.
 
 === Step 3 of 3
 
-* To submit `hello`, execute
+Then, head back to the https://ide.cs50.io[CS50 IDE] to submit `hello`, as with:
 +
 [source]
 ----
-cd ~/workspace/unit1/hello
-submit50 cs50/2018/ap/hello
+cd ~/chapter1/hello
+submit50 cs50/problems/2019/ap/hello
 ----
 +
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 == Hints
 
