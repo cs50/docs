@@ -31,6 +31,6 @@ Submit a short video (that's no more than 2 minutes in length) in which you pres
 
 When ready to submit your video, submit https://forms.cs50.net/2019/x/project[this form]!
 
-That's it!  Your project should be graded within a few minutes.  If you don't see any results in [your gradebook](https://cs50.me/gradebook), best to resubmit (running the above `submit50` command) with only your `README.md` file this time.  No need to resubmit your form.
+That's it!  Your project should be graded within a few minutes.  If you don't see any results in https://cs50.me/cs50x[your gradebook], best to resubmit (running the above `submit50` command) with only your `README.md` file this time.  No need to resubmit your form.
 
 This was CS50x!
