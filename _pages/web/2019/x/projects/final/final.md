@@ -35,7 +35,7 @@ you!
 
 ## How to Submit
 
-1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2019/x/final` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
+1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2019/x/final` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
    ```
    submit50 web50/projects/2019/x/final
