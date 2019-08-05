@@ -30,7 +30,7 @@ are still quite bite-sized and manageable and will mainly be a recap of what we'
 leading up to this point :) For a refresher on LÖVE2D, as well as some helpful links for getting started, do just
 visit the following:
 
-[https://love2d.org/](https://love2d.org/)  
+[https://love2d.org/](https://love2d.org/)
 
 [https://love2d.org/wiki/Getting_Started](https://love2d.org/wiki/Getting_Started)
 
@@ -58,6 +58,7 @@ cap it off, display a pause icon in the middle of the screen, nice and large, so
 
 ## How to Submit
 
+1. If you haven't done so already, visit [submit.cs50.io](https://submit.cs50.io/), log in with your GitHub account, and click **Authorize cs50**.
 1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `games50/assignments/2019/x/1` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
    ```
