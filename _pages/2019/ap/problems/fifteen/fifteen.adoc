@@ -48,7 +48,7 @@ video::VtkMZjvvKaU[youtube]
 
 == Getting Started
 
-Recall that, for almost all of Unit 1 and 2, you started writing programs from scratch, creating your own `unit1` and `unit2` directories with `mkdir`. For this problem, you'll instead download some "distribution code" (otherwise known as a "distro"), written by us, and add your own lines of code to it.  You'll first need to read and understand our code, though, so this problem set is as much about learning to read someone else's code as it is about writing your own!
+Recall that, for almost all of Chapter 1 and 2, you started writing programs from scratch, creating your own `chapter1` and `chapter2` directories with `mkdir`. For this problem, you'll instead download some "distribution code" (otherwise known as a "distro"), written by us, and add your own lines of code to it.  You'll first need to read and understand our code, though, so this problem set is as much about learning to read someone else's code as it is about writing your own!
 
 Let's get you started. Log into https://ide.cs50.io/[ide.cs50.io]
 
@@ -56,10 +56,10 @@ Next, execute
 
 [source,bash]
 ----
-cd ~/unit3
+cd ~/chapter3
 ----
 
-at your prompt to ensure that you're inside of `unit3` then execute
+at your prompt to ensure that you're inside of `chapter3` (which is inside of your home directory). Then execute
 
 [source,bash]
 ----
@@ -195,11 +195,11 @@ You're welcome to write your own functions and even change the prototypes of fun
 
 == Testing
 
-To test your implementation of `fifteen`, you can certainly try playing it. (Know that you can force your program to quit by hitting ctrl-c.) Be sure that you (and we) cannot crash your program, as by providing bogus tile numbers. And know that, much like you automated input into `find`, so can you automate execution of this game. In fact, in `~cs50/unit3` are `3x3.txt` and `4x4.txt`, winning sequences of moves for a 3 × 3 board and a 4 × 4 board, respectively. To test your program with, say, the first of those inputs, execute the below.
+To test your implementation of `fifteen`, you can certainly try playing it. (Know that you can force your program to quit by hitting ctrl-c.) Be sure that you (and we) cannot crash your program, as by providing bogus tile numbers. And know that, much like you automated input into `find`, so can you automate execution of this game. In fact, in `~cs50/chapter3` are `3x3.txt` and `4x4.txt`, winning sequences of moves for a 3 × 3 board and a 4 × 4 board, respectively. To test your program with, say, the first of those inputs, execute the below.
 
 [source]
 ----
-./fifteen 3 < ~cs50/unit3/3x3.txt
+./fifteen 3 < ~cs50/chapter3/3x3.txt
 ----
 
 === Correctness
@@ -222,7 +222,7 @@ style50 fifteen.c
 
 [source]
 ----
-~cs50/unit3/fifteen
+~cs50/chapter3/fifteen
 ----
 
 == How to Submit
@@ -235,15 +235,15 @@ Ensure you have all of the files below:
 * Makefile
 * questions.txt
 
-Be sure that each of your files are in `~/unit3/fifteen`, as with:
+Be sure that each of your files are in `~/chapter3/fifteen`, as with:
 
 [source]
 ----
-cd ~/unit3/fifteen
+cd ~/chapter3/fifteen
 ls
 ----
 
-If any file is not in `~/unit3/fifteen`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/chapter3/fifteen`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -251,7 +251,7 @@ Submit `fifteen`:
 
 [source]
 ----
-cd ~/unit3/fifteen/
+cd ~/chapter3/fifteen/
 submit50 cs50/problems/2019/ap/fifteen
 ----
 
@@ -260,7 +260,7 @@ inputting your GitHub username and GitHub password as prompted.
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Fifteen.
