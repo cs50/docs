@@ -35,9 +35,9 @@ To get started, follow the directions in your project README.
 
 ## How to Submit
 
-1. Visit [cs50.me](https://cs50.me/), log in with your GitHub account, and click **Authorize submit50**. You should receive two emails from GitHub inviting you to join CS50’s "organizations" on GitHub. Click the button in those emails to accept both of the invitations.
+1. Visit [submit.cs50.io](https://submit.cs50.io/), log in with your GitHub account, and click **Authorize cs50**.
 1. [Install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
-1. Using Git, push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `mobile50/projects/2019/x/0` or, if you've installed `submit50`, execute
+1. Using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `mobile50/projects/2019/x/0` or, if you've installed `submit50`, execute
 
    ```
    submit50 mobile50/projects/2019/x/0

@@ -20,7 +20,8 @@ It's time to begin the course's culmination: your final project! While most of t
 
 ## How to Submit
 
-1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `games50/assignments/2019/x/final` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
+1. If you haven't done so already, visit [submit.cs50.io](https://submit.cs50.io/), log in with your GitHub account, and click **Authorize cs50**.
+1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `games50/assignments/2019/x/final` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
    ```
    submit50 games50/assignments/2019/x/final
