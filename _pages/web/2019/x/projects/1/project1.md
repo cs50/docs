@@ -224,7 +224,7 @@ Make sure that you've set your `DATABASE_URL` environment variable before runnin
 
 ## How to Submit
 
-1. If you haven't done so already, visit [submit.cs50.io](https://submit.cs50.io/), log in with your GitHub account, and click **Authorize cs50**.
+1. If you haven't already done so, visit [this link](https://submit.cs50.io/invites/89679428401548238ceb022f141b9947), log in with your GitHub account, and click **Authorize cs50**. Then, check the box indicating that you'd like to grant course staff access to your submissions, and click **Join course**.
 1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2019/x/1` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
    ```
@@ -234,3 +234,5 @@ Make sure that you've set your `DATABASE_URL` environment variable before runnin
    instead.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
 1. [Submit this form](https://forms.cs50.io/a8a742ce-32c4-4064-b450-3518de633fec).
+
+You can then go to [https://cs50.me/cs50w](https://cs50.me/cs50w) to view your progress!
