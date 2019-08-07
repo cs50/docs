@@ -72,6 +72,20 @@ Realize, of course, that JPEGs can span contiguous blocks. Otherwise, no JPEG co
 
 Now, I only have one memory card, but there are a lot of you! And so I've gone ahead and created a "forensic image" of the card, storing its contents, byte after byte, in a file called `card.raw`. So that you don't waste time iterating over millions of 0s unnecessarily, I've only imaged the first few megabytes of the memory card. But you should ultimately find that the image contains 50 JPEGs.
 
+== Getting Started
+
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
+
+1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory, aka `~`).
+1. Execute `mkdir chapter3` to make (i.e., create) a directory called `chapter3` in your home directory.
+1. Execute `cd chapter3` to change into (i.e., open) that directory.
+1. Execute `wget https://cdn.cs50.net/ap/2019/problems/recover/recover.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip recover.zip` to uncompress that file.
+1. Execute `rm recover.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `recover`, which was inside of that ZIP file.
+1. Execute `cd recover` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution, including `card.raw` and `recover.c`.
+
 == Specification
 
 Implement a program called `recover` that recovers JPEGs from a forensic image.
@@ -136,7 +150,7 @@ Keep in mind that you can open `card.raw` programmatically with `fopen`, as with
 FILE *file = fopen(argv[1], "r");
 ----
 
-When executed, your program should recover every one of the JPEGs from `card.raw`, storing each as a separate file in your current working directory. Your program should number the files it outputs by naming each `pass:[###].jpg`, where `pass:[###]` is three-digit decimal number from `000` on up. (Befriend https://reference.cs50.net/stdio/sprintf[`sprintf`].) You need not try to recover the JPEGs' original names. To check whether the JPEGs your program spit out are correct, simply double-click and take a look! If each photo appears intact, your operation was likely a success!
+When executed, your program should recover every one of the JPEGs from `card.raw`, storing each as a separate file in your current working directory. Your program should number the files it outputs by naming each `pass:[###].jpg`, where `pass:[###]` is three-digit decimal number from `000` on up. (Befriend https://man.cs50.io/3/sprintf[`sprintf`].) You need not try to recover the JPEGs' original names. To check whether the JPEGs your program spit out are correct, simply double-click and take a look! If each photo appears intact, your operation was likely a success!
 
 Odds are, though, the JPEGs that the first draft of your code spits out won't be correct. (If you open them up and don't see anything, they're probably not correct!) Execute the command below to delete all JPEGs in your current working directory.
 
@@ -193,3 +207,7 @@ This was Recover.
 === :( handles lack of forensic image
 
 If you find that when you run `check50` on your `recover.c` file you are not passing this particular check—though you are certain that you are addressing it in your code—make sure that your error message is going to `stderr` (as via `fprintf`), and not simply to `stdout` (as via `printf`).
+
+```
+submit50 cs50/problems/2019/ap/recover
+```
