@@ -44,7 +44,7 @@ Now, I only have one memory card, but there are a lot of you! And so I've gone a
 
 == Getting Started
 
-Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
 1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory, aka `~`).
 1. Execute `mkdir chapter3` to make (i.e., create) a directory called `chapter3` in your home directory.
@@ -140,12 +140,6 @@ rm -f *.jpg
 
 Just be careful with that `-f` switch, as it "forces" deletion without prompting you.
 
-== Fabulous Prize
-
-And now a just-for-fun challenge! You are hereby challenged to find as many of the computer scientists featured in the photos that you just recovered as possible. To prove that you found someone, take a photo of yourself posing (anywhere) with the computer scientist (in such a way that they are aware of the photo and not just in the background). If a photo contains multiple computer scientists, you’re welcome to pose with each of them separately. Upload your photos (i.e., the photos you took, not the ones that you recovered) to a non-private album somewhere that supports bulk downloads (e.g., Dropbox, Google Photos, Imgur, etc.), then email your album’s URL to the course's heads by 11:59pm on Tue 10/16! We'll add your photos to a public gallery (unless you request otherwise).
-
-Whichever section finds and photographs the most computer scientists (and, in the event of a tie, submits first) shall be rewarded with a fabulous prize.
-
 == How to Submit
 
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
@@ -160,8 +154,8 @@ inputting your GitHub username and GitHub password as prompted.
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Recover.
 
