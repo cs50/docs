@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -81,7 +81,7 @@ You needn't write more than 200 words for this part of the problem (both write u
 
 === Step 1 of 3
 
-Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2018/ap/ui` and click "Create branch".
+Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2019/ap/ui` and click "Create branch".
 
 === Step 2 of 3
 

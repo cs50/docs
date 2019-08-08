@@ -42,15 +42,15 @@ To obtain a passing grade in this course, all students must ordinarily submit al
 
 == Getting Ready
 
-Have a more in-depth look at debugging techniques from Dan. (Odds are these 23 minutes with Dan will save you hours over the course of the term, since GDB is a far better tool than `printf` in many cases!)
+Have a more in-depth look at debugging techniques from Doug. (Note that `cs50.h` no longer includes `eprintf` but you can achieve the same effect with a `printf` statement that ends with a newline, `\n`).
 
-video::-G_klBQLgdc[youtube]
+video::VtkMZjvvKaU[youtube]
 
 == Getting Started
 
 Recall that, for almost all of Chapter 1 and 2, you started writing programs from scratch, creating your own `chapter1` and `chapter2` directories with `mkdir`. For this problem, you'll instead download some "distribution code" (otherwise known as a "distro"), written by us, and add your own lines of code to it.  You'll first need to read and understand our code, though, so this problem set is as much about learning to read someone else's code as it is about writing your own!
 
-Let's get you started. Log into https://cs50.io/[cs50.io]
+Let's get you started. Log into https://ide.cs50.io/[ide.cs50.io]
 
 Next, execute
 
@@ -66,7 +66,7 @@ at your prompt to ensure that you're inside of `chapter3` (which is inside of yo
 wget https://cdn.cs50.net/ap/2019/problems/fifteen/fifteen.zip
 ----
 
-to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see a bunch of output followed by:
+to download a ZIP of this problem's distro into your `unit3` directory (with a command-line program called `wget`). You should see a bunch of output followed by:
 
 [source,bash]
 ----

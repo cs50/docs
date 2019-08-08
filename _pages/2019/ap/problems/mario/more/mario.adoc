@@ -44,11 +44,10 @@ image:pyramids.png[Super Mario Brothers, width="50%"]
 
 == Specification
 
-* Write, in a file called `mario.c` in your `~/chapter1/mario/` directory, a program that recreates these half-pyramids using hashes (`#`) for blocks.
-* To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramids pictured above happens to be `4`, the width of each half-pyramid `4`, with an a gap of size `2` separating them.)
-* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
+* Write, in a file called `mario.c` in your `~/unit1/mario/` directory, a program that recreates these half-pyramids using hashes (`#`) for blocks.
+* The program we'll write will be called `mario`. And let's allow the user to decide just how tall the pyramids should be by first prompting them for a positive integer between, say, 1 and 8, inclusive. 
+* If the user doesn't, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate.
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
-* Take care to left-align the bottom-left corner of the left-hand half-pyramid with the left-hand edge of your terminal window.
 
 == Walkthrough
 
@@ -99,6 +98,19 @@ Height: [underline]#4#
 pass:[####  ####]
 ----
 
+Notice that width of the "gap" between adjacent pyramids is equal to the width of two hashes, irrespective of the pyramids' heights.
+
+Modify `mario.c` in such a way that it implements this program as described!
+
+== How to Test Your Code
+
+* -1 (or other negative numbers)?
+* 0?
+* 1 through 8?
+* 9 or other positive numbers?
+* letters or words?
+* no input at all, when you only hit Enter?
+
 == Testing
 
 === Correctness
@@ -119,7 +131,7 @@ style50 mario.c
 
 [source]
 ----
-~cs50/chapter1/mario/more
+~cs50/unit1/mario/more
 ----
 
 == Hints
@@ -130,15 +142,15 @@ Try to establish a relationship between (a) the height the user would like the p
 
 === Step 1 of 2
 
-Ensure that `mario.c` is in `~/chapter1/mario`, as with:
+Ensure that `mario.c` is in `~/unit1/mario`, as with:
 
 [source]
 ----
-cd ~/chapter1/mario
+cd ~/unit1/mario
 ls
 ----
 
-If `mario.c` is not in `~/chapter1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `mario.c` is not in `~/unit1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -146,7 +158,7 @@ If `mario.c` is not in `~/chapter1/mario`, move it into that directory, as via `
 +
 [source]
 ----
-cd ~/chapter1/mario
+cd ~/unit1/mario
 submit50 cs50/problems/2019/ap/mario/more
 ----
 +
@@ -154,7 +166,7 @@ submit50 cs50/problems/2019/ap/mario/more
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-
+   
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
 
 This was Mario.

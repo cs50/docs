@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -50,27 +50,20 @@ Be sure you're reasonably comfortable answering the below questions before movin
 * What's a function?
 * Why bother writing functions when you can just copy and paste code as needed?
 
-Log into your CS50 IDE workspace and execute
-
-[source,bash]
-----
-update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
+Log into your CS50 IDE workspace, if you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
 
 Now execute
 
 [source,bash]
 ----
-cd ~/workspace/unit2
+cd ~/unit2
 ----
 
 to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
 
 [source,bash]
 ----
-~/workspace/unit2 $
+~/unit2 $
 ----
 
 Make a new `caesar` directory inside of `unit2`. You're now ready to go!
@@ -160,7 +153,7 @@ Usage: ./caesar k
 
 [source]
 ----
-check50 cs50/2018/ap/caesar
+check50 cs50/problems/2019/ap/caesar
 ----
 
 === Style
@@ -225,33 +218,29 @@ Incidentally, you'll need to `#include` yet another header file in order to use 
 
 Besides `atoi`, you might find some handy functions documented at https://reference.cs50.net/[reference.cs50.net] under *ctype.h* and *stdlib.h*. For instance, `isalpha` might prove helpful when iterating over plaintext's characters.
 
-And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out http://asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
+And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out https://www.asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
+=== Step 1 of 2
 
 * Recall that you were asked to implement the `caesar`. 
-** Be sure that `caesar.c` is in `~/workspace/unit2/caesar/`, as with:
+** Be sure that `caesar.c` is in `~/unit2/caesar/`, as with:
 +
 [source]
 ----
-cd ~/workspace/unit2/caesar/
+cd ~/unit2/caesar/
 ls
 ----
 
-=== Step 3 of 3
+=== Step 2 of 2
 
 * To submit `caesar`, execute:
 +
 [source]
 ----
-cd ~/workspace/unit2/caesar/
-submit50 cs50/2018/ap/caesar
+cd ~/unit2/caesar/
+submit50 cs50/problems/2019/ap/caesar
 ----
  
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!

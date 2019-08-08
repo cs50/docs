@@ -13,17 +13,17 @@ Implement a program that prints out a half-pyramid of a specified height, per th
 ----
 $ [underline]#./mario#
 Height: [underline]#5#
-    pass:[##]
-   pass:[###]
-  pass:[####]
- pass:[#####]
-pass:[######]
+    pass:[#]
+   pass:[##]
+  pass:[###]
+ pass:[####]
+pass:[#####]
 
 $ [underline]#./mario#
 Height: [underline]#3#
-  pass:[##]
- pass:[###]
-pass:[####]
+  pass:[#]
+ pass:[##]
+pass:[###]
 ----
 
 include::../../../honesty.adoc[]
@@ -51,60 +51,109 @@ image:pyramid.png[Super Mario Brothers, width="50%"]
 
 == Specification
 
-* Write, in a file called `mario.c` in your `~/chapter1/mario/` directory, a program that recreates this half-pyramid using hashes (`#`) for blocks.
-* To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
-* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
+* Write, in a file called `mario.c` in your `~/unit1/mario/` directory, a program that recreates this half-pyramid using hashes (`#`) for blocks.
+* And let's allow the user to decide just how tall the pyramid should be by first prompting them for a positive integer between, say, 1 and 8, inclusive.
+* If the user doesn't, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate.
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
-* Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
 == Walkthrough
 
 video::EGWRG5e1O2s[youtube]
 
-== Usage
+== Pseudocode
 
-Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Recall how we wrote pseudocode for finding Mike Smith. Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
 
-[source,subs="macros,quotes"]
+There's more than one way to do this, so here's just one!
+
+. Prompt user for height
+. If height is less than 1 or greater than 8 (or not an integer at all), go back one step
+. Iterate from 1 through height:
+.. On iteration i, print i hashes and then a newline
+
+It's okay to edit your own after seeing this pseudocode here, but don't simply copy/paste ours into your own!
+
+== Prompting for Input
+
+Whatever your pseudocode, let's first write only the C code that prompts (and re-prompts, as needed) the user for input.
+
+Specifically, modify `mario.c` at right in such a way that it prompts the user for the pyramid's height, storing their input in a variable, re-prompting the user again and again as needed if their input is not a positive integer between 1 and 8, inclusive. Then, simply print the value of that variable, thereby confirming (for yourself) that you've indeed stored the user's input successfully, a la the below.
+
+[source,subs=quotes]
 ----
-$ [underline]#./mario#
-Height: [underline]#4#
-   pass:[##]
-  pass:[###]
- pass:[####]
+$ ./mario
+Height: -1
+Height: 0
+Height: 42
+Height: 50
+Height: 4
+Stored: 4
+----
+
+* Recall that you can compile your program with `make`.
+* Recall that you can print an `int` with printf using `%i`.
+* Recall that you can get an integer from the user with `get_int`.
+* Recall that `get_int` is declared in `cs50.h`.
+
+== Building the Opposite
+
+Now that your program is (hopefully!) accepting input as prescribed, it's time for another step.
+
+It turns out it's a bit easier to build a left-aligned pyramid than right-, a la the below.
+
+[source, subs="macros,quotes"]
+----
+pass:[#]
+pass:[##]
+pass:[###]
+pass:[####]
 pass:[#####]
+pass:[######]
+pass:[#######]
+pass:[########]
 ----
 
-[source,subs="macros,quotes"]
+So let's build a left-aligned pyramid first and then, once that's working, right-align it instead!
+
+Modify `mario.c` at right such that it no longer simply prints the user's input but instead prints a left-aligned pyramid of that height.
+
+== Right Aligning
+
+Let's now right-align that pyramid by pushing its hashes to the right by prefixing them with dots (i.e., periods), a la the below.
+
+[source, subs="macros,quotes"]
 ----
-$ [underline]#./mario#
-Height: [underline]#0#
+pass:[.......#]
+pass:[......##]
+pass:[.....###]
+pass:[....####]
+pass:[...#####]
+pass:[..######]
+pass:[.#######]
+pass:[########]
 ----
 
-[source,subs="macros,quotes"]
-----
-$ [underline]#./mario#
-Height: [underline]#-5#
-Height: [underline]#4#
-   pass:[##]
-  pass:[###]
- pass:[####]
-pass:[#####]
-----
+Modify `mario.c` in such a way that it does exactly that!
 
-[source,subs="macros,quotes"]
-----
-$ [underline]#./mario#
-Height: [underline]#-5#
-Height: [underline]#five#
-Retry: [underline]#40#
-Height: [underline]#24#
-Height: [underline]#4#
-   pass:[##]
-  pass:[###]
- pass:[####]
-pass:[#####]
-----
+Notice how the number of dots needed on each line is the "opposite" of the number of that line's hashes. For a pyramid of height 8, like the above, the first line has but 1 hash and thus 7 dots. The bottom line, meanwhile, has 8 hashes and thus 0 dots. Via what formula (or arithmetic, really) could you print that many dots?
+
+=== How to Test Your Code
+
+Does your code work as prescribed when you input
+
+* -1 (or other negative numbers)?
+* 0?
+* 1 through 8?
+* 9 or other positive numbers?
+* letters or words?
+* no input at all, when you only hit Enter?
+
+== Remove the Dots
+
+All that remains now is a finishing flourish! Modify `mario.c` in such a way that it prints spaces instead of those dots!
+
+A space is just a press of your space bar, just as a period is just a press of its key! Just remember that `printf` requires that you surround both with double quotes!
+
 
 == Testing
 
@@ -126,7 +175,7 @@ style50 mario.c
 
 [source]
 ----
-~cs50/chapter1/mario/less
+~cs50/unit1/mario/less
 ----
 
 == Hints
@@ -137,15 +186,15 @@ Try to establish a relationship between (a) the height the user would like the p
 
 === Step 1 of 2
 
-Ensure that `mario.c` is in `~/chapter1/mario`, as with:
+Ensure that `mario.c` is in `~/unit1/mario`, as with:
 
 [source]
 ----
-cd ~/chapter1/mario
+cd ~/unit1/mario
 ls
 ----
 
-If `mario.c` is not in `~/chapter1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `mario.c` is not in `~/unit1/mario`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -153,7 +202,7 @@ If `mario.c` is not in `~/chapter1/mario`, move it into that directory, as via `
 +
 [source]
 ----
-cd ~/chapter1/mario
+cd ~/unit1/mario
 submit50 cs50/problems/2019/ap/mario/less
 ----
 +
@@ -161,7 +210,7 @@ submit50 cs50/problems/2019/ap/mario/less
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]
+   
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]
 
 This was Mario.

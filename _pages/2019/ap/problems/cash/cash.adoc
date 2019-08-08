@@ -47,12 +47,24 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 == Specification
 
-* Write, in a file called `cash.c` in `~/chapter1/cash/`, a program that first asks the user how much change is owed and then spits out the minimum number of coins with which said change can be made.
+Implement, in `cash.c` in `~/unit1/cash/`, a program that first asks the user how much change is owed and then prints the minimum number of coins with which that change can be made.
+
 * Use `get_float` from the CS50 Library to get the user's input and `printf` from the Standard I/O library to output your answer. Assume that the only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
 ** We ask that you use `get_float` so that you can handle dollars and cents, albeit sans dollar sign. In other words, if some customer is owed $9.75 (as in the case where a newspaper costs 25¢ but the customer pays with a $10 bill), assume that your program's input will be `9.75` and not `$9.75` or `975`. However, if some customer is owed $9 exactly, assume that your program's input will be `9.00` or just `9` but, again, not `$9` or `900`. Of course, by nature of floating-point values, your program will likely work with inputs like `9.0` and `9.000` as well; you need not worry about checking whether the user's input is "formatted" like money should be.
 * You need not try to check whether a user's input is too large to fit in a `float`. Using `get_float` alone will ensure that the user's input is indeed a floating-point (or integral) value but not that it is non-negative.
 * If the user fails to provide a non-negative value, your program should re-prompt the user for a valid amount again and again until the user complies.
 * Incidentally, so that we can automate some tests of your code, we ask that your program's last line of output be only the minimum number of coins possible: an integer followed by `\n`.
+* Beware the inherent imprecision of floating-point values. Recall, in C, if `x` is `2`, and `y` is `10`, `x / y` is not precisely two tenths! And so, before making change, you'll probably want to convert the user's inputted dollars to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up!
+* Take care to round your cents to the nearest penny, as with `round`, which is declared in `math.h`. For instance, if `dollars` is a `float` with the user's input (e.g., `0.20`), then code like
+
+
+[source,subs=quotes]
+----
+int coins = round(dollars * 100);
+----
+
+will safely convert `0.20` (or even `0.200000002980232238769531250`) to `20`.
+
 
 == Walkthrough
 
@@ -72,7 +84,6 @@ Change owed: [underline]#0.41#
 [source,subs=quotes]
 ----
 $ [underline]#./cash#
-Change owed: [underline]#-0.41#
 Change owed: [underline]#-0.41#
 Change owed: [underline]#foo#
 Change owed: [underline]#0.41#
@@ -99,12 +110,12 @@ style50 cash.c
 
 [source]
 ----
-~cs50/chapter1/cash
+~cs50/unit1/cash
 ----
 
 == Hints
 
-* Per the final bullet point of the Specification, above, don't forget to put a newline character at the end of your printout!
+* Per the specification, above, don't forget to put a newline character at the end of your printout!
 * Do beware the inherent imprecision of floating-point values. For instance, `0.1` cannot be represented exactly as a `float`. Try printing its value to, say, `55` decimal places, with code like the below:
 +
 [source,c]
@@ -114,21 +125,21 @@ printf("%.55f\n", f);
 ----
 +
 And so, before making change, you'll probably want to convert the user's input entirely to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up! Of course, don't just cast the user's input from a `float` to an `int`! After all, how many cents does one dollar equal?
-* And take care to https://man.cs50.io/3/round[round] your cents (to the nearest penny); don't "truncate" (i.e., floor) your cents!
+* And take care to https://reference.cs50.net/math.h/round[round] your cents (to the nearest penny); don't "truncate" (i.e., floor) your cents!
 
 == How to Submit
 
 === Step 1 of 2
 
-Ensure that `cash.c` is in `~/chapter1/cash`, as with:
+Ensure that `cash.c` is in `~/unit1/cash`, as with:
 
 [source]
 ----
-cd ~/chapter1/cash
+cd ~/unit1/cash
 ls
 ----
 
-If `cash.c` is not in `~/chapter1/cash`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `cash.c` is not in `~/unit1/cash`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 
 === Step 2 of 2
@@ -137,7 +148,7 @@ If `cash.c` is not in `~/chapter1/cash`, move it into that directory, as via `mv
 +
 [source]
 ----
-cd ~/chapter1/cash
+cd ~/unit1/cash
 submit50 cs50/problems/2019/ap/cash
 ----
 +
@@ -146,7 +157,7 @@ inputting your GitHub username and GitHub password as prompted.
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
 
 This was Cash.

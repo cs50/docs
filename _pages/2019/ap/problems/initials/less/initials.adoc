@@ -1,0 +1,182 @@
+---
+layout: 2019/ap
+---
+:skip-front-matter:
+
+= Problem: Initials
+
+== tl;dr
+
+Implement a program that, given a person's name, prints a person's initials, per the below.
+
+[source]
+----
+$ ./initials
+Regulus Arcturus Black
+RAB
+----
+
+include::../../../honesty.adoc[]
+
+== Assessment
+
+Your work on this problem set will be evaluated along three axes primarily.
+
+Correctness::
+  To what extent is your code consistent with our specifications and free of bugs?
+
+Design::
+  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
+
+Style::
+  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
+
+To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
+
+== Getting Ready
+
+First, curl up with the below short on loops...
+
+video::HHmiHx7GGLE[youtube]
+
+Next, take a self-paced tour through a few coding examples that are likely to prove quite useful to you as you work on this and some future problems in this unit, the source code for which can be found at http://cdn.cs50.net/2015/fall/lectures/2/w/src2w/:
+
+video::BYbuuUntOZ4[youtube,list=PLhQjrBD2T380sc-fXwl1sviA-twxFduVU]
+
+You might also find this short on arrays of interest as well!
+
+video::7mOJN1c1JEo[youtube]
+
+== Getting Started
+
+Alright, here we go!
+
+Log into your CS50 IDE and execute within a terminal window create a new `unit2` directory. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
+
+[source,bash]
+----
+~/ $ mkdir unit2
+----
+
+Keep in mind that `~/` denotes your home directory, and `~/unit2` denotes a directory called `unit2` within your home directory. After `cd`-ing into `unit2` (remember how?), your prompt should resemble the below.
+
+[source,bash]
+----
+~/unit2 $
+----
+
+Inside of `unit2`, create a new `initials` directory, as with
+
+[source,bash]
+----
+~/unit2/ $ mkdir initials
+----
+
+Now `cd` into the initials directory. If your prompt resembles the below, you're all set!
+
+[source,bash]
+----
+~/unit2/initials/ $
+----
+
+If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
+
+[source,bash]
+----
+history
+----
+
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. If still unsure how to fix, remember that the online forums are your friends!
+
+== Specification
+
+Design and implement a program, `initials`, that, given a person's name, prints a person's initials.
+
+* Implement your program in a file called `initials.c` in a directory called `initials`.
+* Your program should prompt a user for their name using `get_string` to obtain their name as a `string`.
+* You may assume that the user's input will contain only letters (uppercase and/or lowercase) plus single spaces between words. You don't need to worry about names like `Joseph Gordon-Levitt`, `Conan O'Brien`, or `David J. Malan`!
+* Your program should print the user's initials (i.e., the first letter of each word in their name) with no spaces or periods, followed by a newline (`\n`).
+
+== Walkthrough
+
+video::UItYCp0Ivqg[youtube]
+
+== Usage
+
+Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#./initials#
+[underline]#Zamyla Chan#
+ZC
+----
+
+[source,subs=quotes]
+----
+$ [underline]#./initials#
+[underline]#robert thomas bowden#
+RTB
+----
+
+== Testing
+
+=== Correctness
+
+[source,text]
+----
+check50 cs50/problems/2019/ap/initials/less
+----
+
+=== Style
+
+[source]
+----
+style50 initials.c
+----
+
+== Staff Solution
+
+[source]
+----
+~cs50/unit2/initials/less
+----
+
+== How to Submit
+
+
+=== Step 1 of 2
+
+* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
+** Be sure that `initials.c` is in `~/unit2/initials/`, as with:
++
+[source]
+----
+cd ~/unit2/initials/
+ls
+----
+
+=== Step 2 of 2
+
+* To submit the less-comfortable version of `initials` (if you implemented it), execute
++
+[source]
+----
+cd ~/unit2/initials/
+submit50 cs50/problems/2019/ap/initials/less
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+ 
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+This was Initials.
+
+== FAQs
+
+Might the user's input start or end with spaces?::
+No, you may assume that the only spaces in the user's input will be single spaces between words. A previous version of this problem's walkthrough incorrectly stated that there might be spaces at the start or end of the user's input, but the video has since been fixed! Apologies for any confusion!
