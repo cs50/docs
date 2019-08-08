@@ -142,13 +142,28 @@ Just be careful with that `-f` switch, as it "forces" deletion without prompting
 
 == How to Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `recover.c` is in `~/chapter3/recover`, as with:
+
+[source]
+----
+cd ~/chapter3/recover
+ls
+----
+
+If `recover.c` is not in `~/chapter3/recover`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `recover`, execute
++
+[source]
+----
+cd ~/chapter3/recover
 submit50 cs50/problems/2019/ap/recover
-
-```
-
+----
++
 inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!

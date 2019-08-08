@@ -205,18 +205,34 @@ within [this sandbox](https://sandbox.cs50.io/aa2c48ff-2520-408a-9951-2b9da09343
 
 == How to Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
-submit50 cs50/problems/2019/ap/resize/less
-```
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `resize.c` is in `~/chapter3/resize`, as with:
 
+[source]
+----
+cd ~/chapter3/resize
+ls
+----
+
+If `resize.c` is not in `~/chapter3/resize`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `resize`, execute
++
+[source]
+----
+cd ~/chapter3/resize
+submit50 cs50/problems/2019/ap/resize
+----
++
 inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Resize.
