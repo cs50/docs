@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -68,7 +68,7 @@ Hopefully those exclamation points make the math more exciting.
 
 So, computing this check digit's not hard, but it does get a bit tedious by hand. Let's write a program.
 
-Create a file called `isbn.c` inside `~/workspace/unit1/isbn`, in which you should write a program that prompts the user for an ISBN-10 and then reports (via `printf`) whether the number's legit. So that we can automate some tests of your code, we ask that your program's last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
+Create a file called `isbn.c` inside `~/chapter1/isbn`, in which you should write a program that prompts the user for an ISBN-10 and then reports (via `printf`) whether the number's legit. So that we can automate some tests of your code, we ask that your program's last line of output be either `YES\n` or `NO\n`, nothing more, nothing less.
 
 For simplicity, you may assume that the user's input will be exactly ten decimal digits (i.e., devoid of hyphens and `X`), the first of which might even be zero(es), as in the case of our recommended book. But do not assume that the user's input will fit in an `int`! Recall, after all, that the largest value that can fit in an `int` is 2^32^ - 1 = 4,294,967,295 (and, even then, only if declared as `unsigned`). True, that's a 10-digit value, but there might still be a problem. (What?) Best to be safe and use `get_long` from CS50's library to get users' input. (Why?)
 
@@ -116,7 +116,7 @@ Consider the below representative of how your own program should behave when pas
 
 [source,subs=quotes]
 ----
-~/workspace/unit1/isbn/ $ [underline]#./isbn#
+~/chapter1/isbn/ $ [underline]#./isbn#
 ISBN: [underline]#0789751984#
 YES
 ----
@@ -125,7 +125,7 @@ Of course, `get_long(“ISBN: “)` itself will reject an ISBN-10's hyphens (and
 
 [source,subs=quotes]
 ----
-~/workspace/unit1/isbn/ $ [underline]#./isbn#
+~/chapter1/isbn/ $ [underline]#./isbn#
 ISBN: [underline]#0-789-75198-4#
 Retry: [underline]#foo#
 Retry: [underline]#0789751984#
@@ -136,7 +136,7 @@ But it's up to you to catch inputs that are not ISBN-10s (e.g., Jenny'sfootnote:
 
 [source,subs=quotes]
 ----
-~/workspace/unit1/isbn/ $ [underline]#./isbn#
+~/chapter1/isbn/ $ [underline]#./isbn#
 ISBN: [underline]#5558675309#
 NO
 ----
@@ -149,7 +149,7 @@ Test out your program with a whole bunch of inputs, both valid and invalid. (We 
 
 [source,bash]
 ----
-check50 cs50/2018/ap/isbn
+check50 cs50/problems/2019/ap/isbn
 ----
 
 === Style
@@ -165,22 +165,22 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 
 [source,bash]
 ----
-~cs50/unit1/isbn
+~cs50/chapter1/isbn
 ----
 
 == How to Submit
 
 === Step 1 of 2
 
-Ensure that `isbn.c` is in `~/workspace/unit1/isbn`, as with:
+Ensure that `isbn.c` is in `~/chapter1/isbn`, as with:
 
 [source]
 ----
-cd ~/workspace/unit1/isbn
+cd ~/chapter1/isbn
 ls
 ----
 
-If `isbn.c` is not in `~/workspace/unit1/isbn`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `isbn.c` is not in `~/chapter1/isbn`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -188,15 +188,15 @@ If `isbn.c` is not in `~/workspace/unit1/isbn`, move it into that directory, as 
 +
 [source]
 ----
-cd ~/workspace/unit1/isbn
-submit50 cs50/2018/ap/isbn
+cd ~/chapter1/isbn
+submit50 cs50/problems/2019/ap/isbn
 ----
 +
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was ISBN.
