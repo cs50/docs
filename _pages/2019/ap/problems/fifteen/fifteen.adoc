@@ -50,7 +50,7 @@ video::-G_klBQLgdc[youtube]
 
 Recall that, for almost all of Chapter 1 and 2, you started writing programs from scratch, creating your own `chapter1` and `chapter2` directories with `mkdir`. For this problem, you'll instead download some "distribution code" (otherwise known as a "distro"), written by us, and add your own lines of code to it.  You'll first need to read and understand our code, though, so this problem set is as much about learning to read someone else's code as it is about writing your own!
 
-Let's get you started. Log into https://cs50.io/[cs50.io]
+Let's get you started. Log into https://ide.cs50.io/[ide.cs50.io]
 
 Next, execute
 
@@ -204,7 +204,7 @@ To test your implementation of `fifteen`, you can certainly try playing it. (Kno
 
 === Correctness
 
-Note that `check50` assumes that your board's blank space is implemented in `board` as `0`; if you've chosen some other value, best to change to `0` for ``check50``'s sake. Also note that `check50` assumes that you're indexing into `board` a la `board[row][column]`, not `board[column][row]`.
+Note that `check50` assumes that you're indexing into `board` a la `board[row][column]`, not `board[column][row]`.
 
 [source]
 ----
