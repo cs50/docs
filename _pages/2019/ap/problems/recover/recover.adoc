@@ -208,6 +208,8 @@ This was Recover.
 
 === :( handles lack of forensic image
 
+If you find that when you run `check50` on your `recover.c` file you are not passing this particular check—though you are certain that you are addressing it in your code—make sure that your error message is going to `stderr` (as via `fprintf`), and not simply to `stdout` (as via `printf`).
+
 ```
 submit50 cs50/problems/2019/ap/recover
 ```
