@@ -1,5 +1,5 @@
 ---
-layout: 2017/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -54,7 +54,7 @@ Now execute
 
 [source,bash]
 ----
-cd ~/workspace/unit2
+cd ~/chapter2
 ----
 
 to move yourself into (i.e., open) that directory. Make a new directory called `vigenere`, and you're good to go!
@@ -131,7 +131,7 @@ To help you test `vigenere`, we've written a program called `devigenere` for you
 
 [source]
 ----
-~cs50/unit2/devigenere k
+~cs50/chapter2/devigenere k
 ----
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
@@ -140,7 +140,7 @@ at your prompt, where `k` is some keyword. Presumably you'll want to paste your 
 
 [source]
 ----
-check50 cs50/2018/ap/vigenere
+check50 cs50/problems/2019/ap/vigenere
 ----
 
 === Style
@@ -154,7 +154,7 @@ style50 vigenere.c
 
 [source]
 ----
-~cs50/unit2/vigenere
+~cs50/chapter2/vigenere
 ----
 
 
@@ -164,36 +164,32 @@ Not sure where to begin? As luck would have it, this program's pretty similar to
 
 == How to Submit
 
-=== Step 1 of 3
-
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
+=== Step 1 of 2
 
 * Recall that you were asked to implement `vigenere`
 
-** Be sure that `vigenere.c` is in `~/workspace/unit2/vigenere/`, as with:
+** Be sure that `vigenere.c` is in `~/chapter2/vigenere/`, as with:
 +
 [source]
 ----
-cd ~/workspace/unit2/vigenere/
+cd ~/chapter2/vigenere/
 ls
 ----
 
-=== Step 3 of 3
+=== Step 2 of 2
 
 * To submit `vigenere`, execute:
 +
 [source]
 ----
-cd ~/workspace/unit2/vigenere/
-submit50 cs50/2018/ap/vigenere
+cd ~/chapter2/vigenere/
+submit50 cs50/problems/2019/ap/vigenere
 ----
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Vigenère.
