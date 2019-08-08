@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -30,18 +30,11 @@ Style::
 
 To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
-== Adding any Updates
+== Getting Started
 
-Start off by opening up CS50 IDE and then type
+Start off by opening up CS50 IDE. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
 
-[source,bash]
-----
-update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
-
-Next, navigate to your `workspace` directory and create a new subdirectory inside of it called `unitA` (Remember how?) Then navigate inside that directory. (Remember how?)
+Next, navigate to your home directory and create a new subdirectory inside of it called `chapterA` (Remember how?) Then navigate inside that directory. (Remember how?)
 
 Finally, take a few minutes to watch Doug's video on stacks.
 
@@ -49,11 +42,11 @@ video::9Tp8wHD66lw[youtube]
 
 == Divide and Conquer, again
 
-In this problem, you will be tasked with implementing a not so simple command-line based calculator program. (Hmm... http://docs.cs50.net/2018/ap/problems/calc/calc.html[that sounds familiar].) Your program will accept inputs like this (wherein underlined text represents user input):
+In this problem, you will be tasked with implementing a not so simple command-line based calculator program. (Hmm... http://docs.cs50.net/2019/ap/problems/calc/calc.html[that sounds familiar].) Your program will accept inputs like this (wherein underlined text represents user input):
 
 [source,subs=quotes]
 ----
-~/workspace/unitA/ $ [underline]#./calc2 + - 3 4 5#
+~/chapterA/ $ [underline]#./calc2 + - 3 4 5#
 4.000000
 ----
 
@@ -61,7 +54,7 @@ or, indeed like this (allowing the user to perform some basic floating-point ari
 
 [source,subs=quotes]
 ----
-username@ide50:~/workspace/unitA/ $ [underline]#./calc2 x - 3.4 5.6 7.9#
+username@ide50:~/chapterA/ $ [underline]#./calc2 x - 3.4 5.6 7.9#
 -17.3799999
 ----
 
