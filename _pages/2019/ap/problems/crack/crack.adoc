@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -56,7 +56,7 @@ zamyla:50cI2vYkF0YU2
 
 Design and implement a program, `crack`, that cracks passwords.
 
-* Implement your program in a file called `crack.c` in a directory called `crack` (inside `unit2`).
+* Implement your program in a file called `crack.c` in a directory called `crack` (inside `chapter2`).
 * Your program should accept a single command-line argument: a hashed password.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
 * Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`.
@@ -115,34 +115,30 @@ In order to declare function `crypt` for use in your solution, you'll want to pu
 #include <crypt.h>
 ----
 
-near the top of your file. 
+near the top of your file.
 
 
 == How to Submit
 
-=== Step 1 of 3
+=== Step 1 of 2
 
-Execute `update50` again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 3
-
-* Recall that you were asked to implement `crack`. 
-** Be sure that all relevant files for this problem are in `~/workspace/unit2/crack/`, as with:
+* Recall that you were asked to implement `crack`.
+** Be sure that all relevant files for this problem are in `~/chapter2/crack/`, as with:
 +
 [source]
 ----
-cd ~/workspace/unit2/crack/
+cd ~/chapter2/crack/
 ls
 ----
 
-=== Step 3 of 3
+=== Step 2 of 2
 
 * To submit `crack`, execute
 +
 [source]
 ----
-cd ~/workspace/unit2/crack/
-submit50 cs50/2018/ap/crack
+cd ~/chapter2/crack/
+submit50 cs50/problems/2019/ap/crack
 ----
 +
 inputting your GitHub username and GitHub password as prompted.
@@ -150,7 +146,7 @@ inputting your GitHub username and GitHub password as prompted.
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Crack.
