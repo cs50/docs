@@ -332,6 +332,7 @@ cd ~/chapter1/hello
 submit50 cs50/problems/2019/ap/hello
 ----
 +
+inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
