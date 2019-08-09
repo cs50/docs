@@ -62,7 +62,7 @@ To run the staff's implementation of `hello`, execute the below.
 
 [source]
 ----
-~cs50/chapter6/hello
+~cs50/chapter1/hello
 ----
 
 == How to Submit

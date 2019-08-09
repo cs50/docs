@@ -186,7 +186,7 @@ style50 helpers.py
 
 [source]
 ----
-~cs50/chapter6/less/compare
+~cs50/chapter7/less/compare
 ----
 
 === Web

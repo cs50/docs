@@ -103,7 +103,7 @@ style50 mario.py
 
 [source]
 ----
-~cs50/chapter6/more/mario
+~cs50/chapter1/more/mario
 ----
 
 == How to Submit

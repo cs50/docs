@@ -72,7 +72,7 @@ style50 cash.py
 
 [source]
 ----
-~cs50/chapter6/cash
+~cs50/chapter1/cash
 ----
 
 == How to Submit

@@ -91,7 +91,7 @@ style50 vigenere.py
 
 [source]
 ----
-~cs50/chapter6/vigenere
+~cs50/chapter2/vigenere
 ----
 
 == How to Submit

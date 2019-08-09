@@ -92,7 +92,7 @@ style50 caesar.py
 
 [source]
 ----
-~cs50/chapter6/caesar
+~cs50/chapter2/caesar
 ----
 
 == How to Submit
