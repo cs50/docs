@@ -1,8 +1,8 @@
 ---
-layout: 2018/fall
+layout: 2019/ap
 ---
 
-= Mario
+= Problem: Mario
 
 == tl;dr
 
@@ -27,9 +27,11 @@ Height: [underline]#3#
 pass:[###]
 ----
 
+include::../../../../honesty.adoc[]
+
 == Specification
 
-* Write, in a file called `mario.py` in `~/workspace/pset6/mario/less/`, a program that recreates this half-pyramid using hashes (`#`) for blocks, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/mario/less/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+* Write, in a file called `mario.py` in `~/chapter6/mario/less/`, a program that recreates this half-pyramid using hashes (`#`) for blocks, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/fall/mario/less/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 * To make things more interesting, first prompt the user for the half-pyramid's height, a positive integer between `1` and `8`, inclusive.
 * If the user fails to provide a positive integer no greater than `8`, you should re-prompt for the same again.
 * Then, generate (with the help of `print` and one or more loops) the desired half-pyramid.
@@ -95,7 +97,7 @@ pass:[####]
 
 [source]
 ----
-check50 cs50/2018/fall/sentimental/mario/less
+check50 cs50/problems/2019/ap/sentimental/mario/less
 ----
 
 === Style
@@ -114,11 +116,35 @@ style50 mario.py
 
 == How to Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
-submit50 cs50/2018/fall/sentimental/mario/less
-```
+Head back to the https://ide.cs50.io[CS50 IDE] and ensure that `mario.py` is in `~/chapter6/mario/less`, as with:
+
+[source]
+----
+cd ~/chapter6/mario/less
+ls
+----
+
+If `mario.py` is not in `~/chapter6/mario/less`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `mario`, execute
++
+[source]
+----
+cd ~/chapter6/mario/less
+submit50 cs50/problems/2019/ap/sentimental/mario/less
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 == Hints
 
