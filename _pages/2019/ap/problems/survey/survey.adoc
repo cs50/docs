@@ -139,8 +139,40 @@ It is reasonable to view its HTML and CSS.
 
 == How to Submit
 
-Execute the below from within your `~/chapter7/survey` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
+Ensure you have all of the files below:
+
+* application.py
+* templates/layout.html
+* templates/form.html
+* templates/error.html
+* static/styles.css
+
+Be sure that each of your files are in `~/chapter7/survey`, as with:
+
+[source]
+----
+cd ~/chapter7/survey
+ls
+----
+
+If any file is not in `~/chapter7/survey`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+To submit `survey`, execute
++
+[source]
+----
+cd ~/chapter7/survey/
 submit50 cs50/problems/2019/ap/survey
-```
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
