@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Recover
 
@@ -16,42 +15,13 @@ $ [underline]#./recover card.raw#
 
 include::../../honesty.adoc[]
 
-== Assessment
+== Introduction
 
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
-==  Getting Started
-
-Navigate to your `~/unit4` directory.  For the first time in a while, no big code distro this time, but there is one important file to download. Execute
-
-[source,bash]
-----
-wget https://cdn.cs50.net/ap/2019/problems/recover/recover.zip
-----
-
-This file's somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created `recover` directory. If you list the contents of your directory, you should find one file therein:
-
-[source,bash]
-----
-card.raw
-----
-
-You'll be doing all your work for this problem inside of a new file called `recover.c`. 
+video::vbdDZIDg-r8[youtube]
 
 == Background
 
-In anticipation of this problem, we spent the past several days taking photos of people we know, all of which were saved by my digital camera as JPEGs on a memory card. (Okay, it's possible we actually spent the past several days on Facebook instead.) Unfortunately, we somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." Even though the camera insists that the card is now blank, we're pretty sure that's not quite true. Indeed, we're hoping (er, expecting!) you can write a program that recovers the photos for us!
+In anticipation of this problem, we spent the past several days taking photos of people we know, all of which were saved on a digital camera as JPEGs on a memory card. (Okay, it's possible we actually spent the past several days on Facebook instead.) Unfortunately, we somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." Even though the camera insists that the card is now blank, we're pretty sure that's not quite true. Indeed, we're hoping (er, expecting!) you can write a program that recovers the photos for us!
 
 Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patterns of bytes that can distinguish them from other file formats. Specifically, the first three bytes of JPEGs are
 
@@ -60,7 +30,7 @@ Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patte
 0xff 0xd8 0xff
 ----
 
-from first byte to third byte, left to right. The fourth byte, meanwhile, is either `0xe0`, `0xe1`, `0xe2`, `0xe3`, `0xe4`, `0xe5`, `0xe6`, `0xe7`, `0xe8`, `0xe9`, `0xea`, `0xeb`, `0xec`, `0xed`, `0xee`, of `0xef`. Put another way, the fourth byte's first four bits are `1110`.
+from first byte to third byte, left to right. The fourth byte, meanwhile, is either `0xe0`, `0xe1`, `0xe2`, `0xe3`, `0xe4`, `0xe5`, `0xe6`, `0xe7`, `0xe8`, `0xe9`, `0xea`, `0xeb`, `0xec`, `0xed`, `0xee`, or `0xef`. Put another way, the fourth byte's first four bits are `1110`.
 
 Odds are, if you find this pattern of four bytes on media known to store photos (e.g., my memory card), they demarcate the start of a JPEG. To be fair, you might encounter these patterns on some disk purely by chance, so data recovery isn't an exact science.
 
@@ -71,6 +41,20 @@ The implication of all these details is that you, the investigator, can probably
 Realize, of course, that JPEGs can span contiguous blocks. Otherwise, no JPEG could be larger than 512 B. But the last byte of a JPEG might not fall at the very end of a block. Recall the possibility of slack space. But not to worry. Because this memory card was brand-new when I started snapping photos, odds are it'd been "zeroed" (i.e., filled with 0s) by the manufacturer, in which case any slack space will be filled with 0s. It's okay if those trailing 0s end up in the JPEGs you recover; they should still be viewable.
 
 Now, I only have one memory card, but there are a lot of you! And so I've gone ahead and created a "forensic image" of the card, storing its contents, byte after byte, in a file called `card.raw`. So that you don't waste time iterating over millions of 0s unnecessarily, I've only imaged the first few megabytes of the memory card. But you should ultimately find that the image contains 50 JPEGs.
+
+== Getting Started
+
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
+
+1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory, aka `~`).
+1. Execute `mkdir chapter3` to make (i.e., create) a directory called `chapter3` in your home directory.
+1. Execute `cd chapter3` to change into (i.e., open) that directory.
+1. Execute `wget https://cdn.cs50.net/ap/2019/problems/recover/recover.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip recover.zip` to uncompress that file.
+1. Execute `rm recover.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `recover`, which was inside of that ZIP file.
+1. Execute `cd recover` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution, including `card.raw` and `recover.c`.
 
 == Specification
 
@@ -107,27 +91,29 @@ $ [underline]#echo $?#
 
 == Testing
 
-=== Correctness
+=== `check50`
+
+Here's how to evaluate the correctness of your code using `check50`. But be sure to compile and test it yourself as well!
 
 [source]
 ----
 check50 cs50/problems/2019/ap/recover
 ----
 
-=== Style
+=== `style50`
+
+Here's how to evaluate the style of your code using `style50`.
 
 [source]
 ----
 style50 recover.c
 ----
 
-== Staff Solution
+== Staff's Solution
 
 Afraid having the staff's solution would spoil the challenge!
 
 == Hints
-
-Odds are you'll want to start by creating a file called `recover.c` (in the same directory as is `card.raw`). No need for the CS50 Library, but you will want to declare `main` in such a way that it supports command-line arguments. (Remember how?)
 
 Keep in mind that you can open `card.raw` programmatically with `fopen`, as with the below, provided `argv[1]` exists.
 
@@ -136,7 +122,7 @@ Keep in mind that you can open `card.raw` programmatically with `fopen`, as with
 FILE *file = fopen(argv[1], "r");
 ----
 
-When executed, your program should recover every one of the JPEGs from `card.raw`, storing each as a separate file in your current working directory. Your program should number the files it outputs by naming each `pass:[###].jpg`, where `pass:[###]` is three-digit decimal number from `000` on up. (Befriend https://reference.cs50.net/stdio/sprintf[`sprintf`].) You need not try to recover the JPEGs' original names. To check whether the JPEGs your program spit out are correct, simply double-click and take a look! If each photo appears intact, your operation was likely a success!
+When executed, your program should recover every one of the JPEGs from `card.raw`, storing each as a separate file in your current working directory. Your program should number the files it outputs by naming each `pass:[###].jpg`, where `pass:[###]` is three-digit decimal number from `000` on up. (Befriend https://man.cs50.io/3/sprintf[`sprintf`].) You need not try to recover the JPEGs' original names. To check whether the JPEGs your program spit out are correct, simply double-click and take a look! If each photo appears intact, your operation was likely a success!
 
 Odds are, though, the JPEGs that the first draft of your code spits out won't be correct. (If you open them up and don't see anything, they're probably not correct!) Execute the command below to delete all JPEGs in your current working directory.
 
@@ -158,33 +144,33 @@ Just be careful with that `-f` switch, as it "forces" deletion without prompting
 
 === Step 1 of 2
 
-Be sure that `recover.c` is in `~/unit4/recover`, as with:
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `recover.c` is in `~/chapter3/recover`, as with:
 
 [source]
 ----
-cd ~/unit4/recover
+cd ~/chapter3/recover
 ls
 ----
 
-If any file is not in `~/unit4/recover`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `recover.c` is not in `~/chapter3/recover`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
-Submit `recover`:
-
+* To submit `recover`, execute
++
 [source]
 ----
-cd ~/unit4/recover/
+cd ~/chapter3/recover
 submit50 cs50/problems/2019/ap/recover
 ----
-
++
 inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Recover.
 

@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Fahrenheit
 
@@ -17,21 +16,6 @@ F: 32.0
 ----
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Turning Up the Heat
 
@@ -58,9 +42,7 @@ Let's do a quick test to make sure things work as expected. Worldwide, the commo
 
 == A Cool Look Back
 
-Log into your CS50 IDE account (remember how?) and be sure before doing anything to run `update50` in your terminal window, waiting until any updates finish processing before moving further. We'll remind you of this as much as possible, but do note that the IDE too will remind you to run that command via a yellow banner atop your workspace when there is a new update available.
-
-If you have it from http://docs.cs50.net/2019/ap/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be in your `unit1/hello/` directory. (If you don't have it, create it now.) The contents should look probably like this:
+Log into your CS50 IDE account (remember how?) and, if you have it from http://docs.cs50.net/2019/ap/problems/hello/hello.html[Hello], take a look at your `hello.c` file, which should be in your `chapter1/hello/` directory. (If you don't have it, create it now.) The contents should look probably like this:
 
 [source,c]
 ----
@@ -98,7 +80,7 @@ What `string` will we print? Well, that'd be `name`! After we specify what we wa
 
 [source,bash,subs=quotes]
 ----
-~/unit1/hello/ $ [underline]#./hello#
+~/chapter1/hello/ $ [underline]#./hello#
 Enter your name: [underline]#Alice#
 Hello, Alice!
 ----
@@ -107,13 +89,13 @@ There's not just `get_string` in `cs50.h` though. There are functions to get use
 
 == Getting Warmer ==
 
-Now, create a file called `fahrenheit.c` (remember how?), ensuring that it is inside of a subdirectory called `fahrenheit` inside of your `unit1` directory, and then double-click on that file in the file tree to the left. You should now have an open window in your text editor with the tab name `fahrenheit.c`, and you're ready to write your first utility program--a program that can be used by others to do something meaningful for them. (Not to knock the value of saying `hello, world`… but we can do so much more!)
+Now, create a file called `fahrenheit.c` (remember how?), ensuring that it is inside of a subdirectory called `fahrenheit` inside of your `chapter1` directory, and then double-click on that file in the file tree to the left. You should now have an open window in your text editor with the tab name `fahrenheit.c`, and you're ready to write your first utility program--a program that can be used by others to do something meaningful for them. (Not to knock the value of saying `hello, world`… but we can do so much more!)
 
 Write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein underlined text represents some user's inputfootnote:[Incidentally, while spelling Fahrenheit correctly is a little tricky, do be careful to do so lest you be told that your program doesn't exist!].
 
 [source,bash,subs=quotes]
 ----
-~/unit1/fahrenheit/ $ [underline]#./fahrenheit#
+~/chapter1/fahrenheit/ $ [underline]#./fahrenheit#
 C: [underline]#100#
 F: 212.0
 ----
@@ -165,26 +147,28 @@ style50 fahrenheit.c
 
 If not, don't worry: it's just time for a little bit of debugging and/or cleaning up your code.
 
-If you'd like to play with our own implementation of `fahrenheit` in the IDE, you may execute the below:
+== Staff Solution
+
+If you'd like to play with the staff's own implementation of `fahrenheit`, you may execute the below.
 
 [source,bash]
 ----
-~cs50/unit1/fahrenheit
+~cs50/chapter1/fahrenheit
 ----
 
 == How to Submit
 
 === Step 1 of 2
 
-Ensure that `fahrenheit.c` is in `~/unit1/fahrenheit`, as with:
+Ensure that `fahrenheit.c` is in `~/chapter1/fahrenheit`, as with:
 
 [source]
 ----
-cd ~/unit1/fahrenheit
+cd ~/chapter1/fahrenheit
 ls
 ----
 
-If `fahrenheit.c` is not in `~/unit1/fahrenheit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `fahrenheit.c` is not in `~/chapter1/fahrenheit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -192,15 +176,16 @@ If `fahrenheit.c` is not in `~/unit1/fahrenheit`, move it into that directory, a
 +
 [source]
 ----
-cd ~/unit1/fahrenheit
+cd ~/chapter1/fahrenheit
 submit50 cs50/problems/2019/ap/fahrenheit
 ----
 +
+inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Fahrenheit.

@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Old Friends
 
@@ -21,39 +20,26 @@ $2684354.55
 
 include::../../honesty.adoc[]
 
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
 == Well-Distributed
 
 Here's some good news for you right off the bat: you've seen almost everything we're going to talk about in this problem once before. We're going to revisit three old programs and rewrite them so that instead of taking input from the user while the program is running, they will instead accept input from the user at the command-line, before the program is even run.
 
 Even better, to ensure everyone is on a level playing field while solving this problem, you'll be downloading some "distribution code" (otherwise known as a "distro"), written by us, and make modifications to it. You're welcome of course to use the code you wrote for a prior problem (if it worked!) and re-work it for this problem, but if you struggled with the problems we'll be reimplementing this time around, know that we will otherwise be supplying you with fully-functional code. All you have to do is change the way that the user inputs data.
 
-Start off by opening up CS50 IDE. Next, navigate to your `unit2` directory, as with
+Start off by opening up CS50 IDE and then type
 
 [source,bash]
 ----
-cd ~/unit2
+cd ~/chapter2
 ----
 
-Keep in mind that `~/` denotes your home directory, and `~/unit2` denotes a directory called `unit2` within your home directory. Your prompt should now resemble the below.
+within a terminal window to navigate to your `chapter2` directory. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
+
+Keep in mind that `~` denotes your home directory, and `~/chapter2` denotes a directory called `chapter2` within your home directory. Your prompt should now resemble the below.
 
 [source,bash]
 ----
-~/unit2 $
+~/chapter2 $
 ----
 
 To download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`), type:
@@ -107,19 +93,19 @@ fahrenheit.c  hello.c  pennies.c
 
 How nice to see them again!
 
-Lastly, have a look at Christopher's short video on command-line arguments. Since we'll be converting all three of the programs listed above to accept command-line arguments (none of them currently do!), this video should come in handy.
+Lastly, have a look at Doug's short video on command-line arguments. Since we'll be converting all three of the programs listed above to accept command-line arguments (none of them currently do!), this video should come in handy.
 
-video::X8PmYwnbLKM[youtube]
+video::AI6Ccfno6Pk[youtube]
 
 If you happen to see (and are confused by!) `char *` in this and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
 == Hello, again!
 
-In https://docs.cs50.net/2019/ap/problems/hello/hello.html[Hello] you were asked to write a program that very simply printed the message `hello, world\n` to the screen when run. It's not too much of a leap to extend this program to say hello to a specific person by asking for the user to type a name at the prompt instead, so the program behaves like this.
+In http://docs.cs50.net/2019/ap/problems/hello/hello.html[Hello] you were asked to write a program that very simply printed the message `hello, world\n` to the screen when run. It's not too much of a leap to extend this program to say hello to a specific person by asking for the user to type a name at the prompt instead, so the program behaves like this.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./hello#
+~/chapter2/friends $ [underline]#./hello#
 Your name: [underline]#Zamyla#
 hello, Zamyla
 ----
@@ -128,7 +114,7 @@ In fact, the distro you downloaded contains a file, `hello.c`, with exactly this
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./hello Zamyla#
+~/chapter2/friends $ [underline]#./hello Zamyla#
 hello, Zamyla
 ----
 
@@ -150,7 +136,7 @@ int main(int argc, string argv[])
 
 we then have access to two special variables that we can use inside of `main`. First is `argc`, which is an integer variable that tells us how many things the user typed in at the command line, and second is `argv`, which is an array of strings representing exactly what the user typed.
 
-Knowing this, and from the information in Christopher's short, can you now modify `hello.c` so that it prints out the name provided at the command line, instead of collecting a `string` from the user after the program has started?
+Knowing this, and from the information in Doug's short, can you now modify `hello.c` so that it prints out the name provided at the command line, instead of collecting a `string` from the user after the program has started?
 
 One more wrinkle. How do you make sure the user in fact did provide you with one (and only one) additional argument, so that you can print it out? Well remember that's what our new friend `argc` can manage for us. If the user doesn't supply a command-line argument, best to terminate the program and have them try again. One way to accomplish this might be to have this near the top of our code:
 
@@ -189,16 +175,16 @@ If you'd like to play with the staff's own implementation of `hello`, you may ex
 
 [source,bash]
 ----
-~cs50/unit2/hello
+~cs50/chapter1/hello
 ----
 
 == Chill Out
 
-In https://docs.cs50.net/2019/ap/problems/fahrenheit/fahrenheit.html[Fahrenheit] you were asked to write a program that asked the user for a temperature in Celsius (which they provided via `get_float`) and which then printed out the equivalent temperature on the Fahrenheit scale.
+In http://docs.cs50.net/2019/ap/problems/fahrenheit/fahrenheit.html[Fahrenheit] you were asked to write a program that asked the user for a temperature in Celsius (which they provided via `get_float`) and which then printed out the equivalent temperature on the Fahrenheit scale.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./fahrenheit#
+~/chapter2/friends $ [underline]#./fahrenheit#
 C: [underline]#0#
 F: 32.0
 ----
@@ -207,13 +193,13 @@ In `fahrenheit.c` you will find a fully-functioning version of the code you were
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./fahrenheit 0#
+~/chapter2/friends $ [underline]#./fahrenheit 0#
 F: 32.0
 ----
 
 There's a catch, though.
 
-Just because the user types a real number at the prompt, that doesn't mean their input will be automatically stored in a `float`. Actually, it will be stored as a `string` that just so happens to look like an `float`; after all, remember the data type of `argv`? It's an array where each element is a `string`!  And so you'll need to convert that `string` to an actual `float`. As luck would have it, a function, https://reference.cs50.net/stdlib.h/atof[`atof`], exists for exactly that purpose! Here's how you might use it:
+Just because the user types a real number at the prompt, that doesn't mean their input will be automatically stored in a `float`. Actually, it will be stored as a `string` that just so happens to look like an `float`; after all, remember the data type of `argv`? It's an array where each element is a `string`!  And so you'll need to convert that `string` to an actual `float`. As luck would have it, a function, https://man.cs50.io/3/atof[`atof`], exists for exactly that purpose! Here's how you might use it:
 
 [source,c]
 ----
@@ -248,16 +234,16 @@ If you'd like to play with the staff's own implementation of `fahrenheit`, you m
 
 [source,bash]
 ----
-~cs50/unit2/fahrenheit
+~cs50/chapter1/fahrenheit
 ----
 
 == Makin' Bank
 
-In https://docs.cs50.net/2019/ap/problems/pennies/pennies.html[Pennies] you were asked to write a program that demonstrated the power of exponentiation by showing how much money you would have if a person gave you __x__ pennies on a particular day, and then doubled the amount they gave you every day for a period of __y__ days.
+In http://docs.cs50.net/2019/ap/problems/pennies/pennies.html[Pennies] you were asked to write a program that demonstrated the power of exponentiation by showing how much money you would have if a person gave you __x__ pennies on a particular day, and then doubled the amount they gave you every day for a period of __y__ days.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./pennies#
+~/chapter2/friends $ [underline]#./pennies#
 Days in month: [underline]#31#
 Pennies on first day: [underline]#1#
 $21474836.47
@@ -267,7 +253,7 @@ As you might expect, we'd now like the program to work as follows.
 
 [source,subs=quotes]
 ----
-~/unit2/friends $ [underline]#./pennies 31 1#
+~/chapter2/friends $ [underline]#./pennies 31 1#
 $21474836.47
 ----
 
@@ -299,7 +285,7 @@ If you'd like to play with the staff's own implementation of `pennies`, you may 
 
 [source,bash]
 ----
-~cs50/unit2/pennies
+~cs50/chapter1/pennies
 ----
 
 == How to Submit
@@ -312,15 +298,15 @@ Recall that you were asked to create the files below:
 * `fahrenheit.c`
 * `pennies.c`
 
-Be sure that each of your files is in `~/unit2/friends`, as with:
+Be sure that each of your files is in `~/chapter2/friends`, as with:
 
 [source]
 ----
-cd ~/unit2/friends
+cd ~/chapter2/friends
 ls
 ----
 
-If any file is not in `~/unit2/friends`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/chapter2/friends`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -328,7 +314,7 @@ If any file is not in `~/unit2/friends`, move it into that directory, as via `mv
 +
 [source]
 ----
-cd ~/unit2/friends
+cd ~/chapter2/friends
 submit50 cs50/problems/2019/ap/friends/hello
 ----
 +
@@ -337,7 +323,7 @@ inputting your GitHub username and GitHub password as prompted.
 +
 [source]
 ----
-cd ~/unit2/friends
+cd ~/chapter2/friends
 submit50 cs50/problems/2019/ap/friends/fahrenheit
 ----
 +
@@ -346,7 +332,7 @@ inputting your GitHub username and GitHub password as prompted.
 +
 [source]
 ----
-cd ~/unit2/friends
+cd ~/chapter2/friends
 submit50 cs50/problems/2019/ap/friends/pennies
 ----
 +
@@ -355,7 +341,7 @@ inputting your GitHub username and GitHub password as prompted.
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Old Friends.

@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Writing Problem: Me, Myself, and UI
 
@@ -10,22 +9,6 @@ layout: 2019/ap
 Learn about user interfaces and apply your knowledge toward predicting the future.
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this writing problem will be evaluated along three axes primarily.
-
-Correctness::
-    To what extent does your submission align with the requirements of the specification?
-
-Design::
-    To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-	
-Style::
-    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
-
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == A Brief History of Time
 
@@ -47,7 +30,7 @@ The computer mouse, which was popularized by the Macintosh 128K but was not itse
 
 Humans had, of course, long been able to interact with machines. But from the mid-1960s through the mid-1980s most of that interaction was done through a **command-line interface** (CLI) which can indeed be a bit more complex. (The Apple advertisement video above, though it cuts off the beginning, is effectively criticizing the then-prevailing enterprise computer system, the IBM personal computer, which required command-line interaction and came with a number of large manuals describing the various text-based commands one could use.)
 
-Command-line interfaces are still quite common today though, as you likely saw from completing the problems in Unit 1 and working with CS50 IDE at the terminal. Many programmers still prefer command-line environments because once the commands are memorized, CLIs can be a speedy means of navigating one's system, and they eliminate the need to use any part of the machine's RAM to deal with the overhead that comes with supporting a GUI. Indeed, one way to resuscitate or salvage an older computer with much more limited RAM and a slower CPU is to wipe the operating system it came with and instead install thereon a lightweight flavor of Linux which relies exclusively or at least primarily on using a CLI instead of a GUI.
+Command-line interfaces are still quite common today though, as you likely saw from completing the problems in Chapter 1 and working with CS50 IDE at the terminal. Many programmers still prefer command-line environments because once the commands are memorized, CLIs can be a speedy means of navigating one's system, and they eliminate the need to use any part of the machine's RAM to deal with the overhead that comes with supporting a GUI. Indeed, one way to resuscitate or salvage an older computer with much more limited RAM and a slower CPU is to wipe the operating system it came with and instead install thereon a lightweight flavor of Linux which relies exclusively or at least primarily on using a CLI instead of a GUI.
 
 Permit us to take one final step back in the history of human-computer interaction. Before CLIs, GUIs, TUIs, and VUIs (enough acronyms yet?) humans primarily interacted with computers using **batch interfaces**. Programs were written by punching holes in cards which computers knew how to read but were submitted (in batches, hence the name), and output from those computers came via simple printers.
 
@@ -81,7 +64,7 @@ You needn't write more than 200 words for this part of the problem (both write u
 
 === Step 1 of 3
 
-Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2019/ap/ui` and click "Create branch".
+Go to https://github.com/me50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/problems/2019/ap/ui` and click "Create branch".
 
 === Step 2 of 3
 
@@ -94,7 +77,7 @@ Click the green "Commit changes" button and you're done!
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Me, Myself, and UI.

@@ -1,0 +1,116 @@
+---
+layout: 2019/ap
+---
+
+= Problem: Crack
+
+== tl;dr
+
+Implement a program that cracks passwords, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#python crack.py 51v3Nh6ZWGHOQ#
+ROFL
+----
+
+include::../../../honesty.adoc[]
+
+== Specification
+
+Design and implement a program, `crack`, that cracks passwords, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/ap/crack/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE..
+
+* Implement your program in a file called `crack.py` in your `~/chapter6/crack` directory (if it doesn't already exist, create it now!).
+* Your program should accept a single command-line argument: a hashed password.
+* If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately.
+* Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less.
+* Assume that each password has been hashed with C's DES-based (not MD5-based) `crypt` function.
+* Assume that each password is no longer than five (5) characters. Gasp!
+* Assume that each password is composed entirely of alphabetical characters (uppercase and/or lowercase).
+
+== Password List
+
+[source]
+----
+brian:51.xJagtPnb6s
+bjbrown:50GApilQSG3E2
+emc:502sDZxA/ybHs
+greg:50C6B0oz0HWzo
+jana:50WUNAFdX/yjA
+lloyd:50n0AAUD.pL8g
+malan:50CcfIk1QrPr6
+natmelo:50JIIyhDORqMU
+rob:51v3Nh6ZWGHOQ
+veronica:61v1CDwwP95bY
+walker:508ny6Rw0aRio
+zamyla:50cI2vYkF0YU2
+----
+
+== Walkthrough
+
+**Note: The walkthrough video incorrectly states that passwords are no longer than four (4) characters. Instead, per the specification, make sure to handle passwords that are up to five (5) characters.**
+
+video::5B1tK_4y-gI[youtube]
+
+== Usage
+
+Your program should behave per the examples below. Assume that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#python crack.py#
+Usage: python crack.py hash
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python crack.py 51v3Nh6ZWGHOQ#
+ROFL
+----
+
+== Testing
+
+=== Correctness
+
+No `check50` for this one! But odds are, if you can crack all twelve passwords above, you're in good shape!
+
+=== Style
+
+[source]
+----
+style50 crack.py
+----
+
+== How to Submit
+
+=== Step 1 of 2
+
+Head back to the https://ide.cs50.io[CS50 IDE] and ensure that `crack.py` is in `~/chapter6/crack`, as with:
+
+[source]
+----
+cd ~/chapter6/crack
+ls
+----
+
+If `crack.py` is not in `~/chapter6/crack`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `crack`, execute
++
+[source]
+----
+cd ~/chapter6/crack
+submit50 cs50/problems/2019/ap/sentimental/crack
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+
+This was Crack.

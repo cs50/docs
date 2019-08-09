@@ -1,0 +1,163 @@
+---
+layout: 2019/ap
+---
+
+= Problem: Bleep
+
+== tl;dr
+
+Implement a program that censors messages that contain words that appear on a list of supplied "banned words."
+
+[source,subs=quotes]
+----
+$ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
+[underline]#What the heck#
+What the &#42;&#42;&#42;&#42;
+$ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
+[underline]#gosh darn it#
+&#42;&#42;&#42;&#42; &#42;&#42;&#42;&#42; it
+----
+
+include::../../honesty.adoc[]
+
+== Getting Started
+
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
+
+1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory).
+1. Execute `mkdir chapter6` to make (i.e., create) a directory called `chapter6` in your home directory, if you haven't already done so.
+1. Execute `cd chapter6` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/ap/2019/problems/bleep/bleep.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip bleep.zip` to uncompress that file.
+1. Execute `rm bleep.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `bleep`, which was inside of that ZIP file.
+1. Execute `cd bleep` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution, including `bleep.py` and `banned.txt`.
+
+== Understanding
+
+This program defines only one function, `main`, which gets called per the file's last line. Within `main` ... ugh, looks like that's just a big `TODO`!
+
+== Specification
+
+Complete the implementation of `bleep.py` in such a way that it:
+
+* Accepts as its sole command-line argument the name (or path) of a dictionary of banned words (i.e., text file).
+* Opens and reads from that file the list of words stored therein, one per line, and stores each in a Python data structure for later access. While a Python `list` will work well for this, you may also find a link:https://docs.python.org/3/tutorial/datastructures.html#sets[`set`] useful here.
+  * If no command line argument (e.g., `banned.txt`) is provided, be sure to have your program link:https://docs.python.org/3/library/sys.html#sys.exit[exit] with a status code of `1`.
+  * You may assume that any text files the staff tests with will have one word per line (each line terminated with a `\n`), and any alphabetic characters in those words will be lowercase.
+* Prompts the user to provide a message.
+* Tokenizes that message into its individual component words, using the link:https://docs.python.org/3/library/stdtypes.html#str.split[`split`] method on the provided string, and then iterates over the `list` of "tokens" (words) that is returned by calling `split`, checking to see whether any of the tokens match, case-insensitively, any of the words in the banned words list.
+* Prints back the message that the user provided, except if the message contained any banned words, each of its characters is replaced by a `*`.
+  * For example, `gosh` should be replaced with four `*` characters, while `fudge` should be replaced with five.
+* You should not censor words that merely contain a banned word as a substring. For example, if **bar** is a banned word in the provided list, then none of __**bar**ns__ nor __crow**bar**__ nor __wheel**bar**row__ should be censored.
+* You explicitly **do not** need to support input strings that contain punctuation marks. You may assume we will only test your input where each word is only separated by whitespace.
+
+== Usage
+
+Your program should behave per the examples below. Assume that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#python bleep.py#
+Usage: python bleep.py dictionary
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python bleep.py list1.txt list2.txt list3.txt#
+Usage: python bleep.py dictionary
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
+[underline]#hello world#
+hello world
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
+[underline]#what the heck#
+what the &#42;&#42;&#42;&#42;
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python bleep.py banned.txt#
+What message would you like to censor?
+[underline]#gosh darn it#
+&#42;&#42;&#42;&#42; &#42;&#42;&#42;&#42; it
+----
+
+== Testing
+
+=== Correctness
+
+[source]
+----
+check50 cs50/problems/2019/ap/bleep
+----
+
+=== Style
+
+[source]
+----
+style50 bleep.py
+----
+
+== Staff's Solution
+
+If you'd like to play with the staff's own implementation of `bleep`, you may execute the below.
+
+[source]
+----
+~cs50/chapter6/bleep
+----
+
+== How to Submit
+
+=== Step 1 of 2
+
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `bleep.py` is in `~/chapter6/bleep`, as with:
+
+[source]
+----
+cd ~/chapter6/bleep
+ls
+----
+
+If `bleep.py` is not in `~/chapter6/bleep`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `bleep`, execute
++
+[source]
+----
+cd ~/chapter6/bleep
+submit50 cs50/problems/2019/ap/bleep
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+
+== Hints
+
+* Be sure to test with different banned words lists than the one provided by default -- we will!
+* When independently researching how to do things on this problem (which is indeed part of the expectation, as you grow in your comfort with programming overall!), be sure your Google searches and the like include "Python 3" in them, and not just "Python", lest you get code examples written in an earlier version of Python!
+* Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.split[`str.split`] of interest.
+* Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.lower[`str.lower`] of interest.
+* Odds are you'll find https://docs.python.org/3/library/stdtypes.html#str.strip[`str.strip`] of interest, to chomp off any trailing newlines that may be attached to words on your "banned words" list.
+
+This was Bleep.

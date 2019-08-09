@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Writing Problem: Everyday Algorithms
 
@@ -10,20 +9,6 @@ layout: 2019/ap
 Write up algorithms to exhaustively describe in text and pseudocode, steps to brush one's teeth, eat an orange, and something you do everyday.
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this writing problem will be evaluated along three axes primarily.
-
-Correctness::
-    To what extent does your submission align with the requirements of the specification?
-Design::
-    To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-Style::
-    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
-
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Step 1: Watch This.
 
@@ -48,7 +33,7 @@ And don't worry if you don't yet understand the processes that Thomas and Alex d
 
 == Step 2: Read This.
 
-The concept of an algorithm is fundamental in computer science. Recall from earlier in this unit that we defined a computer as _a device that accepts input, and processes it in some way to produce a result automatically_. The critical word in that sentence when we are talking about algorithms is the word "processes".
+The concept of an algorithm is fundamental in computer science. Recall from earlier in this chapter that we defined a computer as _a device that accepts input, and processes it in some way to produce a result automatically_. The critical word in that sentence when we are talking about algorithms is the word "processes".
 
 Say you're playing your favorite video game of all time. If you're a fan of nostalgia, it might be this gem.footnote:[Don't worry, we'll give Mario his due soon enough, too!]
 
@@ -148,7 +133,7 @@ Just do your best to avoid any infinite loops (a loop that's impossible to ever 
 
 Now for a little bit of fun. Before you actually turn in your algorithms, you probably should have someone test them out. Here's what happened in a recent iteration of CS50 when making a peanut butter and jelly sandwich using an algorithm supplied by students.
 
-video::y62zj9ozPOM[youtube,start=966,end=1305]
+video::wEdvGqxafq8[youtube,start=556,end=856]
 
 As you can see, describing algorithms precisely is crucial in order to have the desired effect! Have a few friends or family members test out your algorithms, instructing them to make absolutely no assumptions beyond exactly what you've written. Is your algorithm described clearly enough that your set of instructions can be repeated exactly without any ambiguity as to what to do? Did your friend or family member find a way to break your algorithm or, worse, find themselves in an infinite loop?
 
@@ -164,7 +149,7 @@ This process may actually be more challenging than it first appears, and that's 
 
 === Step 1 of 3
 
-Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2019/ap/algorithms` and click "Create branch".
+Go to https://github.com/me50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/problems/2019/ap/algorithms` and click "Create branch".
 
 === Step 2 of 3
 
@@ -177,7 +162,7 @@ Click the green "Commit changes" button and you're done!
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Everyday Algorithms.
