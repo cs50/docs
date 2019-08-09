@@ -263,8 +263,39 @@ If you see this, make sure to remove or comment out any print statements from ap
 
 == How to Submit
 
-Execute the below from within your `~/chapter8/finance` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
+Ensure you have all of the files below:
+
+* application.py
+* finance.db
+* helpers.py
+* questions.txt
+
+Be sure that each of your files are in `~/chapter7/fifteen`, as with:
+
+[source]
+----
+cd ~/chapter7/finance
+ls
+----
+
+If any file is not in `~/chapter7/finance`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+To submit `finance`, execute
++
+[source]
+----
+cd ~/chapter7/finance/
 submit50 cs50/problems/2019/ap/finance
-```
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!

@@ -232,7 +232,6 @@ style50 fifteen.c
 Ensure you have all of the files below:
 
 * fifteen.c
-* Makefile
 * questions.txt
 
 Be sure that each of your files are in `~/chapter3/fifteen`, as with:
