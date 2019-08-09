@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -52,11 +52,11 @@ debug50 ./whodunit clue.bmp verdict.bmp
 
 Welcome back!
 
-Next, navigate to your `~/workspace/unit4` directory.  Then execute
+Next, navigate to your `~/chapter4` directory.  Then execute
 
 [source,bash]
 ----
-wget https://cdn.cs50.net/ap/2018/problems/whodunit/whodunit.zip
+wget https://cdn.cs50.net/ap/2019/problems/whodunit/whodunit.zip
 ----
 
 in order to download a ZIP (i.e., compressed version) of this problem set's distro.  If you then execute
@@ -66,7 +66,7 @@ in order to download a ZIP (i.e., compressed version) of this problem set's dist
 ls
 ----
 
-you should see that you now have a file called `whodunit.zip` in your `~/workspace/unit4` directory.  Unzip it by executing the below.
+you should see that you now have a file called `whodunit.zip` in your `~/chapter4` directory.  Unzip it by executing the below.
 
 [source,bash]
 ----
@@ -295,7 +295,7 @@ fprintf(stderr, "Usage: ./whodunit infile outfile\n");
 
 == Questions
 
-Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works. 
+Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works.
 
 Open up `README.md` and replace every `TODO` therein (except the last) with your answer to the question above it. That file happens to be written in Markdown, a lightweight format for text files that makes it easy to stylize text. For instance, we've prefixed each question with `##` so that, when viewed on GitHub, it renders in a larger, bold font. And we've surrounded code-related keywords with backticks (\`) so that they render on GitHub in a monospaced (i.e., code-like) font.
 
@@ -372,42 +372,33 @@ No solution from the staff, lest it spoil your fun!
 
 == How to Submit
 
-=== Step 1 of 3
-
-Update your IDE:
-
-[source]
-----
-update50
-----
-
-=== Step 2 of 3
+=== Step 1 of 2
 
 Ensure you have all of the files below:
 
 * whodunit.c
 * Makefile
-* questions.txt
+* questions.md
 * bmp.h
 
-Be sure that each of your files are in `~/workspace/unit4/whodunit`, as with:
+Be sure that each of your files are in `~/chapter4/whodunit`, as with:
 
 [source]
 ----
-cd ~/workspace/unit4/whodunit
+cd ~/chapter4/whodunit
 ls
 ----
 
-If any file is not in `~/workspace/unit4/whodunit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/chapter4/whodunit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
-=== Step 3 of 3
+=== Step 2 of 2
 
-Submit `whodunit`:
+* To submit `whodunit`, execute
 
 [source]
 ----
-cd ~/workspace/unit4/whodunit/
-submit50 cs50/2018/ap/whodunit
+cd ~/chapter4/whodunit/
+submit50 cs50/problems/2019/ap/whodunit
 ----
 
 inputting your GitHub username and GitHub password as prompted.
@@ -415,7 +406,7 @@ inputting your GitHub username and GitHub password as prompted.
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Whodunit.
