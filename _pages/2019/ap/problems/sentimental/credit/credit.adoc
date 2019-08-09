@@ -1,8 +1,8 @@
 ---
-layout: 2018/fall
+layout: 2019/ap
 ---
 
-= Credit
+= Problem: Credit
 
 == tl;dr
 
@@ -15,9 +15,11 @@ Number: [underline]#378282246310005#
 AMEX
 ----
 
+include::../../../honesty.adoc[]
+
 == Specification
 
-* In `credit.py` in `~/workspace/pset6/credit/`, write a program that prompts the user for a credit card number and then reports (via `print`) whether it is a valid American Express, MasterCard, or Visa card number, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/credit/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+* In `credit.py` in `~/chapter6/credit/`, write a program that prompts the user for a credit card number and then reports (via `print`) whether it is a valid American Express, MasterCard, or Visa card number, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/fall/credit/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 * So that we can automate some tests of your code, we ask that your program's last line of output be `AMEX\n` or `MASTERCARD\n` or `VISA\n` or `INVALID\n`, nothing more, nothing less.
 * For simplicity, you may assume that the user's input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
 * Best to use `get_int` or `get_string` from CS50's library to get users' input, depending on how you to decide to implement this one.
@@ -59,7 +61,7 @@ INVALID
 
 [source]
 ----
-check50 cs50/2018/fall/sentimental/credit
+check50 cs50/problems/2019/ap/sentimental/credit
 ----
 
 === Style
@@ -78,11 +80,35 @@ style50 credit.py
 
 == How to Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
-submit50 cs50/2018/fall/sentimental/credit
-```
+Head back to the https://ide.cs50.io[CS50 IDE] and ensure that `credit.py` is in `~/chapter6/credit`, as with:
+
+[source]
+----
+cd ~/chapter6/credit
+ls
+----
+
+If `credit.py` is not in `~/chapter6/credit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `credit`, execute
++
+[source]
+----
+cd ~/chapter6/credit
+submit50 cs50/problems/2019/ap/sentimental/credit
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 == Hints
 
