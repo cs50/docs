@@ -122,15 +122,7 @@ style50 bleep.py
 
 === Step 1 of 2
 
-Ensure you have all of the files below:
-
-* application.py
-* templates/layout.html
-* templates/form.html
-* templates/error.html
-* static/styles.css
-
-Be sure that each of your files are in `~/chapter6/bleep`, as with:
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `bleep.py` is in `~/chapter6/bleep`, as with:
 
 [source]
 ----
@@ -138,15 +130,15 @@ cd ~/chapter6/bleep
 ls
 ----
 
-If any file is not in `~/chapter6/bleep`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `bleep.py` is not in `~/chapter6/bleep`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
-To submit `bleep`, execute
+* To submit `bleep`, execute
 +
 [source]
 ----
-cd ~/chapter6/bleep/
+cd ~/chapter6/bleep
 submit50 cs50/problems/2019/ap/bleep
 ----
 +
@@ -154,7 +146,7 @@ inputting your GitHub username and GitHub password as prompted.
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
-You may resubmit any problem as many times as you'd like.
+You may resubmit any problem as many times as you'd like before the deadline.
 
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 

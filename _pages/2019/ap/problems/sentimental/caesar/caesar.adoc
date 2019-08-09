@@ -1,8 +1,8 @@
 ---
-layout: 2018/fall
+layout: 2019/ap
 ---
 
-= Caesar
+= Problem: Caesar
 
 == tl;dr
 
@@ -15,11 +15,13 @@ plaintext:  [underline]#HELLO#
 ciphertext: URYYB
 ----
 
+include::../../../honesty.adoc[]
+
 == Specification
 
-Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2018/fall/caesar/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/fall/caesar/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 
-* Implement your program in a file called `caesar.py` in your `~/workspace/pset6/caesar` directory (if it doesn't already exist, create it now!).
+* Implement your program in a file called `caesar.py` in your `~/chapter6/caesar` directory (if it doesn't already exist, create it now!).
 * Your program must accept a single command-line argument, a non-negative integer. Let's call it _k_ for the sake of discussion.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error message of your choice (with `print`) and link:https://docs.python.org/3/library/sys.html#sys.exit[exit] immediately with a status code of 1.
 * You can assume that, if a user does provide a command-line argument, it will be a non-negative integer (e.g., `1`). No need to check that it's indeed numeric.
@@ -76,7 +78,7 @@ Usage: python caesar.py k
 
 [source]
 ----
-check50 cs50/2018/fall/sentimental/caesar
+check50 cs50/problems/2019/ap/sentimental/caesar
 ----
 
 === Style
@@ -95,11 +97,35 @@ style50 caesar.py
 
 == How to Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
-submit50 cs50/2018/fall/sentimental/caesar
-```
+Head back to the https://ide.cs50.io[CS50 IDE] and ensure that `caesar.py` is in `~/chapter6/caesar`, as with:
+
+[source]
+----
+cd ~/chapter6/caesar
+ls
+----
+
+If `caesar.py` is not in `~/chapter6/caesar`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `caesar`, execute
++
+[source]
+----
+cd ~/chapter6/caesar
+submit50 cs50/problems/2019/ap/sentimental/caesar
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 == Hints
 
