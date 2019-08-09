@@ -1,5 +1,5 @@
 ---
-layout: 2018/ap
+layout: 2019/ap
 ---
 :skip-front-matter:
 
@@ -20,7 +20,7 @@ Correctness::
 
 Design::
     To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-	
+
 Style::
     To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
 
@@ -48,7 +48,7 @@ Don't be afraid to get creative with your explanations and come up with new anal
 
 === Step 1 of 3
 
-Go to https://github.com/submit50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/2018/ap/teacher` and click "Create branch".
+Go to https://github.com/me50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/problems/2019/ap/teacher` and click "Create branch".
 
 === Step 2 of 3
 
@@ -61,7 +61,7 @@ Click the green "Commit changes" button and you're done!
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like before the deadline.
-   
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Be the Teacher.
