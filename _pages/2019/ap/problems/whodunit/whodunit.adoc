@@ -52,7 +52,7 @@ debug50 ./whodunit clue.bmp verdict.bmp
 
 Welcome back!
 
-Next, navigate to your `~/chapter4` directory.  Then execute
+Next, navigate to your `~/chapter3` directory.  Then execute
 
 [source,bash]
 ----
@@ -66,7 +66,7 @@ in order to download a ZIP (i.e., compressed version) of this problem set's dist
 ls
 ----
 
-you should see that you now have a file called `whodunit.zip` in your `~/chapter4` directory.  Unzip it by executing the below.
+you should see that you now have a file called `whodunit.zip` in your `~/chapter3` directory.  Unzip it by executing the below.
 
 [source,bash]
 ----
@@ -377,19 +377,17 @@ No solution from the staff, lest it spoil your fun!
 Ensure you have all of the files below:
 
 * whodunit.c
-* Makefile
 * questions.md
-* bmp.h
 
-Be sure that each of your files are in `~/chapter4/whodunit`, as with:
+Be sure that each of your files are in `~/chapter3/whodunit`, as with:
 
 [source]
 ----
-cd ~/chapter4/whodunit
+cd ~/chapter3/whodunit
 ls
 ----
 
-If any file is not in `~/chapter4/whodunit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/chapter3/whodunit`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -397,7 +395,7 @@ If any file is not in `~/chapter4/whodunit`, move it into that directory, as via
 
 [source]
 ----
-cd ~/chapter4/whodunit/
+cd ~/chapter3/whodunit/
 submit50 cs50/problems/2019/ap/whodunit
 ----
 

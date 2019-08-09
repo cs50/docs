@@ -26,7 +26,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory, aka `~`).
 1. Execute `mkdir chapter3` to make (i.e., create) a directory called `chapter3` in your home directory.
 1. Execute `cd chapter3` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/2019/ap/chapters/3/resize/more/resize.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `wget http://cdn.cs50.net/ap/2019/problems/resize/more/resize.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip resize.zip` to uncompress that file.
 1. Execute `rm resize.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `resize`, which was inside of that ZIP file.
