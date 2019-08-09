@@ -93,9 +93,9 @@ fahrenheit.c  hello.c  pennies.c
 
 How nice to see them again!
 
-Lastly, have a look at Christopher's short video on command-line arguments. Since we'll be converting all three of the programs listed above to accept command-line arguments (none of them currently do!), this video should come in handy.
+Lastly, have a look at Doug's short video on command-line arguments. Since we'll be converting all three of the programs listed above to accept command-line arguments (none of them currently do!), this video should come in handy.
 
-video::X8PmYwnbLKM[youtube]
+video::AI6Ccfno6Pk[youtube]
 
 If you happen to see (and are confused by!) `char *` in this and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
@@ -136,7 +136,7 @@ int main(int argc, string argv[])
 
 we then have access to two special variables that we can use inside of `main`. First is `argc`, which is an integer variable that tells us how many things the user typed in at the command line, and second is `argv`, which is an array of strings representing exactly what the user typed.
 
-Knowing this, and from the information in Christopher's short, can you now modify `hello.c` so that it prints out the name provided at the command line, instead of collecting a `string` from the user after the program has started?
+Knowing this, and from the information in Doug's short, can you now modify `hello.c` so that it prints out the name provided at the command line, instead of collecting a `string` from the user after the program has started?
 
 One more wrinkle. How do you make sure the user in fact did provide you with one (and only one) additional argument, so that you can print it out? Well remember that's what our new friend `argc` can manage for us. If the user doesn't supply a command-line argument, best to terminate the program and have them try again. One way to accomplish this might be to have this near the top of our code:
 

@@ -26,9 +26,9 @@ include::../../honesty.adoc[]
 
 == Getting Ready
 
-Have a more in-depth look at debugging techniques from Dan. (Odds are these 23 minutes with Dan will save you hours over the course of the term, since GDB is a far better tool than `printf` in many cases!)
+Have a more in-depth look at debugging techniques from Doug. (Odds are these 30 minutes with Doug will save you hours over the course of the term!)
 
-video::-G_klBQLgdc[youtube]
+video::-VtkMZjvvKaU[youtube]
 
 == Getting Started
 

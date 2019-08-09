@@ -40,6 +40,8 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 == Walkthrough
 
+**Note: In the past, this problem was called Greedy.**
+
 video::6w7Tws0seJk[youtube]
 
 == Usage

@@ -19,19 +19,16 @@ include::../../honesty.adoc[]
 
 == Starting Shortly
 
-We'd recommend you get started by watching a few short videos; in particular, these three on functions, command-line arguments, and the Vigenère cipher. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
+We'd recommend you get started by watching a couple of short videos; in particular, these two on functions and command-line arguments. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-video::Pi0Yf-jn7O8[youtube]
+video::n1glFqt3g38[youtube]
 
-video::X8PmYwnbLKM[youtube]
-
-video::9zASwVoshiM[youtube]
+video::AI6Ccfno6Pk[youtube]
 
 Be sure you're reasonably comfortable answering the below questions before moving too far!
 
 * What's a function?
 * Why bother writing functions when you can just copy and paste code as needed?
-* What makes Vigenère's cipher more secure than Caesar's?
 * What does `undeclared identifier` usually indicate if outputted by `make` (or, really, `clang`)?
 
 Now execute

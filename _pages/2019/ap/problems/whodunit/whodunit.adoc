@@ -17,15 +17,19 @@ include::../../honesty.adoc[]
 
 == Getting Ready
 
-First, curl up with Jason's short on file I/O and Rob's short on structs.  Just keep in mind that Jason's short happens to focus on ASCII (i.e., text) files as opposed to binary files (like images). More on those later!
+First, curl up with Doug's shorts on file pointers and structs.
 
-video::KwvObCA04dU[youtube,playlist="EzRwP7NV0LM"]
+video::bOF-SpEAYgk[youtube]
 
-Next, join Nate on a tour of `valgrind`, a command-line tool that will help you find "memory leaks": memory that you've allocated (i.e., asked the operating system for), as with `malloc`, but not freed (i.e., given back to the operating system).
+video::N5pA7RvvQDg[youtube]
 
-video::fvTsFjDuag8[youtube]
+Next, review (from lecture) David's introduction to `valgrind`, a command-line tool that will help you find "memory leaks": memory that you've allocated (i.e., asked the operating system for), as with `malloc`, but not freed (i.e., given back to the operating system).
+
+video::ed2lnJNf7HU[youtube,start=275,end=1091]
 
 Finally, remind yourself how debug50 works if you've forgotten or not yet used! (It's worth it!)
+
+video::VtkMZjvvKaU[youtube,start=741,end=1797]
 
 [source,bash]
 ----
