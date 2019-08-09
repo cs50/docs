@@ -18,7 +18,7 @@ include::../../../honesty.adoc[]
 
 == Specification
 
-Design and implement a program, `crack`, that cracks passwords, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/fall/crack/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE..
+Design and implement a program, `crack`, that cracks passwords, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/ap/crack/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE..
 
 * Implement your program in a file called `crack.py` in your `~/chapter6/crack` directory (if it doesn't already exist, create it now!).
 * Your program should accept a single command-line argument: a hashed password.
@@ -112,3 +112,5 @@ If you run into any trouble, email sysadmins@cs50.harvard.edu!
 You may resubmit any problem as many times as you'd like before the deadline.
 
 Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+
+This was Crack.

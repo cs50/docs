@@ -19,7 +19,7 @@ include::../../../honesty.adoc[]
 
 == Specification
 
-Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/fall/caesar/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+Design and implement a program, `caesar`, that encrypts messages using Caesar's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/ap/caesar/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 
 * Implement your program in a file called `caesar.py` in your `~/chapter6/caesar` directory (if it doesn't already exist, create it now!).
 * Your program must accept a single command-line argument, a non-negative integer. Let's call it _k_ for the sake of discussion.
@@ -92,7 +92,7 @@ style50 caesar.py
 
 [source]
 ----
-~cs50/pset2/caesar
+~cs50/chapter6/caesar
 ----
 
 == How to Submit
@@ -156,3 +156,5 @@ for c in p:
 That `end=""` line just overrides Python's default behavior when printing which, unlike C, tacks on a newline by default!
 
 You may also wish to have a look at Python's `ord()` and `chr()` functions!
+
+This was Caesar.

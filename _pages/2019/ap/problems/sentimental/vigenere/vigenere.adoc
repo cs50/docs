@@ -19,7 +19,7 @@ include::../../../honesty.adoc[]
 
 == Specification
 
-Design and implement a program that encrypts messages using Vigenère's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/fall/vigenere/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+Design and implement a program that encrypts messages using Vigenère's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/ap/vigenere/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 
 * Implement your program in a file called `vigenere.py` in your `~/chapter6/vigenere` directory (if it doesn't already exist, create it now!).
 * Your program must accept a single command-line argument: a keyword, _k_, composed entirely of alphabetical characters.
@@ -68,7 +68,7 @@ To help you test `vigenere`, we've written a program called `devigenere` for you
 
 [source]
 ----
-~cs50/pset2/devigenere k
+~cs50/chapter6/devigenere k
 ----
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
@@ -91,7 +91,7 @@ style50 vigenere.py
 
 [source]
 ----
-~cs50/pset2/vigenere
+~cs50/chapter6/vigenere
 ----
 
 == How to Submit
@@ -129,3 +129,5 @@ Your submission should be graded for correctness within 2 minutes, at which poin
 == Hints
 
 Not sure where to begin? As luck would have it, this program's pretty similar to link:../caesar/caesar.html[`caesar`]! Only this time, you need to decide which character in _k_ to use as you iterate from character to character in _p_.
+
+This was Vigenère.

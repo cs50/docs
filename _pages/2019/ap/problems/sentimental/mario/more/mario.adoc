@@ -24,7 +24,7 @@ include::../../../../honesty.adoc[]
 
 == Specification
 
-* Write, in a file called `mario.py` in `~/chapter6/mario/more/`, a program that recreates these half-pyramids using hashes (`#`) for blocks, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/fall/mario/more/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+* Write, in a file called `mario.py` in `~/chapter6/mario/more/`, a program that recreates these half-pyramids using hashes (`#`) for blocks, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/ap/mario/more/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
 * To make things more interesting, first prompt the user for the half-pyramids' heights, a positive integer between `1` and `8`, inclusive. (The height of the half-pyramids pictured above happens to be `4`, the width of each half-pyramid `4`, with a gap of size `2` separating them.)
 * If the user fails to provide a positive integer no greater than `8`, you should re-prompt for the same again.
 * Then, generate (with the help of `print` and one or more loops) the desired half-pyramids.
@@ -103,7 +103,7 @@ style50 mario.py
 
 [source]
 ----
-~cs50/pset6/more/mario
+~cs50/chapter6/more/mario
 ----
 
 == How to Submit
@@ -141,3 +141,5 @@ Your submission should be graded for correctness within 2 minutes, at which poin
 == Hints
 
 Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to Python!
+
+This was Mario.
