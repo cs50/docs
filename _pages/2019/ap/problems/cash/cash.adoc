@@ -17,21 +17,6 @@ Change owed: [underline]#0.41#
 
 include::../../honesty.adoc[]
 
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
 == Background
 
 image:changer.jpg[Coin Changer Toy, width="50%"]
@@ -95,6 +80,8 @@ style50 cash.c
 ----
 
 == Staff Solution
+
+If you'd like to play with the staff's own implementation of `cash`, you may execute the below.
 
 [source]
 ----

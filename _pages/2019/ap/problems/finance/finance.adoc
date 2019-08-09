@@ -1,6 +1,5 @@
 ---
 layout: 2019/ap
-toclevels: 2
 ---
 
 = Problem: C$50 Finance

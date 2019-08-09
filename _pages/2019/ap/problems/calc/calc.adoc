@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Calc
 
@@ -16,21 +15,6 @@ $ [underline]#./calc 50 x 28#
 ----
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Adding any Updates
 

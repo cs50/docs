@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Hello
 
@@ -18,21 +17,6 @@ hello, world
 ----
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Getting Started
 
@@ -298,6 +282,8 @@ Odds are, in this case, you printed something other than `hello, world\n` verbat
 Know that `check50` won't actually record your scores in CS50's gradebook. Rather, it lets you check your work's correctness _before_ you submit your work. Once you actually submit your work (per the directions at this spec's end), CS50's staff will use `check50` to evaluate your work's correctness officially.
 
 == Staff Solution
+
+If you'd like to play with the staff's own implementation of `hello`, you may execute the below.
 
 [source]
 ----

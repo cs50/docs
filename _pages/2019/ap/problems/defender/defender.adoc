@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Writing Problem: Defender of the Web
 
@@ -10,22 +9,6 @@ layout: 2019/ap
 Research methods and defenses against cyberattacks.
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this writing problem will be evaluated along three axes primarily.
-
-Correctness::
-    To what extent does your submission align with the requirements of the specification?
-
-Design::
-    To what extent is your submission written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-    To what extent is your submission readable (i.e., thoughtfully organized, coherent, words properly spelled)?
-
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Cyberwars
 

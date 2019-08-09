@@ -113,6 +113,8 @@ style50 bleep.py
 
 == Staff's Solution
 
+If you'd like to play with the staff's own implementation of `bleep`, you may execute the below.
+
 [source]
 ----
 ~cs50/chapter6/bleep
