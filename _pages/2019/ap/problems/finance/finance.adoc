@@ -1,15 +1,17 @@
 ---
-layout: 2018/fall
+layout: 2019/ap
 toclevels: 2
 ---
 
-= C$50 Finance
+= Problem: C$50 Finance
 
 == tl;dr
 
 Implement a website via which users can "buy" and "sell" stocks, a la the below.
 
 image::finance.png["C$50 Finance",role="related thumb"]
+
+include::../../honesty.adoc[]
 
 == Background
 
@@ -197,7 +199,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/2018/fall/finance
+check50 cs50/problems/2019/ap/finance
 ----
 
 === Style
@@ -252,7 +254,7 @@ If, upon running `flask`, you see this error, odds are you (still) have `flask` 
 
 === check50 ran into an error while running checks!
 
-If, upon running `check50`, you see this error, odds are you have a bug in your code somewhere! Open up the CS50.me produced by `check50` to see a detailed traceback to help you debug!
+If, upon running `check50`, you see this error, odds are you have a bug in your code somewhere! Open up the submit.cs50.io link produced by `check50` to see a detailed traceback to help you debug!
 
 === check50 is taking longer than normal!
 
@@ -261,8 +263,8 @@ If you see this, make sure to remove or comment out any print statements from ap
 
 == How to Submit
 
-Execute the below from within your `~/workspace/pset8/finance` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+Execute the below from within your `~/chapter8/finance` directory, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/2018/fall/finance
+submit50 cs50/problems/2019/ap/finance
 ```
