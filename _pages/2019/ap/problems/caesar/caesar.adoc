@@ -19,18 +19,15 @@ include::../../honesty.adoc[]
 
 == The Early Shift
 
-First, have a look at a few shorts; in particular, these three on loops, command-line arguments, and the Caesar cipher. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
+First, have a look at a couple of shorts; in particular, these two on loops and command-line arguments. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-video::HHmiHx7GGLE[youtube]
+video::WgX8e_O7eG8[youtube]
 
-video::X8PmYwnbLKM[youtube]
-
-video::36xNpbosfTY[youtube]
+video::AI6Ccfno6Pk[youtube]
 
 Be sure you're reasonably comfortable answering the below questions before moving too far!
 
 * How does a while loop differ from a do-while loop?  When is the latter particularly useful?
-* Why is Caesar's cipher not very secure?
 * What's a function?
 * Why bother writing functions when you can just copy and paste code as needed?
 
