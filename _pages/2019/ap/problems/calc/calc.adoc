@@ -29,17 +29,15 @@ within a terminal window to navigate to your `chapter2` directory. If you someho
 
 Next, create a new `calc` directory inside `chapter2` (remember how?). Next create a new file entitled `calc.c` in your `calc` directory.
 
-Though we'll remind you of the existence of this video many times throughout the problems in this chapter, be sure to have a look at Christopher's short video on command-line arguments.
+Though we'll remind you of the existence of this video many times throughout the problems in this chapter, be sure to have a look at Doug's short video on command-line arguments.
 
-video::X8PmYwnbLKM[youtube]
+video::AI6Ccfno6Pk[youtube]
 
 If you happen to see (and are confused by!) `char *` in this and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-The shorts on arrays and strings wouldn't hurt either, if you want a refresher.
+The shorts on arrayswouldn't hurt either, if you want a refresher.
 
-video::7mOJN1c1JEo[youtube]
-
-video::z3j-gK1u6Kg[youtube]
+video::YdSycMcxvY0[youtube]
 
 == Divide and Conquer
 
@@ -64,7 +62,7 @@ such that the user can perform all five of the basic math operations that C perm
 
 Notice that unlike many other programs you've likely written up to this point, and just like http://docs.cs50.net/2019/ap/problems/friends/friends.html[Old Friends], users are not entering any information **after** the program has started running. Rather, they are providing all of their input to the program at the command line, before the program has begun.
 
-Recall from Christopher's short that if we collect information from the user at the command line, we can use two special parameters passed into `main` (conventionally called `argc` and `argv`) which represent the number of arguments the user provided and the actual data the user provided, respectively. Given the example use case above, how many command-line arguments is the user expected to provide?
+Recall from Doug's short that if we collect information from the user at the command line, we can use two special parameters passed into `main` (conventionally called `argc` and `argv`) which represent the number of arguments the user provided and the actual data the user provided, respectively. Given the example use case above, how many command-line arguments is the user expected to provide?
 
 If they fail to provide the correct number, your program should exit (possibly printing out an error message that tells them how they should have run the program) and `return 1;` so that we can automate testing of your code.
 
