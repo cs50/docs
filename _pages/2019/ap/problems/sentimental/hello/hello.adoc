@@ -1,0 +1,100 @@
+---
+layout: 2019/ap
+---
+
+= Problem: Hello
+
+== tl;dr
+
+Implement a program that prints out a simple greeting to the user, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#python hello.py#
+What is your name?
+[underline]#David#
+hello, David
+----
+
+include::../../../honesty.adoc[]
+
+== Specification
+
+* Write, in a file called `hello.py` in `~/chapter6/hello`, a program that prompts a user for their name and then prints `hello, so-and-so`, where `so-and-so` is their provided name, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/ap/hello/[Problem Set 1], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+
+== Walkthrough
+
+**Note: The walkthrough video does not presuppose that you need to greet your user by name, but per this specification, your program should behave identically to that in Problem Set 1.**
+
+video::5ueXMnDE-y8[youtube]
+
+== Usage
+
+Your program should behave per the example below. Assume that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#python hello.py#
+What is your name?
+[underline]#Veronica#
+hello, Veronica
+----
+
+== Testing
+
+=== `check50`
+
+[source]
+----
+check50 cs50/problems/2019/ap/sentimental/hello
+----
+
+=== `style50`
+
+[source]
+----
+style50 hello.py
+----
+
+== Staff Solution
+
+If you'd like to play with the staff's own implementation of `hello`, you may execute the below.
+
+[source]
+----
+~cs50/chapter1/hello
+----
+
+== How to Submit
+
+=== Step 1 of 2
+
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `hello.py` is in `~/chapter6/hello`, as with:
+
+[source]
+----
+cd ~/chapter6/hello
+ls
+----
+
+If `hello.py` is not in `~/chapter6/hello`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `hello`, execute
++
+[source]
+----
+cd ~/chapter6/hello
+submit50 cs50/problems/2019/ap/sentimental/hello
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+
+This was Hello.

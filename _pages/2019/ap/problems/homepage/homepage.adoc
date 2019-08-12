@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Homepage
 
@@ -11,39 +10,24 @@ Build a simple homepage using HTML and CSS.
 
 include::../../honesty.adoc[]
 
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
-
 == Background
 
 The internet has enabled incredible things: we can use a search engine to research anything imaginable, communicate with friends and family members around the globe, play games, take courses, and so much more. But it turns out that nearly all pages we may visit are built on three core languages, each of which serves a slightly different purpose:
 
 1. HTML, or _HyperText Markup Language_, which is used to describe the content of websites;
 1. CSS, _Cascading Style Sheets_, which is used to describe the aesthetics of websites; and
+1. JavaScript, which is used to make websites interactive and dynamic.
 
-Focusing on those two languages, create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else of interest to you.
+Focusing on just the first two of those three languages for now, create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else of interest to you.
 
 == Getting Started
 
 Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
-1. Execute `cd` to ensure that you're in your home directory, aka `~`.
-1. Execute `mkdir unit5` to make (i.e., create) a directory called `unit5` in your home directory.
-1. Execute `cd unit5` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/ap/2019/problems/homepage/hompage.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory, aka `~`).
+1. Execute `mkdir chapter5` to make (i.e., create) a directory called `chapter5` in your home directory.
+1. Execute `cd chapter5` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/ap/2019/problems/homepage/homepage.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip homepage.zip` to uncompress that file.
 1. Execute `rm homepage.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `homepage`, which was inside of that ZIP file.
@@ -55,7 +39,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 http-server
 ```
 +
-in the terminal window and clicking on the link that appears, which should be of the form `http://localhost:XXXX` (with `XXXX` usually being either `8080` or `8081`), which will redirect you to a slightly more complex-looking link of the form `http://SOMETHING.amazonaws.com:XXXX/`. From there, you can click on `index.html` to see your homepage.
+in the terminal window and clicking on the link that appears, which should be of the form `https://UNIQUEID-ide.cs50.xyz:8080`, where `UNIQUEID` is a long, alphanumeric slug specific to your account.
 
 == Specification
 
@@ -76,8 +60,8 @@ in your pages' `<head>`, below which can
 ```
 +
 containing your own CSS.
-* Have at least one stylesheet file of your own creation, `styles.css`, which uses at least five (5) different CSS selectors (each of which is either a tag (`example`), class (`.example`), or ID (`#example`) selector), and within which you use a total of at least five (5) different CSS properties, such as `font-size`, or `margin`; and
-* Ensure that your site looks nice on browsers both on mobile devices as well as laptops and desktops; but
+* Have at least one stylesheet file of your own creation, `styles.css`, which uses at least five (5) different CSS selectors (e.g. tag (`example`), class (`.example`), or ID (`#example`)), and within which you use a total of at least five (5) different CSS properties, such as `font-size`, or `margin`; and
+* Ensure that your site looks nice on browsers both on mobile devices as well as laptops and desktops.
 * No need to include any JavaScript on your site for this problem set, unless so inclined!
 
 == Testing
@@ -94,42 +78,12 @@ http-server
 In either case, you'll be brought to a URL of the form
 
 ```
-http://SOMETHING.amazonaws.com:XXXX/
+https://UNIQUEID-ide.cs50.xyz:XXXX
 ```
 
-Where `SOMETHING` is a string of words and numbers that uniquely refer to your IDE instance, and `XXXX` is either `8080` or `8081`, those referring to the _port number_ on which your web server is listening for requests (instead of the default `80` or `443` for HTTP and HTTPS requests, respectively). At that address, you'll see a listing of all of the files in your `homepage` directory, and from there can navigate to any HTML page you've created.
+Where `UNIQUEID` is a long, alphanumeric slug specific to your account, and `XXXX` is either `8080` or `8081`, those referring to the _port number_ on which your web server is listening for requests (instead of the default `80` or `443` for HTTP and HTTPS requests, respectively). At that address, you'll see a listing of all of the files in your `homepage` directory, and from there can navigate to any HTML page you've created.
 
 Recall also that by opening Developer Tools in Google Chrome, you can _simulate_ visiting your page on a mobile device by clicking the phone-shaped icon to the left of *Elements* in the developer tools window, or, once the Developer Tools tab has already been opened, by typing `Ctrl`+`Shift`+`M` on a PC or `Cmd`+`Shift`+`M` on a Mac, rather than needing to visit your site on a mobile device separately!
-
-== Assessment
-
-=== Correctness
-
-Afraid there's no `check50` for this assignment. Instead, your site's correctness will be assessed based on whether you meet the requirements of the specification as outlined above, and whether your HTML is well-formed and valid. To ensure that your pages are, you can use link:https://validator.w3.org/#validate_by_input[the W3Schools HTML Validator] service, copying and pasting your HTML directly into the provided text box. Take care to eliminate any warnings or errors suggested by the validator before submitting!
-
-=== Design
-
-Considering the following in the overall design of your site:
-
-* whether the aesthetics of your site are such that it is intuitive and straightforward for a user to navigate;
-* whether your CSS has been factored out into a separate CSS file(s); and
-* whether you have avoided repetition and redundancy by "cascading" style properties from parent tags.
-
-=== Style
-
-Afraid `style50` does not support HTML files, and so it is incumbent upon you to indent and align your HTML tags cleanly, as the per the examples shown in Week 5's lecture. Know also that you can create an HTML comment with:
-
-```
-<!-- Comment goes here -->
-```
-
-but commenting your HTML code is not as imperative as it is when commenting code in, say, C or Python. You can also comment your CSS, in CSS files, with:
-
-```
-/* Comment goes here */
-```
-
-Indeed, because `style50` does not support HTML/CSS, your style score may end up prepopulated in CS50.me upon submitting as much lower than it will ultimately be. Humans ultimately have full discretion over style scores anyway, and the course staff knows they'll likely need to override the value there, so don't be alarmed by it!
 
 == Hints
 
@@ -141,8 +95,34 @@ For fairly comprehensive guides on the languages introduced in this problem, che
 
 == How to Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+=== Step 1 of 2
 
-```
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `index.html` is in `~/chapter5/homepage`, as with:
+
+[source]
+----
+cd ~/chapter5/homepage
+ls
+----
+
+If `index.html` is not in `~/chapter5/homepage`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `homepage`, execute
++
+[source]
+----
+cd ~/chapter5/homepage
 submit50 cs50/problems/2019/ap/homepage
-```
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+
+This was Homepage.

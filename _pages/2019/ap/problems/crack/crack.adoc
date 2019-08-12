@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Crack
 
@@ -16,21 +15,6 @@ rofl
 ----
 
 include::../../honesty.adoc[]
-
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
 
 == Background
 
@@ -56,7 +40,7 @@ zamyla:50cI2vYkF0YU2
 
 Design and implement a program, `crack`, that cracks passwords.
 
-* Implement your program in a file called `crack.c` in a directory called `crack` (inside `unit2`).
+* Implement your program in a file called `crack.c` in a directory called `crack` (inside `chapter2`).
 * Your program should accept a single command-line argument: a hashed password.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
 * Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`.
@@ -115,19 +99,19 @@ In order to declare function `crypt` for use in your solution, you'll want to pu
 #include <crypt.h>
 ----
 
-near the top of your file. 
+near the top of your file.
 
 
 == How to Submit
 
 === Step 1 of 2
 
-* Recall that you were asked to implement `crack`. 
-** Be sure that all relevant files for this problem are in `~/unit2/crack/`, as with:
+* Recall that you were asked to implement `crack`.
+** Be sure that all relevant files for this problem are in `~/chapter2/crack/`, as with:
 +
 [source]
 ----
-cd ~/unit2/crack/
+cd ~/chapter2/crack/
 ls
 ----
 
@@ -137,7 +121,7 @@ ls
 +
 [source]
 ----
-cd ~/unit2/crack/
+cd ~/chapter2/crack/
 submit50 cs50/problems/2019/ap/crack
 ----
 +
@@ -146,7 +130,7 @@ inputting your GitHub username and GitHub password as prompted.
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Crack.

@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Caesar
 
@@ -18,55 +17,35 @@ ciphertext: URYYB
 
 include::../../honesty.adoc[]
 
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
 == The Early Shift
 
-First, have a look at a few shorts; in particular, these three on loops, command-line arguments, and the Caesar cipher. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
+First, have a look at a couple of shorts; in particular, these two on loops and command-line arguments. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-video::HHmiHx7GGLE[youtube]
+video::WgX8e_O7eG8[youtube]
 
-video::X8PmYwnbLKM[youtube]
-
-video::36xNpbosfTY[youtube]
+video::AI6Ccfno6Pk[youtube]
 
 Be sure you're reasonably comfortable answering the below questions before moving too far!
 
 * How does a while loop differ from a do-while loop?  When is the latter particularly useful?
-* Why is Caesar's cipher not very secure?
 * What's a function?
 * Why bother writing functions when you can just copy and paste code as needed?
 
-Log into your CS50 IDE workspace, if you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
-
-Now execute
+Log into your CS50 IDE workspace and execute
 
 [source,bash]
 ----
-cd ~/unit2
+cd ~/chapter2
 ----
 
-to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
+within a terminal window to move yourself into (i.e., open) that directory.. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification. Your prompt should now resemble the below.
 
 [source,bash]
 ----
-~/unit2 $
+~/chapter2 $
 ----
 
-Make a new `caesar` directory inside of `unit2`. You're now ready to go!
+Make a new `caesar` directory inside of `chapter2`. You're now ready to go!
 
 == Background
 
@@ -165,9 +144,11 @@ style50 caesar.c
 
 == Staff's Solution
 
+If you'd like to play with the staff's own implementation of `caesar`, you may execute the below.
+
 [source]
 ----
-~cs50/unit2/caesar
+~cs50/chapter2/caesar
 ----
 == Hints
 
@@ -189,7 +170,7 @@ string k = argv[1];
 
 assuming it's actually there! Recall that `argc` is an `int` that equals the number of strings that are in `argv`, so you'd best check the value of `argc` before opening a locker that might not exist!  Ideally, `argc` will be `2`. Why? Well, recall that inside of `argv[0]`, by default, is a program's own name. So `argc` will always be at least `1`. But for this program you want the user to provide a command-line argument, `k`, in which case `argc` should be `2`. Of course, if the user provides more than one command-line argument at the prompt, `argc` could be greater than `2`, in which case, again, your program should print an error and return `1`.
 
-Now, just because the user types an integer at the prompt, that doesn't mean their input will be automatically stored in an `int`. Au contraire, it will be stored as a `string` that just so happens to look like an `int`!  And so you'll need to convert that `string` to an actual `int`. As luck would have it, a function, https://reference.cs50.net/stdlib/atoi[`atoi`], exists for exactly that purposes. Here's how you might use it:
+Now, just because the user types an integer at the prompt, that doesn't mean their input will be automatically stored in an `int`. Au contraire, it will be stored as a `string` that just so happens to look like an `int`!  And so you'll need to convert that `string` to an actual `int`. As luck would have it, a function, https://man.cs50.io/3/atoi[`atoi`], exists for exactly that purposes. Here's how you might use it:
 
 [source,c]
 ----
@@ -214,22 +195,22 @@ for (int i = 0, n = strlen(p); i < n; i++)
 
 In other words, just as `argv` is an array of ++string++s, so is a `string` an array of ++char++s. And so you can use square brackets to access individual characters in ++string++s just as you can individual ++string++s in `argv`. Neat, eh?  Of course, printing each of the characters in a string one at a time isn't exactly cryptography. Well, maybe technically if _k_ is 0. But the above should help you help Caesar implement his cipher!
 
-Incidentally, you'll need to `#include` yet another header file in order to use https://reference.cs50.net/string/strlen[`strlen`].
+Incidentally, you'll need to `#include` yet another header file in order to use https://man.cs50.io/3/strlen[`strlen`].
 
-Besides `atoi`, you might find some handy functions documented at https://reference.cs50.net/[reference.cs50.net] under *ctype.h* and *stdlib.h*. For instance, `isalpha` might prove helpful when iterating over plaintext's characters.
+Besides `atoi`, you might find some handy functions documented at https://man.cs50.io/[man.cs50.io] under *ctype.h* and *stdlib.h*. For instance, `isalpha` might prove helpful when iterating over plaintext's characters.
 
-And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out https://www.asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
+And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out http://asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
 
 == How to Submit
 
 === Step 1 of 2
 
-* Recall that you were asked to implement the `caesar`. 
-** Be sure that `caesar.c` is in `~/unit2/caesar/`, as with:
+* Recall that you were asked to implement the `caesar`.
+** Be sure that `caesar.c` is in `~/chapter2/caesar/`, as with:
 +
 [source]
 ----
-cd ~/unit2/caesar/
+cd ~/chapter2/caesar/
 ls
 ----
 
@@ -239,10 +220,16 @@ ls
 +
 [source]
 ----
-cd ~/unit2/caesar/
+cd ~/chapter2/caesar/
 submit50 cs50/problems/2019/ap/caesar
 ----
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Caesar.

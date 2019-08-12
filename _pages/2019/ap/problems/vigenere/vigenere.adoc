@@ -1,7 +1,6 @@
 ---
 layout: 2019/ap
 ---
-:skip-front-matter:
 
 = Problem: Vigenère
 
@@ -18,43 +17,25 @@ ciphertext: HFNLP
 
 include::../../honesty.adoc[]
 
-== Assessment
-
-Your work on this problem set will be evaluated along three axes primarily.
-
-Correctness::
-  To what extent is your code consistent with our specifications and free of bugs?
-
-Design::
-  To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style::
-  To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-To obtain a passing grade in this course, all students must ordinarily submit all assigned problems unless granted an exception in writing by the instructor.
-
 == Starting Shortly
 
-We'd recommend you get started by watching a few short videos; in particular, these three on functions, command-line arguments, and the Vigenère cipher. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
+We'd recommend you get started by watching a couple of short videos; in particular, these two on functions and command-line arguments. If you happen to see (and are confused by!) `char *` in these and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-video::Pi0Yf-jn7O8[youtube]
+video::n1glFqt3g38[youtube]
 
-video::X8PmYwnbLKM[youtube]
-
-video::9zASwVoshiM[youtube]
+video::AI6Ccfno6Pk[youtube]
 
 Be sure you're reasonably comfortable answering the below questions before moving too far!
 
 * What's a function?
 * Why bother writing functions when you can just copy and paste code as needed?
-* What makes Vigenère's cipher more secure than Caesar's?
 * What does `undeclared identifier` usually indicate if outputted by `make` (or, really, `clang`)?
 
 Now execute
 
 [source,bash]
 ----
-cd ~/unit2
+cd ~/chapter2
 ----
 
 to move yourself into (i.e., open) that directory. Make a new directory called `vigenere`, and you're good to go!
@@ -131,7 +112,7 @@ To help you test `vigenere`, we've written a program called `devigenere` for you
 
 [source]
 ----
-~cs50/unit2/devigenere k
+~cs50/chapter2/devigenere k
 ----
 
 at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
@@ -152,9 +133,11 @@ style50 vigenere.c
 
 == Staff's Solution
 
+And if you'd like to play with the staff's own implementation of `vigenere`, you may execute the below.
+
 [source]
 ----
-~cs50/unit2/vigenere
+~cs50/chapter2/vigenere
 ----
 
 
@@ -168,11 +151,11 @@ Not sure where to begin? As luck would have it, this program's pretty similar to
 
 * Recall that you were asked to implement `vigenere`
 
-** Be sure that `vigenere.c` is in `~/unit2/vigenere/`, as with:
+** Be sure that `vigenere.c` is in `~/chapter2/vigenere/`, as with:
 +
 [source]
 ----
-cd ~/unit2/vigenere/
+cd ~/chapter2/vigenere/
 ls
 ----
 
@@ -182,14 +165,14 @@ ls
 +
 [source]
 ----
-cd ~/unit2/vigenere/
+cd ~/chapter2/vigenere/
 submit50 cs50/problems/2019/ap/vigenere
 ----
 
 If you run into any trouble, email sysadmins@cs50.harvard.edu!
 
 You may resubmit any problem as many times as you'd like.
- 
-Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://cs50.me/[cs50.me]!
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
 
 This was Vigenère.

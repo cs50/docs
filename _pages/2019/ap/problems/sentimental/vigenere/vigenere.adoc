@@ -1,0 +1,135 @@
+---
+layout: 2019/ap
+---
+
+= Problem: Vigenère
+
+== tl;dr
+
+Implement a program that encrypts messages using Vigenère's cipher, per the below.
+
+[source,subs=quotes]
+----
+$ [underline]#python vigenere.py ABC#
+plaintext:  [underline]#HELLO#
+ciphertext: HFNLP
+----
+
+include::../../../honesty.adoc[]
+
+== Specification
+
+Design and implement a program that encrypts messages using Vigenère's cipher, exactly as you did in link:https://lab.cs50.io/cs50/labs/2019/ap/vigenere/[Problem Set 2], except that your program this time should be written (a) in Python and (b) in CS50 IDE.
+
+* Implement your program in a file called `vigenere.py` in your `~/chapter6/vigenere` directory (if it doesn't already exist, create it now!).
+* Your program must accept a single command-line argument: a keyword, _k_, composed entirely of alphabetical characters.
+* If your program is executed without any command-line arguments, with more than one command-line argument, or with one command-line argument that contains any non-alphabetical character, your program should print an error (of your choice) and link:https://docs.python.org/3/library/sys.html#sys.exit[exit] immediately with a status code of 1.
+* Otherwise, your program must proceed to prompt the user for a string of plaintext, _p_, (as by a prompt for `plaintext:`) which it must then encrypt according to Vigenère's cipher with _k_, ultimately printing the result (prepended with `ciphertext:` and ending with a newline) and exiting.
+* With respect to the characters in _k_, you must treat `A` and `a` as 0, `B` and `b` as 1, ... , and `Z` and `z` as 25.
+* Your program must only apply Vigenère's cipher to a character in _p_ if that character is a letter. All other characters (numbers, symbols, spaces, punctuation marks, etc.) must be outputted unchanged. Moreover, if your code is about to apply the _j^th^_ character of _k_ to the _i^th^_ character of _p_, but the latter proves to be a non-alphabetical character, you must wait to apply that _j^th^_ character of _k_ to the next alphabetical character in _p_; you must not yet advance to the next character in _k_.
+* Your program must preserve the case of each letter in _p_.
+
+== Walkthrough
+
+video::n4gcWaHKhoU[youtube]
+
+== Usage
+
+Your program should behave per the examples below. Assume that the underlined text is what some user has typed.
+
+[source,subs=quotes]
+----
+$ [underline]#python vigenere.py 13#
+Usage: python vigenere.py k
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python vigenere.py#
+Usage: python vigenere.py k
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python vigenere.py bacon and eggs#
+Usage: python vigenere.py k
+----
+
+[source,subs=quotes]
+----
+$ [underline]#python vigenere.py bacon#
+plaintext: [underline]#Meet me at the park at eleven am#
+ciphertext: Negh zf av huf pcfx bt gzrwep oz
+----
+
+== Testing
+
+To help you test `vigenere`, we've written a program called `devigenere` for you that also takes one and only one command-line argument (a keyword) but whose job is to take ciphertext as input and produce plaintext as output. To use our program, execute
+
+[source]
+----
+~cs50/chapter6/devigenere k
+----
+
+at your prompt, where `k` is some keyword. Presumably you'll want to paste your program's output as input to our program; be sure, of course, to use the same key. Note that you do not need to implement `devigenere` yourself, only `vigenere`.
+
+=== Correctness
+
+[source]
+----
+check50 cs50/problems/2019/ap/sentimental/vigenere
+----
+
+=== Style
+
+[source]
+----
+style50 vigenere.py
+----
+
+== Staff's Solution
+
+If you'd like to play with the staff's own implementation of `vigenere`, you may execute the below.
+
+[source]
+----
+~cs50/chapter2/vigenere
+----
+
+== How to Submit
+
+=== Step 1 of 2
+
+Head back to the https://ide.cs50.io[CS50 IDE] and ensure that `vigenere.py` is in `~/chapter6/vigenere`, as with:
+
+[source]
+----
+cd ~/chapter6/vigenere
+ls
+----
+
+If `vigenere.py` is not in `~/chapter6/vigenere`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+
+=== Step 2 of 2
+
+* To submit `vigenere`, execute
++
+[source]
+----
+cd ~/chapter6/vigenere
+submit50 cs50/problems/2019/ap/sentimental/vigenere
+----
++
+inputting your GitHub username and GitHub password as prompted.
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+
+== Hints
+
+Not sure where to begin? As luck would have it, this program's pretty similar to link:../caesar/caesar.html[`caesar`]! Only this time, you need to decide which character in _k_ to use as you iterate from character to character in _p_.
+
+This was Vigenère.
