@@ -35,7 +35,7 @@ Here's how to download this problem's distribution into your own CS50 IDE. Log i
 1. Execute `rm survey.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `survey`, which was inside of that ZIP file.
 1. Execute `cd survey` to change into that directory.
-1. Execute `ls`. You should see this problem's distribution inside.
+1. Execute `ls`. You should see this problem's distribution code inside.
 
 === Understanding
 

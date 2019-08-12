@@ -33,7 +33,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd resize` to change into that directory.
 1. Execute `ls`. You should see a directory called `less`.
 1. Execute `cd less` to change into that directory.
-1. Execute `ls`. You should see this problem's distribution, including `bmp.h`, `copy.c`, `large.bmp`, `small.bmp`, and `smiley.bmp`.
+1. Execute `ls`. You should see this problem's distribution code, including `bmp.h`, `copy.c`, `large.bmp`, `small.bmp`, and `smiley.bmp`.
 
 == Background
 
@@ -207,15 +207,15 @@ within [this sandbox](https://sandbox.cs50.io/aa2c48ff-2520-408a-9951-2b9da09343
 
 === Step 1 of 2
 
-Head back to the ide.cs50.io[CS50 IDE] and ensure that `resize.c` is in `~/chapter3/resize`, as with:
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `resize.c` is in `~/chapter3/resize/less`, as with:
 
 [source]
 ----
-cd ~/chapter3/resize
+cd ~/chapter3/resize/less
 ls
 ----
 
-If `resize.c` is not in `~/chapter3/resize`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `resize.c` is not in `~/chapter3/resize/less`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -223,7 +223,7 @@ If `resize.c` is not in `~/chapter3/resize`, move it into that directory, as via
 +
 [source]
 ----
-cd ~/chapter3/resize
+cd ~/chapter3/resize/less
 submit50 cs50/problems/2019/ap/resize
 ----
 +

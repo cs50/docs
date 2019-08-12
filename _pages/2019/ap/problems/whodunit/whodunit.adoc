@@ -40,56 +40,17 @@ debug50 ./whodunit clue.bmp verdict.bmp
 
 Welcome back!
 
-Next, navigate to your `~/chapter3` directory.  Then execute
+Here's how to download this problem's distribution into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
-[source,bash]
-----
-wget https://cdn.cs50.net/ap/2019/problems/whodunit/whodunit.zip
-----
-
-in order to download a ZIP (i.e., compressed version) of this problem set's distro.  If you then execute
-
-[source,bash]
-----
-ls
-----
-
-you should see that you now have a file called `whodunit.zip` in your `~/chapter3` directory.  Unzip it by executing the below.
-
-[source,bash]
-----
-unzip whodunit.zip
-----
-
-If you again execute
-
-[source,bash]
-----
-ls
-----
-
-you should see that you now also have a `whodunit` directory.  You're now welcome to delete the ZIP file with the below.
-
-[source,bash]
-----
-rm -f whodunit.zip
-----
-
-Now dive into that `whodunit` directory by executing the below.
-
-[source,bash]
-----
-cd whodunit
-----
-
-Now execute
-
-[source,bash]
-----
-ls
-----
-
-and you should see that the directory contains the below.
+1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory).
+1. Execute `mkdir chapter3` to make (i.e., create) a directory called `chapter3` in your home directory, if you haven't already done so.
+1. Execute `cd chapter3` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/ap/2019/problems/whodunit/whodunit.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip whodunit.zip` to uncompress that file.
+1. Execute `rm whodunit.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `whodunit`, which was inside of that ZIP file.
+1. Execute `cd whodunit` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution code inside.
 
 [source,bash]
 ----

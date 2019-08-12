@@ -54,7 +54,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `rm recover.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `recover`, which was inside of that ZIP file.
 1. Execute `cd recover` to change into that directory.
-1. Execute `ls`. You should see this problem's distribution, including `card.raw` and `recover.c`.
+1. Execute `ls`. You should see this problem's distribution code, including `card.raw` and `recover.c`.
 
 == Specification
 

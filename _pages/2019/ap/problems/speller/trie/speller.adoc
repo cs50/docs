@@ -51,7 +51,9 @@ Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, exe
 1. Execute `rm speller.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `speller`, which was inside of that ZIP file.
 1. Execute `cd speller` to change into that directory.
-1. Execute `ls`. You should see this problem's distribution:
+1. Execute `ls`. You should see a directory called `trie`.
+1. Execute `cd trie` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution code:
 
 ```
 dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  speller.c  texts/
@@ -137,7 +139,7 @@ Odds are, you didn't spend enough time looking over `speller.c`. Go back one squ
 
 ==== `texts/`
 
-So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _La La Land_, the text of the Affordable Care Act, three million bytes from Tolstoy, some excerpts from _The Federalist Papers_ and Shakespeare, the entirety of the King James V Bible and the Koran, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `chapter4` directory.
+So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _La La Land_, the text of the Affordable Care Act, three million bytes from Tolstoy, some excerpts from _The Federalist Papers_ and Shakespeare, the entirety of the King James V Bible and the Koran, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `chapter4/speller/trie` directory.
 
 Now, as you should know from having read over `speller.c` carefully, the output of `speller`, if executed with, say,
 
@@ -328,15 +330,15 @@ Ensure you have all of the files below:
 * dictionary.c
 * dictionary.h
 
-Be sure that each of your files are in `~/chapter4/speller`, as with:
+Be sure that each of your files are in `~/chapter4/speller/trie`, as with:
 
 [source]
 ----
-cd ~/chapter4/speller
+cd ~/chapter4/speller/trie
 ls
 ----
 
-If any file is not in `~/chapter4/speller`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If any file is not in `~/chapter4/speller/trie`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -344,7 +346,7 @@ If any file is not in `~/chapter4/speller`, move it into that directory, as via 
 
 [source]
 ----
-cd ~/chapter4/speller/
+cd ~/chapter4/speller/trie
 submit50 cs50/problems/2019/ap/speller
 ----
 
