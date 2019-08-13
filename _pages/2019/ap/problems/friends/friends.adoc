@@ -26,72 +26,17 @@ Here's some good news for you right off the bat: you've seen almost everything w
 
 Even better, to ensure everyone is on a level playing field while solving this problem, you'll be downloading some "distribution code" (otherwise known as a "distro"), written by us, and make modifications to it. You're welcome of course to use the code you wrote for a prior problem (if it worked!) and re-work it for this problem, but if you struggled with the problems we'll be reimplementing this time around, know that we will otherwise be supplying you with fully-functional code. All you have to do is change the way that the user inputs data.
 
-Start off by opening up CS50 IDE and then type
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
-[source,bash]
-----
-cd ~/chapter2
-----
-
-within a terminal window to navigate to your `chapter2` directory. If you somehow closed your terminal window (and can't find it!), make sure that *Console* is checked under the *View* menu, then click the green, circled plus (+) in CS50 IDE's bottom half, then select *New Terminal*. If you need a hand, do just ask via the channels noted at the top of this specification.
-
-Keep in mind that `~` denotes your home directory, and `~/chapter2` denotes a directory called `chapter2` within your home directory. Your prompt should now resemble the below.
-
-[source,bash]
-----
-~/chapter2 $
-----
-
-To download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`), type:
-
-[source,bash]
-----
-wget https://cdn.cs50.net/ap/2019/problems/friends/friends.zip
-----
-
-You should see some output followed by:
-
-[source,bash]
-----
-'friends.zip' saved
-----
-
-Confirm that you've indeed downloaded `friends.zip` by executing
-
-[source,bash]
-----
-ls
-----
-
-and then run
-
-[source,bash]
-----
-unzip friends.zip
-----
-
-to unzip the file. If you then run `ls` again, you should see that you have a newly unzipped directory called `friends` as well. Proceed to execute
-
-[source,bash]
-----
-cd friends
-----
-
-followed by
-
-[source,bash]
-----
-ls
-----
-
-and you should indeed see a few old friends!
-
-[source,bash]
-----
-fahrenheit.c  hello.c  pennies.c
-----
-
-How nice to see them again!
+1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory).
+1. Execute `mkdir chapter2` to make (i.e., create) a directory called `chapter2` in your home directory, if you haven't already done so.
+1. Execute `cd chapter2` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/ap/2019/problems/friends/friends.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip friends.zip` to uncompress that file.
+1. Execute `rm friends.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `friends`, which was inside of that ZIP file.
+1. Execute `cd friends` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution code, including `fahrenheit.c`, `hello.c`, and `pennies.c`.
 
 Lastly, have a look at Doug's short video on command-line arguments. Since we'll be converting all three of the programs listed above to accept command-line arguments (none of them currently do!), this video should come in handy.
 

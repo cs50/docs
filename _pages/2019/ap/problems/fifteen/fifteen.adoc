@@ -34,70 +34,17 @@ video::-VtkMZjvvKaU[youtube]
 
 Recall that, for almost all of Chapter 1 and 2, you started writing programs from scratch, creating your own `chapter1` and `chapter2` directories with `mkdir`. For this problem, you'll instead download some "distribution code" (otherwise known as a "distro"), written by us, and add your own lines of code to it.  You'll first need to read and understand our code, though, so this problem set is as much about learning to read someone else's code as it is about writing your own!
 
-Let's get you started. Log into https://ide.cs50.io/[ide.cs50.io]
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://ide.cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
-Next, execute
-
-[source,bash]
-----
-cd ~/chapter3
-----
-
-at your prompt to ensure that you're inside of `chapter3` (which is inside of your home directory). Then execute
-
-[source,bash]
-----
-wget https://cdn.cs50.net/ap/2019/problems/fifteen/fifteen.zip
-----
-
-to download a ZIP of this problem's distro into your workspace (with a command-line program called `wget`). You should see a bunch of output followed by:
-
-[source,bash]
-----
-'fifteen.zip' saved
-----
-
-Confirm that you've indeed downloaded `fifteen.zip` by executing
-
-[source,bash]
-----
-ls
-----
-
-and then run
-
-[source,bash]
-----
-unzip fifteen.zip
-----
-
-to unzip the file.  If you then run `ls` again, you should see that you have a newly unzipped directory called `fifteen` as well. You can now delete the ZIP, with:
-
-[source,bash]
-----
-rm fifteen.zip
-----
-
-confirming your intent to delete that file, then proceed to execute
-
-[source,bash]
-----
-cd fifteen
-----
-
-followed by
-
-[source,bash]
-----
-ls
-----
-
-and you should see that the directory contains three files:
-
-[source,bash]
-----
-Makefile  fifteen.c  questions.txt
-----
+1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory).
+1. Execute `mkdir chapter3` to make (i.e., create) a directory called `chapter3` in your home directory, if you haven't already done so.
+1. Execute `cd chapter3` to change into (i.e., open) that directory.
+1. Execute `wget https://cdn.cs50.net/ap/2019/problems/fifteen/fifteen.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip fifteen.zip` to uncompress that file.
+1. Execute `rm fifteen.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `fifteen`, which was inside of that ZIP file.
+1. Execute `cd fifteen` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution code, including `fifteen.c`, `Makefile`, and `questions.md`.
 
 Off we go!
 

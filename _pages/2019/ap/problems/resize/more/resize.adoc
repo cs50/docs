@@ -33,7 +33,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd resize` to change into that directory.
 1. Execute `ls`. You should see a directory called `more`.
 1. Execute `cd more` to change into that directory.
-1. Execute `ls`. You should see this problem's distribution, including `bmp.h`, `copy.c`, `large.bmp`, `small.bmp`, and `smiley.bmp`.
+1. Execute `ls`. You should see this problem's distribution code, including `bmp.h`, `copy.c`, `large.bmp`, `small.bmp`, and `smiley.bmp`.
 
 == Background
 
@@ -114,7 +114,7 @@ Knowing all this has got to be useful!
 
 Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-bit uncompressed BMPs by a factor of `f`.
 
-* Implement your program in a file called `resize.c` inside of `~/chapter3/more/`.
+* Implement your program in a file called `resize.c` inside of `~/chapter3/resize/more/`.
 * Your program should accept exactly three command-line arguments, whereby
 +
 --
@@ -214,15 +214,15 @@ within [this sandbox](https://sandbox.cs50.io/cf791495-d296-437d-bc60-cf27e43c76
 
 === Step 1 of 2
 
-Head back to the ide.cs50.io[CS50 IDE] and ensure that `resize.c` is in `~/chapter3/resize`, as with:
+Head back to the ide.cs50.io[CS50 IDE] and ensure that `resize.c` is in `~/chapter3/resize/more`, as with:
 
 [source]
 ----
-cd ~/chapter3/resize
+cd ~/chapter3/resize/more
 ls
 ----
 
-If `resize.c` is not in `~/chapter3/resize`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
+If `resize.c` is not in `~/chapter3/resize/more`, move it into that directory, as via `mv` (or via CS50 IDE's lefthand file browser).
 
 === Step 2 of 2
 
@@ -230,7 +230,7 @@ If `resize.c` is not in `~/chapter3/resize`, move it into that directory, as via
 +
 [source]
 ----
-cd ~/chapter3/resize
+cd ~/chapter3/resize/more
 submit50 cs50/problems/2019/ap/resize/more
 ----
 +

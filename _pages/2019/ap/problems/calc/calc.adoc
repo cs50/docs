@@ -16,7 +16,7 @@ $ [underline]#./calc 50 x 28#
 
 include::../../honesty.adoc[]
 
-== Adding any Updates
+== Getting Started
 
 Start off by opening up CS50 IDE and then type
 
@@ -35,7 +35,7 @@ video::AI6Ccfno6Pk[youtube]
 
 If you happen to see (and are confused by!) `char *` in this and other shorts, know for now that `char *` simply means `string`. But more on that soon!
 
-The shorts on arrayswouldn't hurt either, if you want a refresher.
+The shorts on arrays wouldn't hurt either, if you want a refresher.
 
 video::YdSycMcxvY0[youtube]
 
