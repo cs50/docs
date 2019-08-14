@@ -1,0 +1,53 @@
+---
+layout: 2019/ap
+---
+
+= Writing Problem: Degrees of Scalability
+
+== tl;dr
+
+Research how scalable real world applications are.
+
+include::../../honesty.adoc[]
+
+== Analyze
+
+First, take a look at how Dropbox scales.
+
+video::VECV6r9s5SE[youtube]
+
+Answer the following writing questions, giving both your answer and a justification. There is not necessarily a _correct_ answer to each question, rather the important part is your justification for the choice(s) you make.
+
+. Let's consider the popular social media site, Facebook, and see how scalable it is.
+.. Based on your knowledge of Facebook, do you think the website, its applications, and anything else it has are scalable?
+.. Do they allow for a large number of users with few bugs? Is all information accurately saved to their database? Would the server crash from overload?
+.. How do you think Facebook allows for such a large number of users? How do you think the servers divide the work (e.g., Do they scale vertically? Horizontally? Neither? Both?)?
+.. Do you think Facebook is scalable enough that they would no longer have to scale vertically to allow for more users? Remember to justify all answers.
+. Now let's look into finance. Consider any online banking service you utilize.
+.. Based on your knowledge of your banking service, do you think that it is scalable?
+.. Does your banking service allow for a large number of users? Do you think it can handle a large number of users using its service at once or would it crash?
+.. With more users, comes more bugs and security risks? Does your banking service ensure security? Does it make sure that no two people can be logged in at once, even if they both try logging in at the same exact time? Can you think of any problems with their service and/or database?
+.. Which do you think is more scalable? Facebook or your banking service? Can you think of something that's more scalable than the one you chose?
+. Last one! Choose another popular application unrelated to social media and finance and analyze its scalability like we did before.
+
+== How to Submit
+
+=== Step 1 of 3
+
+Go to https://github.com/me50/USERNAME, substituting `USERNAME` in the URL with your own GitHub username. On the left side of the screen, click on "Branch: master". In the field that says "Find or create a branch...", type `cs50/problems/2019/ap/scalability` and click "Create branch".
+
+=== Step 2 of 3
+
+Click the button that says "Upload files". Drag your `scalability.(doc, docx, pdf, txt)` file into the box that says "Drag files here".
+
+=== Step 3 of 3
+
+Click the green "Commit changes" button and you're done!
+
+If you run into any trouble, email sysadmins@cs50.harvard.edu!
+
+You may resubmit any problem as many times as you'd like before the deadline.
+
+Your submission should be graded for correctness within 2 minutes, at which point your score will appear at https://submit.cs50.io/[submit.cs50.io]!
+
+This was Degrees of Scalability.
