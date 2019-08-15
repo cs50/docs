@@ -31,21 +31,19 @@ You know that you need &pi; to calculate the area of a circle (&pi; r^2^). Let's
 
 How close could you get to the *actual* value of &pi;? Did the simulation get more accurate the longer you ran it (or the more data points you had)?
 
-== Fly in the Sky
+== Augmented Reality
 
-In the above example, we found an approximate value of &pi;. That's a pretty cool thing for a program to find! But we already __knew__ what the value of &pi; was! Can we use simulations to find something that we don't already know? Perhaps to test military jets!
+In the above example, we found an approximate value of &pi;. That's a pretty cool thing for a program to find! But we already __knew__ what the value of &pi; was! Can we use simulations to find something that we don't already know? Perhaps to visualize how something might look in a particular setting!
 
-In the video below, professional test pilots explain the advantages of using simulation software before constructing planes.
+In the video below, a French developer explains the advantages of using simulation software to preview products before purchasing them, as well as other uses.
 
-video::P2XpjLtnPsY[youtube]
+video::obSmUqWk0_U[youtube]
 
-*BAE Systems* uses their simulator to save money and time in production. If there's a mistake in a design, they can find it using the simulator, and fix it before they spend time, money, and materials building the physical plane. The simulator also allows them to prepare their pilots for worst-case situations without actually putting the pilots in those situations.
+== T-Shirt Designs
 
-== Try in the Sky
+As you can see, models and simulations can be used in everyday situations. For instance, have you ever wanted to design a custom t-shirt, perhaps one that says "I took CS50 AP"? T-shirt companies like CustomInk use software to model what your design might look like. Head over to https://www.customink.com/lab[CustomInk's Design Lab], and try your hand at designing a t-shirt.
 
-So maybe you don't use flight simulators to build planes every day. Models and simulations can be used in everyday situations as well. For instance, have you ever wanted to design a custom t-shirt, perhaps one that says "I took CS50 AP"? T-shirt companies like CustomInk use software to model what your design might look like. Head over to https://www.customink.com/lab[CustomInk's Design Lab], and try your hand at designing a t-shirt.
-
-How many times did you change the text, or font, or image size? Imagine if each time, you had to make and print an entire physical t-shirt, just to see what a small change might look like. You may not be creating military jets, but you still benefit from the rapid prototyping that computer models and simulations allow.
+How many times did you change the text, or font, or image size? Imagine if each time, you had to make and print an entire physical t-shirt, just to see what a small change might look like. Clearly, you can often benefit from the rapid prototyping that computer models and simulations allow.
 
 == Your Turn
 
