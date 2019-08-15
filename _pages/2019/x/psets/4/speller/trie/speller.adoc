@@ -323,7 +323,7 @@ And if you'd like to put your code to the test against classmates' code (just fo
 
 [source]
 ----
-check50 cs50/problems/2019/x/challenges/speller
+submit50 cs50/problems/2019/x/challenges/speller
 ----
 
 Then visit the URL that `check50` outputs (after a few minutes!) to see where you rank!
