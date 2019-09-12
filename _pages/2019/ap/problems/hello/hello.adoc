@@ -49,7 +49,7 @@ Okay, let's create a folder (otherwise known as a *directory*) in which your cod
 
 Front and center in the CS50 IDE workspace is a window wherein you'll be able to write your code. Right now, assuming you haven't played around with the tabs, that window is blank.
 
-Let's create a new file to play around with. Right-click on your newly-created `hello` folder and choose *New File* from the context menu. Then, double-click on this new file (which should hopefully be called `Untitled` and which should be nested beneath `hello` in the file tree), and a blank window should open up in Ace with the tab for `Untitled` as the active one.
+Let's create a new file to play around with. Right-click on your newly-created `hello` folder and choose *New File* from the context menu. Then, double-click on this new file (which should hopefully be called `Untitled` and which should be nested beneath `hello` in the file tree), and a blank window should open up a tab for `Untitled` as the active one.
 
 Go ahead and type `hello` (or the ever-popular `asdf`) on line 1 of the document, and then notice how the tab's name now contains a red dot, indicating that you've made changes since the file was first opened. Select *File > Save*, and that red dot should turn green and then disappear, indicating all of our changes are saved.
 

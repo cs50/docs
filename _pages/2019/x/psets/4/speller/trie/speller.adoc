@@ -317,18 +317,16 @@ How to assess just how fast (and correct) your code is? Well, as always, feel fr
 ~cs50/2019/x/pset4/speller dictionaries/large texts/lalaland.txt
 ----
 
-/////
 == Big Board
 
 And if you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit.
 
 [source]
 ----
-check50 cs50/problems/2019/x/challenges/speller
+submit50 cs50/problems/2019/x/challenges/speller
 ----
 
-Then visit the URL that `check50` outputs to see where you rank!
-/////
+Then visit the URL that `check50` outputs (after a few minutes!) to see where you rank!
 
 == How to Submit
 
