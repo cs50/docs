@@ -29,8 +29,8 @@ image:pyramids.png[Super Mario Brothers, width="50%"]
 == Specification
 
 * Write, in a file called `mario.c` in your `~/chapter1/mario/` directory, a program that recreates these half-pyramids using hashes (`#`) for blocks.
-* To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramids pictured above happens to be `4`, the width of each half-pyramid `4`, with an a gap of size `2` separating them.)
-* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
+* To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `8`. (The height of the half-pyramids pictured above happens to be `4`, the width of each half-pyramid `4`, with an a gap of size `2` separating them.)
+* If the user fails to provide a non-negative integer no greater than `8`, you should re-prompt for the same again.
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
 * Take care to left-align the bottom-left corner of the left-hand half-pyramid with the left-hand edge of your terminal window.
 
