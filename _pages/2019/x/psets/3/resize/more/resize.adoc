@@ -116,7 +116,7 @@ Implement a program called `resize` that resizes (i.e., enlarges or shrinks) 24-
 * Your program should accept exactly three command-line arguments, whereby
 +
 --
-** the first (`f`) must be a floating-point value in (0.0, 100.0],
+** the first (`f`) must be a positive floating-point value less than or equal to 100.0,
 ** the second must be the name of a BMP to be resized, and
 ** the third must be the name of the resized version to be written.
 --
