@@ -117,7 +117,7 @@ If you'd like to play with the staff's own implementation of `bleep`, you may ex
 
 [source]
 ----
-~cs50/chapter6/bleep
+~cs50/2019/ap/chapter6/bleep
 ----
 
 == How to Submit

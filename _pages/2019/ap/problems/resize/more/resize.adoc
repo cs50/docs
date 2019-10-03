@@ -170,7 +170,7 @@ If you'd like to peek at, e.g., ``large.bmp``'s headers (in a more user-friendly
 
 [source]
 ----
-~cs50/chapter3/peek large.bmp
+~cs50/2019/ap/chapter3/resize/less/peek large.bmp
 ----
 
 Better yet, if you'd like to compare your outfile's headers against those from the <<staffs-solution,staff's solution>>, you might want to execute commands like the below. (Think about what each is doing.)
@@ -178,8 +178,8 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 [source]
 ----
 ./resize 4 small.bmp student.bmp
-~cs50/hacker3/resize 4 small.bmp staff.bmp
-~cs50/hacker3/peek student.bmp staff.bmp
+~cs50/2019/ap/chapter3/resize/more/resize 4 small.bmp staff.bmp
+~cs50/2019/ap/chapter3/resize/more/peek student.bmp staff.bmp
 ----
 
 === `check50`
