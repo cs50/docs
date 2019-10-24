@@ -28,7 +28,7 @@ include::../../honesty.adoc[]
 
 Have a more in-depth look at debugging techniques from Doug. (Odds are these 30 minutes with Doug will save you hours over the course of the term!)
 
-video::-VtkMZjvvKaU[youtube]
+video::VtkMZjvvKaU[youtube]
 
 == Getting Started
 
@@ -73,7 +73,7 @@ Anyhow, it appears that the game is at least partly functional. Granted, it's no
 
 === Checking for Understanding
 
-Read over the code and comments in `fifteen.c` and then answer the questions below in `questions.txt`, which is a (nearly empty) text file that we included for you inside of the distribution's `fifteen` directory. No worries if you're not quite sure how `fprintf` or `fflush` work; we're simply using those to automate some testing.
+Read over the code and comments in `fifteen.c` and then answer the questions below in `questions.md`, which is a (nearly empty) text file that we included for you inside of the distribution's `fifteen` directory. No worries if you're not quite sure how `fprintf` or `fflush` work; we're simply using those to automate some testing.
 
 [start=0]
 . Besides 4 × 4 (which are Game of Fifteen's dimensions), what other dimensions does the framework allow?
