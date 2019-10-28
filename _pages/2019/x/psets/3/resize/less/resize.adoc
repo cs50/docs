@@ -173,8 +173,8 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 [source]
 ----
 ./resize 4 small.bmp student.bmp
-~cs50/2019/x/pset3/resize 4 small.bmp staff.bmp
-~cs50/2019/x/pset3/peek student.bmp staff.bmp
+~cs50/2019/x/pset3/less/resize 4 small.bmp staff.bmp
+~cs50/2019/x/pset3/less/peek student.bmp staff.bmp
 ----
 
 === `check50`
