@@ -7,7 +7,7 @@ title: FAQs
 
 = FAQs
 
-Below are frequently asked questions (FAQs) specific to CS50x AP 2017. For questions specific to edX, see https://support.edx.org/[support.edx.org].
+Below are frequently asked questions (FAQs) specific to CS50x AP 2019. For questions specific to edX, see https://support.edx.org/[support.edx.org].
 
 == Can I re-submit problem sets?
 
@@ -19,7 +19,7 @@ Yes, if you have particularly slow, expensive, or infrequent Internet access, se
 
 == Does CS50 AP have deadlines?
 
-Only one, when the course itself ends! You are welcome to take CS50 AP at your own pace, so long as you submit all problems no later than 30 April 2018.
+Only one, when the course itself ends! You are welcome to take CS50 AP at your own pace, so long as you submit all problems no later than 30 April 2020.
 
 == Does CS50 AP have office hours?
 
@@ -31,7 +31,7 @@ No, only students taking CS50 AP through their own high school would have quizze
 
 == Does CS50 AP offer CS50 Certificates?
 
-Yes; students who complete all the problems with a 60% or higher are eligible for a certificate.
+Yes; students who complete all the problems with a 70% or higher are eligible for a certificate.
 
 == How can I hide CS50's Facebook Group from my newsfeed?
 
@@ -54,11 +54,11 @@ image::notifications.png[screenshot]
 
 == Is it too late to start CS50 AP?
 
-Nope, even if this is your first time here, you're not too late to begin! You are welcome to take CS50 AP at your own pace, starting whenever you'd like, so long as you finish before 30 April 2018.
+Nope, even if this is your first time here, you're not too late to begin! You are welcome to take CS50 AP at your own pace, starting whenever you'd like, so long as you finish before 30 April 2020.
 
 == What does edX's Verified Certificate of Achievement look like?
 
-Odds are 2017's will resemble https://www.edx.org/sites/default/files/theme/example-certificate-verified.png[this sample].
+Odds are 2019-20's will resemble https://www.edx.org/sites/default/files/theme/example-certificate-verified.png[this sample].
 
 == What if YouTube is blocked in my country?
 

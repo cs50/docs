@@ -28,14 +28,14 @@ The only background required for CS50 for AP Computer Science Principles is comp
 
 == Website
 
-This course lives at http://harvard.cs50.edu/ap.
+This course lives at http://cs50.edx.org/ap.
 
 Visit the course's website to watch videos, to get help, to download handouts and software, and to follow links to other resources.
 
 ////
 == Certificates
 
-Students who earn a satisfactory grade (60% or higher) on every one of the problems will be eligible to receive a certificate from HarvardX as a downloadable, printable PDF.
+Students who earn a satisfactory grade (70% or higher) on every one of the problems will be eligible to receive a certificate from HarvardX as a downloadable, printable PDF.
 ////
 
 == Books
@@ -91,42 +91,26 @@ And the six computational thinking practices are:
 * P5. Communicating (both orally and in writing)
 * P6. Collaborating
 
+Course lectures:
 
-=== Chapter 0 - Computers and Computing
-
-Computers and Computing. How Computers Work. Bits and Bytes. Hardware. Memory. Binary. ASCII. Algorithms.
-
-=== Chapter 1 - Building Blocks of Programming
-
-Pseudocode. Scratch. Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops.
-
-=== Chapter 2 - Putting the Blocks Together
-
-Compiling. Functions and Returning. Arrays and Strings. Command-Line Interaction. Exit Codes. Libraries. Typecasting. Bugs and Debugging.
-
-=== Chapter 3 - Thinking Computationally
-
-Linear Search. Bubble sort. Selection sort. Insertion sort. Binary Search. Time Complexity. Unsolvable Problems. Simulation.
-
-=== Chapter 4 - Design, Elegance, and Efficiency
-
-Principles of Good Design. Ncurses. Structures and Encapsulation. Recursion. Merge Sort. Hexadecimal. File I/O. Images. Version Control and Collaboration.
-
-=== Chapter 5 - Networking and the Internet
-
-Internet Basics. IP Addresses. DNS and DHCP. Routers. TCP and IP. HTTP. Trust Models. Cybersecurity. HTML. CSS.
-
-=== Chapter 6 - Problem Solving in an Interconnected World
-
-Python. Flask. SQL. MVC. JavaScript. Ajax. Artificial Intelligence. Virtual and Augmented Reality.
-
-=== Optional Chapters
-
-Chapter A and B are optional and cover some of the more complex topics. Chapter A covers different ways to manage data and Chapter B is a toolbox of sorts for those interested in the development aspect. We recommend completing these chapters between Chapter 4 and 5.
+* Hardware
+* Internet, Part I
+* Multimedia
+* Security
+* Computational Thinking
+* C
+* Arrays
+* Memory
+* Data Structures
+* Internet, Part II
+* Python
+* Flask
+* SQL
+* Wrap-Up
 
 == Problems
 
-All problems are due on April 30, 2018. You will receive a certificate of completion, if a satisfactory grade (60%) is earned on all problems.
+All problems are due on April 30, 2020. You will receive a certificate of completion, if a satisfactory grade (70%) is earned on all problems.
 
 == AP Credit
 
