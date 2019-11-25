@@ -31,8 +31,6 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `rm resize.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `resize`, which was inside of that ZIP file.
 1. Execute `cd resize` to change into that directory.
-1. Execute `ls`. You should see a directory called `more`.
-1. Execute `cd more` to change into that directory.
 1. Execute `ls`. You should see this problem's distribution code, including `bmp.h`, `copy.c`, `large.bmp`, `small.bmp`, and `smiley.bmp`.
 
 == Background
@@ -170,7 +168,7 @@ If you'd like to peek at, e.g., ``large.bmp``'s headers (in a more user-friendly
 
 [source]
 ----
-~cs50/chapter3/peek large.bmp
+~cs50/2019/ap/chapter3/more/peek large.bmp
 ----
 
 Better yet, if you'd like to compare your outfile's headers against those from the <<staffs-solution,staff's solution>>, you might want to execute commands like the below. (Think about what each is doing.)
@@ -178,8 +176,8 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 [source]
 ----
 ./resize 4 small.bmp student.bmp
-~cs50/hacker3/resize 4 small.bmp staff.bmp
-~cs50/hacker3/peek student.bmp staff.bmp
+~cs50/2019/ap/chapter3/more/resize 4 small.bmp staff.bmp
+~cs50/2019/ap/chapter3/more/peek student.bmp staff.bmp
 ----
 
 === `check50`

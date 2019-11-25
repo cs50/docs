@@ -174,7 +174,7 @@ If you'd like to play with the staff's own implementation of `similarities`, you
 
 [source]
 ----
-~cs50/chapter7/less/compare
+~cs50/2019/ap/chapter7/compare
 ----
 
 === Web

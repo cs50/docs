@@ -246,7 +246,7 @@ fprintf(stderr, "Usage: ./whodunit infile outfile\n");
 
 Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works.
 
-Open up `README.md` and replace every `TODO` therein (except the last) with your answer to the question above it. That file happens to be written in Markdown, a lightweight format for text files that makes it easy to stylize text. For instance, we've prefixed each question with `##` so that, when viewed on GitHub, it renders in a larger, bold font. And we've surrounded code-related keywords with backticks (\`) so that they render on GitHub in a monospaced (i.e., code-like) font.
+Open up `questions.md` and replace every `TODO` therein (except the last) with your answer to the question above it. That file happens to be written in Markdown, a lightweight format for text files that makes it easy to stylize text. For instance, we've prefixed each question with `##` so that, when viewed on GitHub, it renders in a larger, bold font. And we've surrounded code-related keywords with backticks (\`) so that they render on GitHub in a monospaced (i.e., code-like) font.
 
 No need to write your answers in Markdown; plaintext suffices. But if you'd like to format your answers somehow, see https://guides.github.com/features/mastering-markdown/ for a tutorial.
 
@@ -264,7 +264,7 @@ Implement a program called `whodunit` that reveals Mr. Boddy's drawing in such a
 
 == Questions, continued
 
-Alright, whodunit? Replace the last `TODO` in `README.md` with your answer!
+Alright, whodunit? Replace the last `TODO` in `questions.md` with your answer!
 
 == Walkthrough
 

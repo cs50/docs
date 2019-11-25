@@ -149,7 +149,7 @@ If your program behaves incorrectly on some inputs (or doesn't compile at all), 
 
 [source,bash]
 ----
-~cs50/chapter1/isbn
+~cs50/2019/ap/chapter1/isbn
 ----
 
 == How to Submit
