@@ -44,6 +44,6 @@ Your goal this assignment:
 
    instead.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
-1. [Submit this form](https://forms.cs50.io/3f2958dd-e506-4232-970c-c51c62b94ae1).
+1. [Submit this form](https://forms.cs50.io/5405ae02-4a27-4779-9688-0024631445f1).
 
 You can then go to [https://cs50.me/cs50g](https://cs50.me/cs50g) to view your current progress!
