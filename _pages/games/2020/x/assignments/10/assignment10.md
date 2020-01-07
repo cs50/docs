@@ -13,7 +13,7 @@ layout: games/2020/g
 
 ## Getting Started
 
-Download the distro code for your game from <https://cdn.cs50.net/games/2020/x/assignments/10/assignment10.zip> and unzip `assignment10.zip`, which should yield a directory called `assignment10`.
+Download the distro code for your game from <https://cdn.cs50.net/games/2019/x/assignments/10/assignment10.zip> and unzip `assignment10.zip`, which should yield a directory called `assignment10`.
 
 Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
 `cmd` in the Windows task bar), move to the directory where you extracted `assignment10`
