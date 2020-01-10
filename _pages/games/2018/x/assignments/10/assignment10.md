@@ -15,11 +15,11 @@ layout: games/2018/g
 
 Download the distro code for your first game from <https://cdn.cs50.net/games/2018/spring/assignments/10/assignment10.zip> and unzip `assignment10.zip`, which should yield a directory called `assignment10`.
 
-Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing 
-`cmd` in the Windows task bar), move to the directory where you extracted `assignment10` 
+Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
+`cmd` in the Windows task bar), move to the directory where you extracted `assignment10`
 (recall that the `cd` command can change your current directory), and run
 
-```
+```bash
 cd assignment10
 ```
 
