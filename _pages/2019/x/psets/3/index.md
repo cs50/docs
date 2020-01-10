@@ -8,8 +8,8 @@ layout: 2019/x
 
 1. Submit, using CS50 Lab, [Whodunit](https://lab.cs50.io/cs50/labs/2019/x/whodunit/)
 1. Submit, using CS50 IDE, one of:
-  * [this version of Resize](https://docs.cs50.net/2019/x/psets/3/resize/less/resize.html), if feeling less comfortable
-  * [this version of Resize](https://docs.cs50.net/2019/x/psets/3/resize/more/resize.html), if feeling more comfortable
+   * [this version of Resize](https://docs.cs50.net/2019/x/psets/3/resize/less/resize.html), if feeling less comfortable
+   * [this version of Resize](https://docs.cs50.net/2019/x/psets/3/resize/more/resize.html), if feeling more comfortable
 1. Submit [Recover](https://docs.cs50.net/2019/x/psets/3/recover/recover.html), using CS50 IDE
 
 If you submit both versions of Resize, we'll record the higher of your two scores.
