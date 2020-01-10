@@ -15,11 +15,11 @@ layout: games/2018/g
 
 Download the distro code for your first game from <https://cdn.cs50.net/games/2018/spring/assignments/2/assignment2.zip> and unzip `assignment2.zip`, which should yield a directory called `assignment2`.
 
-Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing 
-`cmd` in the Windows task bar), move to the directory where you extracted `assignment2` 
+Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
+`cmd` in the Windows task bar), move to the directory where you extracted `assignment2`
 (recall that the `cd` command can change your current directory), and run
 
-```
+```bash
 cd assignment2
 ```
 
@@ -37,7 +37,7 @@ Your goals this assignment:
 
 1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/games/2018/x/assignments/2` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
-   ```
+   ```bash
    submit50 cs50/games/2018/x/assignments/2
    ```
 
