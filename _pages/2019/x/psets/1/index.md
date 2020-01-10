@@ -21,7 +21,7 @@ If you submit both Marios, we'll record the higher of your two scores. If you su
 ## Advice
 
 * Try out any of David's programs from class via Week 1's [sandbox](https://sandbox.cs50.io/fbe800b2-4c6f-4bf4-8642-a853ee08ce5d).
-* If you see any errors when compiling your code with `make`, focus first on fixing the very first error you see, scrolling up as needed. If unsure what it means, try asking `help50` for help. For instance, if trying to compile `hello`, and 
+* If you see any errors when compiling your code with `make`, focus first on fixing the very first error you see, scrolling up as needed. If unsure what it means, try asking `help50` for help. For instance, if trying to compile `hello`, and
 
   ```bash
   make hello
