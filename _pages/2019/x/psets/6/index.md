@@ -7,17 +7,17 @@ layout: 2019/x
 ## What to Do
 
 1. Submit, using CS50 IDE, [Hello](https://docs.cs50.net/2019/x/psets/6/sentimental/hello/hello.html) in Python
-2. Submit, using CS50 IDE, one of:
-  - [this version of Mario](https://docs.cs50.net/2019/x/psets/6/sentimental/mario/less/mario.html) in Python, if feeling less comfortable
-  - [this version of Mario](https://docs.cs50.net/2019/x/psets/6/sentimental/mario/more/mario.html) in Python, if feeling more comfortable
-3. Submit, using CS50 IDE, one of:
-  - [Cash](https://docs.cs50.net/2019/x/psets/6/sentimental/cash/cash.html) in Python
-  - [Credit](https://docs.cs50.net/2019/x/psets/6/sentimental/credit/credit.html) in Python
-4. Submit, using CS50 IDE, one of:
-  - [Caesar](https://docs.cs50.net/2019/x/psets/6/sentimental/caesar/caesar.html) in Python
-  - [Crack](https://docs.cs50.net/2019/x/psets/6/sentimental/crack/crack.html) in Python
-  - [Vigenère](https://docs.cs50.net/2019/x/psets/6/sentimental/vigenere/vigenere.html) in Python
-5. Submit, using CS50 IDE, [Bleep](https://docs.cs50.net/2019/x/psets/6/bleep/bleep.html) in Python
+1. Submit, using CS50 IDE, one of:
+   * [this version of Mario](https://docs.cs50.net/2019/x/psets/6/sentimental/mario/less/mario.html) in Python, if feeling less comfortable
+   * [this version of Mario](https://docs.cs50.net/2019/x/psets/6/sentimental/mario/more/mario.html) in Python, if feeling more comfortable
+1. Submit, using CS50 IDE, one of:
+   * [Cash](https://docs.cs50.net/2019/x/psets/6/sentimental/cash/cash.html) in Python
+   * [Credit](https://docs.cs50.net/2019/x/psets/6/sentimental/credit/credit.html) in Python
+1. Submit, using CS50 IDE, one of:
+   * [Caesar](https://docs.cs50.net/2019/x/psets/6/sentimental/caesar/caesar.html) in Python
+   * [Crack](https://docs.cs50.net/2019/x/psets/6/sentimental/crack/crack.html) in Python
+   * [Vigenère](https://docs.cs50.net/2019/x/psets/6/sentimental/vigenere/vigenere.html) in Python
+1. Submit, using CS50 IDE, [Bleep](https://docs.cs50.net/2019/x/psets/6/bleep/bleep.html) in Python
 
 If you submit both versions of Mario; or both of Cash and Credit; or more than one of Caesar, Vigenere, and Crack we'll record the higher of your two scores.
 
