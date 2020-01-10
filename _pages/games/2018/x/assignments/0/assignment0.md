@@ -13,11 +13,11 @@ layout: games/2018/g
 
 Download the distro code for your first game from <https://cdn.cs50.net/games/2018/spring/assignments/0/assignment0.zip> and unzip `assignment0.zip`, which should yield a directory called `assignment0`.
 
-Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing 
-`cmd` in the Windows task bar), move to the directory where you extracted `assignment0` 
+Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
+`cmd` in the Windows task bar), move to the directory where you extracted `assignment0`
 (recall that the `cd` command can change your current directory), and run
 
-```
+```bash
 cd assignment0
 ```
 
@@ -42,10 +42,10 @@ For further information on how to actually run games, do just visit the followin
 [https://love2d.org/wiki/Getting_Started](https://love2d.org/wiki/Getting_Started)
 
 Once the code and LÖVE2D have been downloaded and installed, the actual change you'll be making to the code base is
-small, but it will require you to understand what many of the pieces do, so be sure to watch Lecture 0 and read 
+small, but it will require you to understand what many of the pieces do, so be sure to watch Lecture 0 and read
 through the code so you have a firm understanding of how it works before diving in! In particular, take note of how
-paddle movement works, reading both the `Paddle` class as well as the code in `main.lua` that actually drives the 
-movement, located in the `update` function (currently done using keyboard input for each). If our agent's goal is 
+paddle movement works, reading both the `Paddle` class as well as the code in `main.lua` that actually drives the
+movement, located in the `update` function (currently done using keyboard input for each). If our agent's goal is
 just to deflect the ball back toward the player, what needs to drive its movement?
 
 Your goal:
@@ -62,7 +62,7 @@ paddle (or both, if desired) try to deflect the paddle on their own, you've done
 1. [Install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
 1. Using Git, push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/games/2018/x/assignments/0` or, if you've installed `submit50`, execute
 
-   ```
+   ```bash
    submit50 cs50/games/2018/x/assignments/0
    ```
 
