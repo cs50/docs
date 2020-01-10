@@ -15,17 +15,17 @@ layout: games/2018/g
 
 Download the distro code for your first game from <https://cdn.cs50.net/games/2018/spring/assignments/5/assignment5.zip> and unzip `assignment5.zip`, which should yield a directory called `assignment5`.
 
-Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing 
-`cmd` in the Windows task bar), move to the directory where you extracted `assignment5` 
+Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
+`cmd` in the Windows task bar), move to the directory where you extracted `assignment5`
 (recall that the `cd` command can change your current directory), and run
 
-```
+```bash
 cd assignment5
 ```
 
 ## A "Pot"ent Weapon
 
-Welcome to your sixth assignment! We've explored the workings of a top-down adventure game in the style of Legend of Zelda and have a fair foundation for anything resembling it, be it a dungeon crawler or a vast 2D game featuring an overworld or the like. Let's add a few pieces to this sample in order to pay homage to some of the classic Zelda titles and to give our character a shot at actually surviving his trek through the dungeon! 
+Welcome to your sixth assignment! We've explored the workings of a top-down adventure game in the style of Legend of Zelda and have a fair foundation for anything resembling it, be it a dungeon crawler or a vast 2D game featuring an overworld or the like. Let's add a few pieces to this sample in order to pay homage to some of the classic Zelda titles and to give our character a shot at actually surviving his trek through the dungeon!
 
 Your goals this assignment:
 
@@ -37,7 +37,7 @@ Your goals this assignment:
 
 1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/games/2018/x/assignments/5` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
-   ```
+   ```bash
    submit50 cs50/games/2018/x/assignments/5
    ```
 
