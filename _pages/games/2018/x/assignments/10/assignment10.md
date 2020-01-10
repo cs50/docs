@@ -34,12 +34,11 @@ Your goal this assignment:
 * *Ensure that there is an object or region with a trigger at the very end that will trigger the end of the level (some zone with an invisible `BoxCollider` will work).* This one should be easy as well, just relying on the creation of an empty GameObject and giving it a `BoxCollider` component, which you can then resize via its resize button in the component inspector!
 * *When the level ends, display "You Won!" on the screen with a `Text` object.* Recall that `OnTriggerEnter` is the function you'll need to write in a script you also associate with the `BoxCollider` trigger, and ensure that the `BoxCollider` is set to a trigger in the inspector as well! Then simply program the appropriate logic to toggle on the display of a `Text` object that you also include in your scene (for an example on how to do this, just see the Helicopter Game 3D project, specifically the `GameOverText` script)!
 
-
 ## How to Submit
 
 1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/games/2018/x/assignments/10` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
-   ```
+   ```bash
    submit50 cs50/games/2018/x/assignments/10
    ```
 
