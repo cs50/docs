@@ -16,17 +16,17 @@ layout: games/2018/g
 
 Download the distro code for your first game from <https://cdn.cs50.net/games/2018/spring/assignments/4/assignment4.zip> and unzip `assignment4.zip`, which should yield a directory called `assignment4`.
 
-Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing 
-`cmd` in the Windows task bar), move to the directory where you extracted `assignment4` 
+Then, in a terminal window (located in `/Applications/Utilities` on Mac or by typing
+`cmd` in the Windows task bar), move to the directory where you extracted `assignment4`
 (recall that the `cd` command can change your current directory), and run
 
-```
+```bash
 cd assignment4
 ```
 
 ## It's-a Key!
 
-Welcome to your fifth assignment! So far, we have a fair foundation for a platforming game present in the distro, 
+Welcome to your fifth assignment! So far, we have a fair foundation for a platforming game present in the distro,
 
 Your goals this assignment:
 
@@ -35,12 +35,11 @@ Your goals this assignment:
 * *Once the lock has disappeared, trigger a goal post to spawn at the end of the level. Goal posts can be found in `flags.png`; feel free to use whichever one you'd like! Note that the flag and the pole are separated, so you'll have to spawn a `GameObject` for each segment of the flag and one for the flag itself.* This is code we can likely add to the `onCollide` function of our lock blocks, once we've collided with them and have the key they need to unlock. Just like gems spawn when we collide with some overhead blocks, you'll simply need to add new `GameObject`s to the scene that comprise a flag pole. Note that the pole and flag are separate objects, but they should be placed in such a way that makes them look like one unit! (See the scene mockup in `full_sheet.png` for some inspiration).
 * *When the player touches this goal post, we should regenerate the level, spawn the player at the beginning of it again (this can all be done via just reloading `PlayState`), and make it a little longer than it was before. You'll need to introduce `params` to the `PlayState:enter` function that keeps track of the current level and persists the player's score for this to work properly.* The easiest way to do this is to just add an `onConsume` callback to each flag piece when we instantiate them in the last goal; this `onConsume` method should then just restart our `PlayState`, only now we'll need to ensure we pass in our `score` and `width` of our game map so that we can generate a map larger than the one before it. For this, you'll need to implement a `PlayState:enter` method accordingly; see prior assignments for plenty of examples on how we can achieve this! And don't forget to edit the default `gStateMachine:change('play')` call to take in some default score and level width!
 
-
 ## How to Submit
 
 1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/games/2018/x/assignments/4` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
-   ```
+   ```bash
    submit50 cs50/games/2018/x/assignments/4
    ```
 
