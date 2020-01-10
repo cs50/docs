@@ -16,7 +16,7 @@ Submit any two (2) of:
 
 If you submit all three programs, we'll record the highest two of your three scores.
 
-## Advice 
+## Advice
 
 * Be sure you've watched Week 2's lecture.
   * You can compile any of the programs from that lecture in Week 2's [sandbox](https://sandbox.cs50.io/edf25846-8cf8-4391-bda0-8649f25ac1e2).
