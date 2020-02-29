@@ -29,7 +29,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory).
 1. Execute `mkdir chapter8` to make (i.e., create) a directory called `chapter8` in your home directory, if you haven't already done so.
 1. Execute `cd chapter8` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/ap/2019/problems/finance/finance.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `wget http://cdn.cs50.net/2019/fall/tracks/web/finance/finance.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip finance.zip` to uncompress that file.
 1. Execute `rm finance.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `finance`, which was inside of that ZIP file.
