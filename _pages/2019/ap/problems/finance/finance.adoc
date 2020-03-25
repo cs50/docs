@@ -18,7 +18,7 @@ If you're not quite sure what it means to buy and sell stocks (i.e., shares of a
 
 You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying https://iextrading.com/developer/[IEX] for stocks' prices.
 
-Indeed, IEX lets you download stock quotes via their API (applivcation programming interface) using URLs like https://api.iextrading.com/1.0/stock/NFLX/quote. Notice how Netflix's symbol (NFLX) is embedded in this URL; that's how IEX knows whose data to return. If you follow that link, you'll see a reponse in JSON (JavaScript Object Notation) format. It's a bit messy, but notice how, between the curly braces, there's a comma-separated list of key-value pairs, with a colon separating each key from its value.
+Indeed, IEX lets you download stock quotes via their API (application programming interface) using URLs like https://cloud-sse.iexapis.com/stable/stock/NFLX/quote?token={api_key}, in which you would substitute {api_key} with an actual API key! Notice how Netflix's symbol (NFLX) is embedded in this URL; that's how IEX knows whose data to return. With an API key, once you follow that type of link, you'll see a reponse in JSON (JavaScript Object Notation) format. It's a bit messy, but one can notice how, between the curly braces, there's a comma-separated list of key-value pairs, with a colon separating each key from its value.
 
 == Distribution
 
@@ -29,7 +29,7 @@ Here's how to download this problem's "distribution code" (i.e., starter code) i
 1. Execute `cd` to ensure that you're in `~/` (i.e., your home directory).
 1. Execute `mkdir chapter8` to make (i.e., create) a directory called `chapter8` in your home directory, if you haven't already done so.
 1. Execute `cd chapter8` to change into (i.e., open) that directory.
-1. Execute `wget http://cdn.cs50.net/ap/2019/problems/finance/finance.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `wget http://cdn.cs50.net/2019/fall/tracks/web/finance/finance.zip` to download a (compressed) ZIP file with this problem's distribution.
 1. Execute `unzip finance.zip` to uncompress that file.
 1. Execute `rm finance.zip` followed by `yes` or `y` to delete that ZIP file.
 1. Execute `ls`. You should see a directory called `finance`, which was inside of that ZIP file.

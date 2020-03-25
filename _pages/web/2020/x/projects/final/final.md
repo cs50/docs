@@ -21,6 +21,8 @@ staff's approval.
 In this project, you are asked to build a web application of your own. The
 nature of the application is up to you, subject to a few requirements:
 
+* Your web application must be sufficiently distinct from the other projects in
+  this course, and more complex than those.
 * Your web application must utilize at least two of Python, JavaScript, and
   SQL.
 * Your web application must be mobile-responsive.
