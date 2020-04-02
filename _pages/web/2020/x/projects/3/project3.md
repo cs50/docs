@@ -123,6 +123,8 @@ different types of toppings, or something else entirely!
 
 ## How to Submit
 
+**IMPORTANT**: *On 1 July 2020, CS50W will update to a new version and this version of this project will no longer be accepted for credit. If you haven't completed the entire course by that date, that's okay! If you ultimately receive a passing grade on this project, we will consider it equivalent in scope and content to Project 4 in the new version of the course, and within two weeks after 1 July 2020 your gradebook at [https://cs50.me/cs50w](https://cs50.me/cs50w) will update to reflect that you have received credit for having completed Project 4.*
+
 1. If you haven't already done so, visit [this link](https://submit.cs50.io/invites/89679428401548238ceb022f141b9947), log in with your GitHub account, and click **Authorize cs50**. Then, check the box indicating that you'd like to grant course staff access to your submissions, and click **Join course**.
 1. If you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
    ```
