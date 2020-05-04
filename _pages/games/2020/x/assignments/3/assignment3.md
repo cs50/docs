@@ -49,6 +49,8 @@ Your goals this assignment:
 
    instead.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
+* To aid in the staff's review, in your video's description on YouTube, you should timestamp where each of the following occurs:
+  * Shiny match destroying a row/column
 1. [Submit this form](https://forms.cs50.io/14d06066-8feb-4bf5-9beb-42d7cfec9531).
 
 You can then go to [https://cs50.me/cs50g](https://cs50.me/cs50g) to view your current progress!
