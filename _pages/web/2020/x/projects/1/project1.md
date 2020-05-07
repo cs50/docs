@@ -232,8 +232,8 @@ Make sure that you've set your `DATABASE_URL` environment variable before runnin
    submit50 web50/projects/2020/x/1
    ```
    Otherwise, using [Git](https://git-scm.com/downloads), push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2020/x/1`.
-1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else. To aid in the staff's review, in your video's description on YouTube, you should timestamp where each of the following occurs:
-  * Search (showing multiple results)
+1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else. To aid in the staff's review, in your video's description on YouTube, you should timestamp where, minimally, each of the following occurs. This is **not optional**; failure to do this will result in your submission being rejected:
+  * Search (showing multiple results for a query)
   * Individual book page showing leaving a review
   * API page
 1. [Submit this form](https://forms.cs50.io/98070e3e-0545-4b1d-aaed-ce2d3eedbcf0).
