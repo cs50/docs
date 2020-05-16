@@ -32,16 +32,3 @@ To get started, follow the directions in your project README.
   specify), that's all we'll be using to test your app.
 - Can I use an external library?
   - Please stick to just vanilla JS for this project.
-
-## How to Submit
-
-1. If you haven't done so already, [install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
-1. Using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `mobile50/projects/2019/x/0` or, if you've installed `submit50`, execute
-
-   ```
-   submit50 mobile50/projects/2019/x/0
-   ```
-
-   instead.
-1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
-1. [Submit this form](https://forms.cs50.io/3f0e502f-ba0e-4beb-b0ff-ef6582be3745).
