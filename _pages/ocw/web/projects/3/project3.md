@@ -124,10 +124,10 @@ different types of toppings, or something else entirely!
 ## How to Submit
 
 1. If you haven't already, [install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
-1. Using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2019/x/3` or, if you've installed `submit50`, execute
+1. Using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2020/x/3` or, if you've installed `submit50`, execute
 
    ```
-   submit50 web50/projects/2019/x/3
+   submit50 web50/projects/2020/x/3
    ```
 
    instead.
