@@ -49,6 +49,7 @@ The following steps must be completed no later than **Tuesday, June 30, 2020 at 
 
    instead.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
+  - **VIDEO NOTE**: Make sure your video shows your timer switching from work to break mode without any intervention.
 1. [Submit this form](https://forms.cs50.io/891b24fc-9568-49ef-bcd7-18038fc261b4).
 
 You can then go to [https://cs50.me/cs50m](https://cs50.me/cs50m) to view your current progress!
