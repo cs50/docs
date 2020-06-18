@@ -117,6 +117,6 @@ you meet the requirements laid out in the above specification!
    ```
    Otherwise, using [Git](https://git-scm.com/downloads), push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2020/x/2`.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. **This video MUST show users chatting in two separate browser windows side-by-side**. (This doesn't mean you jump back and forth between foregrounding different tabs or windows, this means **SIDE BY SIDE**. Submissions that don't do this will be rejected.) [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
-1. [Submit this form](https://forms.cs50.io/0ac14c86-d1ee-426f-aa84-4fce8193393c).
+1. [Submit this form](https://forms.cs50.io/2b6168ef-fb08-4ec8-88eb-80e5fcd0000c).
 
 You can then go to [https://cs50.me/cs50w](https://cs50.me/cs50w) to view your progress!
