@@ -236,6 +236,6 @@ Make sure that you've set your `DATABASE_URL` environment variable before runnin
   * Search (showing multiple results for a query)
   * Individual book page showing leaving a review
   * API page
-1. [Submit this form](https://forms.cs50.io/785f12ae-e384-401e-956f-c6d8770c42cc).
+1. [Submit this form](https://forms.cs50.io/b207d3ca-4a9c-4dec-a8d8-54b4ad24e43f).
 
 You can then go to [https://cs50.me/cs50w](https://cs50.me/cs50w) to view your progress!
