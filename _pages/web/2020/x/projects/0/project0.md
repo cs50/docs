@@ -91,6 +91,6 @@ be introduced in Lecture 1.
    ```
    Otherwise, using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2020/x/0`.
 1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality
-1. [Submit this form](https://forms.cs50.io/abfa3784-fafd-4797-8e9d-74a4802328d5).
+1. [Submit this form](https://forms.cs50.io/53ee460c-92ce-4545-b47c-f3401c771b0c).
 
 You can then go to [https://cs50.me/cs50w](https://cs50.me/cs50w) to view your current progress!
