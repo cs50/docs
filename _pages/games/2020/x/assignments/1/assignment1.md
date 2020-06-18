@@ -71,6 +71,6 @@ cap it off, display a pause icon in the middle of the screen, nice and large, so
   * Clear difference in horizontal gap between pipes
   * Clear difference in vertical gap between pipes
   * Pausing the game
-1. [Submit this form](https://forms.cs50.io/083e7ac4-e2b5-4060-809d-8cf71136bf41).
+1. [Submit this form](https://forms.cs50.io/03929cf3-33db-4418-8ca9-29803ecf1133).
 
 You can then go to [https://cs50.me/cs50g](https://cs50.me/cs50g) to view your current progress!
