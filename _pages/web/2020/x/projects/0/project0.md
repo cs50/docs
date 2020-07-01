@@ -78,19 +78,3 @@ subject to the following requirements:
 
 Note that not all of the above requirements are covered in Lecture 0, some will
 be introduced in Lecture 1.
-
-## How to Submit
-
-**IMPORTANT**: *On 1 July 2020, CS50W will update to a new version and this version of this project will no longer be accepted for credit. If you haven't completed the entire course by that date, that's okay! If you ultimately receive a passing grade on this project, we will consider it equivalent in scope and content to Project 0 in the new version of the course, and within two weeks after 1 July 2020 your gradebook at [https://cs50.me/cs50w](https://cs50.me/cs50w) will update to reflect that you have received credit for having completed Project 0.*
-
-1. Visit [this link](https://submit.cs50.io/invites/89679428401548238ceb022f141b9947), log in with your GitHub account, and click **Authorize cs50**. Then, check the box indicating that you'd like to grant course staff access to your submissions, and click **Join course**.
-1. [Install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
-1. If you've installed `submit50`, execute
-   ```
-   submit50 web50/projects/2020/x/0
-   ```
-   Otherwise, using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2020/x/0`.
-1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality
-1. [Submit this form](https://forms.cs50.io/53ee460c-92ce-4545-b47c-f3401c771b0c).
-
-You can then go to [https://cs50.me/cs50w](https://cs50.me/cs50w) to view your current progress!

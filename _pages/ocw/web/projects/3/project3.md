@@ -120,16 +120,3 @@ you meet the requirements laid out in the above specification!
 It's up to you to decide what a "special" pizza means, and to implement it
 accordingly. It could be one particular set of toppings, allowing up to 5
 different types of toppings, or something else entirely!
-
-## How to Submit
-
-1. If you haven't already, [install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
-1. Using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2020/x/3` or, if you've installed `submit50`, execute
-
-   ```
-   submit50 web50/projects/2020/x/3
-   ```
-
-   instead.
-1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
-1. [Submit this form](https://forms.cs50.io/e980a817-6269-413c-9415-289907147cea).
