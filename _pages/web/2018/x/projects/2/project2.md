@@ -105,15 +105,3 @@ you meet the requirements laid out in the above specification!
   storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
   will prove helpful for storing data client-side that will be saved across
   browser sessions.
-
-## How to Submit
-
-1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/web/2018/x/projects/2` or, if you've installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
-
-   ```
-   submit50 cs50/web/2018/x/projects/2
-   ```
-
-   instead.
-1. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) in which you demonstrate your app's functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
-1. [Submit this form](https://forms.cs50.io/35643afd-5a3b-4482-bcec-ddbc61af297f).
