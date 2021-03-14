@@ -7,7 +7,7 @@ layout: 2019/x
 ## What to Do
 
 1. Download and install the latest version of [Chrome](https://www.google.com/chrome/), if you don't have it already.
-1. Implement your very own Scratch project using Chrome, per [this specification](scratch.html).
+1. Implement your very own Scratch project using Chrome, per [this specification](scratch.md).
 
 ## Advice
 
