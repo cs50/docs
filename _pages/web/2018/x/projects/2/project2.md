@@ -40,7 +40,7 @@ website, you likely already have `pip` installed (you can check by running
 
 To run this Flask application:
 
-1. Download the `project2` distribution code from https://cdn.cs50.net/web/2018/spring/projects/2/project2.zip and unzip it.
+1. Download the `project2` distribution code from [https://cdn.cs50.net/web/2018/spring/projects/2/project2.zip](https://cdn.cs50.net/web/2018/spring/projects/2/project2.zip) and unzip it.
 2. In a terminal window, navigate into your `project2` directory.
 3. Run `pip3 install -r requirements.txt` in your terminal window to make sure
    that all of the necessary Python packages (Flask and Flask-SocketIO, for
@@ -71,7 +71,7 @@ requirements:
   messages. Your app should only store the 100 most recent messages per channel
   in server-side memory.
 * **Sending Messages**: Once in a channel, users should be able to send text
-  messages to others the channel. When a user sends a message, their display
+  messages to others in the channel. When a user sends a message, their display
   name and the timestamp of the message should be associated with the message.
   All users in the channel should then see the new message (with display name
   and timestamp) appear on their channel page. Sending and receiving messages
