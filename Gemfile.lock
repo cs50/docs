@@ -1,11 +1,12 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (5.2.3)
+    activesupport (6.0.6.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     asciidoctor (2.0.6)
@@ -15,7 +16,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.10)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -72,9 +73,11 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    mimemagic (0.3.3)
+    mimemagic (0.4.3)
+      nokogiri (~> 1)
+      rake
     mini_portile2 (2.4.0)
-    minitest (5.11.3)
+    minitest (5.17.0)
     multi_json (1.13.1)
     nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
@@ -99,8 +102,9 @@ GEM
       ffi (~> 1.9)
       rake
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
+    zeitwerk (2.6.6)
 
 PLATFORMS
   ruby
